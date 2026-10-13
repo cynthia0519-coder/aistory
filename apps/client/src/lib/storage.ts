@@ -23,12 +23,14 @@ const DB_NAME = "aistory";
 const STORE = "stories";
 /** 主角資料（lib/heroes.ts 使用） */
 export const HERO_STORE = "heroes";
+/** 雲端朗讀的音檔快取（lib/tts.ts 使用） */
+const AUDIO_STORE = "audio";
 
 let dbPromise: Promise<IDBPDatabase> | null = null;
 
-// 版本 1：stories；版本 2：加上 heroes。升級時只補缺的 store，不動舊資料
+// 版本 1：stories；版本 2：加上 heroes；版本 3：加上 audio。升級時只補缺的 store，不動舊資料
 export function db() {
-  dbPromise ??= openDB(DB_NAME, 2, {
+  dbPromise ??= openDB(DB_NAME, 3, {
     upgrade(database, oldVersion) {
       if (oldVersion < 1) {
         const store = database.createObjectStore(STORE, { keyPath: "id" });
@@ -37,6 +39,10 @@ export function db() {
       if (oldVersion < 2 && !database.objectStoreNames.contains(HERO_STORE)) {
         const heroes = database.createObjectStore(HERO_STORE, { keyPath: "id" });
         heroes.createIndex("createdAt", "createdAt");
+      }
+      if (oldVersion < 3 && !database.objectStoreNames.contains(AUDIO_STORE)) {
+        const audio = database.createObjectStore(AUDIO_STORE, { keyPath: "key" });
+        audio.createIndex("lastUsed", "lastUsed");
       }
     },
   });
@@ -63,4 +69,51 @@ export async function requestPersistence() {
   } catch {
     // 不支援就算了，不影響功能
   }
+}
+
+// ---- 朗讀音檔快取 ----
+// key 是「聲音 + 文字」的 SHA-256，不跟故事綁在一起：同一段文字在不同故事裡共用一份，
+// 故事庫換了主角名字就是不同文字、自然是不同的 key。
+// 也因為不知道音檔屬於哪個故事，刪故事時不刪音檔，改用總量上限：超過就從最久沒播的開始刪（LRU）。
+// 一段約 100 字的中文 mp3（48kbps）約 150–250 KB，300 MB 大約是 60 個 10 分鐘故事。
+
+interface AudioEntry {
+  key: string;
+  blob: Blob;
+  size: number;
+  lastUsed: number;
+}
+
+export const AUDIO_CACHE_MAX_BYTES = 300 * 1024 * 1024;
+
+export async function getCachedAudio(key: string): Promise<Blob | null> {
+  const database = await db();
+  const entry = (await database.get(AUDIO_STORE, key)) as AudioEntry | undefined;
+  if (!entry) return null;
+  // 更新最後使用時間，LRU 才不會刪到常聽的故事；寫入失敗不影響播放
+  database.put(AUDIO_STORE, { ...entry, lastUsed: Date.now() }).catch(() => {});
+  return entry.blob;
+}
+
+export async function putCachedAudio(key: string, blob: Blob) {
+  const database = await db();
+  const entry: AudioEntry = { key, blob, size: blob.size, lastUsed: Date.now() };
+  await database.put(AUDIO_STORE, entry);
+  await evictAudio(database);
+}
+
+async function evictAudio(database: IDBPDatabase) {
+  const tx = database.transaction(AUDIO_STORE, "readwrite");
+  const index = tx.store.index("lastUsed");
+  // 第一遍算總量（只讀 size，Blob 本身不會被載入記憶體）
+  let total = 0;
+  for (let cursor = await index.openCursor(); cursor; cursor = await cursor.continue()) {
+    total += (cursor.value as AudioEntry).size;
+  }
+  // 第二遍從最舊的開始刪，直到低於上限
+  for (let cursor = await index.openCursor(); cursor && total > AUDIO_CACHE_MAX_BYTES; cursor = await cursor.continue()) {
+    total -= (cursor.value as AudioEntry).size;
+    await cursor.delete();
+  }
+  await tx.done;
 }

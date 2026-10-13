@@ -45,7 +45,7 @@ export async function POST(request: Request) {
   }
 
   // 只計算會真正呼叫 Claude 的請求
-  const limit = await checkRateLimit(clientIp(request));
+  const limit = await checkRateLimit(clientIp(request), "story");
   if (!limit.ok) {
     return json({ error: limit.reason === "global" ? "daily_cap" : "rate_limited" }, 429, origin);
   }

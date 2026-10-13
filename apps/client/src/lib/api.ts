@@ -1,6 +1,7 @@
 import type { ApiError, StoryRequest, StoryResponse } from "@aistory/shared";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:3001";
+/** API 服務網址；故事與朗讀（lib/tts.ts）共用 */
+export const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:3001";
 
 const MESSAGES: Record<string, string> = {
   refused: "這張照片沒辦法編故事，換一張試試看。",

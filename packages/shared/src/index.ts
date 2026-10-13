@@ -297,3 +297,35 @@ export function renderLibraryStory(
     paragraphs: story.paragraphs[language].map((p) => fillTokens(p, language, name, words)),
   };
 }
+
+// ---- 朗讀（雲端 TTS，Azure Speech 神經語音）----
+// 清單放在共用套件，之後要做「選聲音」時前後端用同一份。
+
+/** 可用的語音；每種語言的第一個是預設 */
+export const TTS_VOICES = {
+  zh: ["zh-TW-HsiaoChenNeural", "zh-TW-HsiaoYuNeural", "zh-TW-YunJheNeural"],
+  // AnaNeural 是童聲
+  en: ["en-US-AnaNeural", "en-US-JennyNeural"],
+} as const satisfies Record<Language, readonly string[]>;
+export type TtsVoice = (typeof TTS_VOICES)[Language][number];
+
+export const DEFAULT_VOICE: Record<Language, TtsVoice> = {
+  zh: TTS_VOICES.zh[0],
+  en: TTS_VOICES.en[0],
+};
+
+const ALL_VOICES = [...TTS_VOICES.zh, ...TTS_VOICES.en] as [TtsVoice, ...TtsVoice[]];
+
+/** 單段朗讀的長度上限；故事段落與標題都遠低於這個數字 */
+export const TTS_MAX_CHARS = 1200;
+
+export const TtsRequestSchema = z
+  .object({
+    text: z.string().min(1).max(TTS_MAX_CHARS),
+    language: z.enum(LANGUAGES),
+    voice: z.enum(ALL_VOICES).optional(),
+  })
+  .refine((r) => !r.voice || (TTS_VOICES[r.language] as readonly string[]).includes(r.voice), {
+    message: "voice must match language",
+  });
+export type TtsRequest = z.infer<typeof TtsRequestSchema>;

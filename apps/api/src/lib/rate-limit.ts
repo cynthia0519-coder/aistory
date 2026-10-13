@@ -1,4 +1,4 @@
-// 速率限制：擋住刷 API 的人，並設每日總量上限把 Claude 費用封頂。
+// 速率限制：擋住刷 API 的人，並設每日總量上限把 Claude 與 Azure TTS 費用封頂。
 //
 // 有設定 Upstash Redis（UPSTASH_REDIS_REST_URL / TOKEN）時使用 Redis，計數在所有 serverless 實例之間共享。
 // 沒設定時退回記憶體計數：本機開發夠用，但部署到 Vercel 後每個實例各算各的，擋不住刷量，上線前一定要設定 Redis。
@@ -10,11 +10,33 @@ export interface Limit {
   windowSeconds: number;
 }
 
-export const LIMITS = {
-  perIpMinute: { name: "ip-m", max: Number(process.env.RATE_IP_PER_MINUTE ?? 5), windowSeconds: 60 },
-  perIpDay: { name: "ip-d", max: Number(process.env.RATE_IP_PER_DAY ?? 50), windowSeconds: 86_400 },
-  globalDay: { name: "all-d", max: Number(process.env.RATE_GLOBAL_PER_DAY ?? 2000), windowSeconds: 86_400 },
-} satisfies Record<string, Limit>;
+/** 一組限制：每個 IP 每分鐘、每個 IP 每天、全站每天 */
+export interface Bucket {
+  perIpMinute: Limit;
+  perIpDay: Limit;
+  globalDay: Limit;
+}
+
+const env = (key: string, fallback: number) => Number(process.env[key] ?? fallback);
+
+/**
+ * 每種用途各有一個 bucket，計數 key 以 bucket 名稱開頭（rl:<bucket>:<limit>:...），彼此不互相佔用額度。
+ * - story：呼叫 Claude，貴，限制嚴
+ * - tts：一個 10 分鐘的故事約 24 段，每段一次請求，所以每分鐘要放寬；全站上限把 Azure 費用封頂
+ */
+export const BUCKETS = {
+  story: {
+    perIpMinute: { name: "ip-m", max: env("RATE_IP_PER_MINUTE", 5), windowSeconds: 60 },
+    perIpDay: { name: "ip-d", max: env("RATE_IP_PER_DAY", 50), windowSeconds: 86_400 },
+    globalDay: { name: "all-d", max: env("RATE_GLOBAL_PER_DAY", 2000), windowSeconds: 86_400 },
+  },
+  tts: {
+    perIpMinute: { name: "ip-m", max: env("RATE_TTS_IP_PER_MINUTE", 60), windowSeconds: 60 },
+    perIpDay: { name: "ip-d", max: env("RATE_TTS_IP_PER_DAY", 800), windowSeconds: 86_400 },
+    globalDay: { name: "all-d", max: env("RATE_TTS_GLOBAL_PER_DAY", 50_000), windowSeconds: 86_400 },
+  },
+} satisfies Record<string, Bucket>;
+export type BucketName = keyof typeof BUCKETS;
 
 interface Counter {
   /** 計數加一，回傳目前視窗內的累計次數 */
@@ -65,25 +87,26 @@ const counter: Counter =
     ? upstashCounter(process.env.UPSTASH_REDIS_REST_URL, process.env.UPSTASH_REDIS_REST_TOKEN)
     : memoryCounter;
 
-function windowKey(limit: Limit, id: string) {
-  const bucket = Math.floor(Date.now() / 1000 / limit.windowSeconds);
-  return `rl:${limit.name}:${id}:${bucket}`;
+function windowKey(bucket: BucketName, limit: Limit, id: string) {
+  const window = Math.floor(Date.now() / 1000 / limit.windowSeconds);
+  return `rl:${bucket}:${limit.name}:${id}:${window}`;
 }
 
 export type RateLimitResult = { ok: true } | { ok: false; reason: "ip" | "global" };
 
-export async function checkRateLimit(ip: string): Promise<RateLimitResult> {
+export async function checkRateLimit(ip: string, bucket: BucketName = "story"): Promise<RateLimitResult> {
+  const limits = BUCKETS[bucket];
   try {
     const [minute, day, global] = await Promise.all([
-      counter.increment(windowKey(LIMITS.perIpMinute, ip), LIMITS.perIpMinute.windowSeconds),
-      counter.increment(windowKey(LIMITS.perIpDay, ip), LIMITS.perIpDay.windowSeconds),
-      counter.increment(windowKey(LIMITS.globalDay, "all"), LIMITS.globalDay.windowSeconds),
+      counter.increment(windowKey(bucket, limits.perIpMinute, ip), limits.perIpMinute.windowSeconds),
+      counter.increment(windowKey(bucket, limits.perIpDay, ip), limits.perIpDay.windowSeconds),
+      counter.increment(windowKey(bucket, limits.globalDay, "all"), limits.globalDay.windowSeconds),
     ]);
-    if (global > LIMITS.globalDay.max) return { ok: false, reason: "global" };
-    if (minute > LIMITS.perIpMinute.max || day > LIMITS.perIpDay.max) return { ok: false, reason: "ip" };
+    if (global > limits.globalDay.max) return { ok: false, reason: "global" };
+    if (minute > limits.perIpMinute.max || day > limits.perIpDay.max) return { ok: false, reason: "ip" };
     return { ok: true };
   } catch (err) {
-    // Redis 掛掉時放行，避免整個服務停擺；每日總量上限仍由 Anthropic Console 的用量上限兜底
+    // Redis 掛掉時放行，避免整個服務停擺；每日總量上限仍由 Anthropic Console / Azure 的用量上限兜底
     console.error("rate limit backend error", err instanceof Error ? err.message : err);
     return { ok: true };
   }
