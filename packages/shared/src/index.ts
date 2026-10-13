@@ -24,13 +24,13 @@ export const AGE_RULES: Record<AgeBand, AgeRule> = {
   "2-4": {
     label: "2–4 歲",
     style:
-      "Very short sentences. Repetitive patterns and onomatopoeia. Gentle rhymes are welcome. One simple idea, no conflict, cozy ending.",
+      "Very short sentences: in Chinese at most about 10 characters, in English at most about 8 words. Reach the length with more sentences and repetition, never by making sentences longer. Repetitive patterns and onomatopoeia. Gentle rhymes are welcome. One simple idea, no conflict, cozy ending.",
     fontClass: "text-2xl leading-relaxed",
   },
   "4-6": {
     label: "4–6 歲",
     style:
-      "Short sentences, everyday vocabulary plus 2–3 slightly new words made clear by context. Simple cause and effect. A tiny problem that is solved kindly. Warm ending.",
+      "Short sentences: in Chinese at most about 15 characters, in English at most about 10 words. Reach the length with more events, not longer sentences. Everyday vocabulary plus 2–3 slightly new words made clear by context. Simple cause and effect. A tiny problem that is solved kindly. Warm ending.",
     fontClass: "text-xl leading-relaxed",
   },
   "6-8": {
@@ -42,7 +42,7 @@ export const AGE_RULES: Record<AgeBand, AgeRule> = {
   "8-10": {
     label: "8–10 歲",
     style:
-      "Richer vocabulary and varied sentence length. A clear plot with a twist, light humor, and a character who grows.",
+      "Rich, precise vocabulary that stretches a 9-year-old: vivid verbs, a few less common words made clear by context, and in Chinese some fitting idioms (成語). Mix short punchy sentences with longer ones. A clear plot with a surprise the reader discovers (never announce it as 'the twist' or 'the surprise' in the text), light humor, and a character who grows.",
     fontClass: "text-base leading-relaxed",
   },
 };
@@ -85,46 +85,36 @@ export const STYLE_RULES: Record<StoryStyle, { label: string; hint: string; prom
 };
 
 // ---- 故事長度：以朗讀時間換算字數（中文以字計，英文以 word 計）----
+// 同樣的朗讀時間，年紀越小念得越慢、篇幅也該越短；所以字數依年齡層設定。
+// 依據：docs/eval 品質測試（2026-10-13 v3），全年齡共用一組字數時，2–4 歲寫不到下限、8–10 歲情節被壓淺。
 export const STORY_LENGTHS = ["3min", "10min"] as const;
 export type StoryLength = (typeof STORY_LENGTHS)[number];
 
-type Range = readonly [number, number];
-interface LengthRule {
-  label: string;
-  /** 全文字數（中文不含標點） */
-  words: Record<Language, Range>;
-  /** 段落數與每段字數：模型對總字數估不準、常寫太短，用段落結構引導比較能達標 */
-  paragraphs: Range;
-  perParagraph: Record<Language, Range>;
-}
+type WordRange = readonly [number, number];
 
-export const LENGTH_RULES: Record<StoryLength, LengthRule> = {
+export const LENGTH_RULES: Record<
+  StoryLength,
+  { label: string; words: Record<AgeBand, Record<Language, WordRange>> }
+> = {
   "3min": {
     label: "3 分鐘",
-    words: { zh: [500, 700], en: [300, 420] },
-    paragraphs: [6, 7],
-    perParagraph: { zh: [85, 100], en: [50, 55] },
+    words: {
+      "2-4": { zh: [250, 400], en: [150, 250] },
+      "4-6": { zh: [400, 550], en: [250, 350] },
+      "6-8": { zh: [500, 700], en: [300, 420] },
+      "8-10": { zh: [600, 800], en: [380, 500] },
+    },
   },
   "10min": {
     label: "10 分鐘",
-    words: { zh: [1700, 2200], en: [1000, 1300] },
-    // 實測模型每段約寫 100 字、不太照每段字數，所以用段落數拉長度；段落數 × 每段字數的範圍要落在 words 之內
-    paragraphs: [18, 19],
-    perParagraph: { zh: [100, 115], en: [56, 68] },
+    words: {
+      "2-4": { zh: [550, 800], en: [500, 700] },
+      "4-6": { zh: [900, 1200], en: [750, 1000] },
+      "6-8": { zh: [1700, 2200], en: [1000, 1300] },
+      "8-10": { zh: [1900, 2400], en: [1150, 1450] },
+    },
   },
 };
-
-/**
- * 某種長度、語言、風格要寫幾段、每段幾字。
- * 實測中文 10 分鐘晚安故事每段只寫約 80 字（改提示詞無效），模型會寫到段落數上限附近，所以用更多段落補足長度。
- */
-export function lengthStructure(length: StoryLength, language: Language, style: StoryStyle) {
-  const rule = LENGTH_RULES[length];
-  if (length === "10min" && language === "zh" && style === "bedtime") {
-    return { paragraphs: [23, 24] as Range, perParagraph: [75, 90] as Range };
-  }
-  return { paragraphs: rule.paragraphs, perParagraph: rule.perParagraph[language] };
-}
 
 /** 依 LENGTH_RULES 的算法計算故事長度：中文算漢字（不含標點），英文算 word */
 export function storyLength(paragraphs: readonly string[], language: Language): number {

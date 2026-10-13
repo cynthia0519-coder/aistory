@@ -3,11 +3,12 @@ import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import {
   AGE_RULES,
   LENGTH_RULES,
-  lengthStructure,
   STORY_SETTINGS,
   STYLE_RULES,
   StoryOutputSchema,
+  type AgeBand,
   type Hero,
+  type Language,
   type StoryOutput,
   type StoryRequest,
 } from "@aistory/shared";
@@ -76,26 +77,52 @@ function heroBlock(hero: Hero): string {
     .join("\n");
 }
 
+// 每段大約多長（中文字／英文 word）。評測發現模型估總字數會偏少，
+// 改用「幾段 × 每段多長」描述，模型比較抓得準。
+const PARAGRAPH_SIZE: Record<AgeBand, Record<Language, number>> = {
+  "2-4": { zh: 40, en: 25 },
+  "4-6": { zh: 60, en: 40 },
+  "6-8": { zh: 80, en: 50 },
+  "8-10": { zh: 100, en: 60 },
+};
+
+// LENGTH_RULES 的中文以「漢字」計（朗讀時間只跟漢字有關），但模型數字數時會把標點算進去，
+// 實測標點約佔 1.2 倍。給模型的數字換算成含標點的字數，模型寫出來的漢字數才會落在規則內。
+const ZH_WITH_PUNCTUATION = 1.2;
+
+// 低齡中文（短句、單一情節）實測只寫到要求的約 75%，而且目標調低它也跟著等比例縮短，
+// 所以只能在給模型的數字上補回來（docs/eval 報告 v6）。
+const LENGTH_BOOST: Partial<Record<AgeBand, Partial<Record<Language, number>>>> = {
+  "2-4": { zh: 1.35 },
+  "4-6": { zh: 1.35 },
+};
+
+function lengthLine(req: StoryRequest, min: number, max: number): string {
+  const k =
+    (req.language === "zh" ? ZH_WITH_PUNCTUATION : 1) * (LENGTH_BOOST[req.ageBand]?.[req.language] ?? 1);
+  const unit = req.language === "zh" ? "Chinese characters including punctuation" : "words";
+  const [lo, hi] = [Math.round(min * k), Math.round(max * k)];
+  const target = Math.round((lo + hi) / 2);
+  const perParagraph = Math.round(PARAGRAPH_SIZE[req.ageBand][req.language] * k);
+  const paragraphs = Math.round(target / perParagraph);
+  return `Length: ${lo}–${hi} ${unit} in total (read aloud in about ${LENGTH_RULES[req.length].label}). Write about ${paragraphs} paragraphs of roughly ${perParagraph} each, about ${target} in total. Do not end early; give the middle of the story more events and detail rather than padding the ending.`;
+}
+
 function buildInstructions(req: StoryRequest): string {
   const age = AGE_RULES[req.ageBand];
-  const rule = LENGTH_RULES[req.length];
-  const [min, max] = rule.words[req.language];
-  const structure = lengthStructure(req.length, req.language, req.style);
-  const [pMin, pMax] = structure.paragraphs;
-  const [eachMin, eachMax] = structure.perParagraph;
-  const unit = req.language === "zh" ? "Chinese characters (not counting punctuation)" : "words";
+  const [min, max] = LENGTH_RULES[req.length].words[req.ageBand][req.language];
 
   return [
     `Audience age: ${age.label}.`,
     `Age style: ${age.style}`,
     `Story type: ${STYLE_RULES[req.style].prompt}`,
-    `Length: ${min}–${max} ${unit} in total, read aloud in about ${rule.label}. Stories usually come out too short, so follow this structure: write ${pMin}–${pMax} paragraphs of ${eachMin}–${eachMax} ${unit} each. Do not end early; give the middle of the story more events and detail rather than padding the ending.`,
+    lengthLine(req, min, max),
     req.language === "zh"
       ? "Write the title and story in Traditional Chinese (繁體中文, Taiwan usage)."
       : "Write the title and story in simple, natural English.",
     req.hero ? heroBlock(req.hero) : "",
     req.scene
-      ? `Base the story on this scene (no photo provided): ${req.scene}\nKeep the same scene field.`
+      ? `Base the story on this scene (no photo provided): ${req.scene}`
       : "Base the story on the photo.",
     req.avoidTitle ? `Write a different story than the previous one titled "${req.avoidTitle}".` : "",
   ]
@@ -139,5 +166,7 @@ export async function generateStoryDetailed(
   if (!response.parsed_output) {
     throw new Error(`unparseable output (stop_reason=${response.stop_reason})`);
   }
-  return { story: response.parsed_output, model: response.model, usage: response.usage };
+  // 「再講一個」沿用原本的場景描述，不讓模型改寫，避免多次重講後場景漂移
+  const story = req.scene ? { ...response.parsed_output, scene: req.scene } : response.parsed_output;
+  return { story, model: response.model, usage: response.usage };
 }

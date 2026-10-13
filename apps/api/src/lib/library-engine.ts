@@ -29,8 +29,17 @@ export type LibraryPlanEntry = z.infer<typeof LibraryPlanEntrySchema>;
 export const LibraryOutputSchema = LibraryStoryFieldsSchema.omit({ id: true, draft: true, bgm: true });
 export type LibraryOutput = z.infer<typeof LibraryOutputSchema>;
 
-/** 故事庫一律寫 3 分鐘長度 */
-export const LIBRARY_LENGTH = LENGTH_RULES["3min"];
+/**
+ * 故事庫一律寫 3 分鐘長度。故事庫一篇要同時給多個年齡層、中英文段落數要一致，
+ * 所以用自己固定的段落結構，不用 App 依年齡層設定的 LENGTH_RULES.words。
+ */
+export const LIBRARY_LENGTH = {
+  label: LENGTH_RULES["3min"].label,
+  /** 全文字數（中文不含標點） */
+  words: { zh: [500, 700], en: [300, 420] },
+  paragraphs: [6, 7],
+  perParagraph: { zh: [85, 100], en: [50, 55] },
+} as const;
 
 // 固定不變的 system prompt，放最前面讓 prompt caching 命中
 export const LIBRARY_SYSTEM = `You are a warm, imaginative storyteller writing for a curated picture-book library for young children. A person reviews every story before it ships, and parents will later record themselves reading it aloud, one paragraph at a time.
