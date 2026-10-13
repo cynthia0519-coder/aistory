@@ -116,12 +116,12 @@ export const LENGTH_RULES: Record<StoryLength, LengthRule> = {
 
 /**
  * 某種長度、語言、風格要寫幾段、每段幾字。
- * 實測中文 10 分鐘晚安故事每段只寫 85–90 字（改提示詞無效），所以用更多段落補足長度。
+ * 實測中文 10 分鐘晚安故事每段只寫約 80 字（改提示詞無效），模型會寫到段落數上限附近，所以用更多段落補足長度。
  */
 export function lengthStructure(length: StoryLength, language: Language, style: StoryStyle) {
   const rule = LENGTH_RULES[length];
   if (length === "10min" && language === "zh" && style === "bedtime") {
-    return { paragraphs: [21, 22] as Range, perParagraph: [82, 100] as Range };
+    return { paragraphs: [23, 24] as Range, perParagraph: [75, 90] as Range };
   }
   return { paragraphs: rule.paragraphs, perParagraph: rule.perParagraph[language] };
 }
