@@ -40,6 +40,9 @@ export function StoryReader({ story, onNewStory }: Props) {
       const { story: next } = await requestStory({
         language: story.language,
         ageBand: story.ageBand,
+        style: story.style ?? "cute",
+        length: story.length ?? "3min",
+        hero: story.hero,
         scene: story.scene,
         avoidTitle: story.title,
       });
@@ -49,6 +52,9 @@ export function StoryReader({ story, onNewStory }: Props) {
         createdAt: Date.now(),
         language: story.language,
         ageBand: story.ageBand,
+        style: story.style,
+        length: story.length,
+        hero: story.hero,
         thumbnail: story.thumbnail,
       };
       await saveStory(saved);

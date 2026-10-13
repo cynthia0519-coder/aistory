@@ -6,8 +6,14 @@ import {
   AGE_RULES,
   LANGUAGES,
   LANGUAGE_LABELS,
+  LENGTH_RULES,
+  STORY_LENGTHS,
+  STORY_STYLES,
+  STYLE_RULES,
   type AgeBand,
   type Language,
+  type StoryLength,
+  type StoryStyle,
 } from "@aistory/shared";
 import { prepareImage } from "@/lib/image";
 import { requestStory, StoryApiError } from "@/lib/api";
@@ -22,6 +28,8 @@ export function CreateStory({ onCreated }: Props) {
   const [preview, setPreview] = useState<string | null>(null);
   const [language, setLanguage] = useState<Language>("zh");
   const [ageBand, setAgeBand] = useState<AgeBand>("4-6");
+  const [style, setStyle] = useState<StoryStyle>("adventure");
+  const [length, setLength] = useState<StoryLength>("3min");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -39,13 +47,21 @@ export function CreateStory({ onCreated }: Props) {
     setError(null);
     try {
       const { apiBase64, thumbnail } = await prepareImage(file);
-      const { story } = await requestStory({ language, ageBand, imageBase64: apiBase64 });
+      const { story } = await requestStory({
+        language,
+        ageBand,
+        style,
+        length,
+        imageBase64: apiBase64,
+      });
       const saved: SavedStory = {
         ...story,
         id: crypto.randomUUID(),
         createdAt: Date.now(),
         language,
         ageBand,
+        style,
+        length,
         thumbnail,
       };
       await saveStory(saved);
@@ -91,6 +107,28 @@ export function CreateStory({ onCreated }: Props) {
           {AGE_BANDS.map((a) => (
             <Chip key={a} active={ageBand === a} onClick={() => setAgeBand(a)}>
               {AGE_RULES[a].label}
+            </Chip>
+          ))}
+        </div>
+      </fieldset>
+
+      <fieldset className="flex flex-col gap-2">
+        <legend className="mb-2 font-semibold">想聽哪一種故事</legend>
+        <div className="grid grid-cols-4 gap-2">
+          {STORY_STYLES.map((s) => (
+            <Chip key={s} active={style === s} onClick={() => setStyle(s)}>
+              {STYLE_RULES[s].label}
+            </Chip>
+          ))}
+        </div>
+      </fieldset>
+
+      <fieldset className="flex flex-col gap-2">
+        <legend className="mb-2 font-semibold">故事要講多久</legend>
+        <div className="grid grid-cols-2 gap-2">
+          {STORY_LENGTHS.map((l) => (
+            <Chip key={l} active={length === l} onClick={() => setLength(l)}>
+              {LENGTH_RULES[l].label}
             </Chip>
           ))}
         </div>

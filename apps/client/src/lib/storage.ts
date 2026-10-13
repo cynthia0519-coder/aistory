@@ -1,12 +1,17 @@
 // 故事書櫃：全部存在裝置的 IndexedDB，不上雲端。離線時可以照常閱讀與朗讀。
 import { openDB, type IDBPDatabase } from "idb";
-import type { AgeBand, Language, StoryOutput } from "@aistory/shared";
+import type { AgeBand, Hero, Language, StoryLength, StoryOutput, StorySetting, StoryStyle } from "@aistory/shared";
 
-export interface SavedStory extends StoryOutput {
+export interface SavedStory extends Omit<StoryOutput, "setting"> {
   id: string;
   createdAt: number;
   language: Language;
   ageBand: AgeBand;
+  /** 舊版存的故事沒有以下欄位 */
+  setting?: StorySetting;
+  style?: StoryStyle;
+  length?: StoryLength;
+  hero?: Hero;
   /** 320px 縮圖；原圖不保存 */
   thumbnail?: Blob;
 }
