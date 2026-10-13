@@ -4,10 +4,14 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { AGE_RULES, LANGUAGE_LABELS } from "@aistory/shared";
 import { requestStory, StoryApiError } from "@/lib/api";
 import { saveStory, type SavedStory } from "@/lib/storage";
-import { webSpeechNarrator as narrator } from "@/lib/tts";
-import { BackIcon, PauseIcon, PlayIcon, RepeatIcon } from "./icons";
+import { bgm, loadMusicPref, saveMusicPref } from "@/lib/bgm";
+import { narrator } from "@/lib/tts";
+import { BackIcon, MusicIcon, MusicOffIcon, PauseIcon, PlayIcon, RepeatIcon } from "./icons";
 import { HeroAvatar } from "./HeroAvatar";
 import { StoryLoading } from "./StoryLoading";
+
+/** 段落之間的小停頓：讓背景音樂浮上來一點，聽起來不趕 */
+const PARAGRAPH_GAP_MS = 600;
 
 interface Props {
   story: SavedStory;
@@ -25,6 +29,8 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
   const [current, setCurrent] = useState<number | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  /** 背景音樂開關（記在 localStorage）；閱讀頁只在瀏覽器裡渲染，可以直接讀 */
+  const [musicOn, setMusicOn] = useState(loadMusicPref);
   const runId = useRef(0);
 
   const thumbUrl = useMemo(() => (story.thumbnail ? URL.createObjectURL(story.thumbnail) : null), [story.thumbnail]);
@@ -36,6 +42,7 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
     () => () => {
       runId.current++;
       narrator.stop();
+      bgm.stop();
     },
     [story.id],
   );
@@ -45,27 +52,49 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
     if (id !== runId.current) return;
     if (index >= story.paragraphs.length) {
       setCurrent(null);
+      bgm.stop();
       return;
     }
     setCurrent(index);
     const text = index === -1 ? story.title : story.paragraphs[index];
-    narrator.speak(text, story.language, () => speakFrom(index + 1, id));
+    bgm.duck(true);
+    narrator.speak(text, story.language, () => {
+      if (id !== runId.current) return;
+      bgm.duck(false);
+      setTimeout(() => speakFrom(index + 1, id), PARAGRAPH_GAP_MS);
+    });
+    // 念這段的同時先準備下一段
+    const next = story.paragraphs[index + 1];
+    if (next) narrator.prefetch?.(next, story.language);
   }
 
   function toggle() {
     if (current !== null) {
       runId.current++;
       narrator.stop();
+      bgm.stop();
       setCurrent(null);
       return;
     }
+    // 以下都要在按鈕的手勢裡同步執行，iOS 才允許播放聲音
+    narrator.prepare?.();
+    bgm.setEnabled(musicOn);
+    bgm.start(story.style ?? "bedtime");
     speakFrom(-1, ++runId.current);
+  }
+
+  function toggleMusic() {
+    const next = !musicOn;
+    setMusicOn(next);
+    saveMusicPref(next);
+    bgm.setEnabled(next);
   }
 
   // 「再講一個」只送場景文字，不重傳照片
   async function another() {
     runId.current++;
     narrator.stop();
+    bgm.stop();
     setCurrent(null);
     setLoading(true);
     setError(null);
@@ -170,7 +199,7 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
         {error && <p className="rounded-2xl bg-rust/10 p-3 text-rust-dark">{error}</p>}
       </div>
 
-      <div className="fixed inset-x-0 bottom-0 z-20 mx-auto max-w-md rounded-t-3xl bg-teal px-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-4 text-paper">
+      <div className="fixed inset-x-0 bottom-0 z-20 mx-auto max-w-md rounded-t-3xl bg-teal px-4 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-4 text-paper min-[360px]:px-6">
         <div className="flex justify-center gap-1.5" aria-label={playing ? `第 ${Math.max(current, 0) + 1} 段，共 ${total} 段` : `共 ${total} 段`}>
           {story.paragraphs.map((_, i) => (
             <span
@@ -181,21 +210,22 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
             />
           ))}
         </div>
-        <div className="mt-3 flex items-center justify-between">
+        {/* 三欄：播放鍵永遠置中，左右兩邊寬度不同也不會偏 */}
+        <div className="mt-3 grid grid-cols-[1fr_auto_1fr] items-center">
           {onNext === null ? (
-            <span className="w-20" aria-hidden="true" />
+            <span aria-hidden="true" />
           ) : (
             <button
               type="button"
               onClick={onNext ?? another}
               disabled={loading}
-              className="flex h-11 items-center gap-1.5 px-1 text-sm font-bold disabled:opacity-40"
+              className="flex h-11 items-center gap-1.5 justify-self-start whitespace-nowrap px-1 text-sm font-bold disabled:opacity-40"
             >
               <RepeatIcon className="h-5 w-5" />
               {onNext ? "下一個故事" : "再講一個"}
             </button>
           )}
-          {narrator.isSupported() && (
+          {narrator.isSupported() ? (
             <button
               type="button"
               onClick={toggle}
@@ -204,10 +234,28 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
             >
               {playing ? <PauseIcon className="h-8 w-8" /> : <PlayIcon className="ml-1 h-8 w-8" />}
             </button>
+          ) : (
+            <span aria-hidden="true" />
           )}
-          <button type="button" onClick={onBack} className="flex h-11 items-center gap-1.5 px-1 text-sm font-bold">
-            回書櫃
-          </button>
+          <div className="flex items-center gap-1 justify-self-end">
+            {bgm.isSupported() && (
+              <button
+                type="button"
+                onClick={toggleMusic}
+                aria-pressed={musicOn}
+                aria-label="背景音樂"
+                title={musicOn ? "關掉背景音樂" : "打開背景音樂"}
+                className={`flex h-11 w-11 items-center justify-center rounded-full ${
+                  musicOn ? "bg-paper/15 text-mustard" : "text-paper/60"
+                }`}
+              >
+                {musicOn ? <MusicIcon className="h-5 w-5" /> : <MusicOffIcon className="h-5 w-5" />}
+              </button>
+            )}
+            <button type="button" onClick={onBack} className="flex h-11 items-center whitespace-nowrap px-1 text-sm font-bold">
+              回書櫃
+            </button>
+          </div>
         </div>
       </div>
     </article>

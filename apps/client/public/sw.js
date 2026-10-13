@@ -1,9 +1,21 @@
 // 網頁版離線支援：快取 App 外殼與故事庫，離線時仍可開啟並閱讀本地書櫃與故事庫。
 // 打包成 App（Capacitor）時檔案已在裝置上，不依賴這支。
-const CACHE = "aistory-v1";
+const CACHE = "aistory-v2";
 
 self.addEventListener("install", (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(["/", "/manifest.webmanifest", "/library/stories.json"])));
+  e.waitUntil(
+    caches.open(CACHE).then((c) =>
+      c.addAll([
+        "/",
+        "/manifest.webmanifest",
+        "/library/stories.json",
+        // 場景插畫也預存，沒看過的場景離線時才不會破圖
+        ...["home", "park", "school", "zoo", "forest", "sea", "mountain", "city", "snow", "night_sky"].map(
+          (s) => `/scenes/${s}.jpg`,
+        ),
+      ]),
+    ),
+  );
   self.skipWaiting();
 });
 

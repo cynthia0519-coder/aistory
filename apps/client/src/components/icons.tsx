@@ -96,3 +96,20 @@ export const MoonIcon = ({ className }: P) => (
     <path d="M19 14.5A7.5 7.5 0 1 1 9.5 5a6 6 0 0 0 9.5 9.5z" />
   </svg>
 );
+
+export const MusicIcon = ({ className }: P) => (
+  <svg {...base} className={className}>
+    <path d="M9 17V6l10-2v11" />
+    <circle cx="6.5" cy="17" r="2.5" />
+    <circle cx="16.5" cy="15" r="2.5" />
+  </svg>
+);
+
+export const MusicOffIcon = ({ className }: P) => (
+  <svg {...base} className={className}>
+    <path d="M9 17V6l10-2v11" />
+    <circle cx="6.5" cy="17" r="2.5" />
+    <circle cx="16.5" cy="15" r="2.5" />
+    <path d="M4 4l16 16" />
+  </svg>
+);
