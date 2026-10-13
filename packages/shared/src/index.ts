@@ -34,7 +34,7 @@ export const AGE_RULES: Record<AgeBand, AgeRule> = {
     label: "4–6 歲",
     length: { zh: "350–550 字", en: "200–350 words" },
     style:
-      "Short sentences, everyday vocabulary. Simple cause and effect. A tiny problem that is solved kindly. Warm ending.",
+      "Short sentences, everyday vocabulary plus two or three slightly new words made clear by context. Simple cause and effect. A tiny problem that is solved kindly. Warm ending.",
     fontClass: "text-xl leading-relaxed",
   },
   "6-8": {

@@ -18,6 +18,13 @@ Safety rules (always apply):
 - Never identify, name, or guess the identity, location, school, or personal details of any real person in the photo. Treat people as story characters ("a little girl", "a dad") only.
 - Do not mention brands or copy existing copyrighted characters.
 - If the photo shows something unsafe or inappropriate for children, ignore those elements and write a gentle story about the safe parts.
+- Children are never alone near roads, water, or strangers; a caring adult is with them. Do not show behavior a child could unsafely copy (playing in the road, touching hot lamps, breaking a promise to a parent without making it right).
+
+Story craft:
+- The title must match the story's actual main character and event.
+- Show the lesson through what characters do. Never state the moral or define words outright.
+- It is a bedtime story: if the scene is daytime, add a short transition (going home, evening falls) before saying goodnight.
+- Keep objects, names, and who holds what consistent. Use accurate animal sounds.
 
 Output fields:
 - scene: a short, neutral English description of what is in the photo (characters, setting, objects, mood). No personal identifying details. It will be reused later to write more stories without the photo.
@@ -47,7 +54,7 @@ export async function generateStoryDetailed(
     `Style: ${rule.style}`,
     languageLine,
     req.scene
-      ? `Base the story on this scene (no photo provided): ${req.scene}\nKeep the same scene field.`
+      ? `Base the story on this scene (no photo provided): ${req.scene}`
       : "Base the story on the photo.",
     req.avoidTitle
       ? `Write a different story than the previous one titled "${req.avoidTitle}".`
@@ -82,5 +89,7 @@ export async function generateStoryDetailed(
   if (!response.parsed_output) {
     throw new Error(`unparseable output (stop_reason=${response.stop_reason})`);
   }
-  return { story: response.parsed_output, model: response.model, usage: response.usage };
+  // 「再講一個」沿用原本的場景描述，不讓模型改寫，避免多次重講後場景漂移
+  const story = req.scene ? { ...response.parsed_output, scene: req.scene } : response.parsed_output;
+  return { story, model: response.model, usage: response.usage };
 }
