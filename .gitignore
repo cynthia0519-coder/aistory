@@ -43,3 +43,6 @@ next-env.d.ts
 !.env.example
 /apps/*/.next/
 /apps/*/out/
+
+# story eval reports
+apps/api/eval/results/

@@ -29,6 +29,21 @@ npm run dev:client  # http://localhost:3000
 
 手機實測：連同一個 Wi-Fi，開 `http://<電腦IP>:3000`，並把這個來源加進 `ALLOWED_ORIGINS`。
 
+## 故事品質測試
+
+```bash
+npm run eval -w @aistory/api                 # 真的呼叫 Claude（需 apps/api/.env.local 的 ANTHROPIC_API_KEY）
+npm run eval -w @aistory/api -- --mock       # 不花 token，只驗證評分流程
+npm run eval -w @aistory/api -- --no-judge   # 只跑程式規則檢查
+npm run eval -w @aistory/api -- --only 6-8   # 只跑部分案例
+```
+
+4 年齡層 × 2 語言 = 8 案例，走 scene 路徑（不傳照片）。分兩層：
+1. 程式規則（0 token）：長度對照 `AGE_RULES`、繁體／英文、禁用詞、結構、`avoidTitle`
+2. LLM judge（Haiku，規則沒過就不送）：年齡適配、安全、結構、貼合場景，各 1–5 分，低於 3 算 fail
+
+報告寫到 `apps/api/eval/results/`（不進 git）。改 prompt 或 `AGE_RULES` 後跑一次，不放 CI。
+
 ## 部署
 - API：把 `apps/api` 部署到 Vercel（Root Directory 設成 `apps/api`），設定 `ANTHROPIC_API_KEY` 和 `ALLOWED_ORIGINS`
 - 網頁：執行 `npm run build -w @aistory/client`，把 `apps/client/out/` 放到任何靜態主機
