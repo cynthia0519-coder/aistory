@@ -68,6 +68,15 @@ export function StoryReader({ story, onNewStory }: Props) {
 
   return (
     <article className="flex flex-col gap-5">
+      {story.setting && (
+        // 場景插畫隨 App 打包（public/scenes），離線也看得到
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={`/scenes/${story.setting}.jpg`}
+          alt=""
+          className="-mx-4 -mt-6 aspect-[4/3] w-[calc(100%+2rem)] max-w-none object-cover"
+        />
+      )}
       <h1 className="text-center text-2xl font-bold text-amber-800">{story.title}</h1>
 
       {narrator.isSupported() && (
