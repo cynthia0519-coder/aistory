@@ -3,6 +3,7 @@ import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import {
   AGE_RULES,
   LENGTH_RULES,
+  lengthStructure,
   STORY_SETTINGS,
   STYLE_RULES,
   StoryOutputSchema,
@@ -79,8 +80,9 @@ function buildInstructions(req: StoryRequest): string {
   const age = AGE_RULES[req.ageBand];
   const rule = LENGTH_RULES[req.length];
   const [min, max] = rule.words[req.language];
-  const [pMin, pMax] = rule.paragraphs;
-  const [eachMin, eachMax] = rule.perParagraph[req.language];
+  const structure = lengthStructure(req.length, req.language, req.style);
+  const [pMin, pMax] = structure.paragraphs;
+  const [eachMin, eachMax] = structure.perParagraph;
   const unit = req.language === "zh" ? "Chinese characters (not counting punctuation)" : "words";
 
   return [

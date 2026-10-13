@@ -114,6 +114,18 @@ export const LENGTH_RULES: Record<StoryLength, LengthRule> = {
   },
 };
 
+/**
+ * 某種長度、語言、風格要寫幾段、每段幾字。
+ * 實測中文 10 分鐘晚安故事每段只寫 85–90 字（改提示詞無效），所以用更多段落補足長度。
+ */
+export function lengthStructure(length: StoryLength, language: Language, style: StoryStyle) {
+  const rule = LENGTH_RULES[length];
+  if (length === "10min" && language === "zh" && style === "bedtime") {
+    return { paragraphs: [21, 22] as Range, perParagraph: [82, 100] as Range };
+  }
+  return { paragraphs: rule.paragraphs, perParagraph: rule.perParagraph[language] };
+}
+
 /** 依 LENGTH_RULES 的算法計算故事長度：中文算漢字（不含標點），英文算 word */
 export function storyLength(paragraphs: readonly string[], language: Language): number {
   const text = paragraphs.join("\n");
