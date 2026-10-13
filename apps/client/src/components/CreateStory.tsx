@@ -18,10 +18,20 @@ import {
 import { prepareImage } from "@/lib/image";
 import { requestStory, StoryApiError } from "@/lib/api";
 import { saveStory, type SavedStory } from "@/lib/storage";
+import { CameraIcon } from "./icons";
+import { StoryLoading } from "./StoryLoading";
+import { Chip, PrimaryButton, SectionTitle } from "./ui";
 
 interface Props {
   onCreated: (story: SavedStory) => void;
 }
+
+const STYLE_DOT: Record<StoryStyle, string> = {
+  adventure: "bg-teal",
+  inspiring: "bg-ochre",
+  cute: "bg-[#e8a0a0]",
+  bedtime: "bg-sage",
+};
 
 export function CreateStory({ onCreated }: Props) {
   const [file, setFile] = useState<File | null>(null);
@@ -74,97 +84,109 @@ export function CreateStory({ onCreated }: Props) {
   }
 
   return (
-    <div className="flex flex-col gap-6">
-      <label className="flex aspect-[4/3] w-full cursor-pointer items-center justify-center overflow-hidden rounded-3xl border-2 border-dashed border-amber-300 bg-amber-50">
-        {preview ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={preview} alt="" className="h-full w-full object-cover" />
-        ) : (
-          <span className="text-lg text-amber-700">📷 拍照或選一張照片</span>
-        )}
-        <input
-          type="file"
-          accept="image/*"
-          className="hidden"
-          onChange={(e) => pick(e.target.files?.[0])}
-        />
-      </label>
+    <div className="flex flex-col">
+      {loading && <StoryLoading previewUrl={preview} />}
 
-      <fieldset className="flex flex-col gap-2">
-        <legend className="mb-2 font-semibold">故事語言</legend>
-        <div className="grid grid-cols-2 gap-2">
-          {LANGUAGES.map((l) => (
-            <Chip key={l} active={language === l} onClick={() => setLanguage(l)}>
-              {LANGUAGE_LABELS[l]}
-            </Chip>
-          ))}
+      <header className="relative h-52 overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/scenes/park.jpg" alt="" className="absolute inset-0 h-full w-full object-cover object-top" />
+        <div className="absolute inset-0 bg-gradient-to-b from-paper/0 via-paper/10 to-paper" />
+        <div className="absolute inset-x-4 top-[max(1rem,env(safe-area-inset-top))] flex justify-end">
+          <div role="group" aria-label="故事語言" className="flex rounded-full bg-card/90 p-1 shadow-sm">
+            {LANGUAGES.map((l) => (
+              <button
+                key={l}
+                type="button"
+                aria-pressed={language === l}
+                onClick={() => setLanguage(l)}
+                className={`h-8 rounded-full px-3 text-sm font-bold ${
+                  language === l ? "bg-teal text-paper" : "text-ink"
+                }`}
+              >
+                {l === "zh" ? LANGUAGE_LABELS.zh : "EN"}
+              </button>
+            ))}
+          </div>
         </div>
-      </fieldset>
+        <h1 className="absolute bottom-3 left-4 font-display text-3xl font-bold tracking-widest text-teal">
+          今晚的故事
+        </h1>
+      </header>
 
-      <fieldset className="flex flex-col gap-2">
-        <legend className="mb-2 font-semibold">小孩年齡</legend>
-        <div className="grid grid-cols-4 gap-2">
-          {AGE_BANDS.map((a) => (
-            <Chip key={a} active={ageBand === a} onClick={() => setAgeBand(a)}>
-              {AGE_RULES[a].label}
-            </Chip>
-          ))}
-        </div>
-      </fieldset>
+      <div className="flex flex-col gap-6 px-4 pt-3">
+        <label className="block cursor-pointer">
+          {preview ? (
+            <div className="flex items-center gap-4 rounded-2xl bg-card p-3 ring-2 ring-line">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={preview} alt="選好的照片" className="h-24 w-28 -rotate-2 rounded-sm bg-card object-cover p-1 shadow-md" />
+              <div className="flex flex-col gap-1">
+                <span className="font-display text-lg font-bold">照片選好了</span>
+                <span className="text-sm text-ink-soft">點這裡換一張</span>
+              </div>
+            </div>
+          ) : (
+            <div className="flex h-28 items-center gap-4 rounded-2xl bg-teal px-6 text-paper shadow-[0_5px_0_var(--color-teal-dark)]">
+              <CameraIcon className="h-10 w-10 text-mustard" />
+              <div className="flex flex-col">
+                <span className="font-display text-xl font-bold">拍照或選一張照片</span>
+                <span className="text-xs text-paper/75">小狗、玩具、公園、晚餐都可以</span>
+              </div>
+            </div>
+          )}
+          <input type="file" accept="image/*" className="sr-only" onChange={(e) => pick(e.target.files?.[0])} />
+        </label>
 
-      <fieldset className="flex flex-col gap-2">
-        <legend className="mb-2 font-semibold">想聽哪一種故事</legend>
-        <div className="grid grid-cols-4 gap-2">
-          {STORY_STYLES.map((s) => (
-            <Chip key={s} active={style === s} onClick={() => setStyle(s)}>
-              {STYLE_RULES[s].label}
-            </Chip>
-          ))}
-        </div>
-      </fieldset>
+        <fieldset className="flex flex-col gap-2">
+          <SectionTitle as="legend">小朋友幾歲</SectionTitle>
+          <div className="grid grid-cols-4 gap-2">
+            {AGE_BANDS.map((a) => (
+              <Chip key={a} active={ageBand === a} onClick={() => setAgeBand(a)}>
+                {AGE_RULES[a].label}
+              </Chip>
+            ))}
+          </div>
+        </fieldset>
 
-      <fieldset className="flex flex-col gap-2">
-        <legend className="mb-2 font-semibold">故事要講多久</legend>
-        <div className="grid grid-cols-2 gap-2">
-          {STORY_LENGTHS.map((l) => (
-            <Chip key={l} active={length === l} onClick={() => setLength(l)}>
-              {LENGTH_RULES[l].label}
-            </Chip>
-          ))}
-        </div>
-      </fieldset>
+        <fieldset className="flex flex-col gap-2">
+          <SectionTitle as="legend">想聽哪一種故事</SectionTitle>
+          <div className="grid grid-cols-2 gap-2">
+            {STORY_STYLES.map((s) => (
+              <button
+                key={s}
+                type="button"
+                aria-pressed={style === s}
+                onClick={() => setStyle(s)}
+                className={`flex h-16 items-center gap-3 rounded-2xl px-3 text-left ${
+                  style === s ? "bg-rust text-card" : "bg-card text-ink ring-2 ring-line"
+                }`}
+              >
+                <span className={`h-8 w-8 shrink-0 rounded-full ${STYLE_DOT[s]}`} />
+                <span className="flex flex-col">
+                  <span className="font-bold">{STYLE_RULES[s].label}</span>
+                  <span className="text-xs opacity-80">{STYLE_RULES[s].hint}</span>
+                </span>
+              </button>
+            ))}
+          </div>
+        </fieldset>
 
-      {error && <p className="rounded-xl bg-red-50 p-3 text-red-700">{error}</p>}
+        <fieldset className="flex flex-col gap-2">
+          <SectionTitle as="legend">故事要講多久</SectionTitle>
+          <div className="grid grid-cols-2 gap-2">
+            {STORY_LENGTHS.map((l) => (
+              <Chip key={l} active={length === l} onClick={() => setLength(l)}>
+                {LENGTH_RULES[l].label}
+              </Chip>
+            ))}
+          </div>
+        </fieldset>
 
-      <button
-        disabled={!file || loading}
-        onClick={submit}
-        className="rounded-full bg-amber-500 py-4 text-lg font-bold text-white disabled:opacity-40"
-      >
-        {loading ? "正在編故事…" : "✨ 編一個故事"}
-      </button>
+        {error && <p className="rounded-2xl bg-rust/10 p-3 text-rust-dark">{error}</p>}
+
+        <PrimaryButton disabled={!file || loading} onClick={submit}>
+          開始編故事
+        </PrimaryButton>
+      </div>
     </div>
-  );
-}
-
-function Chip({
-  active,
-  onClick,
-  children,
-}: {
-  active: boolean;
-  onClick: () => void;
-  children: React.ReactNode;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`rounded-full px-2 py-3 text-sm font-medium ${
-        active ? "bg-amber-500 text-white" : "bg-white text-stone-700 ring-1 ring-stone-200"
-      }`}
-    >
-      {children}
-    </button>
   );
 }

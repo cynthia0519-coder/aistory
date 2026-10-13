@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { CreateStory } from "@/components/CreateStory";
+import { BooksIcon, StarIcon } from "@/components/icons";
 import { Library } from "@/components/Library";
 import { StoryReader } from "@/components/StoryReader";
 import { requestPersistence, type SavedStory } from "@/lib/storage";
@@ -20,21 +21,31 @@ export default function Home() {
   }, []);
 
   const read = (story: SavedStory) => setView({ name: "read", story });
+  const create = () => setView({ name: "create" });
+  const library = () => setView({ name: "library" });
+
+  // 讀故事頁有自己的播放列，不顯示底部導覽
+  if (view.name === "read") {
+    return (
+      <div className="mx-auto w-full max-w-md bg-paper">
+        <StoryReader key={view.story.id} story={view.story} onNewStory={read} onBack={library} />
+      </div>
+    );
+  }
 
   return (
-    <div className="mx-auto flex min-h-dvh w-full max-w-md flex-col bg-amber-50/40">
-      <main className="flex-1 px-4 pb-28 pt-[max(1.5rem,env(safe-area-inset-top))]">
+    <div className="mx-auto flex min-h-dvh w-full max-w-md flex-col bg-paper">
+      <main className="flex-1 pb-32">
         {view.name === "create" && <CreateStory onCreated={read} />}
-        {view.name === "library" && <Library onOpen={read} />}
-        {view.name === "read" && <StoryReader key={view.story.id} story={view.story} onNewStory={read} />}
+        {view.name === "library" && <Library onOpen={read} onCreate={create} />}
       </main>
 
-      <nav className="fixed inset-x-0 bottom-0 mx-auto grid max-w-md grid-cols-2 border-t border-stone-200 bg-white pb-[env(safe-area-inset-bottom)]">
-        <Tab active={view.name === "create"} onClick={() => setView({ name: "create" })}>
-          ✨ 編故事
+      <nav className="fixed inset-x-0 bottom-0 z-10 mx-auto grid max-w-md grid-cols-2 bg-paper-deep pb-[env(safe-area-inset-bottom)]">
+        <Tab active={view.name === "create"} onClick={create} icon={<StarIcon className="h-6 w-6" />}>
+          編故事
         </Tab>
-        <Tab active={view.name !== "create"} onClick={() => setView({ name: "library" })}>
-          📚 我的書櫃
+        <Tab active={view.name === "library"} onClick={library} icon={<BooksIcon className="h-6 w-6" />}>
+          我的書櫃
         </Tab>
       </nav>
     </div>
@@ -44,17 +55,22 @@ export default function Home() {
 function Tab({
   active,
   onClick,
+  icon,
   children,
 }: {
   active: boolean;
   onClick: () => void;
+  icon: React.ReactNode;
   children: React.ReactNode;
 }) {
   return (
     <button
+      type="button"
       onClick={onClick}
-      className={`py-4 font-semibold ${active ? "text-amber-600" : "text-stone-400"}`}
+      aria-current={active ? "page" : undefined}
+      className={`flex flex-col items-center gap-0.5 pb-2 pt-3 text-xs font-bold ${active ? "text-rust" : "text-ink-soft"}`}
     >
+      {icon}
       {children}
     </button>
   );
