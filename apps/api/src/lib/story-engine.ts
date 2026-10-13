@@ -27,6 +27,14 @@ Output fields:
 export class StoryRefusedError extends Error {}
 
 export async function generateStory(req: StoryRequest): Promise<StoryOutput> {
+  return (await generateStoryDetailed(req)).story;
+}
+
+/** 回傳故事加上實際用的模型與 token 用量；eval 用來比較模型與算成本 */
+export async function generateStoryDetailed(
+  req: StoryRequest,
+  opts: { model?: string } = {},
+): Promise<{ story: StoryOutput; model: string; usage: Anthropic.Beta.BetaUsage }> {
   const rule = AGE_RULES[req.ageBand];
   const languageLine =
     req.language === "zh"
@@ -58,7 +66,7 @@ export async function generateStory(req: StoryRequest): Promise<StoryOutput> {
   content.push({ type: "text", text: instructions });
 
   const response = await client.beta.messages.parse({
-    model: MODEL,
+    model: opts.model ?? MODEL,
     max_tokens: 8000,
     betas: ["server-side-fallback-2026-07-01"],
     fallbacks: "default",
@@ -74,5 +82,5 @@ export async function generateStory(req: StoryRequest): Promise<StoryOutput> {
   if (!response.parsed_output) {
     throw new Error(`unparseable output (stop_reason=${response.stop_reason})`);
   }
-  return response.parsed_output;
+  return { story: response.parsed_output, model: response.model, usage: response.usage };
 }
