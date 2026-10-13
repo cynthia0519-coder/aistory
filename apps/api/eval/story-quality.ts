@@ -22,6 +22,7 @@ import {
   AGE_RULES,
   LENGTH_RULES,
   STYLE_RULES,
+  storyLength,
   LANGUAGES,
   type AgeBand,
   type Language,
@@ -77,8 +78,7 @@ const judgeClient = new Anthropic();
 const hanCount = (t: string) => (t.match(/\p{Script=Han}/gu) ?? []).length;
 
 function measure(story: StoryOutput, lang: Language): number {
-  if (lang === "zh") return hanCount(story.paragraphs.join(""));
-  return story.paragraphs.join(" ").split(/\s+/).filter(Boolean).length;
+  return storyLength(story.paragraphs, lang);
 }
 
 function syllables(word: string): number {

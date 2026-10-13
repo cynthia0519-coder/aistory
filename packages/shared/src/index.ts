@@ -24,13 +24,13 @@ export const AGE_RULES: Record<AgeBand, AgeRule> = {
   "2-4": {
     label: "2–4 歲",
     style:
-      "Very short sentences. Repetitive patterns and onomatopoeia. Gentle rhymes are welcome. One simple idea, no conflict, cozy ending.",
+      "Very short sentences: in Chinese at most about 10 characters, in English at most about 8 words. Reach the length with more sentences and repetition, never by making sentences longer. Repetitive patterns and onomatopoeia. Gentle rhymes are welcome. One simple idea, no conflict, cozy ending.",
     fontClass: "text-2xl leading-relaxed",
   },
   "4-6": {
     label: "4–6 歲",
     style:
-      "Short sentences, everyday vocabulary plus 2–3 slightly new words made clear by context. Simple cause and effect. A tiny problem that is solved kindly. Warm ending.",
+      "Short sentences: in Chinese at most about 15 characters, in English at most about 10 words. Reach the length with more events, not longer sentences. Everyday vocabulary plus 2–3 slightly new words made clear by context. Simple cause and effect. A tiny problem that is solved kindly. Warm ending.",
     fontClass: "text-xl leading-relaxed",
   },
   "6-8": {
@@ -42,7 +42,7 @@ export const AGE_RULES: Record<AgeBand, AgeRule> = {
   "8-10": {
     label: "8–10 歲",
     style:
-      "Richer vocabulary and varied sentence length. A clear plot with a twist, light humor, and a character who grows.",
+      "Rich, precise vocabulary that stretches a 9-year-old: vivid verbs, a few less common words made clear by context, and in Chinese some fitting idioms (成語). Mix short punchy sentences with longer ones. A clear plot with a twist, light humor, and a character who grows.",
     fontClass: "text-base leading-relaxed",
   },
 };
@@ -115,6 +115,13 @@ export const LENGTH_RULES: Record<
     },
   },
 };
+
+/** 依 LENGTH_RULES 的算法計算故事長度：中文算漢字（不含標點），英文算 word */
+export function storyLength(paragraphs: readonly string[], language: Language): number {
+  const text = paragraphs.join("\n");
+  if (language === "zh") return (text.match(/\p{Script=Han}/gu) ?? []).length;
+  return text.split(/\s+/).filter(Boolean).length;
+}
 
 // ---- 主角（只存在裝置上，送到 API 只用於這一次生成）----
 export const GENDERS = ["boy", "girl", "unspecified"] as const;

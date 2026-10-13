@@ -6,6 +6,7 @@ import { requestStory, StoryApiError } from "@/lib/api";
 import { saveStory, type SavedStory } from "@/lib/storage";
 import { webSpeechNarrator as narrator } from "@/lib/tts";
 import { BackIcon, PauseIcon, PlayIcon, RepeatIcon } from "./icons";
+import { HeroAvatar } from "./HeroAvatar";
 import { StoryLoading } from "./StoryLoading";
 
 interface Props {
@@ -82,6 +83,7 @@ export function StoryReader({ story, onNewStory, onBack }: Props) {
         style: story.style,
         length: story.length,
         hero: story.hero,
+        heroLook: story.heroLook,
         thumbnail: story.thumbnail,
       };
       await saveStory(saved);
@@ -113,8 +115,21 @@ export function StoryReader({ story, onNewStory, onBack }: Props) {
         >
           <BackIcon className="h-5 w-5" />
         </button>
+        {story.heroLook && (
+          // 主角站在插畫右下角；標題在插畫下方、返回鍵在左上，都不會被擋到
+          <HeroAvatar
+            look={story.heroLook}
+            size={150}
+            variant="figure"
+            className="pointer-events-none absolute bottom-2 right-5 drop-shadow-[0_2px_0_rgba(58,42,32,0.12)]"
+          />
+        )}
         {thumbUrl && (
-          <div className="absolute bottom-5 right-5 w-28 rotate-3 bg-card p-1.5 pb-4 shadow-lg">
+          <div
+            className={`absolute bottom-5 w-28 bg-card p-1.5 pb-4 shadow-lg ${
+              story.heroLook ? "left-5 -rotate-3" : "right-5 rotate-3"
+            }`}
+          >
             <span className="absolute -top-2 left-8 h-4 w-12 -rotate-3 bg-mustard/80" aria-hidden="true" />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={thumbUrl} alt="這個故事的照片" className="aspect-[4/3] w-full object-cover" />

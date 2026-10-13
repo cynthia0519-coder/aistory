@@ -3,15 +3,17 @@
 import { useEffect, useMemo, useState } from "react";
 import { AGE_RULES, LANGUAGE_LABELS, LENGTH_RULES } from "@aistory/shared";
 import { deleteStory, listStories, type SavedStory } from "@/lib/storage";
-import { TrashIcon } from "./icons";
+import { HeroAvatar } from "./HeroAvatar";
+import { StarIcon, TrashIcon } from "./icons";
 import { PrimaryButton } from "./ui";
 
 interface Props {
   onOpen: (story: SavedStory) => void;
   onCreate: () => void;
+  onShop: () => void;
 }
 
-export function Library({ onOpen, onCreate }: Props) {
+export function Library({ onOpen, onCreate, onShop }: Props) {
   const [stories, setStories] = useState<SavedStory[] | null>(null);
 
   useEffect(() => {
@@ -30,6 +32,14 @@ export function Library({ onOpen, onCreate }: Props) {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/scenes/home.jpg" alt="" className="absolute inset-0 h-full w-full object-cover object-[50%_35%]" />
         <div className="absolute inset-0 bg-gradient-to-b from-paper/0 via-paper/20 to-paper" />
+        <button
+          type="button"
+          onClick={onShop}
+          className="absolute right-4 top-[max(1rem,env(safe-area-inset-top))] flex h-11 items-center gap-1.5 rounded-full bg-card/90 px-4 text-sm font-bold text-rust-dark shadow-sm"
+        >
+          <StarIcon className="h-4 w-4" />
+          取得更多故事
+        </button>
         <div className="absolute bottom-2 left-4">
           <h1 className="font-display text-3xl font-bold tracking-widest text-teal">我的書櫃</h1>
           {stories && stories.length > 0 && (
@@ -95,6 +105,9 @@ function Cover({ story }: { story: SavedStory }) {
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={src} alt="" className="h-full w-full object-cover" />
       <span className="absolute bottom-2 left-2 rounded-lg bg-card px-2 py-0.5 text-[11px] font-bold">{meta}</span>
+      {!url && story.heroLook && (
+        <HeroAvatar look={story.heroLook} size={42} variant="bust" className="absolute left-2 top-2 rounded-full ring-2 ring-card drop-shadow-sm" />
+      )}
     </div>
   );
 }

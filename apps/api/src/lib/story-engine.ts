@@ -32,7 +32,7 @@ Story craft:
 - Show the lesson through actions; never state the moral or define words outright.
 - If the story ends with goodnight and the scene is daytime, add a transition (going home, evening falls) first.
 - Keep objects, who holds them, and character names consistent from start to finish. Use accurate animal sounds.
-- Stay within the requested length range.
+- Reach the requested length: follow the paragraph count and paragraph length you are given.
 
 The hero:
 - If a <hero> block is given, that child is the main character of the story, by that name. The photo is the world or the thing they meet; the child in the photo (if any) may be the hero.
@@ -87,7 +87,7 @@ function lengthLine(req: StoryRequest, min: number, max: number): string {
   const target = Math.round((lo + hi) / 2);
   const perParagraph = Math.round(PARAGRAPH_SIZE[req.ageBand][req.language] * k);
   const paragraphs = Math.round(target / perParagraph);
-  return `Length: ${lo}–${hi} ${unit} in total (read aloud in about ${LENGTH_RULES[req.length].label}). Write about ${paragraphs} paragraphs of roughly ${perParagraph} each, about ${target} in total. Do not stop early.`;
+  return `Length: ${lo}–${hi} ${unit} in total (read aloud in about ${LENGTH_RULES[req.length].label}). Write about ${paragraphs} paragraphs of roughly ${perParagraph} each, about ${target} in total. Do not end early; give the middle of the story more events and detail rather than padding the ending.`;
 }
 
 function buildInstructions(req: StoryRequest): string {
