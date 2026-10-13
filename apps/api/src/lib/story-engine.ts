@@ -80,8 +80,16 @@ const PARAGRAPH_SIZE: Record<AgeBand, Record<Language, number>> = {
 // 實測標點約佔 1.2 倍。給模型的數字換算成含標點的字數，模型寫出來的漢字數才會落在規則內。
 const ZH_WITH_PUNCTUATION = 1.2;
 
+// 低齡中文（短句、單一情節）實測只寫到要求的約 75%，而且目標調低它也跟著等比例縮短，
+// 所以只能在給模型的數字上補回來（docs/eval 報告 v6）。
+const LENGTH_BOOST: Partial<Record<AgeBand, Partial<Record<Language, number>>>> = {
+  "2-4": { zh: 1.35 },
+  "4-6": { zh: 1.35 },
+};
+
 function lengthLine(req: StoryRequest, min: number, max: number): string {
-  const k = req.language === "zh" ? ZH_WITH_PUNCTUATION : 1;
+  const k =
+    (req.language === "zh" ? ZH_WITH_PUNCTUATION : 1) * (LENGTH_BOOST[req.ageBand]?.[req.language] ?? 1);
   const unit = req.language === "zh" ? "Chinese characters including punctuation" : "words";
   const [lo, hi] = [Math.round(min * k), Math.round(max * k)];
   const target = Math.round((lo + hi) / 2);
