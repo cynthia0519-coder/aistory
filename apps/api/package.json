@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start -p 3001",
     "lint": "eslint",
-    "typecheck": "next typegen && tsc --noEmit"
+    "typecheck": "next typegen && tsc --noEmit",
+    "eval:story": "tsx eval/run.ts",
+    "test": "tsx --test eval/*.test.ts"
   },
   "dependencies": {
     "@aistory/shared": "*",
@@ -23,6 +25,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.0",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }
