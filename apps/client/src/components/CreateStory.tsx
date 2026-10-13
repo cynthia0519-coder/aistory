@@ -30,6 +30,8 @@ interface Props {
   /** 目前選的主角；null = 不設定主角，改用下面的年齡選項 */
   hero: HeroProfile | null;
   onEditHero: () => void;
+  /** 不拍照，改從故事庫挑 */
+  onBrowseLibrary: () => void;
 }
 
 const STYLE_DOT: Record<StoryStyle, string> = {
@@ -39,7 +41,7 @@ const STYLE_DOT: Record<StoryStyle, string> = {
   bedtime: "bg-sage",
 };
 
-export function CreateStory({ onCreated, hero, onEditHero }: Props) {
+export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary }: Props) {
   const [file, setFile] = useState<File | null>(null);
   const [preview, setPreview] = useState<string | null>(null);
   const [language, setLanguage] = useState<Language>("zh");
@@ -147,6 +149,14 @@ export function CreateStory({ onCreated, hero, onEditHero }: Props) {
           )}
           <input type="file" accept="image/*" className="sr-only" onChange={(e) => pick(e.target.files?.[0])} />
         </label>
+
+        <button
+          type="button"
+          onClick={onBrowseLibrary}
+          className="-mt-3 self-center px-3 py-2 text-sm font-bold text-teal underline decoration-line decoration-2 underline-offset-4"
+        >
+          不想拍照？從故事庫挑一個
+        </button>
 
         <div className="flex flex-col gap-2">
           <SectionTitle>故事主角</SectionTitle>

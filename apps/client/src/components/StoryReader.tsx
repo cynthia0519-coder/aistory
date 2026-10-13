@@ -13,9 +13,14 @@ interface Props {
   story: SavedStory;
   onNewStory: (story: SavedStory) => void;
   onBack: () => void;
+  /**
+   * 故事庫的故事不呼叫 API：給函式就把「再講一個」換成「下一個故事」，
+   * 給 null 就不顯示這個按鈕；不給（undefined）才是一般的「再講一個」
+   */
+  onNext?: (() => void) | null;
 }
 
-export function StoryReader({ story, onNewStory, onBack }: Props) {
+export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
   /** 正在念的段落；-1 代表標題，null 代表沒在念 */
   const [current, setCurrent] = useState<number | null>(null);
   const [loading, setLoading] = useState(false);
@@ -177,10 +182,19 @@ export function StoryReader({ story, onNewStory, onBack }: Props) {
           ))}
         </div>
         <div className="mt-3 flex items-center justify-between">
-          <button type="button" onClick={another} disabled={loading} className="flex h-11 items-center gap-1.5 px-1 text-sm font-bold disabled:opacity-40">
-            <RepeatIcon className="h-5 w-5" />
-            再講一個
-          </button>
+          {onNext === null ? (
+            <span className="w-20" aria-hidden="true" />
+          ) : (
+            <button
+              type="button"
+              onClick={onNext ?? another}
+              disabled={loading}
+              className="flex h-11 items-center gap-1.5 px-1 text-sm font-bold disabled:opacity-40"
+            >
+              <RepeatIcon className="h-5 w-5" />
+              {onNext ? "下一個故事" : "再講一個"}
+            </button>
+          )}
           {narrator.isSupported() && (
             <button
               type="button"

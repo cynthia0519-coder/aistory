@@ -1,0 +1,58 @@
+[
+  {
+    "id": "lantern-for-the-moon",
+    "style": "bedtime",
+    "ageBands": ["2-4", "4-6"],
+    "setting": "night_sky",
+    "premise": "The moon feels a little lonely, so {name} and a sleepy firefly carry a tiny paper lantern up a hill to say goodnight. One by one, the stars switch on to keep the moon company."
+  },
+  {
+    "id": "whispering-snow-library",
+    "style": "bedtime",
+    "ageBands": ["6-8", "8-10"],
+    "setting": "snow",
+    "premise": "On a snowy evening, {name} helps an old snow owl return borrowed dreams to a library hidden inside a snowdrift, shelving each glowing dream before everyone in town falls asleep."
+  },
+  {
+    "id": "zoo-hiccup-parade",
+    "style": "cute",
+    "ageBands": ["2-4", "4-6"],
+    "setting": "zoo",
+    "premise": "A baby elephant at the zoo has the hiccups, and every hiccup makes a funny sound. {name} and the zookeeper try gentle tricks with the other animals until a giggle finally chases the hiccups away."
+  },
+  {
+    "id": "the-sock-that-ran-away",
+    "style": "cute",
+    "ageBands": ["6-8", "8-10"],
+    "setting": "home",
+    "premise": "One striped sock is missing on laundry day, and {name} follows a trail of tiny clues around the house to discover the sock has been on a cozy adventure with the cat."
+  },
+  {
+    "id": "first-day-paper-boat",
+    "style": "inspiring",
+    "ageBands": ["2-4", "4-6"],
+    "setting": "school",
+    "premise": "On {his} first day at a new school, {name} feels too shy to say hello, but a folded paper boat and a classmate who also feels shy help {him} find a first friend."
+  },
+  {
+    "id": "the-mountain-of-small-steps",
+    "style": "inspiring",
+    "ageBands": ["6-8", "8-10"],
+    "setting": "mountain",
+    "premise": "{name} wants to reach the lookout at the top of a mountain trail with Grandpa, and when the path gets steep, {name} learns to count small steps and notice the little wonders along the way."
+  },
+  {
+    "id": "the-puddle-that-was-a-sea",
+    "style": "adventure",
+    "ageBands": ["2-4", "4-6"],
+    "setting": "park",
+    "premise": "After the rain, {name} and Mom find a big puddle in the park. A leaf becomes a ship, a pebble becomes an island, and a little snail joins the voyage."
+  },
+  {
+    "id": "map-in-the-message-bottle",
+    "style": "adventure",
+    "ageBands": ["6-8", "8-10"],
+    "setting": "sea",
+    "premise": "While building sandcastles with Dad, {name} finds a bottle holding a hand-drawn map. Following the clues along the beach leads to a box of shells and a note from a child who hid it years ago, asking the finder to add a treasure of their own."
+  }
+]
