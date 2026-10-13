@@ -1,14 +1,17 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { AGE_RULES, LANGUAGE_LABELS } from "@aistory/shared";
+import { AGE_RULES, LANGUAGE_LABELS, LENGTH_RULES } from "@aistory/shared";
 import { deleteStory, listStories, type SavedStory } from "@/lib/storage";
+import { TrashIcon } from "./icons";
+import { PrimaryButton } from "./ui";
 
 interface Props {
   onOpen: (story: SavedStory) => void;
+  onCreate: () => void;
 }
 
-export function Library({ onOpen }: Props) {
+export function Library({ onOpen, onCreate }: Props) {
   const [stories, setStories] = useState<SavedStory[] | null>(null);
 
   useEffect(() => {
@@ -21,43 +24,77 @@ export function Library({ onOpen }: Props) {
     setStories((s) => s?.filter((x) => x.id !== id) ?? null);
   }
 
-  if (!stories) return null;
-  if (stories.length === 0) {
-    return <p className="py-16 text-center text-stone-500">還沒有故事，先去編一個吧！</p>;
-  }
-
   return (
-    <ul className="flex flex-col gap-3">
-      {stories.map((s) => (
-        <li key={s.id} className="flex items-center gap-3 rounded-2xl bg-white p-3 ring-1 ring-stone-200">
-          <button onClick={() => onOpen(s)} className="flex flex-1 items-center gap-3 text-left">
-            <Thumb blob={s.thumbnail} />
-            <div className="min-w-0">
-              <p className="truncate font-semibold">{s.title}</p>
-              <p className="text-sm text-stone-500">
-                {LANGUAGE_LABELS[s.language]} · {AGE_RULES[s.ageBand].label} ·{" "}
-                {new Date(s.createdAt).toLocaleDateString()}
-              </p>
-            </div>
-          </button>
-          <button onClick={() => remove(s.id)} aria-label="刪除" className="p-2 text-stone-400">
-            🗑
-          </button>
-        </li>
-      ))}
-    </ul>
+    <div className="flex flex-col">
+      <header className="relative h-40 overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/scenes/home.jpg" alt="" className="absolute inset-0 h-full w-full object-cover object-[50%_35%]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-paper/0 via-paper/20 to-paper" />
+        <div className="absolute bottom-2 left-4">
+          <h1 className="font-display text-3xl font-bold tracking-widest text-teal">我的書櫃</h1>
+          {stories && stories.length > 0 && (
+            <p className="text-sm text-ink-soft">{stories.length} 個故事，沒有網路也能聽</p>
+          )}
+        </div>
+      </header>
+
+      {stories && stories.length === 0 && (
+        <div className="flex flex-col items-center gap-5 px-8 pt-8 text-center">
+          <p className="font-display text-xl leading-relaxed">
+            書櫃還是空的
+            <br />
+            拍一張照片，編第一個故事吧
+          </p>
+          <div className="w-full">
+            <PrimaryButton onClick={onCreate}>去編故事</PrimaryButton>
+          </div>
+        </div>
+      )}
+
+      {stories && stories.length > 0 && (
+        <ul className="grid grid-cols-2 gap-x-4 gap-y-5 px-4 pt-4">
+          {stories.map((s) => (
+            <li key={s.id} className="relative">
+              <button type="button" onClick={() => onOpen(s)} className="flex w-full flex-col gap-2 text-left">
+                <Cover story={s} />
+                <span className="line-clamp-2 font-display text-base font-bold leading-snug">{s.title}</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => remove(s.id)}
+                aria-label={`刪除「${s.title}」`}
+                className="absolute right-1 top-1 flex h-9 w-9 items-center justify-center rounded-full bg-card/90 text-ink-soft"
+              >
+                <TrashIcon className="h-4 w-4" />
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
   );
 }
 
-function Thumb({ blob }: { blob?: Blob }) {
-  const url = useMemo(() => (blob ? URL.createObjectURL(blob) : null), [blob]);
+// 封面：有照片縮圖用照片，舊故事沒有就用場景插畫
+function Cover({ story }: { story: SavedStory }) {
+  const url = useMemo(() => (story.thumbnail ? URL.createObjectURL(story.thumbnail) : null), [story.thumbnail]);
   useEffect(() => () => {
     if (url) URL.revokeObjectURL(url);
   }, [url]);
-  return url ? (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img src={url} alt="" className="h-16 w-16 shrink-0 rounded-xl object-cover" />
-  ) : (
-    <div className="h-16 w-16 shrink-0 rounded-xl bg-amber-100" />
+  const src = url ?? `/scenes/${story.setting ?? "park"}.jpg`;
+  const meta = [
+    LANGUAGE_LABELS[story.language] === "中文" ? "中" : "EN",
+    AGE_RULES[story.ageBand].label,
+    story.length ? LENGTH_RULES[story.length].label : null,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+
+  return (
+    <div className="relative aspect-[4/3] overflow-hidden rounded-l-sm rounded-r-2xl border-l-8 border-ink/25 shadow-md">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={src} alt="" className="h-full w-full object-cover" />
+      <span className="absolute bottom-2 left-2 rounded-lg bg-card px-2 py-0.5 text-[11px] font-bold">{meta}</span>
+    </div>
   );
 }
