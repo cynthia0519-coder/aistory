@@ -74,7 +74,8 @@ function buildInstructions(req: StoryRequest): string {
     `Audience age: ${age.label}.`,
     `Age style: ${age.style}`,
     `Story type: ${STYLE_RULES[req.style].prompt}`,
-    `Length: ${min}–${max} ${unit} in total (read aloud in about ${LENGTH_RULES[req.length].label}).`,
+    // 評測發現中文常寫不到下限，給明確目標值比只給範圍準
+    `Length: ${min}–${max} ${unit} in total, aim for about ${Math.round((min + max) / 2)} (read aloud in about ${LENGTH_RULES[req.length].label}).`,
     req.language === "zh"
       ? "Write the title and story in Traditional Chinese (繁體中文, Taiwan usage)."
       : "Write the title and story in simple, natural English.",
