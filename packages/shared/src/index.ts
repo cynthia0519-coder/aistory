@@ -42,7 +42,7 @@ export const AGE_RULES: Record<AgeBand, AgeRule> = {
   "8-10": {
     label: "8–10 歲",
     style:
-      "Rich, precise vocabulary that stretches a 9-year-old: vivid verbs, a few less common words made clear by context, and in Chinese some fitting idioms (成語). Mix short punchy sentences with longer ones. A clear plot with a twist, light humor, and a character who grows.",
+      "Rich, precise vocabulary that stretches a 9-year-old: vivid verbs, a few less common words made clear by context, and in Chinese some fitting idioms (成語). Mix short punchy sentences with longer ones. A clear plot with a surprise the reader discovers (never announce it as 'the twist' or 'the surprise' in the text), light humor, and a character who grows.",
     fontClass: "text-base leading-relaxed",
   },
 };
