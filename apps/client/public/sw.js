@@ -1,9 +1,9 @@
-// 網頁版離線支援：快取 App 外殼，離線時仍可開啟並閱讀本地書櫃。
+// 網頁版離線支援：快取 App 外殼與故事庫，離線時仍可開啟並閱讀本地書櫃與故事庫。
 // 打包成 App（Capacitor）時檔案已在裝置上，不依賴這支。
 const CACHE = "aistory-v1";
 
 self.addEventListener("install", (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(["/", "/manifest.webmanifest"])));
+  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(["/", "/manifest.webmanifest", "/library/stories.json"])));
   self.skipWaiting();
 });
 

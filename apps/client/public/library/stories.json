@@ -1,0 +1,70 @@
+[
+  {
+    "id": "goodnight-little-cloud",
+    "style": "bedtime",
+    "ageBands": [
+      "2-4",
+      "4-6"
+    ],
+    "setting": "night_sky",
+    "title": {
+      "zh": "{name}和小雲朵說晚安",
+      "en": "{name} Says Goodnight to Little Cloud"
+    },
+    "paragraphs": {
+      "zh": [
+        "天黑了，窗外的天空變成深深的藍色。{name}抱著軟軟的枕頭，看見一朵小雲朵飄呀飄，飄到窗戶前面。「你好，小雲朵。」{name}輕輕地說。",
+        "小雲朵打了一個大大的呵欠：「呼——我好睏，可是我不知道要睡在哪裡。」{name}想了想，說：「我們一起找一找吧。」",
+        "{name}和小雲朵先去問月亮。月亮笑咪咪地說：「我要整晚亮亮的，照著大家回家。你可以在我旁邊休息一下。」小雲朵靠一靠，可是月亮太亮了，眼睛閉不起來。",
+        "{name}和小雲朵又去問星星。星星一閃、一閃、又一閃：「我們要眨眼睛，跟大家說晚安。」小雲朵也眨呀眨，眨得頭都暈了，還是睡不著。",
+        "{name}拍拍{his}被子：「小雲朵，你看，被子軟軟的，就像你一樣。」小雲朵慢慢飄下來，變得好小好小，像一團白白的棉花。",
+        "{he}把小雲朵放在枕頭旁邊。風輕輕吹，呼——呼——；蟲兒輕輕唱，唧——唧——。小雲朵蹭了蹭{him}，呼吸也慢了下來。",
+        "「晚安，月亮。晚安，星星。晚安，小雲朵。」{name}小聲地說。媽媽走進來，親了親{name}的額頭。窗外的天空靜悄悄，{name}也慢慢閉上眼睛，睡著了。"
+      ],
+      "en": [
+        "It is getting dark, and the sky outside turns deep, deep blue. {name} hugs a soft pillow and sees a little cloud drifting, drifting, all the way to the window. \"Hello, Little Cloud,\" {name} whispers.",
+        "Little Cloud gives a big, big yawn. \"Hoo-oo... I'm so sleepy, but I don't know where to sleep.\" {name} thinks for a moment. \"Let's look together.\"",
+        "First, {name} and Little Cloud ask the moon. The moon smiles. \"I shine all night to light the way home. You can rest beside me.\" Little Cloud snuggles close, but the moon is too bright for sleepy eyes.",
+        "Next, {name} and Little Cloud ask the stars. Twinkle, twinkle, twinkle. \"We blink to say goodnight to everyone,\" the stars sing. Little Cloud blinks and blinks until it feels dizzy, but it still can't sleep.",
+        "{name} pats {his} blanket. \"Look, Little Cloud. My blanket is soft, just like you.\" Little Cloud floats down slowly and grows small, small, small, like a fluffy ball of cotton.",
+        "{he} tucks Little Cloud beside the pillow. The wind sighs, whoo, whoo. The crickets sing, chirp, chirp. Little Cloud nuzzles {him} and breathes slow and soft.",
+        "\"Sleep well, bright moon. Sleep well, little stars. Sleep well, Little Cloud,\" {name} whispers. Mom comes in and kisses {name} on the forehead. The sky outside is quiet now, and {name} closes {his} eyes and falls asleep."
+      ]
+    },
+    "draft": true
+  },
+  {
+    "id": "leaf-map-in-the-forest",
+    "style": "adventure",
+    "ageBands": [
+      "6-8",
+      "8-10"
+    ],
+    "setting": "forest",
+    "title": {
+      "zh": "{name}和森林裡的葉子地圖",
+      "en": "{name} and the Leaf Map"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期六早上，{name}和奶奶到森林裡散步。陽光從樹葉之間灑下來，地上一閃一閃的。走到一棵大橡樹下，{name}撿到一片大葉子，上面用細細的樹枝刻著彎彎的小路、三個記號，還有一個小小的叉叉。",
+        "「這是藏寶圖嗎？」{name}興奮地問。奶奶戴上眼鏡看了看：「看起來是有人很用心畫的。我們跟著走走看，可是要走在步道上，而且要一直待在奶奶看得到的地方。」{name}用力點點頭，把地圖拿得穩穩的。",
+        "第一個記號是一根空心的木頭。{name}對著洞口喊：「哈囉——」木頭裡傳回來：「哈囉——哈囉——」原來是回音！木頭旁邊的泥土上，有一排小小的腳印一路往前跑，好像在說：「這邊、這邊。」",
+        "第二個記號是一條小溪。溪上有一座木頭小橋，{name}牽著奶奶的手慢慢走過去，橋下的水嘩啦嘩啦地唱歌。橋的另一邊，三顆圓圓的橡實排成一個箭頭，指向一塊長滿青苔的大石頭。",
+        "第三個記號就是那塊大石頭。{name}蹲下來仔細看，石頭後面有一隻小松鼠，尾巴縮成一團，正在發抖，旁邊放著一小堆橡實。{name}想起地圖上的叉叉，忽然明白了：「這不是藏寶圖，是小松鼠回家的地圖！」",
+        "奶奶小聲說：「牠可能迷路了，又把地圖弄掉了。」{name}把葉子地圖輕輕放在小松鼠面前，再退後兩步，安安靜靜地等。小松鼠聞一聞地圖，抬頭看了{him}一眼，叼起一顆橡實，咻地爬上旁邊的大樹，正是叉叉畫的地方。",
+        "樹洞裡探出兩顆小腦袋，吱吱吱地叫個不停，好像在開歡迎會。{name}和奶奶相視一笑。回家的路上，{name}撿起一片新的葉子：「下次我也要畫一張地圖，送給下一個迷路的朋友。」奶奶摸摸{his}頭：「那一定是最棒的寶藏。」"
+      ],
+      "en": [
+        "On Saturday morning, {name} and Grandma went for a walk in the forest. Sunlight sprinkled through the leaves and made the ground sparkle. Under a big oak tree, {name} found a wide leaf with a map scratched onto it: a twisty path, three little marks, and a tiny X.",
+        "\"Is this a treasure map?\" {name} asked. Grandma put on her glasses. \"Someone worked hard on this. Let's follow it, but we stay on the trail, and you stay where I can see you.\" {name} nodded and held the map steady.",
+        "The first mark was a hollow log. {name} leaned close and called, \"Hello-o!\" The log called back, \"Hello-o... hello-o...\" An echo! In the mud beside it, a row of tiny footprints raced ahead, as if saying, \"This way, this way.\"",
+        "The second mark was a little stream with a wooden bridge. {name} held Grandma's hand and crossed slowly while the water splashed and sang below. On the other side, three round acorns lay in a row, shaped like an arrow pointing to a big, mossy rock.",
+        "The third mark was the rock itself. {name} crouched down for a closer look. Behind it sat a small squirrel, its tail curled tight, shivering beside a little pile of acorns. {name} thought of the X and suddenly understood. \"It's not a treasure map. It's a map home!\"",
+        "\"It must have gotten lost and dropped its map,\" Grandma said softly. {name} set the leaf gently in front of the squirrel, took two steps back, and waited quietly. The squirrel sniffed the map, glanced up at {him}, grabbed an acorn, and zipped up the nearest tree, right where the X was drawn.",
+        "Two tiny heads popped out of a hole in the tree, chattering like a welcome-home party. {name} and Grandma smiled at each other. On the way home, {name} picked up a fresh leaf. \"Next time, I'll draw a map too, for the next friend who gets lost.\" Grandma patted {his} head. \"That will be the best treasure of all.\""
+      ]
+    },
+    "draft": true
+  }
+]

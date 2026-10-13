@@ -8,7 +8,8 @@
     "start": "next start -p 3001",
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
-    "eval": "tsx eval/story-quality.ts"
+    "eval": "tsx eval/story-quality.ts",
+    "library:generate": "tsx scripts/generate-library.ts"
   },
   "dependencies": {
     "@aistory/shared": "*",

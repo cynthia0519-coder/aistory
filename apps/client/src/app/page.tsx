@@ -7,20 +7,24 @@ import { Shop } from "@/components/Shop";
 import { BooksIcon, StarIcon } from "@/components/icons";
 import { Library } from "@/components/Library";
 import { StoryReader } from "@/components/StoryReader";
+import type { LibraryStory } from "@aistory/shared";
 import { getSelectedHero, type HeroProfile } from "@/lib/heroes";
+import { toReadableStory, type LibraryPrefs } from "@/lib/library";
 import { requestPersistence, type SavedStory } from "@/lib/storage";
 
 // 單頁、用狀態切畫面：不用動態路由，才能靜態輸出並打包成 App。
 type View =
   | { name: "create" }
   | { name: "library" }
-  | { name: "read"; story: SavedStory }
+  // 故事庫的故事帶著目前篩選的清單，「下一個故事」照順序往下讀
+  | { name: "read"; story: SavedStory; library?: { list: LibraryStory[]; index: number } }
   | { name: "hero" }
   | { name: "shop" };
 
 export default function Home() {
   const [view, setView] = useState<View>({ name: "create" });
   const [hero, setHero] = useState<HeroProfile | null>(null);
+  const [libraryPrefs, setLibraryPrefs] = useState<LibraryPrefs>({ tab: "mine", language: "zh", age: null });
 
   useEffect(() => {
     requestPersistence();
@@ -35,6 +39,17 @@ export default function Home() {
   const read = (story: SavedStory) => setView({ name: "read", story });
   const create = () => setView({ name: "create" });
   const library = () => setView({ name: "library" });
+  const browseLibrary = () => {
+    setLibraryPrefs((p) => ({ ...p, tab: "library" }));
+    library();
+  };
+  // 故事庫故事在裝置上換好名字，只在記憶體裡，不存進 IndexedDB
+  const readLibrary = (list: LibraryStory[], index: number) =>
+    setView({
+      name: "read",
+      story: toReadableStory(list[index], libraryPrefs.language, hero),
+      library: { list, index },
+    });
 
   // 換畫面時回到頂端（編故事頁在主角頁時只是隱藏，不會重置）
   useEffect(() => {
@@ -43,9 +58,18 @@ export default function Home() {
 
   // 讀故事頁有自己的播放列，不顯示底部導覽
   if (view.name === "read") {
+    const lib = view.library;
     return (
       <div className="mx-auto w-full max-w-md bg-paper">
-        <StoryReader key={view.story.id} story={view.story} onNewStory={read} onBack={library} />
+        <StoryReader
+          key={view.story.id}
+          story={view.story}
+          onNewStory={read}
+          onBack={library}
+          onNext={
+            !lib ? undefined : lib.list.length > 1 ? () => readLibrary(lib.list, (lib.index + 1) % lib.list.length) : null
+          }
+        />
       </div>
     );
   }
@@ -58,7 +82,12 @@ export default function Home() {
         {/* 設定主角時保留編故事頁的狀態（已選的照片、風格），所以只隱藏不卸載 */}
         {(view.name === "create" || view.name === "hero") && (
           <div hidden={view.name !== "create"}>
-            <CreateStory onCreated={read} hero={hero} onEditHero={() => setView({ name: "hero" })} />
+            <CreateStory
+              onCreated={read}
+              hero={hero}
+              onEditHero={() => setView({ name: "hero" })}
+              onBrowseLibrary={browseLibrary}
+            />
           </div>
         )}
         {view.name === "hero" && (
@@ -71,7 +100,15 @@ export default function Home() {
           />
         )}
         {view.name === "library" && (
-          <Library onOpen={read} onCreate={create} onShop={() => setView({ name: "shop" })} />
+          <Library
+            prefs={libraryPrefs}
+            onPrefs={setLibraryPrefs}
+            hero={hero}
+            onOpen={read}
+            onOpenLibrary={readLibrary}
+            onCreate={create}
+            onShop={() => setView({ name: "shop" })}
+          />
         )}
         {view.name === "shop" && <Shop onBack={library} />}
       </main>

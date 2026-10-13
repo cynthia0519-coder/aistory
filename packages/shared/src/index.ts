@@ -193,3 +193,97 @@ export interface StoryResponse {
 export interface ApiError {
   error: string;
 }
+
+// ---- 故事庫：人工審過、隨 App 打包的故事。在裝置上換成主角名字與代名詞，不花 LLM token ----
+// 第二版的「KTV 模式」會讓爸媽一段一段錄音，所以段落是基本單位，中英文段落數必須一致。
+
+/** 故事庫文字裡唯一允許的代換標記 */
+export const LIBRARY_TOKENS = ["{name}", "{he}", "{him}", "{his}"] as const;
+export type LibraryToken = (typeof LIBRARY_TOKENS)[number];
+
+/** 沒選主角時用的預設名字（性別不指定） */
+export const LIBRARY_DEFAULT_NAME: Record<Language, string> = { zh: "小寶", en: "Bo" };
+
+const TOKEN_PATTERN = /\{[^{}]*\}/g;
+
+/** 回傳文字中不被允許的 {...} 標記 */
+export function invalidLibraryTokens(text: string): string[] {
+  return (text.match(TOKEN_PATTERN) ?? []).filter((t) => !(LIBRARY_TOKENS as readonly string[]).includes(t));
+}
+
+const LibraryText = z
+  .string()
+  .trim()
+  .min(1)
+  .refine((s) => invalidLibraryTokens(s).length === 0, {
+    message: `only ${LIBRARY_TOKENS.join(" ")} tokens are allowed`,
+  });
+
+const Bilingual = <T extends z.ZodType>(schema: T) => z.object({ zh: schema, en: schema });
+
+/** 不含整體檢查的欄位定義；生成器用它 omit 掉 id / draft 等欄位 */
+export const LibraryStoryFieldsSchema = z.object({
+  /** kebab-case slug，例如 "moon-blanket" */
+  id: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
+  style: z.enum(STORY_STYLES),
+  ageBands: z.array(z.enum(AGE_BANDS)).min(1),
+  setting: z.enum(STORY_SETTINGS),
+  title: Bilingual(LibraryText),
+  paragraphs: Bilingual(z.array(LibraryText).min(1)),
+  /** 背景音樂檔名（選填，之後再加） */
+  bgm: z.string().optional(),
+  /** true = 還沒人工審過 */
+  draft: z.boolean(),
+});
+
+export const LibraryStorySchema = LibraryStoryFieldsSchema.refine(
+  (s) => s.paragraphs.zh.length === s.paragraphs.en.length,
+  { message: "zh and en must have the same number of paragraphs", path: ["paragraphs"] },
+);
+export type LibraryStory = z.infer<typeof LibraryStorySchema>;
+
+export interface LibraryHero {
+  name: string;
+  gender: Gender;
+}
+
+type PronounToken = "he" | "him" | "his";
+
+function pronouns(language: Language, name: string, gender: Gender): Record<PronounToken, string> {
+  if (language === "zh") {
+    if (gender === "boy") return { he: "他", him: "他", his: "他的" };
+    if (gender === "girl") return { he: "她", him: "她", his: "她的" };
+    return { he: name, him: name, his: `${name}的` };
+  }
+  if (gender === "boy") return { he: "he", him: "him", his: "his" };
+  if (gender === "girl") return { he: "she", him: "her", his: "her" };
+  return { he: name, him: name, his: `${name}'s` };
+}
+
+/** 段落開頭，或句尾標點（可接收尾引號）加空白，之後可以有開頭引號 */
+const SENTENCE_START = /(?:^|[.!?…]["'”’)]?\s+)["'“‘(]?$/;
+
+function fillTokens(text: string, language: Language, name: string, words: Record<PronounToken, string>): string {
+  return text.replace(/\{(name|he|him|his)\}/g, (_, token: "name" | PronounToken, offset: number) => {
+    const value = token === "name" ? name : words[token];
+    if (language === "en" && SENTENCE_START.test(text.slice(0, offset))) {
+      return value.charAt(0).toUpperCase() + value.slice(1);
+    }
+    return value;
+  });
+}
+
+/** 把故事庫故事換成指定語言與主角；沒給主角就用預設名字、不指定性別 */
+export function renderLibraryStory(
+  story: Pick<LibraryStory, "title" | "paragraphs">,
+  language: Language,
+  hero?: LibraryHero,
+): { title: string; paragraphs: string[] } {
+  const name = hero?.name.trim() || LIBRARY_DEFAULT_NAME[language];
+  const gender = hero ? hero.gender : "unspecified";
+  const words = pronouns(language, name, gender);
+  return {
+    title: fillTokens(story.title[language], language, name, words),
+    paragraphs: story.paragraphs[language].map((p) => fillTokens(p, language, name, words)),
+  };
+}
