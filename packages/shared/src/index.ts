@@ -85,12 +85,35 @@ export const STYLE_RULES: Record<StoryStyle, { label: string; hint: string; prom
 };
 
 // ---- 故事長度：以朗讀時間換算字數（中文以字計，英文以 word 計）----
+// 同樣的朗讀時間，年紀越小念得越慢、篇幅也該越短；所以字數依年齡層設定。
+// 依據：docs/eval 品質測試（2026-10-13 v3），全年齡共用一組字數時，2–4 歲寫不到下限、8–10 歲情節被壓淺。
 export const STORY_LENGTHS = ["3min", "10min"] as const;
 export type StoryLength = (typeof STORY_LENGTHS)[number];
 
-export const LENGTH_RULES: Record<StoryLength, { label: string; words: Record<Language, readonly [number, number]> }> = {
-  "3min": { label: "3 分鐘", words: { zh: [500, 700], en: [300, 420] } },
-  "10min": { label: "10 分鐘", words: { zh: [1700, 2200], en: [1000, 1300] } },
+type WordRange = readonly [number, number];
+
+export const LENGTH_RULES: Record<
+  StoryLength,
+  { label: string; words: Record<AgeBand, Record<Language, WordRange>> }
+> = {
+  "3min": {
+    label: "3 分鐘",
+    words: {
+      "2-4": { zh: [250, 400], en: [150, 250] },
+      "4-6": { zh: [400, 550], en: [250, 350] },
+      "6-8": { zh: [500, 700], en: [300, 420] },
+      "8-10": { zh: [600, 800], en: [380, 500] },
+    },
+  },
+  "10min": {
+    label: "10 分鐘",
+    words: {
+      "2-4": { zh: [800, 1100], en: [500, 700] },
+      "4-6": { zh: [1200, 1600], en: [750, 1000] },
+      "6-8": { zh: [1700, 2200], en: [1000, 1300] },
+      "8-10": { zh: [1900, 2400], en: [1150, 1450] },
+    },
+  },
 };
 
 // ---- 主角（只存在裝置上，送到 API 只用於這一次生成）----

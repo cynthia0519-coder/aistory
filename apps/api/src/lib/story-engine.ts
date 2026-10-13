@@ -6,7 +6,9 @@ import {
   STORY_SETTINGS,
   STYLE_RULES,
   StoryOutputSchema,
+  type AgeBand,
   type Hero,
+  type Language,
   type StoryOutput,
   type StoryRequest,
 } from "@aistory/shared";
@@ -65,17 +67,38 @@ function heroBlock(hero: Hero): string {
     .join("\n");
 }
 
+// 每段大約多長（中文字／英文 word）。評測發現模型估總字數會偏少，
+// 改用「幾段 × 每段多長」描述，模型比較抓得準。
+const PARAGRAPH_SIZE: Record<AgeBand, Record<Language, number>> = {
+  "2-4": { zh: 40, en: 25 },
+  "4-6": { zh: 60, en: 40 },
+  "6-8": { zh: 80, en: 50 },
+  "8-10": { zh: 100, en: 60 },
+};
+
+// LENGTH_RULES 的中文以「漢字」計（朗讀時間只跟漢字有關），但模型數字數時會把標點算進去，
+// 實測標點約佔 1.2 倍。給模型的數字換算成含標點的字數，模型寫出來的漢字數才會落在規則內。
+const ZH_WITH_PUNCTUATION = 1.2;
+
+function lengthLine(req: StoryRequest, min: number, max: number): string {
+  const k = req.language === "zh" ? ZH_WITH_PUNCTUATION : 1;
+  const unit = req.language === "zh" ? "Chinese characters including punctuation" : "words";
+  const [lo, hi] = [Math.round(min * k), Math.round(max * k)];
+  const target = Math.round((lo + hi) / 2);
+  const perParagraph = Math.round(PARAGRAPH_SIZE[req.ageBand][req.language] * k);
+  const paragraphs = Math.round(target / perParagraph);
+  return `Length: ${lo}–${hi} ${unit} in total (read aloud in about ${LENGTH_RULES[req.length].label}). Write about ${paragraphs} paragraphs of roughly ${perParagraph} each, about ${target} in total. Do not stop early.`;
+}
+
 function buildInstructions(req: StoryRequest): string {
   const age = AGE_RULES[req.ageBand];
-  const [min, max] = LENGTH_RULES[req.length].words[req.language];
-  const unit = req.language === "zh" ? "Chinese characters" : "words";
+  const [min, max] = LENGTH_RULES[req.length].words[req.ageBand][req.language];
 
   return [
     `Audience age: ${age.label}.`,
     `Age style: ${age.style}`,
     `Story type: ${STYLE_RULES[req.style].prompt}`,
-    // 評測發現中文常寫不到下限，給明確目標值比只給範圍準
-    `Length: ${min}–${max} ${unit} in total, aim for about ${Math.round((min + max) / 2)} (read aloud in about ${LENGTH_RULES[req.length].label}).`,
+    lengthLine(req, min, max),
     req.language === "zh"
       ? "Write the title and story in Traditional Chinese (繁體中文, Taiwan usage)."
       : "Write the title and story in simple, natural English.",

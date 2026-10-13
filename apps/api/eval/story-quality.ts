@@ -101,9 +101,9 @@ function difficulty(story: StoryOutput, lang: Language) {
   return { avgSentence: wps, fkGrade: 0.39 * wps + 11.8 * (syl / words.length) - 15.59 };
 }
 
-function ruleChecks(story: StoryOutput, lang: Language, scene: string) {
+function ruleChecks(story: StoryOutput, age: AgeBand, lang: Language, scene: string) {
   const fails: string[] = [];
-  const [min, max] = LENGTH_RULES[LENGTH].words[lang];
+  const [min, max] = LENGTH_RULES[LENGTH].words[age][lang];
   const len = measure(story, lang);
   if (len < min * (1 - LENGTH_TOLERANCE) || len > max * (1 + LENGTH_TOLERANCE)) {
     fails.push(`length ${len} outside ${min}–${max}`);
@@ -186,7 +186,7 @@ async function runCase(model: string, age: AgeBand, lang: Language, sceneIdx: nu
       { model },
     );
     const ms = Date.now() - t0;
-    const rc = ruleChecks(story, lang, scene);
+    const rc = ruleChecks(story, age, lang, scene);
     const j = await judge(story, age, lang, scene);
     const minScore = Math.min(...SCORE_KEYS.map((k) => j.judge[k]));
     return {
