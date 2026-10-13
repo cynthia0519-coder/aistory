@@ -18,14 +18,23 @@ export interface SavedStory extends Omit<StoryOutput, "setting"> {
 
 const DB_NAME = "aistory";
 const STORE = "stories";
+/** 主角資料（lib/heroes.ts 使用） */
+export const HERO_STORE = "heroes";
 
 let dbPromise: Promise<IDBPDatabase> | null = null;
 
-function db() {
-  dbPromise ??= openDB(DB_NAME, 1, {
-    upgrade(database) {
-      const store = database.createObjectStore(STORE, { keyPath: "id" });
-      store.createIndex("createdAt", "createdAt");
+// 版本 1：stories；版本 2：加上 heroes。升級時只補缺的 store，不動舊資料
+export function db() {
+  dbPromise ??= openDB(DB_NAME, 2, {
+    upgrade(database, oldVersion) {
+      if (oldVersion < 1) {
+        const store = database.createObjectStore(STORE, { keyPath: "id" });
+        store.createIndex("createdAt", "createdAt");
+      }
+      if (oldVersion < 2 && !database.objectStoreNames.contains(HERO_STORE)) {
+        const heroes = database.createObjectStore(HERO_STORE, { keyPath: "id" });
+        heroes.createIndex("createdAt", "createdAt");
+      }
     },
   });
   return dbPromise;

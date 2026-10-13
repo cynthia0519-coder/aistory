@@ -4,6 +4,7 @@ import { useState } from "react";
 import {
   AGE_BANDS,
   AGE_RULES,
+  ageBandFor,
   LANGUAGES,
   LANGUAGE_LABELS,
   LENGTH_RULES,
@@ -18,12 +19,17 @@ import {
 import { prepareImage } from "@/lib/image";
 import { requestStory, StoryApiError } from "@/lib/api";
 import { saveStory, type SavedStory } from "@/lib/storage";
-import { CameraIcon } from "./icons";
+import { heroSummary, toHero, type HeroProfile } from "@/lib/heroes";
+import { Avatar } from "./HeroEditor";
+import { CameraIcon, PlusIcon } from "./icons";
 import { StoryLoading } from "./StoryLoading";
 import { Chip, PrimaryButton, SectionTitle } from "./ui";
 
 interface Props {
   onCreated: (story: SavedStory) => void;
+  /** 目前選的主角；null = 不設定主角，改用下面的年齡選項 */
+  hero: HeroProfile | null;
+  onEditHero: () => void;
 }
 
 const STYLE_DOT: Record<StoryStyle, string> = {
@@ -33,11 +39,13 @@ const STYLE_DOT: Record<StoryStyle, string> = {
   bedtime: "bg-sage",
 };
 
-export function CreateStory({ onCreated }: Props) {
+export function CreateStory({ onCreated, hero, onEditHero }: Props) {
   const [file, setFile] = useState<File | null>(null);
   const [preview, setPreview] = useState<string | null>(null);
   const [language, setLanguage] = useState<Language>("zh");
-  const [ageBand, setAgeBand] = useState<AgeBand>("4-6");
+  const [pickedAgeBand, setAgeBand] = useState<AgeBand>("4-6");
+  // 有主角就用主角年齡換算年齡層（API 也會檢查兩者一致）
+  const ageBand = hero ? ageBandFor(hero.age) : pickedAgeBand;
   const [style, setStyle] = useState<StoryStyle>("adventure");
   const [length, setLength] = useState<StoryLength>("3min");
   const [loading, setLoading] = useState(false);
@@ -57,11 +65,13 @@ export function CreateStory({ onCreated }: Props) {
     setError(null);
     try {
       const { apiBase64, thumbnail } = await prepareImage(file);
+      const heroData = hero ? toHero(hero) : undefined;
       const { story } = await requestStory({
         language,
         ageBand,
         style,
         length,
+        hero: heroData,
         imageBase64: apiBase64,
       });
       const saved: SavedStory = {
@@ -72,6 +82,7 @@ export function CreateStory({ onCreated }: Props) {
         ageBand,
         style,
         length,
+        hero: heroData,
         thumbnail,
       };
       await saveStory(saved);
@@ -136,16 +147,50 @@ export function CreateStory({ onCreated }: Props) {
           <input type="file" accept="image/*" className="sr-only" onChange={(e) => pick(e.target.files?.[0])} />
         </label>
 
-        <fieldset className="flex flex-col gap-2">
-          <SectionTitle as="legend">小朋友幾歲</SectionTitle>
-          <div className="grid grid-cols-4 gap-2">
-            {AGE_BANDS.map((a) => (
-              <Chip key={a} active={ageBand === a} onClick={() => setAgeBand(a)}>
-                {AGE_RULES[a].label}
-              </Chip>
-            ))}
-          </div>
-        </fieldset>
+        <div className="flex flex-col gap-2">
+          <SectionTitle>故事主角</SectionTitle>
+          {hero ? (
+            <button
+              type="button"
+              onClick={onEditHero}
+              aria-label={`故事主角：${hero.name}，${heroSummary(hero)}。點一下更換`}
+              className="flex items-center gap-4 rounded-2xl bg-card p-3 text-left ring-2 ring-line"
+            >
+              <Avatar hero={hero} />
+              <span className="flex min-w-0 flex-col">
+                <span className="truncate font-display text-xl font-bold">{hero.name}</span>
+                <span className="text-sm text-ink-soft">{heroSummary(hero)} · 點一下更換</span>
+              </span>
+            </button>
+          ) : (
+            <button
+              type="button"
+              onClick={onEditHero}
+              className="flex items-center gap-4 rounded-2xl border-2 border-dashed border-line bg-card/60 p-3 text-left"
+            >
+              <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-paper-deep text-rust">
+                <PlusIcon className="h-6 w-6" />
+              </span>
+              <span className="flex flex-col">
+                <span className="font-display text-xl font-bold">設定主角（選填）</span>
+                <span className="text-sm text-ink-soft">讓小朋友變成故事裡的主角</span>
+              </span>
+            </button>
+          )}
+        </div>
+
+        {!hero && (
+          <fieldset className="flex flex-col gap-2">
+            <SectionTitle as="legend">小朋友幾歲</SectionTitle>
+            <div className="grid grid-cols-4 gap-2">
+              {AGE_BANDS.map((a) => (
+                <Chip key={a} active={ageBand === a} onClick={() => setAgeBand(a)}>
+                  {AGE_RULES[a].label}
+                </Chip>
+              ))}
+            </div>
+          </fieldset>
+        )}
 
         <fieldset className="flex flex-col gap-2">
           <SectionTitle as="legend">想聽哪一種故事</SectionTitle>
