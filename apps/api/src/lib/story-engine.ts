@@ -30,7 +30,7 @@ Story craft:
 - Show the lesson through actions; never state the moral or define words outright.
 - If the story ends with goodnight and the scene is daytime, add a transition (going home, evening falls) first.
 - Keep objects, who holds them, and character names consistent from start to finish. Use accurate animal sounds.
-- Stay within the requested length range.
+- Reach the requested length: follow the paragraph count and paragraph length you are given.
 
 The hero:
 - If a <hero> block is given, that child is the main character of the story, by that name. The photo is the world or the thing they meet; the child in the photo (if any) may be the hero.
@@ -67,14 +67,17 @@ function heroBlock(hero: Hero): string {
 
 function buildInstructions(req: StoryRequest): string {
   const age = AGE_RULES[req.ageBand];
-  const [min, max] = LENGTH_RULES[req.length].words[req.language];
-  const unit = req.language === "zh" ? "Chinese characters" : "words";
+  const rule = LENGTH_RULES[req.length];
+  const [min, max] = rule.words[req.language];
+  const [pMin, pMax] = rule.paragraphs;
+  const [eachMin, eachMax] = rule.perParagraph[req.language];
+  const unit = req.language === "zh" ? "Chinese characters (not counting punctuation)" : "words";
 
   return [
     `Audience age: ${age.label}.`,
     `Age style: ${age.style}`,
     `Story type: ${STYLE_RULES[req.style].prompt}`,
-    `Length: ${min}–${max} ${unit} in total (read aloud in about ${LENGTH_RULES[req.length].label}).`,
+    `Length: ${min}–${max} ${unit} in total, read aloud in about ${rule.label}. Stories usually come out too short, so follow this structure: write ${pMin}–${pMax} paragraphs of ${eachMin}–${eachMax} ${unit} each. Do not end early; give the middle of the story more events and detail rather than padding the ending.`,
     req.language === "zh"
       ? "Write the title and story in Traditional Chinese (繁體中文, Taiwan usage)."
       : "Write the title and story in simple, natural English.",

@@ -88,10 +88,37 @@ export const STYLE_RULES: Record<StoryStyle, { label: string; hint: string; prom
 export const STORY_LENGTHS = ["3min", "10min"] as const;
 export type StoryLength = (typeof STORY_LENGTHS)[number];
 
-export const LENGTH_RULES: Record<StoryLength, { label: string; words: Record<Language, readonly [number, number]> }> = {
-  "3min": { label: "3 分鐘", words: { zh: [500, 700], en: [300, 420] } },
-  "10min": { label: "10 分鐘", words: { zh: [1700, 2200], en: [1000, 1300] } },
+type Range = readonly [number, number];
+interface LengthRule {
+  label: string;
+  /** 全文字數（中文不含標點） */
+  words: Record<Language, Range>;
+  /** 段落數與每段字數：模型對總字數估不準、常寫太短，用段落結構引導比較能達標 */
+  paragraphs: Range;
+  perParagraph: Record<Language, Range>;
+}
+
+export const LENGTH_RULES: Record<StoryLength, LengthRule> = {
+  "3min": {
+    label: "3 分鐘",
+    words: { zh: [500, 700], en: [300, 420] },
+    paragraphs: [6, 7],
+    perParagraph: { zh: [85, 100], en: [50, 60] },
+  },
+  "10min": {
+    label: "10 分鐘",
+    words: { zh: [1700, 2200], en: [1000, 1300] },
+    paragraphs: [14, 16],
+    perParagraph: { zh: [120, 140], en: [70, 80] },
+  },
 };
+
+/** 依 LENGTH_RULES 的算法計算故事長度：中文算漢字（不含標點），英文算 word */
+export function storyLength(paragraphs: readonly string[], language: Language): number {
+  const text = paragraphs.join("\n");
+  if (language === "zh") return (text.match(/\p{Script=Han}/gu) ?? []).length;
+  return text.split(/\s+/).filter(Boolean).length;
+}
 
 // ---- 主角（只存在裝置上，送到 API 只用於這一次生成）----
 export const GENDERS = ["boy", "girl", "unspecified"] as const;
