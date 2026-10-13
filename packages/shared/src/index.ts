@@ -15,8 +15,8 @@ export type AgeBand = (typeof AGE_BANDS)[number];
 
 export interface AgeRule {
   label: string;
-  /** 中文以字計，英文以 word 計 */
-  length: { zh: string; en: string };
+  /** [最少, 最多]；中文以字計，英文以 word 計。提示詞與品質評測都讀這裡 */
+  length: Record<Language, readonly [number, number]>;
   style: string;
   /** 閱讀頁字級（Tailwind class） */
   fontClass: string;
@@ -25,28 +25,28 @@ export interface AgeRule {
 export const AGE_RULES: Record<AgeBand, AgeRule> = {
   "2-4": {
     label: "2–4 歲",
-    length: { zh: "150–250 字", en: "80–150 words" },
+    length: { zh: [150, 250], en: [80, 150] },
     style:
       "Very short sentences. Repetitive patterns and onomatopoeia. Gentle rhymes are welcome. One simple idea, no conflict, cozy ending.",
     fontClass: "text-2xl leading-relaxed",
   },
   "4-6": {
     label: "4–6 歲",
-    length: { zh: "350–550 字", en: "200–350 words" },
+    length: { zh: [350, 550], en: [200, 350] },
     style:
       "Short sentences, everyday vocabulary. Simple cause and effect. A tiny problem that is solved kindly. Warm ending.",
     fontClass: "text-xl leading-relaxed",
   },
   "6-8": {
     label: "6–8 歲",
-    length: { zh: "600–900 字", en: "400–600 words" },
+    length: { zh: [600, 900], en: [400, 600] },
     style:
       "Medium sentences, some new words explained by context. A small challenge, a turning point, and a gentle lesson that is shown, not lectured.",
     fontClass: "text-lg leading-relaxed",
   },
   "8-10": {
     label: "8–10 歲",
-    length: { zh: "900–1300 字", en: "600–900 words" },
+    length: { zh: [900, 1300], en: [600, 900] },
     style:
       "Richer vocabulary and varied sentence length. A clear plot with a twist, light humor, and a character who grows.",
     fontClass: "text-base leading-relaxed",

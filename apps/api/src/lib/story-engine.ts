@@ -26,8 +26,21 @@ Output fields:
 
 export class StoryRefusedError extends Error {}
 
+export interface StoryRun {
+  story: StoryOutput;
+  /** 實際回應的模型；server-side fallback 時會與請求的不同 */
+  model: string;
+  usage: Anthropic.Beta.BetaUsage;
+}
+
 export async function generateStory(req: StoryRequest): Promise<StoryOutput> {
+  return (await runStory(req, MODEL)).story;
+}
+
+/** 評測腳本用：可指定模型，並回傳 usage 以計算成本 */
+export async function runStory(req: StoryRequest, model: string): Promise<StoryRun> {
   const rule = AGE_RULES[req.ageBand];
+  const [min, max] = rule.length[req.language];
   const languageLine =
     req.language === "zh"
       ? "Write the title and story in Traditional Chinese (繁體中文, Taiwan usage)."
@@ -35,7 +48,7 @@ export async function generateStory(req: StoryRequest): Promise<StoryOutput> {
 
   const instructions = [
     `Audience age: ${rule.label}.`,
-    `Length: ${rule.length[req.language]}.`,
+    `Length: ${min}–${max} ${req.language === "zh" ? "字" : "words"}.`,
     `Style: ${rule.style}`,
     languageLine,
     req.scene
@@ -58,7 +71,7 @@ export async function generateStory(req: StoryRequest): Promise<StoryOutput> {
   content.push({ type: "text", text: instructions });
 
   const response = await client.beta.messages.parse({
-    model: MODEL,
+    model,
     max_tokens: 8000,
     betas: ["server-side-fallback-2026-07-01"],
     fallbacks: "default",
@@ -74,5 +87,5 @@ export async function generateStory(req: StoryRequest): Promise<StoryOutput> {
   if (!response.parsed_output) {
     throw new Error(`unparseable output (stop_reason=${response.stop_reason})`);
   }
-  return response.parsed_output;
+  return { story: response.parsed_output, model: response.model, usage: response.usage };
 }
