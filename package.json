@@ -1,0 +1,15 @@
+{
+  "name": "aistory",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:client": "npm run dev -w @aistory/client",
+    "dev:api": "npm run dev -w @aistory/api",
+    "build": "npm run build -w @aistory/api && npm run build -w @aistory/client",
+    "lint": "npm run lint --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  }
+}

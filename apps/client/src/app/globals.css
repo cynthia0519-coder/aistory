@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+body {
+  background: #fffbeb;
+  color: #292524;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
