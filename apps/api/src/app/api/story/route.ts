@@ -3,6 +3,9 @@ import { StoryRequestSchema, type ApiError, type StoryResponse } from "@aistory/
 import { checkRateLimit, clientIp } from "@/lib/rate-limit";
 import { generateStory, StoryRefusedError } from "@/lib/story-engine";
 
+// 10 分鐘的故事生成可能超過 60 秒
+export const maxDuration = 120;
+
 const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS ?? "")
   .split(",")
   .map((s) => s.trim())
