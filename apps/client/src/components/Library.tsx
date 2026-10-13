@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { AGE_RULES, LANGUAGE_LABELS, LENGTH_RULES } from "@aistory/shared";
 import { deleteStory, listStories, type SavedStory } from "@/lib/storage";
+import { HeroAvatar } from "./HeroAvatar";
 import { StarIcon, TrashIcon } from "./icons";
 import { PrimaryButton } from "./ui";
 
@@ -104,6 +105,9 @@ function Cover({ story }: { story: SavedStory }) {
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={src} alt="" className="h-full w-full object-cover" />
       <span className="absolute bottom-2 left-2 rounded-lg bg-card px-2 py-0.5 text-[11px] font-bold">{meta}</span>
+      {!url && story.heroLook && (
+        <HeroAvatar look={story.heroLook} size={42} variant="bust" className="absolute left-2 top-2 rounded-full ring-2 ring-card drop-shadow-sm" />
+      )}
     </div>
   );
 }

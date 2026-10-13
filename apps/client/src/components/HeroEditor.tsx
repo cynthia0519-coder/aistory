@@ -5,14 +5,25 @@ import { AGE_RULES, ageBandFor, GENDERS, HeroSchema, type Gender } from "@aistor
 import {
   deleteHero,
   GENDER_LABELS,
+  DEFAULT_LOOK,
   getSelectedHeroId,
-  HERO_COLOR_CLASS,
+  HAIR_COLOR_LABELS,
+  HAIR_COLORS,
+  HAIR_LABELS,
+  HAIR_STYLES,
   HERO_COLORS,
   listHeroes,
+  lookOf,
+  OUTFIT_LABELS,
+  OUTFITS,
   saveHero,
   setSelectedHeroId,
+  SKIN_LABELS,
+  SKIN_TONES,
+  type HeroLook,
   type HeroProfile,
 } from "@/lib/heroes";
+import { HeroAvatar } from "./HeroAvatar";
 import { MinusIcon, PlusIcon, TrashIcon } from "./icons";
 import { BackButton, Chip, PrimaryButton, SectionTitle } from "./ui";
 
@@ -31,12 +42,13 @@ interface Draft {
   age: number;
   gender: Gender;
   likes: string;
+  look: HeroLook;
 }
 
-const EMPTY: Draft = { id: null, name: "", age: 5, gender: "unspecified", likes: "" };
+const EMPTY: Draft = { id: null, name: "", age: 5, gender: "unspecified", likes: "", look: DEFAULT_LOOK };
 
 function draftOf(h: HeroProfile): Draft {
-  return { id: h.id, name: h.name, age: h.age, gender: h.gender, likes: h.likes ?? "" };
+  return { id: h.id, name: h.name, age: h.age, gender: h.gender, likes: h.likes ?? "", look: lookOf(h) };
 }
 
 const CHARSET_HINT = "只能用文字和數字，不能用符號或表情";
@@ -48,6 +60,7 @@ export function HeroEditor({ onBack, onDone }: Props) {
   const [saving, setSaving] = useState(false);
   const nameId = useId();
   const likesId = useId();
+  const lookId = useId();
 
   useEffect(() => {
     listHeroes().then((list) => {
@@ -69,6 +82,10 @@ export function HeroEditor({ onBack, onDone }: Props) {
       ...("name" in patch ? { name: undefined } : {}),
       ...("likes" in patch ? { likes: undefined } : {}),
     }));
+  }
+
+  function setLook(patch: Partial<HeroLook>) {
+    setDraft((d) => ({ ...d, look: { ...d.look, ...patch } }));
   }
 
   function validate() {
@@ -105,6 +122,7 @@ export function HeroEditor({ onBack, onDone }: Props) {
       id: existing?.id ?? crypto.randomUUID(),
       color: existing?.color ?? HERO_COLORS[heroes.length % HERO_COLORS.length],
       createdAt: existing?.createdAt ?? Date.now(),
+      look: draft.look,
     };
     try {
       await saveHero(profile);
@@ -156,7 +174,14 @@ export function HeroEditor({ onBack, onDone }: Props) {
               onClick={() => edit(draftOf(h))}
               className="flex w-16 shrink-0 flex-col items-center gap-1"
             >
-              <Avatar hero={h} active={draft.id === h.id} />
+              <HeroAvatar
+                look={lookOf(h)}
+                size={56}
+                variant="bust"
+                className={`shrink-0 rounded-full ${
+                  draft.id === h.id ? "ring-4 ring-rust ring-offset-2 ring-offset-paper" : ""
+                }`}
+              />
               <span className="w-full truncate text-center text-xs font-bold">{h.name}</span>
             </button>
           ))}
@@ -198,6 +223,74 @@ export function HeroEditor({ onBack, onDone }: Props) {
             {errors.name ?? "建議用小名，不需要真實全名"}
           </p>
         </div>
+
+        <section aria-labelledby={`${lookId}-title`} className="flex flex-col gap-3">
+          <h2 id={`${lookId}-title`}>
+            <SectionTitle as="span">外觀</SectionTitle>
+          </h2>
+          <div className="relative flex h-60 items-end justify-center overflow-hidden rounded-3xl bg-paper-deep ring-2 ring-line">
+            {/* 預覽用的小舞台：後面一塊手刷的芥末色，地上一條草地 */}
+            <svg aria-hidden="true" viewBox="0 0 320 240" preserveAspectRatio="xMidYMid slice" className="absolute inset-0 h-full w-full">
+              <path d="M76 58 C112 20 214 16 252 66 C286 110 270 180 204 196 C140 212 70 186 54 128 C47 100 58 76 76 58 Z" fill="var(--color-highlight)" opacity="0.75" />
+              {[
+                [44, 40, 7],
+                [282, 58, 6],
+                [258, 24, 4],
+                [64, 170, 4.5],
+              ].map(([x, y, r]) => (
+                <polygon
+                  key={`${x}-${y}`}
+                  fill="var(--color-ochre)"
+                  points={Array.from({ length: 10 }, (_, i) => {
+                    const a = (Math.PI / 5) * i - Math.PI / 2;
+                    const d = i % 2 ? r * 0.45 : r;
+                    return `${(x + d * Math.cos(a)).toFixed(1)},${(y + d * Math.sin(a)).toFixed(1)}`;
+                  }).join(" ")}
+                />
+              ))}
+              <path d="M0 214 C70 204 140 210 200 206 C250 203 290 208 320 204 L320 240 L0 240 Z" fill="var(--color-sage)" opacity="0.55" />
+            </svg>
+            <HeroAvatar look={draft.look} size={216} variant="figure" className="relative -mb-1" />
+          </div>
+          <LookRow label="髮型">
+            {HAIR_STYLES.map((h) => (
+              <Swatch key={h} label={HAIR_LABELS[h]} active={draft.look.hair === h} onClick={() => setLook({ hair: h })}>
+                <HeroAvatar look={{ ...draft.look, hair: h }} size={52} variant="bust" />
+              </Swatch>
+            ))}
+          </LookRow>
+          <LookRow label="髮色">
+            {HAIR_COLORS.map((c) => (
+              <Swatch key={c} label={HAIR_COLOR_LABELS[c]} active={draft.look.hairColor === c} onClick={() => setLook({ hairColor: c })}>
+                <HeroAvatar look={{ ...draft.look, hairColor: c }} size={52} variant="bust" />
+              </Swatch>
+            ))}
+          </LookRow>
+          <LookRow label="膚色">
+            {SKIN_TONES.map((t) => (
+              <Swatch key={t} label={SKIN_LABELS[t]} active={draft.look.skin === t} onClick={() => setLook({ skin: t })}>
+                <HeroAvatar look={{ ...draft.look, skin: t }} size={52} variant="bust" />
+              </Swatch>
+            ))}
+          </LookRow>
+          <LookRow label="衣服">
+            {OUTFITS.map((o) => (
+              <Swatch key={o} label={OUTFIT_LABELS[o]} active={draft.look.outfit === o} onClick={() => setLook({ outfit: o })}>
+                <HeroAvatar look={{ ...draft.look, outfit: o }} size={52} variant="bust" />
+              </Swatch>
+            ))}
+          </LookRow>
+          <LookRow label="眼鏡">
+            <div className="grid flex-1 grid-cols-2 gap-2">
+              <Chip active={!draft.look.glasses} onClick={() => setLook({ glasses: false })}>
+                不戴
+              </Chip>
+              <Chip active={draft.look.glasses} onClick={() => setLook({ glasses: true })}>
+                戴眼鏡
+              </Chip>
+            </div>
+          </LookRow>
+        </section>
 
         <div className="flex flex-col gap-2">
           <SectionTitle>幾歲</SectionTitle>
@@ -287,16 +380,40 @@ export function HeroEditor({ onBack, onDone }: Props) {
   );
 }
 
-export function Avatar({ hero, active, size = "h-14 w-14 text-2xl" }: { hero: HeroProfile; active?: boolean; size?: string }) {
+/** 外觀的一列選項：左邊小標題，右邊一排可點的小預覽 */
+function LookRow({ label, children }: { label: string; children: React.ReactNode }) {
   return (
-    <span
-      aria-hidden="true"
-      className={`flex shrink-0 items-center justify-center rounded-full font-display font-bold ${size} ${
-        HERO_COLOR_CLASS[hero.color]
-      } ${active ? "ring-4 ring-rust ring-offset-2 ring-offset-paper" : ""}`}
+    <div role="group" aria-label={label} className="flex flex-col gap-1.5">
+      <span className="font-display text-base font-bold text-ink-soft">{label}</span>
+      <div className="flex flex-wrap gap-3 px-1">{children}</div>
+    </div>
+  );
+}
+
+function Swatch({
+  label,
+  active,
+  onClick,
+  children,
+}: {
+  label: string;
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <button
+      type="button"
+      aria-pressed={active}
+      aria-label={label}
+      title={label}
+      onClick={onClick}
+      className={`flex h-14 w-14 items-center justify-center rounded-full ${
+        active ? "ring-4 ring-rust ring-offset-2 ring-offset-paper" : "ring-2 ring-line"
+      }`}
     >
-      {Array.from(hero.name)[0]}
-    </span>
+      {children}
+    </button>
   );
 }
 

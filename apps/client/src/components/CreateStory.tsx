@@ -19,8 +19,8 @@ import {
 import { prepareImage } from "@/lib/image";
 import { requestStory, StoryApiError } from "@/lib/api";
 import { saveStory, type SavedStory } from "@/lib/storage";
-import { heroSummary, toHero, type HeroProfile } from "@/lib/heroes";
-import { Avatar } from "./HeroEditor";
+import { heroSummary, lookOf, toHero, type HeroProfile } from "@/lib/heroes";
+import { HeroAvatar } from "./HeroAvatar";
 import { CameraIcon, PlusIcon } from "./icons";
 import { StoryLoading } from "./StoryLoading";
 import { Chip, PrimaryButton, SectionTitle } from "./ui";
@@ -83,6 +83,7 @@ export function CreateStory({ onCreated, hero, onEditHero }: Props) {
         style,
         length,
         hero: heroData,
+        heroLook: hero ? lookOf(hero) : undefined,
         thumbnail,
       };
       await saveStory(saved);
@@ -156,7 +157,7 @@ export function CreateStory({ onCreated, hero, onEditHero }: Props) {
               aria-label={`故事主角：${hero.name}，${heroSummary(hero)}。點一下更換`}
               className="flex items-center gap-4 rounded-2xl bg-card p-3 text-left ring-2 ring-line"
             >
-              <Avatar hero={hero} />
+              <HeroAvatar look={lookOf(hero)} size={56} variant="bust" className="shrink-0" />
               <span className="flex min-w-0 flex-col">
                 <span className="truncate font-display text-xl font-bold">{hero.name}</span>
                 <span className="text-sm text-ink-soft">{heroSummary(hero)} · 點一下更換</span>
