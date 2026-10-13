@@ -80,7 +80,7 @@ export const STYLE_RULES: Record<StoryStyle, { label: string; hint: string; prom
     label: "晚安",
     hint: "安靜好入睡",
     prompt:
-      "A calm bedtime story: slow pace, soothing repetition, low excitement, the world gradually getting quiet and sleepy.",
+      "A calm bedtime story: slow pace, soothing repetition, low excitement, the world gradually getting quiet and sleepy. A slow pace means more gentle sensory detail (sounds, warmth, soft light), not fewer words: still reach the requested length.",
   },
 };
 
