@@ -112,6 +112,8 @@ export type Hero = z.infer<typeof HeroSchema>;
 export const STORY_SETTINGS = [
   "home",
   "park",
+  "school",
+  "zoo",
   "forest",
   "sea",
   "mountain",
