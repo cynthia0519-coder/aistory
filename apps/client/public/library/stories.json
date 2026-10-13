@@ -66,5 +66,277 @@
       ]
     },
     "draft": true
+  },
+  {
+    "id": "lantern-for-the-moon",
+    "style": "bedtime",
+    "ageBands": [
+      "2-4",
+      "4-6"
+    ],
+    "setting": "night_sky",
+    "title": {
+      "zh": "{name}和小光跟月亮說晚安",
+      "en": "{name} and Glimmer Say Goodnight to the Moon"
+    },
+    "paragraphs": {
+      "zh": [
+        "夜晚來了，天空藍藍的，好安靜。窗外的月亮圓圓的、亮亮的，可是旁邊一顆星星也沒有。{name}趴在窗邊，輕輕說：「月亮好像有一點寂寞。」一隻螢火蟲飛過來，打了個小呵欠，牠叫小光。小光的尾巴一閃一閃，好像在說：我們去陪月亮吧。",
+        "奶奶拿出一盞小小的紙燈籠，裡面亮著暖暖的光。她把燈籠放進{his}小手裡。「我們一起去小山上，跟月亮說晚安。」小光停在燈籠上，奶奶牽著{name}另一隻手。走出家門，夜風涼涼的，草地軟軟的，腳步沙沙、沙沙。蟋蟀在草叢裡唱：唧唧、唧唧。",
+        "走到小山腳下，一隻貓頭鷹在樹上叫：咕咕、咕咕。「你們要去哪裡呀？」{name}舉起燈籠說：「我們要去跟月亮說晚安。」貓頭鷹點點頭，眨眨大眼睛。牠說：「我也請你們幫我跟月亮說晚安。」抬頭一看，天上亮起了第一顆星星，一閃、一閃，好像在微笑。",
+        "他們慢慢往上走。路邊的小花都閉上眼睛了。一隻小兔子在洞口揉揉眼睛，{name}小聲說：「小兔子，晚安。」小兔子動動耳朵，鑽回窩裡。天上又亮起兩顆星星，一閃、一閃，三顆星星排在月亮旁邊。小光的光也變得慢慢的，牠又打了個小呵欠。",
+        "快到山頂了，{his}小腳有一點累。奶奶說：「我們休息一下，數數星星吧。」他們坐在軟軟的草地上，燈籠放在中間，暖暖亮亮。一顆、兩顆、三顆……{name}數著數著，天上又亮起好多星星，四顆、五顆、六顆。月亮好像笑了，光變得更柔和了。休息好了，大家再往上走。",
+        "終於到了山頂。月亮好大、好近，靜靜地掛在天上。{name}舉起小燈籠，輕輕揮一揮：「月亮，晚安。」小光也亮一亮：「月亮，晚安。」奶奶也小聲說：「月亮，晚安。」這時候，滿天的星星一顆接一顆亮起來，一閃、一閃，把月亮圍得暖暖的。月亮不寂寞了。",
+        "回家的路上，夜好安靜。蟋蟀不唱了，貓頭鷹也閉上眼睛。小光停在{his}手指上，睡著了，尾巴的光暗暗的。回到家，奶奶把燈籠放在窗邊，親親{name}。{name}躺進軟軟的被窩，看見月亮和星星在窗外輕輕地眨眼睛。晚安，月亮；晚安，星星；晚安，{name}。"
+      ],
+      "en": [
+        "Night came, blue and quiet. Outside the window, the moon was round and bright, but not one star was near it. {name} leaned on the windowsill and whispered, \"The moon looks a little lonely.\" A sleepy firefly named Glimmer drifted by and yawned. Blink, blink went its glow: \"Let's go keep the moon company.\"",
+        "Grandma brought out a tiny paper lantern with a warm light inside. She placed it in {his} hands. \"Let's walk up the little hill and say goodnight to the moon.\" Glimmer settled on the lantern. Grandma held {his} other hand. The grass was soft. Swish, swish went their feet. Chirp, chirp sang the crickets.",
+        "At the bottom of the hill, an owl called from a tree. Hoo, hoo. \"Where are you going?\" {name} lifted the lantern. \"We're going to say goodnight to the moon.\" The owl blinked its big eyes. \"Please say goodnight for me, too.\" Then the first star switched on. Twinkle, twinkle. It seemed to smile.",
+        "Slowly, they climbed higher. The flowers by the path had closed their eyes. A bunny rubbed its eyes by its burrow. \"Goodnight, little bunny,\" {name} whispered. The bunny wiggled its ears and hopped inside. Two more stars switched on. Twinkle, twinkle. Now three stars sat beside the moon. Glimmer's glow grew slow, and it yawned.",
+        "Near the top, {his} feet felt a little tired. \"Let's rest and count the stars,\" said Grandma. They sat on the soft grass with the lantern glowing between them. One, two, three... As {name} counted, more stars appeared. Four, five, six! The moon seemed to smile, and its light grew gentle. Then everyone climbed on.",
+        "At last they reached the top. The moon looked big and close, hanging quietly in the sky. {name} waved the little lantern. \"Goodnight, Moon.\" Glimmer glowed. \"Goodnight, Moon.\" Grandma whispered, \"Goodnight, Moon.\" Then star after star switched on across the whole sky, twinkling all around the moon. The moon was not lonely anymore.",
+        "Walking home, the night was hushed. The crickets stopped singing. The owl closed its eyes. Glimmer fell asleep on {his} finger, its glow soft and dim. At home, Grandma set the lantern by the window and kissed {name}. Snug in bed, {name} saw the moon and stars twinkling. Goodnight, Moon. Goodnight, stars. Goodnight, {name}."
+      ]
+    },
+    "draft": true
+  },
+  {
+    "id": "whispering-snow-library",
+    "style": "bedtime",
+    "ageBands": [
+      "6-8",
+      "8-10"
+    ],
+    "setting": "snow",
+    "title": {
+      "zh": "{name}和雪鴞的夢境圖書館",
+      "en": "{name} and the Snow Owl's Dream Library"
+    },
+    "paragraphs": {
+      "zh": [
+        "下雪的傍晚，{name}和奶奶在院子裡堆雪人。奶奶坐在門廊上織圍巾，屋簷下的燈暖暖地亮著。忽然，一隻白色的老雪鴞輕輕落在雪人頭上，翅膀上掛著一個小布袋，袋子裡透出一閃一閃的光。「呼——呼——」牠低聲叫著，好像在打招呼。",
+        "「晚安，{name}。」老雪鴞說，「我叫白白，是夢境圖書館的館員。今天大家借走的夢，都要在全鎮睡著以前還回書架上。可是我的眼睛老花了，你願意幫我嗎？」{name}回頭看奶奶，奶奶放下毛線，笑著點點頭：「去吧，就在院子角落，我看得見你。」",
+        "白白用翅膀拍拍院子角落那座最高的雪堆，雪面上慢慢出現一扇小圓門。{name}彎下腰走進去，裡面暖暖的，一排排冰做的書架閃著藍光，安靜得只聽得見雪花落下的沙沙聲。白白說：「每個夢都有自己的名字，要放回原來的位置喔。」",
+        "{name}從布袋裡拿出第一個夢，它像一顆暖暖的玻璃球，裡面有麵包店老闆在雲上烤蛋糕。{name}把它放在「甜甜的夢」那一排。第二個夢裡，郵差先生騎著鯨魚送信，要放在「海洋的夢」。每放好一個，鎮上就有一扇窗的燈熄了。",
+        "一個、兩個、三個，{name}慢慢地放，白白慢慢地數。有一個夢調皮地滾到書架底下，{name}趴下來輕輕把它撿回來，裡面是一隻小狗在追自己的尾巴，繞著圈圈轉。白白笑得羽毛都抖了起來：「呼——呼——原來是隔壁小狗的夢！」{name}也忍不住笑了。",
+        "最後，布袋裡只剩一個夢，書架上卻找不到它的位置。它亮著淡淡的金光，裡面有一片安靜的雪地，和一扇亮著燈的窗。白白眨眨眼：「這個夢沒有被借走過，它是在等你的。今晚，就把它帶回家吧。」{name}小心地把夢捧在手心。",
+        "{name}走出雪堆，小圓門在身後悄悄不見了。白白飛上樹枝，輕輕叫著：「呼——呼——晚安。」奶奶牽起{his}手，一起走進溫暖的屋子。鎮上的燈一盞一盞熄了，窗外的雪也慢慢、慢慢地停了。{name}鑽進被窩，抱著那個金色的夢，閉上眼睛。晚安，{name}。"
+      ],
+      "en": [
+        "On a snowy evening, {name} was building a snowman in the backyard while Grandma knitted a scarf on the porch under a warm, glowing lamp. Suddenly, an old white snow owl landed on the snowman's head. A little cloth bag hung from its wing, twinkling with light. \"Hoo-hoo,\" it called gently, as if saying hello.",
+        "\"Good evening, {name},\" said the owl. \"I'm Snowdrop, the librarian of the Dream Library. Every dream borrowed today must go back on the shelves before the whole town falls asleep. But my eyes are tired. Will you help me?\" {name} looked at Grandma, who set down her yarn and nodded. \"Go ahead. I can see you.\"",
+        "Snowdrop tapped the tallest snowdrift in the corner of the yard, and a small round door appeared. {name} ducked inside. It was cozy and warm, with rows of ice shelves glowing blue, so quiet that only falling snowflakes whispered. \"Every dream has its own name,\" said Snowdrop. \"Each one goes back to its own place.\"",
+        "{name} took out the first dream, warm as a glass ball. Inside, the baker baked a cake on a cloud. {name} placed it on the Sweet Dreams shelf. In the second, the mail carrier rode a whale, so it went on the Ocean Dreams shelf. With each one, a window in town went dark.",
+        "One, two, three. {name} shelved slowly, and Snowdrop counted slowly. One playful dream rolled under a shelf, so {name} lay down and gently scooped it out. Inside, a puppy was chasing its tail, round and round. Snowdrop laughed until its feathers shook. \"Hoo-hoo! That's the puppy next door!\" {name} couldn't help laughing too.",
+        "At last, only one dream was left in the bag, but there was no place for it on any shelf. It glowed a soft gold, and inside was a snowy yard and a glowing window. Snowdrop blinked. \"No one borrowed this one. It's been waiting for you. Take it home tonight.\" {name} held it carefully.",
+        "{name} stepped out of the snowdrift, and the little door disappeared. Snowdrop flew to a branch. \"Hoo-hoo, good night.\" Grandma took {his} hand, and they went into the warm house. One by one, the town's lights went out, and the snow slowly, slowly stopped. Holding the golden dream, {name} closed {his} eyes. Good night, {name}."
+      ]
+    },
+    "draft": true
+  },
+  {
+    "id": "zoo-hiccup-parade",
+    "style": "cute",
+    "ageBands": [
+      "2-4",
+      "4-6"
+    ],
+    "setting": "zoo",
+    "title": {
+      "zh": "{name}和打嗝的小象",
+      "en": "{name} and the Hiccuping Baby Elephant"
+    },
+    "paragraphs": {
+      "zh": [
+        "晴朗的早上，{name}和媽媽來到動物園。陽光暖暖的，風兒輕輕的。管理員阿亮叔叔站在大象家門口，笑著向大家揮手。忽然，草地上傳來一個好奇怪的聲音：「嗝！」咦，是誰呀？{name}踮起腳，往前看一看，原來是小象圓圓在打嗝。",
+        "「嗝！」圓圓的長鼻子往上一彈。「嗝！」圓圓的大耳朵啪啪搧兩下。「嗝！」圓圓的小尾巴也跟著晃一晃。{name}忍不住小聲說：「好像彈簧喔！」阿亮叔叔點點頭說：「圓圓從早上就一直打嗝，我們一起來幫幫牠，好不好？」",
+        "阿亮叔叔牽著{name}，先去找長頸鹿高高。高高把長長的脖子低下來，慢慢地吸一口氣，再慢慢地吐出來。「呼——」{name}也跟著做，圓圓也學著做。大家都安安靜靜的。可是過了一下下，「嗝！」圓圓的鼻子又彈起來了，連高高都眨了眨眼睛。",
+        "他們又去找河馬胖胖。胖胖張開好大好大的嘴巴，打了一個長長的呵欠：「啊——」{name}也張大嘴巴，圓圓也張大嘴巴。三張大嘴巴排成一排，看起來好滑稽。可是，「嗝！」圓圓的嗝還是跑出來了，胖胖嚇得把嘴巴閉上，咕嚕咕嚕沉進水裡。",
+        "接著，他們來到猴子家。小猴子跳跳在樹上盪來盪去，吱吱吱，吱吱吱，想讓圓圓分心。{name}拍拍手，跟著唱：「跳跳跳，盪盪盪！」圓圓看得好認真，眼睛圓溜溜的。可是一安靜下來，「嗝！」又來了。阿亮叔叔抓抓頭，大家都有點煩惱了。",
+        "{name}想了一想，輕輕走到圓圓身邊。「圓圓，我來搔搔你的大耳朵喔！」{name}用{his}小手指輕輕地搔，搔呀搔，搔呀搔。圓圓的身體開始抖一抖，鼻子捲一捲，然後「噗哈哈哈！」笑得好開心，笑聲像小喇叭一樣響亮，連跳跳都笑了。",
+        "笑完了，大家靜靜等著。一、二、三……沒有「嗝」了！圓圓舉起長鼻子，開心地叫：「叭——」阿亮叔叔笑著說：「謝謝{name}，原來笑聲最有用！」圓圓用鼻子輕輕碰碰{name}的手，好像在說謝謝。{name}也笑了，跟圓圓說：「明天再來找你玩！」"
+      ],
+      "en": [
+        "One sunny morning, {name} and Mom went to the zoo. The sun was warm, and the breeze was soft. Zookeeper Leo waved hello by the elephant yard. Then a funny sound floated over the grass: \"Hic!\" Who could that be? {name} stood on tiptoe to look. It was Baby Elephant Bobo, and Bobo had the hiccups!",
+        "\"Hic!\" Bobo's trunk bounced up. \"Hic!\" Bobo's big ears went flap, flap. \"Hic!\" Bobo's little tail gave a wiggle. {name} whispered, \"Bobo bounces like a spring!\" Leo nodded with a smile. \"Bobo has had the hiccups all morning,\" he said. \"Shall we help our little friend together?\" {name} nodded too.",
+        "First, Leo and {name} visited Tall Tilly the giraffe. Tilly bent her long neck down low. She breathed in slowly, then out slowly. \"Whoosh.\" {name} did it too, and so did Bobo. Everyone was quiet and calm. But after a moment, \"Hic!\" Up bounced Bobo's trunk again. Even Tilly blinked in surprise.",
+        "Next, they visited Puffy the hippo. Puffy opened a huge, wide mouth and gave a long, sleepy yawn. \"Aaah!\" {name} opened wide too, and so did Bobo. Three big mouths in a row looked very silly! But then, \"Hic!\" Out popped another hiccup. Puffy shut tight and sank under the water, bubble, bubble.",
+        "Then they visited the monkeys. Little Hoppy swung from branch to branch, calling, \"Ooh-ooh, ah-ah!\" to keep Bobo busy. {name} clapped and sang along, \"Hop, hop, swing, swing!\" Bobo watched with big round eyes. But as soon as things got quiet, \"Hic!\" Back it came. Leo scratched his head. What could they try now?",
+        "{name} had an idea and tiptoed close to Bobo. \"Bobo, I'm going to tickle your big ears!\" {name} used {his} little fingers to tickle gently, tickle, tickle, tickle. Bobo began to wiggle and curl that long trunk. Then, \"Ha-ha-ha!\" Bobo giggled like a happy little trumpet, and even Hoppy laughed along.",
+        "After all the giggles, everyone waited quietly. One, two, three... no more hiccups! Bobo lifted that long trunk and trumpeted, \"Pawoo!\" Leo laughed. \"Thank you, {name}. A giggle worked best!\" Bobo gently touched {name}'s hand with the trunk, as if to say thanks. {name} smiled. \"I'll come play again tomorrow, Bobo!\""
+      ]
+    },
+    "draft": true
+  },
+  {
+    "id": "the-sock-that-ran-away",
+    "style": "cute",
+    "ageBands": [
+      "6-8",
+      "8-10"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}和失蹤的條紋襪",
+      "en": "{name} and the Missing Striped Sock"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期六是洗衣日，陽光從窗戶灑進來，媽媽把一籃剛曬好的衣服放在沙發上。{name}自告奮勇幫忙配襪子，一雙一雙排得整整齊齊。可是排到最後，只剩下一隻紅白條紋的襪子孤零零地躺著，另一隻到底跑去哪裡了呢？",
+        "{name}皺起眉頭，像小偵探一樣蹲下來仔細觀察。籃子旁邊的地板上，有一根細細的紅色毛線，彎彎曲曲地指向走廊。「這一定是線索！」{name}小聲地說，拿起放大鏡，輕手輕腳地沿著毛線的方向前進，心裡怦怦跳，覺得自己好像在解開一個大謎題。",
+        "走廊盡頭是書房，書架最下層的書歪歪斜斜，好像有誰剛剛擠過去。{name}在地毯上發現幾根灰色的軟毛，摸起來毛茸茸的，還帶著一點暖意。「襪子不會掉毛啊，」{name}歪著頭想了想，「難道有共犯？」窗外的小鳥嘰嘰喳喳，好像也在幫忙猜答案。",
+        "接著，{name}走進廚房，看見貓咪的飯碗旁邊有一個小小的腳印，正好沾到灑出來的一點牛奶。腳印圓圓的，有四顆小豆豆。{name}忍不住笑出聲：「原來是梅花形狀的腳印！」爸爸從報紙後面探出頭，眨眨眼說：「偵探先生，需要幫忙嗎？」",
+        "{name}搖搖頭，決定自己把案子破完。腳印一路通往洗衣間，那裡有一個裝舊毛巾的籃子，正微微地一起一伏。{name}屏住呼吸，慢慢靠近，聽見裡面傳來輕輕的呼嚕呼嚕聲。{name}輕輕掀開最上面的毛巾，忍不住瞪大了眼睛。",
+        "灰色的貓咪麻糬蜷成一團，睡得正香，懷裡緊緊抱著那隻紅白條紋襪，還把它當成小枕頭。襪子上的毛線勾出了一個小洞，原來剛才的紅毛線就是從這裡來的。麻糬睜開一隻眼睛，「喵」了一聲，好像在說：「這是我的冒險夥伴！」",
+        "{name}想了想，從抽屜裡找出另一隻早就破了洞的舊襪子，塞了一點棉花，做成軟綿綿的小玩偶送給麻糬。麻糬開心地抱著新玩偶打滾，乖乖讓出條紋襪。媽媽笑著把襪子補好，{name}把它們配成一雙，覺得這是今天最棒的發現。"
+      ],
+      "en": [
+        "Saturday was laundry day. Sunshine poured through the window as Mom set a basket of fresh, warm clothes on the couch. {name} offered to match the socks and lined them up in neat pairs. But at the very end, one red-and-white striped sock lay all alone. Where had its partner wandered off to?",
+        "{name} frowned and crouched down like a real detective. On the floor beside the basket was a thin red thread, curling toward the hallway. \"This must be a clue!\" {name} whispered, grabbing a magnifying glass. Tiptoeing along the thread, {name} felt a happy flutter, as if a giant mystery was waiting to be solved.",
+        "At the end of the hallway was the study. The books on the bottom shelf leaned sideways, as if someone had squeezed past them. On the rug, {name} found a few soft gray hairs, still a little warm. \"Socks don't shed,\" {name} said thoughtfully. \"Maybe there's a partner in crime!\" Outside, the birds chirped as if guessing too.",
+        "Next, {name} checked the kitchen. Beside the cat's bowl was a tiny footprint, stamped in a splash of spilled milk. It was round, with four little bean-shaped toes. {name} giggled. \"A paw print!\" Dad peeked out from behind his newspaper and winked. \"Need any help, Detective?\" he asked with a grin that said he knew something.",
+        "{name} shook {his} head, determined to crack the case alone. The paw prints led to the laundry room, where a basket of old towels was gently rising and falling. Holding a breath, {name} crept closer and heard a soft, rumbly purr. Slowly, {name} lifted the top towel, and eyes went wide with surprise.",
+        "Mochi, the gray cat, was curled up in a cozy ball, fast asleep and hugging the striped sock like a tiny pillow. A loose loop of red yarn dangled from a small hole, the very thread {name} had followed. Mochi opened one eye and said, \"Meow,\" as if to say, \"This is my adventure buddy!\"",
+        "{name} had an idea. From a drawer came an old sock that already had a hole, and {name} stuffed it with cotton to make a squishy toy for Mochi. Mochi rolled around happily with the new friend and let the striped sock go. Mom stitched it up, and {name} matched the pair, smiling at the best discovery of the day."
+      ]
+    },
+    "draft": true
+  },
+  {
+    "id": "first-day-paper-boat",
+    "style": "inspiring",
+    "ageBands": [
+      "2-4",
+      "4-6"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "{name}的小紙船",
+      "en": "{name}'s Little Paper Boat"
+    },
+    "paragraphs": {
+      "zh": [
+        "今天是{name}第一天來新學校。媽媽牽著{his}小手，走到教室門口。教室好大，小朋友好多，大家笑嘻嘻的。媽媽說：「放學我就來接你喔。」{name}點點頭，心跳得咚咚咚，小手緊緊抓著書包帶子，慢慢走進去。",
+        "老師笑著說：「歡迎{name}！」小朋友都轉過頭來看。{name}想說「你好」，可是聲音躲起來了，嘴巴開開又合上。{he}低下頭，走到座位坐好。旁邊坐著一個綁著小辮子的女孩，叫小雨，她也安安靜靜的，一句話都沒說。",
+        "美勞課到了，老師發下彩色紙。「今天我們來摺紙！」{name}拿到一張藍色的紙。摺一摺，壓一壓，再摺一摺。沙沙沙，沙沙沙。一艘小紙船出現了！{name}好開心，輕輕把小船放在桌上。小船尖尖的，好像要出發去旅行。",
+        "小雨看著{name}的小船，眼睛亮亮的。她手上的紫色紙皺皺的，怎麼摺都摺不好。她小小聲地嘆氣，又把紙攤開，再試一次。{name}看見了，心裡想：小雨是不是也很害羞呢？{he}想幫忙，可是心又咚咚咚地跳起來。",
+        "{name}深深吸一口氣，把小船推過去一點點。小雨抬起頭，小聲說：「好漂亮。」{name}也小聲說：「我教你。」兩個人一起摺，摺一摺，壓一壓，再摺一摺。沙沙沙，沙沙沙。一艘紫色的小紙船也出現了！小雨笑了，{name}也笑了。",
+        "兩艘小船並排在桌上，一藍一紫，像好朋友。{name}鼓起勇氣，大聲一點說：「你好，我是{name}。」小雨笑瞇瞇地說：「你好，我是小雨。我第一天也好緊張。」原來，大家都會害羞。{name}覺得心裡暖暖的，不再咚咚咚了。",
+        "放學了，媽媽來接{name}。{name}揮揮手說：「小雨，明天見！」小雨也揮揮手：「明天見！」回家的路上，{name}把藍色小紙船給媽媽看，開心地說：「我交到一個新朋友了。」明天，{he}還想再摺一艘小船。"
+      ],
+      "en": [
+        "Today was {name}'s first day at a new school. Mom held {his} hand and walked to the classroom door. The room was big, and there were so many smiling kids. \"I'll pick you up after school,\" Mom said. {name} nodded. Thump, thump, went {his} heart. Holding tight to the backpack straps, {name} stepped inside.",
+        "\"Welcome, {name}!\" said the teacher with a smile. All the children turned to look. {name} wanted to say hello, but the word hid away. {his} mouth opened, then closed again. {name} looked down and sat at a desk. Next to {him} sat a girl named Yuyu. She was quiet too, and she didn't say a word.",
+        "Then it was craft time. The teacher handed out bright colored paper. \"Today we'll fold paper!\" {name} got a blue sheet. Fold it, press it, fold it again. Swish, swish, swish. Look, a little paper boat! {name} smiled and set the boat gently on the desk. Its pointy tip looked ready for a trip.",
+        "Yuyu looked at the boat, and her eyes shone. Her purple paper was all crinkly. No matter how she tried, it would not fold right. She gave a tiny sigh, smoothed it flat, and tried again. {name} watched and wondered, is Yuyu shy too? {name} wanted to help, but thump, thump, went {his} heart again.",
+        "{name} took a big, deep breath and slid the boat a little closer. Yuyu looked up and whispered, \"It's so pretty.\" {name} whispered back, \"I can show you.\" Together they folded. Fold it, press it, fold it again. Swish, swish, swish. Look, a purple paper boat! Yuyu smiled, and {name} smiled too.",
+        "Two boats sat side by side, one blue and one purple, like two good friends. {name} felt brave and spoke a bit louder. \"Hello, I'm {name}.\" Yuyu grinned. \"Hello, I'm Yuyu. I was nervous on my first day too.\" So everyone feels shy sometimes. {name} felt warm inside, and the thumping finally slowed down.",
+        "After school, Mom came to pick {name} up. {name} waved and called, \"See you tomorrow, Yuyu!\" Yuyu waved back. \"See you tomorrow!\" On the way home, {name} showed Mom the little blue boat. \"I made a new friend today!\" And tomorrow, {name} wanted to fold another paper boat, maybe two."
+      ]
+    },
+    "draft": true
+  },
+  {
+    "id": "the-mountain-of-small-steps",
+    "style": "inspiring",
+    "ageBands": [
+      "6-8",
+      "8-10"
+    ],
+    "setting": "mountain",
+    "title": {
+      "zh": "{name}和爺爺的小步山路",
+      "en": "{name} and Grandpa's Little-Step Trail"
+    },
+    "paragraphs": {
+      "zh": [
+        "週末清晨，{name}背起{his}小水壺，跟著爺爺來到山腳下。爺爺指著遠方雲霧裡的木頭平台說：「那就是瞭望台，站上去可以看見整座山谷喔！」{name}用力點頭，覺得自己一定能一口氣衝上去，腳步輕快得像小鹿一樣。",
+        "一開始，步道平平的，兩旁的樹葉沙沙作響。{name}走得飛快，還回頭催爺爺快一點。可是轉過一個彎，路突然變陡了，石階一層疊著一層，好像直直通到天上。{name}爬了幾階，腿開始發酸，呼吸也變得又急又重，只好停下來。",
+        "「好遠喔，我是不是爬不上去了？」{name}皺著眉頭坐在石頭上。爺爺沒有催促，只是陪著坐下，遞過水壺說：「我們不看山頂，只看下一棵樹。數十步就休息一下，好不好？」{name}半信半疑地站起來，小聲數著：「一、二、三……」",
+        "數到第十步，{name}真的停在一棵大樹旁。樹幹上有一隻小松鼠，抱著松果啃得喀喀響，尾巴蓬蓬地晃來晃去。{name}忍不住笑出聲，松鼠嚇了一跳，咻地鑽進樹洞，只留下半顆松果。爺爺笑說：「看來牠覺得你的笑聲比牠的點心還精彩。」",
+        "接下來，{name}一邊數步，一邊找新發現。第二個十步，看見石縫裡開著小小的紫色野花；第三個十步，聽見遠處的鳥叫「啾啾、啾啾」，像在替大家加油。{name}發現，原本累人的石階，現在好像變成一場尋寶遊戲，每一段都藏著驚喜。",
+        "快到山頂時，換爺爺停下來擦汗，喘著氣說：「哎呀，爺爺的腳也有點痠了。」{name}立刻牽起爺爺的手，認真地說：「爺爺別擔心，我們只看下一塊石頭，數十步就好！」兩人一起數著，一步一步，慢慢爬上最後一段陡坡，終於踏上了瞭望台。",
+        "眼前的山谷鋪滿綠色，白雲像棉花一樣飄在腳下，風輕輕吹過臉頰。爺爺摸摸{name}的頭說：「今天是你帶我上來的呢。」{name}望著來時彎彎曲曲的小路，想起松鼠、野花和鳥叫聲，覺得這一路上的每一小步，都和山頂的風景一樣美。"
+      ],
+      "en": [
+        "Early on Saturday morning, {name} packed {his} little water bottle and walked with Grandpa to the foot of the mountain. Grandpa pointed to a wooden platform peeking through the mist. \"That's the lookout. From up there, you can see the whole valley!\" {name} nodded hard, sure of zooming straight to the top like a speedy deer.",
+        "At first the trail was flat and easy, and the leaves rustled overhead. {name} hurried ahead, calling back for Grandpa to keep up. But around one bend, the path suddenly turned steep. Stone steps stacked up and up, as if they climbed into the sky. Soon {name}'s legs ached, and {his} breath came fast.",
+        "\"It's so far. What if I can't make it?\" {name} sighed, plopping onto a rock. Grandpa didn't rush. He sat down too and passed over the water bottle. \"Let's forget the top. Just look at the next tree. Ten steps, then a rest. Deal?\" {name} stood up, not quite sure, and whispered, \"One, two, three...\"",
+        "On step ten, {name} stopped beside a big tree. A little squirrel sat on the trunk, crunching a pinecone, its fluffy tail swishing back and forth. {name} giggled out loud. The squirrel jumped and zipped into a hole, leaving half its snack behind. Grandpa chuckled, \"I think your laugh was more exciting than lunch.\"",
+        "After that, {name} counted steps and hunted for surprises. The next ten steps led to tiny purple flowers tucked between the rocks. Ten more brought birds singing, \"Tweet-tweet, tweet-tweet,\" like a cheering crowd. Somehow, the tiring stairs had turned into a treasure hunt, with something new hiding along every stretch of the trail.",
+        "Near the top, it was Grandpa who stopped to wipe his forehead. \"Whew, my old legs are tired too.\" {name} took his hand right away. \"Don't worry, Grandpa. Just look at the next rock. Only ten steps!\" Counting together, step by careful step, they climbed the last steep slope and finally stood on the lookout.",
+        "Green hills rolled across the valley, and fluffy clouds drifted below them as a cool breeze passed by. Grandpa smiled at {name}. \"You're the one who brought me up here today.\" {name} looked back at the winding trail, remembering the squirrel, the flowers, and the birds. Every little step had been as beautiful as the view."
+      ]
+    },
+    "draft": true
+  },
+  {
+    "id": "the-puddle-that-was-a-sea",
+    "style": "adventure",
+    "ageBands": [
+      "2-4",
+      "4-6"
+    ],
+    "setting": "park",
+    "title": {
+      "zh": "{name}的樹葉船",
+      "en": "{name}'s Leaf Ship"
+    },
+    "paragraphs": {
+      "zh": [
+        "雨停了，太陽出來了。{name}穿上雨鞋，牽著媽媽的手，走進公園。滴答，滴答，樹葉上還有小水珠。草地亮亮的，空氣香香的。走著走著，{name}看見前面有一個好大好大的水窪，像一面圓圓的鏡子。媽媽說：「我們去看看吧！」",
+        "{name}蹲在水窪旁邊，媽媽也蹲下來。水裡有藍藍的天，還有白白的雲。風一吹，水面輕輕晃，一圈又一圈。{name}說：「媽媽，這是一片大海！」媽媽笑著點點頭：「那我們需要一艘船，才能去探險喔。」{name}開始東看看，西看看。",
+        "一片黃黃的樹葉，躺在長椅下面。{name}撿起樹葉，翻過來看一看，彎彎的，像一艘小船。{name}把樹葉輕輕放在水上。咻，樹葉船浮起來了！它不會沉，也不會翻。{name}拍拍手說：「船長準備好了，出發囉！」媽媽也一起拍拍手。",
+        "{name}輕輕吹氣，呼，呼，樹葉船往前走。可是水窪中間空空的，船要停在哪裡呢？{name}想了想，找到一顆圓圓的小石頭。撲通一聲，小石頭放進水裡，露出一點點頭。媽媽說：「哇，這是一座小島！」樹葉船慢慢漂向小島。",
+        "這時候，媽媽指著小島說：「你看，誰在那裡？」原來是一隻小蝸牛！牠背著捲捲的殼，慢慢爬，慢慢爬，觸角一伸一縮。小蝸牛好像想搭船。{name}讓樹葉船輕輕靠近小島，小蝸牛爬呀爬，終於爬上了樹葉船。",
+        "{name}小聲說：「歡迎上船，蝸牛先生！」呼，呼，{name}又輕輕吹氣，樹葉船載著小蝸牛，繞過小島，穿過雲朵的影子。一隻小鳥在樹上啾啾叫，好像在說加油。媽媽說：「船長，前面就是岸邊囉。」樹葉船慢慢停在濕濕的草地旁。",
+        "小蝸牛爬下樹葉船，爬進綠綠的草叢裡，慢慢回家了。{name}揮揮手說：「再見，蝸牛先生！」{name}把樹葉船放在長椅上，等下次再出航。太陽暖暖的，{name}牽著媽媽的手往前走。今天的探險，真好玩。"
+      ],
+      "en": [
+        "The rain stopped, and the sun came out. {name} put on rain boots, held Mom's hand, and walked into the park. Drip, drop went the wet leaves. The grass sparkled, and the air smelled fresh. Soon {name} spotted a big, big puddle, round and shiny like a mirror. \"Let's go see,\" said Mom.",
+        "{name} crouched by the puddle, and Mom crouched down too. The water held the blue sky and fluffy white clouds. When the wind blew, little ripples spread out, round and round. \"Mom, it's an ocean!\" said {name}. Mom smiled and nodded. \"Then we need a ship to go exploring.\" {name} looked here and there.",
+        "Under a bench lay a yellow leaf. {name} picked it up and turned it over. It curved just like a little boat. Gently, {name} set the leaf on the water. Whoosh! The leaf ship floated. It did not sink or tip. \"The captain is ready. Off we go!\" cheered {name}, and Mom clapped along happily.",
+        "{name} blew softly, whoo, whoo, and the leaf ship sailed ahead. But the middle of the puddle was empty. Where could the ship stop? {name} thought hard and found a small, round pebble. Plop! In it went, with its top peeking out. \"Wow, an island!\" said Mom. The leaf ship drifted slowly toward it.",
+        "Then Mom pointed at the island. \"Look, who's there?\" It was a little snail! It carried a curly shell and crept slowly, slowly, its feelers stretching in and out. The snail seemed to want a ride. {name} nudged the ship close to the island, and the snail crawled and crawled until it climbed aboard.",
+        "\"Welcome aboard, Mr. Snail!\" whispered {name}. Whoo, whoo, {name} blew again. The leaf ship carried the snail around the island and through the shadows of the clouds. A bird in a tree went tweet, tweet, as if cheering them on. \"Captain, the shore is ahead,\" said Mom. The ship stopped beside the wet grass.",
+        "The snail slid off the leaf ship and crept into the green grass, slowly heading home. \"Bye-bye, Mr. Snail!\" said {name}, waving. {name} left the leaf ship on the bench, ready for another voyage someday. The sun felt warm as {name} held Mom's hand and walked on. What a wonderful adventure it had been!"
+      ]
+    },
+    "draft": true
+  },
+  {
+    "id": "map-in-the-message-bottle",
+    "style": "adventure",
+    "ageBands": [
+      "6-8",
+      "8-10"
+    ],
+    "setting": "sea",
+    "title": {
+      "zh": "{name}和瓶子裡的藏寶圖",
+      "en": "{name} and the Map in the Bottle"
+    },
+    "paragraphs": {
+      "zh": [
+        "晴朗的早晨，{name}和爸爸在沙灘上蓋沙堡。爸爸負責挖護城河，{name}負責堆高塔。挖著挖著，{his}小鏟子忽然「叩」的一聲，碰到一個硬硬的東西。{name}小心撥開濕沙，發現一個綠色的玻璃瓶，瓶口還用軟木塞緊緊塞住。",
+        "爸爸幫忙拔開木塞，從裡面倒出一張捲起來的紙。紙已經有點泛黃，上面畫著彎彎的海岸線、一座紅白相間的燈塔，還有一個大大的叉叉。旁邊用歪歪扭扭的字寫著：「從燈塔出發，往大石頭走二十步。」{name}睜大眼睛說：「爸爸，這是藏寶圖！」",
+        "爸爸笑著說：「那我們出發吧，不過要一起走喔。」他們沿著沙灘來到燈塔下。{name}找到一塊像烏龜殼的大石頭，一邊大聲數，一邊往前跨步。數到二十時，{he}停下腳步，發現沙子上插著一根褪色的小木棍，上面綁著一條藍色緞帶。",
+        "緞帶上掛著一個小牌子，寫著第二個線索：「去找會唱歌的地方。」{name}歪著頭想：沙灘上誰會唱歌呢？海鷗「嘎嘎」叫，可是牠們一直飛來飛去。這時一陣風吹過，旁邊的礁岩縫隙發出「嗚嗚」的聲音，好像有人在吹口哨。{name}高興地拉著爸爸跑過去。",
+        "在礁岩旁邊乾燥的沙地上，有一圈排成心形的小石頭。爸爸蹲下來，和{name}一起用手輕輕挖。沙子一層一層被撥開，終於露出一個生鏽的小鐵盒。{name}的心撲通撲通跳，連手都有點發抖。爸爸開玩笑說：「希望裡面不是一隻生氣的螃蟹。」",
+        "打開盒子，裡面是滿滿的貝殼：粉紅色的扇貝、白色的螺殼，還有一顆亮晶晶的小海螺。盒底有一張紙條：「我叫小薇，今年八歲。這是我最愛的貝殼。找到的人，請拿走一個，再放進一樣你的寶物，然後把盒子藏回去。」爸爸說，小薇現在應該已經長大了。",
+        "{name}挑了那顆小海螺，又從口袋拿出今天撿到的一塊光滑藍色海玻璃，輕輕放進盒子裡。{he}還在紙條背面畫了一座沙堡，寫上自己的名字。他們把盒子埋回原處，排好心形石頭。夕陽染紅了海面，{name}握著小海螺，牽著爸爸慢慢走回家。"
+      ],
+      "en": [
+        "On a sunny morning, {name} and Dad were building a sandcastle on the beach. Dad dug the moat, and {name} piled up the tallest tower. Suddenly, {his} little shovel hit something hard with a clink. {name} brushed away the wet sand and found a green glass bottle, its cork pushed in tight.",
+        "Dad helped pull out the cork, and a rolled-up paper slid into {name}'s hand. It was yellow with age. On it were a curvy shoreline, a red-and-white lighthouse, and a big X. Wobbly letters said, \"Start at the lighthouse. Walk twenty steps to the big rock.\" \"Dad, it's a treasure map!\" {name} gasped.",
+        "\"Then let's go,\" Dad grinned, \"but we stay together.\" They walked along the sand to the lighthouse. {name} spotted a rock shaped like a turtle shell and began counting giant steps out loud. At twenty, {name} stopped. A faded little stick poked out of the sand, tied with a blue ribbon.",
+        "A tiny tag on the ribbon held the second clue: \"Find the place that sings.\" {name} tilted {his} head. Who sings on a beach? The seagulls squawked, but they never stayed still. Then the wind blew, and the cracks in the nearby rocks whistled, \"Whooo, whooo.\" {name} grabbed Dad's hand and hurried over.",
+        "On dry sand beside the rocks lay a ring of pebbles arranged in a heart. Dad knelt, and together they scooped gently with their hands. Layer by layer, the sand gave way until a rusty little tin box appeared. {name}'s heart thumped. Dad joked, \"Let's hope there's no grumpy crab inside.\"",
+        "Inside, the box was full of shells: pink scallops, white swirly ones, and one shiny little conch. At the bottom was a note: \"My name is Wei, and I am eight. These are my favorite shells. Finder, please take one, add a treasure of your own, and hide the box again.\" Dad said Wei must be grown up now.",
+        "{name} chose the shiny conch, then took a smooth piece of blue sea glass from a pocket and placed it gently inside. On the back of the note, {name} drew a sandcastle and signed it. They buried the box and rebuilt the pebble heart. As the sunset turned the sea pink, {name} held Dad's hand and walked home."
+      ]
+    },
+    "draft": true
   }
 ]
