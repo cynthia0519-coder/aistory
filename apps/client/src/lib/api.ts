@@ -6,6 +6,8 @@ const MESSAGES: Record<string, string> = {
   refused: "這張照片沒辦法編故事，換一張試試看。",
   busy: "現在太多人在用了，稍等一下再試。",
   invalid_request: "照片或設定有問題，請重新選擇。",
+  rate_limited: "故事編得太快了，休息一下再來。",
+  daily_cap: "今天的故事額度用完了，明天再來。",
 };
 
 export class StoryApiError extends Error {}

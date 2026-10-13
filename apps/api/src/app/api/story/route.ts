@@ -1,5 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { StoryRequestSchema, type ApiError, type StoryResponse } from "@aistory/shared";
+import { checkRateLimit, clientIp } from "@/lib/rate-limit";
 import { generateStory, StoryRefusedError } from "@/lib/story-engine";
 
 const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS ?? "")
@@ -38,6 +39,12 @@ export async function POST(request: Request) {
   const parsed = StoryRequestSchema.safeParse(body);
   if (!parsed.success) {
     return json({ error: "invalid_request" }, 400, origin);
+  }
+
+  // 只計算會真正呼叫 Claude 的請求
+  const limit = await checkRateLimit(clientIp(request));
+  if (!limit.ok) {
+    return json({ error: limit.reason === "global" ? "daily_cap" : "rate_limited" }, 429, origin);
   }
 
   // 照片只存在這次請求的記憶體中，不寫入磁碟或資料庫，也不記錄 log。
