@@ -111,6 +111,8 @@ export function musicGroup(style: StoryStyle, theme?: ThemeId): MusicGroup {
     if (category === "safety") return "theme-careful";
     if (category === "habits") return "theme-routine";
     if (category === "emotions") return "theme-calm";
+    if (category === "values") return "inspiring";
   }
-  return style;
+  // 寓言還沒有專屬配樂，先用勵志那組
+  return style === "fable" ? "inspiring" : style;
 }
