@@ -64,7 +64,7 @@ const NETWORK_BACKOFF_MS = 60_000;
 const FETCH_TIMEOUT_MS = 10_000;
 
 /** 極短的無聲 WAV：在使用者手勢裡先播一次，iOS WKWebView 之後才允許同一個 <audio> 自動播放 */
-const SILENT_WAV =
+export const SILENT_WAV =
   "data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQQAAACAgICA";
 
 async function audioKey(voice: string, text: string): Promise<string | null> {

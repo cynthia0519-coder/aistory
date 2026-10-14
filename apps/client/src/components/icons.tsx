@@ -113,3 +113,28 @@ export const MusicOffIcon = ({ className }: P) => (
     <path d="M4 4l16 16" />
   </svg>
 );
+
+export const MicIcon = ({ className }: P) => (
+  <svg {...base} className={className}>
+    <rect x="9" y="3" width="6" height="11" rx="3" />
+    <path d="M5 11a7 7 0 0 0 14 0M12 18v3" />
+  </svg>
+);
+
+export const StopIcon = ({ className }: P) => (
+  <svg {...base} className={className}>
+    <rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor" />
+  </svg>
+);
+
+export const NextIcon = ({ className }: P) => (
+  <svg {...base} className={className}>
+    <path d="M9 5l7 7-7 7" />
+  </svg>
+);
+
+export const PrevIcon = ({ className }: P) => (
+  <svg {...base} className={className}>
+    <path d="M15 5l-7 7 7 7" />
+  </svg>
+);

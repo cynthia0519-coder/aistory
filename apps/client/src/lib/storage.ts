@@ -27,12 +27,14 @@ const STORE = "stories";
 export const HERO_STORE = "heroes";
 /** 雲端朗讀的音檔快取（lib/tts.ts 使用） */
 const AUDIO_STORE = "audio";
+/** 爸媽的錄音（lib/recordings.ts 使用）；只存在這支手機 */
+export const RECORDING_STORE = "recordings";
 
 let dbPromise: Promise<IDBPDatabase> | null = null;
 
-// 版本 1：stories；版本 2：加上 heroes；版本 3：加上 audio。升級時只補缺的 store，不動舊資料
+// 版本 1：stories；版本 2：加上 heroes；版本 3：加上 audio；版本 4：加上 recordings。升級時只補缺的 store，不動舊資料
 export function db() {
-  dbPromise ??= openDB(DB_NAME, 3, {
+  dbPromise ??= openDB(DB_NAME, 4, {
     upgrade(database, oldVersion) {
       if (oldVersion < 1) {
         const store = database.createObjectStore(STORE, { keyPath: "id" });
@@ -45,6 +47,10 @@ export function db() {
       if (oldVersion < 3 && !database.objectStoreNames.contains(AUDIO_STORE)) {
         const audio = database.createObjectStore(AUDIO_STORE, { keyPath: "key" });
         audio.createIndex("lastUsed", "lastUsed");
+      }
+      if (oldVersion < 4 && !database.objectStoreNames.contains(RECORDING_STORE)) {
+        const recordings = database.createObjectStore(RECORDING_STORE, { keyPath: "key" });
+        recordings.createIndex("storyId", "storyId");
       }
     },
   });
@@ -61,7 +67,12 @@ export async function listStories(): Promise<SavedStory[]> {
 }
 
 export async function deleteStory(id: string) {
-  await (await db()).delete(STORE, id);
+  const database = await db();
+  await database.delete(STORE, id);
+  // 這個故事的錄音也一起刪
+  const tx = database.transaction(RECORDING_STORE, "readwrite");
+  for (const key of await tx.store.index("storyId").getAllKeys(id)) await tx.store.delete(key);
+  await tx.done;
 }
 
 /** 要求瀏覽器不要在空間不足時自動清掉資料（iOS Safari 尤其會清） */
