@@ -9776,5 +9776,59 @@
       ]
     },
     "draft": true
+  },
+  {
+    "id": "losing-failing-calligraphy-blot",
+    "style": "inspiring",
+    "ageBands": [
+      "6-8"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "{name}和墨點裡的「永」字",
+      "en": "{name} and the Inky Forever"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期三下午是書法課，教室裡飄著淡淡的墨香。林老師在黑板上寫了一個大大的「永」字，笑著說：「今天我們來寫『永遠』的永。」{name}和好朋友小安並肩坐著，兩人一起把毛筆輕輕沾進硯台裡。",
+        "{name}屏住呼吸，一筆一筆慢慢寫。點寫好了，橫也寫好了，眼看就要完成。可是筆尖吸了太多墨，「啪」的一聲，一大滴墨落在紙中央，像一個圓圓的黑水坑，把整個「永」字都蓋住了。",
+        "{name}的臉一下子熱了起來，心裡又急又難過。旁邊小安的「永」字工工整整，已經得到老師畫的紅圈圈。{name}抓起紙，雙手用力，正想把它揉成一團丟掉。",
+        "林老師走過來，輕輕按住那張紙。「先別急，跟老師一起深呼吸。」{name}吸了一口氣，再慢慢吐出來，肩膀鬆了一點。老師從櫃子裡拿出一疊泛黃的舊紙，上面全是墨點和歪歪的筆畫。",
+        "「這是我小時候的練習紙。」林老師翻給{name}看，「那些很厲害的書法家，常常一個筆畫就練上一百遍。墨點不是壞事，它告訴我們下一次可以怎麼調整。」老師示範把筆尖在硯台邊緣刮一刮，多餘的墨就乖乖留在硯台裡了。",
+        "小安眨眨眼說：「我們來玩『慢慢寫』遊戲好不好？誰寫得最慢最穩，誰就贏！」{name}點點頭，拿起一張新紙。這一次，{name}先刮掉多餘的墨，再慢慢落筆。第一點圓圓的，橫卻有點抖，{name}就再寫一次、又一次。",
+        "突然，小安的筆一滑，紙上也冒出一個大墨點。小安嘟起嘴，看起來好失望。{name}拍拍小安的肩膀說：「沒關係，我們再寫一次。你看，先把筆刮一刮。」小安笑了，兩人一起重新開始，誰贏誰輸早就忘了。",
+        "下課前，{name}的「永」字雖然不算完美，筆畫卻穩穩的。林老師在旁邊畫了一個紅圈圈。{name}把新的字和那張有墨點的紙一起收進資料夾，還特別把墨點那張放在第一頁，因為那是一切的開始。"
+      ],
+      "en": [
+        "On Wednesday afternoon it was calligraphy class, and the room smelled softly of ink. Ms. Lin painted a big character on the board. \"Today we'll write yong, the yong in forever,\" she said. {name} sat beside a good friend, Anan, and they both dipped their brushes into their ink stones.",
+        "{name} held a careful breath and wrote one stroke at a time. The dot was done, then the flat line. It was almost finished! But the brush was too full. Plop! A huge drop of ink fell right in the middle, like a round black puddle covering the whole character.",
+        "{name}'s cheeks grew warm, and a tight, upset feeling filled {his} chest. Next door, Anan's character looked neat and tidy, and it already had a red circle from Ms. Lin. {name} grabbed the paper with both hands, ready to crumple it into a ball.",
+        "Ms. Lin came over and gently pressed the paper flat. \"Wait a moment. Let's take a deep breath together.\" {name} breathed in, then slowly breathed out, and {his} shoulders loosened a little. Ms. Lin pulled a stack of old yellowed paper from the cupboard, covered in blots and wobbly strokes.",
+        "\"These are my practice sheets from when I was little,\" said Ms. Lin. \"Great calligraphy masters often practice one stroke a hundred times. A blot isn't bad. It shows us what to change next time.\" She showed how to wipe the brush on the edge of the ink stone so the extra ink stayed behind.",
+        "Anan grinned. \"Let's play the Slow Writing game! Whoever writes the slowest and steadiest wins!\" {name} nodded and took a fresh sheet. This time, {name} wiped the brush first, then began slowly. The dot came out round, but the line wobbled, so {name} tried again, and again.",
+        "Suddenly Anan's brush slipped, and a big blot appeared on her paper too. Anan's face drooped. {name} patted her shoulder and said, \"That's okay. Let's try again. Look, wipe your brush first.\" Anan smiled, and they started over together, forgetting all about who was winning.",
+        "Before class ended, {name}'s character wasn't perfect, but every stroke was steady. Ms. Lin drew a red circle beside it. {name} put the new page and the blotted one into a folder, and placed the blotted page first, because that was where it all began."
+      ]
+    },
+    "theme": "losing-failing",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}看到墨點時有什麼感覺？後來{he}做了什麼讓心情慢慢平靜下來？",
+          "小安的紙上也出現墨點時，{name}怎麼幫助朋友？如果你的朋友玩遊戲輸了，你會怎麼說？",
+          "你有沒有犯過錯、後來再試一次就變得更好的經驗？"
+        ],
+        "tip": "這個星期，當孩子遇到挫折時，和孩子一起做三次深呼吸，再說一句「沒關係，我們再試一次」，也可以分享一個你自己犯錯後重新練習的小故事。"
+      },
+      "en": {
+        "questions": [
+          "How did {name} feel when the ink blot fell? What helped {him} calm down?",
+          "When Anan made a blot too, how did {name} help? What could you say to a friend who loses a game?",
+          "Can you remember a time you made a mistake, tried again, and got better?"
+        ],
+        "tip": "This week, when your child feels frustrated, take three slow breaths together and say, \"That's okay, let's try again.\" You might also share a story about a mistake you once practiced your way through."
+      }
+    },
+    "draft": true
   }
 ]
