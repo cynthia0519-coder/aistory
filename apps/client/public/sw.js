@@ -1,6 +1,6 @@
 // 網頁版離線支援：快取 App 外殼與故事庫，離線時仍可開啟並閱讀本地書櫃與故事庫。
 // 打包成 App（Capacitor）時檔案已在裝置上，不依賴這支。
-const CACHE = "aistory-v3";
+const CACHE = "aistory-v4";
 
 self.addEventListener("install", (e) => {
   e.waitUntil(
@@ -33,7 +33,11 @@ self.addEventListener("activate", (e) => {
 
 self.addEventListener("fetch", (e) => {
   const req = e.request;
-  if (req.method !== "GET" || new URL(req.url).origin !== self.location.origin) return;
+  const url = new URL(req.url);
+  if (req.method !== "GET" || url.origin !== self.location.origin) return;
+  // 音樂與音效不經過這裡：<audio> 會用 Range 分段請求，iOS Safari 經過 service worker 時常常播不出來；
+  // 30MB 的歌也不該塞進快取
+  if (url.pathname.startsWith("/music/") || req.headers.has("range")) return;
   // 先走網路拿最新版，失敗再用快取
   e.respondWith(
     fetch(req)

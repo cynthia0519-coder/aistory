@@ -94,6 +94,10 @@ function createEngine(): BackgroundMusic {
       window.AudioContext ?? (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
     if (!Ctor) return null;
     if (!ctx) {
+      // iOS：Web Audio 預設跟著側邊靜音開關，開了靜音就聽不到音樂（朗讀用 <audio> 不受影響）。
+      // 設成 playback 才跟朗讀一樣照常出聲（iOS 17 / Safari 17 起支援）
+      const session = (navigator as Navigator & { audioSession?: { type: string } }).audioSession;
+      if (session) session.type = "playback";
       ctx = new Ctor();
       master = ctx.createGain();
       master.gain.value = 0;
