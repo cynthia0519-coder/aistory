@@ -10489,48 +10489,48 @@
     ],
     "setting": "park",
     "title": {
-      "zh": "{name}大聲說不要",
-      "en": "{name} Says No Out Loud"
+      "zh": "{name}響亮的「不要！」",
+      "en": "{name}'s Big, Brave \"No!\""
     },
     "paragraphs": {
       "zh": [
-        "星期六下午，太陽暖暖的。爺爺帶{name}來公園玩。爺爺坐在大樹下的長椅上看報紙。長椅正對著溜滑梯和沙坑。「{name}，要在爺爺看得到的地方玩喔。」{name}點點頭，開心地跑向溜滑梯。咻！一次，兩次，三次！",
-        "玩累了，{name}跑到沙坑裡堆城堡。一位戴大草帽的阿姨走過來。她笑得好親切。「今天好熱喔！」阿姨說。「我車上有免費的冰棒。有草莓的，也有巧克力的。跟我去拿一支好不好？」",
-        "{name}想到冰涼涼的冰棒。嘴巴好像都甜起來了。可是，{name}看看阿姨。這位阿姨是誰呢？{name}從來沒見過她。媽媽說過一個家裡的規定。不認識的人找你去哪裡，都要先問家人。不認識的人給的零食，也不能拿。",
-        "「不、不用了。」{name}的聲音小小的。阿姨又說：「車子就在旁邊，很快就好。」{name}的心咚咚跳。{name}吸了一大口氣，站得直直的。「不要！我要先問爺爺！」這一次，聲音又大又清楚。說完，{name}轉身就往長椅跑。",
-        "爺爺聽到聲音，馬上放下報紙。{name}一口氣把事情說完。爺爺牽起{his}小手，往沙坑那邊看。戴草帽的阿姨已經走遠了。爺爺蹲下來，抱了抱{name}。「你做得好棒！大聲說不要，很不容易呢。」{name}的心慢慢不跳那麼快了。{he}覺得好勇敢。",
-        "爺爺帶{name}去公園門口，找警衛陳伯伯。{name}把剛才的事再說一遍。陳伯伯豎起大拇指。「謝謝你告訴我們，我會多注意。」陳伯伯走開後，爺爺說：「大部分的人都很友善。可是，你只能跟爸爸媽媽說好的大人走。」",
-        "{name}伸出手指頭數一數。「爺爺、爸爸、媽媽，還有隔壁的林阿姨！」「答對了！」爺爺笑著說。門口剛好有一台冰棒車。爺爺買了兩支芒果冰棒。{name}咬一口，甜甜涼涼的。「跟爺爺一起買的冰棒，最好吃！」",
-        "太陽慢慢下山，天空變成橘色。爺爺和{name}手牽手走回家。一進門，{name}就跑去找媽媽。{he}把公園的事全說給媽媽聽。媽媽緊緊抱住{name}。「我們一起練習好不好？」「不要！我要先問家人！」{name}大聲說。全家都笑了，客廳裡暖暖的。"
+        "早上，{name}要和爺爺去公園。媽媽在門口問：「還記得家裡的規定嗎？」{name}點點頭說：「不認識的人，我不跟著去。」媽媽問：「如果有人叫你呢？」{name}小聲說：「不要。」聲音小小的，像小老鼠。爺爺笑著說：「我們邊走邊練習吧！」",
+        "{name}牽著爺爺的手，走在小路上。「不要！」第一次，還是小小聲。「不要！」第二次，大聲一點了。樹上的鴿子咕咕叫。走到公園門口，{name}深吸一口氣。「不要！」這次響亮得像打鼓。爺爺拍拍手：「好有力氣的聲音！」",
+        "爺爺坐在沙坑旁的綠色長椅上。「你在這裡玩，爺爺看得到你。」{name}拿出{his}紅色小鏟子。挖一挖，拍一拍，堆出一座沙城堡。太陽好大，好熱喔。{name}心想：「好想吃冰涼的東西！」",
+        "這時，一位不認識的阿姨走過來。阿姨笑咪咪的，聲音很溫柔。「天氣好熱喔！我車上有免費的冰棒。」「有草莓口味的，跟我去拿好不好？」草莓冰棒！{name}的肚子咕嚕咕嚕叫。紅色小鏟子停在半空中。",
+        "可是，{name}想起媽媽的話。不認識的人，不跟著去哪裡。就算很親切，也不拿點心。{name}的心咚咚跳。{he}站起來，挺直身體，深深吸一口氣。「不要！」就像在公園門口練習的一樣響亮。",
+        "{name}放下鏟子，直直跑向長椅。「爺爺！」{name}撲進爺爺懷裡。「有個阿姨說車上有冰棒。」「要我跟著去，我說不要！」爺爺抱緊{him}，認真聽完。那位阿姨已經走開了。爺爺說：「你做得完全正確！」",
+        "爺爺牽著{name}，去找穿綠背心的公園管理員。他們把事情說給管理員聽。管理員說：「謝謝你們告訴我。」{name}問：「爺爺，那個阿姨在笑耶。」爺爺說：「大部分的人都很好。」「但只能跟爸媽同意的大人走。」「像爺爺，或隔壁的林阿姨。」{name}用力點點頭。",
+        "爺爺和{name}回到沙坑，撿回紅色小鏟子。爺爺說：「大聲說不要，很不容易。」「你今天好勇敢！」爺爺帶{name}到賣冰棒的小推車，買了兩支草莓冰棒。祖孫倆坐在長椅上，慢慢吃。冰棒好甜，{name}的心裡也好甜。"
       ],
       "en": [
-        "On Saturday afternoon, the sun was warm. Grandpa took {name} to the park. He sat on a bench facing the slide. \"Stay where I can see you,\" said Grandpa. {name} nodded and ran to the slide. Whee!",
-        "Next, {name} built a sand castle. A lady in a big straw hat walked over. She had a friendly smile. \"It's so hot today!\" she said. \"I have free popsicles in my car. Come with me and pick one.\"",
-        "{name} thought about a cold, sweet popsicle. Yum! But then {name} looked at the lady. Who was she? {name} had never seen her before. Mom had a family rule. Never go with someone you don't know. Ask your grown-up first. Don't take their snacks, either.",
-        "\"N-no, thank you,\" said {name} in a tiny voice. \"My car is right there,\" said the lady. Thump, thump went {name}'s heart. {name} took a big breath and stood tall. \"NO! I have to ask Grandpa!\" It was loud and clear. Then {name} ran straight to the bench.",
-        "Grandpa put down his newspaper. {name} told Grandpa everything. Grandpa held {his} hand and looked around. The lady had already walked away. Grandpa knelt down for a hug. \"You did great! Saying no out loud is hard.\" Slowly, {name} felt calm and brave.",
-        "Together they walked to the park gate. They found Mr. Chen, the park guard. {name} told the story again. Mr. Chen gave a thumbs-up. \"Thank you for telling us. I'll keep watch.\" Then Grandpa said, \"Most people are kind. But you only go with grown-ups Mom and Dad say yes to.\"",
-        "{name} counted on {his} fingers. \"Grandpa, Mom, Dad, and Auntie Lin next door!\" \"That's right!\" Grandpa smiled. By the gate was a popsicle cart. Grandpa bought two mango popsicles. {name} took a bite. Sweet and cold! \"Popsicles with Grandpa are the best!\"",
-        "The sun went down, and the sky turned orange. Grandpa and {name} walked home hand in hand. {name} ran to tell Mom everything. Mom gave a big, tight hug. \"Let's practice,\" she said. \"NO! I have to ask my grown-up!\" {name} shouted proudly. Everyone laughed, and home felt warm."
+        "In the morning, {name} went to the park with Grandpa. At the door, Mom asked, \"Remember our family rule?\" {name} nodded. \"I never go with someone we don't know.\" \"And if someone asks?\" said Mom. \"No,\" said {name}. It came out tiny, like a mouse. Grandpa smiled. \"Let's practice on the way.\"",
+        "{name} held Grandpa's hand on the path. \"No!\" The first try was still small. \"No!\" The second try was louder. Up in a tree, a pigeon cooed. At the park gate, {name} took a deep breath. \"NO!\" It boomed like a drum. Grandpa clapped. \"What a strong voice!\"",
+        "Grandpa sat on a green bench by the sandbox. \"Play here, where I can see you.\" {name} took out {his} red shovel. Dig, dig. Pat, pat. Soon there was a sandcastle. The sun was so hot. \"I wish I had something cold,\" {name} thought.",
+        "Then a lady {name} didn't know walked over. The lady had a big smile and a soft voice. \"It's so hot! I have free popsicles in my car. Strawberry ones! Want to come with me?\" Strawberry! {name}'s tummy rumbled. The red shovel stopped in the air.",
+        "But {name} remembered Mom's words. Don't go anywhere with someone you don't know. Don't take treats, even from someone nice. Thump, thump went {name}'s heart. {name} stood up tall and breathed in deep. \"NO!\" It was loud, just like at the gate.",
+        "{name} dropped the shovel and ran straight to the bench. \"Grandpa! A lady said there are popsicles in a car. She wanted me to go with her. I said no!\" Grandpa hugged {him} tight and listened. The lady was already walking away. \"You did exactly the right thing,\" said Grandpa.",
+        "Together they found the park helper in a green vest. They told the helper everything. \"Thank you for telling me,\" said the helper. \"Grandpa, the lady was smiling,\" said {name}. \"Most people are kind,\" said Grandpa. \"But we only go with grown-ups Mom and Dad choose. Like me, or Auntie Lin next door.\" {name} nodded.",
+        "Grandpa and {name} went back for the red shovel. \"A big no is hard to say,\" said Grandpa. \"You were so brave.\" Then they walked to the popsicle cart. Grandpa bought two strawberry popsicles. They ate them slowly on the green bench. The popsicles were sweet, and {name}'s smile was sweeter."
       ]
     },
     "theme": "strangers",
     "guide": {
       "zh": {
         "questions": [
-          "戴草帽的阿姨說有冰棒的時候，{name}做了什麼？",
-          "你可以跟哪些大人走？我們一起數一數好嗎？",
-          "如果有不認識的人叫你一起去拿東西，你會怎麼說、怎麼做？"
+          "不認識的阿姨說有冰棒時，{name}做了什麼？",
+          "如果有你不認識的人叫你一起走，你會怎麼做？",
+          "我們家可以一起去的大人有誰？"
         ],
-        "tip": "今晚和孩子一起列出「可以一起走的大人」名單，並練習大聲說：「不要！我要先問家人！」然後跑向你。"
+        "tip": "今晚和孩子玩「大聲說不要」的練習遊戲，再一起說出爸媽同意可以接送的大人名字。"
       },
       "en": {
         "questions": [
-          "What did {name} do when the lady in the straw hat offered a popsicle?",
-          "Which grown-ups are you allowed to go with? Can we count them together?",
-          "What would you say and do if someone you don't know asked you to come along?"
+          "What did {name} do when the lady talked about popsicles?",
+          "What would you do if someone you don't know asked you to come along?",
+          "Which grown-ups in our family's circle are you allowed to go with?"
         ],
-        "tip": "Tonight, make a short list together of the grown-ups your child may go with, then practice saying loudly, \"No! I have to ask my grown-up!\" and running to you."
+        "tip": "Tonight, play a quick game of practicing a big, loud \"No!\" and running to you, then name together the grown-ups you've agreed your child may go with."
       }
     },
     "draft": true
@@ -10651,48 +10651,48 @@
     ],
     "setting": "mountain",
     "title": {
-      "zh": "{name}的山頂營火夜",
+      "zh": "{name}的山上營火夜",
       "en": "{name}'s Campfire Night on the Mountain"
     },
     "paragraphs": {
       "zh": [
-        "週末到了，{name}和爸爸媽媽去爬山。山路彎彎的，兩旁都是高高的松樹。{name}撿到一顆圓圓的松果。「這是山送我的寶物！」爬到山頂的草地，大家停下腳步。爸爸說：「今天就在這裡露營吧！」",
-        "爸爸搭好帳篷，又去撿石頭。他把石頭排成一個大圓圈。「這是營火圈。」爸爸說。「只有大人可以走進圈圈裡喔。」{name}點點頭，站在圈圈外面。爸爸在圈圈中間點起小小的營火。火光一閃一閃，好溫暖。",
-        "媽媽拿出小爐子，放上水壺燒水。不久，水壺嗚嗚叫，還冒出白煙。{name}想起家裡的電鍋，也會噴出熱熱的蒸氣。{name}往後退一步，大聲喊：「媽媽，水開了！」媽媽走過來，關掉爐火。「謝謝你提醒我！」媽媽笑著說。",
-        "晚餐是熱呼呼的玉米湯。湯碗冒著白煙，摸起來燙燙的。{name}好想馬上喝一口。媽媽說：「再等一下，湯還太燙。」{name}乖乖坐好，看著煙飄呀飄。過了一會兒，媽媽摸摸碗邊。「可以了，我們一起吹一吹。」兩人一起「呼——呼——」。湯暖暖的，真好喝！",
-        "天慢慢黑了，星星一顆顆亮起來。爸爸拿來棉花糖，還有一根長長的樹枝。「樹枝長長的，手就離火遠遠的。」爸爸說。{name}站在石頭圈外，把棉花糖伸向火堆。棉花糖慢慢鼓起來，變成金黃色。",
-        "「烤好了！」{name}開心的說。爸爸看了看：「裡面還很燙，先等一下。」{name}拿著樹枝，耐心的數到十。爸爸點點頭：「好了，我們一起吹。」「呼——呼——」{name}咬一小口。棉花糖甜甜的、軟軟的，像一朵小雲。",
-        "忽然，火堆裡「啪」的一聲。一小塊木頭滾到石頭圈邊，還紅紅的發著光。{name}趕快往後退，大聲叫：「爸爸！」爸爸用長長的火鉗，把木頭推回火堆中間。「你做得真棒！」爸爸說。該睡覺了，爸爸提來一桶水。{name}和爸爸一起握著桶子，站在圈外，把水倒下去。",
-        "營火「嘶嘶」響，冒出一陣白煙，然後熄滅了。爸爸說：「石頭還熱熱的，明天再收。」{name}點點頭，跟著媽媽走進帳篷。{name}抱著松果，聽見貓頭鷹「咕咕」叫。滿天星星眨著眼。「晚安，大山。」{name}輕輕說，慢慢閉上眼睛。"
+        "週末,{name}和爸爸媽媽去爬山。山路彎彎的,樹好高好高。{name}背著小背包,一步一步往上走。小鳥啾啾叫,松鼠跳過樹枝。「快到囉!」爸爸說。他們找到一片平平的草地。這裡就是今晚的營地。",
+        "爸爸搭好帳篷,天慢慢暗了。風吹來涼涼的。爸爸撿來好多石頭,在地上排成一個大圓圈。「這是火圈。」爸爸說。「圈圈裡面,只有大人能進去。火旁邊的東西,大家都不碰。」{name}點點頭,坐到圈圈外的木頭上。",
+        "爸爸在圈圈中間,點起小小的營火。火光橘橘的,劈啪劈啪響。媽媽在小爐子上煮湯。湯咕嘟咕嘟冒泡泡。「好香喔!」{name}說。媽媽笑著說:「湯很燙,爐子也很燙。家裡電鍋冒的煙也一樣。這些都只有大人碰喔。」",
+        "小水壺也在爐子上燒水。過了一會兒,水壺「嗚——」地叫起來。白白的蒸氣一直往上冒。{name}趕快往後退一步。「媽媽,水壺在叫!」媽媽馬上走過來。她戴上厚手套,把水壺拿下來。「謝謝你叫我,你做得真好!」",
+        "接著是最好玩的時候!爸爸拿出白白軟軟的棉花糖。他把棉花糖插在長長的樹枝上。樹枝伸到火上,慢慢地轉呀轉。棉花糖變得鼓鼓的,外面變成金黃色。{name}坐在木頭上,眼睛亮晶晶的。「哇,像一朵小雲!」",
+        "爸爸把棉花糖放在盤子上,走出圈圈。「先等一等,它還很燙。」{name}好想馬上吃,可是乖乖地等。爸爸說:「我們一起吹一吹吧。」{name}和爸爸鼓起嘴巴,呼——呼——。爸爸摸摸看,又等了一下。「好了,涼了,可以吃囉!」",
+        "{name}咬了一小口。棉花糖軟軟甜甜的,黏在嘴邊。媽媽把湯盛到小碗裡。{name}和媽媽一起吹涼,才慢慢喝。天上的星星一顆一顆亮起來。遠遠的樹林裡,貓頭鷹咕咕叫。{name}覺得,山上的夜晚好神奇。",
+        "該睡覺了。爸爸提來一桶水,慢慢倒在營火上。滋——!白煙往上飄,火光不見了。{name}坐在木頭上,看得好認真。「火睡著了。」爸爸說。{name}笑了,和爸爸媽媽走進帳篷。「晚安,大山。晚安,星星。」"
       ],
       "en": [
-        "On the weekend, {name} went hiking with Mom and Dad. The trail curved up the mountain. Tall pine trees stood all around. {name} found a round pinecone. \"A treasure from the mountain!\" At a grassy top, everyone stopped. \"Let's camp right here!\" said Dad.",
-        "Dad set up the tent. Then he gathered stones. He placed them in a big circle. \"This is our campfire ring,\" Dad said. \"Only grown-ups go inside it.\" {name} nodded and stayed outside the ring. Dad lit a small fire in the middle. It flickered, warm and bright.",
-        "Mom set a kettle on her little camp stove. Soon the kettle whistled and puffed out steam. {name} remembered the steamy rice cooker at home. {name} stepped back and called, \"Mom, the water's boiling!\" Mom came and turned off the stove. \"Thank you for telling me!\" she said.",
-        "Dinner was hot corn soup. Steam rose from the bowls. {name} wanted a sip right away. \"Let's wait,\" said Mom. \"It's still too hot.\" {name} sat and watched the steam swirl. Soon Mom touched the bowl. \"Ready! Let's blow together.\" Whoo, whoo! The soup was warm and yummy.",
-        "The sky grew dark, and stars came out. Dad brought marshmallows and a long stick. \"A long stick keeps hands far from the fire,\" he said. {name} stood outside the stone ring. {name} held the marshmallow over the flames. Slowly it puffed up and turned golden.",
-        "\"It's done!\" cheered {name}. Dad looked closely. \"The inside is still hot. Let's wait.\" {name} held the stick and counted to ten. Dad smiled. \"Okay, let's blow together.\" Whoo, whoo! {name} took a tiny bite. It was sweet and soft, like a little cloud.",
-        "Suddenly the fire went pop! A small glowing log rolled to the edge of the ring. {name} stepped back fast and called, \"Dad!\" Dad used long tongs to push it back. \"You did great!\" he said. Then it was bedtime. Dad brought a bucket of water. Together, from outside the ring, they poured it on.",
-        "The fire hissed, sent up a puff of steam, and went out. \"The stones are still warm,\" said Dad. \"We'll pack them tomorrow.\" {name} followed Mom into the tent, hugging the pinecone. An owl called, \"Hoo, hoo.\" Stars twinkled overhead. \"Goodnight, mountain,\" {name} whispered, and closed {his} eyes."
+        "On the weekend, {name} went up a mountain with Mom and Dad. The path was twisty. The trees were so tall! {name} carried a little backpack, step by step. Birds went tweet, tweet. A squirrel hopped across a branch. \"Almost there!\" said Dad. They found a flat, grassy spot. This was their camp for the night.",
+        "Dad set up the tent. The sky grew darker, and the wind felt cool. Dad gathered lots of stones. He made a big circle on the ground. \"This is the fire ring,\" he said. \"Only grown-ups go inside. And nobody touches things near the fire.\" {name} nodded and sat on a log outside the circle.",
+        "Dad lit a small campfire in the middle. The flames were orange. They went crackle, crackle, pop! Mom cooked soup on a little stove. The soup went bubble, bubble. \"It smells yummy!\" said {name}. Mom smiled. \"The soup is hot. The stove is hot too. Just like the steam from our rice cooker at home. Only grown-ups touch those.\"",
+        "A little kettle sat on the stove too. Soon it began to whistle, wheee! White steam puffed up high. {name} took a big step back. \"Mom, the kettle is whistling!\" Mom came right over. She put on thick gloves and lifted the kettle off. \"Thank you for calling me. Good job!\"",
+        "Now came the most fun part! Dad took out soft white marshmallows. He put one on a long stick. He held it over the fire and turned it slowly. The marshmallow puffed up big and turned golden brown. {name} watched from the log with shining eyes. \"Wow, it looks like a little cloud!\"",
+        "Dad put the marshmallow on a plate and stepped out of the circle. \"Let's wait. It's still very hot.\" {name} wanted it right away, but waited nicely. \"Let's blow on it together,\" said Dad. {name} and Dad puffed their cheeks. Whoo, whoo! Dad checked it and waited a bit more. \"Okay, it's cool now. You can eat it!\"",
+        "{name} took a tiny bite. It was soft and sweet and sticky. Then Mom poured soup into a small bowl. {name} and Mom blew on it together before sipping. Stars twinkled on, one by one. Far away, an owl called, hoo, hoo. The mountain night felt magical.",
+        "Soon it was time for bed. Dad brought a bucket of water. He poured it slowly over the campfire. Sssss! White smoke floated up, and the glow was gone. {name} watched very carefully from the log. \"The fire is asleep now,\" said Dad. {name} smiled and went into the tent with Mom and Dad. \"Goodnight, mountain. Goodnight, stars.\""
       ]
     },
     "theme": "hot-things",
     "guide": {
       "zh": {
         "questions": [
-          "水壺嗚嗚叫、冒白煙的時候，{name}做了什麼？",
-          "喝熱湯和吃棉花糖之前，{name}和大人一起做了什麼？",
-          "在家裡，看到電鍋冒蒸氣或熱湯，你會怎麼做？"
+          "水壺「嗚——」地叫起來時,{name}做了什麼?",
+          "棉花糖烤好以後,{name}和爸爸怎麼讓它變涼?",
+          "在我們家裡,有哪些燙燙的東西只有大人可以碰?"
         ],
-        "tip": "今晚吃飯時，和孩子玩「退一步、叫大人」的小遊戲：大人說「好燙！」，孩子就往後退一步並喊「爸爸／媽媽！」。食物涼了之後，再一起「呼呼」吹一吹。"
+        "tip": "今晚吃熱湯或熱飯時,和孩子一起說「等一等,一起吹一吹」,等大人說「涼了」再開動。也可以一起在家裡找找燙燙的東西,練習「往後退一步,叫大人」。"
       },
       "en": {
         "questions": [
-          "What did {name} do when the kettle whistled and puffed out steam?",
-          "What did {name} and the grown-ups do before eating the hot soup and the marshmallow?",
-          "At home, what would you do if you saw steam from the rice cooker or a bowl of hot soup?"
+          "What did {name} do when the kettle started to whistle?",
+          "How did {name} and Dad help the marshmallow cool down?",
+          "What hot things in our home are only for grown-ups to touch?"
         ],
-        "tip": "At dinner tonight, play \"Step Back and Call\": when you say \"Hot!\", your child takes one step back and calls \"Mom!\" or \"Dad!\". Once the food has cooled, blow on it together with a big \"whoo, whoo.\""
+        "tip": "At dinner tonight, say together, \"Wait a bit, let's blow together,\" and start eating only after a grown-up says it's cool. You can also walk around the kitchen and practice \"step back and call a grown-up\" near hot things."
       }
     },
     "draft": true
@@ -10978,48 +10978,48 @@
     ],
     "setting": "city",
     "title": {
-      "zh": "颱風過後的小幫手",
-      "en": "The Little Helper After the Typhoon"
+      "zh": "{name}的颱風天",
+      "en": "{name} and the Typhoon Day"
     },
     "paragraphs": {
       "zh": [
-        "颱風要來了，電視上的氣象主播說，今天晚上風雨會很大。放學回到家，{name}看見媽媽正在檢查手電筒有沒有電，爸爸把一瓶瓶的水排在廚房桌上。「我也要幫忙！」{name}大聲說。",
-        "媽媽笑著說：「那陽台就交給你和爸爸囉。」{name}抱起小花盆，爸爸收好曬衣架和拖鞋，連小椅子也搬進客廳。「風很大的時候，這些東西可能會被吹走喔。」爸爸說。{name}點點頭，又跑回去把小鏟子拿進來。",
-        "晚上，風開始呼呼地吼，雨點像小石子一樣打在窗戶上。{name}好想趴在窗邊，看外面的樹怎麼搖。媽媽輕輕牽起{his}手說：「我們坐到沙發這邊，離窗戶遠一點比較安全。」於是一家人在客廳鋪了毯子，打開手電筒玩影子遊戲。",
-        "{name}用手指比出一隻小兔子，爸爸比出一隻大老鷹。「我們可以出去看大浪嗎？」{name}突然問。爸爸搖搖頭：「颱風天的河邊和海邊很危險，要等風停了，大人說安全了才出門。」{name}抱著枕頭，聽著窗外的風聲，慢慢睡著了。",
-        "第二天早上，陽光從雲縫裡探出頭來。{name}跟著媽媽走到樓下門口，看見街上躺滿了斷掉的樹枝和濕答答的葉子，路邊還有一個好大的水坑。「哇，好想跳進去踩水！」{name}興奮地說。",
-        "媽媽蹲下來，指著遠處一條從電線桿垂下來的電線說：「那條線可能還有電，我們要離它遠遠的。水坑也可能比看起來還要深，先等工作人員來處理吧。」{name}看著那個亮亮的水坑，有點捨不得，但還是點了點頭。",
-        "這時，隔壁的陳奶奶拿著掃把出來掃人行道，樓上的阿明也拿來了畚箕。「我們一起幫忙吧！」媽媽說。{name}拿起一支小掃把，跟在媽媽身邊，在乾燥安全的人行道上掃。濕葉子又重又黏，{name}的手臂好痠，可是掃把一直沒有停下來。",
-        "大家一起把落葉裝進大袋子，電力公司的叔叔阿姨也來修好了電線。到了中午，整條街乾乾淨淨，在陽光下閃閃發亮。陳奶奶拍拍{name}的肩膀說：「謝謝你，小幫手！」{name}看著亮晶晶的街道，覺得手裡的小掃把好像也在發光。"
+        "電視上說，颱風明天就要來了。媽媽拿出手電筒，請{name}幫忙試試看。{name}按下開關，一道亮亮的光照在牆上。「很好，電池還很新。」媽媽笑著說。接著，{name}把一個個空水壺排好，看著爸爸裝滿乾淨的水。",
+        "下午，風開始變大了。爸爸說：「陽台上的東西要先搬進來，免得被風吹走。」{name}抱起小盆的薄荷，媽媽提起裝曬衣夾的籃子，爸爸把大花盆推進屋裡。小小的陽台一下子空了，{name}拍拍手，覺得自己也是家裡的小幫手。",
+        "晚上，颱風真的來了。窗外的風呼呼地叫，雨點打在玻璃上，像有人在敲小鼓。{name}想趴到窗邊看，媽媽輕輕牽起{his}手說：「風這麼強，我們離窗戶遠一點。」一家人坐到客廳中間的沙發上，蓋著毯子一起看圖畫書。",
+        "{name}問：「我們可以去河邊，看看河水變得多大嗎？」爸爸搖搖頭說：「颱風天的河和海都很兇，大人也不會去看。我們待在家裡，等平安了再說。」燈忽然閃了一下，{name}馬上打開手電筒，在天花板上照出一隻小兔子的影子。",
+        "第二天早上，太陽終於露出臉來。{name}從窗戶往外看：斷掉的樹枝鋪滿了街道，一條電線低低地垂在半空中，路邊積著一大灘一大灘的水。「我好想穿雨鞋去踩水！」{name}興奮地說，已經準備去拿雨鞋了。",
+        "媽媽蹲下來，指著那條電線說：「掉下來的電線可能還有電，很危險。那些水坑也看不出有多深。我們先在家等，等大人說安全了再出去。」{name}有點失望，但還是點點頭，拿出蠟筆，畫了一條乾乾淨淨的街。",
+        "中午，一輛工程車停在樓下。穿著亮橘色背心的工人叔叔升上高高的平台，把電線修好、掛回原位。住在隔壁的林伯伯走過來說：「電線修好了，人行道也清出來了，可以出來囉！」{name}開心地拿起{his}小掃把，跟著媽媽下樓。",
+        "濕濕的落葉好重，{name}掃了幾下就喘起氣來。陳奶奶笑著說：「一小堆一小堆慢慢掃，就不累了。」{name}照著試，果然輕鬆多了。到了傍晚，街道又變得亮晶晶的。{name}想起自己畫的那條街，再看看眼前的街，笑得好開心。"
       ],
       "en": [
-        "A typhoon was coming. The weather reporter on TV said the wind and rain would be very strong that night. When {name} got home from school, Mom was testing the flashlight, and Dad was lining up bottles of water on the kitchen table. \"I want to help too!\" {name} said.",
-        "\"Then you and Dad can take care of the balcony,\" Mom said with a smile. {name} carried in the little flowerpot while Dad brought in the drying rack, the slippers, and even a small stool. \"Strong wind can blow these things away,\" Dad said. {name} nodded and ran back for the tiny shovel.",
-        "That night, the wind howled, and rain hit the windows like little pebbles. {name} really wanted to press close to the glass and watch the trees sway. Mom gently took {his} hand. \"Let's sit on the couch, away from the windows. It's safer there.\" So the family spread a blanket in the living room and played shadow games with the flashlight.",
-        "{name} made a bunny with two fingers, and Dad made a big eagle. \"Can we go out and see the giant waves?\" {name} suddenly asked. Dad shook his head. \"Rivers and the sea are dangerous on a typhoon day. We'll go out when the wind stops and grown-ups say it's safe.\" Hugging a pillow, {name} listened to the wind and slowly fell asleep.",
-        "The next morning, sunshine peeked through the clouds. {name} and Mom went downstairs to the front door. Broken branches and soggy leaves covered the street, and there was a huge puddle by the curb. \"Wow! I want to jump in and splash!\" {name} said.",
-        "Mom crouched down and pointed to a wire hanging from a pole far away. \"That wire might still have electricity, so we stay far from it. And the puddle may be deeper than it looks. Let's wait for the workers to take care of things.\" {name} looked at the shiny puddle a little sadly, but nodded.",
-        "Just then, Grandma Chen from next door came out to sweep the sidewalk, and Ming from upstairs brought a dustpan. \"Let's help,\" said Mom. {name} grabbed a small broom and swept beside Mom on the safe, dry sidewalk. The wet leaves were heavy and sticky. {name}'s arms got tired, but the broom kept moving.",
-        "Together they filled big bags with leaves, and workers from the power company came to fix the wire. By lunchtime, the whole street was clean and sparkling in the sun. Grandma Chen patted {name}'s shoulder. \"Thank you, little helper!\" {name} looked at the shining street and felt like the little broom was glowing too."
+        "The news said a typhoon would arrive tomorrow. Mom took out the flashlight and asked {name} to test it. Click! A bright circle of light shone on the wall. \"Good, the batteries are fresh,\" Mom said with a smile. Then {name} lined up empty bottles while Dad filled each one with clean water.",
+        "In the afternoon, the wind grew stronger. \"Let's bring everything in from the balcony so nothing blows away,\" Dad said. {name} carried the little pot of mint, Mom picked up the basket of clothespins, and Dad rolled the big flowerpot inside. Soon the balcony was empty, and {name} clapped, proud to be a helper.",
+        "That night, the typhoon came. The wind went whoo-whoo outside, and rain tapped on the glass like tiny drums. {name} wanted to press close to the window and look, but Mom gently took {his} hand. \"The wind is very strong. Let's stay away from the windows.\" The family snuggled on the sofa in the middle of the living room and read picture books under a blanket.",
+        "\"Can we go to the river and see how big it got?\" {name} asked. Dad shook his head. \"On a typhoon day, rivers and the sea are too wild. Even grown-ups stay away. We'll stay home until it's safe.\" Just then the lights flickered, and {name} quickly switched on the flashlight and made a bunny shadow on the ceiling.",
+        "The next morning, the sun peeked out at last. {name} looked out the window. Broken branches covered the street, a wire hung low in the air, and big puddles filled the edges of the road. \"I want to wear my rain boots and splash!\" {name} said, already reaching for the boots.",
+        "Mom knelt down and pointed at the wire. \"A fallen wire might still have electricity in it, and that's dangerous. We also can't tell how deep those puddles are. Let's wait inside until the grown-ups say it's safe.\" {name} felt a little disappointed but nodded, then picked up crayons and drew a clean, shiny street.",
+        "At lunchtime, a work truck stopped outside. Workers in bright orange vests rode a tall lift up and fixed the wire, hanging it back where it belonged. Mr. Lin from next door came over. \"The wire is fixed, and the sidewalk is clear. You can come out now!\" {name} grabbed {his} little broom and followed Mom downstairs.",
+        "The wet leaves were heavy, and soon {name} was puffing. Grandma Chen smiled. \"Sweep them into small piles, a little at a time. It's easier that way.\" {name} tried it, and it really was easier. By evening, the street sparkled again. {name} thought of the drawing, looked at the real street, and grinned from ear to ear."
       ]
     },
     "theme": "typhoon",
     "guide": {
       "zh": {
         "questions": [
-          "颱風來之前，{name}和家人一起準備了哪些東西？",
-          "風很大的時候，媽媽為什麼請{name}坐到沙發那邊？",
-          "如果颱風天你很想出去看大浪，你會怎麼做呢？"
+          "颱風來之前，{name}幫家裡準備了哪些東西？我們家還可以準備什麼？",
+          "風很大的時候，{name}和家人坐在哪裡？為什麼要離窗戶遠一點？",
+          "如果你看到大水坑或掉下來的電線，你會怎麼做？"
         ],
-        "tip": "這週和孩子一起做一個「颱風小背包」，放進手電筒、一瓶水和一個小玩具，並請孩子說說颱風天陽台上要收進哪些東西。"
+        "tip": "這週和孩子一起做一個「颱風小包」：放進手電筒、一瓶水和一本喜歡的書，並一起練習說：「大人說安全了，我們才出去。」"
       },
       "en": {
         "questions": [
-          "What did {name} and the family get ready before the typhoon came?",
-          "Why did Mom ask {name} to sit on the couch when the wind was strong?",
-          "If you really wanted to go see the big waves on a typhoon day, what would you do?"
+          "What did {name} help the family get ready before the typhoon? What else could our family get ready?",
+          "Where did {name} and the family sit when the wind was strong? Why is it good to stay away from windows?",
+          "What would you do if you saw a big puddle or a fallen wire after a storm?"
         ],
-        "tip": "This week, pack a small \"typhoon bag\" together with a flashlight, a bottle of water, and a little toy, and ask your child to name which balcony items should come inside before a storm."
+        "tip": "This week, make a little \"typhoon kit\" together with a flashlight, a bottle of water, and a favorite book, and practice saying, \"We go out only when a grown-up says it's safe.\""
       }
     },
     "draft": true
@@ -11032,48 +11032,48 @@
     ],
     "setting": "city",
     "title": {
-      "zh": "{name}和斑馬先生",
-      "en": "{name} and Mr. Zebra"
+      "zh": "{name}和斑馬先生過馬路",
+      "en": "{name} and Mr. Zebra Cross the Street"
     },
     "paragraphs": {
       "zh": [
-        "早上,太陽暖暖的。奶奶要帶{name}去買麵包。城市裡好熱鬧,大樓高高的,人好多。奶奶伸出手說:「走,牽好喔。」{name}握住奶奶軟軟的手。兩個人走在人行道上,一步一步,好像搖搖擺擺的企鵝。{name}忍不住咯咯笑。",
-        "走到一條小巷子口,奶奶停下來。「這裡沒有紅綠燈耶。」{name}說。忽然,「噗噗噗」,一台機車從巷子裡騎出來,好快好快。奶奶說:「小巷子也常有機車喔。」{name}點點頭,把奶奶的手握得更緊。兩個人看一看,聽一聽。等機車走遠了,才慢慢走過去。",
-        "到了大馬路口,{name}看見地上一條一條白白的線。「奶奶,好像一隻斑馬躺在地上!」奶奶笑了:「對呀,大家叫它斑馬線。」{name}小聲說:「斑馬先生,你好。」奶奶眨眨眼:「聽說斑馬先生,只幫會停下來的小朋友喔。」",
-        "{name}在路邊站好,腳一步也不動。先看左邊,再看右邊,再看左邊一次。{his}頭轉得好快,像小電風扇。「呼呼呼!」{name}說。奶奶噗哧一聲笑出來。接著,兩個人豎起耳朵聽。「叭叭!」是汽車。「噗噗!」是機車。車子來得好快,一台接一台。",
-        "對面的燈是紅色的,裡面站著一個小紅人。「小紅人說,要等一等。」奶奶說。{name}開始數:「一、二、三……」數到二十,小紅人不見了。換成小綠人出來,一步一步走路。「斑馬先生醒來了!」{name}開心地說。",
-        "奶奶說:「綠燈了,我們再看一次。」左邊、右邊、左邊,車子都停好了。{name}牽緊奶奶的手,踏上白白的線。走到一半,{name}還是轉頭看一看。有一台機車停在線後面,乖乖等著。騎車的叔叔揮揮手,{name}也用另一隻手揮一揮。",
-        "走到對面,{name}回頭一看。陽光照在白線上,亮亮的,好像斑馬先生在微笑。「謝謝斑馬先生!」{name}大聲說。奶奶也跟著說:「謝謝斑馬先生!」路邊的小狗「汪汪」叫了兩聲,好像也在說謝謝。大家都笑了。",
-        "買完香香的麵包,要回家了。又來到斑馬線前面,{name}先停下來,牽住奶奶的手說:「奶奶,要停、看、聽喔!」奶奶笑瞇瞇:「好的,斑馬小隊長!」回到家,{name}畫了一隻斑馬。白白的條紋上,有一個大大的笑臉。"
+        "麵包店的門叮咚一響。{name}和奶奶走出來。奶奶提著一袋香香的菠蘿麵包。{name}馬上牽起奶奶的手。「奶奶，我要牽好好喔！」奶奶笑著問：「為什麼呀？」{name}眨眨眼說：「因為斑馬先生在等我們。」",
+        "奶奶歪著頭問：「哪裡有斑馬？」{name}指著前面的馬路。白白的線，一條一條排好好。「那就是斑馬先生！」{name}小聲說。「斑馬先生很挑剔。牠只幫牽著大人的小朋友。」奶奶點點頭：「那我們可要牽緊一點。」",
+        "走到大路口前，要先經過一條小巷子。巷子窄窄的，看起來好安靜。{name}在巷口停下來。「先聽一聽。」奶奶說。噗噗噗！一台機車從巷子騎出來。咻一下就過去了。{name}睜大眼睛：「小巷子也有車耶！」奶奶握握{his}小手：「對呀，所以要先停、再看。」",
+        "他們看看左邊，再看看右邊。最後，又看一次左邊。沒有車了，也聽不到噗噗聲。奶奶牽著{name}，一起走過巷口。{name}回頭對巷子揮揮手：「機車先生，掰掰！」奶奶忍不住笑出聲來。",
+        "終於到了大馬路邊。{name}的腳尖停在人行道邊邊。一步也沒有踩出去。對面的燈上，站著一個紅色小人。「紅色小人說：等一等。」奶奶說。汽車叭叭開過去。機車一台接一台。{name}數著：「一台、兩台、三台……好多喔！」",
+        "{name}對著斑馬線小聲說：「斑馬先生，你看，我有牽奶奶喔。」奶奶也學著小聲說：「我也有牽{name}喔。」兩個人一起咯咯笑。這時候，紅色小人不見了。綠色小人出現了！小綠人的腳一前一後，好像在散步。",
+        "「綠燈了，可以走了嗎？」{name}問。奶奶說：「我們再看一次。」左邊、右邊、再左邊。車子都停好了。{name}牽緊奶奶，一步一步踩上白線。走到一半，一台機車慢慢轉彎過來。{name}停下來看著它。騎士叔叔點點頭，等他們先走。",
+        "走到對面，{name}回頭看。陽光照在斑馬線上。白線亮亮的，彎彎的，好像在微笑。「奶奶你看，斑馬先生在笑！」奶奶說：「因為你走得好棒。」{name}牽著奶奶，開心地走回家。袋子裡的菠蘿麵包，也香得好像在笑呢。"
       ],
       "en": [
-        "The morning sun was warm. Grandma and {name} were off to buy bread. The city was busy and full of people. \"Hold my hand,\" said Grandma. {name} held on tight. They waddled down the sidewalk like two penguins. {name} giggled.",
-        "At a little alley, Grandma stopped. \"No traffic light here,\" said {name}. Vroom! A scooter zipped out of the alley, so fast! \"Scooters zoom down alleys too,\" said Grandma. {name} squeezed her hand. They looked and listened. When the scooter was gone, they crossed slowly.",
-        "At the big road, {name} saw white stripes. \"Grandma, it's a zebra lying down!\" Grandma laughed. \"Yes, a zebra crossing.\" {name} whispered, \"Hello, Mr. Zebra.\" Grandma winked. \"Mr. Zebra only helps children who stop.\"",
-        "{name} stood still at the curb. Look left. Look right. Look left again. {his} head turned fast, like a little fan. \"Whoosh, whoosh!\" said {name}. Grandma burst out laughing. Then they listened. Beep beep! A car. Vroom! A scooter. They came fast, one after another.",
-        "Across the road, a little red man stood in the light. \"The red man says wait,\" said Grandma. {name} counted. \"One, two, three...\" At twenty, the red man was gone. A little green man appeared, walking step by step. \"Mr. Zebra is awake!\" cheered {name}.",
-        "\"It's green. Let's look one more time,\" said Grandma. Left, right, left. All the cars had stopped. {name} held Grandma's hand and stepped onto the stripes. Halfway across, {name} kept watching. A scooter waited behind the line. The rider waved. {name} waved back with the other hand.",
-        "On the other side, {name} turned around. Sunshine made the stripes bright and shiny. Mr. Zebra seemed to be smiling! \"Thank you, Mr. Zebra!\" called {name}. \"Thank you, Mr. Zebra!\" called Grandma too. A little dog nearby went, \"Woof, woof!\" Everyone laughed.",
-        "After buying warm, yummy bread, it was time to go home. At the zebra crossing, {name} stopped first. {name} took Grandma's hand. \"Stop, look and listen, Grandma!\" Grandma smiled. \"Yes, Zebra Captain!\" At home, {name} drew a zebra. Its stripes had a big smiley face."
+        "The bakery bell went ding-dong. {name} and Grandma stepped outside. Grandma carried a bag of warm pineapple buns. {name} grabbed Grandma's hand right away. \"I'm holding tight!\" {name} said. \"Why?\" asked Grandma. {name} winked. \"Because Mr. Zebra is waiting for us.\"",
+        "Grandma tilted her head. \"Where is a zebra?\" {name} pointed down the street. White stripes lay in a neat row. \"That's Mr. Zebra!\" {name} whispered. \"He is very picky. He only helps kids holding a grown-up's hand.\" Grandma nodded. \"Then let's hold extra tight.\"",
+        "First they came to a little alley. It was narrow and very quiet. {name} stopped at the edge. \"Let's listen first,\" said Grandma. Vroom, vroom! A scooter zipped out of the alley. Whoosh, it was gone! \"Even little alleys have scooters!\" said {name}. Grandma squeezed {his} hand. \"Yes. So we stop and look.\"",
+        "They looked left. They looked right. Then they looked left again. No scooters. No vroom sounds. Holding hands, they crossed the alley together. {name} waved back at it. \"Bye-bye, Mr. Scooter!\" Grandma laughed out loud.",
+        "At last they reached the big street. {name}'s toes stopped right at the curb. Not one step more. Across the street glowed a little red man. \"The red man says wait,\" said Grandma. Cars went beep-beep. Scooters zoomed by, one after another. {name} counted. \"One, two, three... so many!\"",
+        "{name} whispered to the stripes. \"Look, Mr. Zebra. I'm holding Grandma's hand.\" Grandma whispered too. \"And I'm holding {name}'s hand.\" They both giggled. Then the red man disappeared. A little green man popped up! Its tiny legs went step, step, like a stroll.",
+        "\"Green! Can we go now?\" asked {name}. \"Let's look one more time,\" said Grandma. Left, right, left again. All the cars had stopped. {name} held Grandma's hand and stepped onto the stripes. Halfway across, a scooter turned slowly toward them. {name} stopped and watched. The rider nodded and waited.",
+        "On the other side, {name} looked back. Sunshine made the stripes shine. They curved like a big smile. \"Grandma, look! Mr. Zebra is smiling!\" \"Because you crossed so well,\" said Grandma. Hand in hand, they walked home. Even the pineapple buns smelled happy."
       ]
     },
     "theme": "crossing-road",
     "guide": {
       "zh": {
         "questions": [
-          "{name}在路邊停下來後,頭往哪些方向看?還豎起耳朵聽到了什麼?",
-          "在小巷子口,一台機車很快騎出來,{name}和奶奶做了什麼?",
-          "下次我們一起過馬路,你會怎麼牽著大人的手、等小綠人?"
+          "{name}在小巷口停下來時，聽到了什麼？為什麼小巷子也要先停、先看？",
+          "過馬路前，{name}和奶奶看了哪幾邊？你可以做給我看嗎？",
+          "走到一半有機車轉彎過來，{name}做了什麼？如果是你，你會怎麼做？"
         ],
-        "tip": "這週出門時,一起玩「斑馬小隊長」遊戲:到路邊就由孩子喊「停、看、聽」,牽著手看左、右、再看左,並等小綠人出現,過馬路時也繼續看。"
+        "tip": "這週出門時，和孩子玩「斑馬先生」遊戲：一走出門就牽手，到路邊一起說「停、看左、看右、再看左、聽一聽」，等小綠人出現才走。"
       },
       "en": {
         "questions": [
-          "When {name} stopped at the curb, which ways did {he} look, and what did {he} hear?",
-          "What did {name} and Grandma do when a fast scooter came out of the little alley?",
-          "Next time we cross the road together, how will you hold my hand and wait for the green man?"
+          "What did {name} hear at the little alley? Why do we stop and look even at small lanes?",
+          "Which ways did {name} and Grandma look before crossing? Can you show me?",
+          "When a scooter turned toward them, what did {name} do? What would you do?"
         ],
-        "tip": "This week, play \"Zebra Captain\" when you go out: at every curb, let your child call \"Stop, look, listen,\" hold hands, look left, right and left again, and wait for the green man, still watching while you cross."
+        "tip": "This week, play the \"Mr. Zebra\" game outside: hold hands from the moment you leave the door, and at every curb say together, \"Stop, look left, look right, look left, listen,\" then wait for the little green man."
       }
     },
     "draft": true
@@ -11412,48 +11412,48 @@
     ],
     "setting": "home",
     "title": {
-      "zh": "{name}和金色的花瓶",
-      "en": "{name} and the Golden Vase"
+      "zh": "{name}和垂頭的九層塔",
+      "en": "{name} and the Drooping Basil"
     },
     "paragraphs": {
       "zh": [
-        "下雨天，{name}不能出去玩。{name}拿出紅色小皮球，在客廳拍呀拍。咚、咚、咚！皮球跳得好高。奶奶在廚房做蛋餅，說：「小心喔，球在屋裡要輕輕玩。」{name}點點頭：「好！」可是，皮球越跳越高。",
-        "{name}用力一丟，皮球飛到櫃子上。叮！奶奶的藍色小花瓶倒了。花瓶掉在軟軟的地毯上，裂成兩大塊。這是奶奶最喜歡的花瓶呀！{name}的心怦怦跳，好害怕。{name}趕快把兩塊花瓶放進鞋盒，藏到床底下。",
-        "吃午餐時，奶奶的蛋餅香香的。可是{name}只吃了兩口。{his}肚子裡好像打了一個結，緊緊的，悶悶的。奶奶問：「怎麼啦？不餓嗎？」{name}小聲說：「沒事。」說完，那個結好像又更緊了。",
-        "下午，{name}想畫畫，可是畫不下去。想堆積木，積木一直倒。奶奶拿著抹布走過來。她看看櫃子，說：「咦？我的小花瓶呢？」{name}的心又怦怦跳。{name}低下頭，什麼也沒說。",
-        "傍晚到了，窗外的雨停了。{name}趴在床邊，看著床底下的鞋盒。說實話好可怕，奶奶會不會難過？可是那個結一直在肚子裡。{name}深深吸一口氣，抱起鞋盒，一步一步走向奶奶。",
-        "「奶奶……」{name}的聲音小小的。「我在屋裡丟球，打破了你的花瓶。我還把它藏起來了。對不起。」奶奶打開鞋盒，看了看。然後，她輕輕抱住{name}：「謝謝你告訴我。你好勇敢喔。」",
-        "奶奶說：「下次東西破了，先叫我來撿。碎片可能會割手喔。」{name}點點頭。肚子裡的結，一下子鬆開了。奶奶拿出膠水，把兩塊花瓶小心黏好。「現在我知道發生什麼事，我們就能一起修好它。」",
-        "奶奶又拿出一小罐金色顏料。{name}拿著小刷子，沿著裂縫慢慢畫。一條金色的線閃閃發亮，像一道小閃電。「哇，比以前更漂亮！」奶奶笑著說：「以後有事都可以跟我說，我相信你。」{name}也笑了，肚子輕輕的，好舒服。"
+        "星期五晚上，媽媽要出差兩天。爸爸會在家陪{name}。媽媽帶{name}走到陽台。那裡有番茄、薄荷，還有一小盆九層塔。「週末要記得澆水喔。」媽媽說。{name}用力點頭：「我答應妳！」媽媽笑著，輕輕抱了抱{him}。",
+        "星期六，太陽又大又亮。爸爸陪{name}在客廳蓋積木城堡。城堡越蓋越高，還有一座小塔。下午，{name}畫了一隻會飛的大象。晚上，爸爸講了一個好長的故事。{name}笑著笑著就睡著了。陽台上的小盆栽，靜靜等了一整天。",
+        "星期天早上，{name}到陽台看雲。咦？九層塔怎麼了？它的葉子垂下來，軟軟的。看起來好像累壞了。土摸起來好乾，一點也不濕。{name}的心咚了一下。「糟糕，我忘記澆水了！」這時，門口傳來鑰匙聲。媽媽回來了！",
+        "媽媽放下包包，走到陽台。「哎呀，九層塔怎麼垂頭了？」{name}的臉熱熱的。「是太陽太大了。」這句話差點說出口。可是，{name}想起星期五的約定。{his}小手緊緊握在一起。",
+        "{name}深深吸了一口氣。「媽媽，不是太陽。」{name}小小聲說。「是我玩得太開心，忘記澆水了。」說完，{he}低下頭，心跳得好快。媽媽蹲下來，摸摸{name}的頭。「謝謝你告訴我真的發生什麼事。這要很勇敢呢。」",
+        "「現在我知道了，就能一起幫它。」媽媽說。九層塔需要喝水，也需要休息。{name}提著小澆水壺，慢慢倒水。咕嚕咕嚕，水滲進土裡了。媽媽把盆栽搬到陰涼的地方。「讓它躲躲太陽，我們等一等。」",
+        "到了傍晚，陽光變得溫柔了。{name}跑去陽台看。九層塔的葉子，一片一片挺起來了！聞起來香香的，好清新。{name}開心得跳起來。媽媽笑著說：「你跟我說實話，我好放心。以後你說的話，我都相信。」",
+        "吃完晚餐，{name}拿出紙和蠟筆。{he}畫了一張澆水表，上面有七個格子。每個格子裡，都有一顆小水滴。「澆完水，我就畫一個笑臉。」{name}把表貼在陽台門邊。月亮出來了，九層塔好好休息。{name}也甜甜地睡著了。"
       ],
       "en": [
-        "It was a rainy day, so {name} stayed inside. {name} bounced a little red ball in the living room. Bounce, bounce, bounce! Grandma was making pancakes in the kitchen. \"Gently with the ball indoors,\" she called. \"Okay!\" said {name}. But the ball bounced higher and higher.",
-        "{name} gave the ball a big toss. It flew onto the shelf. Clink! Grandma's little blue vase tipped over. It landed on the soft rug and cracked into two big pieces. That was Grandma's favorite vase! {name} felt scared. Quickly, {name} put the pieces in a shoebox and hid it under the bed.",
-        "At lunch, Grandma's pancakes smelled yummy. But {name} only took two bites. There was a knot in {his} tummy, tight and heavy. \"What's wrong? Not hungry?\" Grandma asked. \"Nothing,\" {name} whispered. The knot felt even tighter.",
-        "In the afternoon, {name} tried to draw, but nothing looked right. {name} tried to build a tower, but the blocks kept falling. Grandma came by with a dust cloth. She looked at the shelf. \"Hmm, where is my little vase?\" {name} looked down and said nothing.",
-        "Evening came, and the rain stopped. {name} peeked under the bed at the shoebox. Telling the truth felt scary. Would Grandma be sad? But the knot would not go away. {name} took a deep breath, picked up the box, and walked to Grandma, one step at a time.",
-        "\"Grandma,\" {name} said softly. \"I threw the ball inside. I broke your vase. Then I hid it. I'm sorry.\" Grandma opened the box and looked inside. Then she gave {name} a warm hug. \"Thank you for telling me. That was very brave.\"",
-        "\"Next time something breaks, call me first,\" said Grandma. \"Broken pieces can be sharp.\" {name} nodded. The knot in {his} tummy melted away. Grandma got out some glue and carefully stuck the pieces together. \"Now that I know what happened, we can fix it together.\"",
-        "Then Grandma opened a tiny jar of gold paint. {name} held a little brush and painted along the crack. A shiny gold line sparkled like tiny lightning. \"Wow, it's even prettier now!\" Grandma smiled. \"You can always tell me things. I trust you.\" {name} smiled too, and {his} tummy felt light and happy."
+        "On Friday night, Mom had to go on a work trip. Dad would stay home with {name}. Mom showed {name} the balcony plants. There were tomatoes, mint, and a little pot of basil. \"Please water them this weekend,\" Mom said. \"I promise!\" said {name}. Mom gave {him} a warm hug.",
+        "On Saturday, the sun was big and bright. {name} and Dad built a block castle. It grew taller and taller, with a tiny tower. Later, {name} drew a flying elephant. At night, Dad read a long story. {name} fell asleep smiling. Out on the balcony, the plants waited all day.",
+        "On Sunday morning, {name} went to the balcony to watch the clouds. Oh no! The basil was drooping. Its leaves hung down, soft and tired. The soil felt dry and dusty. {name}'s heart went thump. \"I forgot to water!\" Just then, keys jingled at the door. Mom was home!",
+        "Mom put down her bag and came to the balcony. \"Oh dear, why is the basil drooping?\" {name}'s cheeks felt warm. \"The hot sun did it.\" The words were almost out. But {name} remembered Friday's promise. {his} fingers squeezed together tight.",
+        "{name} took a deep breath. \"Mom, it wasn't the sun,\" {name} said softly. \"I played all day and forgot to water.\" Then {he} looked down, heart beating fast. Mom knelt and patted {name} on the head. \"Thank you for telling me what really happened. That was brave.\"",
+        "\"Now that I know, we can help it together,\" Mom said. The basil needed water and a rest. {name} held the little watering can and poured slowly. Glug, glug, the water sank into the soil. Mom moved the pot into the cool shade. \"Now we wait a little,\" she said.",
+        "By evening, the sunshine felt gentle. {name} ran to check. The basil leaves were standing up again, one by one! They smelled sweet and fresh. {name} jumped for joy. Mom smiled. \"You told me the truth, so I feel calm. When you tell me something, I can believe you.\"",
+        "After dinner, {name} got paper and crayons. {he} drew a watering chart with seven boxes. Each box had a little water drop. \"After I water, I'll draw a smiley face,\" said {name}. The chart went up by the balcony door. The moon came out, and the basil rested. {name} fell sweetly asleep, too."
       ]
     },
     "theme": "honesty",
     "guide": {
       "zh": {
         "questions": [
-          "{name}藏起花瓶以後，肚子裡有什麼感覺？為什麼會這樣？",
-          "{name}說出實話以後，奶奶做了什麼？她們一起做了什麼事？",
-          "如果你不小心弄壞了東西，你會怎麼告訴爸爸媽媽？"
+          "{name}差點說是太陽害的，後來為什麼決定說實話？",
+          "媽媽知道真正發生的事以後，她們一起做了什麼來幫九層塔？",
+          "如果你不小心忘記一件答應過的事，你會怎麼告訴大人？"
         ],
-        "tip": "這週試試一句家裡的暗號：「我想跟你說一件事。」孩子說出口時，先抱一抱、說聲謝謝，再一起想辦法解決。"
+        "tip": "這週和孩子一起做一張小小的任務表，例如澆花或收玩具，完成後畫一個笑臉。當孩子主動說出小錯誤時，先說「謝謝你告訴我」，再一起想辦法。"
       },
       "en": {
         "questions": [
-          "How did {name}'s tummy feel after hiding the vase? Why do you think it felt that way?",
-          "What did Grandma do when {name} told the truth? What did they do together?",
-          "If you broke something by accident, how would you tell a grown-up?"
+          "{name} almost said the sun did it. Why do you think {name} told the truth instead?",
+          "After Mom knew what really happened, what did they do together to help the basil?",
+          "If you forgot something you promised, how would you tell a grown-up?"
         ],
-        "tip": "This week, practice a family phrase: \"I need to tell you something.\" When your child uses it, give a hug and a thank-you first, then solve the problem together."
+        "tip": "This week, make a tiny task chart with your child, like watering a plant or tidying toys, and add a smiley face when it's done. When your child admits a small mistake, start with \"Thank you for telling me,\" then fix it together."
       }
     },
     "draft": true
@@ -12088,8 +12088,8 @@
     ],
     "setting": "sea",
     "title": {
-      "zh": "{name}在燈塔的晚上",
-      "en": "{name}'s Night at the Lighthouse"
+      "zh": "{name}和守燈塔的奶奶",
+      "en": "{name} and Grandma's Lighthouse"
     },
     "paragraphs": {
       "zh": [

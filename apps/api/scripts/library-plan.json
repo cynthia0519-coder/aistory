@@ -1615,7 +1615,7 @@
     "ageBands": ["4-6"],
     "style": "inspiring",
     "setting": "park",
-    "premise": "At the park, a friendly-seeming adult {name} doesn't know says there are free popsicles in their car. {name} remembers the family rule: never go anywhere with someone you don't know without asking a trusted grown-up. {name} runs straight to Grandpa on the bench and tells him."
+    "premise": "At the park, an adult {name} doesn't know says there are free popsicles in their car and asks {name} to come along. {name} remembers the family rule: never go anywhere with someone you don't know. {name} says a loud \"No!\", runs straight to Grandpa on the bench, and tells him what happened. Grandpa says {name} did exactly the right thing."
   },
   {
     "id": "strangers-password-word",
@@ -1639,7 +1639,7 @@
     "ageBands": ["4-6"],
     "style": "adventure",
     "setting": "mountain",
-    "premise": "On a mountain camping trip, the family lights a small campfire. Dad draws a big circle of stones and explains that only grown-ups go inside the circle. {name} roasts a marshmallow on a long stick from outside the circle, and helps pour water to put the fire out."
+    "premise": "On a mountain camping trip, the family lights a small campfire. Dad draws a big circle of stones and explains that only grown-ups go inside the circle and nobody touches anything near the fire. {name} sits on a log outside the circle while Dad roasts the marshmallows on a long stick, and waits for {his} to cool before eating. At the end, {name} watches Dad pour water to put the fire out."
   },
   {
     "id": "sockets-robot-socket-covers",
@@ -1687,7 +1687,7 @@
     "ageBands": ["6-8"],
     "style": "inspiring",
     "setting": "city",
-    "premise": "After a typhoon passes, branches cover the street. {name} wants to splash in the puddles, but Mom explains that fallen wires and deep water can be dangerous. {name} helps neighbors sweep leaves on the safe sidewalk instead, and the street sparkles again."
+    "premise": "After a typhoon passes, branches cover the street and a wire hangs low. {name} wants to splash in the puddles, but Mom explains that fallen wires and deep water are dangerous, and they wait inside. Only after workers fix the wire and the grown-ups say the sidewalk is safe does {name} help neighbors sweep leaves, and the street sparkles again."
   },
   {
     "id": "crossing-road-zebra-stripes",
@@ -1695,7 +1695,7 @@
     "ageBands": ["4-6"],
     "style": "cute",
     "setting": "city",
-    "premise": "{name} pretends the crosswalk is a zebra that only helps children who stop, look left, look right and look left again. With Grandma, {name} waits for the little green man, holds hands, and crosses while the zebra stripes seem to smile."
+    "premise": "{name} pretends the crosswalk is a zebra that only helps children who hold a grown-up's hand. {name} holds Grandma's hand from the moment they leave the bakery. At the curb they stop, look left, look right and look left again, wait for the little green man, and cross together while the zebra stripes seem to smile."
   },
   {
     "id": "getting-lost-aquarium-tunnel",
@@ -1759,7 +1759,7 @@
     "ageBands": ["4-6"],
     "style": "inspiring",
     "setting": "home",
-    "premise": "While playing ball indoors, {name} cracks Grandma's little vase and hides the pieces. All afternoon {name} feels a knot in {his} tummy. Finally {name} tells Grandma the truth, and they fix the vase together with glue and gold paint."
+    "premise": "{name} promises Mom to water the balcony plants while she is away for the weekend, but plays all day and forgets. On Sunday the little basil plant droops. {name} is tempted to say the hot sun did it, but tells Mom the truth. Together they give the basil water and shade, and {name} draws a watering chart so {he} remembers."
   },
   {
     "id": "honesty-wrong-change",
