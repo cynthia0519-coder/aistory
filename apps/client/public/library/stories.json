@@ -1,52 +1,5 @@
 [
   {
-    "id": "sugar-bug-sweep",
-    "style": "cute",
-    "ageBands": [
-      "2-4",
-      "4-6"
-    ],
-    "setting": "home",
-    "title": {
-      "zh": "{name}的刷牙掃把",
-      "en": "{name}'s Toothbrush Broom"
-    },
-    "paragraphs": {
-      "zh": [
-        "晚餐吃完了，{name}張開嘴巴。啊——咦？牙齒上有小小的糖糖蟲在開派對！",
-        "{name}拿起牙刷，像拿起一支小掃把。刷刷刷，前面的牙齒，轉小圈圈。",
-        "刷刷刷，後面的牙齒，也轉小圈圈。糖糖蟲一隻一隻溜走了。",
-        "爸爸說：「換我幫忙掃角落。」最裡面的牙齒也亮晶晶。",
-        "{name}對著鏡子笑一笑。牙齒白白的，好像小星星。晚安，乾淨的牙齒！"
-      ],
-      "en": [
-        "Dinner is done, and {name} opens wide. Ahh, oh! Tiny sugar bugs are having a party on the teeth!",
-        "{name} picks up the toothbrush like a little broom. Swish, swish, the front teeth, in tiny circles.",
-        "Swish, swish, the back teeth, in tiny circles too. One by one, the sugar bugs slip away.",
-        "\"My turn to sweep the corners,\" says Dad. Now even the very back teeth sparkle.",
-        "{name} smiles in the mirror. The teeth shine like little stars. Goodnight, clean teeth!"
-      ]
-    },
-    "theme": "brushing-teeth",
-    "guide": {
-      "zh": {
-        "questions": [
-          "{name}用牙刷掃把把糖糖蟲趕走了，你最想先刷哪一顆牙？",
-          "刷完牙以後，嘴巴感覺怎麼樣？"
-        ],
-        "tip": "今晚刷牙時，一起唱一首短短的刷牙歌，唱完換爸媽幫忙「掃角落」。"
-      },
-      "en": {
-        "questions": [
-          "{name} swept the sugar bugs away. Which tooth do you want to brush first?",
-          "How does your mouth feel after brushing?"
-        ],
-        "tip": "Tonight, sing a short brushing song together, then take your turn to \"sweep the corners\" for your child."
-      }
-    },
-    "draft": true
-  },
-  {
     "id": "goodnight-little-cloud",
     "style": "bedtime",
     "ageBands": [
@@ -118,7 +71,6 @@
     "id": "lantern-for-the-moon",
     "style": "bedtime",
     "ageBands": [
-      "2-4",
       "4-6"
     ],
     "setting": "night_sky",
@@ -186,7 +138,6 @@
     "id": "zoo-hiccup-parade",
     "style": "cute",
     "ageBands": [
-      "2-4",
       "4-6"
     ],
     "setting": "zoo",
@@ -343,7 +294,6 @@
     "id": "the-puddle-that-was-a-sea",
     "style": "adventure",
     "ageBands": [
-      "2-4",
       "4-6"
     ],
     "setting": "park",
@@ -1261,7 +1211,7 @@
           "小安一直搔癢，{name}怎麼做？",
           "如果你覺得不舒服，或有人要你保守讓你擔心的秘密，你會告訴誰？"
         ],
-        "tip": "今晚洗澡時，和孩子一起唱小鯨魚的歌，並練習大聲說「停！我不要！」。也可以告訴孩子：驚喜可以保密，讓人擔心的秘密一定要說；大人若需要協助，可撥打113保護專線。"
+        "tip": "今晚洗澡時，和孩子一起唱小鯨魚的歌，並練習大聲說「停！我不要！」。也可以告訴孩子：驚喜可以保密，讓人擔心的秘密一定要說。"
       },
       "en": {
         "questions": [
@@ -1269,7 +1219,7 @@
           "What did {name} do when Sam's tickles wouldn't stop?",
           "If something feels funny, or someone asks you to keep a worrying secret, who would you tell?"
         ],
-        "tip": "At bath time tonight, sing the little whale song together and practice saying \"Stop! I don't want that!\" in a big voice. Explain that surprises can be kept, but worrying secrets are always told to a grown-up; adults in Taiwan who need help can call the 113 child protection hotline."
+        "tip": "At bath time tonight, sing the little whale song together and practice saying \"Stop! I don't want that!\" in a big voice. Explain that surprises can be kept, but worrying secrets are always told to a grown-up."
       }
     },
     "draft": true
@@ -1315,7 +1265,7 @@
           "如果有人想看或摸那裡，{name}說應該怎麼做？你會怎麼做？",
           "在診所時，為什麼{name}覺得那次檢查是可以的？"
         ],
-        "tip": "今晚洗澡時，和孩子一起練習說「這是我的身體，不要！」，並告訴孩子任何事都可以來找你說。若成人需要協助，可撥打113保護專線。"
+        "tip": "今晚洗澡時，和孩子一起練習說「這是我的身體，不要！」，並告訴孩子任何事都可以來找你說。"
       },
       "en": {
         "questions": [
@@ -1323,7 +1273,7 @@
           "What did {name} say to do if someone wants to see or touch there? What would you do?",
           "At the clinic, why did {name} feel the check-up was okay?"
         ],
-        "tip": "At bath time tonight, practice saying \"This is my body. No!\" together, and remind your child they can tell you anything. Adults in Taiwan who need help can call the 113 protection hotline."
+        "tip": "At bath time tonight, practice saying \"This is my body. No!\" together, and remind your child they can tell you anything."
       }
     },
     "draft": true
@@ -1369,7 +1319,7 @@
           "如果有人搔癢搔不停，或要你保守讓你擔心的祕密，你會怎麼做？會告訴誰？",
           "什麼時候大人可以幫忙碰觸泳衣蓋住的地方？為什麼？"
         ],
-        "tip": "今晚洗澡時，和孩子一起玩「基地主人」遊戲，練習大聲說「不可以！」並一起說出三位可以求助的大人。若您需要協助，可撥打 113 保護專線。"
+        "tip": "今晚洗澡時，和孩子一起玩「基地主人」遊戲，練習大聲說「不可以！」並一起說出三位可以求助的大人。"
       },
       "en": {
         "questions": [
@@ -1377,7 +1327,7 @@
           "What would you do if a tickle wouldn't stop or someone asked you to keep a worrying secret? Who would you tell?",
           "When is it okay for a grown-up to help with the parts your swimsuit covers, and why?"
         ],
-        "tip": "At bath time tonight, play the 'boss of my base' game: practice a big 'No!' together and name three grown-ups your child can tell. If you need support, Taiwan's 113 child protection hotline can help."
+        "tip": "At bath time tonight, play the 'boss of my base' game: practice a big 'No!' together and name three grown-ups your child can tell."
       }
     },
     "draft": true
@@ -1423,7 +1373,7 @@
           "{name}肚子怪怪的時候，{he}做了什麼？",
           "如果有人叫你保守一個讓你不舒服的祕密，你可以告訴誰？"
         ],
-        "tip": "今晚和孩子一起列出三位「可以說心事的大人」，並告訴孩子：「不管什麼事，你告訴我，永遠不會被罵。」若您需要協助，可撥打113保護專線。"
+        "tip": "今晚和孩子一起列出三位「可以說心事的大人」，並告訴孩子：「不管什麼事，你告訴我，永遠不會被罵。」"
       },
       "en": {
         "questions": [
@@ -1431,7 +1381,7 @@
           "What did {name} do when {his} tummy felt twisty?",
           "If someone asked you to keep a secret that felt bad, who could you tell?"
         ],
-        "tip": "Tonight, name three trusted grown-ups together, and say: \"You can tell me anything, and you will never be in trouble for telling.\" In Taiwan, adults who need help can call the 113 child protection hotline."
+        "tip": "Tonight, name three trusted grown-ups together, and say: \"You can tell me anything, and you will never be in trouble for telling.\""
       }
     },
     "draft": true
@@ -1444,8 +1394,8 @@
     ],
     "setting": "school",
     "title": {
-      "zh": "{name}的兩個祕密",
-      "en": "{name} and the Two Secrets"
+      "zh": "{name}和祕密感謝派對",
+      "en": "{name} and the Secret Thank-You Party"
     },
     "paragraphs": {
       "zh": [
@@ -1477,7 +1427,7 @@
           "{name}聽到「絕對不可以告訴任何人」時，做了什麼？",
           "如果有人要你保守一個讓你擔心的祕密，你會去告訴誰？"
         ],
-        "tip": "這週和孩子一起列出三位「可以信任的大人」，並練習一句話：「我有一個讓我不舒服的祕密，想告訴你。」也讓孩子知道，說出來永遠不會被罵。若大人需要協助，可撥打113保護專線。"
+        "tip": "這週和孩子一起列出三位「可以信任的大人」，並練習一句話：「我有一個讓我不舒服的祕密，想告訴你。」也讓孩子知道，說出來永遠不會被罵。"
       },
       "en": {
         "questions": [
@@ -1485,7 +1435,7 @@
           "What did {name} do after hearing \"never tell anyone\"?",
           "If someone asked you to keep a secret that made you worried, who would you tell?"
         ],
-        "tip": "This week, list three trusted grown-ups together and practice the phrase, \"I have a secret that feels bad, and I want to tell you,\" reminding your child they will never be in trouble for telling. Adults in Taiwan who need support can call the 113 child protection hotline."
+        "tip": "This week, list three trusted grown-ups together and practice the phrase, \"I have a secret that feels bad, and I want to tell you,\" reminding your child they will never be in trouble for telling."
       }
     },
     "draft": true
@@ -1529,7 +1479,7 @@
           "{name}跟美阿姨說了之後，美阿姨做了什麼？",
           "如果有人要你保守一個讓你擔心的祕密，你會想去找誰說？"
         ],
-        "tip": "今晚和孩子一起列出三位「可以說任何心事的大人」，並練習一句話：「我有一個祕密，讓我心裡不舒服。」若大人自己需要協助，可撥打113保護專線諮詢。"
+        "tip": "今晚和孩子一起列出三位「可以說任何心事的大人」，並練習一句話：「我有一個祕密，讓我心裡不舒服。」"
       },
       "en": {
         "questions": [
@@ -1537,7 +1487,7 @@
           "What did Aunt Mei do after {name} told her?",
           "If someone asked you to keep a secret that made you worried, who would you tell?"
         ],
-        "tip": "Tonight, name three grown-ups your child can tell anything, and practice the phrase together: \"I have a secret that doesn't feel right.\" Parents in Taiwan who need support can call the 113 child protection hotline."
+        "tip": "Tonight, name three grown-ups your child can tell anything, and practice the phrase together: \"I have a secret that doesn't feel right.\""
       }
     },
     "draft": true
@@ -1637,7 +1587,7 @@
           "如果有人想抱你、親你或搔你癢，可是你不想要，你可以怎麼說？",
           "小芽搖頭說不要的時候，{name}和阿姨是怎麼做的？"
         ],
-        "tip": "今晚和孩子一起畫一張家裡的「打招呼菜單」，練習說「我今天想擊掌就好」，並在聚會前提醒長輩尊重孩子的選擇。若您需要協助或諮詢，可撥打 113 保護專線。"
+        "tip": "今晚和孩子一起畫一張家裡的「打招呼菜單」，練習說「我今天想擊掌就好」，並在聚會前提醒長輩尊重孩子的選擇。"
       },
       "en": {
         "questions": [
@@ -1645,7 +1595,7 @@
           "If someone wants to hug, kiss, or tickle you and you don't want it, what could you say?",
           "When Xiaoya shook her head, what did {name} and Auntie do?"
         ],
-        "tip": "Tonight, draw your own family greeting menu together and practice saying, \"Today I'd like a high five,\" then let relatives know before gatherings that your child gets to choose. If you ever need help or advice in Taiwan, the 113 child protection hotline is available for adults."
+        "tip": "Tonight, draw your own family greeting menu together and practice saying, \"Today I'd like a high five,\" then let relatives know before gatherings that your child gets to choose."
       }
     },
     "draft": true
@@ -1691,7 +1641,7 @@
           "如果你遇到害怕的事，你的安全手上會寫哪幾位大人？",
           "如果第一個大人很忙，沒聽到你說話，你可以怎麼做？"
         ],
-        "tip": "今晚和孩子一起描手掌，在每根手指寫一位信任的大人，至少包含一位家人以外的人（例如老師或護理師），並練習說：「我需要幫忙！」如果大人需要協助，可撥打 113 保護專線。"
+        "tip": "今晚和孩子一起描手掌，在每根手指寫一位信任的大人，至少包含一位家人以外的人（例如老師或護理師），並練習說：「我需要幫忙！」"
       },
       "en": {
         "questions": [
@@ -1746,7 +1696,7 @@
           "如果你的網也有五個結，你會選哪五個大人？其中有沒有家人以外的人，像老師或保健室阿姨？",
           "如果你告訴一個大人，他沒有聽見，你接下來會去找誰？"
         ],
-        "tip": "這週和孩子一起拿一條繩子，每打一個結就說出一位信任的大人（至少一位是家人以外的人），掛在書包上，並一起練習說：「我要再說一次，我需要幫忙。」大人若需要協助，可撥打113保護專線。"
+        "tip": "這週和孩子一起拿一條繩子，每打一個結就說出一位信任的大人（至少一位是家人以外的人），掛在書包上，並一起練習說：「我要再說一次，我需要幫忙。」"
       },
       "en": {
         "questions": [
@@ -1801,7 +1751,7 @@
           "如果有人讓你對自己的身體感到不舒服，或叫你保守讓你擔心的祕密，你會想告訴誰？",
           "為什麼陳老師說，就算{name}等了很久才說，也不是{name}的錯？"
         ],
-        "tip": "這週和孩子一起列出三位「可以說任何事」的大人，並練習一句話：「不管發生什麼事，都不是你的錯，你可以告訴我。」若大人需要協助，可撥打113保護專線。"
+        "tip": "這週和孩子一起列出三位「可以說任何事」的大人，並練習一句話：「不管發生什麼事，都不是你的錯，你可以告訴我。」"
       },
       "en": {
         "questions": [
@@ -1809,7 +1759,7 @@
           "If someone ever made you feel uncomfortable about your body, or asked you to keep a worrying secret, who would you tell?",
           "Why did Teacher Chen say it wasn't {name}'s fault, even though {he} waited weeks to tell?"
         ],
-        "tip": "This week, name three grown-ups your child can tell anything, and practice saying, \"Whatever happens, it's never your fault, and you can always tell me.\" If you need support as an adult in Taiwan, you can call the 113 child protection hotline."
+        "tip": "This week, name three grown-ups your child can tell anything, and practice saying, \"Whatever happens, it's never your fault, and you can always tell me.\""
       }
     },
     "draft": true
@@ -3546,7 +3496,7 @@
           "如果有人想抱你或親你，可是你不想，你可以怎麼說、怎麼做？",
           "別人對你說「不要」的時候，你會怎麼回應？"
         ],
-        "tip": "這週和孩子一起練習一句話：「不要，謝謝，我們擊掌好嗎？」並在家族聚會前先問孩子想用擁抱、擊掌還是揮手打招呼，然後尊重孩子的選擇。若大人需要協助，可撥打113保護專線。"
+        "tip": "這週和孩子一起練習一句話：「不要，謝謝，我們擊掌好嗎？」並在家族聚會前先問孩子想用擁抱、擊掌還是揮手打招呼，然後尊重孩子的選擇。"
       },
       "en": {
         "questions": [
@@ -3554,7 +3504,7 @@
           "If someone wants to hug or kiss you and you don't want to, what could you say or do?",
           "What do you do when someone tells you no?"
         ],
-        "tip": "This week, practice one phrase together: \"No, thank you. High five instead?\" Before family gatherings, ask your child whether they'd like to greet with a hug, a high five, or a wave, and respect their choice. Adults in Taiwan who need support can call the 113 child protection hotline."
+        "tip": "This week, practice one phrase together: \"No, thank you. High five instead?\" Before family gatherings, ask your child whether they'd like to greet with a hug, a high five, or a wave, and respect their choice."
       }
     },
     "draft": true

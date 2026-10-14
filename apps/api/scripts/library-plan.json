@@ -1,7 +1,7 @@
 [
   {
     "id": "lantern-for-the-moon",
-    "ageBands": ["2-4", "4-6"],
+    "ageBands": ["4-6"],
     "style": "bedtime",
     "setting": "night_sky",
     "premise": "The moon feels a little lonely, so {name} and a sleepy firefly carry a tiny paper lantern up a hill to say goodnight. One by one, the stars switch on to keep the moon company."
@@ -15,7 +15,7 @@
   },
   {
     "id": "zoo-hiccup-parade",
-    "ageBands": ["2-4", "4-6"],
+    "ageBands": ["4-6"],
     "style": "cute",
     "setting": "zoo",
     "premise": "A baby elephant at the zoo has the hiccups, and every hiccup makes a funny sound. {name} and the zookeeper try gentle tricks with the other animals until a giggle finally chases the hiccups away."
@@ -44,7 +44,7 @@
   },
   {
     "id": "the-puddle-that-was-a-sea",
-    "ageBands": ["2-4", "4-6"],
+    "ageBands": ["4-6"],
     "style": "adventure",
     "setting": "park",
     "premise": "After the rain, {name} and Mom find a big puddle in the park. A leaf becomes a ship, a pebble becomes an island, and a little snail joins the voyage."
