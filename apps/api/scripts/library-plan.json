@@ -1995,7 +1995,7 @@
     "ageBands": ["6-8"],
     "style": "fable",
     "setting": "forest",
-    "premise": "The river bridge is broken, and the animals agree someone should ask Old Bear, who knows how to fix bridges but is known to be grumpy. Nobody wants to go. Little Mouse is scared but goes anyway, with {name} walking beside her. Old Bear turns out to be gruff but kind, and by sunset the bridge is mended."
+    "premise": "The river bridge is broken, and the animals agree someone should ask Old Bear, who knows how to fix bridges but is known to be grumpy. Nobody wants to go. Little Mouse is scared but goes anyway, with {name} beside her and wise Grandpa Turtle walking with them. Old Bear turns out to be gruff but kind, and by sunset the bridge is mended."
   },
   {
     "id": "courage-starfish-float",
@@ -2019,7 +2019,7 @@
     "ageBands": ["8-10"],
     "style": "adventure",
     "setting": "mountain",
-    "premise": "On a class night hike with the teachers, {name} notices the group has taken the wrong fork, but everyone else seems sure. Speaking up could mean looking silly. {name} raises a hand anyway and points out the trail marker, and the teacher thanks {name} for being brave enough to say so."
+    "premise": "On a class night hike, the teacher stops at a fork to check the map while the class waits. {name} notices the trail marker points the other way, but everyone else seems sure. Speaking up could mean looking silly. {name} raises a hand anyway and points out the marker, and the teacher thanks {name} for being brave enough to say so."
   },
   {
     "id": "responsibility-goldfish-week",
@@ -2083,7 +2083,7 @@
     "ageBands": ["8-10"],
     "style": "adventure",
     "setting": "sea",
-    "premise": "{name} promises a younger cousin to finish the ladder for the backyard treehouse before summer ends. It's harder than {name} thought, and the end of summer is coming fast. Instead of giving up or pretending, {name} asks Grandpa to help and tells the cousin honestly how it's going. On the last day of summer, they climb up together."
+    "premise": "{name} promises a younger cousin to finish the ladder for the backyard treehouse before summer ends. Grandpa does the sawing and hammering while {name} measures, sands and paints, but it takes longer than planned. Instead of giving up or pretending, {name} tells the cousin honestly how it's going and asks Grandpa for extra afternoons. On the last day of summer, they climb up together."
   },
   {
     "id": "differences-zebra-with-spots",
@@ -2147,7 +2147,7 @@
     "ageBands": ["8-10"],
     "style": "adventure",
     "setting": "city",
-    "premise": "When the reservoir runs low in a dry summer, {name} and a friend become rain detectives. They track every drip at school, set up rain buckets for the plants, and design posters for a two-minute shower challenge. By autumn, their school has saved enough water to fill a swimming pool."
+    "premise": "When the reservoir runs low in a dry summer, {name} and a friend become rain detectives. They track every drip at school, set up covered rain buckets for the plants that the janitor helps empty and clean every week, and design posters for a two-minute shower challenge. By autumn, their school has saved enough water to fill a swimming pool."
   },
   {
     "id": "teamwork-the-giant-turnip",
@@ -2187,7 +2187,7 @@
     "ageBands": ["4-6"],
     "style": "cute",
     "setting": "school",
-    "premise": "{name} has painted a picture of the family for Mom's birthday, and a classmate knocks the water cup over it. {name} feels angry and says so. The classmate says sorry and helps dab the wet colors with tissues. {name} decides to forgive, and the two of them turn the runny colors into a rainy-day rainbow over the family."
+    "premise": "{name} has painted a picture of the family for Mom's birthday, and a classmate knocks the water cup over it. {name} feels angry and says so. The classmate says sorry and, the next day, brings paper and paints to help make a new card. {name} decides to forgive, and the new birthday card has the whole family plus one new friend waving in the corner."
   },
   {
     "id": "forgiveness-crow-and-sparrow",
@@ -2198,12 +2198,12 @@
     "premise": "Crow takes twigs from Sparrow's half-built nest because he is in a hurry. Sparrow is upset and tells him how it felt. Crow brings the twigs back, plus some soft feathers, and says sorry. With {name}'s help, Sparrow decides to forgive, and by evening both nests are finished side by side."
   },
   {
-    "id": "forgiveness-the-scribbled-drawing",
+    "id": "forgiveness-the-runaway-balloon",
     "theme": "forgiveness",
     "ageBands": ["4-6"],
     "style": "inspiring",
     "setting": "home",
-    "premise": "{name}'s little brother scribbles all over {name}'s best drawing. {name} is furious and wants to shout. After a deep breath, {name} tells him how it felt, and he says a tiny sorry. {name} forgives him and turns the scribbles into a wild, windy sky."
+    "premise": "{name}'s little brother wants to hold the shiny birthday balloon just for a minute, and oops, it floats away over the rooftops. {name} is furious and wants to shout. After a deep breath, {name} tells him how sad it feels, and he says a tiny sorry with teary eyes. {name} decides to forgive him, and that evening they wave goodbye to the balloon together, imagining where it might land."
   },
   {
     "id": "forgiveness-the-told-secret",
