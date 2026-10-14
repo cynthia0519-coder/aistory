@@ -30,7 +30,10 @@ npm run dev:client  # http://localhost:3000
 手機實測：連同一個 Wi-Fi，開 `http://<電腦IP>:3000`，並把這個來源加進 `ALLOWED_ORIGINS`。
 
 ## 部署
-- API：把 `apps/api` 部署到 Vercel（Root Directory 設成 `apps/api`），設定 `ANTHROPIC_API_KEY` 和 `ALLOWED_ORIGINS`
+- API：把 `apps/api` 部署到 Vercel（Root Directory 設成 `apps/api`）
+  - 環境變數：`ANTHROPIC_API_KEY`、`AZURE_SPEECH_KEY`、`AZURE_SPEECH_REGION`（例如 `eastasia`）、`UPSTASH_REDIS_REST_URL`、`UPSTASH_REDIS_REST_TOKEN`、`ALLOWED_ORIGINS`（網頁版網址，逗號分隔）、`RATE_GLOBAL_PER_DAY`（測試期建議 100）
+  - 還沒合併到 `main` 前，Settings → Environments → Production → Branch Tracking 改成開發分支，推一個 commit 觸發部署
+  - 沒設 Upstash 時，速率限制只在單一實例內計數，擋不住刷量，不要公開網址
 - 網頁：執行 `npm run build -w @aistory/client`，把 `apps/client/out/` 放到任何靜態主機
 
 ## 上架 App Store（下一階段）
