@@ -1,10 +1,11 @@
 {
-  "generatedAt": "2026-10-14T10:28:31.343Z",
+  "generatedAt": "2026-10-14T10:29:13.960Z",
   "summary": {
     "stories": 194,
     "byStatus": {
       "ok": 132,
-      "check": 62
+      "check": 61,
+      "unreviewed": 1
     },
     "byCheckKind": {
       "length": 117,
@@ -22,7 +23,7 @@
       "taiwan_usage": 25,
       "zh_en_mismatch": 48,
       "preachy": 19,
-      "age_fit": 13,
+      "age_fit": 11,
       "length": 1,
       "guardrail": 4
     },
@@ -43,7 +44,6 @@
       "good-bad-secrets-quiet-classmate",
       "good-bad-secrets-scraped-knee",
       "good-bad-secrets-thank-you-party",
-      "goodnight-little-cloud",
       "honesty-lost-eraser",
       "lighthouse-keepers-cat",
       "losing-failing-leaf-boat-race",
@@ -112,35 +112,16 @@
       "trying-food-stinky-tofu-sniff",
       "water-safety-river-picnic"
     ],
-    "usd": 5.478
+    "usd": 5.4313
   },
   "stories": {
     "goodnight-little-cloud": {
-      "hash": "06871a68a89c5c2f",
+      "hash": "5a2025e4aad2bcf3",
       "checks": [],
-      "llm": {
-        "verdict": "check",
-        "issues": [
-          {
-            "kind": "age_fit",
-            "severity": "medium",
-            "lang": "both",
-            "where": "0",
-            "note": "英文『{name} hugs a soft pillow and sees a little cloud drifting…』約17字，超出2–4歲上限；中文本句也偏長，宜拆成短句"
-          },
-          {
-            "kind": "age_fit",
-            "severity": "low",
-            "lang": "en",
-            "where": "6",
-            "note": "『The sky outside is quiet now, and {name} closes {his} eyes and falls asleep.』偏長，可拆成兩句"
-          }
-        ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.046744,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:37:22.498Z"
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T10:29:13.954Z"
     },
     "leaf-map-in-the-forest": {
       "hash": "cbad086392c2b909",
@@ -884,10 +865,6 @@
     "online-safety-star-fox": {
       "hash": "c1b0e6c5aba67112",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.024233599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:28:24.478Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -899,7 +876,11 @@
             "note": "英文『Real friends don't ask you to hide things from your family.』像旁白說教，可改成主角心想，如『{name} remembered that real friends…』"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024233599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:28:24.478Z"
     },
     "swimsuit-rule-whale-swimsuit": {
       "hash": "533b28f69d5e7ebb",
@@ -1443,14 +1424,14 @@
           "note": "中文 568 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0246176,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:28:31.340Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0246176,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:28:31.340Z"
     },
     "bedtime-routine-sleepy-train": {
       "hash": "ba45a0e56885d0f9",

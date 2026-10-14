@@ -13,22 +13,22 @@
     },
     "paragraphs": {
       "zh": [
-        "天黑了，窗外的天空變成深深的藍色。{name}抱著軟軟的枕頭，看見一朵小雲朵飄呀飄，飄到窗戶前面。「你好，小雲朵。」{name}輕輕地說。",
-        "小雲朵打了一個大大的呵欠：「呼——我好睏，可是我不知道要睡在哪裡。」{name}想了想，說：「我們一起找一找吧。」",
-        "{name}和小雲朵先去問月亮。月亮笑咪咪地說：「我要整晚亮亮的，照著大家回家。你可以在我旁邊休息一下。」小雲朵靠一靠，可是月亮太亮了，眼睛閉不起來。",
-        "{name}和小雲朵又去問星星。星星一閃、一閃、又一閃：「我們要眨眼睛，跟大家說晚安。」小雲朵也眨呀眨，眨得頭都暈了，還是睡不著。",
-        "{name}拍拍{his}被子：「小雲朵，你看，被子軟軟的，就像你一樣。」小雲朵慢慢飄下來，變得好小好小，像一團白白的棉花。",
-        "{he}把小雲朵放在枕頭旁邊。風輕輕吹，呼——呼——；蟲兒輕輕唱，唧——唧——。小雲朵蹭了蹭{him}，呼吸也慢了下來。",
-        "「晚安，月亮。晚安，星星。晚安，小雲朵。」{name}小聲地說。媽媽走進來，親了親{name}的額頭。窗外的天空靜悄悄，{name}也慢慢閉上眼睛，睡著了。"
+        "天黑了。天空藍藍的，深深的藍。{name}抱著軟軟的枕頭。咦，窗外有一朵小雲朵。小雲朵飄呀飄，飄到窗前。「你好，小雲朵。」{name}輕輕說。",
+        "小雲朵打了個大呵欠。「呼——我好睏喔。」「可是我要睡哪裡呢？」{name}想一想。「我們一起找一找。」",
+        "先去問月亮。月亮笑咪咪。「我要整晚亮亮的。」「照著大家回家。」「你在我旁邊休息吧。」小雲朵靠一靠。可是月亮好亮好亮。眼睛閉不起來。",
+        "再去問星星。星星一閃、一閃、又一閃。「我們眨眨眼睛，」「跟大家說晚安。」小雲朵也眨呀眨。眨得頭暈暈。還是睡不著。",
+        "{name}拍拍{his}被子。「小雲朵，你看。」「被子軟軟的，」「就像你一樣。」小雲朵慢慢飄下來。變小了，好小好小。像一團白白的棉花。",
+        "{he}把小雲朵放在枕頭旁。風輕輕吹，呼——呼——。蟲兒輕輕唱，唧——唧——。小雲朵蹭一蹭{him}。呼吸慢慢、慢慢的。",
+        "「晚安，月亮。」「晚安，星星。」「晚安，小雲朵。」{name}小聲說。媽媽走進來。親親{name}的額頭。天空靜悄悄。{name}閉上眼睛。睡著了。"
       ],
       "en": [
-        "It is getting dark, and the sky outside turns deep, deep blue. {name} hugs a soft pillow and sees a little cloud drifting, drifting, all the way to the window. \"Hello, Little Cloud,\" {name} whispers.",
-        "Little Cloud gives a big, big yawn. \"Hoo-oo... I'm so sleepy, but I don't know where to sleep.\" {name} thinks for a moment. \"Let's look together.\"",
-        "First, {name} and Little Cloud ask the moon. The moon smiles. \"I shine all night to light the way home. You can rest beside me.\" Little Cloud snuggles close, but the moon is too bright for sleepy eyes.",
-        "Next, {name} and Little Cloud ask the stars. Twinkle, twinkle, twinkle. \"We blink to say goodnight to everyone,\" the stars sing. Little Cloud blinks and blinks until it feels dizzy, but it still can't sleep.",
-        "{name} pats {his} blanket. \"Look, Little Cloud. My blanket is soft, just like you.\" Little Cloud floats down slowly and grows small, small, small, like a fluffy ball of cotton.",
-        "{he} tucks Little Cloud beside the pillow. The wind sighs, whoo, whoo. The crickets sing, chirp, chirp. Little Cloud nuzzles {him} and breathes slow and soft.",
-        "\"Sleep well, bright moon. Sleep well, little stars. Sleep well, Little Cloud,\" {name} whispers. Mom comes in and kisses {name} on the forehead. The sky outside is quiet now, and {name} closes {his} eyes and falls asleep."
+        "It is getting dark. The sky turns deep, deep blue. {name} hugs a soft pillow. Look! A little cloud drifts by. It drifts and drifts to the window. \"Hello, Little Cloud,\" {name} whispers.",
+        "Little Cloud gives a big yawn. \"Hoo-oo... I'm so sleepy.\" \"But where can I sleep?\" {name} thinks and thinks. \"Let's look together.\"",
+        "First, they ask the moon. The moon smiles. \"I shine all night long. I light the way home. You can rest by me.\" Little Cloud snuggles close. But the moon is too bright. Sleepy eyes stay open.",
+        "Next, they ask the stars. Twinkle, twinkle, twinkle. \"We blink to say goodnight,\" they sing. Little Cloud blinks and blinks. Now it feels dizzy. It still can't sleep.",
+        "{name} pats {his} blanket. \"Look, Little Cloud. My blanket is soft. It is soft like you.\" Little Cloud floats down slowly. It grows small, small, small. Like a fluffy ball of cotton.",
+        "{he} tucks Little Cloud by the pillow. The wind sighs, whoo, whoo. The crickets sing, chirp, chirp. Little Cloud nuzzles {him}. It breathes slow and soft.",
+        "\"Sleep well, bright moon. Sleep well, little stars. Sleep well, Little Cloud.\" {name} whispers very softly. Mom comes in. She kisses {name} goodnight. The sky is quiet now. {name} closes {his} eyes. And {name} falls asleep."
       ]
     },
     "draft": true
