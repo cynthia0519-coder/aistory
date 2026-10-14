@@ -29,6 +29,7 @@ interface Props {
   onOpenLibrary: (list: LibraryStory[], index: number) => void;
   onCreate: () => void;
   onShop: () => void;
+  onCredits: () => void;
 }
 
 const TABS = [
@@ -36,7 +37,7 @@ const TABS = [
   { id: "library", label: "故事庫" },
 ] as const;
 
-export function Library({ prefs, onPrefs, hero, onOpen, onOpenLibrary, onCreate, onShop }: Props) {
+export function Library({ prefs, onPrefs, hero, onOpen, onOpenLibrary, onCreate, onShop, onCredits }: Props) {
   const [stories, setStories] = useState<SavedStory[] | null>(null);
 
   useEffect(() => {
@@ -130,6 +131,10 @@ export function Library({ prefs, onPrefs, hero, onOpen, onOpenLibrary, onCreate,
           ))}
         </ul>
       )}
+
+      <button type="button" onClick={onCredits} className="mx-auto mt-8 h-11 px-4 text-sm text-ink-soft underline">
+        授權與致謝
+      </button>
     </div>
   );
 }

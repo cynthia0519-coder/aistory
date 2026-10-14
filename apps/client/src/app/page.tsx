@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { CreateStory } from "@/components/CreateStory";
+import { Credits } from "@/components/Credits";
 import { HeroEditor } from "@/components/HeroEditor";
 import { Shop } from "@/components/Shop";
 import { BooksIcon, StarIcon } from "@/components/icons";
@@ -19,7 +20,9 @@ type View =
   // 故事庫的故事帶著目前篩選的清單，「下一個故事」照順序往下讀
   | { name: "read"; story: SavedStory; library?: { list: LibraryStory[]; index: number } }
   | { name: "hero" }
-  | { name: "shop" };
+  | { name: "shop" }
+  // 授權與致謝；from = 從哪一頁進來，返回時回去
+  | { name: "credits"; from: "library" | "shop" };
 
 export default function Home() {
   const [view, setView] = useState<View>({ name: "create" });
@@ -108,9 +111,13 @@ export default function Home() {
             onOpenLibrary={readLibrary}
             onCreate={create}
             onShop={() => setView({ name: "shop" })}
+            onCredits={() => setView({ name: "credits", from: "library" })}
           />
         )}
-        {view.name === "shop" && <Shop onBack={library} />}
+        {view.name === "shop" && <Shop onBack={library} onCredits={() => setView({ name: "credits", from: "shop" })} />}
+        {view.name === "credits" && (
+          <Credits onBack={() => (view.from === "shop" ? setView({ name: "shop" }) : library())} />
+        )}
       </main>
 
       {showNav && (

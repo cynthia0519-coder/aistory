@@ -7,10 +7,11 @@ import { BackButton, Dialog, PrimaryButton } from "./ui";
 
 interface Props {
   onBack: () => void;
+  onCredits: () => void;
 }
 
 // 購買頁：目前只有畫面，還沒接真正的付款，也不限制編故事
-export function Shop({ onBack }: Props) {
+export function Shop({ onBack, onCredits }: Props) {
   const [plan, setPlan] = useState<PricingPlan["id"]>(PRICING.defaultPlan);
   const [gateOpen, setGateOpen] = useState(false);
   const [notice, setNotice] = useState<{ title: string; body: string } | null>(null);
@@ -102,12 +103,15 @@ export function Shop({ onBack }: Props) {
 
         <PrimaryButton onClick={() => setGateOpen(true)}>請爸爸媽媽確認購買</PrimaryButton>
 
-        <nav aria-label="購買相關" className="flex justify-center gap-2 text-sm text-ink-soft">
+        <nav aria-label="購買相關" className="flex flex-wrap justify-center gap-x-1 text-sm text-ink-soft">
           {["回復購買", "條款", "隱私"].map((label) => (
             <button key={label} type="button" onClick={() => soon(label)} className="h-11 px-3 underline">
               {label}
             </button>
           ))}
+          <button type="button" onClick={onCredits} className="h-11 px-3 underline">
+            授權與致謝
+          </button>
         </nav>
       </div>
 
