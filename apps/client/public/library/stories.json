@@ -12794,5 +12794,111 @@
       }
     },
     "draft": true
+  },
+  {
+    "id": "perseverance-kite-that-wouldnt-fly",
+    "style": "inspiring",
+    "ageBands": [
+      "6-8"
+    ],
+    "setting": "park",
+    "title": {
+      "zh": "{name}的第十次風箏",
+      "en": "{name}'s Tenth Kite Try"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期六早上，{name}抱著自己做的風箏來到公園。風箏是用竹籤和彩色紙黏成的，上面畫著一條笑咪咪的魚。奶奶坐在草地旁的長椅上，笑著說：「我就在這裡陪你，放心去試試看吧！」",
+        "{name}拉著線往前跑，風箏晃了兩下，「咚」一聲栽進草地。第二次，它轉了個圈又掉下來。第三次、第四次、第五次，風箏不是歪向左邊，就是一頭撞向地面。{name}看著手指數了數，已經五次了。",
+        "第六次、第七次，還是一樣。第八次，風箏終於飛得比{his}頭頂還高，卻又搖搖晃晃落了下來。第九次，線纏成了一大團。{name}把風箏抱在懷裡，嘟著嘴說：「我不要玩了，它根本飛不起來。」",
+        "奶奶沒有催{him}，只是遞來水壺：「累了就先休息一下吧。」{name}坐到大榕樹下，喝了幾口水。抬頭一看，幾隻白鷺鷥張開翅膀，迎著風慢慢升高，幾乎不用拍動，就像被風輕輕托住一樣。",
+        "「牠們都是面對著風飛的耶！」{name}發現了。一隻小麻雀落在枝頭，尾巴一翹一翹，幫牠站得穩穩的。{name}看看自己的風箏，尾巴只有短短一小截。「奶奶，我想讓風箏的尾巴長一點！」",
+        "奶奶從包包裡拿出一條舊緞帶，兩人一起把它綁在風箏尾巴上。{name}把手舉高，感覺風從哪裡吹來。「我之前都順著風跑，這次換個方向，從大樹那邊迎著風跑過來試試看。」",
+        "第十次，{name}深吸一口氣，邁開腳步跑。風箏輕輕一抖，長長的尾巴在空中擺動，穩穩往上爬，越飛越高，高過了榕樹，和白鷺鷥一起在藍天裡飛翔。「飛起來了！奶奶，你看！」",
+        "回家的路上，奶奶說：「第十次真厲害。」{name}卻搖搖頭，笑著說：「我覺得前面九次更厲害。每掉下來一次，我就多知道一件事。」{name}一手牽著奶奶，一手緊緊抱著那條笑咪咪的魚風箏。"
+      ],
+      "en": [
+        "On Saturday morning, {name} carried a homemade kite to the park. It was made of thin bamboo sticks and bright paper, with a smiling fish painted on the front. Grandma sat on a bench by the grass. \"I'll be right here,\" she said. \"Go and give it a try!\"",
+        "{name} ran forward, pulling the string. The kite wobbled twice and landed in the grass with a thump. On the second try, it spun in a circle and dropped. The third, fourth, and fifth tries went the same way, tipping left or diving straight down.",
+        "The sixth and seventh tries were no better. On the eighth, the kite finally rose above {name}'s head, then wobbled and fell. On the ninth, the string tangled into a big knot. {name} hugged the kite and frowned. \"I want to stop. It will never fly.\"",
+        "Grandma didn't hurry {him}. She just held out a water bottle. \"When you're tired, it's okay to rest.\" {name} sat under a big banyan tree and took a few sips. Up above, white egrets spread their wings and rose slowly, barely flapping, as if the wind were holding them up.",
+        "\"They all fly facing the wind!\" {name} noticed. A little sparrow landed on a branch, its tail bobbing to keep it steady. {name} looked at the kite. Its tail was short and stubby. \"Grandma, I want to give my kite a longer tail!\"",
+        "Grandma found an old ribbon in her bag, and together they tied it to the kite's tail. {name} raised one hand to feel where the wind was coming from. \"I always ran with the wind behind me. This time I'll start by the tree and run into it.\"",
+        "On the tenth try, {name} took a deep breath and ran. The kite gave a little shake, its long tail swishing, and climbed up and up, higher than the banyan tree, flying with the egrets in the blue sky. \"It's flying! Grandma, look!\"",
+        "On the walk home, Grandma said, \"That tenth try was amazing.\" {name} shook {his} head and smiled. \"I think the first nine were even better. Every time it fell, I learned something new.\" {name} held Grandma's hand and hugged the smiling fish kite close."
+      ]
+    },
+    "theme": "perseverance",
+    "guide": {
+      "zh": {
+        "questions": [
+          "風箏一直掉下來的時候，{name}做了哪些事讓自己再試一次？",
+          "你有沒有一件一開始很難、練習後變簡單的事？",
+          "{name}為什麼說前面九次更厲害？你最近為哪一次努力感到驕傲？"
+        ],
+        "tip": "這個星期，每天晚餐時輪流說一件「今天我試了但還沒成功的事」，以及從中學到的一件小事。"
+      },
+      "en": {
+        "questions": [
+          "When the kite kept falling, what did {name} do to get ready to try again?",
+          "Can you think of something that was hard at first but got easier with practice?",
+          "Why did {name} say the first nine tries were even better? What effort are you proud of lately?"
+        ],
+        "tip": "This week at dinner, take turns sharing one thing you tried today that didn't work yet, and one small thing you learned from it."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "perseverance-one-brick-a-day",
+    "style": "inspiring",
+    "ageBands": [
+      "8-10"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}的彩虹磚牆",
+      "en": "{name}'s Rainbow Brick Wall"
+    },
+    "paragraphs": {
+      "zh": [
+        "鋼琴發表會只剩兩個星期，{name}的手指卻又在第十二小節絆了一跤。那串音符像一團打結的毛線，越急越亂。「叮——咚——噹！」走音的和弦嚇得貓咪麻糬從沙發上彈起來，一溜煙鑽到桌子底下。{name}重重放下手，嘆了一口氣：「我已經練了一百遍，為什麼還是彈不好？」",
+        "奶奶端來一杯溫蜂蜜水，在琴凳旁坐下：「先休息一下，手指也會累的。」她用鉛筆在那幾小節上畫了一排小方塊。「房子是一天砌一塊磚蓋起來的。每次只練四個音，練順了，就把一塊磚塗上顏色。」{name}半信半疑地眨眨眼：「才四個音？那要練到猴年馬月啊？」",
+        "第一天，{name}只彈前四個音，慢慢彈，再慢一點，像在冰上踮腳走路。彈錯了，奶奶就說：「很好，你發現第三個音要用無名指了。」原來每次出錯，都在悄悄透露祕訣。晚餐前，那四個音終於乖乖排好隊，{name}得意洋洋地把第一塊磚塗成紅色。麻糬也伸出毛茸茸的爪子按在琴鍵上，彷彿在蓋章。",
+        "第五天卻卡住了。有一塊磚怎麼樣都砌不起來，{name}彈到眼眶發熱，好想把樂譜闔上。奶奶沒有催，只是說：「換個方法試試看吧。」於是{name}先把那四個音哼出來，再用手指在桌面上輕輕敲出節奏，最後才回到琴鍵上。說也奇怪，原本打結的毛線竟然一點一點鬆開了。那天晚上，第五塊磚變成了橘色。",
+        "一塊、兩塊、三塊……兩個星期過去，樂譜上那排小磚變成一道彩虹色的牆。發表會在{name}家的客廳舉行，林老師帶著另外三個學生來，爸爸媽媽把椅子排成半圓，連隔壁的陳伯伯也來了。{name}坐上琴凳，手心微微冒汗，深深吸了一口氣，開始彈奏。前面的旋律像溪水一樣流淌出來。",
+        "偏偏在最順的地方，一根手指滑了一下。「噹！」一個音歪得像鴨子在打嗝。{name}的心猛地一沉，手指僵在半空中，客廳裡安安靜靜。這時，{name}想起那道彩虹磚牆，想起每一塊磚都是一點一點砌起來的。{name}輕輕吐一口氣，找到下一個音，繼續彈下去，一小節接一小節，一直彈到最後一個和弦。",
+        "掌聲響起，陳伯伯還大喊一聲「好！」{name}紅著臉小聲說：「中間錯了一個音。」奶奶笑瞇瞇地拿出一本泛黃的舊樂譜，同一首曲子、同樣的四小節上，竟然也畫著一排褪色的鉛筆小方塊。「這是我小時候的，」奶奶眨眨眼，「我那時錯了三個音呢！」{name}噗哧一笑，心裡暖洋洋的，比拿第一名還驕傲。"
+      ],
+      "en": [
+        "The piano recital was only two weeks away, and {name}'s fingers tripped over bar twelve yet again. Those notes were like a knotted ball of yarn: the faster {name} pulled, the worse the tangle. Plink, plonk, CLANG! The sour chord sent Mochi the cat leaping off the sofa and scurrying under the table. {name} dropped both hands and sighed. \"I've practiced a hundred times. Why can't I get it?\"",
+        "Grandma brought over a cup of warm honey water and sat down beside the piano bench. \"Rest for a minute. Fingers get tired too.\" With a pencil, she drew a row of tiny boxes above the tricky bars. \"Houses are built one brick a day. Practice just four notes at a time. When they feel easy, color in a brick.\" {name} squinted at the boxes. \"Only four notes? That'll take forever!\"",
+        "On the first day, {name} played only the first four notes, slowly, then even slower, like tiptoeing across ice. Whenever a note went wrong, Grandma said, \"Good! Now you know the third note needs your ring finger.\" Each mistake was quietly whispering a secret. By dinnertime, the four notes lined up nicely, and {name} proudly colored the first brick red. Mochi pressed a fluffy paw on a key, as if stamping it approved.",
+        "On the fifth day, everything stalled. One brick simply would not go on the wall. {name}'s eyes stung, and closing the music book seemed very tempting. Grandma didn't hurry anyone. \"Let's try a different way,\" she said. So {name} hummed the four notes first, then tapped the rhythm on the tabletop, and only then went back to the keys. Strangely enough, the knotted yarn began to loosen. That night, brick five turned orange.",
+        "One brick, two bricks, three bricks... After two weeks, the row of little boxes had become a rainbow wall. The recital was held right in {name}'s living room. Ms. Lin, the piano teacher, came with three other students, Mom and Dad set the chairs in a half circle, and even Mr. Chen from next door arrived. {name} sat down with slightly sweaty palms, took a deep breath, and began. The opening melody flowed like a stream.",
+        "Then, right where it was going smoothly, one finger slipped. CLANG! The note wobbled like a duck with the hiccups. {name}'s stomach dropped, and {his} fingers froze in midair. The room went very quiet. Then {name} remembered the rainbow wall, built one small brick at a time. With a slow breath out, {name} found the next note and kept going, bar after bar, all the way to the final chord.",
+        "Everyone clapped, and Mr. Chen shouted, \"Bravo!\" {name} blushed and whispered, \"I made a mistake in the middle.\" Grandma smiled and pulled out an old, yellowed music book. It was the very same piece, and above the very same bars sat a row of faded pencil boxes. \"This was mine when I was little,\" Grandma said with a wink. \"I made three mistakes!\" {name} burst out laughing, feeling warm inside and prouder than any first prize."
+      ]
+    },
+    "theme": "perseverance",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}卡在第五塊磚的時候，做了哪些事讓自己繼續練下去？",
+          "彈錯一個音之後，{name}是怎麼做的？如果是你，你會怎麼做？",
+          "最近有沒有一件你努力了很久的事？你最驕傲的是哪一部分？"
+        ],
+        "tip": "這週挑一件孩子覺得困難的事，一起把它切成小小的「磚塊」畫在紙上，每完成一塊就塗上顏色。"
+      },
+      "en": {
+        "questions": [
+          "When {name} got stuck on the fifth brick, what did {he} do to keep going?",
+          "What did {name} do after the wrong note? What would you do if that happened to you?",
+          "Is there something you've worked hard on lately? What part are you most proud of?"
+        ],
+        "tip": "This week, pick one thing your child finds hard and draw it together as a row of small \"bricks\" on paper, coloring one in each time a step feels easy."
+      }
+    },
+    "draft": true
   }
 ]
