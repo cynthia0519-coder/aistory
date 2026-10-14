@@ -1,6 +1,6 @@
 // 網頁版離線支援：快取 App 外殼與故事庫，離線時仍可開啟並閱讀本地書櫃與故事庫。
 // 打包成 App（Capacitor）時檔案已在裝置上，不依賴這支。
-const CACHE = "aistory-v5";
+const CACHE = "aistory-v6";
 
 self.addEventListener("install", (e) => {
   e.waitUntil(
@@ -15,9 +15,12 @@ self.addEventListener("install", (e) => {
           "home", "park", "school", "zoo", "forest", "sea", "mountain", "city", "snow", "night_sky",
           "bathroom", "kitchen", "bedroom", "living_room", "clinic", "crosswalk", "classroom",
           "balcony", "storm", "riverside", "playground", "nursery", "garden", "moving",
-          // 同場景的第 2、3 張（SCENE_VARIANTS）
+          // 同場景的其他張（SCENE_VARIANTS）
           "classroom-2", "classroom-3", "city-2", "city-3", "home-2", "living_room-2", "sea-2", "playground-2",
           "clinic-2", "crosswalk-2", "mountain-2", "night_sky-2", "forest-2", "zoo-2", "bedroom-2",
+          // 其他季節與銀河色調
+          "classroom-4", "city-4", "playground-3", "forest-3", "garden-2", "home-3", "sea-3", "mountain-3",
+          "riverside-2", "crosswalk-3", "living_room-3", "snow-2", "clinic-3", "night_sky-3", "night_sky-4", "bedroom-3",
         ].map(
           (s) => `/scenes/${s}.jpg`,
         ),

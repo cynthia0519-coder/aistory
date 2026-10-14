@@ -28,6 +28,6 @@ test("every scene a story can get exists and is precached by the service worker"
 test("a library story gets the same scene in every language and spreads across variants", () => {
   assert.equal(sceneName("school", "sharing-turns", "library:a:zh"), sceneName("school", "sharing-turns", "library:a:en"));
   const seen = new Set(Array.from({ length: 60 }, (_, i) => sceneName("city", undefined, `story-${i}`)));
-  assert.deepEqual([...seen].sort(), ["city", "city-2", "city-3"]);
+  assert.deepEqual([...seen].sort(), ["city", "city-2", "city-3", "city-4"]);
   assert.equal(sceneName("city"), "city");
 });

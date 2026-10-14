@@ -42,19 +42,23 @@ const THEMED_DEFAULTS: Partial<Record<StorySetting, string>> = {
 
 /** 同一個場景有幾張插圖；第 1 張是原本的檔名，第 2 張起是 `${場景}-2.jpg`。故事依 id 固定分到其中一張 */
 export const SCENE_VARIANTS: Record<string, number> = {
-  classroom: 3,
-  city: 3,
-  home: 2,
-  living_room: 2,
-  sea: 2,
-  playground: 2,
-  clinic: 2,
-  crosswalk: 2,
-  mountain: 2,
-  night_sky: 2,
-  forest: 2,
+  // 第 1–3 張：暖秋色；第 4 張起：春、夏、雨季、冬、銀河等其他色調
+  classroom: 4,
+  city: 4,
+  home: 3,
+  living_room: 3,
+  sea: 3,
+  playground: 3,
+  clinic: 3,
+  crosswalk: 3,
+  mountain: 3,
+  night_sky: 4,
+  forest: 3,
   zoo: 2,
-  bedroom: 2,
+  bedroom: 3,
+  garden: 2,
+  riverside: 2,
+  snow: 2,
 };
 
 /** 故事庫的故事在裝置上的 id 是 `library:${id}:${語言}`；同一則故事不分語言、主角都用同一張圖 */
