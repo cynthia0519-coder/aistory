@@ -1,25 +1,23 @@
-// 背景音樂。
+// 背景音樂：播放 public/music/ 裡的 Mureka 曲子（商用授權證書由營運端保存，不放進 repo）。
 //
-// ⚠ PLACEHOLDER（暫代）：這裡的音樂全部用 Web Audio API 即時合成（振盪器、濾波器、音量包絡），
-// 沒有任何音檔，也沒有授權問題。之後會換成作曲家委託創作或正式授權的曲子：
-// 只要另寫一個實作 BackgroundMusic 介面的版本（例如播放 mp3 loop），StoryReader 不用改。
+// 每首 loop 檔案的長度是「loop 秒數 + CROSSFADE 秒」：最後幾秒是接續的音樂，
+// 下一輪從頭開始播時和它交叉淡化，所以循環不會有斷點，也不受 AAC 編碼開頭的空白影響。
 //
-// 每種故事風格一段輕柔的循環：溫暖的長音鋪底 + 稀疏的五聲音階旋律（音樂盒或木琴的音色）。
-// - bedtime：最慢、最暗、最小聲
-// - cute：彈跳的撥弦
-// - adventure：輕快的走路節奏
-// - inspiring：溫暖的大三和弦
+// 選曲：有主題的故事依主題分類選曲（身體自主、寵物離別等用溫柔的那首），
+// 其他依故事風格，每種風格兩首輪流。
 //
 // iOS WKWebView 只允許在使用者手勢裡建立或恢復 AudioContext，所以 start() / setEnabled(true)
-// 必須在按鈕的 click 處理函式裡「同步」呼叫。
-import type { StoryStyle } from "@aistory/shared";
+// 必須在按鈕的 click 處理函式裡「同步」呼叫；音檔下載解碼是之後的事，不影響。
+import { THEMES, type StoryStyle, type ThemeId } from "@aistory/shared";
 
 export interface BackgroundMusic {
   isSupported(): boolean;
-  /** 開始（或換成）某種風格的音樂；必須在使用者手勢裡呼叫 */
-  start(style: StoryStyle): void;
+  /** 開始（或換成）某個故事的音樂，並播開場音效；必須在使用者手勢裡呼叫 */
+  start(style: StoryStyle, theme?: ThemeId): void;
   /** 淡出後停止 */
   stop(fadeSeconds?: number): void;
+  /** 故事念完：播結尾音效，音樂淡出 */
+  end(): void;
   /** 念故事時把音樂壓低，段落之間再放大 */
   duck(on: boolean): void;
   /** 使用者的開關；關掉時淡出，打開時若正在念故事就接著播 */
@@ -27,100 +25,85 @@ export interface BackgroundMusic {
   isEnabled(): boolean;
 }
 
-type Voice = "musicbox" | "marimba" | "pluck";
+/** 每首曲子的 loop 長度（秒）；由 Mureka 原檔挑出最相似的兩點切出來 */
+const LOOPS = {
+  "bedtime-1": 62.0,
+  "bedtime-2": 67.4,
+  "cute-1": 61.6,
+  "cute-2": 60.0,
+  "adventure-1": 76.8,
+  "adventure-2": 83.9,
+  "inspiring-1": 71.8,
+  "inspiring-2": 68.6,
+  "theme-tender": 63.2,
+  "theme-careful": 99.2,
+  "theme-routine": 81.6,
+  "theme-calm": 73.2,
+} as const;
+type Track = keyof typeof LOOPS;
 
-interface StyleSpec {
-  bpm: number;
-  /** 調性的主音（MIDI） */
-  key: number;
-  /** 和弦進行；每個和弦是相對主音的半音數 */
-  progression: number[][];
-  beatsPerChord: number;
-  pad: { wave: OscillatorType; cutoff: number; level: number; attack: number };
-  melody: { voice: Voice; octave: number; stepBeats: number; density: number; level: number };
-  /** 低音：每拍一個音，數字是相對和弦根音的半音數（低一個八度）；null = 不彈 */
-  bass?: { pattern: (number | null)[]; voice: Voice; level: number };
-  /** 整體音量與最後的低通濾波（越低越暗） */
-  volume: number;
-  tone: number;
+const CROSSFADE = 3;
+const VOLUME = 0.5;
+const DUCKED = 0.35;
+const SFX_VOLUME = 0.7;
+/** 開場音效先響一下，音樂再淡入 */
+const MUSIC_DELAY = 1.2;
+
+/** 情緒比較重的主題不管分類都用溫柔的那首 */
+const TENDER_THEMES: ThemeId[] = ["pet-loss", "fear-of-dark", "new-sibling"];
+
+function pickTrack(style: StoryStyle, theme?: ThemeId): Track {
+  if (theme) {
+    if (TENDER_THEMES.includes(theme)) return "theme-tender";
+    const category = THEMES[theme]?.category;
+    if (category === "body") return "theme-tender";
+    if (category === "safety") return "theme-careful";
+    if (category === "habits") return "theme-routine";
+    if (category === "emotions") return "theme-calm";
+  }
+  return `${style}-${nextVariant(style)}`;
 }
 
-// 和弦：開放排列，聽起來比較溫暖
-const I = [0, 7, 16];
-const IV = [5, 12, 21];
-const V = [7, 14, 23];
-const VI = [-3, 4, 12];
-
-const STYLES: Record<StoryStyle, StyleSpec> = {
-  bedtime: {
-    bpm: 52,
-    key: 50, // D3
-    progression: [I, VI, IV, I],
-    beatsPerChord: 8,
-    pad: { wave: "triangle", cutoff: 650, level: 0.05, attack: 3 },
-    melody: { voice: "musicbox", octave: 24, stepBeats: 1, density: 0.28, level: 0.05 },
-    volume: 0.5,
-    tone: 1600,
-  },
-  cute: {
-    bpm: 104,
-    key: 60, // C4
-    progression: [I, IV, V, I],
-    beatsPerChord: 4,
-    pad: { wave: "triangle", cutoff: 1300, level: 0.03, attack: 0.8 },
-    melody: { voice: "pluck", octave: 12, stepBeats: 0.5, density: 0.42, level: 0.07 },
-    bass: { pattern: [0, null, 7, null], voice: "pluck", level: 0.06 },
-    volume: 0.55,
-    tone: 4200,
-  },
-  adventure: {
-    bpm: 96,
-    key: 55, // G3
-    progression: [I, V, VI, IV],
-    beatsPerChord: 4,
-    pad: { wave: "sawtooth", cutoff: 900, level: 0.025, attack: 1 },
-    melody: { voice: "marimba", octave: 12, stepBeats: 0.5, density: 0.3, level: 0.07 },
-    // 走路的低音：根音、五度、八度、五度
-    bass: { pattern: [0, 7, 12, 7], voice: "marimba", level: 0.07 },
-    volume: 0.55,
-    tone: 3600,
-  },
-  inspiring: {
-    bpm: 72,
-    key: 53, // F3
-    progression: [I, V, VI, IV],
-    beatsPerChord: 4,
-    pad: { wave: "sawtooth", cutoff: 1500, level: 0.035, attack: 1.5 },
-    melody: { voice: "marimba", octave: 24, stepBeats: 1, density: 0.32, level: 0.06 },
-    volume: 0.55,
-    tone: 3200,
-  },
-};
-
-/** 大調五聲音階：怎麼彈都不會不和諧 */
-const PENTATONIC = [0, 2, 4, 7, 9];
-const DUCKED = 0.35;
-const LOOKAHEAD = 0.25;
-const TICK_MS = 60;
-
-const freq = (midi: number) => 440 * 2 ** ((midi - 69) / 12);
+const url = (name: string) => `/music/${name}.mp3`;
 
 function createEngine(): BackgroundMusic {
   let ctx: AudioContext | null = null;
   let master: GainNode | null = null; // 淡入淡出、開關
   let duckGain: GainNode | null = null; // 念故事時壓低
-  let tone: BiquadFilterNode | null = null; // 整體亮度
-  let bus: GainNode | null = null; // 各音色匯流
+  let sfxGain: GainNode | null = null; // 音效不跟著壓低
 
   let enabled = true;
-  /** 正在念的故事風格；null = 沒在念 */
-  let wanted: StoryStyle | null = null;
-  let playing: StoryStyle | null = null;
-  let timer: ReturnType<typeof setInterval> | null = null;
+  /** 正在念的故事要的曲子；null = 沒在念 */
+  let wanted: Track | null = null;
+  let playing: Track | null = null;
+  /** 換曲或停止時加一，讓還在下載的舊曲子作廢 */
+  let generation = 0;
+  let sources: AudioBufferSourceNode[] = [];
   let stopTimer: ReturnType<typeof setTimeout> | null = null;
-  let nextTime = 0;
-  let step = 0;
-  let melodyIndex = 5;
+
+  // 解碼後的音樂很佔記憶體（一首約 25MB），只留目前這首和兩個短音效
+  const buffers = new Map<string, Promise<AudioBuffer | null>>();
+
+  function load(name: string): Promise<AudioBuffer | null> {
+    let p = buffers.get(name);
+    if (!p) {
+      p = fetch(url(name))
+        .then((r) => (r.ok ? r.arrayBuffer() : Promise.reject(new Error(String(r.status)))))
+        .then((data) => new Promise<AudioBuffer>((ok, fail) => ctx!.decodeAudioData(data, ok, fail)))
+        .catch(() => {
+          buffers.delete(name); // 離線或失敗：下次再試，這次就安靜地不放音樂
+          return null;
+        });
+      buffers.set(name, p);
+    }
+    return p;
+  }
+
+  function forgetOtherTracks(keep: Track) {
+    for (const name of buffers.keys()) {
+      if (name in LOOPS && name !== keep) buffers.delete(name);
+    }
+  }
 
   function ensureContext(): AudioContext | null {
     if (typeof window === "undefined") return null;
@@ -132,172 +115,94 @@ function createEngine(): BackgroundMusic {
       master = ctx.createGain();
       master.gain.value = 0;
       duckGain = ctx.createGain();
-      tone = ctx.createBiquadFilter();
-      tone.type = "lowpass";
-      tone.Q.value = 0.3;
-      bus = ctx.createGain();
-
-      // 一點點回音，讓音樂盒聽起來有空間感
-      const delay = ctx.createDelay(1);
-      delay.delayTime.value = 0.38;
-      const feedback = ctx.createGain();
-      feedback.gain.value = 0.28;
-      const wet = ctx.createGain();
-      wet.gain.value = 0.22;
-      bus.connect(delay);
-      delay.connect(feedback);
-      feedback.connect(delay);
-      delay.connect(wet);
-      wet.connect(tone);
-
-      bus.connect(tone);
-      tone.connect(duckGain);
       duckGain.connect(master);
       master.connect(ctx.destination);
+      sfxGain = ctx.createGain();
+      sfxGain.gain.value = SFX_VOLUME;
+      sfxGain.connect(ctx.destination);
     }
     // 在手勢裡恢復；iOS 從背景回來時 context 也可能被暫停
     if (ctx.state !== "running") ctx.resume().catch(() => {});
     return ctx;
   }
 
-  // ---- 音色 ----
-
-  function envelope(c: AudioContext, at: number, peak: number, attack: number, decay: number): GainNode {
-    const g = c.createGain();
-    g.gain.setValueAtTime(0, at);
-    g.gain.linearRampToValueAtTime(peak, at + attack);
-    g.gain.exponentialRampToValueAtTime(0.0001, at + attack + decay);
-    return g;
+  function sfx(name: "sfx-start" | "sfx-end") {
+    const c = ctx;
+    if (!c || !enabled) return;
+    load(name).then((buf) => {
+      if (!buf || !sfxGain) return;
+      const s = c.createBufferSource();
+      s.buffer = buf;
+      s.connect(sfxGain);
+      s.start();
+      s.onended = () => s.disconnect();
+    });
   }
 
-  function osc(c: AudioContext, type: OscillatorType, hz: number, at: number, end: number, out: AudioNode, detune = 0) {
-    const o = c.createOscillator();
-    o.type = type;
-    o.frequency.value = hz;
-    o.detune.value = detune;
-    o.connect(out);
-    o.start(at);
-    o.stop(end);
-    o.onended = () => o.disconnect();
-  }
-
-  function note(voice: Voice, midi: number, at: number, level: number) {
-    const c = ctx!;
-    const hz = freq(midi);
-    if (voice === "musicbox") {
-      // 音樂盒：正弦波加上很快消失的高泛音
-      const body = envelope(c, at, level, 0.005, 2.2);
-      body.connect(bus!);
-      osc(c, "sine", hz, at, at + 2.3, body);
-      const bell = envelope(c, at, level * 0.25, 0.002, 0.4);
-      bell.connect(bus!);
-      osc(c, "sine", hz * 4, at, at + 0.5, bell);
-    } else if (voice === "marimba") {
-      // 木琴：短促的正弦波加上約 4 倍頻的敲擊聲
-      const body = envelope(c, at, level, 0.004, 0.9);
-      body.connect(bus!);
-      osc(c, "sine", hz, at, at + 1, body);
-      const knock = envelope(c, at, level * 0.3, 0.002, 0.12);
-      knock.connect(bus!);
-      osc(c, "sine", hz * 3.9, at, at + 0.15, knock);
-    } else {
-      // 撥弦：三角波經過一個快速關上的低通濾波
-      const filter = c.createBiquadFilter();
-      filter.type = "lowpass";
-      filter.Q.value = 2;
-      filter.frequency.setValueAtTime(hz * 6, at);
-      filter.frequency.exponentialRampToValueAtTime(hz * 1.2, at + 0.25);
-      const g = envelope(c, at, level, 0.003, 0.45);
-      filter.connect(g);
-      g.connect(bus!);
-      osc(c, "triangle", hz, at, at + 0.5, filter);
-    }
-  }
-
-  function pad(spec: StyleSpec, chord: number[], at: number, duration: number) {
-    const c = ctx!;
-    const { wave, cutoff, level, attack } = spec.pad;
-    const release = attack * 1.2;
-    const filter = c.createBiquadFilter();
-    filter.type = "lowpass";
-    filter.frequency.value = cutoff;
-    const g = c.createGain();
-    g.gain.setValueAtTime(0, at);
-    g.gain.linearRampToValueAtTime(level, at + attack);
-    g.gain.setValueAtTime(level, at + duration);
-    g.gain.linearRampToValueAtTime(0, at + duration + release);
-    filter.connect(g);
-    g.connect(bus!);
-    for (const offset of chord) {
-      const hz = freq(spec.key + offset);
-      // 兩個稍微走音的振盪器疊在一起，聲音比較厚、比較暖
-      osc(c, wave, hz, at, at + duration + release + 0.05, filter, -6);
-      osc(c, wave, hz, at, at + duration + release + 0.05, filter, 6);
-    }
-  }
-
-  // ---- 排程：每隔一小段時間，把接下來 LOOKAHEAD 秒內的音符排進 AudioContext ----
-
-  function schedule(spec: StyleSpec) {
-    const c = ctx!;
-    const beat = 60 / spec.bpm;
-    const stepLen = beat * spec.melody.stepBeats;
-    const stepsPerBeat = 1 / spec.melody.stepBeats;
-    const stepsPerChord = spec.beatsPerChord * stepsPerBeat;
-
-    // 分頁在背景時計時器會變慢；落後太多就跳過，不要一次補一堆音
-    if (nextTime < c.currentTime - 0.1) nextTime = c.currentTime + 0.05;
-
-    while (nextTime < c.currentTime + LOOKAHEAD) {
-      const chordIndex = Math.floor(step / stepsPerChord) % spec.progression.length;
-      const chord = spec.progression[chordIndex];
-      const onBeat = step % stepsPerBeat === 0;
-
-      if (step % stepsPerChord === 0) pad(spec, chord, nextTime, spec.beatsPerChord * beat);
-
-      if (spec.bass && onBeat) {
-        const beatInBar = (step / stepsPerBeat) % spec.bass.pattern.length;
-        const offset = spec.bass.pattern[beatInBar];
-        if (offset !== null) note(spec.bass.voice, spec.key - 12 + chord[0] + offset, nextTime, spec.bass.level);
+  function stopSources(at: number) {
+    for (const s of sources) {
+      try {
+        s.stop(at);
+      } catch {
+        // 已經停了
       }
-
-      // 稀疏的旋律：在五聲音階上隨機小步移動，正拍比較容易出現
-      const chance = spec.melody.density * (onBeat ? 1.4 : 0.6);
-      if (Math.random() < chance) {
-        melodyIndex = Math.max(0, Math.min(9, melodyIndex + Math.floor(Math.random() * 5) - 2));
-        const midi =
-          spec.key + spec.melody.octave + PENTATONIC[melodyIndex % 5] + 12 * Math.floor(melodyIndex / 5);
-        note(spec.melody.voice, midi, nextTime, spec.melody.level * (onBeat ? 1 : 0.7));
-      }
-
-      nextTime += stepLen;
-      step++;
     }
+    sources = [];
   }
 
-  function play(style: StoryStyle) {
+  /**
+   * 第 k 輪在 t0 + k*loop 開始；每輪最後 CROSSFADE 秒和下一輪的開頭重疊。
+   * 一輪結束時再排下下輪，所以永遠提前約一分鐘排好，分頁在背景也不會斷。
+   */
+  function scheduleRound(buf: AudioBuffer, loop: number, t0: number, k: number, gen: number) {
+    const c = ctx!;
+    if (gen !== generation) return;
+    const at = t0 + k * loop;
+    const g = c.createGain();
+    if (k > 0) {
+      g.gain.setValueAtTime(0, at);
+      g.gain.linearRampToValueAtTime(1, at + CROSSFADE);
+    }
+    g.gain.setValueAtTime(1, at + loop);
+    g.gain.linearRampToValueAtTime(0, at + loop + CROSSFADE);
+    g.connect(duckGain!);
+    const s = c.createBufferSource();
+    s.buffer = buf;
+    s.connect(g);
+    s.start(Math.max(at, c.currentTime));
+    s.stop(at + loop + CROSSFADE);
+    sources.push(s);
+    s.onended = () => {
+      s.disconnect();
+      g.disconnect();
+      sources = sources.filter((x) => x !== s);
+      scheduleRound(buf, loop, t0, k + 2, gen);
+    };
+  }
+
+  function play(track: Track) {
     const c = ensureContext();
-    if (!c || !master || !tone || !duckGain) return;
+    if (!c || !master) return;
     if (stopTimer) {
       clearTimeout(stopTimer);
       stopTimer = null;
     }
-    const spec = STYLES[style];
     const now = c.currentTime;
-    if (playing !== style) {
-      if (timer) clearInterval(timer);
-      // 換風格：已排好的音很快就會結束，不需要特別清掉
-      step = 0;
-      melodyIndex = 5;
-      nextTime = now + 0.1;
-      tone.frequency.setTargetAtTime(spec.tone, now, 0.1);
-      timer = setInterval(() => schedule(spec), TICK_MS);
-      schedule(spec);
-      playing = style;
+    if (playing !== track) {
+      const gen = ++generation;
+      stopSources(now + 0.8); // 舊曲子跟著 master 淡出
+      playing = track;
+      forgetOtherTracks(track);
+      load(track).then((buf) => {
+        if (!buf || gen !== generation) return;
+        const t0 = Math.max(c.currentTime + 0.05, now + MUSIC_DELAY);
+        scheduleRound(buf, LOOPS[track], t0, 0, gen);
+        scheduleRound(buf, LOOPS[track], t0, 1, gen);
+      });
     }
     master.gain.cancelScheduledValues(now);
     master.gain.setValueAtTime(master.gain.value, now);
-    master.gain.linearRampToValueAtTime(spec.volume, now + 2);
+    master.gain.linearRampToValueAtTime(VOLUME, now + MUSIC_DELAY + 2);
   }
 
   function fadeOut(seconds: number) {
@@ -309,8 +214,8 @@ function createEngine(): BackgroundMusic {
     if (stopTimer) clearTimeout(stopTimer);
     stopTimer = setTimeout(() => {
       stopTimer = null;
-      if (timer) clearInterval(timer);
-      timer = null;
+      generation++;
+      stopSources(0);
       playing = null;
       // 不播時暫停 context，省電；下次 start() 在手勢裡再恢復
       ctx?.suspend().catch(() => {});
@@ -322,14 +227,24 @@ function createEngine(): BackgroundMusic {
       typeof window !== "undefined" &&
       ("AudioContext" in window || "webkitAudioContext" in (window as unknown as Record<string, unknown>)),
 
-    start(style) {
-      wanted = style;
-      if (enabled) play(style);
+    start(style, theme) {
+      wanted = pickTrack(style, theme);
+      if (!enabled) return;
+      ensureContext();
+      sfx("sfx-start");
+      play(wanted);
     },
 
     stop(fadeSeconds = 1.5) {
       wanted = null;
       fadeOut(fadeSeconds);
+    },
+
+    end() {
+      wanted = null;
+      if (!playing) return;
+      sfx("sfx-end");
+      fadeOut(4);
     },
 
     duck(on) {
@@ -349,8 +264,21 @@ function createEngine(): BackgroundMusic {
 
 export const bgm: BackgroundMusic = createEngine();
 
-// ---- 使用者的開關，記在 localStorage（私密模式等情況可能讀寫失敗，失敗就用預設：開）----
+// ---- 使用者偏好，記在 localStorage（私密模式等情況可能讀寫失敗，失敗就用預設）----
 const PREF_KEY = "aistory.bgm";
+const VARIANT_KEY = "aistory.bgm.variant";
+
+/** 同一種風格的兩首輪流播，連聽幾個故事比較不膩 */
+function nextVariant(style: StoryStyle): 1 | 2 {
+  try {
+    const all = JSON.parse(localStorage.getItem(VARIANT_KEY) ?? "{}") as Record<string, number>;
+    const v = all[style] === 1 ? 2 : 1;
+    localStorage.setItem(VARIANT_KEY, JSON.stringify({ ...all, [style]: v }));
+    return v;
+  } catch {
+    return Math.random() < 0.5 ? 1 : 2;
+  }
+}
 
 export function loadMusicPref(): boolean {
   try {

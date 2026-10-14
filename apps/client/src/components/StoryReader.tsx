@@ -12,6 +12,8 @@ import { StoryLoading } from "./StoryLoading";
 
 /** 段落之間的小停頓：讓背景音樂浮上來一點，聽起來不趕 */
 const PARAGRAPH_GAP_MS = 600;
+/** 開場音效的長度，念標題前先等它響一下 */
+const START_DELAY_MS = 1200;
 
 interface Props {
   story: SavedStory;
@@ -52,7 +54,7 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
     if (id !== runId.current) return;
     if (index >= story.paragraphs.length) {
       setCurrent(null);
-      bgm.stop();
+      bgm.end();
       return;
     }
     setCurrent(index);
@@ -79,8 +81,11 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
     // 以下都要在按鈕的手勢裡同步執行，iOS 才允許播放聲音
     narrator.prepare?.();
     bgm.setEnabled(musicOn);
-    bgm.start(story.style ?? "bedtime");
-    speakFrom(-1, ++runId.current);
+    bgm.start(story.style ?? "bedtime", story.theme);
+    const id = ++runId.current;
+    // 開場音效響一下再開始念；音效關掉時不用等
+    setCurrent(-1);
+    setTimeout(() => speakFrom(-1, id), musicOn ? START_DELAY_MS : 0);
   }
 
   function toggleMusic() {
