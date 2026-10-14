@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useId, useState } from "react";
-import { PRICING, type PricingPlan } from "@/lib/pricing";
+import { PRICING, YEARLY_NUDGE, type PricingPlan } from "@/lib/pricing";
 import { LockIcon, MoonIcon } from "./icons";
 import { BackButton, Dialog, PrimaryButton } from "./ui";
 
@@ -64,6 +64,7 @@ export function Shop({ onBack }: Props) {
                 <span className="flex flex-1 flex-col">
                   <span className="font-display text-lg font-bold">{p.title}</span>
                   <span className="text-xs text-ink-soft">{p.detail}</span>
+                  {p.deal && <span className="text-xs font-bold text-teal">{p.deal}</span>}
                 </span>
                 <span className={`shrink-0 text-right font-bold ${p.price ? "text-ink" : "text-sm text-ink-soft"}`}>
                   {p.price ?? "即將推出"}
@@ -77,6 +78,16 @@ export function Shop({ onBack }: Props) {
             );
           })}
         </div>
+
+        {plan === "half_year" && (
+          <button
+            type="button"
+            onClick={() => setPlan("yearly")}
+            className="-mt-2 h-11 rounded-2xl bg-mustard/30 px-4 text-sm font-bold text-ink"
+          >
+            {YEARLY_NUDGE} →
+          </button>
+        )}
 
         <ul className="flex flex-col gap-2 rounded-2xl bg-paper-deep px-4 py-3 text-sm text-ink-soft">
           <li className="flex items-center gap-2">
