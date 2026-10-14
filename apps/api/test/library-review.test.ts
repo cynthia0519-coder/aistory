@@ -145,6 +145,14 @@ test("hero counted in 她們", () => {
   assert.equal(c[0].severity, "medium");
 });
 
+test("她們 in the guide is flagged even without a hero token in the sentence", () => {
+  const s = makeStory({
+    guide: { zh: { ...guide.zh, questions: ["{name}跟媽媽去哪裡？", "她們一起做了什麼？"] }, en: guide.en },
+  });
+  const c = checkHeroGender(s);
+  assert.deepEqual(c.map((x) => x.where), ["guide"]);
+});
+
 test("hotline in the guide is flagged", () => {
   const s = makeStory({
     theme: "saying-no",

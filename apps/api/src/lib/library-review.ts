@@ -224,13 +224,23 @@ export function checkHeroGender(story: LibraryStory): ReviewCheck[] {
   for (const f of textFields(story)) {
     if (f.lang !== "zh") continue;
     for (const sentence of f.text.split(/(?<=[。！？])/)) {
-      if (sentence.includes("她們") && /\{(?:name|he|him|his)\}/.test(sentence)) {
+      if (!sentence.includes("她們")) continue;
+      if (/\{(?:name|he|him|his)\}/.test(sentence)) {
         out.push({
           kind: "hero_gender",
           severity: "medium",
           lang: "zh",
           where: f.where,
           note: `「${sentence.trim().slice(0, 40)}」：主角和「她們」在同一句，可能把主角寫成女生；包含主角時用「他們」或改寫`,
+        });
+      } else if (f.where === "guide") {
+        // 引導卡常寫「媽媽……她們一起做了什麼」，主角在前一句，同一句沒有標記也會漏抓
+        out.push({
+          kind: "hero_gender",
+          severity: "medium",
+          lang: "zh",
+          where: f.where,
+          note: `「${sentence.trim().slice(0, 40)}」：引導卡的「她們」常把主角算進去；確認不包含主角，否則用「他們」或寫出「媽媽和{name}」`,
         });
       }
     }
