@@ -3,15 +3,16 @@ import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import {
   AGE_RULES,
   LENGTH_RULES,
+  ParentGuideSchema,
   STORY_SETTINGS,
   STYLE_RULES,
   StoryOutputSchema,
-  type AgeBand,
   type Hero,
-  type Language,
   type StoryOutput,
   type StoryRequest,
 } from "@aistory/shared";
+import { lengthTarget } from "./length";
+import { GUIDE_INSTRUCTIONS, themeBlock } from "./themes";
 
 const client = new Anthropic();
 const MODEL = process.env.STORY_MODEL ?? "claude-opus-5-5";
@@ -54,7 +55,11 @@ Output fields:
 - scene: a short, neutral English description of what is in the photo (characters, setting, objects, mood). No personal identifying details and never the hero's name. It will be reused later to write more stories without the photo.
 - setting: where most of the story takes place, one of: ${STORY_SETTINGS.join(", ")}.
 - title: the story title, in the requested language.
-- paragraphs: the story split into short paragraphs, in the requested language.`;
+- paragraphs: the story split into short paragraphs, in the requested language.
+- guide: only when the request gives a theme; follow the parent guide instructions given there.`;
+
+// 只有選了主題才要求引導卡；沒主題時輸出格式不含 guide
+const ThemedStoryOutputSchema = StoryOutputSchema.extend({ guide: ParentGuideSchema });
 
 export class StoryRefusedError extends Error {}
 
@@ -77,46 +82,19 @@ function heroBlock(hero: Hero): string {
     .join("\n");
 }
 
-// 每段大約多長（中文字／英文 word）。評測發現模型估總字數會偏少，
-// 改用「幾段 × 每段多長」描述，模型比較抓得準。
-const PARAGRAPH_SIZE: Record<AgeBand, Record<Language, number>> = {
-  "2-4": { zh: 40, en: 25 },
-  "4-6": { zh: 60, en: 40 },
-  "6-8": { zh: 80, en: 50 },
-  "8-10": { zh: 100, en: 60 },
-};
-
-// LENGTH_RULES 的中文以「漢字」計（朗讀時間只跟漢字有關），但模型數字數時會把標點算進去，
-// 實測標點約佔 1.2 倍。給模型的數字換算成含標點的字數，模型寫出來的漢字數才會落在規則內。
-const ZH_WITH_PUNCTUATION = 1.2;
-
-// 低齡中文（短句、單一情節）實測只寫到要求的約 75%，而且目標調低它也跟著等比例縮短，
-// 所以只能在給模型的數字上補回來（docs/eval 報告 v6）。
-const LENGTH_BOOST: Partial<Record<AgeBand, Partial<Record<Language, number>>>> = {
-  "2-4": { zh: 1.35 },
-  "4-6": { zh: 1.35 },
-};
-
-function lengthLine(req: StoryRequest, min: number, max: number): string {
-  const k =
-    (req.language === "zh" ? ZH_WITH_PUNCTUATION : 1) * (LENGTH_BOOST[req.ageBand]?.[req.language] ?? 1);
-  const unit = req.language === "zh" ? "Chinese characters including punctuation" : "words";
-  const [lo, hi] = [Math.round(min * k), Math.round(max * k)];
-  const target = Math.round((lo + hi) / 2);
-  const perParagraph = Math.round(PARAGRAPH_SIZE[req.ageBand][req.language] * k);
-  const paragraphs = Math.round(target / perParagraph);
-  return `Length: ${lo}–${hi} ${unit} in total (read aloud in about ${LENGTH_RULES[req.length].label}). Write about ${paragraphs} paragraphs of roughly ${perParagraph} each, about ${target} in total. Do not end early; give the middle of the story more events and detail rather than padding the ending.`;
+function lengthLine(req: StoryRequest): string {
+  const t = lengthTarget(req.length, req.ageBand, req.language);
+  return `Length: ${t.lo}–${t.hi} ${t.unit} in total (read aloud in about ${LENGTH_RULES[req.length].label}). Write about ${t.paragraphs} paragraphs of roughly ${t.perParagraph} each, about ${t.target} in total. Do not end early; give the middle of the story more events and detail rather than padding the ending.`;
 }
 
 function buildInstructions(req: StoryRequest): string {
   const age = AGE_RULES[req.ageBand];
-  const [min, max] = LENGTH_RULES[req.length].words[req.ageBand][req.language];
 
   return [
     `Audience age: ${age.label}.`,
     `Age style: ${age.style}`,
     `Story type: ${STYLE_RULES[req.style].prompt}`,
-    lengthLine(req, min, max),
+    lengthLine(req),
     req.language === "zh"
       ? "Write the title and story in Traditional Chinese (繁體中文, Taiwan usage)."
       : "Write the title and story in simple, natural English.",
@@ -125,6 +103,11 @@ function buildInstructions(req: StoryRequest): string {
       ? `Base the story on this scene (no photo provided): ${req.scene}`
       : "Base the story on the photo.",
     req.avoidTitle ? `Write a different story than the previous one titled "${req.avoidTitle}".` : "",
+    // 主題只能是 aiAllowed 的（StoryRequestSchema 已檢查），所以不會帶到敏感主題的護欄
+    req.theme ? themeBlock(req.theme) : "",
+    req.theme
+      ? `${GUIDE_INSTRUCTIONS}\n- Write the guide in the same language as the story, and refer to the main character by name.`
+      : "",
   ]
     .filter(Boolean)
     .join("\n");
@@ -155,7 +138,7 @@ export async function generateStoryDetailed(
     betas: ["server-side-fallback-2026-07-01"],
     fallbacks: "default",
     // 說故事不需要深度推理，low effort 省 token、回得快
-    output_config: { effort: "low", format: betaZodOutputFormat(StoryOutputSchema) },
+    output_config: { effort: "low", format: betaZodOutputFormat(req.theme ? ThemedStoryOutputSchema : StoryOutputSchema) },
     system: [{ type: "text", text: SYSTEM, cache_control: { type: "ephemeral" } }],
     messages: [{ role: "user", content }],
   });

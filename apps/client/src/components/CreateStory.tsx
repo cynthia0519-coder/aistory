@@ -5,16 +5,19 @@ import {
   AGE_BANDS,
   AGE_RULES,
   ageBandFor,
+  aiThemesFor,
   LANGUAGES,
   LANGUAGE_LABELS,
   LENGTH_RULES,
   STORY_LENGTHS,
   STORY_STYLES,
   STYLE_RULES,
+  THEMES,
   type AgeBand,
   type Language,
   type StoryLength,
   type StoryStyle,
+  type ThemeId,
 } from "@aistory/shared";
 import { prepareImage } from "@/lib/image";
 import { requestStory, StoryApiError } from "@/lib/api";
@@ -50,6 +53,11 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary }: Pr
   const ageBand = hero ? ageBandFor(hero.age) : pickedAgeBand;
   const [style, setStyle] = useState<StoryStyle>("adventure");
   const [length, setLength] = useState<StoryLength>("3min");
+  // 只列出即時 AI 可以寫的主題（生活習慣、情緒），而且要符合目前的年齡層；
+  // 換了年齡層、原本選的主題不適用時就當作沒選
+  const themeOptions = aiThemesFor(ageBand);
+  const [pickedTheme, setTheme] = useState<ThemeId | null>(null);
+  const theme = pickedTheme && themeOptions.includes(pickedTheme) ? pickedTheme : null;
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -75,6 +83,7 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary }: Pr
         length,
         hero: heroData,
         imageBase64: apiBase64,
+        theme: theme ?? undefined,
       });
       const saved: SavedStory = {
         ...story,
@@ -85,6 +94,7 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary }: Pr
         style,
         length,
         hero: heroData,
+        theme: theme ?? undefined,
         heroLook: hero ? lookOf(hero) : undefined,
         thumbnail,
       };
@@ -226,6 +236,21 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary }: Pr
           </div>
         </fieldset>
 
+        <fieldset className="flex min-w-0 flex-col gap-2">
+          <SectionTitle as="legend">想聊的主題（選填）</SectionTitle>
+          <p className="-mt-2 text-xs text-ink-soft">故事會自然帶到這件事，最後附上給爸媽的聊天卡</p>
+          <div className="-mx-4 flex gap-2 overflow-x-auto px-4 py-1 [scrollbar-width:none]">
+            <ThemeChip active={theme === null} onClick={() => setTheme(null)}>
+              不用
+            </ThemeChip>
+            {themeOptions.map((t) => (
+              <ThemeChip key={t} active={theme === t} onClick={() => setTheme(t)}>
+                {THEMES[t].label.zh}
+              </ThemeChip>
+            ))}
+          </div>
+        </fieldset>
+
         <fieldset className="flex flex-col gap-2">
           <SectionTitle as="legend">故事要講多久</SectionTitle>
           <div className="grid grid-cols-2 gap-2">
@@ -244,5 +269,21 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary }: Pr
         </PrimaryButton>
       </div>
     </div>
+  );
+}
+
+/** 主題 chip：橫向捲動的一排，比一般 Chip 小一點 */
+function ThemeChip({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
+  return (
+    <button
+      type="button"
+      aria-pressed={active}
+      onClick={onClick}
+      className={`h-10 shrink-0 whitespace-nowrap rounded-full px-4 text-sm font-bold ${
+        active ? "bg-teal text-paper" : "bg-card text-ink ring-2 ring-line"
+      }`}
+    >
+      {children}
+    </button>
   );
 }

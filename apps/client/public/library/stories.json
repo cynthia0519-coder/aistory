@@ -1,5 +1,52 @@
 [
   {
+    "id": "sugar-bug-sweep",
+    "style": "cute",
+    "ageBands": [
+      "2-4",
+      "4-6"
+    ],
+    "setting": "home",
+    "theme": "brushing-teeth",
+    "title": {
+      "zh": "{name}的刷牙掃把",
+      "en": "{name}'s Toothbrush Broom"
+    },
+    "paragraphs": {
+      "zh": [
+        "晚餐吃完了，{name}張開嘴巴。啊——咦？牙齒上有小小的糖糖蟲在開派對！",
+        "{name}拿起牙刷，像拿起一支小掃把。刷刷刷，前面的牙齒，轉小圈圈。",
+        "刷刷刷，後面的牙齒，也轉小圈圈。糖糖蟲一隻一隻溜走了。",
+        "爸爸說：「換我幫忙掃角落。」最裡面的牙齒也亮晶晶。",
+        "{name}對著鏡子笑一笑。牙齒白白的，好像小星星。晚安，乾淨的牙齒！"
+      ],
+      "en": [
+        "Dinner is done, and {name} opens wide. Ahh, oh! Tiny sugar bugs are having a party on the teeth!",
+        "{name} picks up the toothbrush like a little broom. Swish, swish, the front teeth, in tiny circles.",
+        "Swish, swish, the back teeth, in tiny circles too. One by one, the sugar bugs slip away.",
+        "\"My turn to sweep the corners,\" says Dad. Now even the very back teeth sparkle.",
+        "{name} smiles in the mirror. The teeth shine like little stars. Goodnight, clean teeth!"
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}用牙刷掃把把糖糖蟲趕走了，你最想先刷哪一顆牙？",
+          "刷完牙以後，嘴巴感覺怎麼樣？"
+        ],
+        "tip": "今晚刷牙時，一起唱一首短短的刷牙歌，唱完換爸媽幫忙「掃角落」。"
+      },
+      "en": {
+        "questions": [
+          "{name} swept the sugar bugs away. Which tooth do you want to brush first?",
+          "How does your mouth feel after brushing?"
+        ],
+        "tip": "Tonight, sing a short brushing song together, then take your turn to \"sweep the corners\" for your child."
+      }
+    },
+    "draft": true
+  },
+  {
     "id": "goodnight-little-cloud",
     "style": "bedtime",
     "ageBands": [

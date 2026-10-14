@@ -9,11 +9,12 @@ import {
   LANGUAGES,
   LENGTH_RULES,
   STYLE_RULES,
+  THEMES,
   type LibraryStory,
 } from "@aistory/shared";
 import { deleteStory, listStories, type SavedStory } from "@/lib/storage";
 import { lookOf, type HeroProfile } from "@/lib/heroes";
-import { ageRangeLabel, filterLibrary, loadLibrary, renderForHero, type LibraryPrefs } from "@/lib/library";
+import { ageRangeLabel, CATEGORY_CHIPS, filterLibrary, loadLibrary, renderForHero, type LibraryPrefs } from "@/lib/library";
 import { HeroAvatar } from "./HeroAvatar";
 import { StarIcon, TrashIcon } from "./icons";
 import { PrimaryButton } from "./ui";
@@ -164,7 +165,8 @@ function LibraryShelf({
 
   // 沒選過年齡就跟著主角的年齡層，沒有主角就全部
   const age = prefs.age ?? (hero ? ageBandFor(hero.age) : "all");
-  const list = useMemo(() => (all ? filterLibrary(all, age) : []), [all, age]);
+  const category = prefs.category;
+  const list = useMemo(() => (all ? filterLibrary(all, age, category) : []), [all, age, category]);
   const look = hero ? lookOf(hero) : null;
 
   return (
@@ -184,6 +186,23 @@ function LibraryShelf({
             </button>
           ))}
         </div>
+      </div>
+
+      {/* 主題分類：爸媽依生活中的需要挑故事；沒有主題的故事只在「全部」 */}
+      <div role="group" aria-label="主題" className="-mx-4 flex gap-1.5 overflow-x-auto px-4 py-1 [scrollbar-width:none]">
+        {CATEGORY_CHIPS.map((c) => (
+          <button
+            key={c.id}
+            type="button"
+            aria-pressed={category === c.id}
+            onClick={() => onPrefs({ ...prefs, category: c.id })}
+            className={`h-10 flex-1 shrink-0 whitespace-nowrap rounded-full px-3 text-sm font-bold ${
+              category === c.id ? "bg-rust text-card" : "bg-card text-ink ring-2 ring-line"
+            }`}
+          >
+            {c.label}
+          </button>
+        ))}
       </div>
 
       <div role="group" aria-label="年齡" className="grid grid-cols-5 gap-1.5">
@@ -211,7 +230,11 @@ function LibraryShelf({
         </div>
       )}
 
-      {all && list.length === 0 && <p className="pt-6 text-center font-display text-lg">這個年齡還沒有故事，看看「全部」吧</p>}
+      {all && list.length === 0 && (
+        <p className="pt-6 text-center font-display text-lg">
+          {category === "all" ? "這個年齡還沒有故事，看看「全部」吧" : "這個主題還沒有適合的故事，換個年齡或主題看看"}
+        </p>
+      )}
 
       {list.length > 0 && (
         <ul className="grid grid-cols-2 gap-x-4 gap-y-5 pt-1">
@@ -220,7 +243,10 @@ function LibraryShelf({
             return (
               <li key={s.id}>
                 <button type="button" onClick={() => onOpen(list, i)} className="flex w-full flex-col gap-2 text-left">
-                  <BookCover src={`/scenes/${s.setting}.jpg`} label={`${STYLE_RULES[s.style].label} · ${ageRangeLabel(s.ageBands)}`}>
+                  <BookCover
+                    src={`/scenes/${s.setting}.jpg`}
+                    label={`${s.theme ? THEMES[s.theme].label.zh : STYLE_RULES[s.style].label} · ${ageRangeLabel(s.ageBands)}`}
+                  >
                     {look && (
                       <HeroAvatar look={look} size={42} variant="bust" className="absolute left-2 top-2 rounded-full ring-2 ring-card drop-shadow-sm" />
                     )}
@@ -242,7 +268,9 @@ function BookCover({ src, label, children }: { src: string; label: string; child
     <div className="relative aspect-[4/3] overflow-hidden rounded-l-sm rounded-r-2xl border-l-8 border-ink/25 shadow-md">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={src} alt="" className="h-full w-full object-cover" />
-      <span className="absolute bottom-2 left-2 rounded-lg bg-card px-2 py-0.5 text-[11px] font-bold">{label}</span>
+      <span className="absolute bottom-2 left-2 max-w-[calc(100%-1rem)] truncate rounded-lg bg-card px-2 py-0.5 text-[11px] font-bold">
+        {label}
+      </span>
       {children}
     </div>
   );

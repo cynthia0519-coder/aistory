@@ -153,6 +153,266 @@ export const STORY_SETTINGS = [
 ] as const;
 export type StorySetting = (typeof STORY_SETTINGS)[number];
 
+// ---- 主題：爸媽為了生活中的需要挑故事（安全、身體自主、生活習慣、情緒） ----
+export const THEME_CATEGORIES = {
+  safety: { zh: "安全", en: "Safety" },
+  body: { zh: "身體自主", en: "Body autonomy" },
+  habits: { zh: "生活習慣", en: "Daily habits" },
+  emotions: { zh: "情緒與人際", en: "Feelings & friends" },
+} as const satisfies Record<string, Record<Language, string>>;
+export type ThemeCategory = keyof typeof THEME_CATEGORIES;
+export const THEME_CATEGORY_IDS = Object.keys(THEME_CATEGORIES) as ThemeCategory[];
+
+export interface ThemeRule {
+  category: ThemeCategory;
+  label: Record<Language, string>;
+  ages: readonly AgeBand[];
+  /** 故事一定要傳達的事（英文，給提示詞用）；故事用情節表現，引導卡才明講 */
+  keyMessages: readonly string[];
+  /** 敏感主題：生成時加上 SENSITIVE_THEME_GUARDRAILS，必須由專業人士審過才上架 */
+  sensitive: boolean;
+  /** 照片故事（即時 AI）能不能選這個主題；只開放生活習慣與情緒 */
+  aiAllowed: boolean;
+  /** 第一批要做的主題 */
+  priority: boolean;
+}
+
+const theme = (
+  category: ThemeCategory,
+  zh: string,
+  en: string,
+  ages: AgeBand[],
+  keyMessages: string[],
+  opts: { priority?: boolean; sensitive?: boolean; aiAllowed?: boolean } = {},
+): ThemeRule => ({
+  category,
+  label: { zh, en },
+  ages,
+  keyMessages,
+  sensitive: opts.sensitive ?? category === "body",
+  aiAllowed: opts.aiAllowed ?? (category === "habits" || category === "emotions"),
+  priority: opts.priority ?? false,
+});
+
+const P = { priority: true } as const;
+
+export const THEMES = {
+  // 安全
+  "crossing-road": theme("safety", "過馬路", "Crossing the road", ["2-4", "4-6"], [
+    "Always hold a grown-up's hand near the street and when crossing.",
+    "Stop at the curb, look left, right and left again, and listen before crossing.",
+    "Scooters and cars come fast and often, even on small lanes and in alleys, so we wait for the green walking light and keep watching while we cross.",
+  ], P),
+  "getting-lost": theme("safety", "走失了怎麼辦", "If I get lost", ["4-6", "6-8"], [
+    "If you can't see your grown-up, stop and stay where you are; they will come back to look for you.",
+    "Ask for help at a service counter or from a staff member in uniform, or a parent with children.",
+    "Know your parent's name and phone number by heart so helpers can call them.",
+  ], P),
+  earthquake: theme("safety", "地震來了", "When the ground shakes", ["4-6", "6-8", "8-10"], [
+    "When the ground shakes: drop down, cover your head and neck under a sturdy table, and hold on.",
+    "Do not run outside or onto the stairs while it is shaking; stay away from windows and things that can fall.",
+    "Listen to the grown-ups and teachers; after the shaking stops, they lead everyone out calmly.",
+  ], P),
+  strangers: theme("safety", "陌生人", "People we don't know", ["4-6", "6-8"], [
+    "Never go anywhere with, or take snacks, toys or gifts from, someone your parents don't know, even if they seem nice.",
+    "Most people are kind, but you only go with grown-ups your parents agreed on.",
+    "If someone you don't know asks you to come along, say no loudly, go to your grown-up, and tell them.",
+  ]),
+  "hot-things": theme("safety", "燙燙的東西", "Hot things", ["2-4", "4-6"], [
+    "Hot soup, the kettle, the stove and the rice cooker steam are only for grown-ups to touch.",
+    "Wait until a grown-up says food has cooled down, and blow on it together.",
+    "If something is hot, step back and call a grown-up.",
+  ]),
+  sockets: theme("safety", "插座不要碰", "Sockets and cords", ["2-4", "4-6"], [
+    "Sockets and plugs are only for grown-ups; never poke fingers or objects into them.",
+    "Keep water and wet hands away from plugs and cords.",
+    "If a cord looks broken or a plug sparks, step away and tell a grown-up.",
+  ]),
+  "windows-balcony": theme("safety", "窗戶與陽台", "Windows and balconies", ["2-4", "4-6"], [
+    "Never climb on a window ledge, balcony railing, or furniture pushed next to them.",
+    "Look out of windows with your feet on the floor and a grown-up beside you.",
+    "Balconies are for looking and plants, not for climbing games.",
+  ]),
+  "water-safety": theme("safety", "玩水安全", "Safe in the water", ["4-6", "6-8", "8-10"], [
+    "Only play in water when a grown-up is watching you, at the pool, beach, or river.",
+    "Wear a life jacket on boats and in open water, and stay where your feet can touch.",
+    "If a friend is in trouble in the water, don't jump in: shout for a grown-up and throw something that floats.",
+  ]),
+  medicine: theme("safety", "藥不是糖果", "Medicine is not candy", ["2-4", "4-6"], [
+    "Medicine and vitamins can look like candy, but they are not candy.",
+    "You only take medicine when a grown-up gives it to you.",
+    "If you find pills or bottles, don't taste them; bring a grown-up to see.",
+  ]),
+  typhoon: theme("safety", "颱風天", "Typhoon day", ["4-6", "6-8"], [
+    "On a typhoon day we stay home and stay safe, away from windows during strong wind.",
+    "Help the family get ready: flashlight, water, and bringing things in from the balcony.",
+    "Do not go out to look at the wind, rivers or the sea; wait until grown-ups say it is safe.",
+  ]),
+  "online-safety": theme("safety", "網路安全", "Safe online", ["8-10"], [
+    "Never share your photos, address, school, or phone number online.",
+    "Online friends may not be who they say they are; never agree to meet them.",
+    "If something online feels strange, scary, or asks you to keep a secret, stop and tell a trusted grown-up. You won't be in trouble.",
+  ]),
+
+  // 身體自主
+  // 資料來源：
+  // - NSPCC "PANTS / Underwear Rule"
+  // - 勵馨基金會《小星與空空鳥》，標語「我的身體是我的，我的感覺很重要」
+  // - 勵馨《祕密派對》（好祕密與壞祕密）
+  // - 兒福聯盟 身體界線教材
+  // - 衛福部統計：0–6 歲兒童受侵害案件，約九成加害者是孩子認識的人
+  // Drafted from public guidance; must be reviewed by a child-protection professional before release.
+  "swimsuit-rule": theme("body", "泳衣規則", "The swimsuit rule", ["2-4", "4-6", "6-8"], [
+    "The parts your swimsuit covers are private and belong to you.",
+    "Nobody should ask to see or touch them, or ask you to see or touch theirs.",
+    "The only exception is staying clean or healthy: a parent helping with a bath, or a doctor checking you with your parent there and explaining why.",
+  ], P),
+  "good-bad-secrets": theme("body", "好祕密與壞祕密", "Good and bad secrets", ["4-6", "6-8", "8-10"], [
+    "Surprises like a birthday gift are good secrets. They make everyone happy and end soon.",
+    "A secret that makes you feel worried, scared or uncomfortable is not OK to keep. So is a secret someone says you must never tell.",
+    "Tell a trusted adult. You will never be in trouble for telling.",
+  ], P),
+  "saying-no": theme("body", "我可以說不", "I can say no", ["2-4", "4-6", "6-8"], [
+    "My body is mine, and my feelings matter.",
+    "You can say no to hugs, kisses or tickles you don't want, even from family. You can offer a high five or a wave instead.",
+    "Grown-ups should respect your no, and you respect other people's no too.",
+  ], P),
+  "trusted-adults": theme("body", "我的安全網", "My trusted grown-ups", ["4-6", "6-8", "8-10"], [
+    "Pick a safety net of 3–5 trusted adults, and make at least one of them someone outside the family, such as a teacher or the school nurse.",
+    "If the first adult doesn't listen, keep telling until someone helps.",
+  ]),
+  "not-your-fault": theme("body", "不是你的錯", "It's never your fault", ["6-8", "8-10"], [
+    "If anyone ever makes you feel uncomfortable about your body, it is never your fault.",
+    "That stays true even if you didn't say no, or kept it secret at first.",
+    "Telling is brave, and keeping children safe is the grown-ups' job.",
+  ]),
+
+  // 生活習慣
+  "brushing-teeth": theme("habits", "刷牙", "Brushing teeth", ["2-4", "4-6"], [
+    "We brush our teeth every morning and every night before bed.",
+    "Brush every tooth, front and back, gently in little circles, then a grown-up helps finish.",
+    "Clean teeth keep the sugar bugs away and make smiles shine.",
+  ], P),
+  potty: theme("habits", "學上廁所", "Using the potty", ["2-4"], [
+    "When your body tells you it needs to pee or poop, tell a grown-up and go to the potty.",
+    "Accidents are OK and happen to everyone while learning; we just clean up and try again.",
+    "Flush, then wash your hands with soap.",
+  ], P),
+  "starting-kindergarten": theme("habits", "上幼兒園", "Starting kindergarten", ["2-4", "4-6"], [
+    "Mom or Dad always comes back at pick-up time.",
+    "It's OK to feel nervous or cry at goodbye; teachers are there to help and comfort you.",
+    "School has new friends, games and a routine you will get to know day by day.",
+  ], P),
+  "bedtime-routine": theme("habits", "睡前好習慣", "Bedtime routine", ["2-4", "4-6", "6-8"], [
+    "Bedtime has the same cozy steps every night: bath, pajamas, brush teeth, story, lights low.",
+    "Screens go off before bed so our eyes and brain can get sleepy.",
+    "Sleep helps our bodies grow and gives us energy to play tomorrow.",
+  ], P),
+  "trying-food": theme("habits", "試試新食物", "Trying new food", ["2-4", "4-6"], [
+    "We can try just one small bite of a new food; we don't have to like it.",
+    "Tasting is like exploring: notice its color, smell, crunch and taste.",
+    "Our tastes change, so a food we didn't like before might become a favorite later.",
+  ]),
+  "tidying-toys": theme("habits", "收玩具", "Tidying up toys", ["2-4", "4-6"], [
+    "After playing, toys go back to their homes so we can find them next time.",
+    "Tidying is faster and more fun together, like a game or a song.",
+    "Taking care of our things means they last longer.",
+  ]),
+  handwashing: theme("habits", "洗手", "Washing hands", ["2-4", "4-6"], [
+    "Wash hands with soap before eating, after the toilet, and after playing outside.",
+    "Rub palms, backs, between fingers, thumbs and nails, long enough to sing a short song, then rinse and dry.",
+    "Clean hands help keep germs away from us and our friends.",
+  ]),
+  "doctor-shots": theme("habits", "看醫生打針", "Doctor visits and shots", ["2-4", "4-6"], [
+    "Doctors and nurses help our bodies stay healthy and strong.",
+    "A shot is a quick pinch; it's OK to feel scared or cry, and holding a grown-up's hand helps.",
+    "Shots teach our body to fight germs, like a shield.",
+  ]),
+  dentist: theme("habits", "看牙醫", "Visiting the dentist", ["4-6", "6-8"], [
+    "The dentist counts and checks our teeth to keep them healthy.",
+    "The tools have funny names and sounds, and the dentist explains each one before using it.",
+    "Raise your hand if you need a break; the dentist will stop and wait.",
+  ]),
+  "screen-time": theme("habits", "3C 時間", "Screen time", ["4-6", "6-8", "8-10"], [
+    "We agree on screen time before we start, and stop when the timer rings.",
+    "Stopping is hard and it's OK to feel disappointed; take a breath and choose something else fun.",
+    "Playing, moving, reading and talking with family help our brains and eyes rest.",
+  ]),
+  "moving-house": theme("habits", "搬家", "Moving to a new home", ["4-6", "6-8", "8-10"], [
+    "Moving can feel exciting and sad at the same time, and both feelings are OK.",
+    "Our family, our favorite things and our memories come with us.",
+    "Little by little, a new place becomes home: new corners, neighbors and friends.",
+  ]),
+
+  // 情緒與人際
+  anger: theme("emotions", "生氣了", "Feeling angry", ["2-4", "4-6", "6-8"], [
+    "Feeling angry is OK; hitting, kicking or throwing things is not.",
+    "When anger feels big, stop, take slow deep breaths, and count.",
+    "Use words to say what you feel and need: 'I'm angry because…'.",
+  ], P),
+  "new-sibling": theme("emotions", "有了弟弟妹妹", "A new baby sibling", ["2-4", "4-6"], [
+    "Love doesn't shrink when a family grows; there is enough for everyone.",
+    "It's OK to feel jealous or want attention; you can tell Mom or Dad.",
+    "Being a big sibling has special jobs and special time with parents.",
+  ], P),
+  "sharing-turns": theme("emotions", "輪流與分享", "Sharing and taking turns", ["2-4", "4-6"], [
+    "Taking turns means everyone gets to play; waiting is hard but your turn will come.",
+    "You can ask 'Can I have a turn when you're done?' instead of grabbing.",
+    "Sharing can make playing more fun together.",
+  ]),
+  manners: theme("emotions", "謝謝與對不起", "Thank you and sorry", ["2-4", "4-6"], [
+    "Say 'please' when asking and 'thank you' when someone helps or gives you something.",
+    "When we hurt someone, even by accident, we say sorry and try to make it better.",
+    "Kind words make others feel good, and make us feel good too.",
+  ]),
+  "fear-of-dark": theme("emotions", "怕黑", "Afraid of the dark", ["2-4", "4-6"], [
+    "The dark is just the same room with the lights resting; everything is still there.",
+    "It's OK to feel scared; a night light, a cuddly toy and calling a grown-up can help.",
+    "Night sounds have friendly explanations, and grown-ups are close by.",
+  ]),
+  "losing-failing": theme("emotions", "輸了也沒關係", "When I lose or make mistakes", ["4-6", "6-8", "8-10"], [
+    "Everyone loses games and makes mistakes; it's how we learn and grow.",
+    "It's OK to feel disappointed; take a breath, then try again or try differently.",
+    "Being a good friend in a game, winning or losing, matters more than the score.",
+  ]),
+  honesty: theme("emotions", "說實話", "Telling the truth", ["4-6", "6-8"], [
+    "Telling the truth can feel scary, especially after a mistake, but it is brave.",
+    "Grown-ups can help fix a problem when they know what really happened.",
+    "Honesty helps people trust each other.",
+  ]),
+  bullying: theme("emotions", "被欺負怎麼辦", "Standing up to bullying", ["6-8", "8-10"], [
+    "Bullying is never OK, and it's never the fault of the child being bullied.",
+    "Telling a teacher or parent is not tattling; it's getting help.",
+    "Bystanders can help: stand with the child, include them, and tell a grown-up.",
+  ]),
+  "pet-loss": theme("emotions", "和寵物說再見", "Saying goodbye to a pet", ["4-6", "6-8", "8-10"], [
+    "Feeling sad when a pet dies is normal; crying and missing them are part of loving them.",
+    "We can remember our pet with stories, drawings and favorite memories.",
+    "Sad feelings get softer with time, and the love stays.",
+  ], { sensitive: true, aiAllowed: false }),
+} as const satisfies Record<string, ThemeRule>;
+
+export type ThemeId = keyof typeof THEMES;
+export const THEME_IDS = Object.keys(THEMES) as [ThemeId, ...ThemeId[]];
+
+/** 即時 AI 故事可以選的主題，可依年齡層篩選 */
+export function aiThemesFor(ageBand?: AgeBand): ThemeId[] {
+  return THEME_IDS.filter((id) => {
+    const t: ThemeRule = THEMES[id];
+    return t.aiAllowed && (!ageBand || t.ages.includes(ageBand));
+  });
+}
+
+// ---- 給爸媽的引導卡：2–3 個問小朋友的問題 + 1 個今晚就能做的小建議 ----
+const GuideText = z.string().trim().min(1).max(300);
+export const ParentGuideSchema = z.object({
+  /** 大人問小朋友的問題 */
+  questions: z.array(GuideText).min(2).max(3),
+  /** 一件爸媽今晚就能做的具體小事 */
+  tip: GuideText,
+});
+export type ParentGuide = z.infer<typeof ParentGuideSchema>;
+
 // ---- API 契約 ----
 export const StoryRequestSchema = z
   .object({
@@ -167,12 +427,18 @@ export const StoryRequestSchema = z
     scene: z.string().max(2000).optional(),
     /** 換一個故事時，避免重複的上一個標題 */
     avoidTitle: z.string().max(200).optional(),
+    /** 想聊的主題（選填）；只能選 aiAllowed 的主題 */
+    theme: z.enum(THEME_IDS).optional(),
   })
   .refine((r) => r.imageBase64 || r.scene, {
     message: "imageBase64 or scene is required",
   })
   .refine((r) => !r.hero || ageBandFor(r.hero.age) === r.ageBand, {
     message: "ageBand must match hero.age",
+  })
+  .refine((r) => !r.theme || (THEMES[r.theme] as ThemeRule).aiAllowed, {
+    message: "this theme is only available in the curated library",
+    path: ["theme"],
   });
 export type StoryRequest = z.infer<typeof StoryRequestSchema>;
 
@@ -183,6 +449,8 @@ export const StoryOutputSchema = z.object({
   setting: z.enum(STORY_SETTINGS),
   title: z.string(),
   paragraphs: z.array(z.string()),
+  /** 有選主題時才有：給爸媽的引導卡 */
+  guide: ParentGuideSchema.optional(),
 });
 export type StoryOutput = z.infer<typeof StoryOutputSchema>;
 
@@ -221,6 +489,12 @@ const LibraryText = z
 
 const Bilingual = <T extends z.ZodType>(schema: T) => z.object({ zh: schema, en: schema });
 
+/** 故事庫的引導卡：跟故事一樣可以用 {name} 等標記 */
+const LibraryGuideSchema = z.object({
+  questions: z.array(LibraryText).min(2).max(3),
+  tip: LibraryText,
+});
+
 /** 不含整體檢查的欄位定義；生成器用它 omit 掉 id / draft 等欄位 */
 export const LibraryStoryFieldsSchema = z.object({
   /** kebab-case slug，例如 "moon-blanket" */
@@ -230,6 +504,10 @@ export const LibraryStoryFieldsSchema = z.object({
   setting: z.enum(STORY_SETTINGS),
   title: Bilingual(LibraryText),
   paragraphs: Bilingual(z.array(LibraryText).min(1)),
+  /** 主題（選填）；沒有主題的故事只出現在「全部」 */
+  theme: z.enum(THEME_IDS).optional(),
+  /** 給爸媽的引導卡（選填），有主題的故事才有 */
+  guide: Bilingual(LibraryGuideSchema).optional(),
   /** 背景音樂檔名（選填，之後再加） */
   bgm: z.string().optional(),
   /** true = 還沒人工審過 */
@@ -275,16 +553,19 @@ function fillTokens(text: string, language: Language, name: string, words: Recor
 
 /** 把故事庫故事換成指定語言與主角；沒給主角就用預設名字、不指定性別 */
 export function renderLibraryStory(
-  story: Pick<LibraryStory, "title" | "paragraphs">,
+  story: Pick<LibraryStory, "title" | "paragraphs" | "guide">,
   language: Language,
   hero?: LibraryHero,
-): { title: string; paragraphs: string[] } {
+): { title: string; paragraphs: string[]; guide?: ParentGuide } {
   const name = hero?.name.trim() || LIBRARY_DEFAULT_NAME[language];
   const gender = hero ? hero.gender : "unspecified";
   const words = pronouns(language, name, gender);
+  const fill = (text: string) => fillTokens(text, language, name, words);
+  const guide = story.guide?.[language];
   return {
-    title: fillTokens(story.title[language], language, name, words),
-    paragraphs: story.paragraphs[language].map((p) => fillTokens(p, language, name, words)),
+    title: fill(story.title[language]),
+    paragraphs: story.paragraphs[language].map(fill),
+    ...(guide ? { guide: { questions: guide.questions.map(fill), tip: fill(guide.tip) } } : {}),
   };
 }
 

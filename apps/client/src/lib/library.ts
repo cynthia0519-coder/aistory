@@ -7,9 +7,13 @@ import {
   ageBandFor,
   LibraryStorySchema,
   renderLibraryStory,
+  THEME_CATEGORIES,
+  THEME_CATEGORY_IDS,
+  THEMES,
   type AgeBand,
   type Language,
   type LibraryStory,
+  type ThemeCategory,
 } from "@aistory/shared";
 import { lookOf, type HeroProfile } from "./heroes";
 import type { SavedStory } from "./storage";
@@ -20,11 +24,27 @@ export interface LibraryPrefs {
   language: Language;
   /** null = 跟著主角的年齡層（沒主角就是全部） */
   age: AgeBand | "all" | null;
+  /** 主題分類；沒有主題的故事只出現在「全部」 */
+  category: ThemeCategory | "all";
 }
 
+/** 分類 chip 的文字（比 THEME_CATEGORIES 的全名短，一排放得下） */
+export const CATEGORY_CHIPS: { id: ThemeCategory | "all"; label: string }[] = [
+  { id: "all", label: "全部" },
+  ...THEME_CATEGORY_IDS.map((id) => ({ id, label: id === "emotions" ? "情緒" : THEME_CATEGORIES[id].zh })),
+];
+
 /** 目前篩選下的故事庫故事 */
-export function filterLibrary(stories: LibraryStory[], age: AgeBand | "all"): LibraryStory[] {
-  return age === "all" ? stories : stories.filter((s) => s.ageBands.includes(age));
+export function filterLibrary(
+  stories: LibraryStory[],
+  age: AgeBand | "all",
+  category: ThemeCategory | "all" = "all",
+): LibraryStory[] {
+  return stories.filter(
+    (s) =>
+      (age === "all" || s.ageBands.includes(age)) &&
+      (category === "all" || (s.theme !== undefined && THEMES[s.theme].category === category)),
+  );
 }
 
 const LIBRARY_URL = "/library/stories.json";
@@ -62,7 +82,7 @@ export function renderForHero(story: LibraryStory, language: Language, hero: Her
 
 /** 組成閱讀頁用的臨時故事物件（不存檔） */
 export function toReadableStory(story: LibraryStory, language: Language, hero: HeroProfile | null): SavedStory {
-  const { title, paragraphs } = renderForHero(story, language, hero);
+  const { title, paragraphs, guide } = renderForHero(story, language, hero);
   const heroBand = hero ? ageBandFor(hero.age) : null;
   const ageBand: AgeBand = heroBand && story.ageBands.includes(heroBand) ? heroBand : story.ageBands[0];
   return {
@@ -76,6 +96,8 @@ export function toReadableStory(story: LibraryStory, language: Language, hero: H
     scene: "",
     title,
     paragraphs,
+    theme: story.theme,
+    guide,
     heroLook: hero ? lookOf(hero) : undefined,
   };
 }

@@ -4,20 +4,26 @@ import type Anthropic from "@anthropic-ai/sdk";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import { z } from "zod";
 import {
+  AGE_BANDS,
   AGE_RULES,
   LENGTH_RULES,
   LIBRARY_TOKENS,
   LibraryStoryFieldsSchema,
   STORY_SETTINGS,
   STYLE_RULES,
+  type AgeBand,
+  type Language,
 } from "@aistory/shared";
+import { lengthTarget, type LengthTarget } from "./length";
 import { client, MODEL, SAFETY_RULES, STORY_CRAFT_RULES, StoryRefusedError } from "./story-engine";
+import { GUIDE_INSTRUCTIONS, themeBlock } from "./themes";
 
-/** library-plan.json 的一筆 */
+/** library-plan.json 的一筆：{id, theme, ageBands, style, setting, premise} */
 export const LibraryPlanEntrySchema = LibraryStoryFieldsSchema.pick({
   id: true,
-  style: true,
+  theme: true,
   ageBands: true,
+  style: true,
   setting: true,
 }).extend({
   /** 1–2 句英文故事大綱 */
@@ -25,21 +31,41 @@ export const LibraryPlanEntrySchema = LibraryStoryFieldsSchema.pick({
 });
 export type LibraryPlanEntry = z.infer<typeof LibraryPlanEntrySchema>;
 
-// id 與 draft 由腳本決定；bgm 是人工挑的檔名，不讓模型亂編
-export const LibraryOutputSchema = LibraryStoryFieldsSchema.omit({ id: true, draft: true, bgm: true });
-export type LibraryOutput = z.infer<typeof LibraryOutputSchema>;
+// id、draft、theme 由腳本決定；bgm 是人工挑的檔名，不讓模型亂編。
+// guide 只在有主題時要求（LibraryThemedOutputSchema）。
+export const LibraryOutputSchema = LibraryStoryFieldsSchema.omit({ id: true, draft: true, bgm: true, theme: true, guide: true });
+export const LibraryThemedOutputSchema = LibraryOutputSchema.extend({
+  guide: LibraryStoryFieldsSchema.shape.guide.unwrap(),
+});
+export type LibraryOutput = z.infer<typeof LibraryOutputSchema> & Partial<Pick<z.infer<typeof LibraryThemedOutputSchema>, "guide">>;
+
+/** 故事庫一律寫 3 分鐘長度 */
+export const LIBRARY_STORY_LENGTH = "3min" as const;
 
 /**
- * 故事庫一律寫 3 分鐘長度。故事庫一篇要同時給多個年齡層、中英文段落數要一致，
- * 所以用自己固定的段落結構，不用 App 依年齡層設定的 LENGTH_RULES.words。
+ * 一篇故事庫故事同時給多個年齡層，但長度只能有一個目標：取 ageBands 裡「最小」的年齡層。
+ * 句型本來就跟著最小的年齡寫，而且 LENGTH_RULES 對年紀越小給的字數越少，
+ * 用最小的年齡層才不會讓 2–4 歲的故事長到念不完。
  */
-export const LIBRARY_LENGTH = {
-  label: LENGTH_RULES["3min"].label,
-  /** 全文字數（中文不含標點） */
-  words: { zh: [500, 700], en: [300, 420] },
-  paragraphs: [6, 7],
-  perParagraph: { zh: [85, 100], en: [50, 55] },
-} as const;
+export function lengthBand(entry: Pick<LibraryPlanEntry, "ageBands">): AgeBand {
+  return [...entry.ageBands].sort((a, b) => AGE_BANDS.indexOf(a) - AGE_BANDS.indexOf(b))[0];
+}
+
+/**
+ * 故事庫的長度目標：沿用照片故事的 LENGTH_RULES 與中文補正（lengthTarget）。
+ * 中英文段落數必須一致，所以段落數以先寫的中文為準，英文每段長度依此重新分配。
+ */
+export function libraryLength(entry: Pick<LibraryPlanEntry, "ageBands">): {
+  band: AgeBand;
+  paragraphs: number;
+  lang: Record<Language, LengthTarget>;
+} {
+  const band = lengthBand(entry);
+  const zh = lengthTarget(LIBRARY_STORY_LENGTH, band, "zh");
+  const en = lengthTarget(LIBRARY_STORY_LENGTH, band, "en");
+  const paragraphs = zh.paragraphs;
+  return { band, paragraphs, lang: { zh, en: { ...en, paragraphs, perParagraph: Math.round(en.target / paragraphs) } } };
+}
 
 // 固定不變的 system prompt，放最前面讓 prompt caching 命中
 export const LIBRARY_SYSTEM = `You are a warm, imaginative storyteller writing for a curated picture-book library for young children. A person reviews every story before it ships, and parents will later record themselves reading it aloud, one paragraph at a time.
@@ -68,20 +94,27 @@ Paragraphs:
 Output fields:
 - style, ageBands, setting: copy the values you are given. setting is one of: ${STORY_SETTINGS.join(", ")}.
 - title.zh, title.en: the story title in each language.
-- paragraphs.zh, paragraphs.en: the story paragraphs in each language.`;
+- paragraphs.zh, paragraphs.en: the story paragraphs in each language.
+- guide.zh, guide.en: only when the request gives a theme; follow the parent guide instructions given there.`;
 
 export function buildLibraryPrompt(entry: LibraryPlanEntry): string {
-  const [pMin, pMax] = LIBRARY_LENGTH.paragraphs;
-  const range = (r: readonly [number, number]) => `${r[0]}–${r[1]}`;
+  const len = libraryLength(entry);
+  const { zh, en } = len.lang;
   return [
     `Audience ages: ${entry.ageBands.map((a) => AGE_RULES[a].label).join(", ")}. The story must work for all of these ages; follow the youngest age's sentence style.`,
     ...entry.ageBands.map((a) => `Age style for ${AGE_RULES[a].label}: ${AGE_RULES[a].style}`),
     `Story type (style: ${entry.style}): ${STYLE_RULES[entry.style].prompt}`,
     `Setting: ${entry.setting}`,
     `Premise: ${entry.premise}`,
-    `Length: read aloud in about ${LIBRARY_LENGTH.label}. Stories usually come out too short, so follow this structure: ${pMin}–${pMax} paragraphs in each language; each Chinese paragraph ${range(LIBRARY_LENGTH.perParagraph.zh)} Chinese characters (not counting punctuation), ${range(LIBRARY_LENGTH.words.zh)} in total; each English paragraph ${range(LIBRARY_LENGTH.perParagraph.en)} words, ${range(LIBRARY_LENGTH.words.en)} in total. Give the middle of the story more events and detail rather than padding the ending.`,
+    entry.theme ? themeBlock(entry.theme) : "",
+    `Length (sized for the youngest age, ${AGE_RULES[len.band].label}; read aloud in about ${LENGTH_RULES[LIBRARY_STORY_LENGTH].label}): about ${len.paragraphs} paragraphs in each language. Chinese: ${zh.lo}–${zh.hi} ${zh.unit} in total, roughly ${zh.perParagraph} per paragraph. English: ${en.lo}–${en.hi} ${en.unit} in total, roughly ${en.perParagraph} per paragraph. Do not end early; give the middle of the story more events and detail rather than padding the ending.`,
+    entry.theme
+      ? `${GUIDE_INSTRUCTIONS}\n- Write guide.zh in Traditional Chinese and guide.en in English, with the same questions and tip in both. Refer to the hero only with the tokens ({name}, {he}, {him}, {his}).`
+      : "",
     `Copy these values: style "${entry.style}", ageBands ${JSON.stringify(entry.ageBands)}, setting "${entry.setting}".`,
-  ].join("\n");
+  ]
+    .filter(Boolean)
+    .join("\n");
 }
 
 export async function generateLibraryStory(
@@ -94,7 +127,10 @@ export async function generateLibraryStory(
     max_tokens: 16000,
     betas: ["server-side-fallback-2026-07-01"],
     fallbacks: "default",
-    output_config: { effort: "low", format: betaZodOutputFormat(LibraryOutputSchema) },
+    output_config: {
+      effort: "low",
+      format: betaZodOutputFormat(entry.theme ? LibraryThemedOutputSchema : LibraryOutputSchema),
+    },
     system: [{ type: "text", text: LIBRARY_SYSTEM, cache_control: { type: "ephemeral" } }],
     messages: [{ role: "user", content: buildLibraryPrompt(entry) }],
   });

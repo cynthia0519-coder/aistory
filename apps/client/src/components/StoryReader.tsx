@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { AGE_RULES, LANGUAGE_LABELS } from "@aistory/shared";
+import { AGE_RULES, LANGUAGE_LABELS, type ParentGuide } from "@aistory/shared";
 import { requestStory, StoryApiError } from "@/lib/api";
 import { saveStory, type SavedStory } from "@/lib/storage";
 import { bgm, loadMusicPref, saveMusicPref } from "@/lib/bgm";
@@ -107,6 +107,7 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
         hero: story.hero,
         scene: story.scene,
         avoidTitle: story.title,
+        theme: story.theme,
       });
       const saved: SavedStory = {
         ...next,
@@ -117,6 +118,7 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
         style: story.style,
         length: story.length,
         hero: story.hero,
+        theme: story.theme,
         heroLook: story.heroLook,
         thumbnail: story.thumbnail,
       };
@@ -196,6 +198,9 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
           ))}
         </div>
 
+        {/* 引導卡是給大人看的，不在朗讀範圍內（speakFrom 只念標題與段落） */}
+        {story.guide && <GuideCard guide={story.guide} />}
+
         {error && <p className="rounded-2xl bg-rust/10 p-3 text-rust-dark">{error}</p>}
       </div>
 
@@ -259,5 +264,25 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
         </div>
       </div>
     </article>
+  );
+}
+
+/** 「給爸媽」引導卡：故事最後一段之後，2–3 個可以問小朋友的問題 + 1 個今晚就能做的小建議 */
+function GuideCard({ guide }: { guide: ParentGuide }) {
+  return (
+    <aside aria-label="給爸媽的引導卡" className="relative mt-6 rounded-2xl bg-card p-5 pt-6 shadow-md ring-2 ring-line">
+      <span className="absolute -top-2 left-1/2 h-4 w-16 -translate-x-1/2 -rotate-2 bg-mustard/80" aria-hidden="true" />
+      <h2 className="font-display text-xl font-bold tracking-wider text-rust-dark">給爸媽</h2>
+      <p className="mt-0.5 text-xs text-ink-soft">讀完故事，可以這樣聊聊（這張卡不會念出來）</p>
+      <ol className="mt-3 flex list-decimal flex-col gap-2 pl-5 leading-relaxed marker:font-bold marker:text-teal">
+        {guide.questions.map((q, i) => (
+          <li key={i}>{q}</li>
+        ))}
+      </ol>
+      <div className="mt-4 rounded-xl bg-paper-deep/70 p-3 leading-relaxed">
+        <span className="mb-1 block text-xs font-bold tracking-widest text-teal">今晚試試看</span>
+        {guide.tip}
+      </div>
+    </aside>
   );
 }

@@ -24,7 +24,7 @@ type View =
 export default function Home() {
   const [view, setView] = useState<View>({ name: "create" });
   const [hero, setHero] = useState<HeroProfile | null>(null);
-  const [libraryPrefs, setLibraryPrefs] = useState<LibraryPrefs>({ tab: "mine", language: "zh", age: null });
+  const [libraryPrefs, setLibraryPrefs] = useState<LibraryPrefs>({ tab: "mine", language: "zh", age: null, category: "all" });
 
   useEffect(() => {
     requestPersistence();
