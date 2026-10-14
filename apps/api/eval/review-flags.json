@@ -1,0 +1,1005 @@
+{
+  "generatedAt": "2026-10-14T07:55:50.422Z",
+  "summary": {
+    "stories": 70,
+    "byStatus": {
+      "unreviewed": 55,
+      "fix": 12,
+      "check": 3
+    },
+    "byCheckKind": {
+      "length": 26,
+      "phone_number": 20,
+      "duplicate_title": 2,
+      "sensitive_pattern": 5
+    },
+    "byIssueKind": {},
+    "flagged": [
+      "good-bad-secrets-birthday-cake",
+      "good-bad-secrets-mountain-cabin",
+      "good-bad-secrets-thank-you-party",
+      "lantern-for-the-moon",
+      "not-your-fault-brave-voice",
+      "saying-no-ask-first",
+      "saying-no-greeting-menu",
+      "sugar-bug-sweep",
+      "swimsuit-rule-swim-class",
+      "swimsuit-rule-teddy-check-up",
+      "swimsuit-rule-whale-swimsuit",
+      "the-puddle-that-was-a-sea",
+      "trusted-adults-fishing-net",
+      "trusted-adults-safety-hand",
+      "zoo-hiccup-parade"
+    ],
+    "spotCheck": [
+      "goodnight-little-cloud",
+      "hot-things-soup-dragon",
+      "losing-failing-leaf-boat-race",
+      "new-sibling-night-market-lights",
+      "pet-loss-mochi-hill",
+      "screen-time-riverside-kites",
+      "the-mountain-of-small-steps",
+      "trying-food-bitter-melon-explorer",
+      "water-safety-river-picnic"
+    ],
+    "usd": 0
+  },
+  "stories": {
+    "sugar-bug-sweep": {
+      "hash": "d69aec96e846fe52",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "high",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 122 字，2-4 歲 3 分鐘範圍是 250–400（太短）"
+        },
+        {
+          "kind": "length",
+          "severity": "medium",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 82 words，2-4 歲 3 分鐘範圍是 150–250（太短）"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "fix",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "goodnight-little-cloud": {
+      "hash": "06871a68a89c5c2f",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "leaf-map-in-the-forest": {
+      "hash": "cbad086392c2b909",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "lantern-for-the-moon": {
+      "hash": "f00c86b7af790fdb",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "medium",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 650 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "medium",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 379 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "check",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "whispering-snow-library": {
+      "hash": "c7681ca612011167",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "zoo-hiccup-parade": {
+      "hash": "da963c4906366d0b",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "medium",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 596 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "medium",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 367 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "check",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "the-sock-that-ran-away": {
+      "hash": "1e3bd024e405945b",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "first-day-paper-boat": {
+      "hash": "2806bfa5bd0bcd98",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "the-mountain-of-small-steps": {
+      "hash": "07ae476b5c85ce7a",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "the-puddle-that-was-a-sea": {
+      "hash": "98dfd78eaec1b8e6",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "medium",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 562 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "medium",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 378 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "check",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "map-in-the-message-bottle": {
+      "hash": "46ab2ad1be269343",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "crossing-road-little-green-man": {
+      "hash": "ab84450877ffa5f4",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "crossing-road-scooter-detective": {
+      "hash": "6936ce991c2f0554",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 555 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "getting-lost-night-market": {
+      "hash": "b9743c410ded1975",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "getting-lost-department-store": {
+      "hash": "b50996980efbf84f",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "earthquake-turtle-drill": {
+      "hash": "99f6881beaeafe80",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "earthquake-table-fort": {
+      "hash": "728e0fc408c1ad4f",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "earthquake-mountain-school": {
+      "hash": "9752028d148dd6ad",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 581 字，8-10 歲 3 分鐘範圍是 600–800（太短）"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "strangers-lost-puppy": {
+      "hash": "92f9bbe163dd4e86",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "hot-things-soup-dragon": {
+      "hash": "0574c4b777c20579",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "sockets-robot-charging": {
+      "hash": "546d0ed5a93b8da5",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "water-safety-river-picnic": {
+      "hash": "13bbfc867c038a3b",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "water-safety-beach-flags": {
+      "hash": "e800af83ff6b17c8",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "medicine-not-candy": {
+      "hash": "913d9e65175bccf3",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "typhoon-day-blanket-fort": {
+      "hash": "c647414a7696b965",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "online-safety-star-fox": {
+      "hash": "ed15961b1b4c70f9",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "swimsuit-rule-whale-swimsuit": {
+      "hash": "708896cbdec56813",
+      "checks": [
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "zh",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        },
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "en",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        },
+        {
+          "kind": "sensitive_pattern",
+          "severity": "medium",
+          "lang": "both",
+          "where": "story",
+          "note": "「搔癢＋祕密」情節在 body 類重複出現（另見 swimsuit-rule-swim-class, not-your-fault-brave-voice），考慮換情境"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "fix",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "swimsuit-rule-teddy-check-up": {
+      "hash": "7c1e2be7a4bdfdc3",
+      "checks": [
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "zh",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        },
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "en",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "fix",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "swimsuit-rule-swim-class": {
+      "hash": "2056173508302de5",
+      "checks": [
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "zh",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        },
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "en",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        },
+        {
+          "kind": "sensitive_pattern",
+          "severity": "medium",
+          "lang": "both",
+          "where": "story",
+          "note": "「搔癢＋祕密」情節在 body 類重複出現（另見 swimsuit-rule-whale-swimsuit, not-your-fault-brave-voice），考慮換情境"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "fix",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "good-bad-secrets-birthday-cake": {
+      "hash": "911cda2301852894",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 633 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 357 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        },
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "zh",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        },
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "en",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        },
+        {
+          "kind": "duplicate_title",
+          "severity": "medium",
+          "lang": "en",
+          "where": "title",
+          "note": "標題與 good-bad-secrets-thank-you-party「{name} and the Two Secrets」相同"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "fix",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "good-bad-secrets-thank-you-party": {
+      "hash": "2c761b39c10ce535",
+      "checks": [
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "zh",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        },
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "en",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        },
+        {
+          "kind": "duplicate_title",
+          "severity": "medium",
+          "lang": "en",
+          "where": "title",
+          "note": "標題與 good-bad-secrets-birthday-cake「{name} and the Two Secrets」相同"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "fix",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "good-bad-secrets-mountain-cabin": {
+      "hash": "ca968380e2d046a0",
+      "checks": [
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "zh",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        },
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "en",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "fix",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "saying-no-tickle-monster": {
+      "hash": "2c479ab60c741b2c",
+      "checks": [
+        {
+          "kind": "sensitive_pattern",
+          "severity": "low",
+          "lang": "both",
+          "where": "story",
+          "note": "body 類已有 5 篇提到搔癢，確認這篇需要"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "saying-no-greeting-menu": {
+      "hash": "4fbe7466c1f2374f",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 594 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "zh",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        },
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "en",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        },
+        {
+          "kind": "sensitive_pattern",
+          "severity": "low",
+          "lang": "both",
+          "where": "story",
+          "note": "body 類已有 5 篇提到搔癢，確認這篇需要"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "fix",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "trusted-adults-safety-hand": {
+      "hash": "4855edd42c0f18d2",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 564 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 361 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        },
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "zh",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "fix",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "trusted-adults-fishing-net": {
+      "hash": "c3014543e1a7b8df",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 714 字，6-8 歲 3 分鐘範圍是 500–700（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 462 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
+        },
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "zh",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "fix",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "not-your-fault-brave-voice": {
+      "hash": "05f7f4efa5979aab",
+      "checks": [
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "zh",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        },
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "en",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        },
+        {
+          "kind": "sensitive_pattern",
+          "severity": "medium",
+          "lang": "both",
+          "where": "story",
+          "note": "「搔癢＋祕密」情節在 body 類重複出現（另見 swimsuit-rule-whale-swimsuit, swimsuit-rule-swim-class），考慮換情境"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "fix",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "brushing-teeth-sugar-bugs": {
+      "hash": "d04857be5729ea75",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "brushing-teeth-hippo-grin": {
+      "hash": "ab908f123c779e9d",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "potty-little-throne": {
+      "hash": "470d07ff4737e040",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "starting-kindergarten-pocket-pebble": {
+      "hash": "be5edf585ae21dc9",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "starting-kindergarten-goodbye-wink": {
+      "hash": "363ee85306a5632e",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 568 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "bedtime-routine-sleepy-train": {
+      "hash": "ba45a0e56885d0f9",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 410 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 261 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "bedtime-routine-moon-steps": {
+      "hash": "579aa6c0956733a6",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "bedtime-routine-mountain-lodge": {
+      "hash": "bac8794ae4b3502c",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "trying-food-bitter-melon-explorer": {
+      "hash": "0722b93727ea0850",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 415 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "tidying-toys-toy-bedtime": {
+      "hash": "9b696ce7747e0019",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "handwashing-bubble-pirates": {
+      "hash": "f7873669603edee6",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "dentist-spaceship-chair": {
+      "hash": "9f467f7bf6ed2313",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "screen-time-riverside-kites": {
+      "hash": "0d25b8c0771a1d01",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "moving-house-memory-box": {
+      "hash": "46fa2313ba0620bb",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "moving-house-mountain-town": {
+      "hash": "b63d9fb8a25b3e44",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "anger-little-volcano": {
+      "hash": "254e459b10d2085e",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "anger-red-balloon": {
+      "hash": "9b0cedea64782ecc",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "anger-calm-corner": {
+      "hash": "41642aaa96d561c1",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "new-sibling-night-market-lights": {
+      "hash": "07bc3f1b5a159f24",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "sharing-turns-wooden-giraffe": {
+      "hash": "b4ef9f7df05a20bf",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "manners-breakfast-shop": {
+      "hash": "6a72a6f14c8e6c7f",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "fear-of-dark-shadow-hunt": {
+      "hash": "5078463297b77a29",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "losing-failing-leaf-boat-race": {
+      "hash": "062bc1927babf507",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "losing-failing-go-club": {
+      "hash": "78bf937dd8d8671a",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "honesty-brave-teacup": {
+      "hash": "a7f9484093d3e3e1",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "bullying-lunch-table": {
+      "hash": "976ed3d3832357de",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "pet-loss-goldfish-flower": {
+      "hash": "2b39b88c02db7fe2",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 575 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "pet-loss-mochi-hill": {
+      "hash": "1211b3a5d50b830b",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "doctor-shots-germ-shield": {
+      "hash": "56b5afbfd8b419fc",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 468 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 264 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "screen-time-puppet-show": {
+      "hash": "5bccd84e80dd2439",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 565 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "windows-balcony-bird-watch": {
+      "hash": "6c24adbbbc6b0c59",
+      "checks": [],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "saying-no-ask-first": {
+      "hash": "110ad2a69392034a",
+      "checks": [
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "zh",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        },
+        {
+          "kind": "phone_number",
+          "severity": "high",
+          "lang": "en",
+          "where": "guide",
+          "note": "出現專線號碼 113；App 會自己加 113，故事與引導卡不寫號碼"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "fix",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    },
+    "new-sibling-just-us-walks": {
+      "hash": "4a94a4e3fdfb09d2",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 608 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        }
+      ],
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T07:55:50.419Z"
+    }
+  }
+}

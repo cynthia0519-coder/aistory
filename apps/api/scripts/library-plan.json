@@ -527,5 +527,982 @@
     "style": "inspiring",
     "setting": "mountain",
     "premise": "The family's old dog, Mochi, died peacefully in his sleep. On a walk to Mochi's favorite hill, {name} and Dad share their best Mochi memories, and {name} makes a memory book, finding that missing him is part of loving him."
+  },
+  {
+    "id": "crossing-road-garbage-truck-song",
+    "theme": "crossing-road",
+    "ageBands": ["2-4"],
+    "style": "adventure",
+    "setting": "city",
+    "premise": "When the garbage truck's tune drifts down the lane, {name} and Dad carry the trash bag to the corner. {name} holds Dad's hand, stops at the curb, looks left, right and left again for scooters, and listens before they cross together."
+  },
+  {
+    "id": "crossing-road-yellow-umbrella",
+    "theme": "crossing-road",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "city",
+    "premise": "On a rainy morning, {name}'s bright yellow umbrella bobs beside Mom's on the way to the bakery. At the crossing they stop, listen to scooters splashing by, and wait hand in hand until the little green walking man appears."
+  },
+  {
+    "id": "crossing-road-crossing-guard-flag",
+    "theme": "crossing-road",
+    "ageBands": ["4-6"],
+    "style": "adventure",
+    "setting": "city",
+    "premise": "Outside kindergarten, the crossing-guard grandpa in the yellow vest raises his flag every morning. {name} and Grandma still hold hands, wait for the green walking man, and keep watching, so they spot a scooter turning the corner and wait for it to pass."
+  },
+  {
+    "id": "getting-lost-zoo-penguins",
+    "theme": "getting-lost",
+    "ageBands": ["4-6"],
+    "style": "adventure",
+    "setting": "zoo",
+    "premise": "At the zoo's penguin house, {name} turns from the glass and can't see Grandpa anywhere. {name} stays right by the penguin window, asks a zookeeper in a green uniform for help, and says Grandpa's phone number, which {name} practiced like a song."
+  },
+  {
+    "id": "getting-lost-temple-fair",
+    "theme": "getting-lost",
+    "ageBands": ["6-8"],
+    "style": "adventure",
+    "setting": "city",
+    "premise": "At a crowded temple fair full of drums and lion dancers, {name} gets separated from Mom when the crowd surges toward the lion dancers. {name} stops, stays by the puppet stage, and asks a mom with two kids to help call Mom's number."
+  },
+  {
+    "id": "getting-lost-sand-sculpture-beach",
+    "theme": "getting-lost",
+    "ageBands": ["6-8"],
+    "style": "adventure",
+    "setting": "sea",
+    "premise": "At a sand sculpture festival by the sea, {name} looks up from a giant sand turtle and can no longer see Dad or the family's striped umbrella. {name} stops instead of searching, waves to a staff member in a uniform vest, and recites Dad's phone number."
+  },
+  {
+    "id": "earthquake-grandmas-wooden-table",
+    "theme": "earthquake",
+    "ageBands": ["4-6"],
+    "style": "adventure",
+    "setting": "home",
+    "premise": "At Grandma's old house in Yilan, the hanging lamp starts to sway during snack time. {name} and Grandma drop under the heavy wooden table, cover their heads, hold on to its legs, and count together until the shaking stops."
+  },
+  {
+    "id": "earthquake-library-shelves",
+    "theme": "earthquake",
+    "ageBands": ["6-8"],
+    "style": "adventure",
+    "setting": "school",
+    "premise": "During library period the floor starts to shake. {name} drops under a reading table away from the tall shelves and windows, holds on, and quietly reminds a friend who wants to run that we stay put until Teacher Lin leads everyone calmly to the field."
+  },
+  {
+    "id": "earthquake-go-bag-captain",
+    "theme": "earthquake",
+    "ageBands": ["8-10"],
+    "style": "adventure",
+    "setting": "home",
+    "premise": "For the national earthquake drill day, {name} becomes captain of the family's emergency bag, checking flashlight batteries, water and snacks. That week a real tremor rattles dinner, and {name} drops under the table with everyone instead of rushing for the stairs."
+  },
+  {
+    "id": "earthquake-museum-running-track",
+    "theme": "earthquake",
+    "ageBands": ["8-10"],
+    "style": "adventure",
+    "setting": "city",
+    "premise": "On a class trip to an earthquake museum built in a damaged school, {name} sees a running track buckled into waves and tries the shaking room. On the bus home, {name} explains to classmates why dropping under a sturdy table beats running outside or onto the stairs."
+  },
+  {
+    "id": "strangers-family-password",
+    "theme": "strangers",
+    "ageBands": ["4-6"],
+    "style": "adventure",
+    "setting": "school",
+    "premise": "At pick-up time, a smiling woman {name} has never seen says Mom sent her and holds out a lollipop. {name} asks for the family's secret password, she doesn't know it, so {name} says no loudly and runs to Teacher Wang, who calls Mom right away."
+  },
+  {
+    "id": "strangers-station-sticker-shop",
+    "theme": "strangers",
+    "ageBands": ["6-8"],
+    "style": "adventure",
+    "setting": "city",
+    "premise": "While Dad buys train tickets, a friendly man {name} doesn't know offers a sparkly sticker and says there are more in his shop around the corner. {name} says no, steps back to Dad, and tells him, and the station staff thank {him} for speaking up."
+  },
+  {
+    "id": "hot-things-rice-cooker-whale",
+    "theme": "hot-things",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "The rice cooker puffs steam from its little chimney like a whale blowing water. {name} wants to touch the puff, but Grandpa draws a safe circle on the floor, and from there they watch the whale, then blow on {his} rice together until it's cool."
+  },
+  {
+    "id": "hot-things-hot-pot-night",
+    "theme": "hot-things",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "On a chilly night the family gathers around a bubbling hot pot. {name} stays in {his} seat while grown-ups cook, waits for a fish ball to cool on {his} plate, and when the soup splashes, {name} scoots back and calls Mom."
+  },
+  {
+    "id": "sockets-dry-hands-dryer",
+    "theme": "sockets",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "After bath time {name} wants to plug in the hair dryer like Mom does. Mom shows that wet hands and plugs never meet, so {name} becomes the towel helper, drying {his} hands while Mom plugs it in, then enjoys the warm whoosh."
+  },
+  {
+    "id": "sockets-cracked-cord-spark",
+    "theme": "sockets",
+    "ageBands": ["4-6"],
+    "style": "adventure",
+    "setting": "home",
+    "premise": "Behind the TV, {name} spots an old extension cord with a crack, and it makes a tiny snap and spark. {name} steps away and tells Dad, and together they buy a new cord, tuck the wires away, and fit plug covers on the empty sockets."
+  },
+  {
+    "id": "windows-balcony-laundry-clouds",
+    "theme": "windows-balcony",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "{name} helps Grandma hang socks on the balcony and wants to climb the stool by the railing to see the clouds. Grandma moves the stool inside, and from the floor they find cloud shapes together: a rabbit, a boat, a bowl of noodles."
+  },
+  {
+    "id": "windows-balcony-new-year-fireworks",
+    "theme": "windows-balcony",
+    "ageBands": ["4-6"],
+    "style": "adventure",
+    "setting": "city",
+    "premise": "On New Year's Eve, {name} wants to climb onto the windowsill to see the fireworks over the tall tower. Dad pulls cushions to the window and they kneel side by side, feet and knees on the floor, counting down as the sky fills with color."
+  },
+  {
+    "id": "water-safety-pool-wait-by-towel",
+    "theme": "water-safety",
+    "ageBands": ["4-6"],
+    "style": "adventure",
+    "setting": "city",
+    "premise": "At the neighborhood swimming pool, Grandpa needs a quick bathroom break. Even though the shallow end looks so fun, {name} climbs out and waits on {his} towel, counting the swimmers, until Grandpa comes back to watch again."
+  },
+  {
+    "id": "water-safety-river-tracing",
+    "theme": "water-safety",
+    "ageBands": ["6-8"],
+    "style": "adventure",
+    "setting": "forest",
+    "premise": "On a river-tracing trip with a guide, everyone wears helmets and life jackets. When a friend's sandal floats toward a deep green pool, {name} doesn't chase it, shouts for the guide, and the guide fishes it out with a long pole."
+  },
+  {
+    "id": "water-safety-flooded-ditch",
+    "theme": "water-safety",
+    "ageBands": ["6-8"],
+    "style": "adventure",
+    "setting": "park",
+    "premise": "After a heavy rain, friends want to catch fish in the rushing ditch beside the rice fields. {name} says the water's too fast without a grown-up, runs to get Uncle, and they watch the fish safely from the bridge instead."
+  },
+  {
+    "id": "water-safety-island-ferry-life-jacket",
+    "theme": "water-safety",
+    "ageBands": ["8-10"],
+    "style": "adventure",
+    "setting": "sea",
+    "premise": "On a boat ride to a small island in Penghu, {name} buckles a life jacket even though a cousin says it looks uncool. When the boat stops for snorkeling, {name} sticks with a buddy where the guide can see them and shows the cousin how to float."
+  },
+  {
+    "id": "medicine-gummy-bear-vitamins",
+    "theme": "medicine",
+    "ageBands": ["2-4"],
+    "style": "adventure",
+    "setting": "home",
+    "premise": "On the kitchen counter, {name} spots a bottle of gummy bears that are really vitamins. {name} doesn't taste one; {name} and {his} toy dinosaur march off to fetch Mom, who puts the bottle up high and gives {name} a real snack."
+  },
+  {
+    "id": "medicine-grandmas-rainbow-pillbox",
+    "theme": "medicine",
+    "ageBands": ["4-6"],
+    "style": "adventure",
+    "setting": "home",
+    "premise": "At Grandma's apartment, a seven-day pillbox shines like a rainbow of candy. {name} remembers medicine isn't candy, brings Grandma to see it, and helps her pick a high shelf so her pills stay safe from tiny visitors."
+  },
+  {
+    "id": "typhoon-flashlight-shadows",
+    "theme": "typhoon",
+    "ageBands": ["4-6"],
+    "style": "adventure",
+    "setting": "home",
+    "premise": "The typhoon howls and the power goes out. Away from the windows, {name} and the family light flashlights and make shadow animals on the wall, and {name} feels brave knowing they stocked water and snacks yesterday."
+  },
+  {
+    "id": "typhoon-swollen-river",
+    "theme": "typhoon",
+    "ageBands": ["6-8"],
+    "style": "adventure",
+    "setting": "home",
+    "premise": "Older neighbor kids want to go film the swollen river during the typhoon. {name} stays home, helps bring in the bikes, and checks the flashlight. The next morning, after the all-clear, {name} joins neighbors sweeping leaves off the lane."
+  },
+  {
+    "id": "online-safety-free-gems-password",
+    "theme": "online-safety",
+    "ageBands": ["8-10"],
+    "style": "adventure",
+    "setting": "home",
+    "premise": "A message in {name}'s favorite game promises a thousand free gems if {name} types in {his} password and phone number. It feels too good to be true, so {name} shows Dad, and they report it and make a stronger password together."
+  },
+  {
+    "id": "online-safety-secret-meetup",
+    "theme": "online-safety",
+    "ageBands": ["8-10"],
+    "style": "adventure",
+    "setting": "city",
+    "premise": "An online teammate who says he's also ten asks {name} to meet at the mall on Saturday and to tell no one. {name} feels uneasy, tells Mom, and learns that online friends may not be who they say, and {name} is not in trouble for telling."
+  },
+  {
+    "id": "online-safety-uniform-photo",
+    "theme": "online-safety",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "{name} wants to post a photo of {his} new school uniform with the school name and the bus stop in the background. With Mom, {name} finds every clue that could show where {he} lives, and they crop a photo that keeps those details private."
+  },
+  {
+    "id": "swimsuit-rule-bath-duck",
+    "theme": "swimsuit-rule",
+    "ageBands": ["2-4"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "At bath time, {name}'s rubber duck wants to know about swimsuits. Dad explains that the parts a swimsuit covers are private and belong to {name}, and that grown-ups help only to keep {him} clean, like now. {name} washes {his} own tummy with bubbles."
+  },
+  {
+    "id": "swimsuit-rule-water-park-poncho",
+    "theme": "swimsuit-rule",
+    "ageBands": ["4-6", "6-8"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "On a family trip to the water park, {name} changes behind a hooded towel poncho and knows the parts {his} swimsuit covers are private. When a friend starts to change out in the open, {name} shares the poncho trick so swimsuit parts stay private, and Dad helps rinse off sunscreen."
+  },
+  {
+    "id": "good-bad-secrets-scraped-knee",
+    "theme": "good-bad-secrets",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "{name}'s class is secretly making a Mother's Day card, a happy surprise. But when {his} friend hurts a knee climbing the fence and says 'never tell,' {name}'s tummy feels worried, so {name} tells Teacher Chen, who helps the friend get a bandage."
+  },
+  {
+    "id": "good-bad-secrets-quiet-classmate",
+    "theme": "good-bad-secrets",
+    "ageBands": ["6-8", "8-10"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "{name}'s class is secretly painting a thank-you mural for a retiring teacher. Meanwhile a classmate who hides in the restroom at recess makes {name} promise never to tell, and the worry grows until {name} tells the school counselor, who helps gently."
+  },
+  {
+    "id": "saying-no-beard-kisses",
+    "theme": "saying-no",
+    "ageBands": ["2-4"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "Grandpa's whiskery kisses scratch {name}'s cheek. {name} says, 'No kiss, please. Wave!' and Grandpa waves a big silly wave. Then {name} asks the cat before petting it, and when the cat walks away, {name} lets it go."
+  },
+  {
+    "id": "saying-no-squeeze-hug-handshake",
+    "theme": "saying-no",
+    "ageBands": ["4-6", "6-8"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "Every morning {name}'s friend greets {him} with a big squeeze hug that feels too tight. {name} says, 'I don't like squeeze hugs. Let's do a secret handshake!' Later {name} learns the friend doesn't like hair touches, and respects that no too."
+  },
+  {
+    "id": "trusted-adults-keep-telling",
+    "theme": "trusted-adults",
+    "ageBands": ["6-8", "8-10"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "A family friend keeps insisting on hugging {name} even after {name} says no. When {name} tells Auntie, she says, 'Just be polite,' so {name} turns to the next person in {his} safety net, Teacher Huang, and soon Mom and Auntie both stand up for {name}'s no."
+  },
+  {
+    "id": "not-your-fault-wrestling-game",
+    "theme": "not-your-fault",
+    "ageBands": ["6-8", "8-10"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "Weeks after a cousin's friend kept pushing a wrestling game that felt wrong, {name} worries it was {his} fault for not saying no. On a walk, {name} tells Grandma, who says it was never {his} fault, telling was brave, and the grown-ups will handle it."
+  },
+  {
+    "id": "brushing-teeth-crocodile-mirror",
+    "theme": "brushing-teeth",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "In the bathroom mirror, {name} makes a wide crocodile smile. Snap, snap! The crocodile brushes top teeth, bottom teeth, front and back in tiny circles, and then Mom helps finish the far-back crocodile teeth."
+  },
+  {
+    "id": "brushing-teeth-campsite-sink",
+    "theme": "brushing-teeth",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "forest",
+    "premise": "Camping in the forest, {name} wonders if toothbrushes come camping too. They do! At the outdoor sink with frogs singing, {name} and Dad brush every tooth while a sleepy owl seems to watch, then crawl into the tent."
+  },
+  {
+    "id": "brushing-teeth-grandpa-birdsong",
+    "theme": "brushing-teeth",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "On a sleepover at Grandpa's, {name} learns his trick: brush while the bulbul outside sings its morning song. They brush the front, the back and the chewing tops, then compare shiny grins in the mirror."
+  },
+  {
+    "id": "potty-park-restroom",
+    "theme": "potty",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "park",
+    "premise": "Playing at the park, {name} feels {his} tummy say, 'Time to pee!' {name} tells Dad right away, they find the park restroom with a little seat, {name} flushes with a wave, and they scrub with soap before going back to the slide."
+  },
+  {
+    "id": "potty-oops-spare-pants",
+    "theme": "potty",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "school",
+    "premise": "At kindergarten {name} is so busy building blocks that an oops happens. Teacher Lin smiles, helps {name} change into spare pants from {his} cubby, and says everyone has oopses while learning. Next time, {name} remembers to go."
+  },
+  {
+    "id": "starting-kindergarten-fish-cubby",
+    "theme": "starting-kindergarten",
+    "ageBands": ["2-4"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "On {his} first day, {name} finds a cubby with a little fish sticker, {his} very own spot. When {name} cries at goodbye, Teacher Mei offers a hug and a song, and the fish cubby waits all day until Mom comes back at pick-up time."
+  },
+  {
+    "id": "starting-kindergarten-school-bus-wave",
+    "theme": "starting-kindergarten",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "{name} rides the kindergarten bus for the first time and feels nervous as Grandma waves from the curb. The bus auntie shows {him} the window seat, a new friend shares a sticker, and in the afternoon Grandma is waiting at the same corner."
+  },
+  {
+    "id": "bedtime-routine-pajama-parade",
+    "theme": "bedtime-routine",
+    "ageBands": ["2-4"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "Every night {name}'s stuffed animals join a slow pajama parade: splashy bath, soft pajamas, minty teeth, one story, then lights turned low. One by one, the animals and {name} yawn and settle into bed."
+  },
+  {
+    "id": "bedtime-routine-goodnight-house",
+    "theme": "bedtime-routine",
+    "ageBands": ["2-4"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "After the bath, {name} says goodnight to the house: goodnight to the TV, now dark; goodnight to the toothbrush, now clean; goodnight to the moon in the window. Then {name} snuggles in for the last soft story."
+  },
+  {
+    "id": "bedtime-routine-picture-chart",
+    "theme": "bedtime-routine",
+    "ageBands": ["4-6"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "{name} draws a picture chart of the bedtime steps: bath, pajamas, teeth, story, lights low. Each night {name} moves a paper star along the chart, and soon {his} little cousin staying over wants to follow it too."
+  },
+  {
+    "id": "bedtime-routine-tablet-under-blanket",
+    "theme": "bedtime-routine",
+    "ageBands": ["6-8"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "{name} sneaks the tablet under the blanket to finish a video, and the next day feels grumpy and tired at school. That night {name} puts the tablet in its charging basket before bath time and notices how sleep makes the morning easier."
+  },
+  {
+    "id": "bedtime-routine-rooftop-stars",
+    "theme": "bedtime-routine",
+    "ageBands": ["6-8"],
+    "style": "bedtime",
+    "setting": "night_sky",
+    "premise": "After watching the stars from the rooftop garden with Dad, {name} is wide awake. Back downstairs, their usual steps, a warm shower, teeth, a chapter book and dim lights, slowly turn the starry excitement into sleepy calm."
+  },
+  {
+    "id": "trying-food-dragon-fruit-dots",
+    "theme": "trying-food",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "Mom cuts open a dragon fruit, and inside it is bright pink with tiny black dots. {name} looks, sniffs and listens to the seeds crunch in one small bite. Crunchy! Maybe it isn't a favorite yet, but it's fun to explore."
+  },
+  {
+    "id": "trying-food-stinky-tofu-sniff",
+    "theme": "trying-food",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "city",
+    "premise": "At the night market, a strong smell drifts from the stinky tofu stall, and {name} holds {his} nose. Dad says they can just try one tiny bite, so {name} notices the crispy outside and the soft inside, and decides to try again next time."
+  },
+  {
+    "id": "tidying-toys-beach-buckets",
+    "theme": "tidying-toys",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "sea",
+    "premise": "At the end of a beach day, {name}'s buckets, shovels and shell molds are scattered across the sand. With a tidy-up song and Mom, each toy hops into the big mesh bag, so they'll all be ready for the next sandcastle."
+  },
+  {
+    "id": "tidying-toys-missing-puzzle-piece",
+    "theme": "tidying-toys",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "{name}'s favorite train puzzle is missing its last piece, so {name} and Dad search under sofas and inside slippers. They find it, and together they make labeled boxes so every toy has a home and nothing goes missing again."
+  },
+  {
+    "id": "handwashing-snack-bubbles",
+    "theme": "handwashing",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "school",
+    "premise": "Before snack time, {name}'s class lines up at the little sinks. With soap bubbles they rub palms, backs, thumbs and in between fingers while singing a short song, then rinse, dry and enjoy their sliced fruit."
+  },
+  {
+    "id": "handwashing-goat-farm",
+    "theme": "handwashing",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "zoo",
+    "premise": "At a leisure farm, {name} feeds the goats and laughs as they nibble grass from {his} hand. Before the ice cream break, {name} and Mom wash at the farm sink, scrubbing under the nails where goat-food dust likes to hide."
+  },
+  {
+    "id": "doctor-shots-teddy-practice",
+    "theme": "doctor-shots",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "The night before {his} shot, {name} plays clinic with Teddy: a cuddle, a quick pinch, a little cry, and a sticker. The next day at the real clinic, {name} holds Mom's hand, feels the quick pinch, and gets a sticker for Teddy too."
+  },
+  {
+    "id": "doctor-shots-family-flu-shots",
+    "theme": "doctor-shots",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "city",
+    "premise": "This year the whole family gets flu shots together. Dad goes first and makes a funny face, {name} squeezes Mom's hand for {his} quick pinch, and Grandma says the shots are shields that help their bodies fight germs all winter."
+  },
+  {
+    "id": "dentist-fluoride-tooth-paint",
+    "theme": "dentist",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "school",
+    "premise": "A dentist visits {name}'s kindergarten to paint fluoride on everyone's teeth. She shows the little brush and the mirror first, counts teeth out loud, and when {name} raises {his} hand for a break, she waits with a smile."
+  },
+  {
+    "id": "dentist-wiggly-first-tooth",
+    "theme": "dentist",
+    "ageBands": ["6-8"],
+    "style": "cute",
+    "setting": "city",
+    "premise": "{name}'s first wiggly tooth won't come out, so Dr. Lin takes a look. She explains the tooth counter, the water squirter and the slurpy straw before using them, and {name} raises {his} hand once to rest before the tooth pops free."
+  },
+  {
+    "id": "screen-time-bunny-timer",
+    "theme": "screen-time",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "{name} and Mom agree on two short cartoons and set the bunny timer. When it rings, {name} feels disappointed and stomps, then takes a slow breath and chooses to build a cardboard bunny house with Mom."
+  },
+  {
+    "id": "screen-time-phone-basket-dinner",
+    "theme": "screen-time",
+    "ageBands": ["6-8"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "{name} notices everyone at dinner is looking at phones, so {name} brings a basket and makes a new family rule: phones nap during dinner. Without screens, they play a silly word game and learn surprising stories about Grandpa."
+  },
+  {
+    "id": "screen-time-boss-level",
+    "theme": "screen-time",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "park",
+    "premise": "{name} is about to beat the boss level when the agreed timer rings. Frustrated, {name} saves the game, takes a breath, and heads to the park for a basketball game with a neighbor, then plans a fair weekend screen schedule with Dad."
+  },
+  {
+    "id": "screen-time-family-contract",
+    "theme": "screen-time",
+    "ageBands": ["8-10"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "After a weekend lost to videos, {name} drafts a family screen contract, with rules for grown-ups too. The family signs it, tests it for a week, and {name} discovers the board-game nights {he} once called boring are the funniest part."
+  },
+  {
+    "id": "moving-house-glow-star-ceiling",
+    "theme": "moving-house",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "In the new apartment, {name}'s room feels strange and echoey on the first night. With Dad, {name} sticks the glow stars from the old ceiling onto the new one, and under the familiar stars the new room starts to feel like home."
+  },
+  {
+    "id": "moving-house-transfer-student",
+    "theme": "moving-house",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "On {his} first day at a new school after moving, {name} doesn't know where the restroom or the lunch line is. A classmate who also moved last year shows {him} around, and {name} writes a postcard to {his} old best friend about it."
+  },
+  {
+    "id": "moving-house-island-ferry",
+    "theme": "moving-house",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "sea",
+    "premise": "Dad's new job moves the family by ferry to Penghu. {name} feels excited and sad at once and misses the old basketball court, then discovers basalt cliffs, a cactus ice shop, and a neighbor who teaches {him} to fly a kite in the island wind."
+  },
+  {
+    "id": "moving-house-old-neighborhood-map",
+    "theme": "moving-house",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "Before the family moves, {name} draws a map of the old neighborhood: the breakfast shop, the temple, the cat on the scooter seat. In the new town, {name} starts a second map, square by square, until it's just as full."
+  },
+  {
+    "id": "anger-snail-breath",
+    "theme": "anger",
+    "ageBands": ["2-4"],
+    "style": "inspiring",
+    "setting": "park",
+    "premise": "At the park, {name}'s sand cake gets squashed, and {name} feels a big mad. Instead of kicking the sand, {name} breathes slow like a snail with Mom, says, 'I'm mad!' and then they bake a new sand cake together."
+  },
+  {
+    "id": "anger-stomping-dinosaur",
+    "theme": "anger",
+    "ageBands": ["2-4"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "When it's time to leave the bath, {name} feels so angry {he} wants to throw the cup. Dad says, 'Stomp like a dinosaur, not throw.' {name} stomps, takes three dinosaur breaths, and says, 'I'm angry, I want more bath!'"
+  },
+  {
+    "id": "anger-paper-crown",
+    "theme": "anger",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "At kindergarten, a classmate grabs {name}'s paper crown and it rips. {name}'s hands want to push, but {name} stops, counts slow breaths to five, and says, 'I'm angry because you ripped my crown.' They tape it together."
+  },
+  {
+    "id": "anger-broken-model-ship",
+    "theme": "anger",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "{name}'s little brother knocks over the model ship {name} spent all week building. Furious, {name} goes to {his} room, breathes until {his} heart slows, then tells Mom how it feels, and later the two of them rebuild the mast together."
+  },
+  {
+    "id": "anger-basketball-call",
+    "theme": "anger",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "In a class basketball game, the referee calls a foul {name} thinks is unfair. {name} wants to throw the ball, but takes deep breaths on the bench, then calmly says what {he} saw, and the class agrees on clearer rules."
+  },
+  {
+    "id": "new-sibling-tiny-socks",
+    "theme": "new-sibling",
+    "ageBands": ["2-4"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "Baby sister's socks are so tiny next to {name}'s. {name} wonders if Mom still has room to love {him} too, and Mom shows {him}: two socks, two hearts, and one big hug for both. {name} helps put the tiny socks on."
+  },
+  {
+    "id": "new-sibling-stroller-helper",
+    "theme": "new-sibling",
+    "ageBands": ["2-4"],
+    "style": "inspiring",
+    "setting": "zoo",
+    "premise": "On a family trip to the zoo, {name} feels left behind as everyone peeks into the stroller. {name} tells Dad, 'I want a turn too,' so Dad lets {name} help push and point out birds to the baby, and saves the giraffe-feeding moment just for {name}."
+  },
+  {
+    "id": "new-sibling-crying-baby-concert",
+    "theme": "new-sibling",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "Baby brother cries and cries, and {name} feels grumpy that Mom is always busy. {name} tells her so, and Mom gives {him} a special job: a soft concert with {his} toy xylophone, which makes the baby blink and finally smile."
+  },
+  {
+    "id": "sharing-turns-swing-song",
+    "theme": "sharing-turns",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "park",
+    "premise": "{name} and a little boy both want the same swing. Mom teaches a swing song: one song for {name}, one song for him. Waiting is hard, but singing makes the turns go round and round."
+  },
+  {
+    "id": "sharing-turns-one-red-crayon",
+    "theme": "sharing-turns",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "school",
+    "premise": "There's only one red crayon left, and {name} and a friend both need it for their apple drawings. {name} asks, 'Can I have a turn when you're done?' and they trade colors, and their pictures end up hanging side by side."
+  },
+  {
+    "id": "manners-birthday-gift",
+    "theme": "manners",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "At {his} birthday party, {name} opens a gift from Auntie: a soft puppy toy. {name} hugs it and says thank you, says please for more cake, and says sorry after bumping a cousin's cup, and every word makes someone smile."
+  },
+  {
+    "id": "manners-bus-ride",
+    "theme": "manners",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "city",
+    "premise": "On the city bus, {name} says please when asking to press the stop button, thank you to the driver, and sorry after stepping on someone's toe by accident. An old man smiles and tells {name} the bus feels friendlier today."
+  },
+  {
+    "id": "fear-of-dark-glowing-turtle",
+    "theme": "fear-of-dark",
+    "ageBands": ["2-4"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "When the light turns off, {name}'s room looks different. {name} hugs {his} glowing turtle night-light, which shows the same toys and the same chair, and calls 'Mom!' when {he} needs her. She peeks in, and everything is still there."
+  },
+  {
+    "id": "fear-of-dark-frog-choir",
+    "theme": "fear-of-dark",
+    "ageBands": ["4-6"],
+    "style": "bedtime",
+    "setting": "forest",
+    "premise": "Camping in the forest, {name} hears croaks, chirps and rustles in the dark tent. With Mom's flashlight they find the friendly sources: tree frogs, crickets and leaves in the wind, and {name} falls asleep to the frog choir."
+  },
+  {
+    "id": "losing-failing-musical-chairs",
+    "theme": "losing-failing",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "In musical chairs, {name} is out first and wants to cry. {name} takes a breath, cheers for friends from the side, and at the end the teacher lets {name} play the music for the next round, which turns out to be really fun."
+  },
+  {
+    "id": "losing-failing-bike-wobble",
+    "theme": "losing-failing",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "park",
+    "premise": "Without training wheels, {name} wobbles and tips over again and again on the riverside path. Disappointed, {name} sits on the grass, then tries a new way, looking far ahead instead of down, and finally rides all the way to the bridge."
+  },
+  {
+    "id": "losing-failing-calligraphy-blot",
+    "theme": "losing-failing",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "In calligraphy class, {name}'s brush drips a big ink blot onto the character for 'forever.' Frustrated, {name} wants to crumple it, but the teacher shows how masters practice one stroke a hundred times, and {name} tries again, slower."
+  },
+  {
+    "id": "losing-failing-relay-baton",
+    "theme": "losing-failing",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "At sports day, {name} drops the baton in the class relay and the team comes last. Embarrassed, {name} wants to hide, but {his} teammates high-five {him} anyway, and the next week they practice handoffs together."
+  },
+  {
+    "id": "losing-failing-egg-drop",
+    "theme": "losing-failing",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "In the science-fair egg drop, {name}'s carefully built parachute fails and the egg splats. {name} is crushed, then studies what went wrong, shares the lesson with classmates, and cheers when a friend's design works."
+  },
+  {
+    "id": "honesty-spilled-paint-jar",
+    "theme": "honesty",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "In art class, {name} knocks over a jar of blue paint onto a classmate's drawing and pretends not to know who did it. The secret feels heavy, so {name} tells the teacher, says sorry, and helps make a new drawing that's even better."
+  },
+  {
+    "id": "honesty-test-paper-signature",
+    "theme": "honesty",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "{name} gets a disappointing score on a spelling test and hides the paper instead of asking Dad to sign it. The secret weighs on {him} all week, until {name} tells the truth, and Dad helps {him} practice without any scolding."
+  },
+  {
+    "id": "bullying-mean-nickname",
+    "theme": "bullying",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "Some classmates call a girl with thick glasses 'Owl Eyes' and laugh. {name} feels uneasy, sits with her at lunch, invites her into a game, and tells the teacher, who helps the whole class talk about kind names."
+  },
+  {
+    "id": "bullying-class-group-chat",
+    "theme": "bullying",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "In the class group chat, someone posts a mean edited photo of a classmate and everyone sends laughing stickers. {name} doesn't join in, sends the classmate a kind message, and shows Mom and the teacher, who help stop it."
+  },
+  {
+    "id": "bullying-picking-teams",
+    "theme": "bullying",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "park",
+    "premise": "At recess, the same quiet boy is picked last for dodgeball every day while some kids groan. When {name} is chosen as captain, {name} picks him first and suggests counting off teams, and tells the teacher about the groaning."
+  },
+  {
+    "id": "pet-loss-old-cat-sunbeam",
+    "theme": "pet-loss",
+    "ageBands": ["4-6"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "{name}'s old cat, Doudou, died peacefully because she was very, very old. {name} misses her sunny windowsill naps, so {name} and Dad make a little picture book of Doudou's favorite spots and read it together at bedtime."
+  },
+  {
+    "id": "pet-loss-old-turtle-garden",
+    "theme": "pet-loss",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "park",
+    "premise": "{name}'s turtle, Pebble, died after a long, slow life. Feeling sad, {name} and Mom sit by the park pond watching wild turtles sunbathe as they share Pebble memories, then plant a small garden at home with a smooth stone for Pebble."
+  },
+  {
+    "id": "pet-loss-grandpas-songbird",
+    "theme": "pet-loss",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "Grandpa's old songbird, who sang every morning for fifteen years, died peacefully. {name} sees Grandpa's quiet sadness, and together they write down their favorite memories and record Grandpa whistling the bird's song so it isn't forgotten."
+  },
+  {
+    "id": "getting-lost-mrt-platform",
+    "theme": "getting-lost",
+    "ageBands": ["6-8"],
+    "style": "adventure",
+    "setting": "city",
+    "premise": "On a crowded MRT platform, the doors close with {name} inside and Dad still outside. {name} remembers their plan, gets off at the very next station, stays right on the platform, and asks a station worker in uniform to call Dad's number."
+  },
+  {
+    "id": "honesty-lost-eraser",
+    "theme": "honesty",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "{name} borrows a classmate's special dinosaur eraser and loses it at recess. {name} is tempted to say it was never returned, but tells the truth instead, and together with the teacher they search the playground and find it under a bench."
+  },
+  {
+    "id": "earthquake-cram-school-stairs",
+    "theme": "earthquake",
+    "ageBands": ["8-10"],
+    "style": "adventure",
+    "setting": "city",
+    "premise": "During an after-school class on the fifth floor, the building starts to sway and some kids jump up to run for the stairs. {name} drops under a desk, calls out 'Drop, cover, hold on!', and everyone waits until the teacher leads them down calmly."
+  },
+  {
+    "id": "losing-failing-piano-recital",
+    "theme": "losing-failing",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "At the school concert, {name}'s fingers freeze halfway through the piano piece and {he} has to start over. Afterward {name} feels like disappearing, but a breath, a hug, and a talk with the music teacher help {him} plan to play it again at the next assembly."
+  },
+  {
+    "id": "losing-failing-class-election",
+    "theme": "losing-failing",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "{name} campaigns hard to be class leader and loses the vote to {his} friend. Disappointed, {name} congratulates the winner, then offers to run the class recycling project, and finds a way to lead without the title."
+  },
+  {
+    "id": "bullying-school-bus-seat",
+    "theme": "bullying",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "On the school bus, some older kids keep pushing a first-grader out of his seat and laughing. {name} moves over to sit with him, gets a friend to join, and tells the bus teacher, which turns out to be getting help, not snitching."
+  },
+  {
+    "id": "screen-time-short-video-loop",
+    "theme": "screen-time",
+    "ageBands": ["8-10"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "{name} opens one short video after dinner and suddenly an hour has vanished. Puzzled, {name} tests a timer for a week, uses the found time to draw a comic about a phone that eats time, and the whole family laughs at it."
+  },
+  {
+    "id": "moving-house-grandmas-old-street",
+    "theme": "moving-house",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "The family moves into Grandma's narrow old house in Tainan, and {name} misses {his} own room and friends up north. Exploring the old street with Grandma, {name} finds a temple courtyard for basketball and a neighbor kid who knows every shortcut."
+  },
+  {
+    "id": "raindrop-drums",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "Plink, plonk! Rain taps on the balcony's tin roof, the flowerpots and a bucket. {name} and Grandma listen to each raindrop drum, then make their own band with pots and spoons until the rain says goodbye."
+  },
+  {
+    "id": "baby-blue-magpie",
+    "ageBands": ["2-4"],
+    "style": "adventure",
+    "setting": "forest",
+    "premise": "On a forest walk, {name} and Mom spot a baby blue magpie with a long tail practicing tiny hops on a branch. They cheer softly from below until the little bird flaps, flutters and flies to its family."
+  },
+  {
+    "id": "goodnight-sleepy-train",
+    "ageBands": ["2-4"],
+    "style": "bedtime",
+    "setting": "city",
+    "premise": "The last train of the day rolls slowly back to the depot, and {name} imagines tucking it in. Goodnight, doors. Goodnight, seats. Goodnight, shiny rails. The city lights blink softly as {name} drifts off too."
+  },
+  {
+    "id": "little-turtle-moon-path",
+    "ageBands": ["2-4"],
+    "style": "bedtime",
+    "setting": "sea",
+    "premise": "On a quiet island beach, a tiny sea turtle follows the moon's silver path toward the waves while {name} and Dad watch from far away. Shh, shh, say the waves, as the little turtle swims into the sleepy sea."
+  },
+  {
+    "id": "cloud-sheep-on-the-mountain",
+    "ageBands": ["2-4"],
+    "style": "bedtime",
+    "setting": "mountain",
+    "premise": "On a mountain tea farm, fluffy clouds roll in like sheep. {name} and Grandpa count the cloud sheep one by one as they drift over the tea bushes, until the last sheep and {name} are both ready for sleep."
+  },
+  {
+    "id": "rabbit-in-the-moon",
+    "ageBands": ["2-4"],
+    "style": "bedtime",
+    "setting": "night_sky",
+    "premise": "On Mid-Autumn night, {name} spots the rabbit in the round moon. {name} waves a slice of pomelo, the moon rabbit seems to wave back, and the family's quiet moonlight picnic turns into a sleepy, cozy goodnight."
+  },
+  {
+    "id": "tea-hill-hide-and-seek",
+    "ageBands": ["4-6"],
+    "style": "adventure",
+    "setting": "mountain",
+    "premise": "On Grandma's tea hill, {name} plays hide-and-seek with cousins between the rows of green bushes while Grandma picks tea nearby, and follows clues left by a curious little bird. The trail leads to a surprise picnic of tea eggs at the top of the hill."
+  },
+  {
+    "id": "lantern-festival-rabbit",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "city",
+    "premise": "At the Lantern Festival, {name}'s paper rabbit lantern has a wobbly ear. As they walk past giant glowing dragons and fish, {name} and Dad fix the ear with a ribbon, and the little rabbit glows the proudest of all."
+  },
+  {
+    "id": "night-bus-of-lost-umbrellas",
+    "ageBands": ["6-8"],
+    "style": "cute",
+    "setting": "city",
+    "premise": "On a rainy evening, {name} leaves {his} umbrella on the bus and imagines it riding to a secret depot where lost umbrellas chat about their adventures. The next day, at the lost-and-found counter, the umbrella is waiting."
+  },
+  {
+    "id": "leopard-cat-footprints",
+    "ageBands": ["6-8", "8-10"],
+    "style": "adventure",
+    "setting": "forest",
+    "premise": "Visiting the hills of Miaoli with an animal researcher, {name} finds small paw prints in the mud by a stream. They set up a camera, and the next morning the photos show a rare leopard cat strolling by in the moonlight."
+  },
+  {
+    "id": "firefly-valley-lanterns",
+    "ageBands": ["6-8"],
+    "style": "bedtime",
+    "setting": "forest",
+    "premise": "On a spring night, {name} and Dad walk a dark forest path with their flashlights off. Little by little, hundreds of fireflies blink on like floating lanterns, and the walk home is slow, quiet and glowing."
+  },
+  {
+    "id": "lighthouse-keepers-cat",
+    "ageBands": ["6-8", "8-10"],
+    "style": "bedtime",
+    "setting": "sea",
+    "premise": "{name} stays a night at the lighthouse Great-Aunt looks after, with her old cat. They climb the spiral stairs, watch the beam sweep over fishing boats, and listen to the sea until the cat and {name} doze off."
+  },
+  {
+    "id": "mooncake-mystery",
+    "ageBands": ["6-8", "8-10"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "On the morning of Mid-Autumn, one mooncake has vanished from the box. {name} follows crumbs, a sticky paw print and a guilty-looking cousin, and the trail ends with a surprise: Grandpa's sleepwalking midnight snack."
+  },
+  {
+    "id": "temple-lion-dance-drum",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "{name} watches the lion dance troupe practice at the neighborhood temple and dreams of playing the big drum. The drummer lets {him} learn one simple beat, and on festival day {name} keeps the rhythm for the little lion."
+  },
+  {
+    "id": "rooftop-giant-pumpkin",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "On the apartment rooftop garden, {name} plants one pumpkin seed and cares for it all summer, through typhoon wind and burning sun. By autumn it's huge, and the neighbors gather to share pumpkin soup together."
+  },
+  {
+    "id": "tide-pool-detectives",
+    "ageBands": ["8-10"],
+    "style": "adventure",
+    "setting": "sea",
+    "premise": "At low tide on the north coast, {name} and a cousin become tide-pool detectives with Aunt close by, tracking fiddler crabs waving their big claws, a hiding octopus and a sea star. They record everything in a notebook and leave every creature just where it was."
+  },
+  {
+    "id": "bear-bell-trail",
+    "ageBands": ["8-10"],
+    "style": "adventure",
+    "setting": "mountain",
+    "premise": "Hiking a high mountain trail with a ranger, {name} wears a jingling bear bell and learns to read signs of the Formosan black bear: claw marks, a half-eaten fruit, a muddy print. From a safe ridge, they glimpse a black shape crossing the valley."
+  },
+  {
+    "id": "wind-city-kite",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "In the windy city of Hsinchu, {name} builds a kite for the autumn kite festival, but the strong wind keeps snapping it out of the sky. With a retired engineer neighbor, {name} redesigns the tail, and on the last try the kite soars."
+  },
+  {
+    "id": "old-bookshop-cat",
+    "ageBands": ["8-10"],
+    "style": "cute",
+    "setting": "city",
+    "premise": "In a crowded old bookshop, a gray cat keeps sitting on the same dusty book. Curious, {name} reads it and finds a decades-old letter tucked inside, and with the owner's help returns it to the writer's granddaughter."
+  },
+  {
+    "id": "stars-over-hehuan",
+    "ageBands": ["8-10"],
+    "style": "bedtime",
+    "setting": "night_sky",
+    "premise": "On a clear night at a mountain dark-sky park, {name} lies on a blanket with Mom and sees the Milky Way for the first time. They trace constellations and tell their own star stories until the cold air turns cozy and sleepy."
+  },
+  {
+    "id": "whale-song-of-hualien",
+    "ageBands": ["8-10"],
+    "style": "adventure",
+    "setting": "sea",
+    "premise": "On a whale-watching boat off Hualien, {name} waits hours with nothing but waves, ready to give up. Then spinner dolphins leap beside the bow, and far away a whale's tail rises, a moment {name} keeps forever."
+  },
+  {
+    "id": "puppet-masters-apprentice",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "{name} discovers an old glove-puppet theater in the neighborhood and begs the puppet master to teach {him}. {name}'s fingers fumble the tiny swordsman at first, but after weeks of practice {name} performs a short scene for the temple festival."
+  },
+  {
+    "id": "dragon-boat-drummer",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "sea",
+    "premise": "In a bright life jacket, {name} joins the harbor's youth dragon boat team as the drummer at the front of the boat. At first the paddlers ignore {his} beat, but {name} learns to watch their strokes and lead with a steady rhythm, and the boat surges forward."
   }
 ]

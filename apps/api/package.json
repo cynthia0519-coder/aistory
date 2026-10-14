@@ -9,7 +9,9 @@
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
     "eval": "tsx eval/story-quality.ts",
-    "library:generate": "tsx scripts/generate-library.ts"
+    "library:generate": "tsx scripts/generate-library.ts",
+    "library:review": "tsx scripts/review-library.ts",
+    "test": "tsx --test test/*.test.ts"
   },
   "dependencies": {
     "@aistory/shared": "*",
