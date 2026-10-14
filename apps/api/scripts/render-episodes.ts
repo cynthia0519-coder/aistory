@@ -1,7 +1,9 @@
 // 頻道節目：把故事庫的故事做成 Podcast 音檔（mp3）與 YouTube 影片（mp4），附標題、說明與封面。
 // 聲音、配樂、插圖都和 App 一樣：曉臻朗讀、同一組 Mureka 配樂（念的時候壓低）、同一張場景插畫。
 //
-//   npm run episodes:render -w @aistory/api -- [--only id1,id2] [--limit 20] [--lang zh] [--audio-only] [--dry-run]
+//   npm run episodes:render -w @aistory/api -- [--only id1,id2] [--next] [--limit 20] [--lang zh] [--audio-only] [--dry-run]
+//
+// --next 做下一批：跳過已經輸出過的故事，各分類輪流挑。
 //
 // 需要：AZURE_SPEECH_KEY / AZURE_SPEECH_REGION（在雲端 session 裡另外要 NODE_USE_ENV_PROXY=1 才走得出代理）、ffmpeg（含 libass、libx264、libmp3lame）、
 // 字型 LXGW WenKai TC（放在 scripts/assets/LXGWWenKaiTC-Regular.ttf，或用 --font 指定）。
@@ -13,7 +15,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { z } from "zod";
-import { LibraryStorySchema, renderLibraryStory, type Language, type LibraryStory } from "@aistory/shared";
+import { LibraryStorySchema, renderLibraryStory, THEMES, type Language, type LibraryStory } from "@aistory/shared";
 import { MUSIC_GROUPS, musicGroup, sceneName } from "@aistory/shared/media";
 import { reviewContentHash } from "../src/lib/library-review";
 import { buildAss, captionCues, episodeText, publishableStories, type ReviewFlag, type Segment } from "../src/lib/episode";
@@ -27,6 +29,8 @@ const DEFAULT_OUT = resolve(here, "../out/episodes");
 const DEFAULT_FONT = resolve(here, "assets/LXGWWenKaiTC-Regular.ttf");
 const FONT_NAME = "LXGW WenKai TC";
 const APP_URL = process.env.EPISODE_APP_URL ?? "https://aistory-web.vercel.app";
+/** 說明最後一行的製作單位，例如上架的頻道名稱 */
+const CREDIT = process.env.EPISODE_CREDIT;
 
 // 時間軸（秒）：開場音效 → 標題 → 段落 → 結尾音效，和 App 的節奏一樣
 const LEAD = 2.0;
@@ -44,6 +48,7 @@ function parseArgs(argv: string[]) {
     lang: "zh" as Language,
     audioOnly: false,
     dryRun: false,
+    next: false,
     out: DEFAULT_OUT,
     font: DEFAULT_FONT,
   };
@@ -55,6 +60,7 @@ function parseArgs(argv: string[]) {
     else if (a === "--lang") args.lang = z.enum(["zh", "en"]).parse(val());
     else if (a === "--audio-only") args.audioOnly = true;
     else if (a === "--dry-run") args.dryRun = true;
+    else if (a === "--next") args.next = true;
     else if (a === "--out") args.out = resolve(val());
     else if (a === "--font") args.font = resolve(val());
     else throw new Error(`unknown option: ${a}`);
@@ -180,7 +186,7 @@ async function renderEpisode(story: LibraryStory, lang: Language, dir: string, f
   // 中間檔很大（wav），刪掉；朗讀的 mp3 留著，重跑不用再花錢合成
   for (const f of readdirSync(dir)) if (f.endsWith(".wav") || f === "voice.txt") rmSync(join(dir, f));
 
-  const text = episodeText(story, lang, APP_URL);
+  const text = episodeText(story, lang, APP_URL, CREDIT);
   const info = { id: story.id, ...text, seconds: Math.round(duration(audio)), music: group, scene: sceneName(story.setting, story.theme, story.id) };
   writeFileSync(join(dir, "info.json"), JSON.stringify(info, null, 2) + "\n");
   return { ...info, audio, video, cover };
@@ -197,6 +203,30 @@ async function main() {
     const unknown = args.only.filter((id) => !ok.some((s) => s.id === id));
     if (unknown.length) throw new Error(`not publishable (missing, not reviewed ok, changed since review, or sensitive): ${unknown.join(", ")}`);
     todo = ok.filter((s) => args.only!.includes(s.id));
+  } else if (args.next) {
+    // 下一批：跳過輸出資料夾裡已經做過的，各類（主題分類或故事風格）輪流挑，一批裡不會都是同一種
+    const done = new Set(existsSync(args.out) ? readdirSync(args.out) : []);
+    const groups = new Map<string, LibraryStory[]>();
+    for (const s of ok.filter((s) => !done.has(s.id)).sort((a, b) => a.id.localeCompare(b.id))) {
+      const key = s.theme ? THEMES[s.theme].category : s.style;
+      groups.set(key, [...(groups.get(key) ?? []), s]);
+    }
+    // 同一分類裡，不同主題也輪流（不會連著三則「生氣」）
+    const spread = (list: LibraryStory[]) => {
+      const seen = new Map<string, number>();
+      const rank = new Map(list.map((s) => {
+        const k = s.theme ?? s.id;
+        const n = seen.get(k) ?? 0;
+        seen.set(k, n + 1);
+        return [s.id, n] as const;
+      }));
+      return [...list].sort((a, b) => rank.get(a.id)! - rank.get(b.id)! || a.id.localeCompare(b.id));
+    };
+    const queues = [...groups.entries()].sort(([a], [b]) => a.localeCompare(b)).map(([, list]) => spread(list));
+    todo = [];
+    while (todo.length < args.limit && queues.some((q) => q.length)) {
+      for (const q of queues) if (q.length && todo.length < args.limit) todo.push(q.shift()!);
+    }
   } else {
     // 晚安、可愛的放前面（頻道主打睡前）；同風格裡沒有主題的純故事先，主題故事穿插在後；結果固定
     const order = ["bedtime", "cute", "adventure", "inspiring"];
@@ -217,7 +247,7 @@ async function main() {
   }, 0);
   console.log(`about ${chars} characters of speech (Azure neural TTS bills per character)`);
   if (args.dryRun) {
-    for (const s of todo) console.log(`  ${s.id}  ${episodeText(s, args.lang, APP_URL).title}`);
+    for (const s of todo) console.log(`  ${s.id}  ${episodeText(s, args.lang, APP_URL, CREDIT).title}`);
     return;
   }
   if (!isTtsConfigured()) throw new Error("AZURE_SPEECH_KEY / AZURE_SPEECH_REGION are required (use --dry-run to only list)");

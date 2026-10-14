@@ -130,7 +130,8 @@ export interface EpisodeText {
   tags: string[];
 }
 
-export function episodeText(story: LibraryStory, language: Language, appUrl: string): EpisodeText {
+/** credit：說明最後的製作單位（例如頻道名稱），可不給 */
+export function episodeText(story: LibraryStory, language: Language, appUrl: string, credit?: string): EpisodeText {
   const r = renderLibraryStory(story, language);
   const kind = story.theme ? THEMES[story.theme].label[language] : STYLE_RULES[story.style].label;
   const ages = ageRangeLabel(story.ageBands);
@@ -150,6 +151,7 @@ export function episodeText(story: LibraryStory, language: Language, appUrl: str
     `適合 ${ages}・${kind}`,
     "故事由 AI 協助創作。音樂：Mureka AI 生成（商用授權）／朗讀：Microsoft Azure 神經語音／插畫：Canva AI",
   );
+  if (credit) lines.push(credit);
   const tags = ["睡前故事", "兒童故事", "床邊故事", "親子共讀", kind];
   lines.push("", tags.map((t) => `#${t.replace(/\s/g, "")}`).join(" "));
   return {
