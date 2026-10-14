@@ -7,6 +7,7 @@ import {
   STORY_SETTINGS,
   STYLE_RULES,
   StoryOutputSchema,
+  storyLength,
   type Hero,
   type StoryOutput,
   type StoryRequest,
@@ -113,6 +114,12 @@ function buildInstructions(req: StoryRequest): string {
     .join("\n");
 }
 
+/** 字數不到該年齡層下限的一半，視為空殼故事 */
+function isHollow(story: StoryOutput, req: StoryRequest): boolean {
+  const [min] = LENGTH_RULES[req.length].words[req.ageBand][req.language];
+  return !story.title.trim() || storyLength(story.paragraphs, req.language) < min / 2;
+}
+
 export async function generateStory(req: StoryRequest): Promise<StoryOutput> {
   return (await generateStoryDetailed(req)).story;
 }
@@ -131,23 +138,32 @@ export async function generateStoryDetailed(
   }
   content.push({ type: "text", text: buildInstructions(req) });
 
-  const response = await client.beta.messages.parse({
-    model: opts.model ?? MODEL,
-    // 10 分鐘中文故事約 2,200 字，要留足輸出空間
-    max_tokens: 16000,
-    betas: ["server-side-fallback-2026-07-01"],
-    fallbacks: "default",
-    // 說故事不需要深度推理，low effort 省 token、回得快
-    output_config: { effort: "low", format: betaZodOutputFormat(req.theme ? ThemedStoryOutputSchema : StoryOutputSchema) },
-    system: [{ type: "text", text: SYSTEM, cache_control: { type: "ephemeral" } }],
-    messages: [{ role: "user", content }],
-  });
+  const schema = req.theme ? ThemedStoryOutputSchema : StoryOutputSchema;
+  const call = (effort: "low" | "medium") =>
+    client.beta.messages.parse({
+      model: opts.model ?? MODEL,
+      // 10 分鐘中文故事約 2,200 字，要留足輸出空間
+      max_tokens: 16000,
+      betas: ["server-side-fallback-2026-07-01"],
+      fallbacks: "default",
+      output_config: { effort, format: betaZodOutputFormat(schema) },
+      system: [{ type: "text", text: SYSTEM, cache_control: { type: "ephemeral" } }],
+      messages: [{ role: "user", content }],
+    });
+
+  // 說故事不需要深度推理，先用 low effort 省 token；
+  // 但實測 low 偶爾會吐出「x」這種空殼 JSON（無法解析或字數極少），這時改用 medium 重試一次
+  let response = await call("low").catch(() => null);
+  if (response?.stop_reason === "refusal") throw new StoryRefusedError("refused");
+  if (!response?.parsed_output || isHollow(response.parsed_output, req)) {
+    response = await call("medium");
+  }
 
   if (response.stop_reason === "refusal") {
     throw new StoryRefusedError("refused");
   }
-  if (!response.parsed_output) {
-    throw new Error(`unparseable output (stop_reason=${response.stop_reason})`);
+  if (!response.parsed_output || isHollow(response.parsed_output, req)) {
+    throw new Error(`unusable output (stop_reason=${response.stop_reason})`);
   }
   // 「再講一個」沿用原本的場景描述，不讓模型改寫，避免多次重講後場景漂移
   const story = req.scene ? { ...response.parsed_output, scene: req.scene } : response.parsed_output;

@@ -128,7 +128,9 @@ export async function generateLibraryStory(
     betas: ["server-side-fallback-2026-07-01"],
     fallbacks: "default",
     output_config: {
-      effort: "low",
+      // 實測 low effort 生成故事庫（中英雙語＋引導卡）約四成會吐出「x」空殼，medium 才穩定；
+      // 故事庫是一次性批次生成，用 medium 的成本可以接受
+      effort: "medium",
       format: betaZodOutputFormat(entry.theme ? LibraryThemedOutputSchema : LibraryOutputSchema),
     },
     system: [{ type: "text", text: LIBRARY_SYSTEM, cache_control: { type: "ephemeral" } }],

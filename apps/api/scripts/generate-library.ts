@@ -178,6 +178,11 @@ async function main() {
         draft: true,
       });
       const len = lengthReport(story);
+      // 空殼故事（標題或段落像 "x"）不寫入，算失敗，之後用 --only 重跑
+      for (const lang of ["zh", "en"] as const) {
+        const n = storyLength(renderLibraryStory(story, lang).paragraphs, lang);
+        if (n < libraryLength(story).lang[lang].rule[0] / 2) throw new Error(`hollow ${lang} story (${n})`);
+      }
       const usd = cost(usage);
       total += usd;
       console.log(

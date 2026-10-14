@@ -222,7 +222,7 @@
     "ageBands": ["6-8"],
     "style": "inspiring",
     "setting": "school",
-    "premise": "{name}'s class plans a secret thank-you party for the school janitor, a surprise that makes everyone smile. The same week, a different 'never tell anyone' secret leaves {name} uneasy, so {name} sorts the two kinds of secrets and tells {his} teacher."
+    "premise": "{name}'s class plans a secret thank-you party for the school janitor, a surprise that makes everyone smile. The same week, an older kid takes a classmate's snack money and says 'never tell anyone', which leaves {name} uneasy, so {name} sorts the two kinds of secrets and tells {his} teacher. No tickling in this story."
   },
   {
     "id": "good-bad-secrets-mountain-cabin",
@@ -254,7 +254,7 @@
     "ageBands": ["6-8"],
     "style": "inspiring",
     "setting": "school",
-    "premise": "In P.E., a classmate gets lifted up in a game and doesn't like it. {name} remembers how it feels when {his} own no isn't heard, speaks up for both of them, and the class adds 'ask first' to their game rules."
+    "premise": "In P.E., a classmate gets lifted up in a game and doesn't like it. {name} remembers how it feels when {his} own no isn't heard, speaks up for both of them, and the class adds 'ask first' to their game rules. No tickling in this story."
   },
   {
     "id": "trusted-adults-safety-hand",
@@ -262,7 +262,7 @@
     "ageBands": ["4-6"],
     "style": "inspiring",
     "setting": "school",
-    "premise": "At kindergarten, {name} traces {his} hand and writes a trusted grown-up on each finger: Mom, Grandpa, Teacher Lin, the school nurse, and Auntie downstairs. When a worry comes along, {name}'s safety hand reminds {him} to keep telling until someone helps."
+    "premise": "At kindergarten, {name} traces {his} hand and writes a trusted grown-up on each finger: Mom, Grandpa, Teacher Lin, the school nurse, and Auntie downstairs. When a big kid at the park keeps saying mean things and {name} feels scared, {name}'s safety hand reminds {him} to keep telling until someone helps. No tickling in this story."
   },
   {
     "id": "trusted-adults-fishing-net",
@@ -270,7 +270,7 @@
     "ageBands": ["6-8", "8-10"],
     "style": "inspiring",
     "setting": "sea",
-    "premise": "At a summer camp in a fishing harbor, {name} learns that a strong net has many knots. {name} builds a safety net of five trusted adults, including a camp teacher, and when the first grown-up is too busy to listen, {name} keeps asking until someone helps."
+    "premise": "At a summer camp in a fishing harbor, {name} learns that a strong net has many knots. {name} builds a safety net of five trusted adults, including a camp teacher. When {name} sees a younger camper being pushed and left out at the bus stop and the first grown-up is too busy to listen, {name} keeps asking until someone helps. No tickling in this story."
   },
   {
     "id": "not-your-fault-brave-voice",
@@ -278,7 +278,7 @@
     "ageBands": ["6-8", "8-10"],
     "style": "inspiring",
     "setting": "forest",
-    "premise": "On a school forest trip, {name} finally tells Teacher Chen about a game an older kid played that made {him} feel uncomfortable, a worry {name} had kept quiet for weeks. Teacher Chen listens, thanks {him} for being brave, and makes clear it was never {name}'s fault and that the grown-ups will take care of it."
+    "premise": "On a school forest trip, {name} finally tells Teacher Chen about a game an older kid played that made {him} feel uncomfortable: {name} said stop, the older kid didn't listen and told {him} to keep it secret, and {name} kept the worry quiet for weeks. Teacher Chen listens, thanks {him} for being brave, and makes clear it was never {name}'s fault and that the grown-ups will take care of it. Keep the events consistent: {name} did say stop."
   },
   {
     "id": "brushing-teeth-sugar-bugs",
