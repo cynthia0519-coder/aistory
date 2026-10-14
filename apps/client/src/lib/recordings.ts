@@ -18,7 +18,7 @@ export interface RecordingEntry {
   createdAt: number;
 }
 
-const keyOf = (storyId: string, index: number) => `${storyId}#${index}`;
+export const recordingKey = (storyId: string, index: number) => `${storyId}#${index}`;
 
 /** 這個故事的錄音，依段落 */
 export async function loadRecordings(storyId: string): Promise<Map<number, RecordingEntry>> {
@@ -27,7 +27,7 @@ export async function loadRecordings(storyId: string): Promise<Map<number, Recor
 }
 
 export async function saveRecording(storyId: string, index: number, text: string, blob: Blob): Promise<RecordingEntry> {
-  const entry: RecordingEntry = { key: keyOf(storyId, index), storyId, index, text, blob, createdAt: Date.now() };
+  const entry: RecordingEntry = { key: recordingKey(storyId, index), storyId, index, text, blob, createdAt: Date.now() };
   await (await db()).put(RECORDING_STORE, entry);
   return entry;
 }

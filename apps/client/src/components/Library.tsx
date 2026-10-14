@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   AGE_BANDS,
   AGE_RULES,
@@ -16,8 +16,10 @@ import { deleteStory, listStories, type SavedStory } from "@/lib/storage";
 import { lookOf, type HeroProfile } from "@/lib/heroes";
 import { ageRangeLabel, CATEGORY_CHIPS, filterLibrary, loadLibrary, renderForHero, type LibraryPrefs } from "@/lib/library";
 import { sceneSrc } from "@/lib/scenes";
+import { BackupError, exportBackup, hasRecordings, importBackup, shareBackup } from "@/lib/backup";
+import { canUse } from "@/lib/membership";
 import { HeroAvatar } from "./HeroAvatar";
-import { StarIcon, TrashIcon } from "./icons";
+import { LockIcon, StarIcon, TrashIcon } from "./icons";
 import { PrimaryButton } from "./ui";
 
 interface Props {
@@ -130,6 +132,10 @@ export function Library({ prefs, onPrefs, hero, onOpen, onOpenLibrary, onCreate,
             </li>
           ))}
         </ul>
+      )}
+
+      {prefs.tab === "mine" && stories && (
+        <BackupCard onShop={onShop} onImported={() => listStories().then(setStories)} />
       )}
 
       <button type="button" onClick={onCredits} className="mx-auto mt-8 h-11 px-4 text-sm text-ink-soft underline">
@@ -303,5 +309,78 @@ function Cover({ story }: { story: SavedStory }) {
         <HeroAvatar look={story.heroLook} size={42} variant="bust" className="absolute left-2 top-2 rounded-full ring-2 ring-card drop-shadow-sm" />
       )}
     </BookCover>
+  );
+}
+
+/** 錄音備份：換手機時把爸媽的錄音、書櫃和主角帶過去。匯出是會員權益，匯入不限 */
+function BackupCard({ onShop, onImported }: { onShop: () => void; onImported: () => void }) {
+  const [busy, setBusy] = useState(false);
+  const [message, setMessage] = useState<string | null>(null);
+  const input = useRef<HTMLInputElement>(null);
+
+  async function doExport() {
+    if (!canUse("recordingBackup")) return onShop();
+    setBusy(true);
+    setMessage(null);
+    try {
+      if (!(await hasRecordings())) {
+        setMessage("還沒有錄音。打開故事，選「錄我的聲音」就能錄。");
+        return;
+      }
+      const { file, summary } = await exportBackup();
+      await shareBackup(file);
+      setMessage(`備份了 ${summary.recordings} 段錄音、${summary.stories} 個故事。把檔案存到「檔案」或雲端硬碟，換手機後再匯入。`);
+    } catch {
+      setMessage("備份失敗，再試一次。");
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  async function doImport(file: File | undefined) {
+    if (!file) return;
+    setBusy(true);
+    setMessage(null);
+    try {
+      const s = await importBackup(file);
+      setMessage(`匯入了 ${s.recordings} 段錄音、${s.stories} 個故事、${s.heroes} 位主角。`);
+      onImported();
+    } catch (e) {
+      setMessage(e instanceof BackupError ? e.message : "匯入失敗，手機空間可能不夠。");
+    } finally {
+      setBusy(false);
+      if (input.current) input.current.value = "";
+    }
+  }
+
+  return (
+    <section className="mx-4 mt-8 flex flex-col gap-2 rounded-2xl bg-card p-4 ring-2 ring-line">
+      <h2 className="font-display text-lg font-bold">錄音備份</h2>
+      <p className="text-sm leading-relaxed text-ink-soft">
+        爸媽的錄音只存在這支手機。換手機前先備份，到新手機再匯入，錄音和書櫃都會回來。
+      </p>
+      <div className="mt-1 grid grid-cols-2 gap-2">
+        <button
+          type="button"
+          onClick={() => void doExport()}
+          disabled={busy}
+          className="flex h-11 items-center justify-center gap-1.5 rounded-full bg-teal px-3 text-sm font-bold text-paper disabled:opacity-40"
+        >
+          {!canUse("recordingBackup") && <LockIcon className="h-4 w-4" />}
+          匯出備份
+        </button>
+        <button
+          type="button"
+          onClick={() => input.current?.click()}
+          disabled={busy}
+          className="h-11 rounded-full bg-card px-3 text-sm font-bold ring-2 ring-line disabled:opacity-40"
+        >
+          匯入備份
+        </button>
+      </div>
+      {/* 不設 accept：iOS 的檔案選擇器會把不認得的副檔名反灰 */}
+      <input ref={input} type="file" hidden onChange={(e) => void doImport(e.target.files?.[0])} />
+      {message && <p className="text-sm leading-relaxed text-rust-dark">{message}</p>}
+    </section>
   );
 }
