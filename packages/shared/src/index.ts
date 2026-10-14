@@ -59,6 +59,14 @@ export function ageBandFor(age: number): AgeBand {
 export const STORY_STYLES = ["adventure", "inspiring", "cute", "bedtime"] as const;
 export type StoryStyle = (typeof STORY_STYLES)[number];
 
+/** 年齡層合起來的範圍，例如 ["2-4","4-6"] → 「2–6 歲」 */
+export function ageRangeLabel(bands: readonly AgeBand[]): string {
+  const sorted = [...bands].sort((a, b) => AGE_BANDS.indexOf(a) - AGE_BANDS.indexOf(b));
+  const from = sorted[0].split("-")[0];
+  const to = sorted[sorted.length - 1].split("-")[1];
+  return `${from}–${to} 歲`;
+}
+
 export const STYLE_RULES: Record<StoryStyle, { label: string; hint: string; prompt: string }> = {
   adventure: {
     label: "冒險",

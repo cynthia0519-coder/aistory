@@ -3,8 +3,8 @@
 // 網頁版由 service worker（public/sw.js）快取，第一次載入後離線也能讀；App 版檔案本來就在裝置上。
 // 故事庫的故事只在閱讀時臨時組成 SavedStory，不寫進 IndexedDB。
 import {
-  AGE_BANDS,
   ageBandFor,
+  ageRangeLabel,
   LibraryStorySchema,
   renderLibraryStory,
   THEME_CATEGORIES,
@@ -103,9 +103,4 @@ export function toReadableStory(story: LibraryStory, language: Language, hero: H
 }
 
 /** 卡片上的年齡範圍，例如 ["2-4","4-6"] → "2–6 歲" */
-export function ageRangeLabel(bands: readonly AgeBand[]): string {
-  const sorted = [...bands].sort((a, b) => AGE_BANDS.indexOf(a) - AGE_BANDS.indexOf(b));
-  const from = sorted[0].split("-")[0];
-  const to = sorted[sorted.length - 1].split("-")[1];
-  return `${from}–${to} 歲`;
-}
+export { ageRangeLabel };

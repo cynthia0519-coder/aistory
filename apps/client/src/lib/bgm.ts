@@ -9,7 +9,8 @@
 // 歌用 <audio> 串流播放、接進 Web Audio 控制音量：邊下載邊播，也不用把整首解碼進記憶體。
 // iOS 每個 <audio> 第一次播放都要在使用者手勢裡，所以 start() / setEnabled(true)
 // 必須在按鈕的 click 處理函式裡「同步」呼叫；兩個播放器都在那時解鎖。
-import { THEMES, type StoryStyle, type ThemeId } from "@aistory/shared";
+import type { StoryStyle, ThemeId } from "@aistory/shared";
+import { MUSIC_GROUPS, musicGroup, type MusicGroup } from "@aistory/shared/media";
 
 export interface BackgroundMusic {
   isSupported(): boolean;
@@ -26,18 +27,8 @@ export interface BackgroundMusic {
   isEnabled(): boolean;
 }
 
-/** 曲組與歌數；檔名是 `${曲組}-${1..n}.mp3` */
-const GROUPS = {
-  bedtime: 4,
-  cute: 3,
-  adventure: 3,
-  inspiring: 6,
-  "theme-tender": 2,
-  "theme-careful": 2,
-  "theme-routine": 2,
-  "theme-calm": 2,
-} as const;
-type Group = keyof typeof GROUPS;
+const GROUPS = MUSIC_GROUPS;
+type Group = MusicGroup;
 
 /** 換歌時交叉淡化的秒數 */
 const CROSSFADE = 4;
@@ -46,21 +37,6 @@ const DUCKED = 0.35;
 const SFX_VOLUME = 0.7;
 /** 開場音效先響一下，音樂再淡入 */
 const MUSIC_DELAY = 1.2;
-
-/** 情緒比較重的主題不管分類都用溫柔的那組 */
-const TENDER_THEMES: ThemeId[] = ["pet-loss", "fear-of-dark", "new-sibling"];
-
-function pickGroup(style: StoryStyle, theme?: ThemeId): Group {
-  if (theme) {
-    if (TENDER_THEMES.includes(theme)) return "theme-tender";
-    const category = THEMES[theme]?.category;
-    if (category === "body") return "theme-tender";
-    if (category === "safety") return "theme-careful";
-    if (category === "habits") return "theme-routine";
-    if (category === "emotions") return "theme-calm";
-  }
-  return style;
-}
 
 const songUrl = (group: Group, n: number) => `/music/${group}-${n}.mp3`;
 const sfxUrl = (name: string) => `/music/${name}.mp3`;
@@ -243,7 +219,7 @@ function createEngine(): BackgroundMusic {
       ("AudioContext" in window || "webkitAudioContext" in (window as unknown as Record<string, unknown>)),
 
     start(style, theme) {
-      wanted = pickGroup(style, theme);
+      wanted = musicGroup(style, theme);
       if (!enabled) return;
       ensureContext();
       sfx("sfx-start");

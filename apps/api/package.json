@@ -11,7 +11,8 @@
     "eval": "tsx eval/story-quality.ts",
     "library:generate": "tsx scripts/generate-library.ts",
     "library:review": "tsx scripts/review-library.ts",
-    "test": "tsx --test test/*.test.ts"
+    "test": "tsx --test test/*.test.ts",
+    "episodes:render": "tsx scripts/render-episodes.ts"
   },
   "dependencies": {
     "@aistory/shared": "*",
