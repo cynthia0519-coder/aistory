@@ -7,6 +7,7 @@ import {
   checkGuide,
   checkLength,
   checkParagraphs,
+  checkHeroGender,
   checkPhoneNumbers,
   checkSensitivePatterns,
   checkTokens,
@@ -130,6 +131,18 @@ test("phone and hotline numbers", () => {
   assert.deepEqual(by("zh", "3"), []);
   assert.equal(by("en", "0")[0]?.severity, "high");
   assert.equal(by("en", "1")[0]?.severity, "medium");
+});
+
+test("hero counted in 她們", () => {
+  const s = makeStory({
+    paragraphs: {
+      zh: ["媽媽和{name}一起走，她們先截圖。", "媽媽和奶奶聊天，她們笑了。{name}在玩。", "{name}和爸爸去公園。"],
+      en: ["a", "b", "c"],
+    },
+  });
+  const c = checkHeroGender(s);
+  assert.deepEqual(c.map((x) => x.where), ["0"]);
+  assert.equal(c[0].severity, "medium");
 });
 
 test("hotline in the guide is flagged", () => {

@@ -31,6 +31,7 @@ export const CHECK_KINDS = [
   "guide_missing",
   "zh_half_width_punct",
   "phone_number",
+  "hero_gender",
   "duplicate_title",
   "sensitive_pattern",
 ] as const;
@@ -214,6 +215,29 @@ export function checkPhoneNumbers(story: LibraryStory): ReviewCheck[] {
 }
 
 /** 單篇故事的規則檢查（不含跨故事的重複標題、敏感情節） */
+/**
+ * 主角不指定性別（{he} 會依設定換成他／她或名字），所以主角所在的句子不能出現「她們」：
+ * 例如「媽媽和{name}……她們」會把主角寫成女生。LLM 評審只抓得到一部分，這裡用規則補。
+ */
+export function checkHeroGender(story: LibraryStory): ReviewCheck[] {
+  const out: ReviewCheck[] = [];
+  for (const f of textFields(story)) {
+    if (f.lang !== "zh") continue;
+    for (const sentence of f.text.split(/(?<=[。！？])/)) {
+      if (sentence.includes("她們") && /\{(?:name|he|him|his)\}/.test(sentence)) {
+        out.push({
+          kind: "hero_gender",
+          severity: "medium",
+          lang: "zh",
+          where: f.where,
+          note: `「${sentence.trim().slice(0, 40)}」：主角和「她們」在同一句，可能把主角寫成女生；包含主角時用「他們」或改寫`,
+        });
+      }
+    }
+  }
+  return out;
+}
+
 export function checkStory(story: LibraryStory): ReviewCheck[] {
   return [
     ...checkParagraphs(story),
@@ -222,6 +246,7 @@ export function checkStory(story: LibraryStory): ReviewCheck[] {
     ...checkGuide(story),
     ...checkZhPunctuation(story),
     ...checkPhoneNumbers(story),
+    ...checkHeroGender(story),
   ];
 }
 
