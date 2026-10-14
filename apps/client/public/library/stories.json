@@ -12310,5 +12310,59 @@
       }
     },
     "draft": true
+  },
+  {
+    "id": "gratitude-ant-and-the-rice-ball",
+    "style": "fable",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "forest",
+    "title": {
+      "zh": "小螞蟻豆豆的謝謝飯糰",
+      "en": "Dodo the Ant and the Thank-You Rice Ball"
+    },
+    "paragraphs": {
+      "zh": [
+        "早晨的森林好安靜。{name}和奶奶在小路上散步。奶奶說：「我們去看田嬸嬸。」走著走著，草叢裡傳來小小的歡呼聲。原來是小螞蟻豆豆。牠站在一顆大飯糰旁邊，開心得跳來跳去。",
+        "「這是我找到的！」豆豆大聲說。「我的運氣最好，全都是我的！」{name}蹲下來看。飯糰白白的，又香又軟。地上還有一顆一顆的飯粒。{name}說：「你看，飯粒排成一條線耶。」豆豆歪著頭說：「我們跟著去看看吧！」",
+        "奶奶牽著{name}的手，慢慢往前走。豆豆坐在{name}的手心上。飯粒一路排到森林邊。那裡有一片金黃色的稻田。田嬸嬸坐在大樹下，打開便當盒。她笑著說：「咦，我的飯糰不見了！」",
+        "豆豆小聲說：「對不起，是我撿到的。」田嬸嬸搖搖頭說：「沒關係，送給你吧！」她指著稻田說：「這些米是我春天種的。我每天來拔草，照顧小秧苗。」豆豆睜大眼睛說：「原來飯糰是妳種出來的！」",
+        "這時候，一朵灰雲飄過來。細細的雨滴，輕輕落下。田嬸嬸說：「雨也幫了大忙喔。稻子要喝很多水，才會長高。」雨滴在葉子上滴答滴答。{name}和豆豆躲在大葉子下，靜靜聽雨唱歌。",
+        "雨停了，太陽探出頭來。陽光暖暖的，照在稻穗上。田嬸嬸說：「太陽把稻子曬熟，米才會香甜。」豆豆用小腳數一數：「田嬸嬸、雨、太陽……好多人幫我！」{name}笑著說：「豆豆，你有好多好朋友。」豆豆說：「我覺得自己好富有！」",
+        "豆豆看著大飯糰，想了又想。「第一口，我要拿來說謝謝。」牠搬起一顆飯粒，送給田嬸嬸。田嬸嬸笑得好開心。{name}輕輕把豆豆放到大石頭上。豆豆在石頭上放了兩顆飯粒，一顆給雨，一顆給太陽。",
+        "微風吹過，稻穗沙沙響，好像在點頭。陽光把飯粒照得亮晶晶。豆豆的心暖暖的，{name}的心也暖暖的。奶奶說：「該回家囉。」{name}揮揮手說：「田嬸嬸，謝謝妳的飯糰！」豆豆扛起飯糰，開心地喊：「明天見！」"
+      ],
+      "en": [
+        "The forest was quiet in the morning. {name} walked down the path with Grandma. \"Let's visit Auntie Tian,\" Grandma said. Soon, a tiny cheer came from the grass. It was Dodo, a little ant. He was hopping beside a big rice ball.",
+        "\"I found it!\" Dodo shouted. \"I'm the luckiest ant. It's all mine!\" {name} knelt down to look. The rice ball was white, soft, and smelled so good. Little grains of rice lay on the ground. \"Look, the grains make a line,\" said {name}. Dodo tilted his head. \"Let's follow them!\"",
+        "Grandma held {name}'s hand, and they walked slowly. Dodo rode in {name}'s palm. The grains led to the edge of the forest. There lay a golden rice field. Auntie Tian sat under a tree with her lunch box. \"Oh my,\" she laughed. \"My rice ball is gone!\"",
+        "\"Sorry,\" Dodo whispered. \"I found it.\" Auntie Tian shook her head kindly. \"That's okay. You may keep it.\" She pointed at the field. \"I planted this rice in spring. I pulled weeds and cared for the tiny sprouts.\" Dodo's eyes grew wide. \"So you grew my rice ball!\"",
+        "Just then, a gray cloud drifted over. Soft raindrops began to fall. \"The rain helped too,\" said Auntie Tian. \"Rice needs lots of water to grow tall.\" Drip, drop, went the rain on the leaves. {name} and Dodo sat under a big leaf and listened.",
+        "The rain stopped, and the sun peeked out. Warm light shone on the rice. \"The sun made the rice ripe and sweet,\" said Auntie Tian. Dodo counted on his little legs. \"Auntie Tian, the rain, the sun... So many helpers!\" {name} smiled. \"Dodo, you have so many friends.\" \"I feel rich!\" said Dodo.",
+        "Dodo looked at the rice ball and thought hard. \"My first bite will be a thank-you.\" He carried one grain to Auntie Tian. She gave him a big smile. {name} gently set Dodo on a sunny rock. Dodo left two grains there, one for the rain and one for the sun.",
+        "A breeze blew, and the rice swished, as if nodding. The sun made the grains sparkle. Dodo felt warm inside, and so did {name}. \"Time to go home,\" said Grandma. {name} waved. \"Thank you for the rice ball, Auntie Tian!\" Dodo lifted the rice ball and cheered, \"See you tomorrow!\""
+      ]
+    },
+    "theme": "gratitude",
+    "guide": {
+      "zh": {
+        "questions": [
+          "豆豆發現有哪些人和東西幫忙做出飯糰？",
+          "豆豆用什麼方法說謝謝？田嬸嬸收到時有什麼感覺？",
+          "今天有誰幫助了你？你想用什麼小動作謝謝他們？"
+        ],
+        "tip": "今晚吃飯前，和孩子一起想一想這頓飯是誰、是什麼幫忙送到桌上的，輪流說一句謝謝。也可以這週選一個人，用畫圖或擁抱來表達感謝。"
+      },
+      "en": {
+        "questions": [
+          "Which people and things did Dodo find out helped make the rice ball?",
+          "How did Dodo say thank you? How do you think Auntie Tian felt?",
+          "Who helped you today? What small thing could you do to thank them?"
+        ],
+        "tip": "Before dinner tonight, think together about who and what helped bring the food to your table, and take turns saying one thank-you. This week, pick one helper to thank with a drawing or a hug."
+      }
+    },
+    "draft": true
   }
 ]
