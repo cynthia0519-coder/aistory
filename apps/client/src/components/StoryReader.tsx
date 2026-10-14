@@ -6,6 +6,7 @@ import { requestStory, StoryApiError } from "@/lib/api";
 import { saveStory, type SavedStory } from "@/lib/storage";
 import { bgm, loadMusicPref, saveMusicPref } from "@/lib/bgm";
 import { narrator } from "@/lib/tts";
+import { sceneSrc } from "@/lib/scenes";
 import { BackIcon, MusicIcon, MusicOffIcon, PauseIcon, PlayIcon, RepeatIcon } from "./icons";
 import { HeroAvatar } from "./HeroAvatar";
 import { StoryLoading } from "./StoryLoading";
@@ -146,7 +147,7 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
       <header className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-paper-deep">
         {/* 場景插畫隨 App 打包（public/scenes），離線也看得到 */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={`/scenes/${story.setting ?? "park"}.jpg`} alt="" className="h-full w-full object-cover" />
+        <img src={sceneSrc(story.setting, story.theme)} alt="" className="h-full w-full object-cover" />
         <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-b from-paper/0 to-paper" />
         <button
           type="button"

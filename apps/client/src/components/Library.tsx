@@ -15,6 +15,7 @@ import {
 import { deleteStory, listStories, type SavedStory } from "@/lib/storage";
 import { lookOf, type HeroProfile } from "@/lib/heroes";
 import { ageRangeLabel, CATEGORY_CHIPS, filterLibrary, loadLibrary, renderForHero, type LibraryPrefs } from "@/lib/library";
+import { sceneSrc } from "@/lib/scenes";
 import { HeroAvatar } from "./HeroAvatar";
 import { StarIcon, TrashIcon } from "./icons";
 import { PrimaryButton } from "./ui";
@@ -244,7 +245,7 @@ function LibraryShelf({
               <li key={s.id}>
                 <button type="button" onClick={() => onOpen(list, i)} className="flex w-full flex-col gap-2 text-left">
                   <BookCover
-                    src={`/scenes/${s.setting}.jpg`}
+                    src={sceneSrc(s.setting, s.theme)}
                     label={`${s.theme ? THEMES[s.theme].label.zh : STYLE_RULES[s.style].label} · ${ageRangeLabel(s.ageBands)}`}
                   >
                     {look && (
@@ -282,7 +283,7 @@ function Cover({ story }: { story: SavedStory }) {
   useEffect(() => () => {
     if (url) URL.revokeObjectURL(url);
   }, [url]);
-  const src = url ?? `/scenes/${story.setting ?? "park"}.jpg`;
+  const src = url ?? sceneSrc(story.setting, story.theme);
   const meta = [
     LANGUAGE_LABELS[story.language] === "中文" ? "中" : "EN",
     AGE_RULES[story.ageBand].label,
