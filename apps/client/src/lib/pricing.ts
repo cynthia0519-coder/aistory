@@ -26,16 +26,16 @@ export const PRICING: { plans: PricingPlan[]; defaultPlan: PricingPlan["id"] } =
       id: "yearly",
       title: "年訂閱 · 完整",
       detail: "每天 1 個故事，3 或 10 分鐘任選",
-      price: "NT$1,299 / 年",
+      price: "NT$1,499 / 年",
       badge: "最划算",
-      deal: deal(1299, 12),
+      deal: deal(1499, 12),
     },
     {
       id: "half_year",
       title: "半年訂閱 · 完整",
       detail: "每天 1 個故事，3 或 10 分鐘任選",
       price: "NT$999 / 半年",
-      // 半年方案是年訂的對照：只差 NT$300 就多 6 個月
+      // 半年方案是年訂的對照：只差 NT$500 就多 6 個月
       deal: deal(999, 6),
     },
     { id: "monthly_full", title: "月訂閱 · 完整", detail: "每天 1 個故事，3 或 10 分鐘任選", price: "NT$199 / 月" },
@@ -47,4 +47,4 @@ export const PRICING: { plans: PricingPlan[]; defaultPlan: PricingPlan["id"] } =
 };
 
 /** 選了半年方案時的升級提示：只要再多一點就是一整年 */
-export const YEARLY_NUDGE = "再加 NT$300，就從半年變一整年";
+export const YEARLY_NUDGE = "再加 NT$500，就從半年變一整年";
