@@ -377,7 +377,7 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
       <header className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-paper-deep">
         {/* 場景插畫隨 App 打包（public/scenes），離線也看得到 */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={sceneSrc(story.setting, story.theme)} alt="" className="h-full w-full object-cover" />
+        <img src={sceneSrc(story.setting, story.theme, story.id)} alt="" className="h-full w-full object-cover" />
         <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-b from-paper/0 to-paper" />
         <button
           type="button"

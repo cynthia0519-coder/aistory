@@ -256,7 +256,7 @@ function LibraryShelf({
               <li key={s.id}>
                 <button type="button" onClick={() => onOpen(list, i)} className="flex w-full flex-col gap-2 text-left">
                   <BookCover
-                    src={sceneSrc(s.setting, s.theme)}
+                    src={sceneSrc(s.setting, s.theme, s.id)}
                     label={`${s.theme ? THEMES[s.theme].label.zh : STYLE_RULES[s.style].label} · ${ageRangeLabel(s.ageBands)}`}
                   >
                     {look && (
@@ -294,7 +294,7 @@ function Cover({ story }: { story: SavedStory }) {
   useEffect(() => () => {
     if (url) URL.revokeObjectURL(url);
   }, [url]);
-  const src = url ?? sceneSrc(story.setting, story.theme);
+  const src = url ?? sceneSrc(story.setting, story.theme, story.id);
   const meta = [
     LANGUAGE_LABELS[story.language] === "中文" ? "中" : "EN",
     AGE_RULES[story.ageBand].label,

@@ -1,6 +1,6 @@
 // 網頁版離線支援：快取 App 外殼與故事庫，離線時仍可開啟並閱讀本地書櫃與故事庫。
 // 打包成 App（Capacitor）時檔案已在裝置上，不依賴這支。
-const CACHE = "aistory-v4";
+const CACHE = "aistory-v5";
 
 self.addEventListener("install", (e) => {
   e.waitUntil(
@@ -10,11 +10,14 @@ self.addEventListener("install", (e) => {
         "/manifest.webmanifest",
         "/library/stories.json",
         // 場景插畫也預存，沒看過的場景離線時才不會破圖
-        // 主題插圖清單要和 src/lib/scenes.ts 一致
+        // 插圖清單要和 @aistory/shared/media 的規則一致（apps/api/test/scenes.test.ts 會檢查）
         ...[
           "home", "park", "school", "zoo", "forest", "sea", "mountain", "city", "snow", "night_sky",
           "bathroom", "kitchen", "bedroom", "living_room", "clinic", "crosswalk", "classroom",
           "balcony", "storm", "riverside", "playground", "nursery", "garden", "moving",
+          // 同場景的第 2、3 張（SCENE_VARIANTS）
+          "classroom-2", "classroom-3", "city-2", "city-3", "home-2", "living_room-2", "sea-2", "playground-2",
+          "clinic-2", "crosswalk-2", "mountain-2", "night_sky-2", "forest-2", "zoo-2", "bedroom-2",
         ].map(
           (s) => `/scenes/${s}.jpg`,
         ),

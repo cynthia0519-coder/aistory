@@ -4,4 +4,5 @@ import { sceneName } from "@aistory/shared/media";
 
 export { sceneName };
 
-export const sceneSrc = (setting: StorySetting | undefined, theme?: ThemeId) => `/scenes/${sceneName(setting, theme)}.jpg`;
+export const sceneSrc = (setting: StorySetting | undefined, theme?: ThemeId, storyId?: string) =>
+  `/scenes/${sceneName(setting, theme, storyId)}.jpg`;

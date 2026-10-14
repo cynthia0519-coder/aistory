@@ -40,10 +40,43 @@ const THEMED_DEFAULTS: Partial<Record<StorySetting, string>> = {
   park: "playground",
 };
 
-export function sceneName(setting: StorySetting | undefined, theme?: ThemeId): string {
+/** 同一個場景有幾張插圖；第 1 張是原本的檔名，第 2 張起是 `${場景}-2.jpg`。故事依 id 固定分到其中一張 */
+export const SCENE_VARIANTS: Record<string, number> = {
+  classroom: 3,
+  city: 3,
+  home: 2,
+  living_room: 2,
+  sea: 2,
+  playground: 2,
+  clinic: 2,
+  crosswalk: 2,
+  mountain: 2,
+  night_sky: 2,
+  forest: 2,
+  zoo: 2,
+  bedroom: 2,
+};
+
+/** 故事庫的故事在裝置上的 id 是 `library:${id}:${語言}`；同一則故事不分語言、主角都用同一張圖 */
+function seedOf(id: string): string {
+  return id.startsWith("library:") ? id.split(":")[1] : id;
+}
+
+/** FNV-1a；只要穩定、分布均勻 */
+function hash(text: string): number {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < text.length; i++) h = Math.imul(h ^ text.charCodeAt(i), 0x01000193);
+  return h >>> 0;
+}
+
+/** 故事要用的插圖；給 storyId 才會在同一場景的幾張插圖裡分配，不給就用第 1 張 */
+export function sceneName(setting: StorySetting | undefined, theme?: ThemeId, storyId?: string): string {
   const s = setting ?? "park";
-  if (theme) return THEME_SCENES[theme]?.[s] ?? THEMED_DEFAULTS[s] ?? s;
-  return s;
+  const base = theme ? (THEME_SCENES[theme]?.[s] ?? THEMED_DEFAULTS[s] ?? s) : s;
+  const count = SCENE_VARIANTS[base] ?? 1;
+  if (!storyId || count === 1) return base;
+  const n = hash(seedOf(storyId)) % count;
+  return n === 0 ? base : `${base}-${n + 1}`;
 }
 
 // ---- 背景音樂 ----

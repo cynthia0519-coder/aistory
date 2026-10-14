@@ -153,7 +153,7 @@ async function renderEpisode(story: LibraryStory, lang: Language, dir: string, f
   ]);
 
   // 5. 封面：場景插畫裁成正方形（Podcast 平台要 1400×1400 以上）
-  const scene = join(CLIENT_PUBLIC, "scenes", `${sceneName(story.setting, story.theme)}.jpg`);
+  const scene = join(CLIENT_PUBLIC, "scenes", `${sceneName(story.setting, story.theme, story.id)}.jpg`);
   const cover = join(dir, `${story.id}-cover.jpg`);
   ffmpeg(["-i", scene, "-vf", "crop=ih:ih,scale=1400:1400:flags=lanczos", "-q:v", "3", cover]);
 
@@ -181,7 +181,7 @@ async function renderEpisode(story: LibraryStory, lang: Language, dir: string, f
   for (const f of readdirSync(dir)) if (f.endsWith(".wav") || f === "voice.txt") rmSync(join(dir, f));
 
   const text = episodeText(story, lang, APP_URL);
-  const info = { id: story.id, ...text, seconds: Math.round(duration(audio)), music: group, scene: sceneName(story.setting, story.theme) };
+  const info = { id: story.id, ...text, seconds: Math.round(duration(audio)), music: group, scene: sceneName(story.setting, story.theme, story.id) };
   writeFileSync(join(dir, "info.json"), JSON.stringify(info, null, 2) + "\n");
   return { ...info, audio, video, cover };
 }
