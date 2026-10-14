@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-14T10:05:15.615Z",
+  "generatedAt": "2026-10-14T10:17:06.050Z",
   "summary": {
     "stories": 193,
     "byStatus": {
       "ok": 128,
       "check": 62,
-      "fix": 3
+      "unreviewed": 3
     },
     "byCheckKind": {
       "length": 117,
@@ -16,16 +16,16 @@
       "phone_number": 1
     },
     "byIssueKind": {
-      "repetition": 82,
-      "logic": 91,
-      "quality": 35,
+      "repetition": 81,
+      "logic": 89,
+      "quality": 33,
       "safety": 30,
-      "taiwan_usage": 25,
-      "zh_en_mismatch": 51,
-      "preachy": 18,
+      "taiwan_usage": 24,
+      "zh_en_mismatch": 48,
+      "preachy": 17,
       "age_fit": 13,
       "length": 1,
-      "guardrail": 5
+      "guardrail": 4
     },
     "flagged": [
       "bedtime-routine-pajama-parade",
@@ -35,7 +35,6 @@
       "crossing-road-little-green-man",
       "crossing-road-scooter-detective",
       "earthquake-go-bag-captain",
-      "earthquake-library-shelves",
       "earthquake-table-fort",
       "first-day-paper-boat",
       "getting-lost-night-market",
@@ -53,7 +52,6 @@
       "medicine-not-candy",
       "moving-house-glow-star-ceiling",
       "moving-house-grandmas-old-street",
-      "moving-house-mountain-town",
       "moving-house-old-neighborhood-map",
       "new-sibling-crying-baby-concert",
       "new-sibling-night-market-lights",
@@ -62,7 +60,6 @@
       "not-your-fault-wrestling-game",
       "old-bookshop-cat",
       "online-safety-free-gems-password",
-      "online-safety-star-fox",
       "pet-loss-mochi-hill",
       "pet-loss-old-cat-sunbeam",
       "puppet-masters-apprentice",
@@ -116,16 +113,12 @@
       "trying-food-stinky-tofu-sniff",
       "water-safety-river-picnic"
     ],
-    "usd": 5.452
+    "usd": 5.3709
   },
   "stories": {
     "goodnight-little-cloud": {
       "hash": "06871a68a89c5c2f",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.046744,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:37:22.498Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -144,15 +137,15 @@
             "note": "『The sky outside is quiet now, and {name} closes {his} eyes and falls asleep.』偏長，可拆成兩句"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.046744,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:37:22.498Z"
     },
     "leaf-map-in-the-forest": {
       "hash": "cbad086392c2b909",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0312976,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:37:30.999Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -164,7 +157,11 @@
             "note": "8–10 歲適用，但全文幾乎沒有成語。可在發現小松鼠時加入一個合適的成語，例如「恍然大悟」取代「忽然明白了」。"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0312976,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:37:30.999Z"
     },
     "lantern-for-the-moon": {
       "hash": "373aa26e92d0aaf8",
@@ -184,10 +181,6 @@
           "note": "英文 379 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0375336,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:37:40.431Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -213,15 +206,15 @@
             "note": "『貓頭鷹也閉上眼睛』與貓頭鷹夜間活動的習性不符，可改成「貓頭鷹靜靜不叫了」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0375336,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:37:40.431Z"
     },
     "whispering-snow-library": {
       "hash": "c7681ca612011167",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0336816,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:37:48.735Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -240,7 +233,11 @@
             "note": "中文有「{name}鑽進被窩」，英文從進屋直接跳到閉眼，建議補上 climbed into bed"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0336816,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:37:48.735Z"
     },
     "zoo-hiccup-parade": {
       "hash": "cb9ae69787d1ceab",
@@ -260,10 +257,6 @@
           "note": "英文 367 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.039201599999999996,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:37:58.915Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -289,15 +282,15 @@
             "note": "「Puffy shut tight」少了受詞，語意不清；改成「Puffy shut her mouth tight」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.039201599999999996,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:37:58.915Z"
     },
     "the-sock-that-ran-away": {
       "hash": "1e3bd024e405945b",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0352096,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:38:06.937Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -323,15 +316,15 @@
             "note": "「Holding a breath」「eyes went wide」為了避開代名詞而顯得生硬；改成「{name} held {his} breath」「{name}'s eyes went wide」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0352096,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:38:06.937Z"
     },
     "first-day-paper-boat": {
       "hash": "2806bfa5bd0bcd98",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0180256,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:38:12.876Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -343,15 +336,15 @@
             "note": "「老師幫大家倒水盆」語意不通，像是倒掉水盆；改成「老師裝了一盆水」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0180256,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:38:12.876Z"
     },
     "the-mountain-of-small-steps": {
       "hash": "07ae476b5c85ce7a",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0307776,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:38:20.573Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -363,7 +356,11 @@
             "note": "「腿開始發酸」用字與第5段「有點痠」不一致，台灣肌肉痠痛慣用「痠」，改為「發痠」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0307776,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:38:20.573Z"
     },
     "the-puddle-that-was-a-sea": {
       "hash": "37384c4f244b3bdd",
@@ -383,10 +380,6 @@
           "note": "英文 378 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0346736,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:38:28.928Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -412,15 +405,15 @@
             "note": "英文『It carried a curly shell and crept slowly, slowly, its feelers stretching in and out.』句子偏長，建議拆短"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0346736,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:38:28.928Z"
     },
     "map-in-the-message-bottle": {
       "hash": "46ab2ad1be269343",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.036737599999999995,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:38:38.223Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -446,15 +439,15 @@
             "note": "中文有「握著小海螺」和「今天撿到的」海玻璃，英文省略，可補上 holding the conch 等細節"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.036737599999999995,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:38:38.223Z"
     },
     "crossing-road-little-green-man": {
       "hash": "ab84450877ffa5f4",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0238256,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:38:46.935Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -473,7 +466,11 @@
             "note": "中文有『奶奶點點頭』，英文缺少，可補 Grandma nods."
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0238256,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:38:46.935Z"
     },
     "crossing-road-scooter-detective": {
       "hash": "6936ce991c2f0554",
@@ -486,10 +483,6 @@
           "note": "中文 555 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0240176,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:38:55.805Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -508,15 +501,15 @@
             "note": "中文『像排隊的小動物』比喻英文漏掉，可補上 like little animals in line"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0240176,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:38:55.805Z"
     },
     "getting-lost-night-market": {
       "hash": "b9743c410ded1975",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0293416,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:39:06.511Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -542,19 +535,23 @@
             "note": "中文是「出門前」叮嚀，英文是 Before they went in（到夜市才說）。兩邊統一成同一個時間點"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0293416,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:39:06.511Z"
     },
     "getting-lost-department-store": {
       "hash": "b50996980efbf84f",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.022037599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:39:13.131Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.022037599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:39:13.131Z"
     },
     "earthquake-turtle-drill": {
       "hash": "99f6881beaeafe80",
@@ -567,10 +564,6 @@
           "note": "標題很像 little-turtle-moon-path「The Little Turtle and the Moon Path」（相似度 0.73）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0277976,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:39:21.604Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -582,15 +575,15 @@
             "note": "第6–7段『在家地震、和媽媽躲餐桌下』與 earthquake-table-fort、go-bag-captain 相近，可考慮讓結尾更有區隔"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0277976,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:39:21.604Z"
     },
     "earthquake-table-fort": {
       "hash": "728e0fc408c1ad4f",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.025749599999999997,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:39:36.342Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -609,7 +602,11 @@
             "note": "第 2 題中文「躲在餐桌下等媽媽」，英文是「stay under the table with Mom」，意思略不同，建議統一"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.025749599999999997,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:39:36.342Z"
     },
     "earthquake-mountain-school": {
       "hash": "9752028d148dd6ad",
@@ -622,10 +619,6 @@
           "note": "中文 581 字，8-10 歲 3 分鐘範圍是 600–800（太短）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0340496,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:39:49.760Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -658,15 +651,15 @@
             "note": "結尾「真正的小老師，是在搖晃中依然冷靜的自己」略像點明寓意，可改用動作或對話呈現成長"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0340496,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:39:49.760Z"
     },
     "strangers-lost-puppy": {
       "hash": "92f9bbe163dd4e86",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0263376,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:39:58.281Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -692,15 +685,15 @@
             "note": "「The voice was big and brave」為避開代名詞而顯得生硬，可改「{name}'s voice was big and brave」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0263376,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:39:58.281Z"
     },
     "hot-things-soup-dragon": {
       "hash": "0574c4b777c20579",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.023369599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:40:08.415Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -719,15 +712,15 @@
             "note": "英文「Thank you for calling me, helper.」稍生硬，可改「What a good helper!」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.023369599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:40:08.415Z"
     },
     "sockets-robot-charging": {
       "hash": "546d0ed5a93b8da5",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0260176,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:40:18.623Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -746,15 +739,15 @@
             "note": "中文「輕輕拍拍它」，英文寫成 picked Ding up gently，沒有拍拍的動作，可補 patted Ding"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0260176,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:40:18.623Z"
     },
     "water-safety-river-picnic": {
       "hash": "13bbfc867c038a3b",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0271016,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:40:28.089Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -773,15 +766,15 @@
             "note": "喊大人、丟浮圈救人的情節與 beach-flags 相近，可改丟別的會浮的東西，例如空水壺或浮板"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0271016,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:40:28.089Z"
     },
     "water-safety-beach-flags": {
       "hash": "e800af83ff6b17c8",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.026845599999999997,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:40:35.713Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -800,15 +793,15 @@
             "note": "救生圈落在浮板旁，拉繩就把浮板「勾回」不太合理；可改成救生員用救生圈套住浮板，或讓舅舅涉水撿回"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.026845599999999997,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:40:35.713Z"
     },
     "medicine-not-candy": {
       "hash": "913d9e65175bccf3",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.029617599999999997,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:40:46.618Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -848,7 +841,11 @@
             "note": "「把瓶蓋拿得好好的」語意不通，改成「瓶蓋蓋得緊緊的」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.029617599999999997,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:40:46.618Z"
     },
     "typhoon-day-blanket-fort": {
       "hash": "c647414a7696b965",
@@ -861,10 +858,6 @@
           "note": "標題與 typhoon-flashlight-shadows「{name}'s Typhoon Day Adventure」相同"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0248176,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:40:54.856Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -883,48 +876,19 @@
             "note": "結尾全家打開手電筒避開窗戶，與 typhoon-flashlight-shadows 相近；可加入獨特細節區隔"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0248176,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:40:54.856Z"
     },
     "online-safety-star-fox": {
-      "hash": "ed15961b1b4c70f9",
+      "hash": "3941ebd01fc7bd3e",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.026381599999999998,
-      "status": "fix",
-      "reviewedAt": "2026-10-14T09:41:06.373Z",
-      "llm": {
-        "verdict": "fix",
-        "issues": [
-          {
-            "kind": "quality",
-            "severity": "high",
-            "lang": "zh",
-            "where": "guide",
-            "note": "中文 Tip 只有「x」,是未完成的佔位字,需補上與英文相同的具體建議(練習找封鎖/檢舉按鈕、約定家庭暗語)"
-          },
-          {
-            "kind": "zh_en_mismatch",
-            "severity": "medium",
-            "lang": "both",
-            "where": "guide",
-            "note": "中文有三題,英文只有兩題;第三題「哪些可以分享、哪些不行」需補進英文或從中文刪除"
-          },
-          {
-            "kind": "logic",
-            "severity": "medium",
-            "lang": "zh",
-            "where": "5",
-            "note": "「她們先截圖」把{name}算成女生,主角不可標示性別,改成「他們」或「兩人」"
-          },
-          {
-            "kind": "preachy",
-            "severity": "low",
-            "lang": "both",
-            "where": "3",
-            "note": "「真正的朋友才不會要人瞞著家人」像敘事者說教,可改成{name}自己的疑問或內心話"
-          }
-        ]
-      }
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T10:17:06.041Z"
     },
     "swimsuit-rule-whale-swimsuit": {
       "hash": "533b28f69d5e7ebb",
@@ -937,10 +901,6 @@
           "note": "「搔癢＋祕密」情節在 body 類重複出現（另見 swimsuit-rule-swim-class, not-your-fault-brave-voice, swimsuit-rule-bath-duck, saying-no-squeeze-hug-handshake），考慮換情境"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.038409599999999995,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:41:19.763Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -959,15 +919,15 @@
             "note": "「洗澡、看醫生，媽媽都在旁邊」少了醫生會說明原因，可改成「醫生會說為什麼，媽媽在旁邊」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.038409599999999995,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:41:19.763Z"
     },
     "swimsuit-rule-teddy-check-up": {
       "hash": "24fe2a5199af780d",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.033469599999999995,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:41:31.810Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -993,7 +953,11 @@
             "note": "「回家路上，{name}抱著小熊」，但前文沒提到帶小熊去診所，第6段可補一句帶著小熊"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.033469599999999995,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:41:31.810Z"
     },
     "swimsuit-rule-swim-class": {
       "hash": "44e040fbdd31bf46",
@@ -1006,10 +970,6 @@
           "note": "「搔癢＋祕密」情節在 body 類重複出現（另見 swimsuit-rule-whale-swimsuit, not-your-fault-brave-voice, swimsuit-rule-bath-duck, saying-no-squeeze-hug-handshake），考慮換情境"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.038625599999999996,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:41:46.111Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -1042,7 +1002,11 @@
             "note": "用浴巾遮住泳衣部位的點子接近 water-park-poncho 的斗篷，可加入更不同的玩法"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.038625599999999996,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:41:46.111Z"
     },
     "good-bad-secrets-birthday-cake": {
       "hash": "92e3749f1ffd811d",
@@ -1062,10 +1026,6 @@
           "note": "英文 357 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0339656,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:41:56.645Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -1091,15 +1051,15 @@
             "note": "「是秘密喔」用「秘」，其他段落都用「祕」，請統一為「祕密」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0339656,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:41:56.645Z"
     },
     "good-bad-secrets-thank-you-party": {
       "hash": "2eee70a8b402e23a",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0302016,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:42:04.555Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -1118,15 +1078,15 @@
             "note": "中文『好像也被掃得乾乾淨淨』呼應陳伯伯掃地，英文只有 bright and sparkly，可補上類似意象"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0302016,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:42:04.555Z"
     },
     "good-bad-secrets-mountain-cabin": {
       "hash": "a61bf10bfc0e165c",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0297376,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:42:12.269Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -1138,7 +1098,11 @@
             "note": "第0段說「明天是爺爺七十歲生日」，第1段卻「接下來兩天」都在做杖，時間矛盾；改第0段為「後天」或刪「兩天」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0297376,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:42:12.269Z"
     },
     "saying-no-tickle-monster": {
       "hash": "2c479ab60c741b2c",
@@ -1151,10 +1115,6 @@
           "note": "body 類已有 9 篇提到搔癢，確認這篇需要"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0285056,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:42:21.220Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -1180,7 +1140,11 @@
             "note": "「舅舅問：『下次想玩，再叫我喔。』」不是問句，「問」改成「說」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0285056,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:42:21.220Z"
     },
     "saying-no-greeting-menu": {
       "hash": "a7d4f3fdbd1efae1",
@@ -1200,10 +1164,6 @@
           "note": "body 類已有 9 篇提到搔癢，確認這篇需要"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0298896,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:42:29.948Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1215,7 +1175,11 @@
             "note": "「爺爺選了擊掌」讓大人替孩子選，和「孩子自己選」的重點不一致，可改成爺爺問{name}，{name}選擊掌"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0298896,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:42:29.948Z"
     },
     "trusted-adults-safety-hand": {
       "hash": "48ce7ded52179c9f",
@@ -1242,10 +1206,6 @@
           "note": "標題很像 trusted-adults-keep-telling「{name}'s Safety Net Hand」（相似度 0.76）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0353896,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:42:41.114Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1271,7 +1231,11 @@
             "note": "英文提示多了「in a clear, loud voice」，中文沒有，可在中文補「大聲清楚地說」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0353896,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:42:41.114Z"
     },
     "trusted-adults-fishing-net": {
       "hash": "a41891a6b51e10ac",
@@ -1291,10 +1255,6 @@
           "note": "英文 462 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0316696,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:42:50.135Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1306,7 +1266,11 @@
             "note": "「大孩子欺負小孩→再找下一位大人」和 safety-hand 公園大孩子情節相近，可考慮換成其他困難情境"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0316696,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:42:50.135Z"
     },
     "not-your-fault-brave-voice": {
       "hash": "09d92854f1b6faaf",
@@ -1319,10 +1283,6 @@
           "note": "「搔癢＋祕密」情節在 body 類重複出現（另見 swimsuit-rule-whale-swimsuit, swimsuit-rule-swim-class, swimsuit-rule-bath-duck, saying-no-squeeze-hug-handshake），考慮換情境"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0337016,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:43:01.802Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1341,15 +1301,15 @@
             "note": "「幾週後擔心是自己的錯、散步時告訴大人」與 not-your-fault-wrestling-game 結構相近，可再拉開差異"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0337016,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:43:01.802Z"
     },
     "brushing-teeth-sugar-bugs": {
       "hash": "d04857be5729ea75",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0236176,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:43:09.591Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1368,27 +1328,27 @@
             "note": "前後小圈圈、大人收尾後面牙齒的流程與鱷魚鏡子篇相近，但糖糖蟲派對設定有區隔，可接受"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0236176,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:43:09.591Z"
     },
     "brushing-teeth-hippo-grin": {
       "hash": "ab908f123c779e9d",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0204776,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:43:15.258Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0204776,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:43:15.258Z"
     },
     "potty-little-throne": {
       "hash": "470d07ff4737e040",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0248456,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:43:24.270Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1407,15 +1367,15 @@
             "note": "「沒關係，大家都會。」語意稍嫌模糊，可改成「沒關係，大家學的時候都會這樣。」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0248456,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:43:24.270Z"
     },
     "starting-kindergarten-pocket-pebble": {
       "hash": "be5edf585ae21dc9",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0276136,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:43:37.353Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -1455,7 +1415,11 @@
             "note": "「I come back at pick-up time」時態不自然，改成「I will come back at pick-up time」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0276136,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:43:37.353Z"
     },
     "starting-kindergarten-goodbye-wink": {
       "hash": "363ee85306a5632e",
@@ -1468,10 +1432,6 @@
           "note": "中文 568 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0236976,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:43:51.998Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -1483,7 +1443,11 @@
             "note": "「她們來到教室的角落」暗示{name}是女生，主角不可標示性別，改成「他們」或「王老師和{name}來到」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0236976,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:43:51.998Z"
     },
     "bedtime-routine-sleepy-train": {
       "hash": "ba45a0e56885d0f9",
@@ -1503,10 +1467,6 @@
           "note": "英文 261 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.025353599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:44:00.510Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1518,15 +1478,15 @@
             "note": "關螢幕只有「螢幕關一關」，沒帶出讓眼睛變睏的原因，可加「眼睛要休息囉」等自然台詞"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.025353599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:44:00.510Z"
     },
     "bedtime-routine-moon-steps": {
       "hash": "579aa6c0956733a6",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0240096,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:44:07.394Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1538,15 +1498,15 @@
             "note": "英文『\"Goodnight, Moon.\"』與知名繪本書名相同，可改成『Goodnight, moon friend』避免聯想"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0240096,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:44:07.394Z"
     },
     "bedtime-routine-mountain-lodge": {
       "hash": "bac8794ae4b3502c",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0236736,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:44:13.464Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1558,7 +1518,11 @@
             "note": "英文「pajamas from home, which still smelled gently of home」重複 home，可比照中文改成 smelled of the laundry soap from home"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0236736,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:44:13.464Z"
     },
     "trying-food-bitter-melon-explorer": {
       "hash": "0722b93727ea0850",
@@ -1571,10 +1535,6 @@
           "note": "中文 415 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0283576,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:44:25.883Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1593,15 +1553,15 @@
             "note": "看、聞、聽脆聲、咬一小口的探險步驟，與火龍果故事結構很接近，可加一個苦瓜才有的趣味情節做區隔"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0283576,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:44:25.883Z"
     },
     "tidying-toys-toy-bedtime": {
       "hash": "9b696ce7747e0019",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.024705599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:44:34.162Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1620,15 +1580,15 @@
             "note": "英文歌詞『Toys go home to sleep with me』像玩具陪孩子睡，但玩具是回盒子和架子，可改成『sleep tight in their homes』"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024705599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:44:34.162Z"
     },
     "handwashing-bubble-pirates": {
       "hash": "f7873669603edee6",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0251096,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:44:42.735Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1647,15 +1607,15 @@
             "note": "毛巾來源沒交代，只寫{name}擦乾，露露沒擦；可加「奶奶拿出小毛巾」並讓兩人一起擦乾"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0251096,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:44:42.735Z"
     },
     "dentist-spaceship-chair": {
       "hash": "9f467f7bf6ed2313",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.020809599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:44:48.843Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1667,15 +1627,15 @@
             "note": "「數牙小幫手/Tooth Counter」與同主題 wiggly-first-tooth 的 tooth counter 同名，可改成別的有趣名字以區隔"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.020809599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:44:48.843Z"
     },
     "screen-time-riverside-kites": {
       "hash": "0d25b8c0771a1d01",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.024969599999999998,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:44:56.332Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -1694,15 +1654,15 @@
             "note": "中文『好奇地摸了摸』，英文是『unrolled one』（打開風箏），動作不同，建議統一"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024969599999999998,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:44:56.332Z"
     },
     "moving-house-memory-box": {
       "hash": "46fa2313ba0620bb",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0337576,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:45:07.826Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1728,56 +1688,23 @@
             "note": "把舊東西擺進新房間讓房間像家，和glow-star-ceiling情節相近，可再強化回憶盒的獨特處"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0337576,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:45:07.826Z"
     },
     "moving-house-mountain-town": {
-      "hash": "b63d9fb8a25b3e44",
+      "hash": "52f11ddbe76a8921",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.027893599999999998,
-      "status": "fix",
-      "reviewedAt": "2026-10-14T09:45:16.340Z",
-      "llm": {
-        "verdict": "fix",
-        "issues": [
-          {
-            "kind": "guardrail",
-            "severity": "high",
-            "lang": "zh",
-            "where": "3",
-            "note": "「父女……不，」把主角寫成女孩，違反不得標示主角性別規則，且像草稿殘留，刪除只留「爸爸和{name}」"
-          },
-          {
-            "kind": "zh_en_mismatch",
-            "severity": "medium",
-            "lang": "zh",
-            "where": "3",
-            "note": "中文多了「父女……不，」自我更正，英文沒有，刪除後兩語才一致"
-          },
-          {
-            "kind": "taiwan_usage",
-            "severity": "low",
-            "lang": "zh",
-            "where": "6",
-            "note": "「週末我爸爸帶我去山邊看甲蟲」語意不完整，改成「我爸爸週末都會帶我去山邊看甲蟲」"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "2",
-            "note": "故事書原本放在{name}背包裡，卻由爸爸拿出，改成{name}自己從背包拿出較順"
-          }
-        ]
-      }
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T10:17:06.041Z"
     },
     "anger-little-volcano": {
       "hash": "254e459b10d2085e",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0236696,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:45:24.221Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1796,15 +1723,15 @@
             "note": "爸爸帶動物式呼吸數到三，和 anger-stomping-dinosaur 的「恐龍呼吸」相近，可考慮換個呼吸意象"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0236696,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:45:24.221Z"
     },
     "anger-red-balloon": {
       "hash": "9b0cedea64782ecc",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0204496,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:45:29.660Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1816,27 +1743,27 @@
             "note": "「手上的樹葉」前文沒出現，第3段手還在扶手上；可在第0或2段先寫{name}撿了一片樹葉"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0204496,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:45:29.660Z"
     },
     "anger-calm-corner": {
       "hash": "41642aaa96d561c1",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0196656,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:45:36.108Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0196656,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:45:36.108Z"
     },
     "new-sibling-night-market-lights": {
       "hash": "07bc3f1b5a159f24",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0219736,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:45:42.977Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -1855,15 +1782,15 @@
             "note": "英文多了「This is a big-sibling job!」，中文沒有；中文可補「這是大孩子的工作！」對應"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0219736,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:45:42.977Z"
     },
     "sharing-turns-wooden-giraffe": {
       "hash": "b4ef9f7df05a20bf",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.022145599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:45:51.625Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1882,15 +1809,15 @@
             "note": "「鞦韆好長」／「The swing is long」描述不自然，可改成「鞦韆盪好高」／「The swing goes high」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.022145599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:45:51.625Z"
     },
     "manners-breakfast-shop": {
       "hash": "6a72a6f14c8e6c7f",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.023401599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:45:59.310Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1909,15 +1836,15 @@
             "note": "「請→謝謝→不小心撞到說對不起」結構與生日、公車兩篇幾乎相同，可考慮換一個不同的道歉情境"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.023401599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:45:59.310Z"
     },
     "fear-of-dark-shadow-hunt": {
       "hash": "5078463297b77a29",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0228936,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:46:06.659Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1936,15 +1863,15 @@
             "note": "小夜燈照出『椅子還在』與叫大人就來，和 glowing-turtle 相近；影子探險有新意，可再加點獨特細節"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0228936,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:46:06.659Z"
     },
     "losing-failing-leaf-boat-race": {
       "hash": "062bc1927babf507",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.028577599999999998,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:46:15.613Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -1977,15 +1904,15 @@
             "note": "船已「翻過去了」，接著卻「最後才慢慢漂過去」抵達終點，可補一句翻過來的船還是慢慢漂著"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.028577599999999998,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:46:15.613Z"
     },
     "losing-failing-go-club": {
       "hash": "78bf937dd8d8671a",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.027025599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:46:23.324Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -2011,15 +1938,15 @@
             "note": "「grabbed a backpack」像拿了別人的書包，改成「grabbed {his} backpack」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.027025599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:46:23.324Z"
     },
     "honesty-brave-teacup": {
       "hash": "a7f9484093d3e3e1",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0284576,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:46:33.812Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -2045,15 +1972,15 @@
             "note": "「心裡像大石頭很重」與同主題故事的「秘密很重」寫法相近，可換成更具體、有本篇特色的感受描寫"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0284576,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:46:33.812Z"
     },
     "bullying-lunch-table": {
       "hash": "976ed3d3832357de",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0248536,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:46:43.251Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -2079,7 +2006,11 @@
             "note": "中文有「有人說台語，有人說客家話」，英文沒有，可補上簡短例子"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0248536,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:46:43.251Z"
     },
     "pet-loss-goldfish-flower": {
       "hash": "2b39b88c02db7fe2",
@@ -2092,10 +2023,6 @@
           "note": "中文 575 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0309176,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:46:53.062Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -2121,15 +2048,15 @@
             "note": "畫畫做成「泡泡的故事書」與 old-cat-sunbeam 的圖畫書、mochi-hill 的回憶書相近，可加重種花的獨特情節"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0309176,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:46:53.062Z"
     },
     "pet-loss-mochi-hill": {
       "hash": "1211b3a5d50b830b",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0290016,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:47:05.682Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -2148,7 +2075,11 @@
             "note": "和爸爸一起畫回憶本，與 old-cat-sunbeam 的圖畫書做法相近，山坡回憶已有區隔，可再加入獨特的紀念方式"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0290016,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:47:05.682Z"
     },
     "doctor-shots-germ-shield": {
       "hash": "56b5afbfd8b419fc",
@@ -2168,10 +2099,6 @@
           "note": "英文 264 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0334896,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:47:17.393Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -2211,7 +2138,11 @@
             "note": "「Hey, it barely hurt now!」時態不順，改成「it barely hurts now」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0334896,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:47:17.393Z"
     },
     "screen-time-puppet-show": {
       "hash": "5bccd84e80dd2439",
@@ -2224,10 +2155,6 @@
           "note": "中文 565 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.026089599999999998,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:47:24.435Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -2239,31 +2166,35 @@
             "note": "與 screen-time-bunny-timer 太像：同樣和媽媽約兩集、計時器響後深呼吸、再做紙箱作品；建議把紙箱布偶戲換成別的活動或場景"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.026089599999999998,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:47:24.435Z"
     },
     "windows-balcony-bird-watch": {
       "hash": "6c24adbbbc6b0c59",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.017853599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:47:30.177Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.017853599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:47:30.177Z"
     },
     "saying-no-ask-first": {
       "hash": "8377cae75035176a",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.025641599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:47:36.530Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.025641599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:47:36.530Z"
     },
     "new-sibling-just-us-walks": {
       "hash": "4a94a4e3fdfb09d2",
@@ -2276,10 +2207,6 @@
           "note": "中文 608 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0298696,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:47:45.820Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -2305,7 +2232,11 @@
             "note": "中文『有一點想哭，也有一點生氣』英文沒有寫到，可補上「{name} wanted to cry, and felt a little mad too.」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0298696,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:47:45.820Z"
     },
     "crossing-road-garbage-truck-song": {
       "hash": "fad92e7a6ef667ba",
@@ -2395,10 +2326,6 @@
           "note": "中文裡有半形標點 ,（時,、」,），改成全形"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0254216,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:47:53.798Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -2417,15 +2344,15 @@
             "note": "第 2 題「還用什麼聽?」語意彆扭，改成「還用什麼來注意車子?」較自然，也與英文一致"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0254216,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:47:53.798Z"
     },
     "crossing-road-yellow-umbrella": {
       "hash": "9768eec5b8648295",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0245376,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:48:02.513Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -2444,7 +2371,11 @@
             "note": "提示「再等小綠人出現才牽手過馬路」像是過馬路時才牽手，改成「一直牽著手，等小綠人出現再過」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0245376,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:48:02.513Z"
     },
     "crossing-road-crossing-guard-flag": {
       "hash": "bfad92007ab8e9cf",
@@ -2548,10 +2479,6 @@
           "note": "中文裡有半形標點 , :（時,、戲:、」,），改成全形"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0326296,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:48:11.928Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -2570,7 +2497,11 @@
             "note": "「路邊是探險隊的停車站」的「停車站」容易聯想到停車場或公車站。可改成「停一停的地方」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0326296,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:48:11.928Z"
     },
     "getting-lost-zoo-penguins": {
       "hash": "55f1a1034f3cb870",
@@ -2667,14 +2598,14 @@
           "note": "中文裡有半形標點 ,（歌,、戲,），改成全形"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0265176,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:48:19.375Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0265176,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:48:19.375Z"
     },
     "getting-lost-temple-fair": {
       "hash": "93c6d3ddee8faa74",
@@ -2687,10 +2618,6 @@
           "note": "英文 443 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.026897599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:48:27.796Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -2709,7 +2636,11 @@
             "note": "熱鬧夜間場合加上把電話唱成歌,和夜市篇、動物園篇相近;好在求助對象是帶小孩的家長,已有區隔"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.026897599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:48:27.796Z"
     },
     "getting-lost-sand-sculpture-beach": {
       "hash": "1f40d116834cd2e1",
@@ -2722,10 +2653,6 @@
           "note": "英文 437 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0328696,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:48:38.978Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -2744,7 +2671,11 @@
             "note": "「爸爸就在烏龜的另一邊找來找去」，孩子也一直站在烏龜旁，卻要靠電話才找到，略不合理；可改成爸爸在附近人群裡找"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0328696,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:48:38.978Z"
     },
     "earthquake-grandmas-wooden-table": {
       "hash": "6dd457edd9849fc0",
@@ -2848,10 +2779,6 @@
           "note": "中文裡有半形標點 : ,（」:、」,、腳,），改成全形"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0303936,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:48:47.137Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -2863,10 +2790,14 @@
             "note": "「探險家找到第一個寶物了」暗示還有後續寶物，但尋寶線之後就斷了；可把大木桌說成第二個寶物，或改成「找到寶物了」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0303936,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:48:47.137Z"
     },
     "earthquake-library-shelves": {
-      "hash": "9d0bd4fbcfffc30c",
+      "hash": "fd3ebf560f0c0af8",
       "checks": [
         {
           "kind": "length",
@@ -2876,36 +2807,10 @@
           "note": "英文 468 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.026825599999999998,
-      "status": "fix",
-      "reviewedAt": "2026-10-14T09:48:55.351Z",
-      "llm": {
-        "verdict": "fix",
-        "issues": [
-          {
-            "kind": "quality",
-            "severity": "high",
-            "lang": "both",
-            "where": "guide",
-            "note": "中文 Tip 只有「x」，英文問題為「x」「y」、Tip 為「z」，都是佔位字。需補上具體提示與完整英文問題。"
-          },
-          {
-            "kind": "zh_en_mismatch",
-            "severity": "high",
-            "lang": "both",
-            "where": "guide",
-            "note": "中文有三題完整問題，英文只有佔位字「x」「y」。英文需譯出對應的三題與同一個 Tip。"
-          },
-          {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "4",
-            "note": "同學想「衝下樓梯」、{name}提醒留下、老師帶隊下樓，和 cram-school-stairs 情節很接近。可換成其他衝突。"
-          }
-        ]
-      }
+      "model": null,
+      "usd": 0,
+      "status": "unreviewed",
+      "reviewedAt": "2026-10-14T10:17:06.041Z"
     },
     "earthquake-go-bag-captain": {
       "hash": "0b5312c4017eca18",
@@ -2925,10 +2830,6 @@
           "note": "英文 524 words，8-10 歲 3 分鐘範圍是 380–500（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0333856,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:49:04.615Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -2947,7 +2848,11 @@
             "note": "『{name}的腳下意識想往』易讀成『腳下』，改為『{name}的腳差點不由自主往玄關跑』"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0333856,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:49:04.615Z"
     },
     "earthquake-museum-running-track": {
       "hash": "1769fa295b0e5b03",
@@ -2960,10 +2865,6 @@
           "note": "英文 503 words，8-10 歲 3 分鐘範圍是 380–500（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0285536,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:49:12.484Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -2975,7 +2876,11 @@
             "note": "{name}一口氣解釋樓梯、招牌、桌腳、沒桌子怎麼辦，像在背規則；可拆成來回對話或刪一兩句"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0285536,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:49:12.484Z"
     },
     "strangers-family-password": {
       "hash": "f1845b523d659715",
@@ -3079,10 +2984,6 @@
           "note": "中文裡有半形標點 , !（令,、演,、要!），改成全形"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0324936,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:49:22.835Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -3101,15 +3002,15 @@
             "note": "陌生人遞糖果、說「媽媽叫我來」再大聲說不要，和 lost-puppy、sticker-shop 骨架相近；祕密口令已有區隔，可再多寫口令的情節"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0324936,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:49:22.835Z"
     },
     "strangers-station-sticker-shop": {
       "hash": "ff36570c403756a0",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0281976,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:49:35.454Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -3135,7 +3036,11 @@
             "note": "『陌生人送東西→大聲說不→找大人→通報』結構與同主題兩篇相近，場景雖不同，可再加一點獨特轉折"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0281976,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:49:35.454Z"
     },
     "hot-things-rice-cooker-whale": {
       "hash": "bd4e65e5b529a619",
@@ -3232,10 +3137,6 @@
           "note": "中文裡有半形標點 , : !（前,、置,、說:），改成全形"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0270456,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:49:44.359Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -3247,15 +3148,15 @@
             "note": "「電鍋鯨魚」把蒸氣比成動物，又和長輩一起吹涼，與 soup-dragon 的「龍鍋＋和奶奶吹碗」很像；安全圈情節已有區隔，可再拉開差異"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0270456,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:49:44.359Z"
     },
     "hot-things-hot-pot-night": {
       "hash": "2f12ef76ef08e641",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0265936,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:49:52.433Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -3274,19 +3175,23 @@
             "note": "『和奶奶一起吹』與 soup-dragon 的奶奶陪吹湯相近，可考慮改由爸爸陪吹"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0265936,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:49:52.433Z"
     },
     "sockets-dry-hands-dryer": {
       "hash": "3b8bb14d509fb59e",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.021013599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:49:59.588Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.021013599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:49:59.588Z"
     },
     "sockets-cracked-cord-spark": {
       "hash": "cdbebde83777a114",
@@ -3306,10 +3211,6 @@
           "note": "英文 368 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0277736,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:50:08.154Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -3321,19 +3222,23 @@
             "note": "中文『爸爸放下鍋鏟』，英文寫 spoon，建議改成 spatula，讓兩版物品一致"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0277736,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:50:08.154Z"
     },
     "windows-balcony-laundry-clouds": {
       "hash": "d6aa570cf4c0ecd9",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0177456,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:50:13.383Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0177456,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:50:13.383Z"
     },
     "windows-balcony-new-year-fireworks": {
       "hash": "9aa400ba55cf86d7",
@@ -3353,10 +3258,6 @@
           "note": "英文 370 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0223896,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:50:20.586Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -3368,15 +3269,15 @@
             "note": "抱枕和毛毯鋪在窗前，又說『膝蓋和腳都貼著地板』，略矛盾；可改成『坐在軟軟的小窩裡，腳踩在地板上』"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0223896,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:50:20.586Z"
     },
     "water-safety-river-tracing": {
       "hash": "47430a586839dffb",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.024625599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:50:27.782Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -3388,7 +3289,11 @@
             "note": "「東西漂走、喊大人、不自己追」的解法和 beach-flags 的浮板漂走很像，可考慮讓情節更有區別"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024625599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:50:27.782Z"
     },
     "water-safety-flooded-ditch": {
       "hash": "84b4bdeee0d51a0e",
@@ -3401,10 +3306,6 @@
           "note": "英文 457 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.036841599999999995,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:50:40.704Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -3451,15 +3352,15 @@
             "note": "「快來幫忙！」，把…：引號後多了逗號，改成「快來幫忙！」然後把…"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.036841599999999995,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:50:40.704Z"
     },
     "water-safety-island-ferry-life-jacket": {
       "hash": "f249732cfe1be825",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0343136,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:50:51.461Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -3471,7 +3372,11 @@
             "note": "「表哥慌張、{name}大喊大人並丟浮具」與 water-safety-beach-flags 的表親漂走、喊救生員丟救生圈相近；可讓同伴換成朋友或改變求救細節"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0343136,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:50:51.461Z"
     },
     "medicine-gummy-bear-vitamins": {
       "hash": "639b35081c0a5813",
@@ -3561,10 +3466,6 @@
           "note": "中文裡有半形標點 : , !（戲:、上,、嚐,），改成全形"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0258096,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:50:59.766Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -3590,7 +3491,11 @@
             "note": "「看起來像糖果，可是不一定是糖果」偏長，可拆成「像糖果。可是，不一定是。」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0258096,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:50:59.766Z"
     },
     "medicine-grandmas-rainbow-pillbox": {
       "hash": "d453b5530b5d1db1",
@@ -3603,10 +3508,6 @@
           "note": "中文 571 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.026145599999999998,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:51:08.212Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -3625,7 +3526,11 @@
             "note": "發現像糖果的藥、不吃、找大人來看，和同主題兩篇主線相近；奶奶藥盒與幫藥盒找新家的情節已有區隔，可保留"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.026145599999999998,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:51:08.212Z"
     },
     "typhoon-flashlight-shadows": {
       "hash": "307f758d8c8cc56f",
@@ -3645,10 +3550,6 @@
           "note": "標題與 typhoon-day-blanket-fort「{name}'s Typhoon Day Adventure」相同"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0280936,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:51:16.817Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -3660,15 +3561,15 @@
             "note": "第1段沒寫手電筒放進寶箱，第3段卻到寶箱拿手電筒。建議補一句「{name}把手電筒也放進箱子裡」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0280936,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:51:16.817Z"
     },
     "typhoon-swollen-river": {
       "hash": "ab99741ea5740d11",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0224896,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:51:23.743Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -3680,15 +3581,15 @@
             "note": "第 5 段毯子帳篷基地、停電開手電筒、影子遊戲，與 blanket-fort 和 flashlight-shadows 兩篇高度重疊，建議改成不同的室內活動"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0224896,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:51:23.743Z"
     },
     "online-safety-free-gems-password": {
       "hash": "3669bce33513792c",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0247656,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:51:30.789Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -3707,7 +3608,11 @@
             "note": "{name}一口氣列出「學校、電話、住址，還有照片」像在背規則；可縮短，或改成更自然的對話"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0247656,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:51:30.789Z"
     },
     "swimsuit-rule-bath-duck": {
       "hash": "5fb3e12726b7d020",
@@ -3811,10 +3716,6 @@
           "note": "「搔癢＋祕密」情節在 body 類重複出現（另見 swimsuit-rule-whale-swimsuit, swimsuit-rule-swim-class, not-your-fault-brave-voice, saying-no-squeeze-hug-handshake），考慮換情境"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0321416,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:51:40.546Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -3833,7 +3734,11 @@
             "note": "第6–7段自己洗肚子的努力與泳衣規則沒有連結，像兩段故事。可讓{name}說『這是我的，我自己洗』，把成長和主題接起來。"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0321416,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:51:40.546Z"
     },
     "swimsuit-rule-water-park-poncho": {
       "hash": "571c2ee47499f0cb",
@@ -3853,10 +3758,6 @@
           "note": "body 類已有 9 篇提到搔癢，確認這篇需要"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0359376,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:51:52.359Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -3882,7 +3783,11 @@
             "note": "「那是隱私的地方」對幼兒來說偏生硬，可改成「那是我自己的地方」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0359376,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:51:52.359Z"
     },
     "good-bad-secrets-scraped-knee": {
       "hash": "48835000be6413b4",
@@ -3902,10 +3807,6 @@
           "note": "英文 362 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0342576,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:52:03.461Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -3931,7 +3832,11 @@
             "note": "中文有『{name}偷偷看樂樂』，英文漏掉了，可補上 {name} peeked at Lele"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0342576,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:52:03.461Z"
     },
     "good-bad-secrets-quiet-classmate": {
       "hash": "93af775ac09687ff",
@@ -3951,10 +3856,6 @@
           "note": "英文 440 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.030641599999999998,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:52:11.825Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -3973,7 +3874,11 @@
             "note": "第 3 段的比喻和第 2 段的「大石頭」意象重疊，可刪減讓篇幅回到目標範圍"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.030641599999999998,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:52:11.825Z"
     },
     "saying-no-beard-kisses": {
       "hash": "f898cfb71608a60d",
@@ -4084,10 +3989,6 @@
           "note": "body 類已有 9 篇提到搔癢，確認這篇需要"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0415336,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:52:25.871Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -4120,7 +4021,11 @@
             "note": "爺爺剛坐下抱抱就「揮揮手」，看不出是在道別或打招呼；可改成「抱完再擊掌」或交代揮手的原因"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0415336,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:52:25.871Z"
     },
     "saying-no-squeeze-hug-handshake": {
       "hash": "8317863265a33b01",
@@ -4147,10 +4052,6 @@
           "note": "「搔癢＋祕密」情節在 body 類重複出現（另見 swimsuit-rule-whale-swimsuit, swimsuit-rule-swim-class, not-your-fault-brave-voice, swimsuit-rule-bath-duck），考慮換情境"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0308336,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:52:34.759Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -4162,7 +4063,11 @@
             "note": "「莫莫今天綁了兩條長辮子，上面有亮晶晶的髮夾」約20字，超過4–6歲句長，可拆成兩句"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0308336,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:52:34.759Z"
     },
     "trusted-adults-keep-telling": {
       "hash": "de73d0335e76f551",
@@ -4175,10 +4080,6 @@
           "note": "標題很像 trusted-adults-safety-hand「{name}'s Safety Hand」（相似度 0.76）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.035377599999999995,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:52:46.659Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -4204,15 +4105,15 @@
             "note": "「扭扭屁股的獨門招呼」在身體界線主題中提到屁股不太合適，可改成「轉圈圈揮手」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.035377599999999995,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:52:46.659Z"
     },
     "not-your-fault-wrestling-game": {
       "hash": "58859d4bcf6928a3",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0310976,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:52:56.987Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -4238,7 +4139,11 @@
             "note": "中文有「只是常常悶悶不樂」，英文漏掉；英文可補一句 felt gloomy a lot"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0310976,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:52:56.987Z"
     },
     "brushing-teeth-crocodile-mirror": {
       "hash": "65ac11ed9071ddab",
@@ -4328,10 +4233,6 @@
           "note": "中文裡有半形標點 ,（時,、魚,、嚓,），改成全形"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0254976,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:53:04.010Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -4343,7 +4244,11 @@
             "note": "「像一顆小豌豆」：牙膏量是豌豆大小，但未滿3歲建議米粒大小。可改「一點點，像小米粒」，或不寫比喻"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0254976,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:53:04.010Z"
     },
     "brushing-teeth-campsite-sink": {
       "hash": "a2fe4131631e45f3",
@@ -4363,14 +4268,14 @@
           "note": "英文 264 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0226536,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:53:10.210Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0226536,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:53:10.210Z"
     },
     "brushing-teeth-grandpa-birdsong": {
       "hash": "b35d10109e4e5869",
@@ -4383,10 +4288,6 @@
           "note": "中文 619 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0295856,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:53:20.042Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -4405,15 +4306,15 @@
             "note": "「咬東西的牙齒頂頂」說法稍拗口，可改「咬東西那一面」或「牙齒上面平平的地方」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0295856,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:53:20.042Z"
     },
     "potty-park-restroom": {
       "hash": "1fce3c5df19674a7",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0198576,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:53:26.431Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -4425,15 +4326,15 @@
             "note": "「咕嚕咕嚕」多指肚子餓，想尿尿較少這樣表示，可改成「小肚子脹脹的」或「癢癢的」。"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0198576,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:53:26.431Z"
     },
     "potty-oops-spare-pants": {
       "hash": "681f0cb9f3cf27ab",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0205896,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:53:33.808Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -4445,7 +4346,11 @@
             "note": "「肚子下面癢癢的」形容想尿尿不太貼切，易讓人以為是皮膚癢，可改成「脹脹的」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0205896,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:53:33.808Z"
     },
     "starting-kindergarten-school-bus-wave": {
       "hash": "905e696efc7e90b3",
@@ -4465,10 +4370,6 @@
           "note": "英文 378 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.030921599999999997,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:53:42.729Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -4487,7 +4388,11 @@
             "note": "第1題說『說再見時哭了，林阿姨和王老師做了什麼』，但道別時只有林阿姨在，王老師是在積木和午睡時安慰，請調整問法"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.030921599999999997,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:53:42.729Z"
     },
     "bedtime-routine-pajama-parade": {
       "hash": "afdf37fa6955395b",
@@ -4500,10 +4405,6 @@
           "note": "中文 411 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0257856,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:53:51.521Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -4522,7 +4423,11 @@
             "note": "中文有「布布點點頭」，英文漏掉，可補 \"Bubu nods.\""
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0257856,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:53:51.521Z"
     },
     "bedtime-routine-goodnight-house": {
       "hash": "d6f23f517580699a",
@@ -4626,10 +4531,6 @@
           "note": "中文裡有半形標點 ,（後,、圈,、做,），改成全形"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0344616,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:54:02.978Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -4655,7 +4556,11 @@
             "note": "中文有『黑黑的螢幕，靜悄悄』，英文沒有；英文可補一句『The dark screen is quiet.』"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0344616,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:54:02.978Z"
     },
     "bedtime-routine-picture-chart": {
       "hash": "036fc71e3ef811ec",
@@ -4675,22 +4580,18 @@
           "note": "英文 362 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0241616,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:54:09.395Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0241616,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:54:09.395Z"
     },
     "bedtime-routine-tablet-under-blanket": {
       "hash": "fad64c6889becabc",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0311776,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:54:19.565Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -4716,15 +4617,15 @@
             "note": "道晚安後偷拿平板躲進被窩可能被模仿，後文雖有誠實告知，可讓{name}拿出來時稍有猶豫，凸顯這不是好做法"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0311776,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:54:19.565Z"
     },
     "bedtime-routine-rooftop-stars": {
       "hash": "56e19cd7dad4b862",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.025253599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:54:26.671Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -4736,7 +4637,11 @@
             "note": "「最亮的那顆星…原來是金星」金星是行星不是恆星，可改成「最亮的那顆，原來不是星星，是金星！」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.025253599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:54:26.671Z"
     },
     "trying-food-dragon-fruit-dots": {
       "hash": "717e9dbde6502d45",
@@ -4756,10 +4661,6 @@
           "note": "英文 279 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0235896,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:54:33.741Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -4771,7 +4672,11 @@
             "note": "「看、聞、聽喀滋聲、咬一小口、下次再試」的流程和苦瓜探險家很像。可考慮加入火龍果獨有的小趣味，例如手指染成粉紅色。"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0235896,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:54:33.741Z"
     },
     "trying-food-stinky-tofu-sniff": {
       "hash": "2758249ca869222e",
@@ -4791,10 +4696,6 @@
           "note": "英文 353 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.026505599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:54:41.964Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -4813,7 +4714,11 @@
             "note": "『當探險家：看、聞、聽酥脆聲、只咬一小口』和苦瓜、火龍果兩篇流程很像；夜市場景有區隔，可再加一個獨特的小情節"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.026505599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:54:41.964Z"
     },
     "tidying-toys-beach-buckets": {
       "hash": "b871acf1daf1dc1f",
@@ -4833,10 +4738,6 @@
           "note": "英文 280 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.029825599999999997,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:54:52.695Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -4862,7 +4763,11 @@
             "note": "結尾「Hop hop hop, sleepy toys, plop.」語意破碎，改成較完整的晚安歌詞"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.029825599999999997,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:54:52.695Z"
     },
     "tidying-toys-missing-puzzle-piece": {
       "hash": "619b2e4bd01192c5",
@@ -4882,10 +4787,6 @@
           "note": "英文 356 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0242136,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:55:00.406Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -4911,15 +4812,15 @@
             "note": "同主題三篇都用收玩具歌收尾，本篇尋寶情節不同，但唱歌段落可再加點新花樣"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0242136,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:55:00.406Z"
     },
     "handwashing-snack-bubbles": {
       "hash": "d65486f9fe70d100",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0210056,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:55:06.434Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -4931,7 +4832,11 @@
             "note": "中文有「{name}排在中間」，英文沒有這句；可在英文補上 {name} is in the middle，或刪掉中文這句"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0210056,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:55:06.434Z"
     },
     "handwashing-goat-farm": {
       "hash": "5f4508f735bf56db",
@@ -5028,10 +4933,6 @@
           "note": "中文裡有半形標點 ,（前,、心,、背,），改成全形"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0342016,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:55:18.595Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5050,15 +4951,15 @@
             "note": "媽媽說『手乾淨，細菌就不會跑到我們和朋友身上』略像直接說教，可改成更自然的一句或用動作帶出"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0342016,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:55:18.595Z"
     },
     "doctor-shots-teddy-practice": {
       "hash": "cc8942d1d4e8c384",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0203216,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:55:24.810Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5070,7 +4971,11 @@
             "note": "「兩個好朋友，都有小盾牌了」緊接在發貼紙後，易讓幼兒以為貼紙就是盾牌；可改為「打過針，都有小盾牌了」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0203216,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:55:24.810Z"
     },
     "doctor-shots-family-flu-shots": {
       "hash": "89a5e8fc1648c3ad",
@@ -5090,10 +4995,6 @@
           "note": "英文 403 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0283296,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:55:33.881Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5112,7 +5013,11 @@
             "note": "護理師說「歡迎光臨！」像商店招呼語，診所少這樣說，可改成「你們好！」或「歡迎你們來！」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0283296,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:55:33.881Z"
     },
     "dentist-fluoride-tooth-paint": {
       "hash": "ecb92c281dadfe89",
@@ -5132,10 +5037,6 @@
           "note": "英文 382 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.029485599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:55:43.218Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5168,15 +5069,15 @@
             "note": "牙醫「林醫生」和同主題的搖搖牙故事同名，可換個名字，讓角色有區別"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.029485599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:55:43.218Z"
     },
     "dentist-wiggly-first-tooth": {
       "hash": "cd2ba0e4ee165490",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0230456,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:55:50.723Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5188,7 +5089,11 @@
             "note": "「數牙器/tooth counter」「噴水器/water squirter」和椅子上升，與 dentist-spaceship-chair 相同，可換個工具名稱讓兩篇更有區別"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0230456,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:55:50.723Z"
     },
     "screen-time-bunny-timer": {
       "hash": "c4d70095816b133e",
@@ -5208,10 +5113,6 @@
           "note": "英文 371 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0337696,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:56:01.079Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -5244,15 +5145,15 @@
             "note": "小提醒寫「聞花香、吹蠟燭」，但故事裡只有「聞花香」；建議刪掉「吹蠟燭」，或在故事裡補上"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0337696,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:56:01.079Z"
     },
     "screen-time-phone-basket-dinner": {
       "hash": "505e52db2e422928",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0253936,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:56:07.409Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5264,7 +5165,11 @@
             "note": "「手機要睡午覺」用在晚餐時間不太合理，午覺指中午的小睡，可改成「手機要去睡覺」或「手機要休息」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0253936,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:56:07.409Z"
     },
     "screen-time-boss-level": {
       "hash": "b6d86af94a1d71c3",
@@ -5277,10 +5182,6 @@
           "note": "英文 506 words，8-10 歲 3 分鐘範圍是 380–500（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0284056,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:56:16.484Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5299,15 +5200,15 @@
             "note": "「誰輸球，誰就要想出破關祕訣」後來沒有交代誰輸；改成「誰先想到誰贏」或在第5段呼應"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0284056,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:56:16.484Z"
     },
     "screen-time-family-contract": {
       "hash": "881a2ffdc786a295",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0248976,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:56:30.207Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5319,7 +5220,11 @@
             "note": "第4段「晚餐不滑手機、爸爸講小時候的鵝」和 phone-basket-dinner「晚餐收手機、聽爺爺趣事」相近，可換成其他家庭活動"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0248976,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:56:30.207Z"
     },
     "moving-house-glow-star-ceiling": {
       "hash": "0560cd4f7f946968",
@@ -5339,14 +5244,14 @@
           "note": "英文 425 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0239336,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:56:36.600Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0239336,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:56:36.600Z"
     },
     "moving-house-transfer-student": {
       "hash": "5f37c2973e30ced8",
@@ -5359,10 +5264,6 @@
           "note": "英文 452 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0239016,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:56:43.814Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5374,15 +5275,15 @@
             "note": "主角多半被小安帶著走，自己努力的地方較少；可讓{name}主動開口問路或邀小安，更符合勵志型故事"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0239016,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:56:43.814Z"
     },
     "moving-house-island-ferry": {
       "hash": "996203f0f4ebbeca",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0323416,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:56:54.142Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5408,15 +5309,15 @@
             "note": "英文「so cold it caused a shiver」較生硬，可改成「so cold {name} shivered」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0323416,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:56:54.142Z"
     },
     "moving-house-old-neighborhood-map": {
       "hash": "63fdff07a0490c38",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.029121599999999997,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:57:03.067Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -5442,7 +5343,11 @@
             "note": "在公園遇到浩然時未交代大人在場，可補一句「爸爸坐在長椅上看著」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.029121599999999997,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:57:03.067Z"
     },
     "anger-snail-breath": {
       "hash": "7847892fdd0eac54",
@@ -5532,10 +5437,6 @@
           "note": "中文裡有半形標點 : ,（」:、氣,、句:），改成全形"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.028861599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:57:11.750Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5554,7 +5455,11 @@
             "note": "紅皮球不知道是誰的，『媽媽把紅皮球放到旁邊』可改成把球還給跑來的小朋友"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.028861599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:57:11.750Z"
     },
     "anger-stomping-dinosaur": {
       "hash": "1a841c2bc612932d",
@@ -5644,10 +5549,6 @@
           "note": "中文裡有半形標點 , :（時,、」:、氣,），改成全形"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0320776,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:57:21.738Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5687,7 +5588,11 @@
             "note": "「吸了幾口大氣」「吸三口大氣」說法較生硬，改成「大口吸了幾次氣」「大口吸三次氣」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0320776,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:57:21.738Z"
     },
     "anger-paper-crown": {
       "hash": "31ecad6031a42386",
@@ -5700,10 +5605,6 @@
           "note": "中文 591 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.024837599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:57:32.286Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5715,7 +5616,11 @@
             "note": "「They want to push Lele hard」的 They 指 hands，但容易被誤讀成主角，建議改成「{name} wants to push Lele hard」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024837599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:57:32.286Z"
     },
     "anger-broken-model-ship": {
       "hash": "2560489f403c316b",
@@ -5728,10 +5633,6 @@
           "note": "英文 427 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0265176,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:57:40.550Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5743,7 +5644,11 @@
             "note": "「小火山咕嚕咕嚕冒泡」和指南的「火山呼吸」與 anger-little-volcano 的火山比喻重複，可考慮換成別的意象"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0265176,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:57:40.550Z"
     },
     "anger-basketball-call": {
       "hash": "e7dde4098e73e725",
@@ -5756,22 +5661,18 @@
           "note": "英文 434 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0218496,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:57:46.454Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0218496,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:57:46.454Z"
     },
     "new-sibling-stroller-helper": {
       "hash": "95607f195daa7713",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0281936,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:57:56.632Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -5797,15 +5698,15 @@
             "note": "第3題中文『大哥哥大姊姊』、英文『big helper』，用詞不一致，可統一為哥哥姊姊/big sibling"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0281936,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:57:56.632Z"
     },
     "new-sibling-crying-baby-concert": {
       "hash": "ef3a184bc419a72b",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.029357599999999998,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:58:06.052Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -5831,7 +5732,11 @@
             "note": "「為寶寶演奏」的大孩子工作和 night-market 故事的唱搖籃曲相近，可考慮換成不同的任務"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.029357599999999998,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:58:06.052Z"
     },
     "sharing-turns-swing-song": {
       "hash": "99701819ab5aea22",
@@ -5921,10 +5826,6 @@
           "note": "中文裡有半形標點 , ?（時,、完,、嗎?），改成全形"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0240616,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:58:13.567Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5936,7 +5837,11 @@
             "note": "「高高……吃!」唱錯的字不押韻也不好笑，英文 PIE 有押韻。可改成近音字，如「高高……灰!」或「高高……雞!」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0240616,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:58:13.567Z"
     },
     "sharing-turns-one-red-crayon": {
       "hash": "92d989fe49d18ade",
@@ -6040,10 +5945,6 @@
           "note": "中文裡有半形標點 , : ?（時,、說:、後,），改成全形"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0261816,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:58:20.991Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6055,15 +5956,15 @@
             "note": "「綠蠟筆斷成兩半了」斷了其實仍能畫，借筆理由較弱，可改成「找不到綠蠟筆」或「綠蠟筆用完了」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0261816,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:58:20.991Z"
     },
     "manners-birthday-gift": {
       "hash": "8287ae9c2460549b",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0208296,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:58:27.914Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6075,7 +5976,11 @@
             "note": "中文是『小狗好像也在說：汪汪』，英文『\"Woof, what a happy day!\"』沒交代說話者，建議加 the puppy seems to say"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0208296,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:58:27.914Z"
     },
     "manners-bus-ride": {
       "hash": "de5c788c710f6d3a",
@@ -6165,10 +6070,6 @@
           "note": "中文裡有半形標點 : ,（戲:、」,），改成全形"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0281456,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:58:36.782Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6194,15 +6095,15 @@
             "note": "「小美」沒介紹就出現，英文有說 a girl named Mei。中文可加「旁邊坐著小女孩小美」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0281456,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:58:36.782Z"
     },
     "fear-of-dark-glowing-turtle": {
       "hash": "616bef17e3bf0592",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0206136,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:58:43.532Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6214,7 +6115,11 @@
             "note": "「用燈照黑影→原來是椅子／小熊」與 shadow-hunt 用手電筒找影子的結構相近，可再加入烏龜燈獨有的互動做區隔"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0206136,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:58:43.532Z"
     },
     "fear-of-dark-frog-choir": {
       "hash": "05649ca291b7845a",
@@ -6234,10 +6139,6 @@
           "note": "英文 365 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0271736,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:58:51.566Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6256,7 +6157,11 @@
             "note": "用手電筒照出東西「還在」的做法與 shadow-hunt、glowing-turtle 相近，森林帳篷場景已有區隔，可保留"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0271736,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:58:51.566Z"
     },
     "losing-failing-musical-chairs": {
       "hash": "705eff854250a39a",
@@ -6276,34 +6181,30 @@
           "note": "英文 373 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.024497599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:58:59.893Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024497599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:58:59.893Z"
     },
     "losing-failing-bike-wobble": {
       "hash": "4f7fbe558f9ea981",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.021197599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:59:04.940Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.021197599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:59:04.940Z"
     },
     "losing-failing-relay-baton": {
       "hash": "2863db049f57b7c9",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0245616,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:59:10.574Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6315,19 +6216,23 @@
             "note": "問題一『{name}掉了接力棒以後』，但故事說是小芸太早放手，建議改成『接力棒掉了以後』"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0245616,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:59:10.574Z"
     },
     "losing-failing-egg-drop": {
       "hash": "a68dff2d638d302d",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0234656,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:59:16.104Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0234656,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:59:16.104Z"
     },
     "honesty-spilled-paint-jar": {
       "hash": "27f5f0ca08330023",
@@ -6347,10 +6252,6 @@
           "note": "英文 365 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0242496,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:59:23.426Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6362,15 +6263,15 @@
             "note": "「祕密像大石頭壓在心上」與同主題茶杯、考卷故事的「秘密很沉重」意象和結構相近，可換個身體感受描寫以作區隔"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0242496,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:59:23.426Z"
     },
     "honesty-test-paper-signature": {
       "hash": "060a2cfed75bf9fc",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.023477599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:59:30.828Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6389,15 +6290,15 @@
             "note": "「秘密像大石頭壓在心上」與同主題茶杯、顏料故事的「秘密很沉重」意象相近，可換個新鮮比喻"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.023477599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:59:30.828Z"
     },
     "bullying-mean-nickname": {
       "hash": "bc7cf720144c16ef",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0200136,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:59:35.133Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -6409,15 +6310,15 @@
             "note": "與「bullying-lunch-table」幾乎相同：新同學被笑、午餐坐旁邊、邀進球賽、告訴老師。建議改換場景或解法"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0200136,
+      "status": "check",
+      "reviewedAt": "2026-10-14T09:59:35.133Z"
     },
     "bullying-class-group-chat": {
       "hash": "ff9950c9e40012ae",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.024417599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:59:42.004Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6436,19 +6337,23 @@
             "note": "「布丁都快融化了」不太合理，布丁不太會融化，可改成「布丁都放到不冰了」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024417599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:59:42.004Z"
     },
     "bullying-picking-teams": {
       "hash": "73f2bf4c2934634b",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.029273599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:59:50.877Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.029273599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T09:59:50.877Z"
     },
     "pet-loss-old-cat-sunbeam": {
       "hash": "835b4fa369f24616",
@@ -6468,10 +6373,6 @@
           "note": "英文 358 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0337256,
-      "status": "check",
-      "reviewedAt": "2026-10-14T10:00:00.233Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6497,15 +6398,15 @@
             "note": "中文結尾「爸爸慢慢念，{name}輕輕聽」英文缺少，可補一句對應"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0337256,
+      "status": "check",
+      "reviewedAt": "2026-10-14T10:00:00.233Z"
     },
     "pet-loss-old-turtle-garden": {
       "hash": "ec481e4937dfca38",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.027581599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:00:07.376Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6524,15 +6425,15 @@
             "note": "種花紀念寵物和 goldfish-flower 相近，不過有畫烏龜石頭和公園場景，差異還夠，可以保留"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.027581599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:00:07.376Z"
     },
     "pet-loss-grandpas-songbird": {
       "hash": "b93284811574bb99",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0260736,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:00:19.226Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6544,7 +6445,11 @@
             "note": "「把小檸檬的故事寫下來」做回憶本，和 mochi-hill、old-cat-sunbeam 的回憶書相近；口哨情節已有區隔，可接受"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0260736,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:00:19.226Z"
     },
     "getting-lost-mrt-platform": {
       "hash": "84728fc9a67829c3",
@@ -6557,14 +6462,14 @@
           "note": "英文 423 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0237536,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:00:26.422Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0237536,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:00:26.422Z"
     },
     "honesty-lost-eraser": {
       "hash": "9eadceff8f98d23e",
@@ -6591,34 +6496,30 @@
           "note": "主角那句用了 himself/herself，主角不能用反身代名詞"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.024517599999999997,
-      "status": "check",
-      "reviewedAt": "2026-10-14T10:00:33.534Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024517599999999997,
+      "status": "check",
+      "reviewedAt": "2026-10-14T10:00:33.534Z"
     },
     "earthquake-cram-school-stairs": {
       "hash": "68fe24f755e519d9",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.025509599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:00:39.310Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.025509599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:00:39.310Z"
     },
     "losing-failing-piano-recital": {
       "hash": "6617c3aa9d3da047",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.025537599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:00:46.105Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6630,7 +6531,11 @@
             "note": "第3–5段「長輩拿出自己失敗的紀錄」和「伸手說『再來一盤？』」與 go-club 篇很像，可考慮換個不同的回應方式"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.025537599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:00:46.105Z"
     },
     "losing-failing-class-election": {
       "hash": "2562b57f8e1615a5",
@@ -6643,10 +6548,6 @@
           "note": "英文 510 words，8-10 歲 3 分鐘範圍是 380–500（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0271016,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:01:09.005Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6658,15 +6559,15 @@
             "note": "第4段分成『寶特瓶箱』和『鋁罐箱』，第5段卻只寫『瓶罐箱』是小烏龜，箱子數量不一致；建議統一箱子名稱。"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0271016,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:01:09.005Z"
     },
     "bullying-school-bus-seat": {
       "hash": "b6592d71dbc80661",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0334656,
-      "status": "check",
-      "reviewedAt": "2026-10-14T10:01:19.631Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -6706,19 +6607,23 @@
             "note": "陪坐、邀加入、告訴老師的解法與 lunch-table、mean-nickname 相近，只換了校車場景"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0334656,
+      "status": "check",
+      "reviewedAt": "2026-10-14T10:01:19.631Z"
     },
     "screen-time-short-video-loop": {
       "hash": "66fde975c9fb6c7a",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0228096,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:01:25.132Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0228096,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:01:25.132Z"
     },
     "moving-house-grandmas-old-street": {
       "hash": "ed2cf547c63c9938",
@@ -6745,10 +6650,6 @@
           "note": "主角那句用了 himself/herself，主角不能用反身代名詞"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.035301599999999995,
-      "status": "check",
-      "reviewedAt": "2026-10-14T10:01:35.844Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -6767,7 +6668,11 @@
             "note": "結尾『畫了一張地圖』與 old-neighborhood-map 的核心道具相同，可改成別的收尾方式，例如在籃框旁合照"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.035301599999999995,
+      "status": "check",
+      "reviewedAt": "2026-10-14T10:01:35.844Z"
     },
     "raindrop-drums": {
       "hash": "84abe76a4a24ab32",
@@ -6836,10 +6741,6 @@
           "note": "中文裡有半形標點 , ! :（地,、滴,、咚!），改成全形"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.035905599999999996,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:01:44.016Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6858,7 +6759,11 @@
             "note": "「拿來兩個空鍋子,一個小盆子,還有兩支木湯匙」與英文 11 字句偏長。可拆成兩三句短句。"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.035905599999999996,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:01:44.016Z"
     },
     "baby-blue-magpie": {
       "hash": "823c17bcc9215b60",
@@ -6920,10 +6825,6 @@
           "note": "中文裡有半形標點 , ! :（家,、嘎,、嘎!），改成全形"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.034413599999999996,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:01:52.819Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6942,7 +6843,11 @@
             "note": "中文『{name}牽著媽媽的手』在英文第 0 段沒有出現，可補『holding Mom's hand』"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.034413599999999996,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:01:52.819Z"
     },
     "goodnight-sleepy-train": {
       "hash": "1a252190823acc1c",
@@ -6962,10 +6867,6 @@
           "note": "英文 274 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0311256,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:01:59.829Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6977,7 +6878,11 @@
             "note": "「扶手…現在扶手不搖了」：會搖的是吊環，扶手不會搖，可改成「吊環圓圓的…現在吊環不搖了」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0311256,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:01:59.829Z"
     },
     "little-turtle-moon-path": {
       "hash": "b6517082b17128e2",
@@ -6990,14 +6895,14 @@
           "note": "標題很像 earthquake-turtle-drill「{name} the Little Turtle」（相似度 0.73）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.024809599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:02:04.292Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024809599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:02:04.292Z"
     },
     "cloud-sheep-on-the-mountain": {
       "hash": "5b78f618f4de5e76",
@@ -7017,10 +6922,6 @@
           "note": "英文 275 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.029489599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:02:10.852Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -7032,15 +6933,15 @@
             "note": "中文「坐在小木屋前」在英文只寫「sits with Grandpa」，少了小屋；建議改成「sits with Grandpa outside a little cabin」，呼應第 6 段的 little house"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.029489599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:02:10.852Z"
     },
     "rabbit-in-the-moon": {
       "hash": "c9e53707afe0a439",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0302656,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:02:18.908Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -7052,7 +6953,11 @@
             "note": "「牠在月亮上搗藥喔」的「搗藥」對 2 歲幼兒較難懂，可改成「牠在月亮上做年糕喔」或「牠在月亮上好忙喔」。"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0302656,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:02:18.908Z"
     },
     "tea-hill-hide-and-seek": {
       "hash": "c1a39f114dbb0fb2",
@@ -7072,10 +6977,6 @@
           "note": "英文 389 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0394896,
-      "status": "check",
-      "reviewedAt": "2026-10-14T10:02:29.330Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -7094,7 +6995,11 @@
             "note": "第3段阿嬤還在附近揮手，第6段卻已先到山頂。建議第5段加一句阿嬤說『山頂見』再走另一條路"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0394896,
+      "status": "check",
+      "reviewedAt": "2026-10-14T10:02:29.330Z"
     },
     "lantern-festival-rabbit": {
       "hash": "e889f7f9f12610f1",
@@ -7114,22 +7019,18 @@
           "note": "英文 382 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.033081599999999996,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:02:36.427Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.033081599999999996,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:02:36.427Z"
     },
     "night-bus-of-lost-umbrellas": {
       "hash": "a2da388cbee484ed",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0278296,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:02:41.746Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -7141,27 +7042,27 @@
             "note": "媽媽說『失物招領處，專門保管大家忘記的東西』像在下定義，可改成『那裡會幫大家收好忘記的東西』，讓意思從情境帶出"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0278296,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:02:41.746Z"
     },
     "leopard-cat-footprints": {
       "hash": "eefb7f25438a1e71",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0314696,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:02:47.651Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0314696,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:02:47.651Z"
     },
     "firefly-valley-lanterns": {
       "hash": "700d2b02acfb771f",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.030897599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:02:54.040Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -7173,15 +7074,15 @@
             "note": "第 1 段爸爸牽著{name}的手，第 5 段卻寫『lowered both hands』，可改成『lowered {his} hand』以免矛盾"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.030897599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:02:54.040Z"
     },
     "lighthouse-keepers-cat": {
       "hash": "a19d7ad50c9a2044",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.038881599999999995,
-      "status": "check",
-      "reviewedAt": "2026-10-14T10:03:03.597Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -7207,15 +7108,15 @@
             "note": "中文海苔『跳上來』窩在毯子上，英文『curled up nearby』，可改成 hopped up beside {him}"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.038881599999999995,
+      "status": "check",
+      "reviewedAt": "2026-10-14T10:03:03.597Z"
     },
     "mooncake-mystery": {
       "hash": "edf9bdacb637908b",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0348336,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:03:12.664Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -7227,15 +7128,15 @@
             "note": "第0段說空格裡『只剩一張皺巴巴的紙托』，第6段爺爺口袋又露出紙托，像有兩張；建議把第0段改成空格裡只剩幾顆餅屑"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0348336,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:03:12.664Z"
     },
     "temple-lion-dance-drum": {
       "hash": "4c505dbfe742f29f",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0317576,
-      "status": "check",
-      "reviewedAt": "2026-10-14T10:03:19.582Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -7254,7 +7155,11 @@
             "note": "「the big kids in the little lion」英文讀來不順，改成「the big kids dancing in the little lion」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0317576,
+      "status": "check",
+      "reviewedAt": "2026-10-14T10:03:19.582Z"
     },
     "rooftop-giant-pumpkin": {
       "hash": "6189a752eebdc25a",
@@ -7267,34 +7172,30 @@
           "note": "英文 449 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0315856,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:03:25.550Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0315856,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:03:25.550Z"
     },
     "tide-pool-detectives": {
       "hash": "3e8e60ac57673da4",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0325016,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:03:38.477Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0325016,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:03:38.477Z"
     },
     "wind-city-kite": {
       "hash": "e5452997284ae6c0",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0397056,
-      "status": "check",
-      "reviewedAt": "2026-10-14T10:03:48.956Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -7313,7 +7214,11 @@
             "note": "「最後一次放手／let go for one last try」不合理，這是風箏節上第一次放飛，建議改成「用力一放」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0397056,
+      "status": "check",
+      "reviewedAt": "2026-10-14T10:03:48.956Z"
     },
     "old-bookshop-cat": {
       "hash": "0b17949ed47dad79",
@@ -7326,10 +7231,6 @@
           "note": "出現數字 1975，確認不是電話或專線"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.034733599999999996,
-      "status": "check",
-      "reviewedAt": "2026-10-14T10:03:56.722Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -7348,19 +7249,23 @@
             "note": "書已由周家送到書店，周姐姐卻直接把《城市的四季花》送給{name}。可加一句林老闆點頭同意，或由林老闆送書"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.034733599999999996,
+      "status": "check",
+      "reviewedAt": "2026-10-14T10:03:56.722Z"
     },
     "stars-over-hehuan": {
       "hash": "64a65a3ac2633849",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.028341599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:04:01.773Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.028341599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:04:01.773Z"
     },
     "whale-song-of-hualien": {
       "hash": "4fac2490f00ca4c0",
@@ -7373,22 +7278,18 @@
           "note": "英文 504 words，8-10 歲 3 分鐘範圍是 380–500（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0303856,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:04:07.192Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0303856,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:04:07.192Z"
     },
     "puppet-masters-apprentice": {
       "hash": "ef0bceeb63e73e3a",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0361056,
-      "status": "check",
-      "reviewedAt": "2026-10-14T10:04:16.490Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -7414,15 +7315,15 @@
             "note": "「明天要練的新招式」與前文只在週末練習的安排不太吻合，可改成「下次」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0361056,
+      "status": "check",
+      "reviewedAt": "2026-10-14T10:04:16.490Z"
     },
     "dragon-boat-drummer": {
       "hash": "7d0847bf16988e11",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0347776,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:04:24.147Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -7434,7 +7335,11 @@
             "note": "「像一隻喝醉的螃蟹」提到喝醉，對童書略不合適；可改成「暈頭轉向的螃蟹」，與英文 dizzy 一致"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0347776,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:04:24.147Z"
     },
     "water-safety-pool-wait-by-towel": {
       "hash": "aa7560f7ad97e941",
@@ -7454,10 +7359,6 @@
           "note": "英文 390 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0352016,
-      "status": "check",
-      "reviewedAt": "2026-10-14T10:04:36.452Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -7497,27 +7398,27 @@
             "note": "大喊救生員再丟浮具的解法，和 beach-flags 一篇很接近，但場景不同，可以接受"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0352016,
+      "status": "check",
+      "reviewedAt": "2026-10-14T10:04:36.452Z"
     },
     "online-safety-secret-meetup": {
       "hash": "98d5cedb85c77240",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.024317599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:04:42.765Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024317599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:04:42.765Z"
     },
     "online-safety-uniform-photo": {
       "hash": "8bdf3c6cf30cdeaa",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0268096,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:04:50.635Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -7536,7 +7437,11 @@
             "note": "米米可能不是自稱的人這點沒有展現，可讓媽媽輕輕提一句『你也不確定米米是誰』"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0268096,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:04:50.635Z"
     },
     "starting-kindergarten-fish-cubby": {
       "hash": "7832e620ed2481d7",
@@ -7556,10 +7461,6 @@
           "note": "英文 254 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0226496,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:04:57.570Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -7571,7 +7472,11 @@
             "note": "「玩積木、新朋友、老師安慰」和 goodbye-wink 的積木區交新朋友很像，可改成其他遊戲角落，例如沙坑或畫畫"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0226496,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:04:57.570Z"
     },
     "new-sibling-tiny-socks": {
       "hash": "a200390f5b8a16e1",
@@ -7584,10 +7489,6 @@
           "note": "英文 271 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0282976,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:05:07.589Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -7613,15 +7514,15 @@
             "note": "旁白「一個大大的抱抱，給你們兩個」突然對角色說話，視角不一致，可改「一個大大的抱抱，抱住兩個人」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0282976,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:05:07.589Z"
     },
     "bear-bell-trail": {
       "hash": "9766ab35e0556163",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0350296,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:05:15.606Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -7647,7 +7548,11 @@
             "note": "跟著專家循野生動物足跡、最後親眼見到動物，與 leopard-cat-footprints 結構相近，但場景和結局不同，可接受"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0350296,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T10:05:15.606Z"
     }
   }
 }

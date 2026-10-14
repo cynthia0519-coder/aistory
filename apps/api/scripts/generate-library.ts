@@ -183,6 +183,14 @@ async function main() {
         const n = storyLength(renderLibraryStory(story, lang).paragraphs, lang);
         if (n < libraryLength(story).lang[lang].rule[0] / 2) throw new Error(`hollow ${lang} story (${n})`);
       }
+      // 引導卡也會出現 "x" 這種佔位字，且中英題數要一致
+      if (story.guide) {
+        for (const lang of ["zh", "en"] as const) {
+          const g = story.guide[lang];
+          if ([...g.questions, g.tip].some((t) => t.replace(/\s/g, "").length < 4)) throw new Error(`hollow ${lang} guide`);
+        }
+        if (story.guide.zh.questions.length !== story.guide.en.questions.length) throw new Error("guide question count differs");
+      }
       const usd = cost(usage);
       total += usd;
       console.log(

@@ -1158,12 +1158,13 @@
           "如果網路上有人要你保守祕密，你會怎麼做？",
           "你覺得在網路上可以跟遊戲朋友分享哪些事，哪些不行？"
         ],
-        "tip": "x"
+        "tip": "這週和孩子一起坐下來，在孩子常用的遊戲或 App 裡練習找到「封鎖」和「檢舉」按鈕，再約定一句家庭暗號，例如「這個怪怪的，你可以幫我看嗎？」"
       },
       "en": {
         "questions": [
           "What did {name} do when StarFox asked about school and a selfie?",
-          "What would you do if someone online asked you to keep a secret?"
+          "What would you do if someone online asked you to keep a secret?",
+          "What things do you think are okay to share with game friends online, and what things are not?"
         ],
         "tip": "This week, sit together and practice finding the Block and Report buttons in a game or app your child uses, and agree on a family phrase like \"Something feels weird, can you look?\""
       }
@@ -2544,7 +2545,7 @@
         "媽媽找到了新工作，全家要從熱鬧的城市搬到台東的山邊小鎮。{name}抱著紙箱，心裡又興奮又難過，像一杯同時加了糖和檸檬的汽水。最捨不得的，是最好的朋友小安。",
         "出發前，小安送給{name}一張畫，上面是兩個人在公園盪鞦韆。「到了新家要寫信給我喔！」{name}用力點頭，把畫小心夾進{his}故事書裡，放在背包最上層。",
         "新家的窗外，就是一層又一層的綠色山脈。可是房間空蕩蕩的，連回音都聽得見。{name}悶悶不樂地坐在箱子上。爸爸拿出那本故事書，媽媽拿出全家的舊相簿。「看，我們最喜歡的東西都跟著來了。」",
-        "第二天傍晚，爸爸牽著腳踏車說：「我們去探險吧！」父女……不，爸爸和{name}沿著稻田旁的自行車道慢慢騎。涼風拂面，遠山被夕陽染成橘紅色。{name}忍不住大喊：「哇，好像在畫裡騎車！」",
+        "第二天傍晚，爸爸牽著腳踏車說：「我們去探險吧！」爸爸和{name}沿著稻田旁的自行車道慢慢騎。涼風拂面，遠山被夕陽染成橘紅色。{name}忍不住大喊：「哇，好像在畫裡騎車！」",
         "騎累了，他們走進路口一家小小的麵店。老闆娘端來熱騰騰的湯麵，笑咪咪地多加了一顆滷蛋。「新搬來的吧？歡迎歡迎！」{name}吃得津津有味，連湯都喝得一滴不剩。",
         "開學第一天，{name}緊張得手心冒汗。下課時，一個叫阿凱的男孩蹲在樹下，興奮地招手：「快來！是獨角仙！」那隻甲蟲黑亮亮的，角翹得高高的，正慢吞吞地爬上樹枝。",
         "阿凱滔滔不絕地介紹各種甲蟲，說得眉飛色舞。{name}聽得目不轉睛，還問了好多問題。阿凱拍拍胸脯說：「週末我爸爸帶我去山邊看甲蟲，你也一起來吧！」",
@@ -3982,14 +3983,15 @@
           "阿凱想跑下樓梯的時候，{name}說了什麼？如果你的朋友也想跑，你會怎麼說？",
           "在家裡，如果地震來了，你覺得哪一張桌子最適合躲？"
         ],
-        "tip": "x"
+        "tip": "這週和孩子在家裡走一圈，一起選出最堅固的桌子，練習「趴下、掩護、穩住」：趴低、躲到桌下、抓住桌腳，等搖晃停了再出來。"
       },
       "en": {
         "questions": [
-          "x",
-          "y"
+          "When the floor started to shake, where did {name} hide? What were {his} hands doing?",
+          "When Kai wanted to run down the stairs, what did {name} say? What would you say if your friend wanted to run?",
+          "If an earthquake came while you were at home, which table do you think would be the best one to hide under?"
         ],
-        "tip": "z"
+        "tip": "This week, walk around your home together, pick the sturdiest table, and practice Drop, Cover, Hold On: get low, crawl under, hold on to a table leg, and stay there until the shaking stops."
       }
     },
     "draft": true
