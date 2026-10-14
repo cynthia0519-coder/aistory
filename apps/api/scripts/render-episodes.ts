@@ -27,6 +27,8 @@ const DEFAULT_OUT = resolve(here, "../out/episodes");
 const DEFAULT_FONT = resolve(here, "assets/LXGWWenKaiTC-Regular.ttf");
 const FONT_NAME = "LXGW WenKai TC";
 const APP_URL = process.env.EPISODE_APP_URL ?? "https://aistory-web.vercel.app";
+/** 說明最後一行的製作單位，例如上架的頻道名稱 */
+const CREDIT = process.env.EPISODE_CREDIT;
 
 // 時間軸（秒）：開場音效 → 標題 → 段落 → 結尾音效，和 App 的節奏一樣
 const LEAD = 2.0;
@@ -180,7 +182,7 @@ async function renderEpisode(story: LibraryStory, lang: Language, dir: string, f
   // 中間檔很大（wav），刪掉；朗讀的 mp3 留著，重跑不用再花錢合成
   for (const f of readdirSync(dir)) if (f.endsWith(".wav") || f === "voice.txt") rmSync(join(dir, f));
 
-  const text = episodeText(story, lang, APP_URL);
+  const text = episodeText(story, lang, APP_URL, CREDIT);
   const info = { id: story.id, ...text, seconds: Math.round(duration(audio)), music: group, scene: sceneName(story.setting, story.theme, story.id) };
   writeFileSync(join(dir, "info.json"), JSON.stringify(info, null, 2) + "\n");
   return { ...info, audio, video, cover };
@@ -217,7 +219,7 @@ async function main() {
   }, 0);
   console.log(`about ${chars} characters of speech (Azure neural TTS bills per character)`);
   if (args.dryRun) {
-    for (const s of todo) console.log(`  ${s.id}  ${episodeText(s, args.lang, APP_URL).title}`);
+    for (const s of todo) console.log(`  ${s.id}  ${episodeText(s, args.lang, APP_URL, CREDIT).title}`);
     return;
   }
   if (!isTtsConfigured()) throw new Error("AZURE_SPEECH_KEY / AZURE_SPEECH_REGION are required (use --dry-run to only list)");
