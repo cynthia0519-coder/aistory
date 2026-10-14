@@ -13,7 +13,7 @@ export const SENSITIVE_THEME_GUARDRAILS = `- Never depict abuse, an abuser, or a
 - Never frame danger as coming only from strangers, but never make familiar adults, family members, or secrets in general scary as a whole. Good surprises stay happy.
 - Keep a warm, safe ending with a caring adult present who listens and helps.
 - For pet loss: this is the only case where a death may be mentioned, and only the pet's, as a fact that has already happened (for example "died peacefully, very old"). No graphic detail of illness, injury or dying; say it gently and simply, and focus on love, memories and comfort.
-- Parent-guide tips for body-autonomy themes may mention Taiwan's 113 child protection hotline (113 保護專線) for adults who need help. Never put that number, or any hotline, in the story text itself.`;
+- Never put a hotline or phone number anywhere, neither in the story nor in the parent guide. The app adds the 113 hotline line to body-autonomy guide cards itself.`;
 
 /** 主題故事的寫法：用情節教，不說教；引導卡才明講 */
 export const THEME_CRAFT_RULES = `- Teach through the plot, never lecture. The hero discovers or practices each key message through what happens and what characters do and say naturally. No narrator moral, no "the lesson is", no list of rules recited at the reader.

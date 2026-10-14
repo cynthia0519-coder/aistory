@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { AGE_RULES, LANGUAGE_LABELS, type ParentGuide } from "@aistory/shared";
+import { AGE_RULES, LANGUAGE_LABELS, THEMES, type ParentGuide } from "@aistory/shared";
 import { requestStory, StoryApiError } from "@/lib/api";
 import { saveStory, type SavedStory } from "@/lib/storage";
 import { bgm, loadMusicPref, saveMusicPref } from "@/lib/bgm";
@@ -199,7 +199,9 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
         </div>
 
         {/* 引導卡是給大人看的，不在朗讀範圍內（speakFrom 只念標題與段落） */}
-        {story.guide && <GuideCard guide={story.guide} />}
+        {story.guide && (
+          <GuideCard guide={story.guide} showHotline={!!story.theme && THEMES[story.theme]?.category === "body"} />
+        )}
 
         {error && <p className="rounded-2xl bg-rust/10 p-3 text-rust-dark">{error}</p>}
       </div>
@@ -268,7 +270,7 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
 }
 
 /** 「給爸媽」引導卡：故事最後一段之後，2–3 個可以問小朋友的問題 + 1 個今晚就能做的小建議 */
-function GuideCard({ guide }: { guide: ParentGuide }) {
+function GuideCard({ guide, showHotline }: { guide: ParentGuide; showHotline: boolean }) {
   return (
     <aside aria-label="給爸媽的引導卡" className="relative mt-6 rounded-2xl bg-card p-5 pt-6 shadow-md ring-2 ring-line">
       <span className="absolute -top-2 left-1/2 h-4 w-16 -translate-x-1/2 -rotate-2 bg-mustard/80" aria-hidden="true" />
@@ -283,6 +285,12 @@ function GuideCard({ guide }: { guide: ParentGuide }) {
         <span className="mb-1 block text-xs font-bold tracking-widest text-teal">今晚試試看</span>
         {guide.tip}
       </div>
+      {/* 求助專線由 App 固定顯示，不交給模型寫（模型寫的中英文版本常不一致） */}
+      {showHotline && (
+        <p className="mt-3 text-xs leading-relaxed text-ink-soft">
+          如果孩子說出讓你擔心的事，可以撥 <strong className="text-ink">113 保護專線</strong>（24 小時）尋求協助。
+        </p>
+      )}
     </aside>
   );
 }
