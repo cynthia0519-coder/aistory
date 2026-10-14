@@ -12364,5 +12364,435 @@
       }
     },
     "draft": true
+  },
+  {
+    "id": "gratitude-thank-you-walk",
+    "style": "cute",
+    "ageBands": [
+      "2-4"
+    ],
+    "setting": "city",
+    "title": {
+      "zh": "{name}和爸爸的謝謝遊戲",
+      "en": "{name} and Dad Play the Thank-You Game"
+    },
+    "paragraphs": {
+      "zh": [
+        "叮咚！公車到站了。爸爸牽好{name}的手。爸爸說：「我們來玩謝謝遊戲！」「怎麼玩？」{name}問。「誰幫了我們，就說謝謝。」「好耶！」",
+        "{name}回頭看一看。司機叔叔載我們回來耶！{name}揮揮手：「謝謝司機叔叔！」司機叔叔笑了。他也揮揮手。叭叭！公車慢慢開走囉。",
+        "人行道上，刷刷刷。掃地阿姨在掃落葉。地上好乾淨喔！{name}彎彎腰，鞠一個躬。「謝謝掃地阿姨！」阿姨笑瞇瞇：「不客氣，小寶貝！」",
+        "一陣風吹來，好涼喔。大樹搖搖葉子，沙沙沙。「謝謝大樹，給我們涼涼的影子！」{name}抱抱樹幹。爸爸哈哈笑：「大樹好像也在笑呢！」",
+        "轉角有一個水果攤。紅紅的蘋果，黃黃的香蕉，圓圓的橘子。水果阿姨說：「送你一顆橘子！」{name}雙手接過來。「謝謝水果阿姨！」阿姨笑得眼睛彎彎。",
+        "{name}想了想。{he}從口袋拿出一張貼紙。是一顆亮亮的小星星。「這個送給阿姨！」阿姨把星星貼在攤子上。「哇，好漂亮！」她又笑了。",
+        "天空變成橘色了。太陽要回家囉。{name}和爸爸走到家門口。{name}數一數：「司機叔叔，掃地阿姨，大樹，水果阿姨。」「還有誰呢？」爸爸問。",
+        "{name}看看爸爸。爸爸一路牽著{his}小手。爸爸還幫忙提包包。{name}張開手，抱住爸爸。「謝謝爸爸！」爸爸笑了。這是今天最大最大的笑容！"
+      ],
+      "en": [
+        "Ding-dong! The bus stops. Dad holds {name}'s hand. \"Let's play the thank-you game!\" says Dad. \"How?\" asks {name}. \"When someone helps us, we say thank you.\" \"Yay!\"",
+        "{name} looks back at the bus. The driver brought them home! {name} waves. \"Thank you, bus driver!\" The driver smiles and waves too. Beep, beep! Off goes the bus.",
+        "Swish, swish, swish! A street sweeper sweeps the leaves. The sidewalk is so clean! {name} gives a little bow. \"Thank you, street sweeper!\" She smiles. \"You're welcome, sweetie!\"",
+        "Whoosh! A cool breeze blows. The big tree shakes its leaves. Rustle, rustle. \"Thank you, tree, for the shade!\" {name} hugs the trunk. Dad laughs. \"I think the tree is smiling!\"",
+        "At the corner is a fruit stand. Red apples. Yellow bananas. Round oranges. \"An orange for you!\" says Fruit Auntie. {name} takes it with two hands. \"Thank you, Fruit Auntie!\"",
+        "{name} thinks and thinks. Out of a pocket comes a sticker. A shiny little star! \"This is for you!\" Fruit Auntie sticks it on her stand. \"So pretty!\" She smiles again.",
+        "The sky turns orange. The sun is going home. Soon {name} and Dad reach their door. {name} counts. \"Bus driver, sweeper, tree, Fruit Auntie.\" \"Who else?\" asks Dad.",
+        "{name} looks up at Dad. Dad held {his} hand all the way. Dad carried the bag too. {name} gives Dad a big hug. \"Thank you, Dad!\" Dad smiles. It is the biggest smile of all!"
+      ]
+    },
+    "theme": "gratitude",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}跟誰說了謝謝？他們聽到以後怎麼了？",
+          "除了說謝謝，{name}還用了什麼方法謝謝別人？",
+          "今天有誰幫了你？你想怎麼謝謝他？"
+        ],
+        "tip": "今晚睡前一起玩「謝謝遊戲」：輪流說出今天想謝謝的一個人或一樣東西。也可以試著用抱抱、揮手或畫一張小圖來說謝謝。"
+      },
+      "en": {
+        "questions": [
+          "Who did {name} say thank you to? What happened when they heard it?",
+          "Besides saying the words, how else did {name} show thanks?",
+          "Who helped you today? How would you like to thank them?"
+        ],
+        "tip": "Tonight at bedtime, play the thank-you game: take turns naming one person or thing you are thankful for today. Try saying thanks with a hug, a wave, or a little drawing too."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "gratitude-grandpas-old-umbrella",
+    "style": "inspiring",
+    "ageBands": [
+      "6-8"
+    ],
+    "setting": "city",
+    "title": {
+      "zh": "阿公的補丁雨傘",
+      "en": "Grandpa's Patched Umbrella"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期六早上，城市下起了綿綿細雨。阿公從門後拿出那把黑色舊雨傘，傘面上有好幾塊顏色不一樣的補丁。{name}皺起眉頭說：「阿公，這把傘好醜喔，我們買一把新的好不好？」阿公只是笑一笑，撐開雨傘說：「走吧，去麵包店。」",
+        "雨滴打在傘上，咚咚咚地響。{name}靠在阿公身邊，發現一滴雨都沒淋到。走過騎樓時，阿公摸摸傘柄說：「很多年前，你媽媽像你這麼大的時候，每個下雨天，我都撐著這把傘送她去上學。」{name}睜大眼睛：「就是這一把？」",
+        "「就是這一把。」阿公指著一塊藍色補丁，「有一次颳大風，傘骨被吹彎，我在燈下修了一整晚。」他又指著一塊格子布：「這是阿嬤用舊圍裙縫的。媽媽說，撐著這把傘，就像被抱著一樣。」{name}輕輕摸著補丁，好像在摸一個個小故事。",
+        "他們牽著手繼續往前走。{name}開始東看西看：公車司機耐心等一位老奶奶慢慢上車；清潔隊員把水溝口的落葉掃開，讓雨水順順流走；麵包店的阿姨早早拉開遮雨棚，讓路人可以躲雨。{name}小聲說：「原來有好多人在偷偷幫忙耶。」",
+        "走進麵包店，阿姨遞上熱呼呼的紅豆麵包。{name}想了想，大聲說：「謝謝阿姨，你的遮雨棚讓我們沒有淋濕！」阿姨愣了一下，接著笑得眼睛彎彎的：「聽到這句話，我今天一整天都會很開心。」{name}心裡也暖暖的，好像口袋裝滿了寶貝。",
+        "回家的路上，{name}一直盯著那把黑傘。它幫阿公和媽媽擋了好多年的雨，阿公也一次又一次把它修好。{name}心想：「這把傘一點都不醜，它是全世界最勇敢的傘。」可是，要怎麼謝謝阿公呢？只說一句話，好像還不夠。",
+        "一到家，{name}拿出黑色卡紙、剪刀和彩色碎布，想做一張雨傘形狀的卡片。剪刀不太好控制，傘柄剪歪了，{name}吸一口氣，重新再剪。第二次又歪了，{he}還是不放棄。第三次，終於剪出一把漂亮的雨傘，再把藍色和格子的小布塊貼上去，就像真的補丁。",
+        "傍晚，{name}在卡片上寫下：「謝謝阿公，一直為我們撐傘。」然後把卡片送給阿公。阿公看了好久，眼眶有點紅，緊緊抱住{name}：「這是我收過最漂亮的雨傘。」接著，{name}把門口的黑傘擦乾，輕輕掛好。阿公笑了，{name}也笑了。"
+      ],
+      "en": [
+        "On a drizzly Saturday morning in the city, Grandpa took his old black umbrella from behind the door. It was covered in patches of different colors. {name} frowned. \"Grandpa, that umbrella is so ugly. Can't we buy a new one?\" Grandpa just smiled, opened it, and said, \"Let's walk to the bakery.\"",
+        "Raindrops went tap, tap, tap on the umbrella. {name} stayed close to Grandpa and noticed not one drop landed on them. Under the shop roofs, Grandpa patted the handle. \"Long ago, when your mom was your age, I walked her to school under this umbrella every rainy day.\" {name}'s eyes went wide. \"This one?\"",
+        "\"This very one.\" Grandpa pointed to a blue patch. \"One windy day, the frame bent, and I fixed it all night under the lamp.\" He pointed to a checkered patch. \"Grandma sewed this from her old apron. Your mom said this umbrella felt like a hug.\" {name} gently touched the patches, like each one held a little story.",
+        "They walked on, hand in hand. Now {name} looked all around. A bus driver waited patiently while an old woman climbed aboard. A street cleaner swept leaves from a drain so the rain could flow away. The bakery lady had pulled out her awning so people could stay dry. \"So many people help without saying anything,\" {name} whispered.",
+        "Inside the bakery, the lady handed them warm red bean buns. {name} thought for a moment, then said loudly, \"Thank you! Your awning kept us dry!\" The lady blinked, then smiled until her eyes crinkled. \"Hearing that will make my whole day happy.\" {name} felt warm inside too, as if both pockets were full of treasure.",
+        "On the way home, {name} kept looking at the black umbrella. It had kept Grandpa and Mom dry for years, and Grandpa had fixed it again and again. It isn't ugly at all, {name} thought. It's the bravest umbrella in the world. But how could {name} thank Grandpa? Just saying it didn't feel like enough.",
+        "At home, {name} got out black paper, scissors, and bright scraps of cloth to make a card shaped like an umbrella. The scissors were tricky, and the handle came out crooked. {name} took a breath and tried again. Crooked again! {name} kept going. On the third try, a perfect umbrella appeared, and {he} glued on blue and checkered scraps like real patches.",
+        "That evening, {name} wrote inside: \"Thank you, Grandpa, for always holding the umbrella for us.\" Grandpa read it for a long time, his eyes a little teary, then hugged {name} tight. \"This is the most beautiful umbrella I've ever had.\" Then {name} dried the old black umbrella and hung it up carefully. Grandpa smiled, and so did {name}."
+      ]
+    },
+    "theme": "gratitude",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}聽完阿公的故事後，看那些補丁的感覺有什麼不一樣？",
+          "走在路上時，{name}發現了哪些人在默默幫忙？你身邊有誰也常常幫助你？",
+          "除了說「謝謝」，你還可以用什麼小行動表達感謝？"
+        ],
+        "tip": "這個星期每天睡前，和孩子一起說出一個今天默默幫助你們的人或東西，並想一個小小的感謝行動，例如畫一張卡片或幫忙收拾。"
+      },
+      "en": {
+        "questions": [
+          "How did {name} feel about the patches after hearing Grandpa's story?",
+          "Who did {name} notice helping quietly on the walk? Who helps you every day without saying anything?",
+          "Besides saying \"thank you,\" what small action could you do to show thanks?"
+        ],
+        "tip": "Each night this week at bedtime, name one person or thing that quietly helped your family that day, and pick one small thank-you action, like drawing a card or helping tidy up."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "gratitude-the-quiet-helpers",
+    "style": "adventure",
+    "ageBands": [
+      "8-10"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "{name}的祕密調查：學校裡的隱形幫手",
+      "en": "{name} and the Case of the Invisible Helpers"
+    },
+    "paragraphs": {
+      "zh": [
+        "開學第三週，{name}發現學校藏著三個謎團：花圃的泥土總是濕潤的，圖書館撕破的繪本隔天就完好如初，大門更在太陽升起前就已敞開。究竟是誰在暗中幫忙？{name}翻開全新的筆記本，鄭重其事地寫下：「祕密調查，第一號案件。」",
+        "星期一，{name}拜託奶奶陪{him}提早出門。天色還灰濛濛的，校門卻已經開了。守衛王伯伯拿著竹掃把，沙沙沙地把落葉掃成小山。「我五點半就到啦，第一個同學進門時，路要乾乾淨淨的。」{name}記下：嫌疑人一號，確認。可是問到花圃，王伯伯搖搖頭：「那可不是我。」",
+        "奶奶站在不遠處看著，{name}沿著一串濕答答的腳印走向花圃，腳印旁還掉了一片九層塔葉子。轉角處，廚房的李阿姨正提著澆水壺細心澆灌。「澆完水，順手摘些九層塔，中午的湯才香。」{name}恍然大悟：原來{his}最愛的那碗湯，是從花圃一路旅行到碗裡的！",
+        "最難破的是圖書館之謎。修好的書膠帶貼得筆直，書頁間還夾著手寫書籤：「慢慢讀，別著急。」書籤飄著淡淡的薰衣草香。星期二下課，{name}循著香味躡手躡腳走進圖書館，只見角落裡的陳奶奶戴著老花眼鏡，正用小刷子替破書塗膠水。她是志工，已經默默修了五年。",
+        "{name}在班上報告調查結果，同學們聽得目瞪口呆。方老師請大家列出平常幫助我們的人：送午餐的叔叔、修吊扇的工友、每天點名的老師……名單越寫越長，{name}忽然覺得好富有，口袋彷彿裝滿了寶石。「我們辦個感謝早晨吧！」小傑提議。「不只寫卡片，」{name}說，「還要用行動說謝謝。」",
+        "感謝早晨那天，全班由家長陪著提早到校。有人幫王伯伯掃落葉，有人替李阿姨拔光花圃的雜草，{name}和同學則把親手做的書籤送給陳奶奶。王伯伯笑得眼角皺紋擠成一團，李阿姨用圍裙偷偷擦眼睛，陳奶奶笑得像個小女孩。{name}寫下：最好的線索，是他們的臉。",
+        "正要宣布結案，陳奶奶卻遞給{name}一張書籤。「我也在調查：是誰每次還書，都把折角撫平？借書卡告訴我答案了。」{name}的臉一下子紅了。王伯伯也笑著說：「還有每天那聲響亮的『伯伯早』，我天天都收到呢。」{name}握著書籤，心裡暖烘烘的，翻開新的一頁：「第二號案件：還有誰在默默幫忙？」"
+      ],
+      "en": [
+        "In the third week of school, {name} noticed three mysteries. The garden soil was always damp. Torn picture books in the library were somehow whole again the next day. And the front gate swung open before the sun was even up. Who was secretly helping? {name} opened a brand-new notebook and wrote, very seriously: Secret Investigation, Case Number One.",
+        "On Monday, {name} asked Grandma to walk to school extra early. The sky was still gray, yet the gate was already open. Mr. Wang, the guard, was sweeping leaves into a crunchy little mountain. \"I get here at five thirty, so the first kid through the gate walks on a clean path.\" Suspect one: confirmed. But the garden? Mr. Wang shook his head. \"Not me.\"",
+        "With Grandma watching close by, {name} followed a trail of wet footprints to the garden. Beside them lay a single basil leaf. Around the corner, Ms. Li from the kitchen was carefully tipping a watering can over the plants. \"After watering, I pick a little basil so lunch soup smells wonderful.\" So that was it! {name}'s favorite soup had traveled all the way from the garden to the bowl.",
+        "The library case was the trickiest. The repaired books had perfectly straight tape, and tucked inside was a handwritten bookmark: Read slowly, no hurry. It smelled faintly of lavender. On Tuesday after class, {name} tiptoed in, following the scent. In the corner sat Grandma Chen in reading glasses, brushing glue onto a torn page. She was a volunteer and had been quietly fixing books for five years.",
+        "When {name} reported the findings, the class was amazed. Ms. Fang asked everyone to list people who help them: the lunch delivery man, the worker who fixed the ceiling fan, the teacher who takes attendance. The list grew longer and longer, and {name} suddenly felt rich, like a pocket full of jewels. \"Let's have a thank-you morning!\" said Jay. \"With actions too,\" {name} added, \"not just cards.\"",
+        "On thank-you morning, the whole class arrived early, each with a parent. Some swept leaves for Mr. Wang. Some pulled every weed from the garden for Ms. Li. {name} and friends gave Grandma Chen a stack of homemade bookmarks. Mr. Wang's eyes crinkled up, Ms. Li dabbed her eyes with her apron, and Grandma Chen giggled like a little girl. {name} wrote: Best clue of all, their faces.",
+        "Just as {name} was about to close the case, Grandma Chen held out a bookmark. \"I've been investigating too. Who always smooths out the folded corners before returning a book? The library card told me.\" {name} turned pink. Mr. Wang chuckled. \"And that cheerful 'Good morning!' I get every day? I notice it.\" Holding the bookmark, {name} felt warm all over, then turned to a fresh page: Case Number Two. Who else is quietly helping?"
+      ]
+    },
+    "theme": "gratitude",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}找到了哪些默默幫忙的人？你最喜歡哪一位？為什麼？",
+          "在你的學校或家裡，有誰每天默默幫助你？你可以用什麼小行動謝謝他？",
+          "陳奶奶和王伯伯收到謝謝時是什麼表情？你被別人感謝時，心裡有什麼感覺？"
+        ],
+        "tip": "這週和孩子一起當「感謝偵探」，每天晚上各說出一位今天默默幫助你們的人，並想一個小行動，隔天去謝謝對方。"
+      },
+      "en": {
+        "questions": [
+          "Which quiet helpers did {name} discover? Which one did you like best, and why?",
+          "Who quietly helps you every day at school or at home? What small action could you do to thank them?",
+          "How did Grandma Chen and Mr. Wang look when they were thanked? How do you feel when someone thanks you?"
+        ],
+        "tip": "This week, be \"thank-you detectives\" together: each evening, name one person who quietly helped you that day and pick one small action to thank them tomorrow."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "empathy-the-sad-little-cloud",
+    "style": "cute",
+    "ageBands": [
+      "2-4"
+    ],
+    "setting": "park",
+    "title": {
+      "zh": "{name}和愛哭的小雲",
+      "en": "{name} and the Little Rainy Cloud"
+    },
+    "paragraphs": {
+      "zh": [
+        "公園裡，太陽暖暖的。{name}和媽媽來散步。小鴨在草地上走。天上飄來一朵小雲。小雲白白的，圓圓的，像一顆棉花糖。咦？小雲停在公園上面了。",
+        "滴答，滴答！小雲下雨了。雨滴大大的，咚！咚！咚！小狗汪汪叫，跑走了。鴿子咕咕叫，飛走了。小鴨呱呱叫，搖搖擺擺跑走了。大家都跑開了。",
+        "媽媽撐開黃色雨傘。{name}躲進傘下面。咚咚咚，雨點敲雨傘。{name}抬頭看小雲。小雲的嘴巴彎彎的，往下彎。小雲的眼睛濕濕的。咦，小雲怎麼了？",
+        "{name}輕輕問：「小雲，你難過嗎？」又問：「你還好嗎？」小雲小小聲說：「大家都跑走了。沒有人陪我玩。我好孤單。」滴答，滴答，小雲又哭了。",
+        "{name}想一想。如果朋友都跑走，一定很難過。{name}拉拉媽媽的手：「媽媽，我們陪小雲好不好？」媽媽說：「好呀。」{name}對小雲說：「我不走，我陪你！」",
+        "{name}唱起歌來：「小雲小雲，飄呀飄。不哭不哭，我在這。」媽媽也一起唱。啦啦啦，啦啦啦。小雲聽著聽著，輕輕搖一搖，好像在跳舞。",
+        "雨滴變小了。滴，答。滴……答。小雲的嘴巴，慢慢往上彎。小雲笑了！最後一滴雨，咚，掉在雨傘上。{name}和媽媽都笑了。咦？雲旁邊亮亮的。",
+        "是一道小彩虹！小小的，彎彎的。彩虹有點害羞，躲在小雲後面偷偷看。{name}揮揮手：「嗨，小彩虹！」彩虹探出頭來。小狗、鴿子、小鴨都回來了。小雲咯咯笑，好開心。"
+      ],
+      "en": [
+        "The sun is warm in the park. {name} takes a walk with Mom. Little ducks waddle on the grass. A small cloud floats by. It is white and round, like cotton candy. Oh! The cloud stops over the park.",
+        "Drip, drop! The little cloud starts to rain. Big drops fall. Plop! Plop! Plop! The dog barks, \"Woof!\" and runs away. The pigeons coo and fly off. The ducks quack and waddle away. Everyone runs off.",
+        "Mom opens a yellow umbrella. {name} snuggles under it. Tap, tap, tap, go the drops. {name} looks up at the cloud. Its mouth curves down. Its eyes are wet. What is wrong, little cloud?",
+        "{name} asks softly, \"Little cloud, are you sad?\" Then, \"Are you okay?\" The cloud whispers, \"Everyone ran away. Nobody plays with me. I feel so lonely.\" Drip, drop. The cloud cries again.",
+        "{name} thinks for a moment. If my friends ran away, I'd be sad too. {name} tugs Mom's hand. \"Can we stay with the cloud?\" Mom smiles. \"Yes, let's.\" {name} tells the cloud, \"I won't go. I'll stay with you!\"",
+        "{name} starts to sing. \"Little cloud, float and play. Don't cry now, I'm here to stay.\" Mom sings along too. La la la, la la la. The cloud listens and sways, like it's dancing.",
+        "The drops get smaller. Drip... drop... drip. Slowly, the cloud's mouth curves up. The cloud is smiling! One last drop lands on the umbrella. Plop! {name} and Mom giggle. Hey, what is that glow?",
+        "It's a tiny rainbow! Small and curvy and bright. The shy rainbow peeks out from behind the cloud. {name} waves. \"Hi, little rainbow!\" The dog, the pigeons, and the ducks come back. The cloud giggles, happy as can be."
+      ]
+    },
+    "theme": "empathy",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}看到小雲的嘴巴往下彎、眼睛濕濕的，你覺得小雲有什麼感覺？",
+          "如果大家都跑走了，你會有什麼感覺？",
+          "如果你的朋友看起來難過，你可以問什麼、做什麼？"
+        ],
+        "tip": "這週玩「看臉猜心情」：輪流做出開心、難過、生氣的表情，讓孩子猜猜看，再練習問一句「你還好嗎？」。"
+      },
+      "en": {
+        "questions": [
+          "When {name} saw the cloud's mouth curve down and its eyes look wet, how do you think the cloud felt?",
+          "How would you feel if everyone ran away from you?",
+          "If a friend looks sad, what could you ask or do?"
+        ],
+        "tip": "This week, play a \"guess my feeling\" face game: take turns making happy, sad, or grumpy faces for your child to guess, then practice asking, \"Are you okay?\""
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "empathy-lion-with-a-sore-paw",
+    "style": "fable",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "forest",
+    "title": {
+      "zh": "{name}和腳痛的大獅子",
+      "en": "{name} and the Lion with a Sore Paw"
+    },
+    "paragraphs": {
+      "zh": [
+        "森林裡住著一隻大獅子，名字叫阿吼。這幾天，阿吼常常大聲吼叫。「吼——！」樹上的葉子都在發抖。小兔子躲進草叢裡。小松鼠跑上樹梢。動物們小聲說：「阿吼好兇喔。」「對啊，他好壞。」大家都不敢靠近阿吼。",
+        "這天早上，{name}和貓頭鷹奶奶在森林裡散步。遠遠地，又傳來阿吼的吼聲。小兔子拉拉{name}：「快跑吧！」可是{name}沒有跑。{he}站在大樹旁邊，靜靜地看。阿吼走一步，就停一下。他總是抬起一隻前腳，不敢放下來。",
+        "{name}仔細看阿吼的臉。阿吼的眉毛皺在一起。眼睛溼溼的。嘴角一直往下彎。{name}想一想：「如果我的腳很痛，我會怎麼樣？」「我可能會哭，也會很大聲。」{name}小聲說：「奶奶，阿吼好像不是兇，是痛。」",
+        "貓頭鷹奶奶點點頭：「我們一起去問問看。」奶奶陪著{name}，慢慢走過去。{name}站在不遠的地方，輕輕地說：「阿吼，你還好嗎？你的腳是不是很痛？」阿吼愣住了。從來沒有誰這樣問過他。阿吼小聲地說：「好痛，好痛喔。」",
+        "阿吼慢慢把前腳伸出來。{name}和奶奶低頭一看。腳掌上卡著一根長長的刺！「難怪你走路一跛一跛的。」{name}說。阿吼點點頭：「我一痛就想吼。可是大家都跑掉了。」{name}聽了，心裡酸酸的。痛的時候沒人陪，一定很孤單。",
+        "「別擔心，我們來幫你。」{name}說。奶奶用尖尖的嘴，輕輕夾住那根刺。{name}摸摸阿吼的鬃毛：「深呼吸，一、二、三。」咻！刺拔出來了。{name}拿來一片涼涼的大葉子，包住阿吼的腳掌。阿吼慢慢把腳放下來。「咦？不痛了！」",
+        "阿吼張開大大的嘴巴。小兔子趕快捂住耳朵。可是這一次，阿吼沒有吼。他用最大的聲音說：「謝謝你，{name}！謝謝奶奶！」聲音在森林裡轉來轉去。小松鼠從樹上探出頭。小鹿也從樹後走出來。大家都好驚訝：「原來阿吼會說謝謝！」",
+        "小兔子跳到阿吼身邊，紅著臉說：「阿吼，對不起。我以為你很壞。」阿吼笑了：「沒關係，我剛才真的太大聲了。」小松鼠說：「下次我會先看看你的臉。」小鹿說：「我會先問你還好嗎。」{name}笑咪咪地看著大家。森林裡，響起了開心的笑聲。"
+      ],
+      "en": [
+        "Deep in the forest lived a big lion named Roary. Lately, Roary roared all day long. \"ROAR!\" The leaves shook on the trees. Little Rabbit hid in the grass. Squirrel ran up high. \"Roary is so mean,\" the animals whispered. Nobody went near him.",
+        "One morning, {name} was walking with Grandma Owl. Far away, Roary roared again. Little Rabbit tugged at {name}. \"Run!\" But {name} did not run. {name} stood by a big tree and watched quietly. Roary took one step, then stopped. He kept lifting one front paw.",
+        "{name} looked closely at Roary's face. His brows were scrunched up. His eyes were wet. His mouth turned down. {name} wondered, \"What if my foot hurt a lot? I might cry and yell too.\" \"Grandma,\" {name} whispered, \"I don't think Roary is mean. I think he's hurting.\"",
+        "Grandma Owl nodded. \"Let's go and ask.\" Together they walked over slowly. {name} stopped a little way off and spoke softly. \"Roary, are you okay? Does your paw hurt?\" Roary blinked. No one had ever asked him that before. \"It hurts so much,\" he said quietly.",
+        "Roary held out his front paw. {name} and Grandma Owl looked down. A long thorn was stuck in it! \"That's why you're limping,\" said {name}. Roary nodded. \"When it hurts, I roar. But then everyone runs away.\" {name} felt a little ache inside. Hurting all alone must feel so lonely.",
+        "\"Don't worry. We'll help,\" said {name}. Grandma Owl held the thorn gently in her beak. {name} patted Roary's soft mane. \"Deep breath. One, two, three.\" Pop! Out came the thorn. {name} wrapped a big, cool leaf around the paw. Roary set it down slowly. \"Oh! It doesn't hurt!\"",
+        "Roary opened his big mouth. Little Rabbit quickly covered both ears. But this time, Roary did not roar. He said, as loud as he could, \"Thank you, {name}! Thank you, Grandma Owl!\" Squirrel peeked out from a branch. Deer stepped out from behind a tree. \"Roary says thank you!\"",
+        "Little Rabbit hopped over with pink cheeks. \"Sorry, Roary. I thought you were mean.\" Roary smiled. \"That's okay. I was very loud.\" \"Next time, I'll look at your face first,\" said Squirrel. \"And I'll ask if you're okay,\" said Deer. {name} smiled at everyone. Happy laughter filled the forest."
+      ]
+    },
+    "theme": "empathy",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}看到阿吼的臉是什麼樣子？從哪裡知道阿吼不是兇，而是痛？",
+          "如果你很痛或很難過，你會想要朋友怎麼對你？",
+          "下次看到有人在發脾氣或哭，你可以怎麼問問看？"
+        ],
+        "tip": "這週玩「猜猜我的心情」遊戲：輪流做出開心、難過、生氣或痛痛的表情，讓對方猜，猜完一起練習說「你還好嗎？」。"
+      },
+      "en": {
+        "questions": [
+          "What did Roary's face look like when {name} looked closely? How could {name} tell Roary was hurting, not mean?",
+          "When you feel hurt or sad, what would you like a friend to do?",
+          "If you see someone yelling or crying next time, how could you ask how they feel?"
+        ],
+        "tip": "This week, play a 'Guess My Feeling' game: take turns making happy, sad, angry, or hurting faces for each other to guess, then practice asking, 'Are you okay?'"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "empathy-new-girl-at-lunch",
+    "style": "inspiring",
+    "ageBands": [
+      "6-8"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "{name}和阿蓮的芒果午餐",
+      "en": "{name} and Lien's Mango Lunch"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期一早上,老師帶來一位新同學。「這是阿蓮,她剛從越南搬來台灣。」阿蓮緊緊抓著書包的背帶,眼睛一直盯著地板。全班同學都好奇地看著她,她卻一個字也沒有說,只是安靜地走到座位坐下。",
+        "午餐時間到了,大家三三兩兩聚在一起,一邊吃飯一邊聊天,教室裡熱鬧極了。只有阿蓮一個人坐在窗邊的角落,慢慢打開便當盒。{name}看見她的嘴角往下垂,筷子停在半空中,好像一點胃口也沒有。",
+        "{name}想起去年剛轉學的第一天。那時候,{he}誰也不認識,教室好大,聲音好吵,心裡空空的,好像在陌生的地方迷了路。如果那天有人走過來陪著坐一下,該有多好。{name}深吸一口氣,端起便當,往窗邊走去。",
+        "「你還好嗎?」{name}輕聲問,在阿蓮旁邊坐了下來。阿蓮眨眨眼睛,小聲說了一句{name}聽不懂的話。原來,她還不太會說中文。{name}有點著急,不知道接下來該怎麼辦,手指一直捏著桌上的餐巾紙。",
+        "忽然,{name}想到一個好主意。{he}從鉛筆盒拿出色鉛筆,在餐巾紙上畫了一張大大的笑臉,再指指自己,又指指阿蓮,用力揮手打招呼。阿蓮看了好一會兒,也拿起一支筆,在旁邊畫了一張小小的笑臉。",
+        "阿蓮打開便當旁的小盒子,裡面是切得整整齊齊的金黃色芒果。她在紙上畫了一顆芒果,開心地說:「Xoài!」{name}眼睛一亮,用力點頭:「芒果!我最喜歡芒果了!」{name}拍拍肚子,舔舔嘴唇,阿蓮第一次笑出聲來。",
+        "阿蓮把一片芒果分給{name}。兩個人一邊吃,一邊在餐巾紙上畫太陽、小貓和書本,互相教對方怎麼說。{name}學說「Xoài」,常常唸錯,阿蓮就耐心地再說一次。最後,阿蓮指著畫好的月亮,認真地學會了「明天見」。",
+        "放學時,阿蓮把那張畫滿圖案的餐巾紙小心摺好,放進口袋。她走到{name}面前,揮揮手,慢慢地說:「明天見。」{name}也大大地揮手回應,心裡暖暖的,就像嘴裡還留著芒果甜甜的味道。"
+      ],
+      "en": [
+        "On Monday morning, the teacher brought in a new classmate. \"This is Lien. She just moved here from Vietnam.\" Lien held tightly to her backpack straps and kept her eyes on the floor. Everyone looked at her curiously, but she didn't say a single word.",
+        "At lunchtime, the classroom buzzed as friends gathered in little groups to eat and chat. Only Lien sat by herself in the corner near the window. {name} noticed that the corners of her mouth turned down, and her chopsticks hung still in the air.",
+        "{name} remembered the first day at this school last year. Back then, {name} knew nobody. The room felt huge and noisy, and it was like being lost in a strange place. How nice it would have been if someone had come to sit close by. {name} took a deep breath, picked up a lunchbox, and walked to the window.",
+        "\"Are you OK?\" {name} asked gently, sitting down beside Lien. Lien blinked and whispered something {name} couldn't understand. She didn't speak much Chinese yet. {name} felt a little worried and wasn't sure what to do next, twisting a paper napkin round and round.",
+        "Then {name} had an idea. Out came the colored pencils. On the napkin, {name} drew a big smiley face, pointed to it, then to Lien, and waved hello. Lien watched for a long moment. Then she picked up a pencil and drew a tiny smiley face right beside it.",
+        "Lien opened a little box next to her lunch. Inside were neat slices of golden mango. She drew a mango and said happily, \"Xoài!\" {name}'s eyes lit up. \"Mango! I love mango!\" {name} patted a tummy and licked both lips, and Lien laughed out loud for the very first time.",
+        "Lien shared a slice of mango with {name}. As they ate, they drew a sun, a kitten, and a book, teaching each other the words. {name} kept saying \"xoài\" a little wrong, and Lien patiently said it again. Last of all, pointing to a drawn moon, Lien carefully learned \"See you tomorrow.\"",
+        "When school ended, Lien folded the napkin full of pictures and tucked it safely into her pocket. She walked up to {name}, waved, and said slowly, \"See you tomorrow.\" {name} waved back with a big wave, feeling warm inside, like the sweet taste of mango was still there."
+      ]
+    },
+    "theme": "empathy",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}看到阿蓮的臉時,怎麼知道她心情不好?",
+          "{name}想起自己轉學第一天的感覺,這讓{him}決定做什麼?",
+          "如果班上來了一位新同學,你會怎麼讓對方感覺好一點?"
+        ],
+        "tip": "這個星期吃晚餐時,玩「看臉猜心情」的遊戲:輪流做出一種表情,讓對方猜猜是什麼感覺,再練習問一句「你還好嗎?」。"
+      },
+      "en": {
+        "questions": [
+          "How could {name} tell that Lien was feeling sad just by looking at her face?",
+          "{name} remembered how the first day at a new school felt. What did that help {him} decide to do?",
+          "If a new classmate joined your class, what could you do to help them feel better?"
+        ],
+        "tip": "This week at dinner, play a \"guess the feeling\" game: take turns making a face while the other guesses the feeling, then practice asking, \"Are you OK?\""
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "perseverance-snail-sees-the-sunrise",
+    "style": "fable",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "mountain",
+    "title": {
+      "zh": "小蝸牛露露看日出",
+      "en": "Lulu the Snail Sees the Sunrise"
+    },
+    "paragraphs": {
+      "zh": [
+        "高高的山腳下，住著一隻小蝸牛露露。露露有個大夢想。她想爬到山頂，看太陽升起來。聽說山頂的日出，像一顆金色的蛋黃。露露每天抬頭看著山頂，心裡好想好想。有一天，她背著小小的殼，出發了。",
+        "兔子阿跳蹦過來，哈哈大笑。「你這麼慢，要爬到什麼時候呀？」阿跳輕輕一跳，就跳過三顆石頭。露露沒有生氣。她慢慢地說：「我每天爬一點點就好。」阿跳搖搖長耳朵，一溜煙跑走了。",
+        "第一天，露露爬過一片草地。累了，她就躲在葉子下休息。第二天，她遇到一塊滑滑的石頭。她滑下來一次，又滑下來一次。露露想了想，決定換一條路。她沿著石頭邊的青苔，慢慢繞上去。「原來青苔不會滑！」",
+        "一天又一天，露露越爬越穩。她學會在露水多的早上趕路。中午太陽大，她就在樹蔭下打盹。這天下午，山路上傳來腳步聲。原來是{name}和家人來爬山了。他們今晚要住在山頂旁的小木屋。",
+        "{name}蹲下來，看見了露露。露露的殼上沾著泥巴，看起來好累。「我好想放棄喔。」露露小聲說。「山頂還好遠好遠。」{name}想了想，說：「那我們先休息一下。」{he}指著前面一片葉子。「先爬到那片葉子就好！」",
+        "露露喝了一滴露水，又出發了。爬到葉子了！{name}開心地拍拍手。「再爬到那朵小黃花！」露露爬呀爬，又到了。一片葉子，一朵小花，一顆小石頭。天色慢慢暗下來的時候，露露真的到山頂了！",
+        "那天晚上，{name}在小木屋裡睡覺。露露躲在門邊的草叢裡休息。天還沒亮，媽媽輕輕叫醒{name}。大家牽著手，慢慢走到山頂。露露已經在大石頭上等著了。阿跳也來了，乖乖坐在一旁。",
+        "天邊慢慢變成粉紅色。一顆金色的太陽，跳出了雲海。「哇！」{name}和露露一起叫出來。阿跳不好意思地說：「你真的爬上來了。」露露笑著說：「我不是最快的。可是每一步，都是我自己爬的。」{name}輕輕說：「露露，你好棒！」"
+      ],
+      "en": [
+        "At the foot of a tall mountain lived a little snail named Lulu. Lulu had a big dream. She wanted to climb to the top. She wanted to watch the sun rise. One day, she set off with her tiny shell.",
+        "Hop the hare bounced over and laughed. \"You are so slow! That will take forever!\" With one jump, Hop cleared three rocks. Lulu did not get upset. \"I will climb a little each day,\" she said. Hop wiggled his ears and dashed away.",
+        "On the first day, Lulu crossed a grassy field. When she got tired, she rested under a leaf. On the second day, she found a slippery rock. She slid down once. She slid down twice. Lulu thought hard. Then she tried a new way. She crept up the soft moss beside it. \"The moss isn't slippery!\"",
+        "Day after day, Lulu climbed more steadily. She learned to travel on dewy mornings. At noon, she napped in the shade. One afternoon, she heard footsteps on the trail. It was {name}, hiking with family! They were staying in a cabin near the top.",
+        "{name} crouched down and saw Lulu. Her shell was muddy. She looked very tired. \"I want to give up,\" Lulu whispered. \"The top is so far away.\" {name} thought for a moment. \"Let's rest first.\" Then {he} pointed ahead. \"Just climb to that leaf!\"",
+        "Lulu sipped a drop of dew and started again. She reached the leaf! {name} clapped and cheered. \"Now climb to that little yellow flower!\" Lulu crept along and made it. One leaf, one flower, one pebble. As the sky grew dark, Lulu reached the top!",
+        "That night, {name} slept in the cozy cabin. Lulu rested in the grass by the door. Before sunrise, Mom gently woke {name}. Holding hands, the family walked to the top. Lulu was already waiting on a big rock. Hop came too and sat quietly nearby.",
+        "The sky turned soft and pink. A golden sun peeked over the clouds. \"Wow!\" said {name} and Lulu together. Hop looked a little shy. \"You really made it,\" he said. Lulu smiled. \"I wasn't the fastest. But I climbed every step.\" \"You did great, Lulu,\" {name} whispered."
+      ]
+    },
+    "theme": "perseverance",
+    "guide": {
+      "zh": {
+        "questions": [
+          "露露想放棄的時候，{name}幫她想了什麼辦法？",
+          "露露在滑滑的石頭上滑下來，她後來怎麼做？你遇到難事時，會怎麼試試看？",
+          "露露不是最快的，為什麼她還是很開心？"
+        ],
+        "tip": "這週陪孩子挑一件有點難的事，一起把它分成「先到那片葉子」那樣的小步驟。每完成一步，就說一句：「你一步一步做到了！」"
+      },
+      "en": {
+        "questions": [
+          "When Lulu wanted to give up, what did {name} help her do?",
+          "What did Lulu do after she slid down the slippery rock? What could you try when something feels hard?",
+          "Lulu wasn't the fastest. Why was she still so happy?"
+        ],
+        "tip": "This week, pick one slightly hard task with your child and break it into tiny \"just reach that leaf\" steps. After each step, say, \"You did it, one step at a time!\""
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "perseverance-sunflower-on-the-windowsill",
+    "style": "cute",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}的向日葵早安",
+      "en": "Good Morning, Sunflower!"
+    },
+    "paragraphs": {
+      "zh": [
+        "春天來了。爺爺給{name}一顆葵花籽。種子小小的，有黑白條紋。看起來好像穿著睡衣呢！{name}在窗戶下的花圃挖個小洞。「進去睡覺囉！」{name}蓋上軟軟的土，拍一拍。「明天要長到窗戶那麼高喔！」爺爺笑了：「這要好多個明天呢。」",
+        "第二天早上，{name}跑去看。土還是平平的，什麼都沒有。{name}拿起小水壺，嘩啦一倒！水灑得到處都是。連小貓布丁都被淋濕了。「喵！」布丁甩甩毛，跑走了。爺爺說：「慢慢倒，像下毛毛雨。」{name}再試一次。水輕輕地落進土裡。",
+        "每天早上，{name}都去澆水。水一天比一天倒得更穩。第五天，土裡冒出一個綠色小芽。「它醒來了！」{name}剪了一條紙條，貼著小芽比一比。爺爺幫忙在紙條上畫一條線。布丁也跑來聞一聞。哎呀，牠的鼻子沾到土了！",
+        "可是接下來好幾天，小芽好像都沒變。{name}每天量，線都畫在同一個地方。{name}嘟起嘴巴：「它是不是忘記長大了？」{name}抬頭看看高高的窗戶。窗戶好遠好遠喔。「我不想量了。」{name}放下紙條，坐在台階上。",
+        "爺爺也坐了下來。「我們先休息一下。」布丁跳上{his}腿，呼嚕呼嚕地叫。過了一會兒，爺爺說：「先別看窗戶。找找看有沒有新葉子，好不好？」{name}點點頭，蹲下來仔細看。咦？小芽旁邊，真的多了一片小葉子！",
+        "從那天起，{name}換了新方法。{name}開始數葉子，還把每片葉子畫在本子上。兩片、四片、六片……有一天下大雨，不用澆水了。「今天換雲朵幫忙！」{name}隔著窗戶揮揮手。紙條越接越長，越接越長。",
+        "夏天到了，向日葵比{name}還高了。隔壁王奶奶的向日葵更高，快碰到屋簷了。「我的不是最高的。」{name}小聲地說。爺爺翻開本子：「可是你看，每一片葉子你都畫了。」{name}看著滿滿的圖畫，挺起胸膛笑了：「我每天都有來！」",
+        "一天早上，陽光照進房間。{name}揉揉眼睛，拉開窗簾。窗外有一張圓圓的黃色大臉！向日葵剛好長到窗戶那麼高，正對著{name}微笑。「早安，向日葵！」布丁跳上窗台：「喵～」爺爺在門口笑著說：「它也在跟你說早安呢。」"
+      ],
+      "en": [
+        "Spring came. Grandpa gave {name} a sunflower seed. It had black and white stripes, like tiny pajamas. {name} dug a hole under the window. \"Time for bed!\" {name} patted soft soil on top. \"Grow as tall as the window by tomorrow!\" Grandpa chuckled. \"That takes lots of tomorrows.\"",
+        "Next morning, {name} ran to look. The soil was still flat. {name} tipped the watering can. Splash! Water hit Pudding the cat. \"Meow!\" Pudding shook and ran off. \"Pour slowly, like a drizzle,\" said Grandpa. {name} tried again. Gentle drops sank into the soil.",
+        "{name} watered every morning, and pouring got easier. On day five, a green sprout popped up! \"It woke up!\" {name} held a paper strip beside it. Grandpa helped mark a line. Pudding sniffed it too. Oops, now she had dirt on her nose!",
+        "But for days, the sprout looked the same. Every line landed in the same spot. \"Did it forget to grow?\" {name} pouted. The window looked so far away. \"I don't want to measure anymore.\" {name} put down the strip and sat on the step.",
+        "Grandpa sat down too. \"Let's rest a bit.\" Pudding curled up on {his} lap. Purr, purr. Soon Grandpa said, \"Forget the window for now. Can you find a new leaf?\" {name} crouched and looked closely. A tiny new leaf was peeking out!",
+        "So {name} tried a new way. {name} counted the leaves and drew each one in a notebook. Two, four, six! One rainy day, there was no need to water. \"The clouds are helping today!\" {name} waved through the window. The paper strip grew longer and longer.",
+        "By summer, the sunflower was taller than {name}. Mrs. Wang's sunflower next door was even taller. \"Mine isn't the tallest,\" {name} whispered. Grandpa opened the notebook. \"But look. You drew every leaf.\" {name} stood up proudly. \"I came every single day!\"",
+        "One morning, sunshine filled the room. {name} rubbed sleepy eyes and opened the curtains. A big, round, yellow face was peeking in! The sunflower was as tall as the window. \"Good morning, sunflower!\" Pudding hopped onto the sill. \"Meow!\" Grandpa laughed. \"It's saying good morning too.\""
+      ]
+    },
+    "theme": "perseverance",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}不想再量的時候，爺爺和{name}做了什麼？",
+          "你有沒有一件事，一開始很難，後來越做越好？",
+          "如果你做的東西不是最大或最好的，你會怎麼為自己加油？"
+        ],
+        "tip": "這週和孩子一起種一顆豆子或小種子，每天早上一起看一看、畫一畫。遇到沒變化的日子，就一起說：「我們今天也有來看！」"
+      },
+      "en": {
+        "questions": [
+          "What did Grandpa and {name} do when {name} didn't want to measure anymore?",
+          "Is there something that was hard at first but got easier as you kept trying?",
+          "If something you made isn't the biggest or best, how could you cheer yourself on?"
+        ],
+        "tip": "This week, plant a bean or small seed together and draw it each morning. On days nothing seems to change, say together, \"We still came to check today!\""
+      }
+    },
+    "draft": true
   }
 ]
