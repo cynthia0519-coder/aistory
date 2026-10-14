@@ -238,23 +238,25 @@ async function main() {
     }
   }
 
-  // 彙整：上架時一集一集複製貼上
+  // 彙整：上架時一集一集複製貼上。列出輸出資料夾裡所有做好的集數（不只這次做的），分批重跑也完整
+  mkdirSync(args.out, { recursive: true });
+  const all = readdirSync(args.out, { withFileTypes: true })
+    .filter((d) => d.isDirectory() && existsSync(join(args.out, d.name, "info.json")))
+    .map((d) => JSON.parse(readFileSync(join(args.out, d.name, "info.json"), "utf8")) as ReturnType<typeof episodeText> & { id: string; seconds: number })
+    .sort((a, b) => a.id.localeCompare(b.id));
+  const len = (sec: number) => `${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, "0")}`;
   const md = [
     "# 頻道節目",
     "",
     `產生時間：${new Date().toISOString()}。故事只經過 AI 預審，上架前每集請先聽過一次。`,
     "YouTube 上傳時「目標觀眾」選「是，這是為兒童打造的內容」。",
     "",
-    "| 集 | 故事 | 長度 | 檔案 |",
-    "| --- | --- | --- | --- |",
-    ...done.map(
-      (e, i) =>
-        `| ${i + 1} | ${e.title} | ${Math.floor(e.seconds / 60)}:${String(e.seconds % 60).padStart(2, "0")} | \`${e.id}/\` |`,
-    ),
+    "| 故事 | 長度 | 檔案 |",
+    "| --- | --- | --- |",
+    ...all.map((e) => `| ${e.title} | ${len(e.seconds)} | \`${e.id}/\` |`),
     "",
-    ...done.flatMap((e, i) => [`## ${i + 1}. ${e.title}`, "", "```", e.description, "```", "", `標籤：${e.tags.join("、")}`, ""]),
+    ...all.flatMap((e) => [`## ${e.title}`, "", "```", e.description, "```", "", `標籤：${e.tags.join("、")}`, ""]),
   ].join("\n");
-  mkdirSync(args.out, { recursive: true });
   writeFileSync(join(args.out, "episodes.md"), md);
   console.log(`\n${done.length}/${todo.length} rendered → ${args.out}`);
 }
