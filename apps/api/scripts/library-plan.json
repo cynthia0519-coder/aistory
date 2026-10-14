@@ -1974,20 +1974,20 @@
     "premise": "{name} plants a sunflower seed and wants it to be as tall as the window right away. Every morning {name} waters it and measures it with a paper strip. Some days nothing seems to happen. Little by little, leaf by leaf, it grows, until one morning a bright yellow face is looking in at {name}."
   },
   {
-    "id": "perseverance-kite-that-wouldnt-fly",
+    "id": "perseverance-jump-rope-challenge",
     "theme": "perseverance",
     "ageBands": ["6-8"],
     "style": "inspiring",
     "setting": "park",
-    "premise": "{name}'s homemade kite crashes again and again in the park. {name} wants to quit, sits under a tree and watches how the birds ride the wind. A longer tail, a new running path, one more try. On the tenth try the kite flies, and {name} is proudest of the nine tries before it."
+    "premise": "{name}'s class has a jump-rope challenge, and {name} trips on the rope every time, while friends seem to jump forever. {name} wants to quit, then practices at home with Dad: first just one jump, then three, counting out loud. On challenge day {name} jumps twenty times, and is proudest of all the falls that came before."
   },
   {
-    "id": "perseverance-one-brick-a-day",
+    "id": "perseverance-the-character-yong",
     "theme": "perseverance",
     "ageBands": ["8-10"],
     "style": "inspiring",
     "setting": "home",
-    "premise": "{name} keeps stumbling over the same tricky bars of a piano piece for the recital. Grandma teaches the one-brick-a-day trick: practice just four notes at a time until they feel easy. At the recital a mistake happens, and {name} takes a breath and keeps playing to the end."
+    "premise": "Grandpa teaches {name} calligraphy, starting with the character 永, which holds all eight basic brush strokes. {name}'s strokes come out wobbly and blotchy, page after page. Grandpa shows {name} his own first practice sheets from long ago, just as wobbly. One stroke a day, {name} keeps going, and by New Year {name}'s 永 hangs proudly on the wall."
   },
   {
     "id": "courage-little-mouse-and-old-bear",
@@ -2078,12 +2078,12 @@
     "premise": "{name} borrows a friend's favorite comic book and promises to return it on Friday, just like new. On Thursday, juice spills on the cover. {name} could hide it or make an excuse, but tells the friend the truth on Friday, and they spend lunch drying and pressing the pages together."
   },
   {
-    "id": "promises-the-lighthouse-lamp",
+    "id": "promises-the-treehouse-ladder",
     "theme": "keeping-promises",
     "ageBands": ["8-10"],
     "style": "adventure",
     "setting": "sea",
-    "premise": "{name} spends summer with Grandpa, who promised the village long ago to light the old lighthouse lamp every evening for the fishing boats. One evening the power goes out. Safe inside the lighthouse with Grandpa, {name} helps light the old oil lamp, and the boats come home following the promise."
+    "premise": "{name} promises a younger cousin to finish the ladder for the backyard treehouse before summer ends. It's harder than {name} thought, and the end of summer is coming fast. Instead of giving up or pretending, {name} asks Grandpa to help and tells the cousin honestly how it's going. On the last day of summer, they climb up together."
   },
   {
     "id": "differences-zebra-with-spots",
@@ -2182,12 +2182,12 @@
     "premise": "On a snowy trip, {name} draws up a grand plan for a snow fort and bosses everyone around, but the walls keep falling. When {name} finally listens, one friend knows how to pack snow bricks, another finds the perfect windbreak, and together they build a fort big enough for the whole group."
   },
   {
-    "id": "forgiveness-the-fallen-tower",
+    "id": "forgiveness-the-spilled-paint",
     "theme": "forgiveness",
     "ageBands": ["4-6"],
     "style": "cute",
     "setting": "school",
-    "premise": "{name} spends the whole morning building a tall block tower, and a friend bumps it over while running. {name} feels angry and says so. The friend says sorry and offers to help. {name} decides to forgive, and together they build a tower even taller than before."
+    "premise": "{name} has painted a picture of the family for Mom's birthday, and a classmate knocks the water cup over it. {name} feels angry and says so. The classmate says sorry and helps dab the wet colors with tissues. {name} decides to forgive, and the two of them turn the runny colors into a rainy-day rainbow over the family."
   },
   {
     "id": "forgiveness-crow-and-sparrow",
