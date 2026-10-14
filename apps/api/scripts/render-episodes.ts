@@ -166,12 +166,13 @@ async function renderEpisode(story: LibraryStory, lang: Language, dir: string, f
     video = join(dir, `${story.id}.mp4`);
     const esc = (p: string) => p.replace(/\\/g, "/").replace(/:/g, "\\:").replace(/'/g, "\\'");
     ffmpeg([
-      "-loop", "1", "-framerate", "12", "-i", scene, "-i", audio,
+      "-loop", "1", "-framerate", "6", "-i", scene, "-i", audio,
       "-filter_complex",
       `[0:v]scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,gblur=sigma=30,eq=brightness=-0.06[bg];` +
         `[0:v]scale=-2:1080[fg];[bg][fg]overlay=(W-w)/2:0,ass='${esc(ass)}':fontsdir='${esc(dirname(font))}',format=yuv420p[v]`,
       "-map", "[v]", "-map", "1:a",
-      "-c:v", "libx264", "-preset", "medium", "-tune", "stillimage", "-crf", "24", "-r", "12",
+      // 靜態插圖 + 字幕：每秒 6 格就夠（字幕幾秒才換一次），檔案小一半
+      "-c:v", "libx264", "-preset", "medium", "-tune", "stillimage", "-crf", "26", "-g", "300", "-r", "6",
       "-c:a", "aac", "-b:a", "160k", "-shortest", "-movflags", "+faststart", video,
     ]);
   }
