@@ -278,7 +278,7 @@
     "ageBands": ["6-8", "8-10"],
     "style": "inspiring",
     "setting": "forest",
-    "premise": "On a school forest trip, {name} finally tells Teacher Chen about a game an older kid played that made {him} feel uncomfortable: {name} said stop, the older kid didn't listen and told {him} to keep it secret, and {name} kept the worry quiet for weeks. Teacher Chen listens, thanks {him} for being brave, and makes clear it was never {name}'s fault and that the grown-ups will take care of it. Keep the events consistent: {name} did say stop."
+    "premise": "On a school forest trip, {name} tells Teacher Chen about an older kid's game that felt uncomfortable: {name} said stop, the kid didn't listen and said keep it secret, so {name} kept quiet for weeks. Teacher Chen thanks {him} for being brave and says it was never {name}'s fault; the grown-ups will handle it. Keep it consistent: {name} did say stop."
   },
   {
     "id": "brushing-teeth-sugar-bugs",
