@@ -1,33 +1,21 @@
 import { TtsRequestSchema, type ApiError } from "@aistory/shared";
+import { corsHeaders, forbiddenOrigin, isAllowedOrigin, preflight } from "@/lib/cors";
 import { checkRateLimit, clientIp } from "@/lib/rate-limit";
 import { isTtsConfigured, synthesize, TtsError, TtsUnavailableError } from "@/lib/tts";
-
-const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS ?? "")
-  .split(",")
-  .map((s) => s.trim())
-  .filter(Boolean);
-
-function corsHeaders(origin: string | null): Record<string, string> {
-  if (!origin || !ALLOWED_ORIGINS.includes(origin)) return {};
-  return {
-    "Access-Control-Allow-Origin": origin,
-    "Access-Control-Allow-Methods": "POST, OPTIONS",
-    "Access-Control-Allow-Headers": "Content-Type",
-    Vary: "Origin",
-  };
-}
 
 function json(body: ApiError, status: number, origin: string | null) {
   return Response.json(body, { status, headers: corsHeaders(origin) });
 }
 
 export function OPTIONS(request: Request) {
-  return new Response(null, { status: 204, headers: corsHeaders(request.headers.get("origin")) });
+  return preflight(request);
 }
 
 // 朗讀文字含小孩的名字：不記錄 log、不落地，只在這次請求的記憶體中轉給 Azure
 export async function POST(request: Request) {
   const origin = request.headers.get("origin");
+  // 在讀 body 與計入速率限制之前就擋，不花 Azure 額度
+  if (!isAllowedOrigin(origin)) return forbiddenOrigin();
 
   let body: unknown;
   try {

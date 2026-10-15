@@ -1,36 +1,24 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { StoryRequestSchema, type ApiError, type StoryResponse } from "@aistory/shared";
+import { corsHeaders, forbiddenOrigin, isAllowedOrigin, preflight } from "@/lib/cors";
 import { checkRateLimit, clientIp } from "@/lib/rate-limit";
 import { generateStory, StoryRefusedError } from "@/lib/story-engine";
 
 // 10 分鐘的故事生成可能超過 60 秒
 export const maxDuration = 120;
 
-const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS ?? "")
-  .split(",")
-  .map((s) => s.trim())
-  .filter(Boolean);
-
-function corsHeaders(origin: string | null): HeadersInit {
-  if (!origin || !ALLOWED_ORIGINS.includes(origin)) return {};
-  return {
-    "Access-Control-Allow-Origin": origin,
-    "Access-Control-Allow-Methods": "POST, OPTIONS",
-    "Access-Control-Allow-Headers": "Content-Type",
-    Vary: "Origin",
-  };
-}
-
 function json(body: StoryResponse | ApiError, status: number, origin: string | null) {
   return Response.json(body, { status, headers: corsHeaders(origin) });
 }
 
 export function OPTIONS(request: Request) {
-  return new Response(null, { status: 204, headers: corsHeaders(request.headers.get("origin")) });
+  return preflight(request);
 }
 
 export async function POST(request: Request) {
   const origin = request.headers.get("origin");
+  // 在讀 body 與計入速率限制之前就擋，不花 Claude 額度
+  if (!isAllowedOrigin(origin)) return forbiddenOrigin();
 
   let body: unknown;
   try {
