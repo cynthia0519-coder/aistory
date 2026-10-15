@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import type { LibraryStory } from "@aistory/shared";
-import { buildAss, captionCues, episodeText, publishableStories, splitCaptions } from "../src/lib/episode";
+import { buildAss, captionCues, episodeText, fullWidthPunct, publishableStories, splitCaptions } from "../src/lib/episode";
 
 test("splitCaptions keeps sentences and splits long ones at commas", () => {
   assert.deepEqual(splitCaptions("天黑了。「你好，小雲朵。」小寶輕輕說。"), ["天黑了。", "「你好，小雲朵。」", "小寶輕輕說。"]);
@@ -64,4 +64,8 @@ test("episodeText uses the default hero name and the age range", () => {
   const t = episodeText(story({}), "zh", "https://example.com");
   assert.equal(t.title, "小寶的晚安｜睡前故事｜2–6 歲");
   assert.match(t.description, /https:\/\/example\.com/);
+});
+
+test("titles use full-width punctuation", () => {
+  assert.equal(fullWidthPunct("叮叮咚!小寶和奶奶的雨點樂團?"), "叮叮咚！小寶和奶奶的雨點樂團？");
 });

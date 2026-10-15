@@ -130,6 +130,10 @@ export interface EpisodeText {
   tags: string[];
 }
 
+/** 中文標題裡的半形標點換成全形（YouTube／Podcast 標題比較整齊） */
+const HALF_TO_FULL: Record<string, string> = { "!": "！", "?": "？", ",": "，", ":": "：", ";": "；" };
+export const fullWidthPunct = (s: string) => s.replace(/[!?,:;]/g, (c) => HALF_TO_FULL[c]);
+
 /** credit：說明最後的製作單位（例如頻道名稱），可不給 */
 export function episodeText(story: LibraryStory, language: Language, appUrl: string, credit?: string): EpisodeText {
   const r = renderLibraryStory(story, language);
@@ -156,7 +160,7 @@ export function episodeText(story: LibraryStory, language: Language, appUrl: str
   lines.push("", tags.map((t) => `#${t.replace(/\s/g, "")}`).join(" "));
   return {
     // 沒有主題的故事風格標籤（晚安、可愛）放進標題沒資訊量，只放主題
-    title: `${r.title}｜${story.theme ? `${kind}・` : ""}睡前故事｜${ages}`,
+    title: `${fullWidthPunct(r.title)}｜${story.theme ? `${kind}・` : ""}睡前故事｜${ages}`,
     description: lines.join("\n"),
     tags,
   };
