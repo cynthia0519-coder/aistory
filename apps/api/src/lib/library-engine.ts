@@ -14,7 +14,7 @@ import {
   type AgeBand,
   type Language,
 } from "@aistory/shared";
-import { lengthTarget, type LengthTarget } from "./length";
+import { LENGTH_BOOST, lengthTarget, type LengthTarget } from "./length";
 import { client, MODEL, SAFETY_RULES, STORY_CRAFT_RULES, StoryRefusedError } from "./story-engine";
 import { GUIDE_INSTRUCTIONS, themeBlock } from "./themes";
 
@@ -52,7 +52,14 @@ export function lengthBand(entry: Pick<LibraryPlanEntry, "ageBands">): AgeBand {
 }
 
 /**
- * 故事庫的長度目標：沿用照片故事的 LENGTH_RULES 與中文補正（lengthTarget）。
+ * 故事庫的中文低齡補正。4–6 歲照用照片故事的 ×1.35 會寫太長：284 則裡中位數落在上限的 102%、
+ * 92 則有 56 則超過上限（目標是範圍中間，約上限的 86%）；照比例換算 ×1.15 會落在目標附近。
+ * 2–4 歲用 ×1.35 中位數是上限的 91%，維持不變。
+ */
+export const LIBRARY_LENGTH_BOOST: typeof LENGTH_BOOST = { ...LENGTH_BOOST, "4-6": { zh: 1.15 } };
+
+/**
+ * 故事庫的長度目標：沿用照片故事的 LENGTH_RULES 與中文補正（lengthTarget），低齡補正改用 LIBRARY_LENGTH_BOOST。
  * 中英文段落數必須一致，所以段落數以先寫的中文為準，英文每段長度依此重新分配。
  */
 export function libraryLength(entry: Pick<LibraryPlanEntry, "ageBands">): {
@@ -61,8 +68,8 @@ export function libraryLength(entry: Pick<LibraryPlanEntry, "ageBands">): {
   lang: Record<Language, LengthTarget>;
 } {
   const band = lengthBand(entry);
-  const zh = lengthTarget(LIBRARY_STORY_LENGTH, band, "zh");
-  const en = lengthTarget(LIBRARY_STORY_LENGTH, band, "en");
+  const zh = lengthTarget(LIBRARY_STORY_LENGTH, band, "zh", LIBRARY_LENGTH_BOOST);
+  const en = lengthTarget(LIBRARY_STORY_LENGTH, band, "en", LIBRARY_LENGTH_BOOST);
   const paragraphs = zh.paragraphs;
   return { band, paragraphs, lang: { zh, en: { ...en, paragraphs, perParagraph: Math.round(en.target / paragraphs) } } };
 }

@@ -35,10 +35,15 @@ export interface LengthTarget {
   unit: string;
 }
 
-/** 依長度、年齡層、語言算出要給模型的字數與段落結構 */
-export function lengthTarget(length: StoryLength, ageBand: AgeBand, language: Language): LengthTarget {
+/** 依長度、年齡層、語言算出要給模型的字數與段落結構；boost 可換掉預設的 LENGTH_BOOST */
+export function lengthTarget(
+  length: StoryLength,
+  ageBand: AgeBand,
+  language: Language,
+  boost: typeof LENGTH_BOOST = LENGTH_BOOST,
+): LengthTarget {
   const rule = LENGTH_RULES[length].words[ageBand][language];
-  const k = (language === "zh" ? ZH_WITH_PUNCTUATION : 1) * (LENGTH_BOOST[ageBand]?.[language] ?? 1);
+  const k = (language === "zh" ? ZH_WITH_PUNCTUATION : 1) * (boost[ageBand]?.[language] ?? 1);
   const [lo, hi] = [Math.round(rule[0] * k), Math.round(rule[1] * k)];
   const target = Math.round((lo + hi) / 2);
   const perParagraph = Math.round(PARAGRAPH_SIZE[ageBand][language] * k);
