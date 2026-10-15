@@ -92,6 +92,8 @@ export const MUSIC_GROUPS = {
   cute: 3,
   adventure: 3,
   inspiring: 6,
+  // 寓言：森林小劇場（主題曲）、慢慢想一想、小動物大冒險，各兩個版本
+  fable: 6,
   "theme-tender": 2,
   "theme-careful": 2,
   "theme-routine": 2,
