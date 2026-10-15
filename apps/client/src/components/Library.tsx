@@ -32,6 +32,7 @@ interface Props {
   onCreate: () => void;
   onShop: () => void;
   onCredits: () => void;
+  onPrivacy: () => void;
 }
 
 const TABS = [
@@ -39,7 +40,7 @@ const TABS = [
   { id: "library", label: "故事庫" },
 ] as const;
 
-export function Library({ prefs, onPrefs, hero, onOpen, onOpenLibrary, onCreate, onShop, onCredits }: Props) {
+export function Library({ prefs, onPrefs, hero, onOpen, onOpenLibrary, onCreate, onShop, onCredits, onPrivacy }: Props) {
   const [stories, setStories] = useState<SavedStory[] | null>(null);
 
   useEffect(() => {
@@ -138,9 +139,14 @@ export function Library({ prefs, onPrefs, hero, onOpen, onOpenLibrary, onCreate,
         <BackupCard onShop={onShop} onImported={() => listStories().then(setStories)} />
       )}
 
-      <button type="button" onClick={onCredits} className="mx-auto mt-8 h-11 px-4 text-sm text-ink-soft underline">
-        授權與致謝
-      </button>
+      <div className="mt-8 flex justify-center">
+        <button type="button" onClick={onPrivacy} className="h-11 px-4 text-sm text-ink-soft underline">
+          隱私權政策
+        </button>
+        <button type="button" onClick={onCredits} className="h-11 px-4 text-sm text-ink-soft underline">
+          授權與致謝
+        </button>
+      </div>
     </div>
   );
 }

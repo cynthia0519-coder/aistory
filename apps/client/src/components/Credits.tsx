@@ -45,7 +45,7 @@ const SECTIONS: { heading: string; items: Credit[] }[] = [
     items: [
       {
         title: "故事內容",
-        body: "由 AI（Anthropic Claude）協助撰寫，故事庫經人工審稿。照片只用來編故事，不會保存在伺服器。",
+        body: "由 AI（Anthropic Claude）協助撰寫，故事庫經人工審稿。照片只用來編故事，不會保存在伺服器（詳見隱私權政策）。",
       },
     ],
   },

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import {
   AGE_BANDS,
   AGE_RULES,
@@ -26,7 +26,8 @@ import { heroSummary, lookOf, toHero, type HeroProfile } from "@/lib/heroes";
 import { HeroAvatar } from "./HeroAvatar";
 import { CameraIcon, PlusIcon } from "./icons";
 import { StoryLoading } from "./StoryLoading";
-import { Chip, PrimaryButton, SectionTitle } from "./ui";
+import { Chip, Dialog, PrimaryButton, SectionTitle } from "./ui";
+import { hasPhotoConsent, savePhotoConsent } from "@/lib/privacy";
 
 interface Props {
   onCreated: (story: SavedStory) => void;
@@ -35,6 +36,7 @@ interface Props {
   onEditHero: () => void;
   /** 不拍照，改從故事庫挑 */
   onBrowseLibrary: () => void;
+  onPrivacy: () => void;
 }
 
 const STYLE_DOT: Record<StoryStyle, string> = {
@@ -45,8 +47,12 @@ const STYLE_DOT: Record<StoryStyle, string> = {
   fable: "bg-[#b9a6d9]",
 };
 
-export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary }: Props) {
+export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPrivacy }: Props) {
   const [file, setFile] = useState<File | null>(null);
+  const fileInput = useRef<HTMLInputElement>(null);
+  // 第一次拍照前請家長確認照片怎麼用；同意過就直接開相機／相簿
+  const [consentOpen, setConsentOpen] = useState(false);
+  const [consentChecked, setConsentChecked] = useState(false);
   const [preview, setPreview] = useState<string | null>(null);
   const [language, setLanguage] = useState<Language>("zh");
   const [pickedAgeBand, setAgeBand] = useState<AgeBand>("4-6");
@@ -139,7 +145,14 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary }: Pr
       </header>
 
       <div className="flex flex-col gap-6 px-4 pt-3">
-        <label className="block cursor-pointer">
+        <label
+          className="block cursor-pointer"
+          onClick={(e) => {
+            if (hasPhotoConsent()) return;
+            e.preventDefault();
+            setConsentOpen(true);
+          }}
+        >
           {preview ? (
             <div className="flex items-center gap-4 rounded-2xl bg-card p-3 ring-2 ring-line">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -158,8 +171,41 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary }: Pr
               </div>
             </div>
           )}
-          <input type="file" accept="image/*" className="sr-only" onChange={(e) => pick(e.target.files?.[0])} />
+          <input ref={fileInput} type="file" accept="image/*" className="sr-only" onChange={(e) => pick(e.target.files?.[0])} />
         </label>
+
+        {consentOpen && (
+          <Dialog title="拍照前，請爸媽確認" onClose={() => setConsentOpen(false)}>
+            <ul className="flex list-disc flex-col gap-2 pl-5 text-sm leading-relaxed text-ink-soft">
+              <li>照片會傳給 AI（Anthropic Claude）編故事，伺服器不保存。</li>
+              <li>主角的名字和年齡會一起送出，讓故事主角變成孩子。</li>
+              <li>建議拍玩具、寵物、晚餐或公園，不要拍到孩子的臉、門牌或學校名稱。</li>
+            </ul>
+            <button type="button" onClick={onPrivacy} className="self-start text-sm font-bold text-teal underline underline-offset-4">
+              看完整的隱私權政策
+            </button>
+            <label className="flex items-start gap-3 rounded-2xl bg-card p-3 ring-2 ring-line">
+              <input
+                type="checkbox"
+                checked={consentChecked}
+                onChange={(e) => setConsentChecked(e.target.checked)}
+                className="mt-1 h-5 w-5 shrink-0 accent-teal"
+              />
+              <span className="text-sm font-bold leading-relaxed">我是孩子的爸媽或監護人，同意照片和主角資料這樣使用。</span>
+            </label>
+            <PrimaryButton
+              disabled={!consentChecked}
+              onClick={() => {
+                savePhotoConsent();
+                setConsentOpen(false);
+                // 還在同一次點擊裡，iOS 才肯打開相機／相簿
+                fileInput.current?.click();
+              }}
+            >
+              同意，選照片
+            </PrimaryButton>
+          </Dialog>
+        )}
 
         <button
           type="button"

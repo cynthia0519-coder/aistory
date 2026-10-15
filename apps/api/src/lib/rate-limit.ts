@@ -3,6 +3,8 @@
 // 有設定 Upstash Redis（UPSTASH_REDIS_REST_URL / TOKEN）時使用 Redis，計數在所有 serverless 實例之間共享。
 // 沒設定時退回記憶體計數：本機開發夠用，但部署到 Vercel 後每個實例各算各的，擋不住刷量，上線前一定要設定 Redis。
 
+import { createHash } from "node:crypto";
+
 export interface Limit {
   /** 計數用的 key 前綴 */
   name: string;
@@ -94,8 +96,17 @@ function windowKey(bucket: BucketName, limit: Limit, id: string) {
 
 export type RateLimitResult = { ok: true } | { ok: false; reason: "ip" | "global" };
 
-export async function checkRateLimit(ip: string, bucket: BucketName = "story"): Promise<RateLimitResult> {
+/**
+ * 計數用的連線位址先雜湊，Redis 裡不留原始 IP（隱私權政策寫的「不存原始位址」）。
+ * RATE_LIMIT_SALT 有設的話一起雜湊，比較難從雜湊反查 IP。
+ */
+export function ipKey(ip: string): string {
+  return createHash("sha256").update(`${process.env.RATE_LIMIT_SALT ?? ""}:${ip}`).digest("hex").slice(0, 16);
+}
+
+export async function checkRateLimit(rawIp: string, bucket: BucketName = "story"): Promise<RateLimitResult> {
   const limits = BUCKETS[bucket];
+  const ip = ipKey(rawIp);
   try {
     const [minute, day, global] = await Promise.all([
       counter.increment(windowKey(bucket, limits.perIpMinute, ip), limits.perIpMinute.windowSeconds),

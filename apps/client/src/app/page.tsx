@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { CreateStory } from "@/components/CreateStory";
 import { Credits } from "@/components/Credits";
+import { Privacy } from "@/components/Privacy";
 import { HeroEditor } from "@/components/HeroEditor";
 import { Shop } from "@/components/Shop";
 import { BooksIcon, StarIcon } from "@/components/icons";
@@ -22,7 +23,9 @@ type View =
   | { name: "hero" }
   | { name: "shop" }
   // 授權與致謝；from = 從哪一頁進來，返回時回去
-  | { name: "credits"; from: "library" | "shop" };
+  | { name: "credits"; from: "library" | "shop" }
+  // 隱私權政策；from = 從哪一頁進來，返回時回去
+  | { name: "privacy"; from: "create" | "library" | "shop" };
 
 export default function Home() {
   const [view, setView] = useState<View>({ name: "create" });
@@ -90,6 +93,7 @@ export default function Home() {
               hero={hero}
               onEditHero={() => setView({ name: "hero" })}
               onBrowseLibrary={browseLibrary}
+              onPrivacy={() => setView({ name: "privacy", from: "create" })}
             />
           </div>
         )}
@@ -112,11 +116,21 @@ export default function Home() {
             onCreate={create}
             onShop={() => setView({ name: "shop" })}
             onCredits={() => setView({ name: "credits", from: "library" })}
+            onPrivacy={() => setView({ name: "privacy", from: "library" })}
           />
         )}
-        {view.name === "shop" && <Shop onBack={library} onCredits={() => setView({ name: "credits", from: "shop" })} />}
+        {view.name === "shop" && (
+          <Shop
+            onBack={library}
+            onCredits={() => setView({ name: "credits", from: "shop" })}
+            onPrivacy={() => setView({ name: "privacy", from: "shop" })}
+          />
+        )}
         {view.name === "credits" && (
           <Credits onBack={() => (view.from === "shop" ? setView({ name: "shop" }) : library())} />
+        )}
+        {view.name === "privacy" && (
+          <Privacy onBack={() => (view.from === "shop" ? setView({ name: "shop" }) : view.from === "create" ? create() : library())} />
         )}
       </main>
 
