@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T08:18:04.017Z",
+  "generatedAt": "2026-10-15T08:19:22.075Z",
   "summary": {
     "stories": 334,
     "byStatus": {
@@ -8,21 +8,20 @@
     },
     "byCheckKind": {
       "length": 253,
-      "zh_half_width_punct": 2,
       "duplicate_title": 12,
       "tokens": 2,
       "sensitive_pattern": 9,
       "phone_number": 1
     },
     "byIssueKind": {
-      "repetition": 149,
+      "repetition": 150,
       "logic": 146,
-      "quality": 62,
-      "taiwan_usage": 37,
+      "quality": 60,
+      "taiwan_usage": 38,
       "safety": 37,
+      "age_fit": 16,
       "preachy": 27,
       "zh_en_mismatch": 86,
-      "age_fit": 14,
       "length": 3,
       "guardrail": 4
     },
@@ -159,7 +158,7 @@
       "water-safety-river-picnic",
       "zoo-giraffe-tall-and-small"
     ],
-    "usd": 9.418
+    "usd": 9.4204
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -4427,7 +4426,7 @@
       "reviewedAt": "2026-10-15T08:12:58.401Z"
     },
     "anger-stomping-dinosaur": {
-      "hash": "f967d7875d134a27",
+      "hash": "73277d3badeb3e6a",
       "checks": [
         {
           "kind": "length",
@@ -4435,19 +4434,12 @@
           "lang": "en",
           "where": "story",
           "note": "英文 251 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 !（—!），改成全形"
         }
       ],
       "model": "claude-opus-5-5",
-      "usd": 0.0285816,
+      "usd": 0.0328056,
       "status": "ok",
-      "reviewedAt": "2026-10-15T08:17:54.411Z",
+      "reviewedAt": "2026-10-15T08:19:14.966Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -4456,21 +4448,35 @@
             "severity": "low",
             "lang": "both",
             "where": "4",
-            "note": "剛洗完澡在浴室『用力跺腳』容易滑倒，可加一句『踩在防滑地墊上』或改成慢慢跺腳"
+            "note": "剛出浴缸在浴室『用力跺腳』，地面可能濕滑，可加一句『在乾乾的軟地墊上』或改成在房間跺腳"
           },
           {
             "kind": "quality",
             "severity": "low",
             "lang": "en",
             "where": "5",
-            "note": "英文『Slow and slow.』不自然，改成『Slowly, slowly.』"
+            "note": "英文『Slow and slow.』不自然，改成『Slow, slow, slow.』；第2段『wobbles, wobble, wobble』也可改順"
           },
           {
-            "kind": "quality",
+            "kind": "age_fit",
+            "severity": "low",
+            "lang": "en",
+            "where": "0",
+            "note": "英文『{name} is having a bath, and Dad sits right beside the tub.』超過8字，可拆成兩句"
+          },
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "2",
+            "note": "『像一座小火山』與同主題 little-volcano、volcano-breath 意象重複，可換成恐龍相關比喻"
+          },
+          {
+            "kind": "taiwan_usage",
             "severity": "low",
             "lang": "zh",
-            "where": "7",
-            "note": "『吼~抱抱』用了半形波浪號，改成全形『～』或改用『吼——』"
+            "where": "guide",
+            "note": "『恐龍吸了幾口大氣』說法不順，改成『恐龍大口吸了幾次氣』"
           }
         ]
       }
@@ -4620,16 +4626,12 @@
       "reviewedAt": "2026-10-14T09:58:06.052Z"
     },
     "sharing-turns-swing-song": {
-      "hash": "5df7e2afa4da825b",
-      "checks": [
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 ,（—,），改成全形"
-        }
-      ],
+      "hash": "2334d81110c45629",
+      "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.021745599999999997,
+      "status": "check",
+      "reviewedAt": "2026-10-15T08:19:22.069Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -4638,21 +4640,17 @@
             "severity": "medium",
             "lang": "both",
             "where": "0",
-            "note": "與 sharing-turns-swing-timer 太像：同樣是公園唯一鞦韆、計數輪流、最後一起玩；建議換器材或設定"
+            "note": "與 sharing-turns-swing-timer 太像：同樣是公園唯一鞦韆、計數輪流、一起玩。建議換成別的遊具或地點，拉開差異"
           },
           {
-            "kind": "quality",
+            "kind": "age_fit",
             "severity": "low",
-            "lang": "zh",
-            "where": "6",
-            "note": "「高高……吃！」和「飛」不押韻，笑點較弱；可改成音近的字，如「高高……肥！」"
+            "lang": "en",
+            "where": "7",
+            "note": "「Song after song, round and round go the turns」偏長又抽象，2 歲不易懂，可拆成兩句短句"
           }
         ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.023529599999999998,
-      "status": "check",
-      "reviewedAt": "2026-10-15T08:13:17.944Z"
+      }
     },
     "sharing-turns-one-red-crayon": {
       "hash": "66785b19090d51b0",
@@ -10159,10 +10157,6 @@
     "earthquake-kindergarten-drill-song": {
       "hash": "75dc45c5a7178ff9",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0304696,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T08:18:04.012Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -10188,7 +10182,11 @@
             "note": "小明「像一隻小烏龜」和同主題 turtle-drill 的烏龜意象重複，可考慮換成其他比喻"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0304696,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:18:04.012Z"
     },
     "getting-lost-supermarket-meeting-spot": {
       "hash": "fec61778df0e8564",
