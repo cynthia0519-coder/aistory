@@ -2212,5 +2212,400 @@
     "style": "inspiring",
     "setting": "school",
     "premise": "{name}'s best friend tells the class {name}'s embarrassing nickname from preschool, and everyone laughs. {name} feels hurt and stays away for days. When the friend apologizes sincerely, {name} explains how much it hurt, and then chooses to forgive. Their friendship comes back, a little stronger and more careful."
+  },
+  {
+    "id": "caring-for-nature-eggplant-garden-worms",
+    "theme": "caring-for-nature",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "{name} helps Grandma in the vegetable patch and finds wriggly earthworms in the soil. {name} wants to throw them away, but Grandma explains that worms make the soil soft and help the purple eggplants grow. {name} gently puts each worm back and gives them the name 'garden helpers'."
+  },
+  {
+    "id": "caring-for-nature-crab-crossing",
+    "theme": "caring-for-nature",
+    "ageBands": ["6-8"],
+    "style": "adventure",
+    "setting": "sea",
+    "premise": "In summer, red land crabs cross a coastal road to release their eggs in the sea. {name} joins volunteers in reflective vests who help the crabs cross safely and remind drivers to slow down. By dawn, {name} has counted over a hundred crabs reaching the waves."
+  },
+  {
+    "id": "caring-for-nature-pangolin-fable",
+    "theme": "caring-for-nature",
+    "ageBands": ["2-4", "4-6"],
+    "style": "fable",
+    "setting": "forest",
+    "premise": "Pangolin rolls into a ball every time the forest gets noisy with trash and loud music. The squirrels think he's just shy. {name} helps the animals pick up the litter and turn the music down, and Pangolin finally uncurls to show everyone the ant hill he has been guarding."
+  },
+  {
+    "id": "courage-first-solo-errand",
+    "theme": "courage",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "For the first time, {name} goes alone into the little shop next door to buy eggs while Mom waits right outside the glass door. {name}'s voice wobbles when asking the shopkeeper, and the coins slip once. But {name} counts them again, says thank you, and carries the eggs out proudly."
+  },
+  {
+    "id": "courage-little-sparrow-storm-fable",
+    "theme": "courage",
+    "ageBands": ["2-4", "4-6"],
+    "style": "fable",
+    "setting": "park",
+    "premise": "Little Sparrow is too scared to sing because the big birds are so loud. When a storm comes and a baby duckling gets lost in the reeds, only Sparrow's high, clear voice can be heard over the wind. {name} helps Sparrow keep calling until the mother duck follows the song and finds her baby."
+  },
+  {
+    "id": "courage-school-show-and-tell",
+    "theme": "courage",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "{name} has to speak in front of the class about a favorite thing: Grandma's old wooden spinning top. {name}'s knees shake and the words disappear. {name} takes a breath, spins the top instead, and as it hums on the desk, the words come back one by one."
+  },
+  {
+    "id": "empathy-quiet-grandpa-chess",
+    "theme": "empathy",
+    "ageBands": ["6-8", "8-10"],
+    "style": "inspiring",
+    "setting": "park",
+    "premise": "Every afternoon an old man plays Chinese chess alone in the park, and kids say he's strange. {name} notices he always sets up a second cup of tea. {name} sits down and asks to learn, and the man shares that his old chess friend moved away. Soon the bench has two players again."
+  },
+  {
+    "id": "empathy-elephant-and-mouse-fable",
+    "theme": "empathy",
+    "ageBands": ["4-6"],
+    "style": "fable",
+    "setting": "zoo",
+    "premise": "Big Elephant wants to help everyone, but he keeps squashing the mouse's garden by accident and gets upset when Mouse is angry. {name} helps Elephant see the garden from Mouse's tiny height. Elephant learns to walk carefully on the path, and he waters the garden with his trunk."
+  },
+  {
+    "id": "empathy-new-baby-cousin-crying",
+    "theme": "empathy",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "Baby cousin cries and cries at the family dinner. {name} covers {his} ears at first, then wonders what the baby is feeling. Is baby hungry? Tired? Too noisy? {name} turns down the toy music and sings a soft song, and the baby yawns."
+  },
+  {
+    "id": "forgiveness-squashed-sandcastle",
+    "theme": "forgiveness",
+    "ageBands": ["4-6", "6-8"],
+    "style": "inspiring",
+    "setting": "sea",
+    "premise": "{name} spends all morning building a sandcastle at the beach, and a friend running by accidentally stomps on the tower. {name} shouts and turns away. Later the friend comes back with a bucket and says sorry. {name} feels the anger melt, and they build an even bigger castle together."
+  },
+  {
+    "id": "forgiveness-river-otters-fable",
+    "theme": "forgiveness",
+    "ageBands": ["4-6"],
+    "style": "fable",
+    "setting": "forest",
+    "premise": "Two river otters argue over a shiny stone, and Big Otter pushes Little Otter into the cold water. Big Otter feels sorry but is too proud to say so. {name} helps him find words, and when he says 'I'm sorry, I was wrong,' Little Otter shares the stone and they slide down the bank together."
+  },
+  {
+    "id": "forgiveness-sibling-drawing",
+    "theme": "forgiveness",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "{name}'s younger sibling scribbles on {name}'s finished school poster the night before it's due. {name} is furious and says hurtful things. Later {name} notices the scribbles were hearts and the word 'best', and they redo the poster together, adding a small heart in the corner."
+  },
+  {
+    "id": "gratitude-thank-you-postman",
+    "theme": "gratitude",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "city",
+    "premise": "Every day the mail carrier rides a green scooter up {name}'s street, even in the rain. {name} decides to say thank you in a special way: a drawing of the green scooter with a rainbow, taped to the mailbox. The next day, there's a little note back that says 'Thank you too!'"
+  },
+  {
+    "id": "gratitude-rice-farmer-fable",
+    "theme": "gratitude",
+    "ageBands": ["6-8"],
+    "style": "fable",
+    "setting": "mountain",
+    "premise": "Young Sparrow eats rice from the terraced fields all year but never thinks about where it comes from. When a drought comes, Sparrow sees the old water buffalo and the farmer working day and night. {name} and Sparrow help carry water, and at harvest Sparrow sings for the whole field."
+  },
+  {
+    "id": "gratitude-grandma-dumplings-bedtime",
+    "theme": "gratitude",
+    "ageBands": ["2-4", "4-6"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "Before bed, {name} remembers the warm dumplings Grandma made, the story Dad read, and the hug from a friend at school. With Mom, {name} whispers a soft thank-you for each, and with every thank-you a star seems to light up outside the window until {name} is fast asleep."
+  },
+  {
+    "id": "keeping-promises-plant-sitter",
+    "theme": "keeping-promises",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "{name} promises the neighbor to water her tomato plants during her trip. On the third day, friends invite {name} to the water park. {name} remembers the wilting tomatoes, waters them first, and runs to catch up, arriving a little late but with a clear heart. The neighbor returns with the first red tomato."
+  },
+  {
+    "id": "keeping-promises-tortoise-message-fable",
+    "theme": "keeping-promises",
+    "ageBands": ["4-6"],
+    "style": "fable",
+    "setting": "forest",
+    "premise": "Old Tortoise promises to deliver Owl's message to the far side of the forest before the full moon. On the way, the monkeys invite him to a fruit party. {name} walks beside Tortoise, who says 'a promise is a promise,' and they reach the meadow just as the moon rises."
+  },
+  {
+    "id": "keeping-promises-secret-garden-bench",
+    "theme": "keeping-promises",
+    "ageBands": ["8-10"],
+    "style": "adventure",
+    "setting": "school",
+    "premise": "{name} promises the retiring school janitor to keep the little garden behind the gym alive. When the rainy season floods it, {name} gathers friends, digs a drainage path, and replants the flowers. On the janitor's visit, the garden is blooming, with a new sign: 'Uncle Chen's Garden'."
+  },
+  {
+    "id": "perseverance-tying-shoelaces",
+    "theme": "perseverance",
+    "ageBands": ["4-6", "6-8"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "{name} wants to tie {his} own shoelaces before the class field trip, but the loops keep falling apart. Grandma teaches a bunny-ears rhyme, and {name} practices on a cardboard shoe every evening. On the morning of the trip, {name} ties both shoes alone and races out the door."
+  },
+  {
+    "id": "perseverance-water-drop-stone-fable",
+    "theme": "perseverance",
+    "ageBands": ["6-8", "8-10"],
+    "style": "fable",
+    "setting": "mountain",
+    "premise": "In a mountain cave, a tiny water drop wants to make a hole in a big stone. The stone laughs. Drop after drop, season after season, the drop keeps falling. Years later, {name} visits the cave and finds a smooth little pool in the stone, where the water drop sparkles."
+  },
+  {
+    "id": "perseverance-origami-crane",
+    "theme": "perseverance",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "{name} wants to fold a paper crane for Grandma in the hospital, but the folds keep tearing and the wings come out crooked. After watching a video and practicing with scrap paper all week, {name} finally folds a perfect crane, and then a second one for the nurse."
+  },
+  {
+    "id": "respecting-differences-left-handed",
+    "theme": "respecting-differences",
+    "ageBands": ["4-6", "6-8"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "{name} writes with the left hand, and a classmate says it's wrong. {name} feels embarrassed until the teacher shows famous left-handed artists and athletes. {name} helps the class set up a special left-handed scissors corner, and now everyone knows it's just another way to do things."
+  },
+  {
+    "id": "respecting-differences-bird-songs-fable",
+    "theme": "respecting-differences",
+    "ageBands": ["2-4", "4-6"],
+    "style": "fable",
+    "setting": "forest",
+    "premise": "In the forest choir, Owl hoots, Crow caws and Bulbul whistles, and each says their song is the best. The music is a mess. {name} suggests they take turns and then sing together, and the forest fills with the most beautiful song any of them has heard."
+  },
+  {
+    "id": "respecting-differences-grandma-hearing-aid",
+    "theme": "respecting-differences",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "{name}'s new classmate wears hearing aids, and some kids talk behind her back. {name} remembers how Grandma uses one too and how she reads lips. {name} learns a few sign language words from Grandma and teaches them to the class, and soon the new classmate is teaching everyone more."
+  },
+  {
+    "id": "responsibility-class-turtle-tank",
+    "theme": "responsibility",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "school",
+    "premise": "{name} becomes the class turtle helper for a week. Feeding is fun, but cleaning the tank is not. When {name} forgets one day, the water gets cloudy and the turtle hides. {name} makes a picture chart to remember, and the turtle comes out to sunbathe again."
+  },
+  {
+    "id": "responsibility-lost-library-book",
+    "theme": "responsibility",
+    "ageBands": ["6-8", "8-10"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "{name} loses a library book and wants to pretend it was never borrowed. Instead {name} tells the librarian, searches every corner of home, and offers to use pocket money to replace it. The book turns up under the car seat, and the librarian thanks {name} for being honest and responsible."
+  },
+  {
+    "id": "responsibility-bee-keeper-fable",
+    "theme": "responsibility",
+    "ageBands": ["4-6", "6-8"],
+    "style": "fable",
+    "setting": "mountain",
+    "premise": "Little Bee is given the job of guarding the hive door, but gets distracted by a beautiful butterfly. A wasp almost sneaks in. {name} helps Little Bee sound the alarm in time, and Little Bee learns that every small job matters to the whole hive."
+  },
+  {
+    "id": "teamwork-dragon-dance-practice",
+    "theme": "teamwork",
+    "ageBands": ["6-8", "8-10"],
+    "style": "adventure",
+    "setting": "school",
+    "premise": "{name}'s class practices a dragon dance for the school festival, but everyone runs at their own speed and the dragon keeps twisting into a knot. {name} suggests they follow one drum beat. Step by step, the dragon starts to swirl, and on festival day it dances like it's alive."
+  },
+  {
+    "id": "teamwork-ant-bridge-fable",
+    "theme": "teamwork",
+    "ageBands": ["6-8"],
+    "style": "fable",
+    "setting": "forest",
+    "premise": "Fox, Rabbit, Hedgehog and {name} each think they can cross the stream alone, and each falls in. Then they notice what each is good at: Fox finds the log, Rabbit hops to check the stones, Hedgehog's spines hold the rope. Together they build a bridge that everyone can cross."
+  },
+  {
+    "id": "teamwork-family-dinner-chefs",
+    "theme": "teamwork",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "Mom is sick, so {name}, Dad and big sister cook dinner together. Dad chops, sister stirs, and {name} washes the vegetables and sets the table. The noodles are a little too salty, but Mom smiles and says it's the best dinner because everyone made it together."
+  },
+  {
+    "id": "brushing-teeth-dino-flossing",
+    "theme": "brushing-teeth",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "{name}'s toy dinosaur has a big toothy grin, and {name} brushes the dinosaur's teeth every night before {his} own. Tonight the dinosaur seems to say, 'Your turn!' {name} brushes up, down and around, and grins back at the mirror with sparkly teeth."
+  },
+  {
+    "id": "bedtime-routine-pajama-moon-bath",
+    "theme": "bedtime-routine",
+    "ageBands": ["2-4"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "The moon peeks in the bathroom window while {name} takes a warm bath. Splash, splash, then a fluffy towel, cozy pajamas, and a sip of water. One by one, {name} says goodnight to the moon, the stars and the rubber duck, and snuggles into bed."
+  },
+  {
+    "id": "trying-food-steamed-fish-bones",
+    "theme": "trying-food",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "Dad makes steamed fish for dinner, and {name} is worried about the tiny bones. Dad shows how to eat slowly, pick out bones with chopsticks, and take small bites. {name} finds the first bone all alone and proudly puts it on the bone plate, then asks for another piece."
+  },
+  {
+    "id": "handwashing-clay-art-class",
+    "theme": "handwashing",
+    "ageBands": ["4-6"],
+    "style": "adventure",
+    "setting": "school",
+    "premise": "In art class, {name} makes a clay turtle, and {his} hands are covered in sticky gray clay. Before snack time, {name} follows the five-step handwashing poster: wet, soap, scrub, rinse, dry. The clay swirls down the drain, and {name} eats {his} snack with squeaky clean hands."
+  },
+  {
+    "id": "dentist-loose-tooth-brave-chair",
+    "theme": "dentist",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "{name} has a small cavity and needs a filling. In the waiting room {name}'s heart is pounding. The dentist explains each tool, lets {name} raise a hand to pause, and plays {name}'s favorite song. It's over sooner than expected, and {name} chooses a dinosaur sticker."
+  },
+  {
+    "id": "water-safety-beach-red-flag",
+    "theme": "water-safety",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "sea",
+    "premise": "At the beach, {name} sees a red flag flying and asks why the lifeguard won't let people swim there. The lifeguard explains rip currents that can pull swimmers out to sea. {name} and Dad move to the swimming area between the flags, and {name} teaches a cousin the flag rules."
+  },
+  {
+    "id": "crossing-road-school-crossing-guard",
+    "theme": "crossing-road",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "city",
+    "premise": "Every morning, Grandpa Wang, the school crossing guard, holds up his big stop sign. {name} learns to wait for his whistle, look both ways, and walk with friends in the crosswalk. On the last day of school, the class gives Grandpa Wang a thank-you card shaped like a stop sign."
+  },
+  {
+    "id": "earthquake-kindergarten-drill-song",
+    "theme": "earthquake",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "school",
+    "premise": "At kindergarten, the teacher teaches an earthquake song: 'Drop down low, cover your head, hold on tight like a little turtle!' During the drill, {name} and friends practice under the tables, and {name} helps a younger child remember the turtle pose."
+  },
+  {
+    "id": "getting-lost-supermarket-meeting-spot",
+    "theme": "getting-lost",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "Before going into the big supermarket, Mom and {name} pick a meeting spot: the red balloon sign by the checkout. When {name} gets distracted by the toy aisle and can't see Mom, {name} remembers, goes to the red balloon, and tells the cashier, who helps call Mom over."
+  },
+  {
+    "id": "sockets-charger-cord-safety",
+    "theme": "sockets",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "{name} sees a phone charger dangling from the wall and wants to play with the cord. Dad explains that plugs and cords carry electricity and only grown-ups unplug them. {name} becomes the family's 'cord checker', telling Dad whenever a cord is hanging where little hands could reach."
+  },
+  {
+    "id": "anger-red-face-pillow",
+    "theme": "anger",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "When the block tower falls for the third time, {name}'s face gets red and hot. {name} wants to throw the blocks. Mom shows a squishy 'angry pillow' to squeeze, and they breathe like a big balloon together. When {name} feels calm, they build the tower again, wider at the bottom."
+  },
+  {
+    "id": "sharing-turns-one-red-tricycle",
+    "theme": "sharing-turns",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "park",
+    "premise": "There's only one red tricycle at the playground, and {name} and a friend both want it. They pull and pull, and nobody rides. {name} has an idea: one rides, one pushes the bell, then switch. Ding, ding! The tricycle goes around and around with two happy friends."
+  },
+  {
+    "id": "fear-of-dark-closet-monster-flashlight",
+    "theme": "fear-of-dark",
+    "ageBands": ["4-6"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "At night, the closet door looks like a monster's mouth. {name} calls Dad, and together they open it with a flashlight: just jackets, shoes, and a teddy bear that fell down. {name} puts the teddy bear on guard duty, and the closet looks friendly now."
+  },
+  {
+    "id": "losing-failing-spelling-bee",
+    "theme": "losing-failing",
+    "ageBands": ["6-8", "8-10"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "{name} practices hard for the class spelling contest but misses a word in the first round. {name} wants to hide under the desk. Then {name} cheers on the classmates still spelling, and after school writes the missed word ten times, ready for next time."
+  },
+  {
+    "id": "night-sky-shooting-star-wish",
+    "ageBands": ["2-4", "4-6"],
+    "style": "bedtime",
+    "setting": "night_sky",
+    "premise": "On a quiet night at Grandpa's countryside house, {name} lies on a mat looking up at the stars. A shooting star zips across the sky, and {name} makes a wish to come back next summer. As crickets sing softly, {name}'s eyes close under the twinkling sky."
+  },
+  {
+    "id": "snow-polar-bear-cub-fable",
+    "ageBands": ["4-6"],
+    "style": "fable",
+    "setting": "snow",
+    "premise": "A polar bear cub thinks she is too small to help her family catch fish through the ice. {name} notices she can hear the tiny cracks in the ice that the big bears miss. Her sharp ears warn the family of thin ice, and she learns that being small can be a strength."
+  },
+  {
+    "id": "sea-proud-seagull-fable",
+    "ageBands": ["6-8"],
+    "style": "fable",
+    "setting": "sea",
+    "premise": "A proud seagull laughs at the slow little hermit crab for carrying its home on its back. When a big wave crashes over the rocks, the seagull's nest is washed away, but the hermit crab simply tucks into its shell. {name} helps both of them, and the seagull learns not to judge others by how fast they are."
+  },
+  {
+    "id": "city-rooftop-garden-mystery",
+    "ageBands": ["8-10"],
+    "style": "adventure",
+    "setting": "city",
+    "premise": "Vegetables keep disappearing from {name}'s apartment rooftop garden. {name} and a neighbor set up a detective watch and discover a family of birds and one clever squirrel. Instead of chasing them away, they build a small feeder so everyone shares the garden."
+  },
+  {
+    "id": "zoo-giraffe-tall-and-small",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "zoo",
+    "premise": "At the zoo, {name} wishes to be as tall as the giraffe. The giraffe can reach the treetop leaves, but can't see the little ladybug on the ground that {name} found. {name} decides being small is fun too, and waves to the giraffe from down below."
+  },
+  {
+    "id": "new-sibling-bedtime-story-swap",
+    "theme": "new-sibling",
+    "ageBands": ["2-4", "4-6"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "Since the baby came, Mom reads to the baby at bedtime and {name} feels left out. So Mom and {name} make a new plan: {name} reads the baby a picture book first, then Mom reads {name} a special big-kid story. {name} falls asleep feeling like the best big sibling."
   }
 ]
