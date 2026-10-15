@@ -1,6 +1,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { StoryRequestSchema, type ApiError, type StoryResponse } from "@aistory/shared";
 import { corsHeaders, forbiddenOrigin, isAllowedOrigin, preflight } from "@/lib/cors";
+import { inviteFrom, isValidInvite } from "@/lib/invite";
 import { checkRateLimit, clientIp } from "@/lib/rate-limit";
 import { generateStory, StoryRefusedError } from "@/lib/story-engine";
 
@@ -19,6 +20,8 @@ export async function POST(request: Request) {
   const origin = request.headers.get("origin");
   // 在讀 body 與計入速率限制之前就擋，不花 Claude 額度
   if (!isAllowedOrigin(origin)) return forbiddenOrigin();
+  // 封測期間只有受邀的家庭能拍照編故事（INVITE_CODES 沒設就不檢查）
+  if (!isValidInvite(inviteFrom(request))) return json({ error: "invite_required" }, 403, origin);
 
   let body: unknown;
   try {

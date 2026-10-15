@@ -37,6 +37,18 @@ export const BUCKETS = {
     perIpDay: { name: "ip-d", max: env("RATE_TTS_IP_PER_DAY", 800), windowSeconds: 86_400 },
     globalDay: { name: "all-d", max: env("RATE_TTS_GLOBAL_PER_DAY", 50_000), windowSeconds: 86_400 },
   },
+  // 邀請碼驗證：擋住猜碼
+  invite: {
+    perIpMinute: { name: "ip-m", max: 10, windowSeconds: 60 },
+    perIpDay: { name: "ip-d", max: 50, windowSeconds: 86_400 },
+    globalDay: { name: "all-d", max: 10_000, windowSeconds: 86_400 },
+  },
+  // 家長回報故事：正常一天不會超過幾則
+  report: {
+    perIpMinute: { name: "ip-m", max: 5, windowSeconds: 60 },
+    perIpDay: { name: "ip-d", max: 30, windowSeconds: 86_400 },
+    globalDay: { name: "all-d", max: 2000, windowSeconds: 86_400 },
+  },
 } satisfies Record<string, Bucket>;
 export type BucketName = keyof typeof BUCKETS;
 

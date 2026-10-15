@@ -9,11 +9,13 @@
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
     "eval": "tsx eval/story-quality.ts",
+    "eval:photo": "tsx eval/photo-cost.ts",
     "library:generate": "tsx scripts/generate-library.ts",
     "library:review": "tsx scripts/review-library.ts",
     "library:publish": "tsx scripts/publish-library.ts",
     "test": "tsx --test test/*.test.ts",
-    "episodes:render": "tsx scripts/render-episodes.ts"
+    "episodes:render": "tsx scripts/render-episodes.ts",
+    "reports": "tsx scripts/list-reports.ts"
   },
   "dependencies": {
     "@aistory/shared": "*",

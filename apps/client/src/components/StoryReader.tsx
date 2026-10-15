@@ -17,6 +17,7 @@ import {
   type RecordingEntry,
 } from "@/lib/recordings";
 import { sceneSrc } from "@/lib/scenes";
+import { ReportDialog } from "./ReportDialog";
 import {
   BackIcon,
   CheckIcon,
@@ -65,6 +66,7 @@ interface Props {
 export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
   /** 正在念（或翻到、選到）的段落；-1 代表標題，null 代表沒在念 */
   const [current, setCurrent] = useState<number | null>(null);
+  const [reporting, setReporting] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   /** 背景音樂開關（記在 localStorage）；閱讀頁只在瀏覽器裡渲染，可以直接讀 */
@@ -482,8 +484,13 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
           <GuideCard guide={story.guide} showHotline={!!story.theme && THEMES[story.theme]?.category === "body"} />
         )}
 
+        <button type="button" onClick={() => setReporting(true)} className="self-center px-3 py-2 text-sm text-ink-soft underline">
+          這個故事怪怪的？告訴我們
+        </button>
+
         {error && <p className="rounded-2xl bg-rust/10 p-3 text-rust-dark">{error}</p>}
       </div>
+      {reporting && <ReportDialog story={story} onClose={() => setReporting(false)} />}
 
       <div className="fixed inset-x-0 bottom-0 z-20 mx-auto max-w-md rounded-t-3xl bg-teal px-4 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-4 text-paper min-[360px]:px-6">
         <div className="flex justify-center gap-1.5" aria-label={playing ? `第 ${Math.max(current, 0) + 1} 段，共 ${total} 段` : `共 ${total} 段`}>

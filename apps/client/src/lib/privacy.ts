@@ -1,7 +1,7 @@
 // 隱私：拍照前的家長同意與隱私權政策的版本。
 // 政策內容改了（尤其是照片怎麼處理）就把 CONSENT_VERSION 加一，所有人下次拍照前會再確認一次。
 export const POLICY_UPDATED = "2026 年 10 月 15 日";
-export const CONSENT_VERSION = 1;
+export const CONSENT_VERSION = 2;
 /** 隱私問題的聯絡信箱；空字串時政策頁不顯示聯絡方式 */
 export const PRIVACY_CONTACT = "";
 

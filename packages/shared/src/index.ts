@@ -529,6 +529,36 @@ export interface ApiError {
   error: string;
 }
 
+// ---- 封測：邀請碼與故事回報 ----
+/** 拍照編故事要帶的邀請碼 header（伺服器有設 INVITE_CODES 時才檢查） */
+export const INVITE_HEADER = "X-Invite-Code";
+
+export const REPORT_REASONS = ["scary", "inappropriate", "nonsense", "wrong_language", "other"] as const;
+export type ReportReason = (typeof REPORT_REASONS)[number];
+export const REPORT_REASON_LABELS: Record<ReportReason, string> = {
+  scary: "太可怕或讓孩子不安",
+  inappropriate: "內容不適合孩子",
+  nonsense: "故事不通順、看不懂",
+  wrong_language: "用語怪怪的（簡體、大陸用語）",
+  other: "其他",
+};
+
+/**
+ * 家長回報一則故事。主角名字在手機上先換成 {name}，伺服器收不到孩子的名字；不含照片。
+ * 故事庫的故事只送 id（內容伺服器端本來就有）。
+ */
+export const ReportRequestSchema = z.object({
+  source: z.enum(["photo", "library"]),
+  storyId: z.string().max(200),
+  reason: z.enum(REPORT_REASONS),
+  note: z.string().trim().max(300).optional(),
+  language: z.enum(LANGUAGES),
+  ageBand: z.enum(AGE_BANDS),
+  title: z.string().max(200).optional(),
+  paragraphs: z.array(z.string().max(2000)).max(40).optional(),
+});
+export type ReportRequest = z.infer<typeof ReportRequestSchema>;
+
 // ---- 故事庫：人工審過、隨 App 打包的故事。在裝置上換成主角名字與代名詞，不花 LLM token ----
 // 第二版的「KTV 模式」會讓爸媽一段一段錄音，所以段落是基本單位，中英文段落數必須一致。
 

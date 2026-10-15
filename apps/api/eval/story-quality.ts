@@ -31,6 +31,7 @@ import {
   type StoryStyle,
 } from "@aistory/shared";
 import { generateStoryDetailed } from "../src/lib/story-engine";
+import { cost } from "./prices";
 
 const SCENES = [
   "A little girl in a yellow raincoat jumping into a puddle on a rainy street, holding a red umbrella. Mood: playful.",
@@ -39,10 +40,7 @@ const SCENES = [
 ];
 
 /** USD / 百萬 tokens（Anthropic 官方價，2026-10） */
-const PRICES: Record<string, { in: number; out: number; cacheRead: number; cacheWrite: number }> = {
-  "claude-opus-5-5": { in: 4, out: 20, cacheRead: 0.2, cacheWrite: 5 },
-  "claude-sonnet-5-5": { in: 2, out: 10, cacheRead: 0.2, cacheWrite: 2.5 },
-};
+
 
 const MODELS = (process.env.EVAL_MODELS ?? "claude-opus-5-5,claude-sonnet-5-5").split(",");
 const JUDGE_MODEL = process.env.EVAL_JUDGE_MODEL ?? "claude-opus-5-5";
@@ -143,17 +141,6 @@ async function judge(story: StoryOutput, age: AgeBand, lang: Language, scene: st
   return { judge: res.parsed_output, usage: res.usage };
 }
 
-function cost(model: string, u: Anthropic.Beta.BetaUsage): number {
-  const p = PRICES[model];
-  if (!p) return NaN;
-  return (
-    (u.input_tokens * p.in +
-      u.output_tokens * p.out +
-      (u.cache_read_input_tokens ?? 0) * p.cacheRead +
-      (u.cache_creation_input_tokens ?? 0) * p.cacheWrite) /
-    1e6
-  );
-}
 
 interface CaseResult {
   model: string;

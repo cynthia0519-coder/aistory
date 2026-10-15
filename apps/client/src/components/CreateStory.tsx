@@ -20,7 +20,8 @@ import {
   type ThemeId,
 } from "@aistory/shared";
 import { prepareImage } from "@/lib/image";
-import { requestStory, StoryApiError } from "@/lib/api";
+import { InviteRequiredError, requestStory, StoryApiError, verifyInvite } from "@/lib/api";
+import { getInvite, saveInvite } from "@/lib/invite";
 import { saveStory, type SavedStory } from "@/lib/storage";
 import { heroSummary, lookOf, toHero, type HeroProfile } from "@/lib/heroes";
 import { HeroAvatar } from "./HeroAvatar";
@@ -53,6 +54,32 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPr
   // 第一次拍照前請家長確認照片怎麼用；同意過就直接開相機／相簿
   const [consentOpen, setConsentOpen] = useState(false);
   const [consentChecked, setConsentChecked] = useState(false);
+  // 封測：沒有邀請碼先輸入邀請碼，再走家長同意
+  const [inviteOpen, setInviteOpen] = useState(false);
+  const [inviteCode, setInviteCode] = useState("");
+  const [inviteError, setInviteError] = useState<string | null>(null);
+  const [inviteChecking, setInviteChecking] = useState(false);
+
+  async function submitInvite() {
+    const code = inviteCode.trim();
+    if (!code) return;
+    setInviteChecking(true);
+    setInviteError(null);
+    try {
+      if (!(await verifyInvite(code))) {
+        setInviteError("這組邀請碼不對，請再確認一次。");
+        return;
+      }
+      saveInvite(code);
+      setInviteOpen(false);
+      if (hasPhotoConsent()) fileInput.current?.click();
+      else setConsentOpen(true);
+    } catch (e) {
+      setInviteError(e instanceof StoryApiError ? e.message : "連不上伺服器，請檢查網路。");
+    } finally {
+      setInviteChecking(false);
+    }
+  }
   const [preview, setPreview] = useState<string | null>(null);
   const [language, setLanguage] = useState<Language>("zh");
   const [pickedAgeBand, setAgeBand] = useState<AgeBand>("4-6");
@@ -108,6 +135,7 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPr
       await saveStory(saved);
       onCreated(saved);
     } catch (e) {
+      if (e instanceof InviteRequiredError) setInviteOpen(true);
       setError(e instanceof StoryApiError ? e.message : "出了點問題，請再試一次。");
     } finally {
       setLoading(false);
@@ -148,9 +176,10 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPr
         <label
           className="block cursor-pointer"
           onClick={(e) => {
-            if (hasPhotoConsent()) return;
+            if (getInvite() && hasPhotoConsent()) return;
             e.preventDefault();
-            setConsentOpen(true);
+            if (!getInvite()) setInviteOpen(true);
+            else setConsentOpen(true);
           }}
         >
           {preview ? (
@@ -173,6 +202,46 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPr
           )}
           <input ref={fileInput} type="file" accept="image/*" className="sr-only" onChange={(e) => pick(e.target.files?.[0])} />
         </label>
+
+        {inviteOpen && (
+          <Dialog title="輸入封測邀請碼" onClose={() => setInviteOpen(false)}>
+            <p className="text-sm leading-relaxed text-ink-soft">
+              拍照編故事目前只開放給受邀的家庭試用。請輸入我們給你的邀請碼。
+            </p>
+            <form
+              className="flex flex-col gap-3"
+              onSubmit={(e) => {
+                e.preventDefault();
+                void submitInvite();
+              }}
+            >
+              <input
+                value={inviteCode}
+                onChange={(e) => setInviteCode(e.target.value)}
+                autoCapitalize="characters"
+                autoComplete="off"
+                spellCheck={false}
+                aria-label="邀請碼"
+                placeholder="例如 MOON-7K2Q"
+                className="h-12 rounded-2xl bg-card px-4 text-lg font-bold tracking-widest ring-2 ring-line focus:ring-teal"
+              />
+              {inviteError && <p className="text-sm font-bold text-rust">{inviteError}</p>}
+              <PrimaryButton type="submit" disabled={!inviteCode.trim() || inviteChecking}>
+                {inviteChecking ? "確認中…" : "確認"}
+              </PrimaryButton>
+            </form>
+            <button
+              type="button"
+              onClick={() => {
+                setInviteOpen(false);
+                onBrowseLibrary();
+              }}
+              className="self-center text-sm font-bold text-teal underline underline-offset-4"
+            >
+              沒有邀請碼？先看故事庫
+            </button>
+          </Dialog>
+        )}
 
         {consentOpen && (
           <Dialog title="拍照前，請爸媽確認" onClose={() => setConsentOpen(false)}>
