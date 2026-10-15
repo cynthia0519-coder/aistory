@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
-    "build:app": "NEXT_PUBLIC_API_BASE=https://aistory-three.vercel.app next build && cap sync ios"
+    "build:app": "NEXT_PUBLIC_API_BASE=https://aistory-three.vercel.app next build && cap sync ios",
+    "privacy:export": "tsx scripts/export-privacy.ts"
   },
   "dependencies": {
     "@aistory/shared": "*",
@@ -30,6 +31,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.0",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }

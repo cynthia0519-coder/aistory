@@ -26,7 +26,7 @@ Codemagic → 這個 App → Start new build → 選分支和 `ios-testflight`�
 - [x] **Bundle ID**：`tw.com.goldenstar.aistory`（`capacitor.config.ts`、`project.pbxproj`、`codemagic.yaml` 三處一致）。上傳後就不能改
 - [ ] Vercel API 專案已設 `INVITE_CODES`、`RATE_LIMIT_SALT`
 - [ ] 隱私權政策的聯絡信箱（`apps/client/src/lib/privacy.ts` 的 `PRIVACY_CONTACT`）已填
-- [ ] App Store Connect 的「隱私權政策網址」：要一個公開網址（可用網頁版加一頁，或另外的網站）
+- [ ] App Store Connect 的「隱私權政策網址」填 `https://goldenstar.com.tw/aistory/privacy/`：把 `apps/client/site/aistory/privacy/index.html` 放到官網同一路徑（政策改過就 `npm run privacy:export -w @aistory/client` 重新產生再放一次）
 
 ## 真機要測的（裝 TestFlight 版來測）
 
