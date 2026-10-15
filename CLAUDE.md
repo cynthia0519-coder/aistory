@@ -3,7 +3,7 @@
 # 照片說故事 — 專案規則
 
 ## 結構
-- `apps/client`：Next.js 靜態輸出（`output: "export"`），同一份 `out/` 給網頁與 Capacitor App 使用
+- `apps/client`：Next.js 靜態輸出（`output: "export"`），同一份 `out/` 給網頁與 Capacitor App 使用；iOS 專案在 `apps/client/ios/`，出版流程見 `docs/ios-release.md`
 - `apps/api`：Next.js Route Handler，唯一呼叫 Claude 的地方
 - `packages/shared`：年齡規則、語言、API 契約（zod schema），前後端共用
 

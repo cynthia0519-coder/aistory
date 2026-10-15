@@ -6,6 +6,7 @@
 import { HERO_STORE, db, listStories, RECORDING_STORE, saveStory, type SavedStory } from "./storage";
 import type { HeroProfile } from "./heroes";
 import { recordingKey, type RecordingEntry } from "./recordings";
+import { Capacitor } from "@capacitor/core";
 
 const MAGIC = "AISTORY-BACKUP\n";
 const VERSION = 1;
@@ -74,6 +75,7 @@ export async function exportBackup(): Promise<{ file: File; summary: BackupSumma
 
 /** 分享或下載備份檔：手機上叫出分享選單（存到「檔案」、AirDrop），不支援時直接下載 */
 export async function shareBackup(file: File) {
+  if (Capacitor.isNativePlatform()) return shareNative(file);
   if (typeof navigator !== "undefined" && navigator.canShare?.({ files: [file] })) {
     try {
       await navigator.share({ files: [file], title: file.name });
@@ -89,6 +91,23 @@ export async function shareBackup(file: File) {
   a.download = file.name;
   a.click();
   setTimeout(() => URL.revokeObjectURL(url), 60_000);
+}
+
+/** App 裡：先寫到暫存資料夾，再叫出 iOS 的分享選單（WebView 的 navigator.share 不一定能分享檔案） */
+async function shareNative(file: File) {
+  const [{ Filesystem, Directory }, { Share }] = await Promise.all([import("@capacitor/filesystem"), import("@capacitor/share")]);
+  const bytes = new Uint8Array(await file.arrayBuffer());
+  let bin = "";
+  for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
+  const { uri } = await Filesystem.writeFile({ path: file.name, data: btoa(bin), directory: Directory.Cache });
+  try {
+    await Share.share({ title: file.name, files: [uri] });
+  } catch (e) {
+    // 使用者關掉分享選單也會丟錯，不當作失敗
+    if (!(e instanceof Error && /cancel/i.test(e.message))) throw e;
+  } finally {
+    await Filesystem.deleteFile({ path: file.name, directory: Directory.Cache }).catch(() => {});
+  }
 }
 
 export class BackupError extends Error {}
