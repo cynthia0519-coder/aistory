@@ -18,7 +18,7 @@ import { z } from "zod";
 import { LibraryStorySchema, renderLibraryStory, THEMES, type Language, type LibraryStory } from "@aistory/shared";
 import { MUSIC_GROUPS, musicGroup, sceneName } from "@aistory/shared/media";
 import { reviewContentHash } from "../src/lib/library-review";
-import { buildAss, captionCues, episodeText, publishableStories, type ReviewFlag, type Segment } from "../src/lib/episode";
+import { buildAss, captionCues, episodeText, fullWidthPunct, publishableStories, type ReviewFlag, type Segment } from "../src/lib/episode";
 import { isTtsConfigured, synthesize } from "../src/lib/tts";
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -168,7 +168,7 @@ async function renderEpisode(story: LibraryStory, lang: Language, dir: string, f
   if (!audioOnly) {
     const [title, ...rest] = segments;
     const ass = join(dir, "captions.ass");
-    writeFileSync(ass, buildAss({ text: title.text, start: 0, end: title.end + AFTER_TITLE }, captionCues(rest), FONT_NAME));
+    writeFileSync(ass, buildAss({ text: fullWidthPunct(title.text), start: 0, end: title.end + AFTER_TITLE }, captionCues(rest), FONT_NAME));
     video = join(dir, `${story.id}.mp4`);
     const esc = (p: string) => p.replace(/\\/g, "/").replace(/:/g, "\\:").replace(/'/g, "\\'");
     ffmpeg([
