@@ -72,3 +72,11 @@ test("half-width punctuation next to Chinese becomes full-width; English and URL
   assert.equal(fullWidthPunct("吼——吼——!咻——,{name}"), "吼——吼——！咻——，{name}");
   assert.equal(fullWidthPunct("Hi, Mia! https://a.b/c?d=1"), "Hi, Mia! https://a.b/c?d=1");
 });
+
+test("without an App URL the description only teases the App, no link", () => {
+  const withLink = episodeText(story({}), "zh", "https://example.app");
+  const teaser = episodeText(story({}), "zh");
+  assert.match(withLink.description, /https:\/\/example\.app/);
+  assert.doesNotMatch(teaser.description, /https?:\/\//);
+  assert.match(teaser.description, /即將推出/);
+});

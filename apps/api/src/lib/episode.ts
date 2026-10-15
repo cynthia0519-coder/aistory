@@ -134,8 +134,11 @@ export interface EpisodeText {
 }
 
 
-/** credit：說明最後的製作單位（例如頻道名稱），可不給 */
-export function episodeText(story: LibraryStory, language: Language, appUrl: string, credit?: string): EpisodeText {
+/**
+ * appUrl：App 的網址；不給時說明欄只預告 App（還沒開放給一般人用之前不放連結）。
+ * credit：說明最後的製作單位（例如頻道名稱），可不給
+ */
+export function episodeText(story: LibraryStory, language: Language, appUrl?: string, credit?: string): EpisodeText {
   const r = renderLibraryStory(story, language);
   const kind = story.theme ? THEMES[story.theme].label[language] : STYLE_RULES[story.style].label;
   const ages = ageRangeLabel(story.ageBands);
@@ -150,7 +153,9 @@ export function episodeText(story: LibraryStory, language: Language, appUrl: str
     lines.push(`今晚試試看：${fullWidthPunct(r.guide.tip)}`, "");
   }
   lines.push(
-    `想讓故事的主角變成你家孩子的名字？到「照片說故事」：${appUrl}`,
+    appUrl
+      ? `想讓故事的主角變成你家孩子的名字？到「照片說故事」：${appUrl}`
+      : "想讓故事的主角變成你家孩子的名字？「照片說故事」App 即將推出，追蹤頻道搶先知道。",
     "",
     `適合 ${ages}・${kind}`,
     "故事由 AI 協助創作。音樂：Mureka AI 生成（商用授權）／朗讀：Microsoft Azure 神經語音／插畫：Canva AI",

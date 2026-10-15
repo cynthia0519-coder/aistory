@@ -1,9 +1,10 @@
 // 頻道節目：把故事庫的故事做成 Podcast 音檔（mp3）與 YouTube 影片（mp4），附標題、說明與封面。
 // 聲音、配樂、插圖都和 App 一樣：曉臻朗讀、同一組 Mureka 配樂（念的時候壓低）、同一張場景插畫。
 //
-//   npm run episodes:render -w @aistory/api -- [--only id1,id2] [--next] [--limit 20] [--lang zh] [--audio-only] [--dry-run]
+//   npm run episodes:render -w @aistory/api -- [--only id1,id2] [--next] [--limit 20] [--lang zh] [--audio-only] [--text-only] [--dry-run]
 //
 // --next 做下一批：跳過已經輸出過的故事，各分類輪流挑。
+// --text-only 只重寫做過的集數的標題與說明（例如換了 App 連結），不重做音檔和影片。
 //
 // 需要：AZURE_SPEECH_KEY / AZURE_SPEECH_REGION（在雲端 session 裡另外要 NODE_USE_ENV_PROXY=1 才走得出代理）、ffmpeg（含 libass、libx264、libmp3lame）、
 // 字型 LXGW WenKai TC（放在 scripts/assets/LXGWWenKaiTC-Regular.ttf，或用 --font 指定）。
@@ -28,7 +29,8 @@ const FLAGS_PATH = resolve(here, "../eval/review-flags.json");
 const DEFAULT_OUT = resolve(here, "../out/episodes");
 const DEFAULT_FONT = resolve(here, "assets/LXGWWenKaiTC-Regular.ttf");
 const FONT_NAME = "LXGW WenKai TC";
-const APP_URL = process.env.EPISODE_APP_URL ?? "https://aistory-web.vercel.app";
+// App 開放給一般人之前不放連結（說明欄改成預告）；開放後設 EPISODE_APP_URL
+const APP_URL = process.env.EPISODE_APP_URL || undefined;
 /** 說明最後一行的製作單位，例如上架的頻道名稱 */
 const CREDIT = process.env.EPISODE_CREDIT;
 
@@ -47,6 +49,7 @@ function parseArgs(argv: string[]) {
     limit: 20,
     lang: "zh" as Language,
     audioOnly: false,
+    textOnly: false,
     dryRun: false,
     next: false,
     out: DEFAULT_OUT,
@@ -59,6 +62,7 @@ function parseArgs(argv: string[]) {
     else if (a === "--limit") args.limit = Number(val());
     else if (a === "--lang") args.lang = z.enum(["zh", "en"]).parse(val());
     else if (a === "--audio-only") args.audioOnly = true;
+    else if (a === "--text-only") args.textOnly = true;
     else if (a === "--dry-run") args.dryRun = true;
     else if (a === "--next") args.next = true;
     else if (a === "--out") args.out = resolve(val());
@@ -199,7 +203,25 @@ async function main() {
   const ok = publishableStories(stories, flags, reviewContentHash);
 
   let todo: LibraryStory[];
-  if (args.only) {
+  if (args.textOnly) {
+    // 只重寫標題與說明（info.json），不重做音檔和影片；沒給 --only 就是輸出資料夾裡做過的全部
+    const rendered = existsSync(args.out) ? readdirSync(args.out).filter((d) => existsSync(join(args.out, d, "info.json"))) : [];
+    const ids = args.only ?? rendered;
+    let n = 0;
+    for (const id of ids) {
+      const story = stories.find((s) => s.id === id);
+      const file = join(args.out, id, "info.json");
+      if (!story || !existsSync(file)) {
+        console.log(`${id}: skipped (${story ? "not rendered yet" : "not in the library"})`);
+        continue;
+      }
+      const info = JSON.parse(readFileSync(file, "utf8")) as Record<string, unknown>;
+      writeFileSync(file, JSON.stringify({ ...info, ...episodeText(story, args.lang, APP_URL, CREDIT) }, null, 2) + "\n");
+      n++;
+    }
+    console.log(`${n} episode texts rewritten (audio and video untouched)`);
+    todo = [];
+  } else if (args.only) {
     const unknown = args.only.filter((id) => !ok.some((s) => s.id === id));
     if (unknown.length) throw new Error(`not publishable (missing, not reviewed ok, changed since review, or sensitive): ${unknown.join(", ")}`);
     todo = ok.filter((s) => args.only!.includes(s.id));
@@ -240,18 +262,18 @@ async function main() {
       .slice(0, args.limit);
   }
 
-  console.log(`${ok.length} publishable stories; rendering ${todo.length}${args.audioOnly ? " (audio only)" : ""}`);
+  if (!args.textOnly) console.log(`${ok.length} publishable stories; rendering ${todo.length}${args.audioOnly ? " (audio only)" : ""}`);
   const chars = todo.reduce((n, s) => {
     const r = renderLibraryStory(s, args.lang);
     return n + [r.title, ...r.paragraphs].join("").length;
   }, 0);
-  console.log(`about ${chars} characters of speech (Azure neural TTS bills per character)`);
+  if (!args.textOnly) console.log(`about ${chars} characters of speech (Azure neural TTS bills per character)`);
   if (args.dryRun) {
     for (const s of todo) console.log(`  ${s.id}  ${episodeText(s, args.lang, APP_URL, CREDIT).title}`);
     return;
   }
-  if (!isTtsConfigured()) throw new Error("AZURE_SPEECH_KEY / AZURE_SPEECH_REGION are required (use --dry-run to only list)");
-  if (!args.audioOnly && !existsSync(args.font)) {
+  if (!args.textOnly && !isTtsConfigured()) throw new Error("AZURE_SPEECH_KEY / AZURE_SPEECH_REGION are required (use --dry-run to only list)");
+  if (!args.textOnly && !args.audioOnly && !existsSync(args.font)) {
     throw new Error(`font not found: ${args.font} (download LXGW WenKai TC, or pass --font, or use --audio-only)`);
   }
 
