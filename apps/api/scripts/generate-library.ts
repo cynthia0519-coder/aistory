@@ -28,6 +28,7 @@ import {
   LibraryPlanEntrySchema,
   type LibraryPlanEntry,
 } from "../src/lib/library-engine";
+import { fullWidthStoryPunct } from "../src/lib/zh-punct";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const PLAN_PATH = resolve(here, "library-plan.json");
@@ -168,7 +169,8 @@ async function main() {
     try {
       const { story: out, model, usage } = await generateLibraryStory(entry);
       // 分類欄位以計畫為準，模型抄錯也不影響
-      const story = LibraryStorySchema.parse({
+      // 模型偶爾混用半形標點，中文欄位一律換成全形
+      const story = fullWidthStoryPunct(LibraryStorySchema.parse({
         id: entry.id,
         ...out,
         ...(entry.theme ? { theme: entry.theme } : {}),
@@ -176,7 +178,7 @@ async function main() {
         ageBands: entry.ageBands,
         setting: entry.setting,
         draft: true,
-      });
+      }));
       const len = lengthReport(story);
       // 空殼故事（標題或段落像 "x"）不寫入，算失敗，之後用 --only 重跑
       for (const lang of ["zh", "en"] as const) {

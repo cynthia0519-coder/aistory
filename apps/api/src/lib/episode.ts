@@ -1,6 +1,7 @@
 // 頻道節目（Podcast / YouTube）：把故事庫的故事做成音檔與影片時用到的純邏輯——
 // 選哪些故事、字幕怎麼切與對時間、ASS 字幕檔、標題與說明文字。
 // 呼叫 Azure 與 ffmpeg 的部分在 scripts/render-episodes.ts。
+import { fullWidthPunct } from "./zh-punct";
 import { ageRangeLabel, renderLibraryStory, STYLE_RULES, THEMES, type Language, type LibraryStory } from "@aistory/shared";
 
 export interface ReviewFlag {
@@ -23,6 +24,8 @@ export function publishableStories(
     return !(s.theme && THEMES[s.theme].sensitive);
   });
 }
+
+export { fullWidthPunct };
 
 // ---- 字幕 ----
 
@@ -130,14 +133,6 @@ export interface EpisodeText {
   tags: string[];
 }
 
-/**
- * 中文裡的半形標點換成全形：有些故事庫故事混了半形標點，標題、說明、字幕看起來不整齊。
- * 只換緊貼中文字、中文引號、破折號或刪節號的標點，英文和網址不受影響。
- */
-const HALF_TO_FULL: Record<string, string> = { "!": "！", "?": "？", ",": "，", ":": "：", ";": "；" };
-const CJK = "\\p{Script=Han}「」『』—…";
-const HALF_IN_ZH = new RegExp(`(?<=[${CJK}])[!?,:;]|[!?,:;](?=[${CJK}])`, "gu");
-export const fullWidthPunct = (s: string) => s.replace(HALF_IN_ZH, (c) => HALF_TO_FULL[c]);
 
 /** credit：說明最後的製作單位（例如頻道名稱），可不給 */
 export function episodeText(story: LibraryStory, language: Language, appUrl: string, credit?: string): EpisodeText {
