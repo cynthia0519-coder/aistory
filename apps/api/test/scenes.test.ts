@@ -4,7 +4,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { STORY_SETTINGS, THEME_IDS } from "@aistory/shared";
-import { SCENE_VARIANTS, sceneName } from "@aistory/shared/media";
+import { MUSIC_GROUPS, SCENE_VARIANTS, sceneName } from "@aistory/shared/media";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const PUBLIC = resolve(here, "../../client/public");
@@ -30,4 +30,12 @@ test("a library story gets the same scene in every language and spreads across v
   const seen = new Set(Array.from({ length: 60 }, (_, i) => sceneName("city", undefined, `story-${i}`)));
   assert.deepEqual([...seen].sort(), ["city", "city-2", "city-3", "city-4"]);
   assert.equal(sceneName("city"), "city");
+});
+
+test("every song a music group can pick exists", () => {
+  for (const [group, count] of Object.entries(MUSIC_GROUPS)) {
+    for (let i = 1; i <= count; i++) {
+      assert.ok(existsSync(resolve(PUBLIC, "music", `${group}-${i}.mp3`)), `missing music/${group}-${i}.mp3`);
+    }
+  }
 });
