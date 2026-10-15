@@ -10,7 +10,7 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.example.aistory # 換正式 Bundle ID 時三處一起改：這裡、capacitor.config.ts、project.pbxproj
+        bundle_identifier: tw.com.goldenstar.aistory # 要跟 capacitor.config.ts、project.pbxproj 一致
       node: 22
       xcode: latest
       vars:
