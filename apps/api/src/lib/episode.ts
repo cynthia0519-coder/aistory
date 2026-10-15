@@ -75,7 +75,7 @@ export interface Cue {
 export function captionCues(segments: Segment[], max = CAPTION_MAX): Cue[] {
   const cues: Cue[] = [];
   for (const seg of segments) {
-    const lines = splitCaptions(seg.text, max);
+    const lines = splitCaptions(fullWidthPunct(seg.text), max);
     const weights = lines.map((l) => Math.max(1, [...l.replace(/[\s，。！？、；：「」『』“”,.!?;:]/g, "")].length));
     const total = weights.reduce((a, b) => a + b, 0);
     let t = seg.start;
@@ -130,24 +130,29 @@ export interface EpisodeText {
   tags: string[];
 }
 
-/** 中文標題裡的半形標點換成全形（YouTube／Podcast 標題比較整齊） */
+/**
+ * 中文裡的半形標點換成全形：有些故事庫故事混了半形標點，標題、說明、字幕看起來不整齊。
+ * 只換緊貼中文字（或中文引號）的標點，英文和網址不受影響。
+ */
 const HALF_TO_FULL: Record<string, string> = { "!": "！", "?": "？", ",": "，", ":": "：", ";": "；" };
-export const fullWidthPunct = (s: string) => s.replace(/[!?,:;]/g, (c) => HALF_TO_FULL[c]);
+const CJK = "\\p{Script=Han}「」『』";
+const HALF_IN_ZH = new RegExp(`(?<=[${CJK}])[!?,:;]|[!?,:;](?=[${CJK}])`, "gu");
+export const fullWidthPunct = (s: string) => s.replace(HALF_IN_ZH, (c) => HALF_TO_FULL[c]);
 
 /** credit：說明最後的製作單位（例如頻道名稱），可不給 */
 export function episodeText(story: LibraryStory, language: Language, appUrl: string, credit?: string): EpisodeText {
   const r = renderLibraryStory(story, language);
   const kind = story.theme ? THEMES[story.theme].label[language] : STYLE_RULES[story.style].label;
   const ages = ageRangeLabel(story.ageBands);
-  const opening = r.paragraphs[0] ?? "";
+  const opening = fullWidthPunct(r.paragraphs[0] ?? "");
   const lines = [
     opening.length > 70 ? `${[...opening].slice(0, 70).join("")}…` : opening,
     "",
   ];
   if (r.guide) {
     lines.push("【給爸媽】聽完可以這樣聊聊：");
-    r.guide.questions.forEach((q, i) => lines.push(`${i + 1}. ${q}`));
-    lines.push(`今晚試試看：${r.guide.tip}`, "");
+    r.guide.questions.forEach((q, i) => lines.push(`${i + 1}. ${fullWidthPunct(q)}`));
+    lines.push(`今晚試試看：${fullWidthPunct(r.guide.tip)}`, "");
   }
   lines.push(
     `想讓故事的主角變成你家孩子的名字？到「照片說故事」：${appUrl}`,
