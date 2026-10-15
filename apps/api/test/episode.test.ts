@@ -69,5 +69,6 @@ test("episodeText uses the default hero name and the age range", () => {
 test("half-width punctuation next to Chinese becomes full-width; English and URLs stay", () => {
   assert.equal(fullWidthPunct("叮叮咚!小寶和奶奶的雨點樂團?"), "叮叮咚！小寶和奶奶的雨點樂團？");
   assert.equal(fullWidthPunct("早上,太陽暖暖的。「我們去探險囉!」"), "早上，太陽暖暖的。「我們去探險囉！」");
+  assert.equal(fullWidthPunct("吼——吼——!咻——,{name}"), "吼——吼——！咻——，{name}");
   assert.equal(fullWidthPunct("Hi, Mia! https://a.b/c?d=1"), "Hi, Mia! https://a.b/c?d=1");
 });

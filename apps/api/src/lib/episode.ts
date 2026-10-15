@@ -132,10 +132,10 @@ export interface EpisodeText {
 
 /**
  * 中文裡的半形標點換成全形：有些故事庫故事混了半形標點，標題、說明、字幕看起來不整齊。
- * 只換緊貼中文字（或中文引號）的標點，英文和網址不受影響。
+ * 只換緊貼中文字、中文引號、破折號或刪節號的標點，英文和網址不受影響。
  */
 const HALF_TO_FULL: Record<string, string> = { "!": "！", "?": "？", ",": "，", ":": "：", ";": "；" };
-const CJK = "\\p{Script=Han}「」『』";
+const CJK = "\\p{Script=Han}「」『』—…";
 const HALF_IN_ZH = new RegExp(`(?<=[${CJK}])[!?,:;]|[!?,:;](?=[${CJK}])`, "gu");
 export const fullWidthPunct = (s: string) => s.replace(HALF_IN_ZH, (c) => HALF_TO_FULL[c]);
 
