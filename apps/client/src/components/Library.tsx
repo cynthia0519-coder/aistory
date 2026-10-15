@@ -14,7 +14,7 @@ import {
 } from "@aistory/shared";
 import { deleteStory, listStories, type SavedStory } from "@/lib/storage";
 import { lookOf, type HeroProfile } from "@/lib/heroes";
-import { ageRangeLabel, CATEGORY_CHIPS, filterLibrary, loadLibrary, renderForHero, type LibraryPrefs } from "@/lib/library";
+import { ageRangeLabel, CATEGORY_CHIPS, draftMode, filterLibrary, loadLibrary, renderForHero, visibleLibrary, type LibraryPrefs } from "@/lib/library";
 import { sceneSrc } from "@/lib/scenes";
 import { BackupError, exportBackup, hasRecordings, importBackup, shareBackup } from "@/lib/backup";
 import { canUse } from "@/lib/membership";
@@ -158,6 +158,7 @@ function LibraryShelf({
   onOpen: (list: LibraryStory[], index: number) => void;
 }) {
   const [all, setAll] = useState<LibraryStory[] | null>(null);
+  const [drafts, setDrafts] = useState(false);
   const [failed, setFailed] = useState(false);
   const [attempt, setAttempt] = useState(0);
 
@@ -166,7 +167,9 @@ function LibraryShelf({
     loadLibrary()
       .then((s) => {
         if (!alive) return;
-        setAll(s);
+        const showDrafts = draftMode();
+        setDrafts(showDrafts);
+        setAll(visibleLibrary(s, showDrafts));
         setFailed(false);
       })
       .catch(() => alive && setFailed(true));
@@ -242,7 +245,15 @@ function LibraryShelf({
         </div>
       )}
 
-      {all && list.length === 0 && (
+      {drafts && all && (
+        <p className="rounded-2xl bg-card px-4 py-2 text-sm font-bold ring-2 ring-rust">
+          審稿模式：草稿也會顯示（{all.filter((s) => s.draft).length} 則）。網址加 ?drafts=0 關閉。
+        </p>
+      )}
+
+      {all && all.length === 0 && <p className="pt-6 text-center font-display text-lg">故事庫正在整理，很快就有新故事</p>}
+
+      {all && all.length > 0 && list.length === 0 && (
         <p className="pt-6 text-center font-display text-lg">
           {category === "all" ? "這個年齡還沒有故事，看看「全部」吧" : "這個主題還沒有適合的故事，換個年齡或主題看看"}
         </p>
@@ -257,7 +268,7 @@ function LibraryShelf({
                 <button type="button" onClick={() => onOpen(list, i)} className="flex w-full flex-col gap-2 text-left">
                   <BookCover
                     src={sceneSrc(s.setting, s.theme, s.id)}
-                    label={`${s.theme ? THEMES[s.theme].label.zh : STYLE_RULES[s.style].label} · ${ageRangeLabel(s.ageBands)}`}
+                    label={`${drafts && s.draft ? "草稿 · " : ""}${s.theme ? THEMES[s.theme].label.zh : STYLE_RULES[s.style].label} · ${ageRangeLabel(s.ageBands)}`}
                   >
                     {look && (
                       <HeroAvatar look={look} size={42} variant="bust" className="absolute left-2 top-2 rounded-full ring-2 ring-card drop-shadow-sm" />

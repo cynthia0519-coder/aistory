@@ -1,4 +1,4 @@
-// 故事庫：人工審過、隨 App 打包的故事（public/library/stories.json）。
+// 故事庫：隨 App 打包的故事（public/library/stories.json）；只顯示人工審過的（draft: false）。
 // 在裝置上換成主角的名字與代名詞，不呼叫 API、不花 token。
 // 網頁版由 service worker（public/sw.js）快取，第一次載入後離線也能讀；App 版檔案本來就在裝置上。
 // 故事庫的故事只在閱讀時臨時組成 SavedStory，不寫進 IndexedDB。
@@ -48,6 +48,27 @@ export function filterLibrary(
 }
 
 const LIBRARY_URL = "/library/stories.json";
+
+// 草稿（draft: true）還沒人工審過，一般使用者看不到。
+// 審稿時在網址加 ?drafts=1 打開審稿模式（記在這台裝置上），?drafts=0 關掉。
+const DRAFTS_KEY = "aistory.showDrafts";
+
+/** 這台裝置是不是在審稿模式；只能在瀏覽器裡呼叫 */
+export function draftMode(): boolean {
+  try {
+    const q = new URLSearchParams(window.location.search).get("drafts");
+    if (q === "1") localStorage.setItem(DRAFTS_KEY, "1");
+    if (q === "0") localStorage.removeItem(DRAFTS_KEY);
+    return localStorage.getItem(DRAFTS_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+/** 給使用者看的故事：審稿模式全部，否則只有審過的 */
+export function visibleLibrary(stories: LibraryStory[], showDrafts: boolean): LibraryStory[] {
+  return showDrafts ? stories : stories.filter((s) => !s.draft);
+}
 
 let cache: Promise<LibraryStory[]> | null = null;
 
