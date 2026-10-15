@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-14T18:29:31.419Z",
+  "generatedAt": "2026-10-14T19:26:47.726Z",
   "summary": {
-    "stories": 244,
+    "stories": 284,
     "byStatus": {
-      "ok": 157,
+      "ok": 197,
       "check": 87
     },
     "byCheckKind": {
-      "length": 178,
+      "length": 213,
       "zh_half_width_punct": 310,
       "duplicate_title": 8,
       "tokens": 2,
@@ -15,14 +15,14 @@
       "phone_number": 1
     },
     "byIssueKind": {
-      "repetition": 123,
-      "logic": 106,
-      "quality": 41,
-      "safety": 32,
-      "taiwan_usage": 28,
-      "preachy": 25,
-      "zh_en_mismatch": 63,
-      "age_fit": 14,
+      "repetition": 127,
+      "logic": 123,
+      "quality": 53,
+      "safety": 34,
+      "taiwan_usage": 32,
+      "preachy": 26,
+      "zh_en_mismatch": 74,
+      "age_fit": 15,
       "length": 2,
       "guardrail": 4
     },
@@ -123,25 +123,31 @@
       "earthquake-museum-running-track",
       "fear-of-dark-frog-choir",
       "forest-mushroom-village",
+      "forgiveness-the-told-secret",
       "getting-lost-sand-sculpture-beach",
       "goodnight-sleepy-train",
       "honesty-spilled-paint-jar",
       "honesty-test-paper-signature",
+      "hot-things-hot-pot-night",
       "hot-things-soup-dragon",
       "losing-failing-class-election",
       "losing-failing-relay-baton",
       "manners-sorry-tower",
+      "perseverance-the-character-yong",
       "pet-loss-goldfish-flower",
       "pet-loss-hamster-memory-box",
       "potty-park-restroom",
+      "promises-the-borrowed-comic",
+      "responsibility-garden-captain",
       "sockets-robot-socket-covers",
       "starting-kindergarten-lunchbox-note",
+      "teamwork-the-class-play",
       "the-mountain-of-small-steps",
       "trying-food-bitter-melon-explorer",
       "trying-food-stinky-tofu-sniff",
       "water-safety-river-picnic"
     ],
-    "usd": 6.9641
+    "usd": 8.0107
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -9206,10 +9212,6 @@
           "note": "英文 389 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0251936,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T18:29:31.402Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -9221,7 +9223,11 @@
             "note": "「出差兩天」但媽媽星期天早上就回來，不到兩天；可改成「出差到星期天」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0251936,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T18:29:31.402Z"
     },
     "honesty-wrong-change": {
       "hash": "a1ac41f585360eda",
@@ -10039,6 +10045,1147 @@
       "usd": 0.031189599999999998,
       "status": "check",
       "reviewedAt": "2026-10-14T12:17:05.038Z"
+    },
+    "gratitude-ant-and-the-rice-ball": {
+      "hash": "fdd5ebd64675b95a",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 578 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 386 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.038968,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:12:58.940Z"
+    },
+    "gratitude-thank-you-walk": {
+      "hash": "af6418017cf5367d",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "taiwan_usage",
+            "severity": "low",
+            "lang": "zh",
+            "where": "3",
+            "note": "「涼涼的影子」指樹下遮蔭不自然，建議改成「涼涼的樹蔭」，句子也可拆短一點"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "7",
+            "note": "「爸爸還幫忙提包包」前文沒出現包包，可在第0段下公車時加一句爸爸提著包包"
+          },
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "4",
+            "note": "中文結尾「阿姨笑得眼睛彎彎」英文缺漏，可補一句 Fruit Auntie smiles"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0250336,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:13:07.270Z"
+    },
+    "gratitude-grandpas-old-umbrella": {
+      "hash": "ce20fc57c82888e1",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 708 字，6-8 歲 3 分鐘範圍是 500–700（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 460 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "4",
+            "note": "「你的遮雨棚讓我們沒有淋濕」前文未提到麵包店遮雨棚，且他們有撐傘，可改成謝謝她做熱麵包"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "3",
+            "note": "星期六早上「讓小學生先過馬路」不太合理，可改成「讓行人和小朋友先過馬路」"
+          },
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "3",
+            "note": "路上觀察警察、店員、郵差默默幫忙，與 thank-you-walk 和 quiet-helpers 相近，可縮短此段"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.040048,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:23:31.506Z"
+    },
+    "gratitude-the-quiet-helpers": {
+      "hash": "f19829d10be45cc5",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0242456,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:13:22.976Z"
+    },
+    "empathy-the-sad-little-cloud": {
+      "hash": "488f7ec806e1e9ff",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 418 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 287 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "en",
+            "where": "4",
+            "note": "英文『If my friends ran away, I'd be sad too.』未加引號卻突然轉成第一人稱，建議改為 {name} thinks, \"…\" 或用第三人稱"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.022565599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:13:29.751Z"
+    },
+    "empathy-lion-with-a-sore-paw": {
+      "hash": "9fb414f8eea76f02",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 644 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 378 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "taiwan_usage",
+            "severity": "low",
+            "lang": "zh",
+            "where": "6",
+            "note": "「小兔子趕快捂住耳朵」，台灣較常寫作「摀住」，可改為「摀住耳朵」"
+          },
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "both",
+            "where": "6",
+            "note": "中文「聲音在森林裡轉來轉去」英文沒有，可補一句 echo 或刪除以求一致"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0293256,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:13:38.242Z"
+    },
+    "empathy-new-girl-at-lunch": {
+      "hash": "5e3250b0892ca39d",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "en",
+            "where": "5",
+            "note": "英文「patted a tummy and licked both lips」為避開代名詞而顯得生硬，建議改用「patted {his} tummy and licked {his} lips」"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "en",
+            "where": "2",
+            "note": "英文「picked up a lunchbox」不自然，像是拿了別人的便當，建議改成「picked up {his} lunchbox」"
+          },
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "both",
+            "where": "4",
+            "note": "中文是「指指自己，又指指阿蓮」，英文是「pointed to it, then to Lien」，動作略有不同，建議統一"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0262296,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:23:38.940Z"
+    },
+    "perseverance-snail-sees-the-sunrise": {
+      "hash": "7dd36bb6373035a3",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 598 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 365 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "0",
+            "note": "中文有「日出像金色的蛋黃」和「每天抬頭看著山頂」，英文沒有，可補上一句或從中文刪去"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "5",
+            "note": "第4段說山頂「還好遠好遠」，同一天傍晚就爬到，節奏稍快，可加一句「又爬了好久」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.026269599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:13:53.257Z"
+    },
+    "perseverance-sunflower-on-the-windowsill": {
+      "hash": "e51e7eb05df82391",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 642 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 354 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "5",
+            "note": "第3段{name}說『我不想量了』並改數葉子，第5段卻『紙條越接越長』。可補一句又開始量，或刪去此句"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0275096,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:14:00.847Z"
+    },
+    "courage-little-mouse-and-old-bear": {
+      "hash": "36b14ae485a51453",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "2",
+            "note": "烏龜爺爺在第 2 段突然出現，第 0 段岸邊只有松鼠、兔子、刺蝟，可在第 0 段加一句烏龜爺爺也在岸邊"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.021621599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:23:44.889Z"
+    },
+    "courage-starfish-float": {
+      "hash": "5051b1b1e3a7d8c2",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 427 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 254 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.020993599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:14:20.498Z"
+    },
+    "courage-thats-not-funny": {
+      "hash": "ed98c066ce81ac45",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "en",
+            "where": "4",
+            "note": "英文烏龜名「Slowpoke」也是知名卡通角色名，且略帶取笑「慢吞吞」意味，可改為「Slowly」或「Pebble」"
+          },
+          {
+            "kind": "preachy",
+            "severity": "low",
+            "lang": "both",
+            "where": "7",
+            "note": "結尾「這是{name}做過最勇敢的一件事」由旁白直接點題，可改成{name}心裡暖暖的動作描寫"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024517599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:14:27.962Z"
+    },
+    "courage-the-wrong-turn": {
+      "hash": "595857a240878fd1",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "both",
+            "where": "1",
+            "note": "中文同學叫「阿哲」，英文叫「Jay」，名字不一致；建議英文改用 Azhe 或統一名稱"
+          },
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "6",
+            "note": "結尾「我剛剛腿都在抖耶」與同主題〈That's not funny〉的「膝蓋一直在抖」相近，可換個身體感受"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.025513599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:23:51.998Z"
+    },
+    "responsibility-goldfish-week": {
+      "hash": "dfc9be3d838e1dd2",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 634 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 403 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "age_fit",
+            "severity": "low",
+            "lang": "en",
+            "where": "0",
+            "note": "英文首句『On the last day before the holiday, Teacher Lin held up a fish bowl.』約13字，超過4歲句長，可拆成兩句"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0265536,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:14:44.131Z"
+    },
+    "responsibility-the-broken-flowerpot": {
+      "hash": "f6a1b74458284a7c",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 454 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0241136,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:14:50.765Z"
+    },
+    "responsibility-ants-and-the-grasshopper": {
+      "hash": "a7991e78e7cefb89",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "2",
+            "note": "「籃子翻倒了」前文沒提過籃子，可在第 0 段加一句{name}提著小籃子搬種子"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "en",
+            "where": "7",
+            "note": "英文歌詞「winter won't be hungry」語意不通，可改成「when winter comes, we won't be hungry」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.027157599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:14:58.821Z"
+    },
+    "responsibility-garden-captain": {
+      "hash": "0bfbc5609457cc6c",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0209576,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:15:03.500Z"
+    },
+    "promises-bear-and-the-spring-honey": {
+      "hash": "68e7a1010f08d81b",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 580 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 353 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "5",
+            "note": "第三個重點「做不到要誠實說」劇情沒演出，小熊只是差點忘記；可讓小熊說「我先吃了一些，對不起」並補給小兔子"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "0",
+            "note": "熊冬天通常冬眠，「冬天到了…小熊的肚子咕嚕咕嚕叫」略違常識；寓言可接受，可改成「冬天快到了」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0289816,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:15:14.887Z"
+    },
+    "promises-the-borrowed-comic": {
+      "hash": "0e81cb8632f6dff5",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 428 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "taiwan_usage",
+            "severity": "low",
+            "lang": "zh",
+            "where": "title",
+            "note": "「果汁漫畫的約定」讀起來像漫畫叫果汁漫畫，有點拗口，可改「{name}和借來的漫畫」或「星期五的約定」"
+          },
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "both",
+            "where": "title",
+            "note": "中文標題強調果汁漫畫，英文是「the Promise on Friday」，兩邊標題重點不同，建議統一"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0251096,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:15:21.752Z"
+    },
+    "differences-zebra-with-spots": {
+      "hash": "e7372f4d2add2fbd",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "en",
+            "where": "1",
+            "note": "英文「Dot hung low」語意不完整，像漏了 head，建議改成「Dot's head hung low」，對應中文「低下頭」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.021985599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:23:58.762Z"
+    },
+    "differences-rainbow-of-crayons": {
+      "hash": "fe6a6cf43d0f00dd",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0203056,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:15:34.223Z"
+    },
+    "differences-game-everyone-plays": {
+      "hash": "3cbf0fb1973d717e",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 478 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0229416,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:15:41.477Z"
+    },
+    "differences-the-bat-who-belongs": {
+      "hash": "d2f5deb276567b39",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0256096,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:15:48.926Z"
+    },
+    "nature-turtle-on-the-beach": {
+      "hash": "427683fe6b512224",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 594 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 379 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "5",
+            "note": "第3段才說要站遠看海龜，第5段{name}卻去撿海龜旁的塑膠袋，可補一句「站在遠處用長夾子慢慢夾」"
+          },
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "0",
+            "note": "英文少了中文「{name}戴上手套，開心地跳了一下」，可補上 put on the gloves and gave a happy hop"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.026093599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:15:57.415Z"
+    },
+    "nature-the-old-banyan-tree": {
+      "hash": "60a60e82dc5b31c2",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 486 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "safety",
+            "severity": "low",
+            "lang": "both",
+            "where": "4",
+            "note": "「{name}每天帶著筆記本來觀察」沒提到大人陪同，可加「和媽媽一起」以示有大人在旁"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0236456,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:16:03.555Z"
+    },
+    "nature-bees-on-the-balcony": {
+      "hash": "45c7b2c4662dce5c",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 255 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "en",
+            "where": "3",
+            "note": "「The plastic flower box」意思不清，像是花盆；可改成「The little plastic tray」，對應中文的花苗塑膠盒"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0247976,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:16:11.040Z"
+    },
+    "nature-the-rain-detectives": {
+      "hash": "501f022ad18c991d",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 505 words，8-10 歲 3 分鐘範圍是 380–500（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "both",
+            "where": "0",
+            "note": "好朋友中文叫「阿哲」、英文叫「Jay」，切換語言時名字不一致，可考慮統一（例如英文用 Ah-Zhe）"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.029697599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:24:07.904Z"
+    },
+    "teamwork-the-giant-turnip": {
+      "hash": "428425ca9e6956a7",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "both",
+            "where": "guide",
+            "note": "第 3 題中文「一起做過什麼事情」與英文「like doing together」意思略不同，可統一為「喜歡和家人一起做什麼」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.025277599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:16:29.235Z"
+    },
+    "teamwork-the-leaf-bridge": {
+      "hash": "85bc36dfbe53b7a8",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 572 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 352 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "zh",
+            "where": "1",
+            "note": "「{name}蹲下來，跪在軟軟的草地上看」先蹲又跪，動作矛盾，建議只留「跪在軟軟的草地上」或只寫「蹲下來看」"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "6",
+            "note": "「搬食物的螞蟻走中間」前文沒提過螞蟻搬食物，食物突然出現，可在第 1 段補一句螞蟻扛著食物"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.026477599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:16:41.459Z"
+    },
+    "teamwork-the-class-play": {
+      "hash": "221315e15f5d39dc",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "taiwan_usage",
+            "severity": "low",
+            "lang": "zh",
+            "where": "title",
+            "note": "「班上的下雨好戲」讀起來有點彆扭，可改成「{name}和班上的大雨好戲」或「{name}和森林大雨的戲」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024725599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:16:47.913Z"
+    },
+    "teamwork-snow-fort": {
+      "hash": "ed7bfc9cf752e762",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "3",
+            "note": "「小沙桶」倒扣出「方方正正」的雪磚不太合理，沙桶多為圓形，可改成「方形小沙桶」或「圓圓的雪磚」"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "zh",
+            "where": "0",
+            "note": "「剛出爐的奶油蛋糕」比喻不太貼切，剛出爐的蛋糕還沒抹奶油，可改成「抹滿奶油的蛋糕」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0293176,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:16:57.302Z"
+    },
+    "forgiveness-crow-and-sparrow": {
+      "hash": "fa04903c0c0d06a2",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 430 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0208496,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:25:15.419Z"
+    },
+    "forgiveness-the-told-secret": {
+      "hash": "1edf14ee8096f5c9",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "en",
+            "where": "2",
+            "note": "英文『the person who hurt most』語意不清，像是在說誰最痛，可改成『the person who hurt {him} most』"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "both",
+            "where": "6",
+            "note": "『笑聲…更懂得小心珍惜彼此』把笑聲寫成會珍惜人，不太通順，建議改成兩人更懂得珍惜彼此"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.028909599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:24:24.019Z"
+    },
+    "empathy-grumpy-mr-lin": {
+      "hash": "c57af4d8175a1a40",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "safety",
+            "severity": "low",
+            "lang": "both",
+            "where": "5",
+            "note": "「爬得氣喘吁吁，還比賽誰先到」提著菜在樓梯上比賽衝刺，孩子可能模仿，建議改成「一起穩穩地爬」"
+          },
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "both",
+            "where": "guide",
+            "note": "第3題中文「看起來不太對勁」，英文是「looked upset」，建議兩邊統一用詞"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0335936,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:25:36.811Z"
+    },
+    "perseverance-jump-rope-challenge": {
+      "hash": "b8bb1e9e34ff098b",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "6",
+            "note": "第5段練到「十」下，挑戰日直接跳到「二十」，落差略大；可在第5段補一句數字繼續變多，例如到十五"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "zh",
+            "where": "7",
+            "note": "「每一次絆倒」與前文繩子只是勾到腳不符，「絆倒」易被理解成跌倒；改成「每一次被絆住」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024525599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:17:41.248Z"
+    },
+    "promises-pinky-promise-tea-party": {
+      "hash": "f7a3ebbb12bcd8c1",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 628 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 384 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0205656,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:17:46.691Z"
+    },
+    "promises-the-treehouse-ladder": {
+      "hash": "7b1ab5e350e779f8",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "6",
+            "note": "「整整四十三顆」等於整個暑假每天都做，但第 2 段說連下好幾天雨、八月中才六根；可改成「二十幾顆」或「你每來後院一天」"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "4",
+            "note": "第 4 段才寫桃桃開始神祕撿貝殼，像是八月中才開始；可補一句「從暑假第一天起」以配合貝殼數"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0288256,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:25:45.491Z"
+    },
+    "forgiveness-the-spilled-paint": {
+      "hash": "f0cbc65918f3205e",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 626 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 372 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "1",
+            "note": "「畫被弄壞→說出感覺→原諒→重畫」和 the-scribbled-drawing 很接近，可考慮讓修補方式更不同"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "7",
+            "note": "多多本來就是隔壁同學，「這是我的新朋友！」略怪，可改成「這是我的好朋友！」"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "en",
+            "where": "7",
+            "note": "「blue paint on the tip of a nose」不自然，改成「on the tip of Dodo's nose」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0308936,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:24:53.875Z"
+    },
+    "perseverance-the-character-yong": {
+      "hash": "1ee519d26be348fb",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 523 words，8-10 歲 3 分鐘範圍是 380–500（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "title",
+            "note": "英文標題『Grandpa's Brush』與中文『「永」字』重點不同，故事主軸是練寫「永」字，建議改為 {name} and Grandpa's Forever Character"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0272736,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:18:14.029Z"
+    },
+    "forgiveness-the-runaway-balloon": {
+      "hash": "ec056adc9a744437",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 576 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        }
+      ],
+      "model": "claude-opus-5-5",
+      "usd": 0.024569599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-14T19:26:47.708Z",
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "5",
+            "note": "「意外弄壞→說出感受→對方畫/做新東西補償→原諒」與 spilled-paint 結構相近，可考慮讓阿樂用不同方式彌補"
+          }
+        ]
+      }
     }
   }
 }

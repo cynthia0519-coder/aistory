@@ -56,7 +56,7 @@ export function ageBandFor(age: number): AgeBand {
 }
 
 // ---- 故事風格 ----
-export const STORY_STYLES = ["adventure", "inspiring", "cute", "bedtime"] as const;
+export const STORY_STYLES = ["adventure", "inspiring", "cute", "bedtime", "fable"] as const;
 export type StoryStyle = (typeof STORY_STYLES)[number];
 
 /** 年齡層合起來的範圍，例如 ["2-4","4-6"] → 「2–6 歲」 */
@@ -89,6 +89,12 @@ export const STYLE_RULES: Record<StoryStyle, { label: string; hint: string; prom
     hint: "安靜好入睡",
     prompt:
       "A calm bedtime story: slow pace, soothing repetition, low excitement, the world gradually getting quiet and sleepy. A slow pace means more gentle sensory detail (sounds, warmth, soft light), not fewer words: still reach the requested length.",
+  },
+  fable: {
+    label: "寓言",
+    hint: "小故事大道理",
+    prompt:
+      "A fable: animal or nature characters face a simple choice, and what happens because of that choice carries one clear wisdom. Let the meaning land through the ending and the characters' own words or actions, so a child can say what it means; never add a narrator moral or 'the lesson is'. The hero is part of the story, as a friend, helper or the one who chooses.",
   },
 };
 
@@ -161,12 +167,13 @@ export const STORY_SETTINGS = [
 ] as const;
 export type StorySetting = (typeof STORY_SETTINGS)[number];
 
-// ---- 主題：爸媽為了生活中的需要挑故事（安全、身體自主、生活習慣、情緒） ----
+// ---- 主題：爸媽為了生活中的需要挑故事（安全、身體自主、生活習慣、情緒、品格） ----
 export const THEME_CATEGORIES = {
   safety: { zh: "安全", en: "Safety" },
   body: { zh: "身體自主", en: "Body autonomy" },
   habits: { zh: "生活習慣", en: "Daily habits" },
   emotions: { zh: "情緒與人際", en: "Feelings & friends" },
+  values: { zh: "品格", en: "Character" },
 } as const satisfies Record<string, Record<Language, string>>;
 export type ThemeCategory = keyof typeof THEME_CATEGORIES;
 export const THEME_CATEGORY_IDS = Object.keys(THEME_CATEGORIES) as ThemeCategory[];
@@ -179,7 +186,7 @@ export interface ThemeRule {
   keyMessages: readonly string[];
   /** 敏感主題：生成時加上 SENSITIVE_THEME_GUARDRAILS，必須由專業人士審過才上架 */
   sensitive: boolean;
-  /** 照片故事（即時 AI）能不能選這個主題；只開放生活習慣與情緒 */
+  /** 照片故事（即時 AI）能不能選這個主題；只開放生活習慣、情緒與品格 */
   aiAllowed: boolean;
   /** 第一批要做的主題 */
   priority: boolean;
@@ -198,7 +205,7 @@ const theme = (
   ages,
   keyMessages,
   sensitive: opts.sensitive ?? category === "body",
-  aiAllowed: opts.aiAllowed ?? (category === "habits" || category === "emotions"),
+  aiAllowed: opts.aiAllowed ?? (category === "habits" || category === "emotions" || category === "values"),
   priority: opts.priority ?? false,
 });
 
@@ -398,6 +405,58 @@ export const THEMES = {
     "We can remember our pet with stories, drawings and favorite memories.",
     "Sad feelings get softer with time, and the love stays.",
   ], { sensitive: true, aiAllowed: false }),
+
+  // 品格
+  gratitude: theme("values", "感恩", "Gratitude", ["2-4", "4-6", "6-8", "8-10"], [
+    "Many people and things quietly help us every day; noticing them makes us feel rich.",
+    "Saying or showing thanks makes both the giver and the receiver happy.",
+    "We can say thank you with small actions, not only words.",
+  ]),
+  empathy: theme("values", "同理心", "Empathy", ["2-4", "4-6", "6-8", "8-10"], [
+    "Other people have feelings just like ours, even when they show them differently.",
+    "We can notice how someone feels by looking at their face and asking 'Are you OK?'.",
+    "Imagining how it feels to be in someone else's place helps us know how to help.",
+  ]),
+  perseverance: theme("values", "堅持", "Keep trying", ["4-6", "6-8", "8-10"], [
+    "Hard things get easier with practice; every try teaches us something.",
+    "When we feel like giving up, we can rest, try a smaller step, or try a new way.",
+    "Being proud of our effort matters more than being the best.",
+  ]),
+  courage: theme("values", "勇氣", "Being brave", ["2-4", "4-6", "6-8", "8-10"], [
+    "Being brave doesn't mean not feeling scared; it means doing the right or kind thing while scared.",
+    "Small brave steps count: trying something new, speaking up, or asking for help.",
+    "Brave is not the same as risky; we stay safe and can bring a grown-up along.",
+  ]),
+  responsibility: theme("values", "負責任", "Taking responsibility", ["4-6", "6-8", "8-10"], [
+    "Taking care of our own jobs, things and promises helps the people around us.",
+    "When we make a mistake, we own it and help fix it instead of blaming others.",
+    "Doing our part, even when no one is watching, makes us someone others can count on.",
+  ]),
+  "keeping-promises": theme("values", "說到做到", "Keeping promises", ["4-6", "6-8", "8-10"], [
+    "A promise is a gift of trust; keeping it shows people they matter.",
+    "Before promising, think about whether we can really do it.",
+    "If we can't keep a promise, we say so honestly and try to make it right.",
+  ]),
+  "respecting-differences": theme("values", "尊重不一樣", "Respecting differences", ["2-4", "4-6", "6-8", "8-10"], [
+    "People look, sound, eat, move and think in different ways, and every way deserves respect.",
+    "Being different is not wrong; differences make friends and the world more interesting.",
+    "We include others and stand by someone who is left out or laughed at.",
+  ]),
+  "caring-for-nature": theme("values", "愛護環境", "Caring for nature", ["2-4", "4-6", "6-8", "8-10"], [
+    "Plants, animals, water and air are shared by everyone, and they need our care.",
+    "Small daily actions help: not wasting, putting trash in the right place, being gentle with living things.",
+    "We look at nature with curiosity and leave it as beautiful as we found it.",
+  ]),
+  teamwork: theme("values", "合作", "Working together", ["2-4", "4-6", "6-8", "8-10"], [
+    "Some things are too big for one person but just right for many hands.",
+    "Everyone has something to offer; listening to each other's ideas makes a better plan.",
+    "Working together means taking turns, helping, and sharing the success.",
+  ]),
+  forgiveness: theme("values", "原諒", "Forgiveness", ["4-6", "6-8", "8-10"], [
+    "Everyone makes mistakes; when someone says sorry and tries to fix it, we can choose to forgive.",
+    "Forgiving lets go of a heavy, angry feeling and makes room for friendship again.",
+    "Forgiving doesn't mean what happened was OK; it's fine to tell how it made us feel.",
+  ]),
 } as const satisfies Record<string, ThemeRule>;
 
 export type ThemeId = keyof typeof THEMES;

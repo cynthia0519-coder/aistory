@@ -42,6 +42,7 @@ const STYLE_DOT: Record<StoryStyle, string> = {
   inspiring: "bg-ochre",
   cute: "bg-[#e8a0a0]",
   bedtime: "bg-sage",
+  fable: "bg-[#b9a6d9]",
 };
 
 export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary }: Props) {
@@ -53,7 +54,7 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary }: Pr
   const ageBand = hero ? ageBandFor(hero.age) : pickedAgeBand;
   const [style, setStyle] = useState<StoryStyle>("adventure");
   const [length, setLength] = useState<StoryLength>("3min");
-  // 只列出即時 AI 可以寫的主題（生活習慣、情緒），而且要符合目前的年齡層；
+  // 只列出即時 AI 可以寫的主題（生活習慣、情緒、品格），而且要符合目前的年齡層；
   // 換了年齡層、原本選的主題不適用時就當作沒選
   const themeOptions = aiThemesFor(ageBand);
   const [pickedTheme, setTheme] = useState<ThemeId | null>(null);
@@ -222,7 +223,7 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary }: Pr
                 type="button"
                 aria-pressed={style === s}
                 onClick={() => setStyle(s)}
-                className={`flex h-16 items-center gap-3 rounded-2xl px-3 text-left ${
+                className={`flex h-16 items-center gap-3 rounded-2xl px-3 text-left last:odd:col-span-2 ${
                   style === s ? "bg-rust text-card" : "bg-card text-ink ring-2 ring-line"
                 }`}
               >

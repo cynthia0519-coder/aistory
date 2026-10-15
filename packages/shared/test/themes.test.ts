@@ -37,13 +37,13 @@ test("request rejects unknown themes", () => {
 test("theme flags follow the category rules", () => {
   for (const id of THEME_IDS) {
     const t: ThemeRule = THEMES[id];
-    const aiCategory = t.category === "habits" || t.category === "emotions";
+    const aiCategory = t.category === "habits" || t.category === "emotions" || t.category === "values";
     assert.equal(t.aiAllowed, aiCategory && id !== "pet-loss", id);
     assert.equal(t.sensitive, t.category === "body" || id === "pet-loss", id);
     assert.ok(t.keyMessages.length > 0 && t.ages.length > 0, id);
     assert.ok(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id), id);
   }
-  assert.equal(THEME_IDS.length, 36);
+  assert.equal(THEME_IDS.length, 46);
 });
 
 test("aiThemesFor filters by age band", () => {
