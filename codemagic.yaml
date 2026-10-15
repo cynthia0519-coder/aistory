@@ -1,0 +1,37 @@
+# iOS 雲端建置：Codemagic 的 Mac 機器打包 → 上傳 TestFlight。步驟說明見 docs/ios-release.md
+workflows:
+  ios-testflight:
+    name: iOS → TestFlight
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    integrations:
+      # Codemagic 後台 Team settings → Integrations → App Store Connect 建的 API 金鑰名稱
+      app_store_connect: aistory-asc
+    environment:
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.example.aistory # 換正式 Bundle ID 時三處一起改：這裡、capacitor.config.ts、project.pbxproj
+      node: 22
+      xcode: latest
+      vars:
+        XCODE_PROJECT: apps/client/ios/App/App.xcodeproj
+        XCODE_SCHEME: App
+    scripts:
+      - name: 安裝套件
+        script: npm ci
+      - name: 打包網頁並同步到 iOS 專案
+        script: npm run build:app -w @aistory/client
+      - name: 套用簽章
+        script: xcode-project use-profiles
+      - name: Build 號用 Codemagic 的建置序號（每次自動 +1）
+        script: |
+          sed -i '' "s/CURRENT_PROJECT_VERSION = [0-9]*;/CURRENT_PROJECT_VERSION = $BUILD_NUMBER;/" "$XCODE_PROJECT/project.pbxproj"
+      - name: 打包 ipa
+        script: xcode-project build-ipa --project "$XCODE_PROJECT" --scheme "$XCODE_SCHEME"
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true

@@ -3,31 +3,32 @@
 App 是 `apps/client` 的靜態網頁用 Capacitor 8 包起來，iOS 專案在 `apps/client/ios/`（Swift Package Manager，不用 CocoaPods）。
 API 用正式環境 `https://aistory-three.vercel.app`，CORS 已允許 `capacitor://localhost`。
 
-## 每次出新版
+## 建置方式：Codemagic（不需要 Mac）
 
-在 Mac 上：
+設定檔是根目錄的 `codemagic.yaml`（workflow `ios-testflight`）：`npm ci` → `npm run build:app -w @aistory/client` → 自動簽章 → 打包 → 上傳 TestFlight。Build 號用 Codemagic 的建置序號，不用手動改。
 
-```bash
-git pull
-npm install
-npm run build:app -w @aistory/client   # 打包網頁 + 同步到 iOS 專案
-open apps/client/ios/App/App.xcodeproj
-```
+### 第一次設定（Apple 開發者帳號核准後）
 
-Xcode 裡：
+1. App Store Connect → 使用者與存取權限 → 整合 → App Store Connect API：建一把金鑰，角色 **App Manager**，下載 `.p8`（只能下載一次）
+2. App Store Connect → App → 新增 App：用正式 Bundle ID 建立（先到 developer.apple.com → Identifiers 註冊同一個 Bundle ID）
+3. codemagic.io 用 GitHub 登入，加入 `cynthia0519-coder/aistory`
+4. Codemagic → Team settings → Integrations → App Store Connect：填 Issuer ID、Key ID、上傳 `.p8`，名稱取 **`aistory-asc`**（要跟 `codemagic.yaml` 一致）
+5. Codemagic → Code signing identities → iOS certificates：產生一張 Apple Distribution 憑證（用上面的整合自動產生，Codemagic 會保管）
 
-1. 第一次：選 App target → Signing & Capabilities → Team 選公司帳號
-2. 每次上傳前把 Build 號 +1（General → Identity → Build）
-3. Product → Archive → Distribute App → App Store Connect → Upload
+金鑰和憑證只放在 Codemagic，不放 repo、不貼到對話裡。
+
+### 每次出新版
+
+Codemagic → 這個 App → Start new build → 選分支和 `ios-testflight`。約 15–25 分鐘後出現在 TestFlight，內部測試員（App Store Connect 的團隊成員）不用審核就能從 iPhone 的 TestFlight App 安裝。
 
 ## 第一次上傳前要確認
 
-- [ ] **Bundle ID**：`apps/client/capacitor.config.ts` 的 `appId` 和 Xcode 的 Bundle Identifier 換成正式值（目前是 `com.example.aistory`）。上傳後就不能改
+- [ ] **Bundle ID**：三處換成正式值（目前是 `com.example.aistory`）：`apps/client/capacitor.config.ts` 的 `appId`、`apps/client/ios/App/App.xcodeproj/project.pbxproj` 的 `PRODUCT_BUNDLE_IDENTIFIER`、`codemagic.yaml` 的 `bundle_identifier`。上傳後就不能改
 - [ ] Vercel API 專案已設 `INVITE_CODES`、`RATE_LIMIT_SALT`
 - [ ] 隱私權政策的聯絡信箱（`apps/client/src/lib/privacy.ts` 的 `PRIVACY_CONTACT`）已填
 - [ ] App Store Connect 的「隱私權政策網址」：要一個公開網址（可用網頁版加一頁，或另外的網站）
 
-## 真機要測的（雲端測不到）
+## 真機要測的（裝 TestFlight 版來測）
 
 - [ ] 拍照、從相簿選照片（第一次會跳出相機權限說明）
 - [ ] 錄爸媽的聲音（第一次會跳出麥克風權限說明）、用錄音播放
