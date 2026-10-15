@@ -1,33 +1,32 @@
 {
-  "generatedAt": "2026-10-15T08:01:10.512Z",
+  "generatedAt": "2026-10-15T08:18:04.017Z",
   "summary": {
     "stories": 334,
     "byStatus": {
-      "ok": 235,
-      "check": 99
+      "ok": 242,
+      "check": 92
     },
     "byCheckKind": {
-      "length": 248,
-      "duplicate_title": 20,
-      "zh_half_width_punct": 310,
+      "length": 253,
+      "zh_half_width_punct": 2,
+      "duplicate_title": 12,
       "tokens": 2,
       "sensitive_pattern": 9,
       "phone_number": 1
     },
     "byIssueKind": {
-      "repetition": 150,
-      "logic": 148,
-      "quality": 63,
-      "zh_en_mismatch": 85,
-      "safety": 47,
+      "repetition": 149,
+      "logic": 146,
+      "quality": 62,
       "taiwan_usage": 37,
-      "preachy": 28,
-      "age_fit": 16,
+      "safety": 37,
+      "preachy": 27,
+      "zh_en_mismatch": 86,
+      "age_fit": 14,
       "length": 3,
       "guardrail": 4
     },
     "flagged": [
-      "anger-red-face-pillow",
       "anger-volcano-breath",
       "bedtime-routine-moon-checklist",
       "bedtime-routine-pajama-moon-bath",
@@ -39,29 +38,24 @@
       "caring-for-nature-pangolin-fable",
       "city-mrt-lost-umbrella",
       "crossing-road-little-green-man",
-      "crossing-road-school-crossing-guard",
       "crossing-road-scooter-detective",
       "dentist-wiggly-tooth",
       "earthquake-go-bag-captain",
-      "earthquake-kindergarten-drill-song",
       "earthquake-library-shelves",
       "earthquake-table-fort",
-      "fear-of-dark-closet-monster-flashlight",
       "first-day-paper-boat",
-      "forgiveness-river-otters-fable",
       "getting-lost-aquarium-tunnel",
       "getting-lost-night-market",
-      "getting-lost-supermarket-meeting-spot",
       "good-bad-secrets-birthday-cake",
       "good-bad-secrets-mountain-cabin",
       "good-bad-secrets-quiet-classmate",
       "good-bad-secrets-scraped-knee",
       "good-bad-secrets-thank-you-party",
+      "handwashing-goat-farm",
       "handwashing-soap-song-train",
       "honesty-lost-eraser",
       "hot-things-camping-fire-circle",
       "hot-things-soup-pot-steam",
-      "keeping-promises-plant-sitter",
       "lighthouse-keepers-cat",
       "losing-failing-leaf-boat-race",
       "manners-magic-words-bakery",
@@ -86,7 +80,6 @@
       "pet-loss-old-cat-sunbeam",
       "potty-little-frog-stool",
       "puppet-masters-apprentice",
-      "saying-no-beard-kisses",
       "saying-no-squeeze-hug-handshake",
       "saying-no-tickle-monster",
       "screen-time-bunny-timer",
@@ -95,9 +88,11 @@
       "sea-lighthouse-keeper-grandma",
       "sea-tide-pool-crab-family",
       "sharing-turns-crayon-box",
+      "sharing-turns-swing-song",
       "sharing-turns-swing-timer",
       "starting-kindergarten-pocket-pebble",
       "starting-kindergarten-school-bus-wave",
+      "strangers-family-password",
       "strangers-ice-cream-truck",
       "strangers-password-word",
       "swimsuit-rule-bath-duck",
@@ -105,7 +100,6 @@
       "swimsuit-rule-teddy-check-up",
       "swimsuit-rule-whale-swimsuit",
       "tea-hill-hide-and-seek",
-      "teamwork-ant-bridge-fable",
       "temple-lion-dance-drum",
       "the-puddle-that-was-a-sea",
       "the-sock-that-ran-away",
@@ -120,7 +114,6 @@
       "typhoon-flashlight-shadows",
       "typhoon-swollen-river",
       "water-safety-beach-flags",
-      "water-safety-beach-red-flag",
       "water-safety-flooded-ditch",
       "water-safety-pool-wait-by-towel",
       "wind-city-kite",
@@ -130,8 +123,10 @@
     "spotCheck": [
       "anger-broken-model-ship",
       "anger-little-volcano",
-      "anger-stomping-dinosaur",
+      "anger-red-face-pillow",
+      "anger-snail-breath",
       "bedtime-routine-picture-chart",
+      "crossing-road-garbage-truck-song",
       "dentist-loose-tooth-brave-chair",
       "earthquake-museum-running-track",
       "fear-of-dark-frog-choir",
@@ -143,6 +138,7 @@
       "honesty-test-paper-signature",
       "hot-things-hot-pot-night",
       "hot-things-soup-dragon",
+      "keeping-promises-plant-sitter",
       "losing-failing-class-election",
       "losing-failing-relay-baton",
       "manners-sorry-tower",
@@ -154,8 +150,6 @@
       "promises-the-borrowed-comic",
       "responsibility-garden-captain",
       "sharing-turns-one-red-tricycle",
-      "snow-mountain-first-snowflake",
-      "sockets-robot-socket-covers",
       "starting-kindergarten-lunchbox-note",
       "teamwork-dragon-dance-practice",
       "teamwork-the-class-play",
@@ -165,7 +159,7 @@
       "water-safety-river-picnic",
       "zoo-giraffe-tall-and-small"
     ],
-    "usd": 9.4659
+    "usd": 9.418
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -216,13 +210,6 @@
           "lang": "en",
           "where": "story",
           "note": "英文 379 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
-        },
-        {
-          "kind": "duplicate_title",
-          "severity": "low",
-          "lang": "en",
-          "where": "title",
-          "note": "標題很像 bedtime-routine-pajama-moon-bath「Goodnight, Moon, Says {name}」（相似度 0.74）"
         }
       ],
       "llm": {
@@ -614,13 +601,6 @@
           "lang": "en",
           "where": "title",
           "note": "標題很像 little-turtle-moon-path「The Little Turtle and the Moon Path」（相似度 0.73）"
-        },
-        {
-          "kind": "duplicate_title",
-          "severity": "low",
-          "lang": "en",
-          "where": "title",
-          "note": "標題很像 earthquake-kindergarten-drill-song「{name} and the Little Turtle Song」（相似度 0.85）"
         }
       ],
       "llm": {
@@ -2321,116 +2301,31 @@
       "reviewedAt": "2026-10-14T09:47:45.820Z"
     },
     "crossing-road-garbage-truck-song": {
-      "hash": "fad92e7a6ef667ba",
-      "checks": [
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , ! :（咚,、了!、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , !（手,、門,、噗,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 , :（口,、咚,、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 ? , !（呢?、邊,、叭!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 , :（邊,、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 , !（人,、嗶!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 ! ,（吧!、手,、走,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 ! : ,（咚!、說:、掰!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（時,、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（前,、邊?、聽?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（路,、呢?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ,（時,、」,），改成全形"
-        }
-      ],
+      "hash": "2f547b9626d0c090",
+      "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "logic",
+            "kind": "zh_en_mismatch",
             "severity": "low",
             "lang": "both",
-            "where": "5",
-            "note": "第 2–4 段已看完左右並聽過，第 5 段才發現「紅綠燈」，順序有點怪；可在第 2 段先提到路口有小人燈"
+            "where": "1",
+            "note": "中文「走出家門，走進巷子」英文沒有，可在英文補一句 \"Out the door, into the lane.\""
           },
           {
-            "kind": "quality",
+            "kind": "taiwan_usage",
             "severity": "low",
             "lang": "zh",
             "where": "guide",
-            "note": "第 2 題「還用什麼聽?」語意彆扭，改成「還用什麼來注意車子?」較自然，也與英文一致"
+            "note": "「還用什麼聽？」語意不順，可改成「還用了哪裡來聽？」較自然，也更貼近英文的問法"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0254216,
+      "usd": 0.035232,
       "status": "ok",
-      "reviewedAt": "2026-10-14T09:47:53.798Z"
+      "reviewedAt": "2026-10-15T08:11:17.703Z"
     },
     "crossing-road-yellow-umbrella": {
       "hash": "9768eec5b8648295",
@@ -2460,7 +2355,7 @@
       "reviewedAt": "2026-10-14T09:48:02.513Z"
     },
     "crossing-road-crossing-guard-flag": {
-      "hash": "bfad92007ab8e9cf",
+      "hash": "9b1d45c6d0807ff5",
       "checks": [
         {
           "kind": "length",
@@ -2475,90 +2370,34 @@
           "lang": "en",
           "where": "story",
           "note": "英文 352 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
-        },
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "2",
+            "note": "奶奶陪伴、路邊停、左右左看、等小綠人，與 little-green-man 篇相近；黃背心爺爺與探險框架已有區隔，可再強化特色"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.030817599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:11:27.715Z"
+    },
+    "getting-lost-zoo-penguins": {
+      "hash": "a336a5325a885ced",
+      "checks": [
         {
-          "kind": "zh_half_width_punct",
+          "kind": "length",
           "severity": "low",
           "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , : ! ?（包,、說:、吧!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , ! :（站,、的,、時,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 ,（站,、叫,、排,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 , ? ! :（在,、看,、看,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 , : !（上,、說:、著,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 : ! ,（說:、安!、時,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 , ! :（然,、車,、來!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , ! :（了,、步,、了!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（聽,、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（時,、看?、次?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（來,、做?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , :（時,、戲:、」,），改成全形"
+          "where": "story",
+          "note": "中文 570 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         }
       ],
       "llm": {
@@ -2569,125 +2408,14 @@
             "severity": "low",
             "lang": "both",
             "where": "3",
-            "note": "奶奶陪同、左右左看、等小綠人和 little-green-man 很像。可多強調黃背心爺爺的旗子情節來區隔"
-          },
-          {
-            "kind": "taiwan_usage",
-            "severity": "low",
-            "lang": "zh",
-            "where": "2",
-            "note": "「路邊是探險隊的停車站」的「停車站」容易聯想到停車場或公車站。可改成「停一停的地方」"
+            "note": "「隔著玻璃看動物、突然找不到大人、找有名牌的工作人員」與水族館隧道篇相近，可多強調電話歌的特色"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0326296,
+      "usd": 0.024781599999999997,
       "status": "ok",
-      "reviewedAt": "2026-10-14T09:48:11.928Z"
-    },
-    "getting-lost-zoo-penguins": {
-      "hash": "55f1a1034f3cb870",
-      "checks": [
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "zh",
-          "where": "story",
-          "note": "中文 570 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , : !（天,、說:、務,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , !（了,、面,、擺,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 , :（是,、友,、找,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 , ?（氣,、來,、嗎?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 , ! :（時,、服,、服,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 , : ? !（來,、說:、心,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 , ? : !（樣,、按,、嗎?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , ! :（等,、歌!、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（候,、麼?、要?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（們,、忙?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ?（嗎?、嗎?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ,（歌,、戲,），改成全形"
-        }
-      ],
-      "llm": {
-        "verdict": "ok",
-        "issues": []
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.0265176,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:48:19.375Z"
+      "reviewedAt": "2026-10-15T08:11:34.112Z"
     },
     "getting-lost-temple-fair": {
       "hash": "93c6d3ddee8faa74",
@@ -2760,7 +2488,7 @@
       "reviewedAt": "2026-10-14T09:48:38.978Z"
     },
     "earthquake-grandmas-wooden-table": {
-      "hash": "6dd457edd9849fc0",
+      "hash": "5df19de835470318",
       "checks": [
         {
           "kind": "length",
@@ -2775,108 +2503,31 @@
           "lang": "en",
           "where": "story",
           "note": "英文 373 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , : ? !（了,、子,、窗,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , : !（看,、搖,、鈴,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 , : !（著,、桌,、推,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 , : ?（餅,、然,、問:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 : ,（說:、說:、晃,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 : ? ,（說:、好?、頭:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 , :（候,、去,、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , : !（裡,、手:、喔!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（候,、裡?、裡?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（時,、麼?、點?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（震,、做?、話?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 : ,（」:、」,、腳,），改成全形"
         }
       ],
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "logic",
+            "kind": "repetition",
             "severity": "low",
             "lang": "both",
-            "where": "1",
-            "note": "「探險家找到第一個寶物了」暗示還有後續寶物，但尋寶線之後就斷了；可把大木桌說成第二個寶物，或改成「找到寶物了」"
+            "where": "7",
+            "note": "「像兩隻小烏龜躲在殼裡」與 earthquake-turtle-drill 的烏龜比喻重複，可換成與尋寶或老房子相關的比喻"
+          },
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "0",
+            "note": "中文結尾「阿嬤笑著牽起{his}手」英文沒有，可補一句 Grandma smiled and took {his} hand"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0303936,
+      "usd": 0.0300776,
       "status": "ok",
-      "reviewedAt": "2026-10-14T09:48:47.137Z"
+      "reviewedAt": "2026-10-15T08:11:42.536Z"
     },
     "earthquake-library-shelves": {
       "hash": "fd3ebf560f0c0af8",
@@ -2984,7 +2635,7 @@
       "reviewedAt": "2026-10-14T09:49:12.484Z"
     },
     "strangers-family-password": {
-      "hash": "f1845b523d659715",
+      "hash": "bbb19f6ee81bfa91",
       "checks": [
         {
           "kind": "length",
@@ -2999,115 +2650,38 @@
           "lang": "en",
           "where": "story",
           "note": "英文 354 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , : !（上,、來,、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , !（天,、圖,、梯,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 ,（午,、樹,、噹,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 , : !（候,、說:、你,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 , ? :（事,、姨,、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 ! ,（要!、走!、大,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 , :（著,、說,、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , : !（久,、來,、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（時,、麼?、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（走,、誰?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（裡,、的?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , !（令,、演,、要!），改成全形"
         }
       ],
       "llm": {
-        "verdict": "ok",
+        "verdict": "check",
         "issues": [
+          {
+            "kind": "repetition",
+            "severity": "medium",
+            "lang": "both",
+            "where": "3",
+            "note": "與 strangers-password-word 幾乎相同：家庭口令、校門口陌生人說「媽媽叫我來接你」、問口令答不出、找老師打給媽媽。需換情節或解法"
+          },
           {
             "kind": "preachy",
             "severity": "low",
             "lang": "both",
             "where": "6",
-            "note": "王老師說「很多人都很友善。可是我們只跟爸媽說好的大人走。」像在念規則，可改成較口語的安撫，或交給媽媽在結尾自然帶出"
+            "note": "王老師「很多人都很友善。可是我們只跟爸媽說好的大人走」像在念規則，可改成較口語的安慰或交給導讀卡"
           },
           {
-            "kind": "repetition",
+            "kind": "taiwan_usage",
             "severity": "low",
-            "lang": "both",
+            "lang": "zh",
             "where": "3",
-            "note": "陌生人遞糖果、說「媽媽叫我來」再大聲說不要，和 lost-puppy、sticker-shop 骨架相近；祕密口令已有區隔，可再多寫口令的情節"
+            "note": "「把小手放好」語意不清，可改成「{name}把手背到身後，沒有去拿」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0324936,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:49:22.835Z"
+      "usd": 0.0280936,
+      "status": "check",
+      "reviewedAt": "2026-10-15T08:11:51.882Z"
     },
     "strangers-station-sticker-shop": {
       "hash": "ff36570c403756a0",
@@ -3144,7 +2718,7 @@
       "reviewedAt": "2026-10-14T09:49:35.454Z"
     },
     "hot-things-rice-cooker-whale": {
-      "hash": "bd4e65e5b529a619",
+      "hash": "da3c5707c08d33ef",
       "checks": [
         {
           "kind": "length",
@@ -3152,108 +2726,31 @@
           "lang": "en",
           "where": "story",
           "note": "英文 261 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , ! :（裡,、水!、爺,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , :（手,、說:、來,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 , !（筆,、畫,、咚!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 , !（魚,、好!、魚,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 , !（的,、錯!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 ! : ,（嗶!、喊:、爺!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 ! ,（叮!、囉!、喔,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , ! :（了,、了!、嗚!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（候,、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（西,、碰?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（候,、做?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , : !（前,、置,、說:），改成全形"
         }
       ],
       "llm": {
         "verdict": "ok",
         "issues": [
           {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "zh",
+            "where": "5",
+            "note": "「嗶嗶嗶！水壺突然大叫」像電子提示音，英文是鳴笛 whistles；爐上水壺可改「嗚——嗚——」較貼切一致"
+          },
+          {
             "kind": "repetition",
             "severity": "low",
             "lang": "both",
-            "where": "0",
-            "note": "「電鍋鯨魚」把蒸氣比成動物，又和長輩一起吹涼，與 soup-dragon 的「龍鍋＋和奶奶吹碗」很像；安全圈情節已有區隔，可再拉開差異"
+            "where": "2",
+            "note": "爺爺畫「安全圈」讓孩子站在圈外看，與露營故事石頭圈相近；可改成踩在地墊上或站在門邊等不同做法"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0270456,
+      "usd": 0.0269896,
       "status": "ok",
-      "reviewedAt": "2026-10-14T09:49:44.359Z"
+      "reviewedAt": "2026-10-15T08:12:00.970Z"
     },
     "hot-things-hot-pot-night": {
       "hash": "2f12ef76ef08e641",
@@ -3480,93 +2977,8 @@
       "reviewedAt": "2026-10-14T09:50:51.461Z"
     },
     "medicine-gummy-bear-vitamins": {
-      "hash": "639b35081c0a5813",
-      "checks": [
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , ! :（上,、咚,、險!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , ?（子,、看,、咦?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 , ! :（熊,、熊,、隻,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 ,（果,、過,、給,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 , ! :（咚,、媽!、咚,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 , ! :（媽,、媽,、看!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 , !（看,、命,、你,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 ! , :（了!、口,、口:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（熊,、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（命,、你,、吃?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（丸,、做?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 : , !（戲:、上,、嚐,），改成全形"
-        }
-      ],
+      "hash": "9e85adf4d09c874c",
+      "checks": [],
       "llm": {
         "verdict": "check",
         "issues": [
@@ -3574,29 +2986,22 @@
             "kind": "repetition",
             "severity": "medium",
             "lang": "both",
-            "where": "5",
-            "note": "與 medicine-not-candy 太像：都有抱玩偶發現藥瓶、去找媽媽、媽媽放高處。建議換解法或情節，例如和媽媽一起整理"
-          },
-          {
-            "kind": "quality",
-            "severity": "low",
-            "lang": "zh",
-            "where": "4",
-            "note": "恐龍名字「咚咚」和腳步聲「咚咚咚」重疊，容易混淆。建議腳步聲改成「踏踏踏」"
+            "where": "1",
+            "note": "情節與 medicine-not-candy 幾乎相同：發現像糖果的瓶子、和玩偶出任務找媽媽、媽媽放高處。建議換情境或解法。"
           },
           {
             "kind": "age_fit",
             "severity": "low",
             "lang": "zh",
             "where": "3",
-            "note": "「看起來像糖果，可是不一定是糖果」偏長，可拆成「像糖果。可是，不一定是。」"
+            "note": "「看起來像糖果，可是不一定是糖果。」偏長，可拆成「像糖果。可是，不一定是糖果。」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0258096,
+      "usd": 0.0228576,
       "status": "check",
-      "reviewedAt": "2026-10-14T09:50:59.766Z"
+      "reviewedAt": "2026-10-15T08:12:08.401Z"
     },
     "medicine-grandmas-rainbow-pillbox": {
       "hash": "d453b5530b5d1db1",
@@ -3724,7 +3129,7 @@
       "reviewedAt": "2026-10-14T09:51:30.789Z"
     },
     "swimsuit-rule-bath-duck": {
-      "hash": "5fb3e12726b7d020",
+      "hash": "5d9e562ccdec2bc3",
       "checks": [
         {
           "kind": "length",
@@ -3732,90 +3137,6 @@
           "lang": "en",
           "where": "story",
           "note": "英文 259 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , !（啦,、了!、啾!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , ! ? :（{name},、題!、呀?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 , !（方,、看,、的!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 ? , : !（呢?、樣,、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 ? ,（嗎?、以,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 ? : ! ,（呢?、呢?、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 : ! ,（說:、子!、擠,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , ! :（搓,、了!、手:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ?（呢?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（來,、抱,、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（時,、裡?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ! :（時,、子,、停!），改成全形"
         },
         {
           "kind": "sensitive_pattern",
@@ -3832,22 +3153,22 @@
             "kind": "preachy",
             "severity": "medium",
             "lang": "both",
-            "where": "2",
-            "note": "第2–5段幾乎全是爸爸逐條講規則，像對讀者背誦清單。建議讓{name}用動作或小遊戲（如拍水說『是我的』）體驗，減少說明句。"
+            "where": "5",
+            "note": "第2到5段幾乎都是爸爸一句接一句講規則，第5段『你可以說：停！再告訴爸爸媽媽…那不是你的錯』像條列宣導，建議改成呱呱示範說停、爸爸回應"
           },
           {
-            "kind": "quality",
+            "kind": "logic",
             "severity": "low",
             "lang": "both",
             "where": "6",
-            "note": "第6–7段自己洗肚子的努力與泳衣規則沒有連結，像兩段故事。可讓{name}說『這是我的，我自己洗』，把成長和主題接起來。"
+            "note": "努力成長段『自己洗肚子』和泳衣規則沒有連結，可讓{name}自己決定洗哪裡、爸爸尊重，呼應身體是自己的"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0321416,
+      "usd": 0.0303336,
       "status": "check",
-      "reviewedAt": "2026-10-14T09:51:40.546Z"
+      "reviewedAt": "2026-10-15T08:12:17.826Z"
     },
     "swimsuit-rule-water-park-poncho": {
       "hash": "571c2ee47499f0cb",
@@ -3990,7 +3311,7 @@
       "reviewedAt": "2026-10-14T09:52:11.825Z"
     },
     "saying-no-beard-kisses": {
-      "hash": "f898cfb71608a60d",
+      "hash": "8b50e34f16c438d1",
       "checks": [
         {
           "kind": "length",
@@ -3998,97 +3319,6 @@
           "lang": "en",
           "where": "story",
           "note": "英文 257 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "title",
-          "note": "中文裡有半形標點 : , !（說:、親,、手!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 ! ,（咚!、咚!、好!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , !（來,、個!、啾!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 ! :（個!、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 , !（爺,、手!、呀,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 ! ,（囉!、咯,、癢,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 , ?（咪,、嗎?、嚕,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 ,（好,、咪,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , ? : !（爺,、嗎?、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（候,、麼?、做?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（候,、做?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（癢,、歡,、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 : , ? !（話:、要,、謝,），改成全形"
         },
         {
           "kind": "sensitive_pattern",
@@ -4099,42 +3329,28 @@
         }
       ],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
-          {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "4",
-            "note": "搔癢停不下來、說「請停」、馬上停、改擊掌，和 saying-no-tickle-monster 幾乎相同；建議刪掉此段，專心寫鬍子親親，也可縮短英文長度"
-          },
-          {
-            "kind": "age_fit",
-            "severity": "low",
-            "lang": "both",
-            "where": "4",
-            "note": "親親、搔癢、摸貓三件事對 2–4 歲稍多，不符「一個簡單概念」；刪搔癢段較聚焦"
-          },
           {
             "kind": "quality",
             "severity": "low",
             "lang": "zh",
             "where": "5",
-            "note": "「貓咪咪咪來了」連續四個咪不好讀，改成「小貓咪咪來了」"
+            "note": "「貓咪咪咪來了」四個咪連在一起，唸起來容易混淆，建議改成「小貓咪咪來了」"
           },
           {
-            "kind": "logic",
+            "kind": "repetition",
             "severity": "low",
             "lang": "both",
-            "where": "7",
-            "note": "爺爺剛坐下抱抱就「揮揮手」，看不出是在道別或打招呼；可改成「抱完再擊掌」或交代揮手的原因"
+            "where": "4",
+            "note": "搔癢不停、說「請停」、改擊掌，和 saying-no-tickle-monster 很像；可考慮刪去或換成其他情境"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0415336,
-      "status": "check",
-      "reviewedAt": "2026-10-14T09:52:25.871Z"
+      "usd": 0.0299696,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:12:27.580Z"
     },
     "saying-no-squeeze-hug-handshake": {
       "hash": "8317863265a33b01",
@@ -4255,109 +3471,16 @@
       "reviewedAt": "2026-10-14T09:52:56.987Z"
     },
     "brushing-teeth-crocodile-mirror": {
-      "hash": "65ac11ed9071ddab",
-      "checks": [
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , !（了,、巴,、的,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 : , ! ?（說:、魚,、好!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 , !（圈,、的,、刷,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 , !（圈,、刷,、牙,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 : , !（說:、蟲,、轉,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 , !（魚,、嘴,、牙,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 , ! :（嚕,、呸,、笑!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , !（嚓,、嚓,、安,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ?（的?、嗎?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（齒,、的?、後,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（牙,、牙?、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ,（時,、魚,、嚓,），改成全形"
-        }
-      ],
+      "hash": "f375472a40e46192",
+      "checks": [],
       "llm": {
         "verdict": "ok",
-        "issues": [
-          {
-            "kind": "safety",
-            "severity": "low",
-            "lang": "both",
-            "where": "1",
-            "note": "「像一顆小豌豆」：牙膏量是豌豆大小，但未滿3歲建議米粒大小。可改「一點點，像小米粒」，或不寫比喻"
-          }
-        ]
+        "issues": []
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0254976,
+      "usd": 0.022065599999999998,
       "status": "ok",
-      "reviewedAt": "2026-10-14T09:53:04.010Z"
+      "reviewedAt": "2026-10-15T08:12:33.361Z"
     },
     "brushing-teeth-campsite-sink": {
       "hash": "a2fe4131631e45f3",
@@ -4443,15 +3566,7 @@
     },
     "potty-oops-spare-pants": {
       "hash": "681f0cb9f3cf27ab",
-      "checks": [
-        {
-          "kind": "duplicate_title",
-          "severity": "low",
-          "lang": "en",
-          "where": "title",
-          "note": "標題很像 anger-red-face-pillow「{name} and the Falling Block Tower」（相似度 0.76）"
-        }
-      ],
+      "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -4547,7 +3662,7 @@
       "reviewedAt": "2026-10-14T09:53:51.521Z"
     },
     "bedtime-routine-goodnight-house": {
-      "hash": "d6f23f517580699a",
+      "hash": "8d8c76d585dcca10",
       "checks": [
         {
           "kind": "length",
@@ -4562,122 +3677,24 @@
           "lang": "en",
           "where": "story",
           "note": "英文 264 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , :（啦,、擦,、的,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , ! :（裡,、啪!、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 ,（裡,、刷,、刷,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 , :（上,、光,、步,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 , ?（旁,、亮,、亮,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 , :（床,、書,、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 , :（裡,、的,、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 ,（了,、澡,、衣,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ?（安?、安?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ?（呢?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ?（嗎?、步?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ,（後,、圈,、做,），改成全形"
         }
       ],
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "safety",
+            "kind": "quality",
             "severity": "low",
-            "lang": "en",
+            "lang": "both",
             "where": "4",
-            "note": "『Goodnight, moon』加上逐一向物品道晚安的結構，很像知名繪本《Goodnight Moon》；第 4 段可改成『Sleep tight, moon』"
-          },
-          {
-            "kind": "safety",
-            "severity": "low",
-            "lang": "en",
-            "where": "5",
-            "note": "英文『Little Bear』大寫像專有角色名，容易聯想既有繪本角色；改成小寫『teddy bear』"
-          },
-          {
-            "kind": "zh_en_mismatch",
-            "severity": "low",
-            "lang": "en",
-            "where": "1",
-            "note": "中文有『黑黑的螢幕，靜悄悄』，英文沒有；英文可補一句『The dark screen is quiet.』"
+            "note": "「晚安，月亮」／\"Goodnight, moon\"加上逐一向家中物品道晚安，很像經典繪本《Goodnight Moon》，可考慮換個說法"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0344616,
+      "usd": 0.0268616,
       "status": "ok",
-      "reviewedAt": "2026-10-14T09:54:02.978Z"
+      "reviewedAt": "2026-10-15T08:12:40.579Z"
     },
     "bedtime-routine-picture-chart": {
       "hash": "036fc71e3ef811ec",
@@ -4956,7 +3973,7 @@
       "reviewedAt": "2026-10-14T09:55:06.434Z"
     },
     "handwashing-goat-farm": {
-      "hash": "5f4508f735bf56db",
+      "hash": "e3fff8cd61903310",
       "checks": [
         {
           "kind": "length",
@@ -4964,115 +3981,31 @@
           "lang": "zh",
           "where": "story",
           "note": "中文 607 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , ! :（六,、豬,、吧!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 ,（邊,、開,、來,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 , ?（的,、癢,、哈,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 , ?（子,、把,、快,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 ! ,（囉!、心,、手,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 , ! :（皂,、的,、喔!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 ! ,（呢!、轉,、著,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , : !（前,、手,、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ?（麼?、來?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（歌,、呢?、嗎?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（前,、手?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ,（前,、心,、背,），改成全形"
         }
       ],
       "llm": {
-        "verdict": "ok",
+        "verdict": "check",
         "issues": [
           {
             "kind": "logic",
-            "severity": "low",
+            "severity": "medium",
             "lang": "both",
             "where": "0",
-            "note": "指定場景是動物園，故事寫成『休閒農場』；若要符合設定可改成動物園的可愛動物區"
+            "note": "指定場景是動物園，但全篇寫成「休閒農場」和「農場阿姨」；請改成動物園的親子餵食區，或由編輯確認農場可以接受"
           },
           {
             "kind": "preachy",
             "severity": "low",
             "lang": "both",
             "where": "7",
-            "note": "媽媽說『手乾淨，細菌就不會跑到我們和朋友身上』略像直接說教，可改成更自然的一句或用動作帶出"
+            "note": "媽媽說「手乾淨，細菌就不會跑到我們和朋友身上」，比較像在宣讀道理；可改成和小安互動時自然帶出"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0342016,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:55:18.595Z"
+      "usd": 0.031597599999999997,
+      "status": "check",
+      "reviewedAt": "2026-10-15T08:12:50.689Z"
     },
     "doctor-shots-teddy-practice": {
       "hash": "cc8942d1d4e8c384",
@@ -5467,93 +4400,8 @@
       "reviewedAt": "2026-10-14T09:57:03.067Z"
     },
     "anger-snail-breath": {
-      "hash": "7847892fdd0eac54",
-      "checks": [
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , !（天,、子,、挖,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , !（沙,、來,、哇!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 ! ,（咚!、滾,、噗!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 , : ?（氣,、來,、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 , :（的,、氣,、氣,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 ,（氣,、了,、手,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 : ! ? ,（說:、氣!、頭:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , !（沙,、來,、的,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（候,、樣?、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（候,、覺?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（了,、呢?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 : ,（」:、氣,、句:），改成全形"
-        }
-      ],
+      "hash": "2ebe6111eeeef2ca",
+      "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5562,110 +4410,44 @@
             "severity": "low",
             "lang": "both",
             "where": "7",
-            "note": "作品被毀、和家長一起呼吸、重做『比剛才還要大』，與 anger-little-volcano 的結構很像，可考慮換個收尾"
+            "note": "作品被弄壞、和大人深呼吸、說「我好生氣」、再一起做一個更大的，與 anger-little-volcano 結構很像，可考慮換個結尾"
           },
           {
-            "kind": "logic",
+            "kind": "taiwan_usage",
             "severity": "low",
-            "lang": "both",
-            "where": "7",
-            "note": "紅皮球不知道是誰的，『媽媽把紅皮球放到旁邊』可改成把球還給跑來的小朋友"
+            "lang": "zh",
+            "where": "3",
+            "note": "「好大的生氣，在肚子裡跳呀跳」稍不自然，可改成「生氣好大好大，在肚子裡跳呀跳」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.028861599999999998,
+      "usd": 0.026589599999999998,
       "status": "ok",
-      "reviewedAt": "2026-10-14T09:57:11.750Z"
+      "reviewedAt": "2026-10-15T08:12:58.401Z"
     },
     "anger-stomping-dinosaur": {
-      "hash": "1a841c2bc612932d",
+      "hash": "f967d7875d134a27",
       "checks": [
         {
-          "kind": "zh_half_width_punct",
+          "kind": "length",
           "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , !（啦,、水,、啦,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , !（囉,、要!、要!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 , !（的,、氣!、去!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 , !（來,、腳!），改成全形"
+          "lang": "en",
+          "where": "story",
+          "note": "英文 251 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
         },
         {
           "kind": "zh_half_width_punct",
           "severity": "low",
           "lang": "zh",
           "where": "4",
-          "note": "中文裡有半形標點 !（咚!、咚!、咚!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 ,（—,、—,、—,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 ! , ?（氣!、澡!、了,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 ! , :（好!、要!、的,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（候,、樣?、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ? ,（氣?、看,、嗎?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（候,、來?、氣,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , :（時,、」:、氣,），改成全形"
+          "note": "中文裡有半形標點 !（—!），改成全形"
         }
       ],
+      "model": "claude-opus-5-5",
+      "usd": 0.0285816,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:17:54.411Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5674,42 +4456,24 @@
             "severity": "low",
             "lang": "both",
             "where": "4",
-            "note": "剛出浴缸就在浴室「用力跺腳」，孩子可能在濕地板上模仿而滑倒；可改成「走出浴室，在房間地墊上跺腳」"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "6",
-            "note": "「我生氣!」「我還要洗澡!」分成兩句，可合成「我生氣，因為我還要洗澡」，更貼近「我生氣，因為…」"
-          },
-          {
-            "kind": "repetition",
-            "severity": "low",
-            "lang": "both",
-            "where": "2",
-            "note": "「像一座小火山」加上和爸爸深呼吸，與 anger-little-volcano 意象重疊；可換成別的比喻，例如「像熱熱的茶壺」"
+            "note": "剛洗完澡在浴室『用力跺腳』容易滑倒，可加一句『踩在防滑地墊上』或改成慢慢跺腳"
           },
           {
             "kind": "quality",
             "severity": "low",
             "lang": "en",
             "where": "5",
-            "note": "英文「Slow and slow」不自然，改成「Slow, slow, slow」或「Slowly, slowly」"
+            "note": "英文『Slow and slow.』不自然，改成『Slowly, slowly.』"
           },
           {
-            "kind": "taiwan_usage",
+            "kind": "quality",
             "severity": "low",
             "lang": "zh",
-            "where": "guide",
-            "note": "「吸了幾口大氣」「吸三口大氣」說法較生硬，改成「大口吸了幾次氣」「大口吸三次氣」"
+            "where": "7",
+            "note": "『吼~抱抱』用了半形波浪號，改成全形『～』或改用『吼——』"
           }
         ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.0320776,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:57:21.738Z"
+      }
     },
     "anger-paper-crown": {
       "hash": "31ecad6031a42386",
@@ -5856,112 +4620,42 @@
       "reviewedAt": "2026-10-14T09:58:06.052Z"
     },
     "sharing-turns-swing-song": {
-      "hash": "99701819ab5aea22",
+      "hash": "5df7e2afa4da825b",
       "checks": [
         {
           "kind": "zh_half_width_punct",
           "severity": "low",
           "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , !（了,、梯,、韆!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 ? ,（咦?、韆,、手,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 : , ? !（說:、去,、問:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 : , !（說:、樂,、手,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 , ! :（盪,、喔!、腳,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
           "where": "5",
-          "note": "中文裡有半形標點 , !（首,、位!、來,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 : , !（聲:、盪,、吃!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , : !（樂,、首,、換,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（候,、話?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（候,、急?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（具,、說?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（時,、完,、嗎?），改成全形"
+          "note": "中文裡有半形標點 ,（—,），改成全形"
         }
       ],
       "llm": {
-        "verdict": "ok",
+        "verdict": "check",
         "issues": [
+          {
+            "kind": "repetition",
+            "severity": "medium",
+            "lang": "both",
+            "where": "0",
+            "note": "與 sharing-turns-swing-timer 太像：同樣是公園唯一鞦韆、計數輪流、最後一起玩；建議換器材或設定"
+          },
           {
             "kind": "quality",
             "severity": "low",
             "lang": "zh",
             "where": "6",
-            "note": "「高高……吃!」唱錯的字不押韻也不好笑，英文 PIE 有押韻。可改成近音字，如「高高……灰!」或「高高……雞!」"
+            "note": "「高高……吃！」和「飛」不押韻，笑點較弱；可改成音近的字，如「高高……肥！」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0240616,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:58:13.567Z"
+      "usd": 0.023529599999999998,
+      "status": "check",
+      "reviewedAt": "2026-10-15T08:13:17.944Z"
     },
     "sharing-turns-one-red-crayon": {
-      "hash": "92d989fe49d18ade",
+      "hash": "66785b19090d51b0",
       "checks": [
         {
           "kind": "length",
@@ -5976,90 +4670,6 @@
           "lang": "en",
           "where": "story",
           "note": "英文 378 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , : ! ?（課,、說:、果!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , ! : ?（寶,、手,、呀!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 , : !（睛,、說:、呀!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 ? ! ,（嗎?、下!、想,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 , ! :（子,、哇,、亮!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 , : !（在,、塗,、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 , ! :（來,、呢!、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , : !（前,、果,、果,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（候,、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ? ,（事?、等,、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（後,、樣?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , : ?（時,、說:、後,），改成全形"
         }
       ],
       "llm": {
@@ -6069,15 +4679,15 @@
             "kind": "logic",
             "severity": "low",
             "lang": "both",
-            "where": "4",
-            "note": "「綠蠟筆斷成兩半了」斷了其實仍能畫，借筆理由較弱，可改成「找不到綠蠟筆」或「綠蠟筆用完了」"
+            "where": "7",
+            "note": "第0段紅蠟筆躺在桌子中間，結尾卻說「在盒子裡偷偷笑」，可改成「在桌上偷偷笑」或先寫把蠟筆放回盒子"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0261816,
+      "usd": 0.0264376,
       "status": "ok",
-      "reviewedAt": "2026-10-14T09:58:20.991Z"
+      "reviewedAt": "2026-10-15T08:13:26.022Z"
     },
     "manners-birthday-gift": {
       "hash": "8287ae9c2460549b",
@@ -6100,93 +4710,8 @@
       "reviewedAt": "2026-10-14T09:58:27.914Z"
     },
     "manners-bus-ride": {
-      "hash": "de5c788c710f6d3a",
-      "checks": [
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , ! :（上,、叭!、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , ! :（書,、咦,、呀!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 !（呀!、喲!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 : ! ? ,（說:、起!、嗎?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 , : ? !（鈴,、問:、問,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 ! :（咚!、你!、咪:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 , :（聲,、說:、車,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , ! :（口,、叔!、手:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（時,、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（時,、的?、後,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ?（你?、謝?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 : ,（戲:、」,），改成全形"
-        }
-      ],
+      "hash": "658a5bfadaee5c6f",
+      "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6195,28 +4720,35 @@
             "severity": "low",
             "lang": "both",
             "where": "4",
-            "note": "「{name}的手搆不到」，但小美只是「把手挪開」就按得到，前後不合。可改成「小美的手擋住了鈴」"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "3",
-            "note": "「原來爺爺姓陳」來得突然，沒交代怎麼知道的。可改成爺爺說「我是陳爺爺」"
+            "note": "「{name}的手搆不到」，小美挪開手後卻按得到，前後不合；改成「小美的手擋住了鈴」"
           },
           {
             "kind": "quality",
             "severity": "low",
             "lang": "zh",
             "where": "4",
-            "note": "「小美」沒介紹就出現，英文有說 a girl named Mei。中文可加「旁邊坐著小女孩小美」"
+            "note": "「就在小美旁邊」小美突然出現，沒有介紹；英文有寫「a girl named Mei」，中文可加「一個叫小美的姊姊」"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "3",
+            "note": "「原來爺爺姓陳」沒交代{name}怎麼知道；可改成爺爺自我介紹「我是陳爺爺」"
+          },
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "2",
+            "note": "請、謝謝、不小心碰撞後說對不起的結構，和早餐店篇相近；公車場景不同，可以接受"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0281456,
+      "usd": 0.0278256,
       "status": "ok",
-      "reviewedAt": "2026-10-14T09:58:36.782Z"
+      "reviewedAt": "2026-10-15T08:13:35.701Z"
     },
     "fear-of-dark-glowing-turtle": {
       "hash": "616bef17e3bf0592",
@@ -6799,156 +5331,28 @@
       "reviewedAt": "2026-10-14T10:01:35.844Z"
     },
     "raindrop-drums": {
-      "hash": "84abe76a4a24ab32",
-      "checks": [
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "title",
-          "note": "中文裡有半形標點 !（咚!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , !（答,、答!、來,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 : , !（說:、上,、上,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 , ! :（雨,、啪!、跳,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 , ! :（奶,、鼓!、眼:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 , !（子,、咚!、子,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 , : !（叮,、噹,、唱:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 , ! :（了,、啦!、快,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , ! :（地,、滴,、咚!），改成全形"
-        }
-      ],
+      "hash": "344e0e2b99b7c426",
+      "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "safety",
+            "kind": "logic",
             "severity": "low",
-            "lang": "both",
-            "where": "3",
-            "note": "奶奶走進廚房，留 2–4 歲幼兒獨自在陽台。可改成「我們一起去廚房拿」，或寫奶奶把東西拿來時孩子在室內等。"
-          },
-          {
-            "kind": "age_fit",
-            "severity": "low",
-            "lang": "both",
-            "where": "3",
-            "note": "「拿來兩個空鍋子,一個小盆子,還有兩支木湯匙」與英文 11 字句偏長。可拆成兩三句短句。"
+            "lang": "zh",
+            "where": "7",
+            "note": "「小湯匙輕輕一敲」前面都寫「木湯匙」，建議統一改成「木湯匙輕輕一敲」，也可以點明是{name}敲的"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.035905599999999996,
+      "usd": 0.0352176,
       "status": "ok",
-      "reviewedAt": "2026-10-14T10:01:44.016Z"
+      "reviewedAt": "2026-10-15T08:13:41.815Z"
     },
     "baby-blue-magpie": {
-      "hash": "823c17bcc9215b60",
-      "checks": [
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , !（上,、彎,、步,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , ? ! :（走,、咦?、嘎,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 , !（咦,、隻!、鵲,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 ! : ,（跳!、跳!、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 , !（拍,、拍!、係,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 , ! :（上,、嘎,、嘎!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 , !（拍,、拍!、了!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , ! :（家,、嘎,、嘎!），改成全形"
-        }
-      ],
+      "hash": "5e257d50053bd865",
+      "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -6957,21 +5361,14 @@
             "severity": "low",
             "lang": "en",
             "where": "3",
-            "note": "英文第一句『\"You can do it!\"』沒標明是{name}說的，讀來像媽媽說兩次；可加『{name} whispered』"
-          },
-          {
-            "kind": "zh_en_mismatch",
-            "severity": "low",
-            "lang": "en",
-            "where": "0",
-            "note": "中文『{name}牽著媽媽的手』在英文第 0 段沒有出現，可補『holding Mom's hand』"
+            "note": "英文『\"You can do it!\" Mom whispered』前一句沒標說話者，像是媽媽說兩次；中文是{name}先說，建議補『{name} whispered』"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.034413599999999996,
+      "usd": 0.0364496,
       "status": "ok",
-      "reviewedAt": "2026-10-14T10:01:52.819Z"
+      "reviewedAt": "2026-10-15T08:13:48.745Z"
     },
     "goodnight-sleepy-train": {
       "hash": "1a252190823acc1c",
@@ -7017,13 +5414,6 @@
           "lang": "en",
           "where": "title",
           "note": "標題很像 earthquake-turtle-drill「{name} the Little Turtle」（相似度 0.73）"
-        },
-        {
-          "kind": "duplicate_title",
-          "severity": "low",
-          "lang": "en",
-          "where": "title",
-          "note": "標題很像 earthquake-kindergarten-drill-song「{name} and the Little Turtle Song」（相似度 0.71）"
         }
       ],
       "llm": {
@@ -8216,93 +6606,8 @@
       "reviewedAt": "2026-10-14T18:28:59.762Z"
     },
     "strangers-password-word": {
-      "hash": "c2610908d0f62054",
-      "checks": [
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , : !（後,、廳,、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 : , !（說:、號,、著,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 ,（學,、面,、家,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 , : ? !（時,、邊,、手:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 , : ?（乾,、餓,、後,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 ! , :（對!、步,、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 , : !（手,、看,、裡,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , : !（久,、近,、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（候,、事?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（方,、具,、做?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ?（你?、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , !（號,、演,、不!），改成全形"
-        }
-      ],
+      "hash": "00a8c1af3a2d7fc9",
+      "checks": [],
       "llm": {
         "verdict": "check",
         "issues": [
@@ -8311,21 +6616,14 @@
             "severity": "medium",
             "lang": "both",
             "where": "3",
-            "note": "與 strangers-family-password 幾乎相同：放學時陌生阿姨說媽媽派她來、給零食、問暗號答不出、跑找老師打給媽媽。需換情境或解法"
-          },
-          {
-            "kind": "safety",
-            "severity": "low",
-            "lang": "both",
-            "where": "7",
-            "note": "媽媽在校門人群前大聲喊出暗號「鳳梨酥」，等於公開暗號，改成走近後小聲說給{name}聽"
+            "note": "情節與 strangers-family-password 幾乎相同：放學陌生阿姨說媽媽派她來、給點心、問暗號答不出、大聲說不跑向老師、老師打給媽媽。建議改變場景或解法"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.025857599999999998,
+      "usd": 0.0229616,
       "status": "check",
-      "reviewedAt": "2026-10-14T12:11:56.285Z"
+      "reviewedAt": "2026-10-15T08:13:54.966Z"
     },
     "hot-things-soup-pot-steam": {
       "hash": "342bada2f39e570a",
@@ -8356,7 +6654,7 @@
       "reviewedAt": "2026-10-14T12:12:04.496Z"
     },
     "hot-things-camping-fire-circle": {
-      "hash": "a8d4e1c4a0290f5e",
+      "hash": "36b0cee2cf206877",
       "checks": [
         {
           "kind": "length",
@@ -8371,118 +6669,27 @@
           "lang": "en",
           "where": "story",
           "note": "英文 437 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , !（末,、的,、包,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 ,（篷,、頭,、面,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 , ! :（間,、的,、喔!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 , !（兒,、媽,、叫!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 ! ,（候!、上,、的,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 , : !（上,、等,、吃,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 ,（的,、涼,、裡,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , !（水,、—!、飄,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（時,、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（後,、涼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（裡,、碰?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ,（時,、等,、」,），改成全形"
         }
       ],
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "preachy",
-            "severity": "low",
-            "lang": "both",
-            "where": "2",
-            "note": "媽媽在營地突然提到「家裡電鍋冒的煙也一樣。這些都只有大人碰喔」，像在背規則，可刪掉電鍋句或改成更自然的一句"
-          },
-          {
-            "kind": "quality",
+            "kind": "logic",
             "severity": "low",
             "lang": "zh",
             "where": "2",
-            "note": "「電鍋冒的煙」其實是蒸氣，可改成「電鍋冒的白白蒸氣」，避免孩子把蒸氣和煙混淆"
+            "note": "「家裡電鍋冒的煙」電鍋冒的是蒸氣不是煙，改成「家裡電鍋冒的蒸氣」，與英文 steam 一致"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.030741599999999997,
+      "usd": 0.029205599999999998,
       "status": "check",
-      "reviewedAt": "2026-10-14T13:14:34.433Z"
+      "reviewedAt": "2026-10-15T08:14:03.456Z"
     },
     "sockets-robot-socket-covers": {
-      "hash": "1732bdc811f51429",
+      "hash": "d46ffc654088e351",
       "checks": [
         {
           "kind": "length",
@@ -8497,122 +6704,24 @@
           "lang": "en",
           "where": "story",
           "note": "英文 253 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 ! ,（咚!、鈴,、球,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 : ! ,（說:、嗶!、人!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 ! ,（囉!、嗶,、咦,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 , ! :（嗶,、子,、喀!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 , ? ! :（嗶,、咦,、呢?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 , ? !（嗶,、咦?、媽!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 ! ,（咚!、爬,、子,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , : !（了,、手:、拜!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（說,、嗎?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（時,、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（了,、做?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ! ;（」,、座,、嗶!），改成全形"
         }
       ],
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "zh_en_mismatch",
-            "severity": "low",
-            "lang": "zh",
-            "where": "guide",
-            "note": "第1題中文『手指和玩具可以放進插座嗎?』是是非題，英文是開放問句，改成『{name}跟叮叮說了什麼?』"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "7",
-            "note": "叮叮是米米的玩具，米米回家後{name}還抱著叮叮，可補一句叮叮留下來陪{name}"
-          },
-          {
             "kind": "repetition",
             "severity": "low",
             "lang": "both",
             "where": "1",
-            "note": "玩具機器人當安全小幫手，與同主題機器人充電故事有些相似，可再拉開差異"
+            "note": "機器人角色扮演與 sockets-robot-charging 的「玩具機器人＋安全隊長」相近，可考慮換掉機器人元素"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.031005599999999998,
+      "usd": 0.0243496,
       "status": "ok",
-      "reviewedAt": "2026-10-14T12:12:24.539Z"
+      "reviewedAt": "2026-10-15T08:14:11.271Z"
     },
     "windows-balcony-flower-pots": {
       "hash": "30bb15a6ff31f654",
@@ -8699,7 +6808,7 @@
       "reviewedAt": "2026-10-14T12:12:46.046Z"
     },
     "medicine-cough-syrup-spoon": {
-      "hash": "9ea3ce373347fc44",
+      "hash": "8ccce7eef8eb1d3d",
       "checks": [
         {
           "kind": "length",
@@ -8707,122 +6816,31 @@
           "lang": "zh",
           "where": "story",
           "note": "中文 571 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "title",
-          "note": "中文裡有半形標點 ,（等,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 ! ,（咳!、水,、線,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , : ?（時,、想:、的,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 , :（瓶,、時,、話:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 , : ? !（話,、問:、媽,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 ,（好,、多,、服,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 , ! :（午,、下,、的,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 , !（命,、說,、果,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , : !（了,、水,、完,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（候,、水,、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（子,、做?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（的,、呢?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 : ,（話:、藥,、吃,），改成全形"
         }
       ],
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "2",
-            "note": "「抱緊小熊」小熊之前沒出現，建議第0或1段先寫{name}抱著小熊"
-          },
-          {
             "kind": "repetition",
             "severity": "low",
             "lang": "both",
             "where": "5",
-            "note": "「沙發底下有像糖果的小東西、跑去找媽媽」與 medicine-not-candy 很像，可換地點或物品"
+            "note": "第5段「沙發底下有顆像糖果的東西，跑去找媽媽」和 medicine-not-candy 情節相近，可換地點或物品"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "2",
+            "note": "「抱緊小熊」小熊前面沒出現，可在第1段先寫{name}抱著小熊坐在沙發上"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0309856,
+      "usd": 0.0296776,
       "status": "ok",
-      "reviewedAt": "2026-10-14T12:12:55.421Z"
+      "reviewedAt": "2026-10-15T08:14:23.170Z"
     },
     "typhoon-candle-free-night": {
       "hash": "a1f90c7f01d8d685",
@@ -9096,7 +7114,7 @@
       "reviewedAt": "2026-10-14T12:13:59.747Z"
     },
     "fear-of-dark-glow-jar": {
-      "hash": "6c4b55b02b921262",
+      "hash": "a7d83b8c80865759",
       "checks": [
         {
           "kind": "length",
@@ -9104,108 +7122,31 @@
           "lang": "en",
           "where": "story",
           "note": "英文 279 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 ? !（咦?、媽!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , ?（怕,、嗎?、看,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 ? ,（音?、答,、啦,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 ! ,（吧!、顆,、顆,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 !（啪!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 ! ,（子!、跳,、搖,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 ,（聲,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 ,（星,、安,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（後,、嗎?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（時,、麼?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（的,、做?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ,（前,、西,），改成全形"
         }
       ],
       "llm": {
         "verdict": "ok",
         "issues": [
           {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "3",
+            "note": "第1段『媽媽關上燈』後，第3段在黑暗中貼星星做罐子不太合理，可加一句「媽媽開小燈」再動手做"
+          },
+          {
             "kind": "repetition",
             "severity": "low",
             "lang": "both",
             "where": "1",
-            "note": "第1段『媽媽打開燈，椅子還是椅子』『叫媽媽』與 glowing-turtle 相近，可多強調發光罐和手影的特色"
+            "note": "喊媽媽、開燈看到「椅子還是椅子、小熊還在」與 glowing-turtle 很像；發光罐和手影已有區隔，可再淡化此段"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0232856,
+      "usd": 0.0247376,
       "status": "ok",
-      "reviewedAt": "2026-10-14T12:14:05.892Z"
+      "reviewedAt": "2026-10-15T08:14:31.335Z"
     },
     "fear-of-dark-night-hike-stars": {
       "hash": "4814680da0bb76f1",
@@ -9340,86 +7281,8 @@
       "reviewedAt": "2026-10-14T12:14:43.695Z"
     },
     "bullying-group-chat-buddy": {
-      "hash": "90ee6bd922f8619d",
-      "checks": [
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 ,（上,、閃,、業,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , : ! ?（學,、邊,、時,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 , ? :（聞,、幕,、狀?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 , ; : ?（間,、字,、字,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 , :（上,、字,、方,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 , : !（時,、子,、看,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 ,（後,、圖,、」,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（時,、事?、氣?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ?（樣?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 , ?（落,、方?），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "guide",
-          "note": "中文裡有半形標點 ,（」,、」,、口,），改成全形"
-        }
-      ],
+      "hash": "a8ae1fd77275bd89",
+      "checks": [],
       "llm": {
         "verdict": "check",
         "issues": [
@@ -9428,21 +7291,14 @@
             "severity": "medium",
             "lang": "both",
             "where": "0",
-            "note": "與 bullying-class-group-chat 幾乎相同：群組貼圖取笑、不跟傳、私訊安慰、告訴家長與老師。建議換情境或解法"
-          },
-          {
-            "kind": "taiwan_usage",
-            "severity": "low",
-            "lang": "zh",
-            "where": "2",
-            "note": "「打信給陳老師」不太自然，改成「打訊息給陳老師」或「寫信給陳老師」"
+            "note": "情節與 bullying-class-group-chat 幾乎相同：群組取笑圖、大家傳笑臉、{name}不跟、私訊安慰、給家長和老師看。建議換情境或解法"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.027973599999999998,
+      "usd": 0.0243216,
       "status": "check",
-      "reviewedAt": "2026-10-14T12:14:49.927Z"
+      "reviewedAt": "2026-10-15T08:14:36.920Z"
     },
     "new-sibling-baby-photo-album": {
       "hash": "2cefa104538b4265",
@@ -9611,7 +7467,7 @@
       "reviewedAt": "2026-10-14T12:15:27.767Z"
     },
     "night-sky-paper-rocket": {
-      "hash": "a8781cd7eda90015",
+      "hash": "ba6eb16d7df02440",
       "checks": [
         {
           "kind": "length",
@@ -9626,62 +7482,6 @@
           "lang": "en",
           "where": "story",
           "note": "英文 401 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , !（午,、紙,、子,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , :（了,、澡,、說:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 , : ? !（的,、安,、睛,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 ,（頂,、小,、吹,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 , !（是,、來,、的,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 , : !（飛,、藥,、手:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 ,（飄,、星,、頂,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 ,（的,、它,、安,），改成全形"
         }
       ],
       "llm": {
@@ -9692,28 +7492,21 @@
             "severity": "medium",
             "lang": "en",
             "where": "6",
-            "note": "英文火箭叫『Little Star』，又有『the little star』星星角色，第4、6段易混淆；火箭改名如『Star Rocket』"
+            "note": "火箭叫「Little Star」，又有角色「the little star」，朗讀時聽不出差別，第4、6段易混淆；建議火箭改名如「Star Rocket」"
           },
           {
             "kind": "repetition",
             "severity": "low",
             "lang": "both",
             "where": "5",
-            "note": "月兔揮手、對月亮說晚安與 rabbit-in-the-moon、lantern-for-the-moon 相近，可換成別的月亮角色"
-          },
-          {
-            "kind": "quality",
-            "severity": "low",
-            "lang": "en",
-            "where": "5",
-            "note": "英文『gently pounding』缺受詞，中文是『搗著藥』；可補『pounding medicine』或『pounding rice cakes』"
+            "note": "月兔揮手、向月亮道晚安與 rabbit-in-the-moon、lantern-for-the-moon 元素相近，可考慮換掉月兔情節"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.041601599999999996,
+      "usd": 0.042933599999999995,
       "status": "check",
-      "reviewedAt": "2026-10-14T12:15:36.069Z"
+      "reviewedAt": "2026-10-15T08:14:45.677Z"
     },
     "sea-tide-pool-crab-family": {
       "hash": "450894a3e0c15051",
@@ -9800,81 +7593,16 @@
       "reviewedAt": "2026-10-14T12:15:51.166Z"
     },
     "home-rainy-day-cardboard-ship": {
-      "hash": "e6f244a80f30bbe7",
-      "checks": [
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "0",
-          "note": "中文裡有半形標點 , :（答,、答,、雨,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "1",
-          "note": "中文裡有半形標點 , ! : ?（候,、箱!、眼:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "2",
-          "note": "中文裡有半形標點 , !（上,、捲,、囉!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "3",
-          "note": "中文裡有半形標點 , ! :（浪,、啦!、裡,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "4",
-          "note": "中文裡有半形標點 ? ! ,（咦?、熊!、怕,），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "5",
-          "note": "中文裡有半形標點 ! , :（兔!、兔,、來!），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "6",
-          "note": "中文裡有半形標點 ! , : ?（喔!、鴨,、問:），改成全形"
-        },
-        {
-          "kind": "zh_half_width_punct",
-          "severity": "low",
-          "lang": "zh",
-          "where": "7",
-          "note": "中文裡有半形標點 , ! :（然,、了,、來!），改成全形"
-        }
-      ],
+      "hash": "e599cf0e941a0af2",
+      "checks": [],
       "llm": {
         "verdict": "ok",
-        "issues": [
-          {
-            "kind": "taiwan_usage",
-            "severity": "low",
-            "lang": "zh",
-            "where": "2",
-            "note": "「掃把棍」較不自然，台灣多說「掃把柄」，建議改為「黏在掃把柄上」"
-          }
-        ]
+        "issues": []
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0350536,
+      "usd": 0.0349816,
       "status": "ok",
-      "reviewedAt": "2026-10-14T12:15:58.378Z"
+      "reviewedAt": "2026-10-15T08:14:52.945Z"
     },
     "mountain-tea-farm-helper": {
       "hash": "bbaf76e7f5b223a6",
@@ -11252,10 +8980,6 @@
     "caring-for-nature-eggplant-garden-worms": {
       "hash": "5750849cfecf3832",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.036648,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:53:57.155Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11274,7 +8998,11 @@
             "note": "「糖果紙被丟進了垃圾桶」被動句像翻譯，可改成「{name}把糖果紙丟進垃圾桶」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.036648,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:53:57.155Z"
     },
     "caring-for-nature-crab-crossing": {
       "hash": "db68e4abe296da0c",
@@ -11287,10 +9015,6 @@
           "note": "英文 422 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0352856,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:54:09.483Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11316,15 +9040,15 @@
             "note": "Tip 帶孩子撿路上垃圾，建議加「戴手套或用夾子，碎玻璃或尖銳物交給大人」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0352856,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:54:09.483Z"
     },
     "caring-for-nature-pangolin-fable": {
       "hash": "ab59d0626a8422da",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0267576,
-      "status": "check",
-      "reviewedAt": "2026-10-15T07:54:20.511Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -11350,7 +9074,11 @@
             "note": "『音樂盒咚咚咚，響得好大聲』音樂盒通常輕柔，改成『收音機』或『小鼓』較合理"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0267576,
+      "status": "check",
+      "reviewedAt": "2026-10-15T07:54:20.511Z"
     },
     "courage-first-solo-errand": {
       "hash": "541c8b3b22ff60a3",
@@ -11363,10 +9091,6 @@
           "note": "英文 368 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0273776,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:54:28.208Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11378,7 +9102,11 @@
             "note": "英文『Then came slow counting.』句型生硬，可改成『{he} counted slowly.』較自然"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0273776,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:54:28.208Z"
     },
     "courage-little-sparrow-storm-fable": {
       "hash": "db1698513042ae37",
@@ -11398,10 +9126,6 @@
           "note": "英文 294 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0281736,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:54:35.928Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11420,7 +9144,11 @@
             "note": "中文有「小鴨也聽不見媽媽」，英文少了這句，可補上 The duckling could not hear her either"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0281736,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:54:35.928Z"
     },
     "courage-school-show-and-tell": {
       "hash": "91d34f5e74d4898b",
@@ -11440,10 +9168,6 @@
           "note": "英文 439 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0257696,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:54:42.774Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11455,7 +9179,11 @@
             "note": "英文『{name} opened up to speak』語意不自然，像是「敞開心房」，建議改成『opened {his} mouth to speak』"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0257696,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:54:42.774Z"
     },
     "empathy-quiet-grandpa-chess": {
       "hash": "40206415b101996d",
@@ -11468,10 +9196,6 @@
           "note": "英文 460 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0314616,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:54:51.781Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11483,7 +9207,11 @@
             "note": "轉學的好朋友中文叫「小安」，英文叫「Annie」，名字不一致，建議兩版統一（如英文改 An）"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0314616,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:54:51.781Z"
     },
     "empathy-elephant-and-mouse-fable": {
       "hash": "7e113a1c744c42c4",
@@ -11503,22 +9231,18 @@
           "note": "英文 352 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0271936,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:55:01.194Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0271936,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:55:01.194Z"
     },
     "empathy-new-baby-cousin-crying": {
       "hash": "e65fe19745479a77",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0227336,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:55:09.095Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11530,15 +9254,15 @@
             "note": "「我哭的時候，是怎麼了？」語氣有點彆扭，可改成「我什麼時候會哭呢？」較自然"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0227336,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:55:09.095Z"
     },
     "forgiveness-squashed-sandcastle": {
       "hash": "f4a4794d7a5daba7",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0244776,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:55:15.692Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11550,49 +9274,64 @@
             "note": "「不小心弄壞作品→道歉→一起重做」和 spilled-paint 結構相近，可加一點海邊獨有的轉折做區隔"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0244776,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:55:15.692Z"
     },
     "forgiveness-river-otters-fable": {
-      "hash": "74e002c737580693",
-      "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0289816,
-      "status": "check",
-      "reviewedAt": "2026-10-15T07:55:25.045Z",
+      "hash": "e8e0b917b96cf35e",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 577 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 382 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
-            "kind": "safety",
-            "severity": "medium",
+            "kind": "logic",
+            "severity": "low",
             "lang": "both",
             "where": "1",
-            "note": "「用力一推。撲通！小水獺掉進冰冰的河水裡」推人落水對4–6歲偏危險，可改成推倒或撞翻小水獺做的東西"
+            "note": "「游泳比賽」卻寫大水獺在草地上「往前衝」撞到木筏，第5段說「我跑太快」，可改成「跑向溪邊準備比賽」較合理"
           },
           {
-            "kind": "taiwan_usage",
+            "kind": "repetition",
             "severity": "low",
-            "lang": "zh",
-            "where": "0",
-            "note": "「一起溜滑梯」聽起來像遊樂場設施，水獺滑河岸可改「最愛一起從河岸滑下來」"
-          },
-          {
-            "kind": "taiwan_usage",
-            "severity": "low",
-            "lang": "zh",
+            "lang": "both",
             "where": "6",
-            "note": "「我心裡重重的感覺，不見了」略生硬，可改「我心裡不再重重的了」"
+            "note": "弄壞作品後道歉、一起重做且「比原來的更大」，與烏鴉麻雀築巢、沙堡故事的結局相近，可換個收尾細節"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "7",
+            "note": "「太陽爬到樹梢時」時間感模糊，前面已忙一整個早上，可改成「中午太陽高高掛時」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0322136,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:15:02.510Z"
     },
     "forgiveness-sibling-drawing": {
       "hash": "4b53713da1a25c23",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.029957599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:55:34.472Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11618,7 +9357,11 @@
             "note": "莫莫拿「膠帶」來幫忙，後文沒有用到，可交代膠帶用途或改成白紙"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.029957599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:55:34.472Z"
     },
     "gratitude-thank-you-postman": {
       "hash": "6bb1f0fc25c2a9db",
@@ -11638,22 +9381,18 @@
           "note": "英文 353 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0240576,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:55:41.610Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0240576,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:55:41.610Z"
     },
     "gratitude-rice-farmer-fable": {
       "hash": "58bb1f71ef2ac3a1",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0256256,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:55:48.936Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11672,7 +9411,11 @@
             "note": "啾啾說「你看」之後，畫面從「天才剛亮」直接跳到「月亮出來了」，時間跨度不像當下看到；可改成「這幾天」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0256256,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:55:48.936Z"
     },
     "gratitude-grandma-dumplings-bedtime": {
       "hash": "c91636385e5cb547",
@@ -11685,49 +9428,41 @@
           "note": "中文 420 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0246656,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:55:55.662Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0246656,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:55:55.662Z"
     },
     "keeping-promises-plant-sitter": {
-      "hash": "e433666ebb017b05",
-      "checks": [
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "en",
-          "where": "story",
-          "note": "英文 462 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
-        }
-      ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0326336,
-      "status": "check",
-      "reviewedAt": "2026-10-15T07:56:06.306Z",
+      "hash": "0403fdd1f4fd16f3",
+      "checks": [],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
-          {
-            "kind": "safety",
-            "severity": "medium",
-            "lang": "both",
-            "where": "6",
-            "note": "第 6 段『{name}都準時爬上頂樓』沒有大人陪，6 歲獨自上頂樓有風險，改成『媽媽陪{name}爬上頂樓』"
-          },
           {
             "kind": "repetition",
             "severity": "low",
             "lang": "both",
-            "where": "2",
-            "note": "朋友邀約和承諾衝突、先守約再赴約，與 pinky-promise-tea-party 相近，可再加強差異"
+            "where": "3",
+            "note": "「朋友邀約玩耍、主角想起承諾先完成再去」的轉折與 pinky-promise-tea-party 相近，可考慮換一種挑戰"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "4",
+            "note": "第三則重點「做不到時誠實說明並補救」只在『如果來不及你們先走』中帶過，故事裡沒有真正呈現"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0314136,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:15:14.723Z"
     },
     "keeping-promises-tortoise-message-fable": {
       "hash": "7be5677c89ecf007",
@@ -11740,10 +9475,6 @@
           "note": "中文 555 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0289456,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:56:15.361Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11762,7 +9493,11 @@
             "note": "「途中遇到好玩誘惑仍守約」與澆番茄、熊蜂蜜故事結構相近，可接受但可再強化送信特色"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0289456,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:56:15.361Z"
     },
     "keeping-promises-secret-garden-bench": {
       "hash": "c8c5cb48f718e2c3",
@@ -11775,14 +9510,14 @@
           "note": "英文 541 words，8-10 歲 3 分鐘範圍是 380–500（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0252696,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:56:22.514Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0252696,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:56:22.514Z"
     },
     "perseverance-tying-shoelaces": {
       "hash": "fcee9286ebc1abc8",
@@ -11795,10 +9530,6 @@
           "note": "中文 596 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0291336,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:56:31.322Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11810,7 +9541,11 @@
             "note": "想放棄、改小步驟、和朋友比較、活動當天成功，架構接近跳繩故事；可再加強紙鞋與兔耳朵歌的特色"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0291336,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:56:31.322Z"
     },
     "perseverance-water-drop-stone-fable": {
       "hash": "07653ad58aca8617",
@@ -11823,10 +9558,6 @@
           "note": "英文 437 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0336416,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:56:42.459Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11845,15 +9576,15 @@
             "note": "{name}看完水池就立刻吹出口哨，轉折稍快，可加一兩次小嘗試或換方法再成功"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0336416,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:56:42.459Z"
     },
     "perseverance-origami-crane": {
       "hash": "7ef00e6a1b84e230",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0280376,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:56:53.489Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11865,7 +9596,11 @@
             "note": "中文「豆花…叼走一團廢紙」是用嘴叼走，英文 batted away 是用爪撥開，可統一動作"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0280376,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:56:53.489Z"
     },
     "respecting-differences-left-handed": {
       "hash": "6328e9747da89348",
@@ -11885,10 +9620,6 @@
           "note": "英文 370 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0269856,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:57:01.227Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11907,7 +9638,11 @@
             "note": "「用左手的同學來拿剪刀，用右手的同學也來試試看」偏長，可拆成兩句"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0269856,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:57:01.227Z"
     },
     "respecting-differences-bird-songs-fable": {
       "hash": "f924eaaa34b4ddad",
@@ -11920,10 +9655,6 @@
           "note": "標題很像 fear-of-dark-frog-choir「{name} and the Forest Night Choir」（相似度 0.80）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.024757599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:57:08.911Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11935,15 +9666,15 @@
             "note": "「太陽慢慢下山了」{name}獨自坐在森林大樹下到天黑，沒有大人陪同；可加一句和家人一起來聽"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024757599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:57:08.911Z"
     },
     "respecting-differences-grandma-hearing-aid": {
       "hash": "aefb1998adcb1049",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0283736,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:57:17.061Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11955,15 +9686,15 @@
             "note": "中文『阿哲』英文作『Jay』，名字不對應；小芸對應 Yun，建議英文改為 Zhe 以保持一致"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0283736,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:57:17.061Z"
     },
     "responsibility-class-turtle-tank": {
       "hash": "32bbbee3e574177f",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0269616,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:57:27.814Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11989,15 +9720,15 @@
             "note": "和 goldfish-week 一樣是照顧班級寵物，但這篇重點在承認忘記和做星星圖表，差異足夠"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0269616,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:57:27.814Z"
     },
     "responsibility-lost-library-book": {
       "hash": "45c5a6850cced445",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.029273599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:57:36.650Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -12023,7 +9754,11 @@
             "note": "「謝謝你這麼誠實又負責」直接點出主題，可改成較具體的稱讚，例如「謝謝你一直記掛著它」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.029273599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:57:36.650Z"
     },
     "responsibility-bee-keeper-fable": {
       "hash": "9f46533c5ad70877",
@@ -12036,10 +9771,6 @@
           "note": "英文 363 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0285936,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:57:46.075Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -12058,7 +9789,11 @@
             "note": "「守門，就是看清楚每隻飛來的蟲」是在直接解釋詞義；可改成讓小蜜蜂邊做邊說，例如「我要聞聞你是不是家人」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0285936,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:57:46.075Z"
     },
     "teamwork-dragon-dance-practice": {
       "hash": "17f2a30cb15865e4",
@@ -12071,10 +9806,6 @@
           "note": "英文 455 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0246376,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:57:53.254Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -12093,56 +9824,31 @@
             "note": "「全班排練一團亂、靠點子解決」和 teamwork-the-class-play 結構相近，但輪流當鼓手的解法不同，可接受"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0246376,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:57:53.254Z"
     },
     "teamwork-ant-bridge-fable": {
-      "hash": "7f4012505855a078",
-      "checks": [
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "zh",
-          "where": "story",
-          "note": "中文 719 字，6-8 歲 3 分鐘範圍是 500–700（太長）"
-        },
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "en",
-          "where": "story",
-          "note": "英文 457 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
-        }
-      ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0319696,
-      "status": "check",
-      "reviewedAt": "2026-10-15T07:58:03.513Z",
+      "hash": "c93657231d47297c",
+      "checks": [],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
             "kind": "safety",
-            "severity": "medium",
-            "lang": "both",
-            "where": "2",
-            "note": "{name}踩長青苔的滑石頭過溪而跌進水裡，奶奶只坐著看，孩子可能模仿；改成奶奶牽手或先提醒別踩"
-          },
-          {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "5",
-            "note": "「架木頭當橋過溪」與 teamwork-the-leaf-bridge 的葉子橋過水太接近，建議換成不同的障礙或解法"
-          },
-          {
-            "kind": "logic",
             "severity": "low",
             "lang": "both",
-            "where": "5",
-            "note": "橋還沒架好，「把繩子綁在兩邊的樹上」時誰到對岸綁？補一句兔子先跳石頭把繩子帶過去"
+            "where": "1",
+            "note": "「{name}往北邊走」獨自在大草地找到天黑，家人最後才出現；可在第1段提一句家人在草地邊看著"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0281176,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:15:23.169Z"
     },
     "teamwork-family-dinner-chefs": {
       "hash": "8c54bc6092e6adb1",
@@ -12162,10 +9868,6 @@
           "note": "英文 292 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0283776,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:58:13.555Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -12191,15 +9893,15 @@
             "note": "「{name}追著番茄跑」在有刀和熱鍋的廚房奔跑，可改成「彎腰撿起番茄」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0283776,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:58:13.555Z"
     },
     "brushing-teeth-dino-flossing": {
       "hash": "5823d82cf77f6676",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0225496,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:58:19.873Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -12211,63 +9913,60 @@
             "note": "對鏡刷前後牙、媽媽幫忙刷完、趕走糖糖蟲，與 crocodile-mirror、sugar-bugs 相近；玩偶恐龍角度已有區隔，可再加強"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0225496,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:58:19.873Z"
     },
     "bedtime-routine-pajama-moon-bath": {
-      "hash": "ca358fec54251894",
+      "hash": "8c88a7a8fd9037b4",
       "checks": [
         {
           "kind": "length",
           "severity": "low",
-          "lang": "zh",
-          "where": "story",
-          "note": "中文 421 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
-        },
-        {
-          "kind": "length",
-          "severity": "low",
           "lang": "en",
           "where": "story",
-          "note": "英文 258 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
-        },
-        {
-          "kind": "duplicate_title",
-          "severity": "low",
-          "lang": "en",
-          "where": "title",
-          "note": "標題很像 lantern-for-the-moon「{name} and Glimmer Say Goodnight to the Moon」（相似度 0.74）"
+          "note": "英文 262 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.035405599999999995,
-      "status": "check",
-      "reviewedAt": "2026-10-15T07:58:32.612Z",
       "llm": {
         "verdict": "check",
         "issues": [
           {
-            "kind": "repetition",
+            "kind": "taiwan_usage",
             "severity": "medium",
-            "lang": "both",
-            "where": "6",
-            "note": "結尾逐一道晚安（月亮、星星），加上電視「要睡覺」變黑，和 goodnight-house 的情節很像。建議改成其他收尾，或刪掉逐一道晚安"
+            "lang": "zh",
+            "where": "5",
+            "note": "「貓咪咪咪走進來」讀起來像疊字，聽不出咪咪是名字，改成「小貓咪咪走進來」"
           },
           {
-            "kind": "repetition",
+            "kind": "zh_en_mismatch",
             "severity": "low",
             "lang": "en",
-            "where": "title",
-            "note": "英文標題「Goodnight, Moon」加上小兔子故事書，容易聯想到經典繪本《Goodnight Moon》。建議改標題，例如突出月亮偷看洗澡"
+            "where": "1",
+            "note": "中文有「擦乾乾」，英文只寫擁抱，沒寫擦乾，可補「and dries {name} off」"
           },
           {
-            "kind": "safety",
+            "kind": "taiwan_usage",
             "severity": "low",
-            "lang": "both",
-            "where": "0",
-            "note": "第0段「{name}坐進浴缸」時沒有提到大人，媽媽到第1段才出現。建議改成「媽媽扶{name}坐進浴缸」"
+            "lang": "zh",
+            "where": "3",
+            "note": "「笑一個大大的笑」語感像翻譯，改成「笑得好開心」或「露出大大的笑臉」"
+          },
+          {
+            "kind": "taiwan_usage",
+            "severity": "low",
+            "lang": "zh",
+            "where": "7",
+            "note": "「雨也輕輕的」語意不完整，改成「雨也下得輕輕的」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0317936,
+      "status": "check",
+      "reviewedAt": "2026-10-15T08:15:33.738Z"
     },
     "trying-food-steamed-fish-bones": {
       "hash": "8014a2218389a462",
@@ -12280,10 +9979,6 @@
           "note": "中文 583 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0297136,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:58:43.362Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -12309,7 +10004,11 @@
             "note": "第7段{name}「自己慢慢找」刺，爸爸沒有一起確認。可加一句爸爸在旁邊一起看，示範大人陪同挑刺"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0297136,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:58:43.362Z"
     },
     "handwashing-clay-art-class": {
       "hash": "8afbaeb3fb8539ae",
@@ -12322,10 +10021,6 @@
           "note": "標題很像 getting-lost-department-store「{name}'s Big Store Adventure」（相似度 0.71）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.022301599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:58:49.522Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -12337,15 +10032,15 @@
             "note": "「也不會傳給好朋友喔」沒標明是誰說的，緊接老師的話容易混淆，可加「{name}接著說」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.022301599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:58:49.522Z"
     },
     "dentist-loose-tooth-brave-chair": {
       "hash": "202de6a1b08c07da",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.032949599999999996,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:58:59.821Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -12364,264 +10059,257 @@
             "note": "中文寫「舉起右手」「右手放在肚子上」，英文第 4、5 段寫「a hand」，建議統一寫 right hand"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.032949599999999996,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:58:59.821Z"
     },
     "water-safety-beach-red-flag": {
-      "hash": "e961e48d946c207f",
-      "checks": [
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "en",
-          "where": "story",
-          "note": "英文 441 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
-        }
-      ],
-      "model": "claude-opus-5-5",
-      "usd": 0.030789599999999997,
-      "status": "check",
-      "reviewedAt": "2026-10-15T07:59:10.138Z",
-      "llm": {
-        "verdict": "check",
-        "issues": [
-          {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "0",
-            "note": "與 water-safety-beach-flags 太像：海邊、救生員旗子、只在旗子中間游、表親、丟救生圈。建議換場景或解法，例如改成看懂潮汐。"
-          },
-          {
-            "kind": "safety",
-            "severity": "low",
-            "lang": "both",
-            "where": "5",
-            "note": "「小米…一路朝紅旗那邊跑」「{name}趕緊追上去」時沒有大人在場，建議加上阿姨或爸爸跟在後面。"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "3",
-            "note": "阿凱說自己「一直看著那裡」，卻離開高椅教丟救生圈。建議改成由另一位救生員或爸爸帶{name}練習。"
-          }
-        ]
-      }
-    },
-    "crossing-road-school-crossing-guard": {
-      "hash": "b79c555fe42c28db",
+      "hash": "4504039f7b87de13",
       "checks": [
         {
           "kind": "length",
           "severity": "low",
           "lang": "zh",
           "where": "story",
-          "note": "中文 573 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
-        }
-      ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0298136,
-      "status": "check",
-      "reviewedAt": "2026-10-15T07:59:19.288Z",
-      "llm": {
-        "verdict": "check",
-        "issues": [
-          {
-            "kind": "logic",
-            "severity": "medium",
-            "lang": "both",
-            "where": "5",
-            "note": "第1段小美在『對面』，第5段卻和{name}一起從這邊走上斑馬線；阿凱也沒介紹。改成小美在對面等，或先寫她走過來"
-          },
-          {
-            "kind": "safety",
-            "severity": "medium",
-            "lang": "both",
-            "where": "5",
-            "note": "小美、阿凱一起過馬路，沒寫有大人牽手。補一句『小美牽著爸爸、阿凱牽著奶奶』"
-          },
-          {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "0",
-            "note": "和 crossing-guard-flag 很像，都是學校門口的導護爺爺、牽手等小綠人、過馬路時看到來車。可加強卡片送禮這條情節做出區隔"
-          }
-        ]
-      }
-    },
-    "earthquake-kindergarten-drill-song": {
-      "hash": "f30fb14d76e88dc1",
-      "checks": [
-        {
-          "kind": "duplicate_title",
-          "severity": "low",
-          "lang": "en",
-          "where": "title",
-          "note": "標題很像 earthquake-turtle-drill「{name} the Little Turtle」（相似度 0.85）"
+          "note": "中文 721 字，6-8 歲 3 分鐘範圍是 500–700（太長）"
         },
         {
-          "kind": "duplicate_title",
+          "kind": "length",
           "severity": "low",
           "lang": "en",
-          "where": "title",
-          "note": "標題很像 little-turtle-moon-path「The Little Turtle and the Moon Path」（相似度 0.71）"
+          "where": "story",
+          "note": "英文 428 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0257576,
-      "status": "check",
-      "reviewedAt": "2026-10-15T07:59:25.473Z",
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "title",
-            "note": "幼兒園演習、老師把大家變成小烏龜蹲桌下，和 earthquake-turtle-drill 情節太像，建議換掉烏龜比喻或改場景"
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "1",
+            "note": "中文結尾『那些亮橘色，好像一顆顆小太陽』英文沒有，建議英文補一句 like little suns"
           },
           {
             "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "guide",
+            "note": "第1題把看到大貝殼和走回沙灘連在一起，但故事裡回去是因為潮水快回來，改問看到時間和水變多時怎麼做"
+          },
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "5",
+            "note": "救生員教『大喊叫大人、丟救生圈』和 beach-flags 的解法很像，可換成丟浮板或寶特瓶等不同的浮具"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "both",
+            "where": "5",
+            "note": "沙洲退潮故事結束後才突然出現救生員遊戲，前後兩段像拼起來的，可在前面先讓林叔叔出場鋪陳"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0323376,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:15:44.666Z"
+    },
+    "crossing-road-school-crossing-guard": {
+      "hash": "88da64a44b39c73e",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 566 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 373 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "title",
+            "note": "「{name}和阿嬤找小綠人」與 little-green-man 篇同樣是阿嬤陪同、等小綠人；廟會與車縫情節雖不同，標題可改得更有區隔"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0266056,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:15:52.054Z"
+    },
+    "earthquake-kindergarten-drill-song": {
+      "hash": "75dc45c5a7178ff9",
+      "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.0304696,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:18:04.012Z",
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "7",
+            "note": "中文結尾有「小熊背包也搖呀搖」，英文少了這句，建議在英文末尾補上小熊背包搖晃的畫面"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "zh",
+            "where": "7",
+            "note": "「今天我好勇敢喔！」沒有標出說話者，容易誤讀成媽媽說的，建議加上「{name}說」"
+          },
+          {
+            "kind": "repetition",
             "severity": "low",
             "lang": "both",
             "where": "6",
-            "note": "演習時並沒有真的搖晃，老師說『搖晃停了』有點突兀，可改成『假裝搖晃停了』"
-          },
-          {
-            "kind": "repetition",
-            "severity": "low",
-            "lang": "both",
-            "where": "0",
-            "note": "『林老師』帶隊疏散也出現在 earthquake-library-shelves，可換個老師名字"
+            "note": "小明「像一隻小烏龜」和同主題 turtle-drill 的烏龜意象重複，可考慮換成其他比喻"
           }
         ]
       }
     },
     "getting-lost-supermarket-meeting-spot": {
-      "hash": "1fe2656eb276ca97",
+      "hash": "fec61778df0e8564",
       "checks": [
         {
           "kind": "length",
           "severity": "low",
           "lang": "zh",
           "where": "story",
-          "note": "中文 572 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+          "note": "中文 591 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 378 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.027109599999999998,
-      "status": "check",
-      "reviewedAt": "2026-10-15T07:59:33.487Z",
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
             "kind": "logic",
-            "severity": "medium",
-            "lang": "both",
-            "where": "0",
-            "note": "重點是「停下來待在原地」，但媽媽教『再到紅氣球那裡等我』，第4段{name}也自己走過去，與重點不符；改成原地等或請店員陪同"
-          },
-          {
-            "kind": "zh_en_mismatch",
-            "severity": "low",
-            "lang": "zh",
-            "where": "0",
-            "note": "中文『門口好熱鬧，推車嘩啦嘩啦響』英文沒有，可刪掉中文這句（也能縮短篇幅）或在英文補上"
-          },
-          {
-            "kind": "repetition",
-            "severity": "low",
-            "lang": "both",
-            "where": "5",
-            "note": "情節與百貨公司篇很像，都是停下、找穿制服店員、背電話；可加強紅氣球集合點的特色"
-          }
-        ]
-      }
-    },
-    "anger-red-face-pillow": {
-      "hash": "1ea0a2f49b1fbea3",
-      "checks": [
-        {
-          "kind": "duplicate_title",
-          "severity": "low",
-          "lang": "en",
-          "where": "title",
-          "note": "標題很像 potty-oops-spare-pants「{name} and the Tall Block Tower」（相似度 0.76）"
-        }
-      ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0238296,
-      "status": "check",
-      "reviewedAt": "2026-10-15T07:59:40.082Z",
-      "llm": {
-        "verdict": "check",
-        "issues": [
-          {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "0",
-            "note": "與 anger-little-volcano 太像：都是積木塔倒、深呼吸、說「我生氣」、最後一起疊更高的塔，建議換生氣的起因或解法"
-          },
-          {
-            "kind": "zh_en_mismatch",
             "severity": "low",
             "lang": "en",
-            "where": "2",
-            "note": "英文「Time to throw!」像是決定要丟，中文是「好想丟出去」，建議改成「{name} wants to throw it!」"
+            "where": "0",
+            "note": "「went next door」在英文是指隔壁店家，像媽媽離開書店；改成「went to the shelf nearby」，與中文和第1段的食譜架一致"
+          },
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "3",
+            "note": "找戴名牌店員、背電話、廣播的解法與 department-store 篇很像；可加一個書店特有的細節，讓故事更有區別"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0289296,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:16:12.897Z"
+    },
+    "anger-red-face-pillow": {
+      "hash": "258dd5428c6d5cae",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 414 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 262 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "guide",
+            "note": "問題二『讓溫度計變回黃色』，但故事裡沒有先在黃色，改成『從紅色變成黃色』"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0278336,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:16:21.390Z"
     },
     "sharing-turns-one-red-tricycle": {
       "hash": "07f3a53ee69bd27b",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.019113599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T07:59:46.299Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.019113599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T07:59:46.299Z"
     },
     "fear-of-dark-closet-monster-flashlight": {
-      "hash": "4539d2829a594712",
-      "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.032345599999999995,
-      "status": "check",
-      "reviewedAt": "2026-10-15T07:59:57.125Z",
+      "hash": "b1643ca09e9179a5",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 358 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
             "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "3",
-            "note": "和 fear-of-dark-shadow-hunt 太像：都是爸爸拿手電筒照房間、找出聲音來源（外套、樹枝/風吹樹葉）。可強化小熊守衛的部分，或換掉手電筒巡房"
-          },
-          {
-            "kind": "logic",
             "severity": "low",
             "lang": "both",
             "where": "6",
-            "note": "「放在鞋盒上」的鞋盒前面沒出現，第4段只寫「兩雙鞋子」。可在第4段加上鞋盒，或改成放在鞋子旁"
+            "note": "小夜燈照出東西都還在、叫媽媽，與 glowing-turtle 相近；摸摸猜猜遊戲已有區隔，可再強化差異"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.027757599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:16:29.230Z"
     },
     "losing-failing-spelling-bee": {
       "hash": "ef05f9a1444be0b7",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.030165599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T08:00:04.950Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -12647,15 +10335,15 @@
             "note": "英文「would bump a head」讀來彆扭，可改成 would bump {his} head"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.030165599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:00:04.950Z"
     },
     "night-sky-shooting-star-wish": {
       "hash": "2a6a8a6754feb6e4",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0336776,
-      "status": "check",
-      "reviewedAt": "2026-10-15T08:00:16.606Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -12667,15 +10355,15 @@
             "note": "{name}『在心裡輕輕說』願望，爺爺卻回『好，爺爺等你』，像聽得到。改成小聲說出口，或讓爺爺只說『許好了嗎？』"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0336776,
+      "status": "check",
+      "reviewedAt": "2026-10-15T08:00:16.606Z"
     },
     "snow-polar-bear-cub-fable": {
       "hash": "625176c29c28ce85",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.043621599999999996,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T08:00:26.891Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -12687,15 +10375,15 @@
             "note": "「這裡沒有喀喀聲，很安全！」可能讓孩子以為聽不到聲音就代表冰面安全，建議改成由熊爸爸確認冰很厚"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.043621599999999996,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:00:26.891Z"
     },
     "sea-proud-seagull-fable": {
       "hash": "8c6b449e56b04a08",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0386376,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T08:00:38.815Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -12707,15 +10395,15 @@
             "note": "「牠的小水窪」前文沒提過，可在第1段補一句小殼從水窪邊爬出來"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0386376,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:00:38.815Z"
     },
     "city-rooftop-garden-mystery": {
       "hash": "e95cc1e95dfff6c9",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0393136,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T08:00:45.111Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -12734,15 +10422,15 @@
             "note": "奶奶翻出「空牛奶盒」，第6段餵食台卻沒用到，可補一句牛奶盒做成水碟或種子槽"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0393136,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:00:45.111Z"
     },
     "zoo-giraffe-tall-and-small": {
       "hash": "134d446f5b896753",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0349096,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T08:00:51.650Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -12754,7 +10442,11 @@
             "note": "「脖子都酸酸了」疊字加「了」不太自然，建議改「脖子都酸了」或「脖子酸酸的」；英文也沒有脖子酸這句"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0349096,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:00:51.650Z"
     },
     "new-sibling-bedtime-story-swap": {
       "hash": "72b94e9799f820c1",
@@ -12774,10 +10466,6 @@
           "note": "英文 276 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0262816,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T08:01:00.412Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -12796,7 +10484,11 @@
             "note": "英文「Inside felt a little sore」不自然，建議改成「{name} felt a little sad inside」；guide 第一題同步修改"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0262816,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:01:00.412Z"
     },
     "sockets-charger-cord-safety": {
       "hash": "c23b3df6dc8f2fcc",
@@ -12816,10 +10508,6 @@
           "note": "英文 367 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0302136,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T08:01:10.497Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -12845,7 +10533,11 @@
             "note": "「爸爸換上新的小夜燈」沒交代新燈從哪來，可補一句媽媽下班順路買回來"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0302136,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:01:10.497Z"
     }
   }
 }
