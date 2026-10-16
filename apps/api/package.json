@@ -12,6 +12,7 @@
     "eval:photo": "tsx eval/photo-cost.ts",
     "library:generate": "tsx scripts/generate-library.ts",
     "library:review": "tsx scripts/review-library.ts",
+    "library:guides": "tsx scripts/library-guides.ts",
     "library:publish": "tsx scripts/publish-library.ts",
     "test": "tsx --test test/*.test.ts",
     "episodes:render": "tsx scripts/render-episodes.ts",

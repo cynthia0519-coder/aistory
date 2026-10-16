@@ -99,8 +99,8 @@ test("stray braces are flagged", () => {
 test("guide required for themed stories", () => {
   assert.equal(checkGuide(makeStory({ theme: "anger" }))[0]?.severity, "high");
   assert.deepEqual(checkGuide(makeStory({ theme: "anger", guide })), []);
-  assert.equal(checkGuide(makeStory({ guide }))[0]?.severity, "low");
-  assert.deepEqual(checkGuide(makeStory()), []);
+  assert.deepEqual(checkGuide(makeStory({ guide })), []);
+  assert.equal(checkGuide(makeStory())[0]?.severity, "low");
 });
 
 test("half-width punctuation next to Chinese", () => {
@@ -208,7 +208,7 @@ test("tickle + secret recurring in a sensitive category", () => {
 });
 
 test("runDeterministicChecks covers every story", () => {
-  const stories = [makeStory({ id: "a" }), makeStory({ id: "b", title: { zh: "{name}的大樹", en: "The Tree" } })];
+  const stories = [makeStory({ id: "a" }), makeStory({ id: "b", title: { zh: "{name}的大樹", en: "The Tree" }, guide })];
   const m = runDeterministicChecks(stories);
   assert.deepEqual([...m.keys()], ["a", "b"]);
   assert.deepEqual(m.get("b"), []);

@@ -145,8 +145,9 @@ export function checkGuide(story: LibraryStory): ReviewCheck[] {
   if (story.theme && !story.guide) {
     return [{ kind: "guide_missing", severity: "high", lang: "both", where: "guide", note: "主題故事缺少引導卡" }];
   }
-  if (!story.theme && story.guide) {
-    return [{ kind: "guide_missing", severity: "low", lang: "both", where: "guide", note: "沒有主題卻有引導卡" }];
+  // 沒有主題的故事也要有卡（npm run library:guides 補），只是不教道理、問感受與想像
+  if (!story.theme && !story.guide) {
+    return [{ kind: "guide_missing", severity: "low", lang: "both", where: "guide", note: "缺少引導卡（npm run library:guides 補）" }];
   }
   return [];
 }

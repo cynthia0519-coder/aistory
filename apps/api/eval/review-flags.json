@@ -1,28 +1,28 @@
 {
-  "generatedAt": "2026-10-15T08:19:22.075Z",
+  "generatedAt": "2026-10-16T11:07:41.220Z",
   "summary": {
     "stories": 334,
     "byStatus": {
-      "ok": 242,
-      "check": 92
+      "ok": 241,
+      "check": 93
     },
     "byCheckKind": {
       "length": 253,
       "duplicate_title": 12,
       "tokens": 2,
       "sensitive_pattern": 9,
-      "phone_number": 1
+      "phone_number": 2
     },
     "byIssueKind": {
-      "repetition": 150,
-      "logic": 146,
-      "quality": 60,
+      "repetition": 155,
+      "logic": 144,
+      "quality": 68,
       "taiwan_usage": 38,
-      "safety": 37,
-      "age_fit": 16,
+      "safety": 38,
+      "age_fit": 17,
       "preachy": 27,
-      "zh_en_mismatch": 86,
-      "length": 3,
+      "zh_en_mismatch": 91,
+      "length": 4,
       "guardrail": 4
     },
     "flagged": [
@@ -36,6 +36,7 @@
       "bullying-school-bus-seat",
       "caring-for-nature-pangolin-fable",
       "city-mrt-lost-umbrella",
+      "city-rooftop-garden-mystery",
       "crossing-road-little-green-man",
       "crossing-road-scooter-detective",
       "dentist-wiggly-tooth",
@@ -75,10 +76,10 @@
       "not-your-fault-wrestling-game",
       "old-bookshop-cat",
       "online-safety-free-gems-password",
+      "park-kite-wind-friend",
       "pet-loss-mochi-hill",
       "pet-loss-old-cat-sunbeam",
       "potty-little-frog-stool",
-      "puppet-masters-apprentice",
       "saying-no-squeeze-hug-handshake",
       "saying-no-tickle-monster",
       "screen-time-bunny-timer",
@@ -89,6 +90,7 @@
       "sharing-turns-crayon-box",
       "sharing-turns-swing-song",
       "sharing-turns-swing-timer",
+      "snow-polar-bear-cub-fable",
       "starting-kindergarten-pocket-pebble",
       "starting-kindergarten-school-bus-wave",
       "strangers-family-password",
@@ -98,10 +100,9 @@
       "swimsuit-rule-swim-class",
       "swimsuit-rule-teddy-check-up",
       "swimsuit-rule-whale-swimsuit",
-      "tea-hill-hide-and-seek",
-      "temple-lion-dance-drum",
       "the-puddle-that-was-a-sea",
       "the-sock-that-ran-away",
+      "tide-pool-detectives",
       "tidying-toys-beach-buckets",
       "tidying-toys-sleepy-shelf",
       "tidying-toys-treasure-sorting",
@@ -132,7 +133,6 @@
       "forest-mushroom-village",
       "forgiveness-the-told-secret",
       "getting-lost-sand-sculpture-beach",
-      "goodnight-sleepy-train",
       "honesty-spilled-paint-jar",
       "honesty-test-paper-signature",
       "hot-things-hot-pot-night",
@@ -141,60 +141,68 @@
       "losing-failing-class-election",
       "losing-failing-relay-baton",
       "manners-sorry-tower",
+      "map-in-the-message-bottle",
       "perseverance-the-character-yong",
       "perseverance-water-drop-stone-fable",
       "pet-loss-goldfish-flower",
       "pet-loss-hamster-memory-box",
       "potty-park-restroom",
       "promises-the-borrowed-comic",
+      "puppet-masters-apprentice",
       "responsibility-garden-captain",
+      "rooftop-giant-pumpkin",
       "sharing-turns-one-red-tricycle",
       "starting-kindergarten-lunchbox-note",
       "teamwork-dragon-dance-practice",
       "teamwork-the-class-play",
-      "the-mountain-of-small-steps",
       "trying-food-bitter-melon-explorer",
       "trying-food-stinky-tofu-sniff",
-      "water-safety-river-picnic",
-      "zoo-giraffe-tall-and-small"
+      "water-safety-river-picnic"
     ],
-    "usd": 9.4204
+    "usd": 9.812
   },
   "stories": {
     "goodnight-little-cloud": {
-      "hash": "5a2025e4aad2bcf3",
+      "hash": "3693b846f1290f7b",
       "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": []
       },
       "model": "claude-opus-5-5",
-      "usd": 0.043092,
+      "usd": 0.049436,
       "status": "ok",
-      "reviewedAt": "2026-10-14T12:10:03.865Z"
+      "reviewedAt": "2026-10-16T11:00:02.554Z"
     },
     "leaf-map-in-the-forest": {
-      "hash": "cbad086392c2b909",
+      "hash": "a65ed6339cefe69d",
       "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": [
           {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "5",
+            "note": "小松鼠「迷路」卻就在家旁邊，叉叉的樹是「旁邊的大樹」，略矛盾；可改成家在遠一點、{name}指路帶牠過去"
+          },
+          {
             "kind": "age_fit",
             "severity": "low",
             "lang": "zh",
             "where": "4",
-            "note": "8–10 歲適用，但全文幾乎沒有成語。可在發現小松鼠時加入一個合適的成語，例如「恍然大悟」取代「忽然明白了」。"
+            "note": "8–10歲應有少量成語，全文幾乎沒有；可在發現小松鼠處加如「恍然大悟」等貼切成語"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0312976,
+      "usd": 0.0425416,
       "status": "ok",
-      "reviewedAt": "2026-10-14T09:37:30.999Z"
+      "reviewedAt": "2026-10-16T11:00:12.865Z"
     },
     "lantern-for-the-moon": {
-      "hash": "373aa26e92d0aaf8",
+      "hash": "f3d8785a5f55e4c8",
       "checks": [
         {
           "kind": "length",
@@ -219,31 +227,31 @@
             "severity": "low",
             "lang": "both",
             "where": "5",
-            "note": "第 2 段貓頭鷹請大家『幫我跟月亮說晚安』，山頂卻沒人轉達，建議加一句「貓頭鷹也說晚安喔」"
+            "note": "第 2 段貓頭鷹請他們代說晚安，山頂沒有交代。可加一句「{name}說：這是貓頭鷹的晚安」"
+          },
+          {
+            "kind": "age_fit",
+            "severity": "low",
+            "lang": "en",
+            "where": "0",
+            "note": "英文句子偏長，例如『Outside the window, the moon was round and bright, but not one star was near it.』，可拆成兩句"
           },
           {
             "kind": "safety",
             "severity": "low",
             "lang": "en",
             "where": "5",
-            "note": "英文反覆用『Goodnight, Moon.』，和知名繪本書名相同，建議改成『Goodnight, moon.』或換個說法"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "6",
-            "note": "『貓頭鷹也閉上眼睛』與貓頭鷹夜間活動的習性不符，可改成「貓頭鷹靜靜不叫了」"
+            "note": "反覆出現的『Goodnight, Moon』接近知名繪本書名，可改成『Goodnight, moon』或其他說法"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0375336,
+      "usd": 0.0484416,
       "status": "ok",
-      "reviewedAt": "2026-10-14T09:37:40.431Z"
+      "reviewedAt": "2026-10-16T11:00:23.108Z"
     },
     "whispering-snow-library": {
-      "hash": "c7681ca612011167",
+      "hash": "6159214f7ddac6af",
       "checks": [],
       "llm": {
         "verdict": "ok",
@@ -252,25 +260,32 @@
             "kind": "logic",
             "severity": "low",
             "lang": "both",
-            "where": "2",
-            "note": "奶奶說「我看得見你」，但{name}彎腰走進雪堆小門後奶奶就看不見了；可改成小門開著、奶奶在門外看得到"
+            "where": "1",
+            "note": "奶奶說「我看得見你」，但{name}隨後走進雪堆小門裡，奶奶其實看不到；可改成「我就在門外等你」"
           },
           {
             "kind": "zh_en_mismatch",
             "severity": "low",
             "lang": "en",
             "where": "6",
-            "note": "中文有「{name}鑽進被窩」，英文從進屋直接跳到閉眼，建議補上 climbed into bed"
+            "note": "中文有「{name}鑽進被窩」，英文缺少上床這一步，建議補上 climbed into bed"
+          },
+          {
+            "kind": "age_fit",
+            "severity": "low",
+            "lang": "zh",
+            "where": "2",
+            "note": "8–10 歲要求適量成語，全文幾乎沒有；可在描寫書架或雪夜處加一兩個，如「靜悄悄」改「萬籟俱寂」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0336816,
+      "usd": 0.0473136,
       "status": "ok",
-      "reviewedAt": "2026-10-14T09:37:48.735Z"
+      "reviewedAt": "2026-10-16T11:00:33.367Z"
     },
     "zoo-hiccup-parade": {
-      "hash": "cb9ae69787d1ceab",
+      "hash": "2077e09fdba8ebf9",
       "checks": [
         {
           "kind": "length",
@@ -295,31 +310,38 @@
             "severity": "medium",
             "lang": "both",
             "where": "5",
-            "note": "「{name}用{his}小手指輕輕地搔」直接摸動物園小象，孩子可能模仿伸手碰動物；請加阿亮叔叔先說可以並在旁看著"
+            "note": "「{name}用小手指輕輕地搔」圓圓耳朵，孩子直接摸動物園的象，易被模仿；改成阿亮叔叔帶著，在安全的餵食區讓{name}輕摸，或改由叔叔搔"
           },
           {
             "kind": "logic",
             "severity": "medium",
             "lang": "both",
             "where": "2",
-            "note": "媽媽第0段後就消失，「阿亮叔叔牽著{name}」帶走孩子；請在第2段寫媽媽也一起走"
+            "note": "小象圓圓似乎跟著走到長頸鹿、河馬、猴子區（「圓圓也學著做」），動物離開象舍不合理；改成其他動物來象舍旁，或交代圓圓在隔壁場地"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "2",
+            "note": "媽媽第0段後就消失，改由阿亮叔叔「牽著{name}」；建議補一句媽媽也跟在旁邊"
           },
           {
             "kind": "quality",
             "severity": "low",
             "lang": "en",
             "where": "3",
-            "note": "「Puffy shut tight」少了受詞，語意不清；改成「Puffy shut her mouth tight」"
+            "note": "「Puffy shut tight」少了受詞，讀來不通順；改為「Puffy shut that big mouth tight」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.039201599999999996,
+      "usd": 0.048213599999999995,
       "status": "check",
-      "reviewedAt": "2026-10-14T09:37:58.915Z"
+      "reviewedAt": "2026-10-16T11:00:47.383Z"
     },
     "the-sock-that-ran-away": {
-      "hash": "1e3bd024e405945b",
+      "hash": "116a6d2110d26be9",
       "checks": [],
       "llm": {
         "verdict": "check",
@@ -329,28 +351,28 @@
             "severity": "medium",
             "lang": "zh",
             "where": "3",
-            "note": "爸爸稱主角「偵探先生」，替主角設定了性別，違反主角不分性別的規定；改成「小偵探」或「大偵探」"
-          },
-          {
-            "kind": "zh_en_mismatch",
-            "severity": "low",
-            "lang": "en",
-            "where": "3",
-            "note": "英文多了「with a grin that said he knew something」，中文沒有；可刪除，或在中文補上爸爸心裡有數的神情"
+            "note": "爸爸稱主角「偵探先生」，暗示主角是男生，違反主角不分性別規則；改成「小偵探」"
           },
           {
             "kind": "quality",
             "severity": "low",
             "lang": "en",
             "where": "4",
-            "note": "「Holding a breath」「eyes went wide」為了避開代名詞而顯得生硬；改成「{name} held {his} breath」「{name}'s eyes went wide」"
+            "note": "「and eyes went wide」「Holding a breath」少了所有格，讀來不順；改成 {his} eyes、Holding {his} breath"
+          },
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "3",
+            "note": "英文多了「a grin that said he knew something」，中文沒有爸爸知情的暗示；可刪除，或在中文補上對應描寫"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0352096,
+      "usd": 0.0428616,
       "status": "check",
-      "reviewedAt": "2026-10-14T09:38:06.937Z"
+      "reviewedAt": "2026-10-16T11:00:55.380Z"
     },
     "first-day-paper-boat": {
       "hash": "2806bfa5bd0bcd98",
@@ -373,27 +395,27 @@
       "reviewedAt": "2026-10-14T09:38:12.876Z"
     },
     "the-mountain-of-small-steps": {
-      "hash": "07ae476b5c85ce7a",
+      "hash": "5a5d0940d49d2aef",
       "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "taiwan_usage",
+            "kind": "quality",
             "severity": "low",
-            "lang": "zh",
-            "where": "1",
-            "note": "「腿開始發酸」用字與第5段「有點痠」不一致，台灣肌肉痠痛慣用「痠」，改為「發痠」"
+            "lang": "en",
+            "where": "guide",
+            "note": "英文第1題『how do you think it felt』的 it 指涉不清，可改成『how do you think {name} felt』"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0307776,
+      "usd": 0.0408816,
       "status": "ok",
-      "reviewedAt": "2026-10-14T09:38:20.573Z"
+      "reviewedAt": "2026-10-16T11:01:02.289Z"
     },
     "the-puddle-that-was-a-sea": {
-      "hash": "37384c4f244b3bdd",
+      "hash": "2e32ad004981129c",
       "checks": [
         {
           "kind": "length",
@@ -418,62 +440,62 @@
             "severity": "medium",
             "lang": "both",
             "where": "4",
-            "note": "第3段小石頭才剛放進水窪，第4段『小島』上卻已有蝸牛，不合理；改成蝸牛從水窪邊爬上石頭，或另找原本就在水中的石頭"
+            "note": "第3段小石頭是{name}剛丟進水裡的，第4段『小島』上卻已有蝸牛，不合理。改成蝸牛從水窪邊爬上石頭，或{name}撿的石頭上本來就有蝸牛"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "both",
+            "where": "2",
+            "note": "「咻，樹葉船浮起來了」『咻/Whoosh』是快速移動聲，不適合輕輕浮起，可改成「輕輕的，樹葉船浮起來了」"
           },
           {
             "kind": "age_fit",
             "severity": "low",
             "lang": "en",
-            "where": "5",
-            "note": "英文『The leaf ship carried the snail around the island and through the shadows of the clouds.』超過10字，建議拆成兩句"
-          },
-          {
-            "kind": "age_fit",
-            "severity": "low",
-            "lang": "en",
-            "where": "4",
-            "note": "英文『It carried a curly shell and crept slowly, slowly, its feelers stretching in and out.』句子偏長，建議拆短"
+            "where": "0",
+            "note": "英文多句超過10字，如「{name} put on rain boots, held Mom's hand, and walked into the park.」，可拆成短句"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0346736,
+      "usd": 0.044481599999999996,
       "status": "check",
-      "reviewedAt": "2026-10-14T09:38:28.928Z"
+      "reviewedAt": "2026-10-16T11:01:12.098Z"
     },
     "map-in-the-message-bottle": {
-      "hash": "46ab2ad1be269343",
+      "hash": "0bf98bf83105959b",
       "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "2",
-            "note": "地圖寫「從燈塔出發，往大石頭走二十步」，但{name}是從大石頭開始數步，起點不一致，可改成從燈塔數到石頭"
-          },
-          {
-            "kind": "logic",
+            "kind": "length",
             "severity": "low",
             "lang": "both",
             "where": "6",
-            "note": "故事從早晨開始，尋寶過程不長，結尾卻已「夕陽染紅了海面」，可補一句玩了一整天或改成中午"
+            "note": "第0段是「早晨」，尋寶只走幾步，第6段卻已「夕陽染紅了海面」，時間跳太快；可加一句玩了一整天或改成傍晚出發"
+          },
+          {
+            "kind": "age_fit",
+            "severity": "low",
+            "lang": "zh",
+            "where": "2",
+            "note": "8–10歲風格要有合適成語，全文幾乎沒有；可加如「迫不及待」「小心翼翼」等"
           },
           {
             "kind": "zh_en_mismatch",
             "severity": "low",
             "lang": "en",
             "where": "6",
-            "note": "中文有「握著小海螺」和「今天撿到的」海玻璃，英文省略，可補上 holding the conch 等細節"
+            "note": "中文說海玻璃是「今天撿到的」，英文只寫from a pocket；可補上 found that day"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.036737599999999995,
+      "usd": 0.0482296,
       "status": "ok",
-      "reviewedAt": "2026-10-14T09:38:38.223Z"
+      "reviewedAt": "2026-10-16T11:01:22.744Z"
     },
     "crossing-road-little-green-man": {
       "hash": "ab84450877ffa5f4",
@@ -4436,10 +4458,6 @@
           "note": "英文 251 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0328056,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T08:19:14.966Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -4479,7 +4497,11 @@
             "note": "『恐龍吸了幾口大氣』說法不順，改成『恐龍大口吸了幾次氣』"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0328056,
+      "status": "ok",
+      "reviewedAt": "2026-10-15T08:19:14.966Z"
     },
     "anger-paper-crown": {
       "hash": "31ecad6031a42386",
@@ -4628,10 +4650,6 @@
     "sharing-turns-swing-song": {
       "hash": "2334d81110c45629",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.021745599999999997,
-      "status": "check",
-      "reviewedAt": "2026-10-15T08:19:22.069Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -4650,7 +4668,11 @@
             "note": "「Song after song, round and round go the turns」偏長又抽象，2 歲不易懂，可拆成兩句短句"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.021745599999999997,
+      "status": "check",
+      "reviewedAt": "2026-10-15T08:19:22.069Z"
     },
     "sharing-turns-one-red-crayon": {
       "hash": "66785b19090d51b0",
@@ -5329,27 +5351,41 @@
       "reviewedAt": "2026-10-14T10:01:35.844Z"
     },
     "raindrop-drums": {
-      "hash": "344e0e2b99b7c426",
+      "hash": "2f987957eaa51abb",
       "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": [
           {
+            "kind": "taiwan_usage",
+            "severity": "low",
+            "lang": "zh",
+            "where": "1",
+            "note": "「雨打在小水桶，噗噗噗」少了方位詞，前兩句都有「上」，建議改成「雨打在小水桶裡」"
+          },
+          {
             "kind": "logic",
             "severity": "low",
             "lang": "zh",
             "where": "7",
-            "note": "「小湯匙輕輕一敲」前面都寫「木湯匙」，建議統一改成「木湯匙輕輕一敲」，也可以點明是{name}敲的"
+            "note": "前面都寫「木湯匙」，這裡變成「小湯匙輕輕一敲」，建議統一為「木湯匙」，並像英文一樣寫出敲的是鍋子"
+          },
+          {
+            "kind": "age_fit",
+            "severity": "low",
+            "lang": "en",
+            "where": "3",
+            "note": "英文「She brings two empty pots, one little bowl, and two wooden spoons.」約11字，可拆成兩句"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0352176,
+      "usd": 0.0395776,
       "status": "ok",
-      "reviewedAt": "2026-10-15T08:13:41.815Z"
+      "reviewedAt": "2026-10-16T11:01:32.956Z"
     },
     "baby-blue-magpie": {
-      "hash": "5e257d50053bd865",
+      "hash": "4813cb69900802df",
       "checks": [],
       "llm": {
         "verdict": "ok",
@@ -5359,17 +5395,17 @@
             "severity": "low",
             "lang": "en",
             "where": "3",
-            "note": "英文『\"You can do it!\" Mom whispered』前一句沒標說話者，像是媽媽說兩次；中文是{name}先說，建議補『{name} whispered』"
+            "note": "英文『\"You can do it!\" Mom whispered, \"You can do it!\"』讀起來兩句都像媽媽說，建議改成「{name} whispered… Mom said too…」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0364496,
+      "usd": 0.036661599999999996,
       "status": "ok",
-      "reviewedAt": "2026-10-15T08:13:48.745Z"
+      "reviewedAt": "2026-10-16T11:01:39.108Z"
     },
     "goodnight-sleepy-train": {
-      "hash": "1a252190823acc1c",
+      "hash": "4750f4d879917d98",
       "checks": [
         {
           "kind": "length",
@@ -5388,23 +5424,15 @@
       ],
       "llm": {
         "verdict": "ok",
-        "issues": [
-          {
-            "kind": "taiwan_usage",
-            "severity": "low",
-            "lang": "zh",
-            "where": "4",
-            "note": "「扶手…現在扶手不搖了」：會搖的是吊環，扶手不會搖，可改成「吊環圓圓的…現在吊環不搖了」"
-          }
-        ]
+        "issues": []
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0311256,
+      "usd": 0.0383376,
       "status": "ok",
-      "reviewedAt": "2026-10-14T10:01:59.829Z"
+      "reviewedAt": "2026-10-16T11:01:45.115Z"
     },
     "little-turtle-moon-path": {
-      "hash": "b6517082b17128e2",
+      "hash": "94cc55ef9c7e58e7",
       "checks": [
         {
           "kind": "duplicate_title",
@@ -5419,12 +5447,12 @@
         "issues": []
       },
       "model": "claude-opus-5-5",
-      "usd": 0.024809599999999998,
+      "usd": 0.0339536,
       "status": "ok",
-      "reviewedAt": "2026-10-14T10:02:04.292Z"
+      "reviewedAt": "2026-10-16T11:01:50.388Z"
     },
     "cloud-sheep-on-the-mountain": {
-      "hash": "5b78f618f4de5e76",
+      "hash": "f29e875d9f7a681c",
       "checks": [
         {
           "kind": "length",
@@ -5449,37 +5477,29 @@
             "severity": "low",
             "lang": "en",
             "where": "0",
-            "note": "中文「坐在小木屋前」在英文只寫「sits with Grandpa」，少了小屋；建議改成「sits with Grandpa outside a little cabin」，呼應第 6 段的 little house"
+            "note": "中文「坐在小木屋前」，英文只寫「sits with Grandpa」，沒提小木屋。可補「in front of the little cabin」，呼應第 6、7 段的小屋"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.029489599999999998,
+      "usd": 0.0399336,
       "status": "ok",
-      "reviewedAt": "2026-10-14T10:02:10.852Z"
+      "reviewedAt": "2026-10-16T11:01:58.119Z"
     },
     "rabbit-in-the-moon": {
-      "hash": "c9e53707afe0a439",
+      "hash": "8c27f49fb8e9f1c3",
       "checks": [],
       "llm": {
         "verdict": "ok",
-        "issues": [
-          {
-            "kind": "age_fit",
-            "severity": "low",
-            "lang": "zh",
-            "where": "3",
-            "note": "「牠在月亮上搗藥喔」的「搗藥」對 2 歲幼兒較難懂，可改成「牠在月亮上做年糕喔」或「牠在月亮上好忙喔」。"
-          }
-        ]
+        "issues": []
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0302656,
+      "usd": 0.0375536,
       "status": "ok",
-      "reviewedAt": "2026-10-14T10:02:18.908Z"
+      "reviewedAt": "2026-10-16T11:02:04.668Z"
     },
     "tea-hill-hide-and-seek": {
-      "hash": "c1a39f114dbb0fb2",
+      "hash": "4cf567188cfb5e1c",
       "checks": [
         {
           "kind": "length",
@@ -5497,31 +5517,31 @@
         }
       ],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
             "kind": "safety",
-            "severity": "medium",
+            "severity": "low",
             "lang": "both",
             "where": "5",
-            "note": "「三個人一起往上爬」走陡坡到山頂，阿嬤已先離開不在身邊。建議改成阿嬤在後面跟著，或孩子出發前先問阿嬤"
+            "note": "第5段三個孩子自己爬陡坡上山頂，阿嬤已走另一條路，可補一句阿嬤在前方看得到他們"
           },
           {
             "kind": "logic",
             "severity": "low",
-            "lang": "both",
-            "where": "6",
-            "note": "第3段阿嬤還在附近揮手，第6段卻已先到山頂。建議第5段加一句阿嬤說『山頂見』再走另一條路"
+            "lang": "zh",
+            "where": "7",
+            "note": "「先把蛋遞給阿嬤，再拿給阿傑和小米」像同一顆蛋，改成「再剝兩顆給阿傑和小米」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0394896,
-      "status": "check",
-      "reviewedAt": "2026-10-14T10:02:29.330Z"
+      "usd": 0.0520056,
+      "status": "ok",
+      "reviewedAt": "2026-10-16T11:02:17.034Z"
     },
     "lantern-festival-rabbit": {
-      "hash": "e889f7f9f12610f1",
+      "hash": "c82cb425bf619712",
       "checks": [
         {
           "kind": "length",
@@ -5543,118 +5563,64 @@
         "issues": []
       },
       "model": "claude-opus-5-5",
-      "usd": 0.033081599999999996,
+      "usd": 0.0405256,
       "status": "ok",
-      "reviewedAt": "2026-10-14T10:02:36.427Z"
+      "reviewedAt": "2026-10-16T11:02:23.118Z"
     },
     "night-bus-of-lost-umbrellas": {
-      "hash": "a2da388cbee484ed",
+      "hash": "bb00ad0e4958d92f",
       "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "age_fit",
+            "kind": "repetition",
             "severity": "low",
             "lang": "both",
-            "where": "2",
-            "note": "媽媽說『失物招領處，專門保管大家忘記的東西』像在下定義，可改成『那裡會幫大家收好忘記的東西』，讓意思從情境帶出"
+            "where": "0",
+            "note": "與「city-mrt-lost-umbrella」同為城市大眾運輸上遺落雨傘，但本篇著重想像雨傘夜聊，差異足夠，可留意"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0278296,
+      "usd": 0.0372496,
       "status": "ok",
-      "reviewedAt": "2026-10-14T10:02:41.746Z"
+      "reviewedAt": "2026-10-16T11:02:31.275Z"
     },
     "leopard-cat-footprints": {
-      "hash": "eefb7f25438a1e71",
+      "hash": "31a8a9dfc2a89dad",
       "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": []
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0314696,
+      "usd": 0.0405016,
       "status": "ok",
-      "reviewedAt": "2026-10-14T10:02:47.651Z"
+      "reviewedAt": "2026-10-16T11:02:38.572Z"
     },
     "firefly-valley-lanterns": {
-      "hash": "700d2b02acfb771f",
+      "hash": "7624e86515d087fb",
       "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "logic",
+            "kind": "quality",
             "severity": "low",
-            "lang": "en",
-            "where": "5",
-            "note": "第 1 段爸爸牽著{name}的手，第 5 段卻寫『lowered both hands』，可改成『lowered {his} hand』以免矛盾"
+            "lang": "zh",
+            "where": "title",
+            "note": "「熄了燈的螢火蟲小路」容易誤讀成螢火蟲熄燈，可改「關掉手電筒的螢火蟲小路」或「螢火蟲照亮回家路」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.030897599999999997,
+      "usd": 0.0405576,
       "status": "ok",
-      "reviewedAt": "2026-10-14T10:02:54.040Z"
+      "reviewedAt": "2026-10-16T11:02:45.337Z"
     },
     "lighthouse-keepers-cat": {
-      "hash": "a19d7ad50c9a2044",
-      "checks": [],
-      "llm": {
-        "verdict": "check",
-        "issues": [
-          {
-            "kind": "logic",
-            "severity": "medium",
-            "lang": "en",
-            "where": "0",
-            "note": "英文『Her old cat』緊接在{name}之後，容易被讀成主角的貓並暗示主角性別，改成『Great-Aunt's old cat』"
-          },
-          {
-            "kind": "zh_en_mismatch",
-            "severity": "low",
-            "lang": "en",
-            "where": "1",
-            "note": "中文『摸摸{his}頭』，英文寫『patted {his} pillow』，動作不同，可改成 stroked {his} hair"
-          },
-          {
-            "kind": "zh_en_mismatch",
-            "severity": "low",
-            "lang": "en",
-            "where": "7",
-            "note": "中文海苔『跳上來』窩在毯子上，英文『curled up nearby』，可改成 hopped up beside {him}"
-          }
-        ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.038881599999999995,
-      "status": "check",
-      "reviewedAt": "2026-10-14T10:03:03.597Z"
-    },
-    "mooncake-mystery": {
-      "hash": "edf9bdacb637908b",
-      "checks": [],
-      "llm": {
-        "verdict": "ok",
-        "issues": [
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "6",
-            "note": "第0段說空格裡『只剩一張皺巴巴的紙托』，第6段爺爺口袋又露出紙托，像有兩張；建議把第0段改成空格裡只剩幾顆餅屑"
-          }
-        ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.0348336,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:03:12.664Z"
-    },
-    "temple-lion-dance-drum": {
-      "hash": "4c505dbfe742f29f",
+      "hash": "83a70760b45796eb",
       "checks": [],
       "llm": {
         "verdict": "check",
@@ -5664,24 +5630,71 @@
             "severity": "medium",
             "lang": "both",
             "where": "0",
-            "note": "情節與「puppet-masters-apprentice」（拜師苦練、廟會演出）及「dragon-boat-drummer」（學打穩節奏帶領隊伍）過於相近，建議換解法或場景"
+            "note": "與 sea-lighthouse-keeper-grandma 太像：同樣是在燈塔和長輩過夜、看光束掃過海面後入睡。建議加強海苔或漁船閃燈的獨特情節，或更換場景"
+          },
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "1",
+            "note": "中文『摸摸{his}頭』，英文寫成 patted {his} pillow。建議改成 stroked {his} hair"
           },
           {
             "kind": "quality",
             "severity": "low",
             "lang": "en",
-            "where": "5",
-            "note": "「the big kids in the little lion」英文讀來不順，改成「the big kids dancing in the little lion」"
+            "where": "guide",
+            "note": "英文第 2 題用了英式拼法 favourite，其他地方用美式。建議統一成 favorite"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0317576,
+      "usd": 0.044029599999999995,
       "status": "check",
-      "reviewedAt": "2026-10-14T10:03:19.582Z"
+      "reviewedAt": "2026-10-16T11:02:53.092Z"
+    },
+    "mooncake-mystery": {
+      "hash": "31d0aacdaee61073",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "6",
+            "note": "第0段空格裡『只剩一張皺巴巴的紙托』，第6段爺爺口袋又露出『一角紙托』，紙托變兩張；建議第0段改成空格裡只剩幾顆餅屑"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.044029599999999995,
+      "status": "ok",
+      "reviewedAt": "2026-10-16T11:03:01.009Z"
+    },
+    "temple-lion-dance-drum": {
+      "hash": "f1c07b0e12cf19dc",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "4",
+            "note": "「打鼓…是要穩」學穩定節奏帶動隊伍，與 dragon-boat-drummer 相近，廟會演出也近 puppet-masters-apprentice，可再拉開差異"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0421096,
+      "status": "ok",
+      "reviewedAt": "2026-10-16T11:03:12.060Z"
     },
     "rooftop-giant-pumpkin": {
-      "hash": "6189a752eebdc25a",
+      "hash": "03d342522de2b236",
       "checks": [
         {
           "kind": "length",
@@ -5696,57 +5709,86 @@
         "issues": []
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0315856,
+      "usd": 0.0435496,
       "status": "ok",
-      "reviewedAt": "2026-10-14T10:03:25.550Z"
+      "reviewedAt": "2026-10-16T11:03:19.951Z"
     },
     "tide-pool-detectives": {
-      "hash": "3e8e60ac57673da4",
-      "checks": [],
-      "llm": {
-        "verdict": "ok",
-        "issues": []
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.0325016,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:03:38.477Z"
-    },
-    "wind-city-kite": {
-      "hash": "e5452997284ae6c0",
+      "hash": "d6b56971d07c8148",
       "checks": [],
       "llm": {
         "verdict": "check",
         "issues": [
           {
-            "kind": "taiwan_usage",
+            "kind": "repetition",
             "severity": "medium",
-            "lang": "zh",
+            "lang": "both",
             "where": "0",
-            "note": "「一只紅色的菱形風箏」的量詞「只」是簡體用法，台灣正體應寫「一隻」；第2段「那只風箏」、第6段「好幾只風箏」也一併改成「隻」"
+            "note": "與「sea-tide-pool-crab-family」太相近：同為東北角退潮潮池、觀察螃蟹、學會只看不碰。建議改換主角生物或解決方式"
           },
           {
-            "kind": "logic",
+            "kind": "zh_en_mismatch",
             "severity": "low",
-            "lang": "both",
-            "where": "6",
-            "note": "「最後一次放手／let go for one last try」不合理，這是風箏節上第一次放飛，建議改成「用力一放」"
+            "lang": "en",
+            "where": "0",
+            "note": "中文「美玲阿姨」英文作「Aunt Mei」，名字不一致，建議英文改為 Aunt Meiling"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0397056,
+      "usd": 0.042261599999999996,
       "status": "check",
-      "reviewedAt": "2026-10-14T10:03:48.956Z"
+      "reviewedAt": "2026-10-16T11:03:30.251Z"
+    },
+    "wind-city-kite": {
+      "hash": "d92311191b80dd6a",
+      "checks": [],
+      "llm": {
+        "verdict": "check",
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "medium",
+            "lang": "both",
+            "where": "1",
+            "note": "與 park-kite-wind-friend 太像：風箏一直摔、長輩老爺爺教導、最後越飛越高；建議強化尾巴實驗或城市特色以拉開差異"
+          },
+          {
+            "kind": "safety",
+            "severity": "medium",
+            "lang": "both",
+            "where": "2",
+            "note": "電梯裡沒有媽媽，{name}獨自答應去鄰居家；建議寫媽媽也在電梯並點頭同意或陪同到陽台"
+          },
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "both",
+            "where": "0",
+            "note": "中文『趴在地板上』與英文 knelt（跪著）不一致，統一姿勢"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0525176,
+      "status": "check",
+      "reviewedAt": "2026-10-16T11:03:42.406Z"
     },
     "old-bookshop-cat": {
-      "hash": "0b17949ed47dad79",
+      "hash": "a44c2165ac6c013e",
       "checks": [
         {
           "kind": "phone_number",
           "severity": "medium",
           "lang": "en",
           "where": "3",
+          "note": "出現數字 1975，確認不是電話或專線"
+        },
+        {
+          "kind": "phone_number",
+          "severity": "medium",
+          "lang": "en",
+          "where": "guide",
           "note": "出現數字 1975，確認不是電話或專線"
         }
       ],
@@ -5758,36 +5800,44 @@
             "severity": "medium",
             "lang": "both",
             "where": "3",
-            "note": "第3段說信封有「郵戳印著一九七五年」，但第5段說阿公「忘了寄」，沒寄出不會有郵戳。改成信紙上寫著日期一九七五年"
+            "note": "「郵戳上印著一九七五年」與第5段「緊張得忘了寄」矛盾，沒寄出的信不會有郵戳；改成信紙上寫的日期"
           },
           {
             "kind": "logic",
             "severity": "low",
             "lang": "both",
-            "where": "6",
-            "note": "書已由周家送到書店，周姐姐卻直接把《城市的四季花》送給{name}。可加一句林老闆點頭同意，或由林老闆送書"
+            "where": "2",
+            "note": "林老闆知道貓叫「湯圓」，第5段卻才揭曉是花店的貓，略顯突兀；可改成林老闆替這隻常來的貓取了暱稱"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.034733599999999996,
+      "usd": 0.0461576,
       "status": "check",
-      "reviewedAt": "2026-10-14T10:03:56.722Z"
+      "reviewedAt": "2026-10-16T11:03:54.732Z"
     },
     "stars-over-hehuan": {
-      "hash": "64a65a3ac2633849",
+      "hash": "cc1de95c285b46a8",
       "checks": [],
       "llm": {
         "verdict": "ok",
-        "issues": []
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "5",
+            "note": "第 5 段流星劃過、閉眼許願，與 night-sky-shooting-star-wish 的情節雷同，可考慮換成別的細節，例如發現一顆特別亮的行星"
+          }
+        ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.028341599999999998,
+      "usd": 0.0405136,
       "status": "ok",
-      "reviewedAt": "2026-10-14T10:04:01.773Z"
+      "reviewedAt": "2026-10-16T11:04:01.218Z"
     },
     "whale-song-of-hualien": {
-      "hash": "4fac2490f00ca4c0",
+      "hash": "3606396bfe2d146a",
       "checks": [
         {
           "kind": "length",
@@ -5799,66 +5849,88 @@
       ],
       "llm": {
         "verdict": "ok",
-        "issues": []
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.0303856,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T10:04:07.192Z"
-    },
-    "puppet-masters-apprentice": {
-      "hash": "ef0bceeb63e73e3a",
-      "checks": [],
-      "llm": {
-        "verdict": "check",
         "issues": [
-          {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "4",
-            "note": "與 temple-lion-dance-drum 太像：拜師學傳統技藝、廟會登臺表演。可改演出場合（如學校、巷口）或改變成長主軸"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "en",
-            "where": "2",
-            "note": "英文指稱小白時而用 it（第2段），時而用 he/him（第1、3、4段），建議統一"
-          },
           {
             "kind": "logic",
             "severity": "low",
             "lang": "both",
             "where": "6",
-            "note": "「明天要練的新招式」與前文只在週末練習的安排不太吻合，可改成「下次」"
+            "note": "第5段沒寫{name}畫下鯨尾，第6段最後一頁卻有尾巴；可在第5或第6段補一句「趕緊憑記憶畫下那條尾巴」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0361056,
-      "status": "check",
-      "reviewedAt": "2026-10-14T10:04:16.490Z"
+      "usd": 0.0443656,
+      "status": "ok",
+      "reviewedAt": "2026-10-16T11:04:14.006Z"
     },
-    "dragon-boat-drummer": {
-      "hash": "7d0847bf16988e11",
+    "puppet-masters-apprentice": {
+      "hash": "10814bdb14af7ffe",
       "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "age_fit",
+            "kind": "logic",
+            "severity": "low",
+            "lang": "en",
+            "where": "2",
+            "note": "英文稱小白時「it」與「he/his/him」混用（第2段 it bow，第3、4段 his arms、made him），建議統一用 he"
+          },
+          {
+            "kind": "taiwan_usage",
             "severity": "low",
             "lang": "zh",
-            "where": "1",
-            "note": "「像一隻喝醉的螃蟹」提到喝醉，對童書略不合適；可改成「暈頭轉向的螃蟹」，與英文 dizzy 一致"
+            "where": "5",
+            "note": "前文用「戲臺」，此段用「台下」，用字不一致，建議統一為「臺下」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0347776,
+      "usd": 0.0452016,
       "status": "ok",
-      "reviewedAt": "2026-10-14T10:04:24.147Z"
+      "reviewedAt": "2026-10-16T11:04:22.896Z"
+    },
+    "dragon-boat-drummer": {
+      "hash": "d30ea8f82497476e",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "0",
+            "note": "中文「繫緊救生衣」在英文只寫『buckled up』，沒提救生衣；改成『buckled on life jackets』以保留水上安全細節"
+          },
+          {
+            "kind": "age_fit",
+            "severity": "low",
+            "lang": "zh",
+            "where": "1",
+            "note": "「像一隻喝醉的螃蟹」帶酒醉意象，英文用 dizzy；建議改「暈頭轉向的螃蟹」，引導卡第2題一併修改"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "both",
+            "where": "guide",
+            "note": "三題都停在比喻想像，沒有問到{name}觀察槳葉、配合節奏的關鍵轉變；可改一題「{name}第二次怎麼找到對的鼓點？」"
+          },
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "0",
+            "note": "「學打鼓帶領團體節奏」與 temple-lion-dance-drum 相近，但場景與解法不同，可保留"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0478856,
+      "status": "ok",
+      "reviewedAt": "2026-10-16T11:04:33.495Z"
     },
     "water-safety-pool-wait-by-towel": {
       "hash": "aa7560f7ad97e941",
@@ -6040,7 +6112,7 @@
       "reviewedAt": "2026-10-14T10:05:07.589Z"
     },
     "bear-bell-trail": {
-      "hash": "9766ab35e0556163",
+      "hash": "5433c2cdd0b109d5",
       "checks": [],
       "llm": {
         "verdict": "ok",
@@ -6049,29 +6121,22 @@
             "kind": "zh_en_mismatch",
             "severity": "low",
             "lang": "en",
-            "where": "5",
-            "note": "英文多了「safe and high above everything」，中文沒有；可刪除或在中文補上「安全又居高臨下」"
+            "where": "1",
+            "note": "中文有「目不轉睛，心臟怦怦直跳」，英文缺心跳描寫，但英文引導卡第1題卻提到 heart was pounding，建議英文補一句"
           },
           {
             "kind": "zh_en_mismatch",
             "severity": "low",
             "lang": "en",
-            "where": "1",
-            "note": "中文「看得{him}目不轉睛，心臟怦怦直跳」在英文中沒有對應，可補一句情緒描寫"
-          },
-          {
-            "kind": "repetition",
-            "severity": "low",
-            "lang": "both",
-            "where": "3",
-            "note": "跟著專家循野生動物足跡、最後親眼見到動物，與 leopard-cat-footprints 結構相近，但場景和結局不同，可接受"
+            "where": "5",
+            "note": "英文多出「safe and high above everything」，中文沒有，且語氣生硬，建議刪除"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0350296,
+      "usd": 0.0445136,
       "status": "ok",
-      "reviewedAt": "2026-10-14T10:05:15.606Z"
+      "reviewedAt": "2026-10-16T11:04:41.921Z"
     },
     "losing-failing-calligraphy-blot": {
       "hash": "dfeddbe8f3b773b4",
@@ -7390,7 +7455,7 @@
       "reviewedAt": "2026-10-14T12:15:08.009Z"
     },
     "snow-mountain-first-snowflake": {
-      "hash": "309f64077f42ebf1",
+      "hash": "4aa54e6f73c91986",
       "checks": [
         {
           "kind": "length",
@@ -7405,12 +7470,12 @@
         "issues": []
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0343536,
+      "usd": 0.0377696,
       "status": "ok",
-      "reviewedAt": "2026-10-14T12:15:14.539Z"
+      "reviewedAt": "2026-10-16T11:04:50.296Z"
     },
     "zoo-night-keeper": {
-      "hash": "63d36baf3e5b83ee",
+      "hash": "5f8bd8ada390e113",
       "checks": [
         {
           "kind": "length",
@@ -7425,12 +7490,12 @@
         "issues": []
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0340336,
+      "usd": 0.041781599999999995,
       "status": "ok",
-      "reviewedAt": "2026-10-14T12:15:20.591Z"
+      "reviewedAt": "2026-10-16T11:04:57.571Z"
     },
     "forest-mushroom-village": {
-      "hash": "292f3224ef72d69b",
+      "hash": "0cdf8bfebc6d472f",
       "checks": [
         {
           "kind": "length",
@@ -7449,23 +7514,15 @@
       ],
       "llm": {
         "verdict": "ok",
-        "issues": [
-          {
-            "kind": "zh_en_mismatch",
-            "severity": "low",
-            "lang": "zh",
-            "where": "5",
-            "note": "英文寫雨滴從葉子落下，中文只寫『一滴雨水掉下來』，與第0段『雨停了』略矛盾，可改『葉子上掉下一滴雨水』"
-          }
-        ]
+        "issues": []
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0366216,
+      "usd": 0.038493599999999996,
       "status": "ok",
-      "reviewedAt": "2026-10-14T12:15:27.767Z"
+      "reviewedAt": "2026-10-16T11:05:04.641Z"
     },
     "night-sky-paper-rocket": {
-      "hash": "ba6eb16d7df02440",
+      "hash": "b7b048489721af4f",
       "checks": [
         {
           "kind": "length",
@@ -7489,25 +7546,32 @@
             "kind": "logic",
             "severity": "medium",
             "lang": "en",
-            "where": "6",
-            "note": "火箭叫「Little Star」，又有角色「the little star」，朗讀時聽不出差別，第4、6段易混淆；建議火箭改名如「Star Rocket」"
+            "where": "4",
+            "note": "英文火箭叫「Little Star」，又有睡不著的「little star」，第4–6段「Little Star kept flying」容易混淆，建議火箭改名如 Star Rocket"
+          },
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "5",
+            "note": "中文「月兔正在輕輕地搗著藥」，英文只寫「gently pounding」沒說搗什麼，建議補上 pounding medicine 或 pounding in its bowl"
           },
           {
             "kind": "repetition",
             "severity": "low",
             "lang": "both",
             "where": "5",
-            "note": "月兔揮手、向月亮道晚安與 rabbit-in-the-moon、lantern-for-the-moon 元素相近，可考慮換掉月兔情節"
+            "note": "月兔向{name}揮手回應，和 rabbit-in-the-moon「月兔好像也揮手」相近，可換成別的互動"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.042933599999999995,
+      "usd": 0.043121599999999996,
       "status": "check",
-      "reviewedAt": "2026-10-15T08:14:45.677Z"
+      "reviewedAt": "2026-10-16T11:05:12.617Z"
     },
     "sea-tide-pool-crab-family": {
-      "hash": "450894a3e0c15051",
+      "hash": "419ec01915954957",
       "checks": [
         {
           "kind": "length",
@@ -7532,24 +7596,24 @@
             "severity": "medium",
             "lang": "both",
             "where": "0",
-            "note": "與「tide-pool-detectives」太像：北海岸退潮、大人陪看潮池、螃蟹、生物放回原處。建議換場景或改成不同的發現與解法"
+            "note": "與「tide-pool-detectives」太像：同為北海岸退潮、大人陪同看潮池螃蟹並放回原處，建議換場景或情節"
           },
           {
             "kind": "zh_en_mismatch",
             "severity": "low",
-            "lang": "en",
+            "lang": "both",
             "where": "3",
-            "note": "中文有「小螃蟹擠成一團」，英文沒有這句，建議英文補上 the little crabs huddled together"
+            "note": "英文寫「Together they lifted」，中文只說「媽媽教{name}…抬起」，建議中文補上「一起」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0352096,
+      "usd": 0.0404176,
       "status": "check",
-      "reviewedAt": "2026-10-14T12:15:42.564Z"
+      "reviewedAt": "2026-10-16T11:05:19.578Z"
     },
     "park-kite-wind-friend": {
-      "hash": "aacc75377e4168a1",
+      "hash": "88921bf2341ab7d8",
       "checks": [
         {
           "kind": "length",
@@ -7567,43 +7631,72 @@
         }
       ],
       "llm": {
-        "verdict": "ok",
+        "verdict": "check",
         "issues": [
           {
-            "kind": "logic",
-            "severity": "low",
+            "kind": "repetition",
+            "severity": "medium",
             "lang": "both",
             "where": "4",
-            "note": "林爺爺的老鷹風箏一直在天上，第4段他卻雙手舉{name}的風箏，誰拉老鷹的線沒交代。可加一句他先把線綁在樹或長椅上"
+            "note": "與 wind-city-kite 太像：風箏一直掉、年長鄰居指導、最後一次終於飛高。建議換成不同的解法或情節"
+          },
+          {
+            "kind": "logic",
+            "severity": "medium",
+            "lang": "both",
+            "where": "4",
+            "note": "林爺爺的老鷹還在天上，卻雙手幫{name}舉風箏，線由誰拿？補一句「把老鷹線綁在長椅上」或交給媽媽"
           },
           {
             "kind": "logic",
             "severity": "low",
             "lang": "both",
             "where": "7",
-            "note": "「媽媽走過來，坐在{name}旁邊」，但{name}正站著放風箏。可改成「站在{name}旁邊」"
+            "note": "「媽媽走過來，坐在{name}旁邊」，但{name}正站著放風箏，改成「站在{name}旁邊」"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "3",
+            "note": "「背對著風」後又往前跑，等於順風跑，風箏較難升起。可改成背對風站好、拉線往後退"
+          },
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "2",
+            "note": "中文媽媽說「林爺爺好」，英文只寫 Mom waved back，可補上 \"Hello, Grandpa Lin\""
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0413296,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T12:15:51.166Z"
+      "usd": 0.0525896,
+      "status": "check",
+      "reviewedAt": "2026-10-16T11:05:37.147Z"
     },
     "home-rainy-day-cardboard-ship": {
-      "hash": "e599cf0e941a0af2",
+      "hash": "aa3dbdbe6c7c6eb5",
       "checks": [],
       "llm": {
         "verdict": "ok",
-        "issues": []
+        "issues": [
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "both",
+            "where": "guide",
+            "note": "第3題中文「最想救哪一個好朋友」，英文為「save first」（先救誰），意思略不同，可統一為「最想先救」"
+          }
+        ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0349816,
+      "usd": 0.038909599999999996,
       "status": "ok",
-      "reviewedAt": "2026-10-15T08:14:52.945Z"
+      "reviewedAt": "2026-10-16T11:05:46.885Z"
     },
     "mountain-tea-farm-helper": {
-      "hash": "bbaf76e7f5b223a6",
+      "hash": "9de2c1899f6f0d36",
       "checks": [
         {
           "kind": "length",
@@ -7617,21 +7710,21 @@
         "verdict": "ok",
         "issues": [
           {
-            "kind": "logic",
+            "kind": "quality",
             "severity": "low",
             "lang": "zh",
             "where": "0",
-            "note": "主角的「阿姨」和「採茶的阿姨們」同稱阿姨，第5段「採茶阿姨」易混淆，可改稱「採茶婆婆」或「採茶的大姐姐」"
+            "note": "主人「阿姨」和「採茶的阿姨們」都叫阿姨，第5段讀者可能分不清。可把採茶的人改成「採茶的姐姐們」或其他稱呼。"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0358096,
+      "usd": 0.0394216,
       "status": "ok",
-      "reviewedAt": "2026-10-14T12:16:04.498Z"
+      "reviewedAt": "2026-10-16T11:05:53.710Z"
     },
     "city-mrt-lost-umbrella": {
-      "hash": "289ef0dfa0f8beba",
+      "hash": "fb0052998c0150d7",
       "checks": [],
       "llm": {
         "verdict": "check",
@@ -7641,50 +7734,65 @@
             "severity": "medium",
             "lang": "both",
             "where": "7",
-            "note": "開頭要去外婆家，結尾卻寫『回程的車廂』／『train ride back』，像直接回家。改成『再搭上往外婆家的車廂』"
+            "note": "兩人本來要去外婆家，卻寫「回程的車廂裡」與 \"train ride back\"，像直接回家；改成「繼續往外婆家的車廂裡」"
           },
           {
             "kind": "logic",
             "severity": "low",
             "lang": "both",
             "where": "4",
-            "note": "『爺爺剛剛手上拿的就是這個』但第0段沒提老爺爺拿導覽圖，建議在第0段補一句他手上捏著公園導覽圖"
+            "note": "「爺爺剛剛手上拿的就是這個」前文沒寫老爺爺拿導覽圖；第 0 段補一句他手裡捏著公園導覽圖"
           },
           {
-            "kind": "zh_en_mismatch",
+            "kind": "quality",
             "severity": "low",
             "lang": "en",
             "where": "4",
-            "note": "英文『Grandpa was holding one』易誤會成自家爺爺，且第5段改稱『Sir』，建議改成『The old man was holding one』"
+            "note": "英文 \"Grandpa was holding one\" 易被誤會成主角的外公；改成 \"He was holding one just like this!\""
           },
           {
             "kind": "repetition",
             "severity": "low",
             "lang": "both",
             "where": "title",
-            "note": "和 night-bus-of-lost-umbrellas 同樣是雨天把傘忘在車上，情節不同可保留，但可留意同主題不要太集中"
+            "note": "與 night-bus-of-lost-umbrellas 同為大眾運輸上遺失雨傘，情節雖不同仍可留意題材重疊"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.043725599999999996,
+      "usd": 0.047401599999999995,
       "status": "check",
-      "reviewedAt": "2026-10-14T12:16:15.482Z"
+      "reviewedAt": "2026-10-16T11:06:04.654Z"
     },
     "school-science-fair-plant": {
-      "hash": "78d102918ad74e35",
+      "hash": "5843f9e3727fff2f",
       "checks": [],
       "llm": {
         "verdict": "ok",
-        "issues": []
+        "issues": [
+          {
+            "kind": "taiwan_usage",
+            "severity": "low",
+            "lang": "zh",
+            "where": "guide",
+            "note": "問題三「又高又瘦的黃豆芽」易誤解為黃豆（大豆）芽，改成「黃黃的綠豆芽」"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "zh",
+            "where": "6",
+            "note": "「響起全班最熱烈的掌聲」語意不順，可改成「響起當天最熱烈的掌聲」，與英文版一致"
+          }
+        ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0361856,
+      "usd": 0.0442096,
       "status": "ok",
-      "reviewedAt": "2026-10-14T12:16:22.475Z"
+      "reviewedAt": "2026-10-16T11:06:12.779Z"
     },
     "sea-lighthouse-keeper-grandma": {
-      "hash": "9bcc6bb09a6cde61",
+      "hash": "6366fa77eb080330",
       "checks": [],
       "llm": {
         "verdict": "check",
@@ -7694,26 +7802,41 @@
             "severity": "medium",
             "lang": "both",
             "where": "0",
-            "note": "與「lighthouse-keepers-cat」太像：都是陪長輩在燈塔過夜、爬螺旋樓梯、看光束掃海面、聽海浪入睡；建議換場景或加大差異"
+            "note": "與「lighthouse-keepers-cat」太相似：都是和長輩在燈塔過夜、爬螺旋樓梯、看光束掃海面、聽海入睡，建議換場景或主線"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "2",
+            "note": "奶奶說「以前」照顧燈是她的工作，卻仍能隨手開大燈，可補一句她現在仍幫忙或獲准使用"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0362496,
+      "usd": 0.041393599999999996,
       "status": "check",
-      "reviewedAt": "2026-10-14T13:15:08.828Z"
+      "reviewedAt": "2026-10-16T11:06:22.823Z"
     },
     "zoo-baby-tapir-name": {
-      "hash": "56ddc4aca2617b82",
+      "hash": "d2a2091800f5332b",
       "checks": [],
       "llm": {
         "verdict": "ok",
-        "issues": []
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "en",
+            "where": "7",
+            "note": "英文「trots back to Mama」與{name}的「Mommy」稱呼相近易混淆，建議改「its mama」或「Mama Tapir」"
+          }
+        ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0327016,
+      "usd": 0.041317599999999996,
       "status": "ok",
-      "reviewedAt": "2026-10-14T12:16:38.871Z"
+      "reviewedAt": "2026-10-16T11:06:31.714Z"
     },
     "manners-sorry-tower": {
       "hash": "2c3ae76077252ce4",
@@ -10340,7 +10463,7 @@
       "reviewedAt": "2026-10-15T08:00:04.950Z"
     },
     "night-sky-shooting-star-wish": {
-      "hash": "2a6a8a6754feb6e4",
+      "hash": "06b74f57cde7a4de",
       "checks": [],
       "llm": {
         "verdict": "check",
@@ -10350,84 +10473,51 @@
             "severity": "medium",
             "lang": "both",
             "where": "5",
-            "note": "{name}『在心裡輕輕說』願望，爺爺卻回『好，爺爺等你』，像聽得到。改成小聲說出口，或讓爺爺只說『許好了嗎？』"
+            "note": "「在心裡輕輕說」的願望，爺爺卻回答「好，爺爺等你」，像聽到了。改成{name}小聲說出口，或刪掉爺爺的回答"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0336776,
+      "usd": 0.0356496,
       "status": "check",
-      "reviewedAt": "2026-10-15T08:00:16.606Z"
+      "reviewedAt": "2026-10-16T11:06:39.276Z"
     },
     "snow-polar-bear-cub-fable": {
-      "hash": "625176c29c28ce85",
+      "hash": "318a98f76a255a6e",
       "checks": [],
       "llm": {
-        "verdict": "ok",
+        "verdict": "check",
         "issues": [
           {
             "kind": "safety",
-            "severity": "low",
+            "severity": "medium",
             "lang": "both",
             "where": "6",
-            "note": "「這裡沒有喀喀聲，很安全！」可能讓孩子以為聽不到聲音就代表冰面安全，建議改成由熊爸爸確認冰很厚"
-          }
-        ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.043621599999999996,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T08:00:26.891Z"
-    },
-    "sea-proud-seagull-fable": {
-      "hash": "8c6b449e56b04a08",
-      "checks": [],
-      "llm": {
-        "verdict": "ok",
-        "issues": [
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "6",
-            "note": "「牠的小水窪」前文沒提過，可在第1段補一句小殼從水窪邊爬出來"
-          }
-        ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.0386376,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T08:00:38.815Z"
-    },
-    "city-rooftop-garden-mystery": {
-      "hash": "e95cc1e95dfff6c9",
-      "checks": [],
-      "llm": {
-        "verdict": "ok",
-        "issues": [
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "4",
-            "note": "「原來鐵盒的蓋子是牠打開的」前文線索沒提過鐵盒被打開，建議在第1段線索中加入「種子鐵盒蓋子被掀開」"
+            "note": "皮皮說「這裡沒有喀喀聲，很安全！」等於教孩子靠聽聲音判斷冰面安全，容易被模仿。改成由熊爸爸敲冰確認是厚冰。"
           },
           {
             "kind": "logic",
             "severity": "low",
             "lang": "both",
-            "where": "5",
-            "note": "奶奶翻出「空牛奶盒」，第6段餵食台卻沒用到，可補一句牛奶盒做成水碟或種子槽"
+            "where": "2",
+            "note": "第2段在安全的捕魚處，冰也「喀、喀」唱歌；第6段卻以沒有喀喀聲當作安全。建議第2段改用不同的聲音。"
+          },
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "0",
+            "note": "中文有「一起慢慢走」，英文只寫 held Mama Bear's paw，少了陪皮皮慢慢走。建議補上 walking slowly together。"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0393136,
-      "status": "ok",
-      "reviewedAt": "2026-10-15T08:00:45.111Z"
+      "usd": 0.051613599999999996,
+      "status": "check",
+      "reviewedAt": "2026-10-16T11:06:53.027Z"
     },
-    "zoo-giraffe-tall-and-small": {
-      "hash": "134d446f5b896753",
+    "sea-proud-seagull-fable": {
+      "hash": "76f5bc6cd0b25767",
       "checks": [],
       "llm": {
         "verdict": "ok",
@@ -10436,15 +10526,69 @@
             "kind": "taiwan_usage",
             "severity": "low",
             "lang": "zh",
-            "where": "0",
-            "note": "「脖子都酸酸了」疊字加「了」不太自然，建議改「脖子都酸了」或「脖子酸酸的」；英文也沒有脖子酸這句"
+            "where": "guide",
+            "note": "第2題『你最想看看誰』語意不清，像直譯 check on，可改成『你最擔心誰』或『最想去看看誰好不好』"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0349096,
+      "usd": 0.0420896,
       "status": "ok",
-      "reviewedAt": "2026-10-15T08:00:51.650Z"
+      "reviewedAt": "2026-10-16T11:07:03.385Z"
+    },
+    "city-rooftop-garden-mystery": {
+      "hash": "853f5e4718b927e4",
+      "checks": [],
+      "llm": {
+        "verdict": "check",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "medium",
+            "lang": "both",
+            "where": "4",
+            "note": "「原來鐵盒的蓋子是牠打開的！」前文沒提過鐵盒常被打開，建議在第1段線索加一句「種子鐵盒的蓋子老是開著」"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "6",
+            "note": "第0段消失的「草莓」和第5段找出的「空牛奶盒」後面都沒交代，建議補一句草莓是誰吃的、牛奶盒拿來做什麼"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "en",
+            "where": "2",
+            "note": "「a stomach rumbled loudly」不知道是誰的肚子，讀來彆扭，改成「{his} stomach rumbled」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0486336,
+      "status": "check",
+      "reviewedAt": "2026-10-16T11:07:14.365Z"
+    },
+    "zoo-giraffe-tall-and-small": {
+      "hash": "3e1bbc8437d63c30",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "0",
+            "note": "中文結尾有『脖子都酸酸了！』，英文沒有，可補一句如 \"Oh, a sore neck!\" 讓兩版一致"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0356776,
+      "status": "ok",
+      "reviewedAt": "2026-10-16T11:07:19.915Z"
     },
     "new-sibling-bedtime-story-swap": {
       "hash": "72b94e9799f820c1",
