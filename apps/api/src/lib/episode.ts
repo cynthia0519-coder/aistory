@@ -31,9 +31,34 @@ export { fullWidthPunct };
 
 /** 一行字幕最多幾個字；1080p、64px 的字，一行放得下約 26 個中文字 */
 export const CAPTION_MAX = 24;
+/** 英文字幕一行最多幾個字元（字母比中文字窄，約一半寬） */
+export const CAPTION_MAX_EN = 44;
+
+/** 英文：照句子切，太長再從逗號切，還是太長就在空白處折行（不切斷單字） */
+function splitCaptionsEn(text: string, max: number): string[] {
+  const sentences = text.match(/[^.!?]+[.!?]+["”’)]*|[^.!?]+$/g)?.map((s) => s.trim()).filter(Boolean) ?? [];
+  const out: string[] = [];
+  const pack = (pieces: string[]) => {
+    let line = "";
+    for (const piece of pieces) {
+      if (line && line.length + 1 + piece.length > max) {
+        out.push(line);
+        line = "";
+      }
+      line = line ? `${line} ${piece}` : piece;
+    }
+    if (line) out.push(line);
+  };
+  for (const sentence of sentences.length ? sentences : [text.trim()]) {
+    if (sentence.length <= max) out.push(sentence);
+    else pack(sentence.match(/[^,;]+[,;]?/g)!.map((p) => p.trim()).filter(Boolean).flatMap((p) => (p.length <= max ? [p] : p.split(/\s+/))));
+  }
+  return out;
+}
 
 /** 把一段切成一句一句的字幕；太長的句子再從逗號切，還是太長就硬切 */
-export function splitCaptions(text: string, max = CAPTION_MAX): string[] {
+export function splitCaptions(text: string, max = CAPTION_MAX, language: Language = "zh"): string[] {
+  if (language === "en") return splitCaptionsEn(text, max);
   const sentences = text.match(/[^。！？!?]+[。！？!?」』”]*/g)?.map((s) => s.trim()).filter(Boolean) ?? [];
   const out: string[] = [];
   for (const sentence of sentences.length ? sentences : [text.trim()]) {
@@ -75,10 +100,10 @@ export interface Cue {
 }
 
 /** 一段朗讀裡的字幕依字數分配時間（TTS 語速大致固定，誤差在一兩秒內） */
-export function captionCues(segments: Segment[], max = CAPTION_MAX): Cue[] {
+export function captionCues(segments: Segment[], language: Language = "zh", max = language === "en" ? CAPTION_MAX_EN : CAPTION_MAX): Cue[] {
   const cues: Cue[] = [];
   for (const seg of segments) {
-    const lines = splitCaptions(fullWidthPunct(seg.text), max);
+    const lines = splitCaptions(language === "en" ? seg.text : fullWidthPunct(seg.text), max, language);
     const weights = lines.map((l) => Math.max(1, [...l.replace(/[\s，。！？、；：「」『』“”,.!?;:]/g, "")].length));
     const total = weights.reduce((a, b) => a + b, 0);
     let t = seg.start;
@@ -139,6 +164,7 @@ export interface EpisodeText {
  * credit：說明最後的製作單位（例如頻道名稱），可不給
  */
 export function episodeText(story: LibraryStory, language: Language, appUrl?: string, credit?: string): EpisodeText {
+  if (language === "en") return episodeTextEn(story, appUrl, credit);
   const r = renderLibraryStory(story, language);
   const kind = story.theme ? THEMES[story.theme].label[language] : STYLE_RULES[story.style].label;
   const ages = ageRangeLabel(story.ageBands);
@@ -166,6 +192,43 @@ export function episodeText(story: LibraryStory, language: Language, appUrl?: st
   return {
     // 沒有主題的故事風格標籤（晚安、可愛）放進標題沒資訊量，只放主題
     title: `${fullWidthPunct(r.title)}｜${story.theme ? `${kind}・` : ""}睡前故事｜${ages}`,
+    description: lines.join("\n"),
+    tags,
+  };
+}
+
+const STYLE_LABEL_EN: Record<LibraryStory["style"], string> = {
+  adventure: "Adventure",
+  inspiring: "Inspiring",
+  cute: "Cute",
+  bedtime: "Goodnight",
+  fable: "Fable",
+};
+
+function episodeTextEn(story: LibraryStory, appUrl?: string, credit?: string): EpisodeText {
+  const r = renderLibraryStory(story, "en");
+  const kind = story.theme ? THEMES[story.theme].label.en : STYLE_LABEL_EN[story.style];
+  const ages = `Ages ${ageRangeLabel(story.ageBands).replace(/\s*歲$/, "")}`;
+  const opening = r.paragraphs[0] ?? "";
+  const lines = [opening.length > 160 ? `${opening.slice(0, opening.lastIndexOf(" ", 160))}…` : opening, ""];
+  if (r.guide) {
+    lines.push("For parents — things to talk about after the story:");
+    r.guide.questions.forEach((q, i) => lines.push(`${i + 1}. ${q}`));
+    lines.push(`Try tonight: ${r.guide.tip}`, "");
+  }
+  lines.push(
+    appUrl
+      ? `Want your child to be the hero of the story? Try "Photo Stories": ${appUrl}`
+      : `Want your child to be the hero of the story? Our "Photo Stories" app is coming soon — subscribe to hear first.`,
+    "",
+    `${ages} · ${kind}`,
+    "Story written with AI assistance. Music: Mureka AI (commercial license) / Narration: Microsoft Azure neural voice / Illustration: Canva AI",
+  );
+  if (credit) lines.push(credit);
+  const tags = ["bedtime stories", "stories for kids", "kids stories", "read aloud", kind];
+  lines.push("", tags.map((t) => `#${t.replace(/\s/g, "")}`).join(" "));
+  return {
+    title: `${r.title} | ${story.theme ? `${kind} · ` : ""}Bedtime Story | ${ages}`,
     description: lines.join("\n"),
     tags,
   };

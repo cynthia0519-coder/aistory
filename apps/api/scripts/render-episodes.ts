@@ -172,7 +172,7 @@ async function renderEpisode(story: LibraryStory, lang: Language, dir: string, f
   if (!audioOnly) {
     const [title, ...rest] = segments;
     const ass = join(dir, "captions.ass");
-    writeFileSync(ass, buildAss({ text: fullWidthPunct(title.text), start: 0, end: title.end + AFTER_TITLE }, captionCues(rest), FONT_NAME));
+    writeFileSync(ass, buildAss({ text: fullWidthPunct(title.text), start: 0, end: title.end + AFTER_TITLE }, captionCues(rest, lang), FONT_NAME));
     video = join(dir, `${story.id}.mp4`);
     const esc = (p: string) => p.replace(/\\/g, "/").replace(/:/g, "\\:").replace(/'/g, "\\'");
     ffmpeg([

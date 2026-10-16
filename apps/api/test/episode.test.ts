@@ -80,3 +80,21 @@ test("without an App URL the description only teases the App, no link", () => {
   assert.doesNotMatch(teaser.description, /https?:\/\//);
   assert.match(teaser.description, /即將推出/);
 });
+
+test("English captions split by sentence and wrap on spaces without cutting words", () => {
+  const lines = splitCaptions(
+    "The moon came out. Mia whispered to the little cloud, very softly, so that nobody else in the whole sleepy town could hear her.",
+    44,
+    "en",
+  );
+  assert.equal(lines[0], "The moon came out.");
+  for (const l of lines) assert.ok(l.length <= 44, l);
+  assert.equal(lines.join(" "), "The moon came out. Mia whispered to the little cloud, very softly, so that nobody else in the whole sleepy town could hear her.");
+});
+
+test("English episode text is all English", () => {
+  const t = episodeText(story({}), "en");
+  assert.match(t.title, /Bedtime Story \| Ages 2–6$/);
+  assert.doesNotMatch(t.title + t.description, /\p{Script=Han}/u);
+  assert.doesNotMatch(t.description, /https?:\/\//);
+});
