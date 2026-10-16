@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-16T13:33:26.312Z",
+  "generatedAt": "2026-10-16T14:10:07.091Z",
   "summary": {
     "stories": 334,
     "byStatus": {
-      "ok": 243,
-      "check": 91
+      "ok": 242,
+      "check": 92
     },
     "byCheckKind": {
       "length": 254,
@@ -14,12 +14,12 @@
       "phone_number": 2
     },
     "byIssueKind": {
-      "repetition": 154,
-      "logic": 144,
+      "repetition": 155,
+      "logic": 145,
       "quality": 68,
       "taiwan_usage": 38,
       "safety": 36,
-      "age_fit": 19,
+      "age_fit": 18,
       "preachy": 28,
       "zh_en_mismatch": 89,
       "length": 4,
@@ -115,6 +115,7 @@
       "water-safety-beach-flags",
       "water-safety-flooded-ditch",
       "water-safety-pool-wait-by-towel",
+      "wind-city-kite",
       "windows-balcony-flower-pots",
       "zoo-hiccup-parade"
     ],
@@ -124,6 +125,7 @@
       "anger-red-face-pillow",
       "anger-snail-breath",
       "bedtime-routine-picture-chart",
+      "crossing-road-garbage-truck-song",
       "dentist-loose-tooth-brave-chair",
       "earthquake-museum-running-track",
       "fear-of-dark-frog-choir",
@@ -154,10 +156,9 @@
       "teamwork-the-class-play",
       "trying-food-bitter-melon-explorer",
       "trying-food-stinky-tofu-sniff",
-      "water-safety-river-picnic",
-      "wind-city-kite"
+      "water-safety-river-picnic"
     ],
-    "usd": 9.8145
+    "usd": 9.8157
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -5739,7 +5740,7 @@
       "reviewedAt": "2026-10-16T11:03:30.251Z"
     },
     "wind-city-kite": {
-      "hash": "1217fe5943821da0",
+      "hash": "f0a0d355e5a85133",
       "checks": [
         {
           "kind": "length",
@@ -5749,29 +5750,36 @@
           "note": "英文 513 words，8-10 歲 3 分鐘範圍是 380–500（太長）"
         }
       ],
+      "model": "claude-opus-5-5",
+      "usd": 0.060572,
+      "status": "check",
+      "reviewedAt": "2026-10-16T14:10:07.073Z",
       "llm": {
-        "verdict": "ok",
+        "verdict": "check",
         "issues": [
+          {
+            "kind": "repetition",
+            "severity": "medium",
+            "lang": "both",
+            "where": "0",
+            "note": "與 park-kite-wind-friend 太像：風箏一直摔、老爺爺指點、最後高飛。建議突顯修尾巴的工程主線，或換掉老人導師的設定"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "4",
+            "note": "星期四開始實驗，『接下來兩天』就到星期六風箏節了，時間對不上。改成『當天和隔天』"
+          },
           {
             "kind": "logic",
             "severity": "low",
             "lang": "both",
             "where": "6",
-            "note": "『最後一次放手』『one last try』前面沒寫節慶當天試過，讀來突兀，建議改成『用力一放』"
-          },
-          {
-            "kind": "age_fit",
-            "severity": "low",
-            "lang": "zh",
-            "where": "1",
-            "note": "『像喝醉似的左搖右晃』用醉酒比喻較不適合兒童，可改『像陀螺轉暈了似的』，與英文一致"
+            "note": "『最後一次放手』暗示當天已試過幾次，但前文沒寫。可刪掉『最後一次』，或補一句先前的嘗試"
           }
         ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.059368,
-      "status": "ok",
-      "reviewedAt": "2026-10-16T12:33:59.185Z"
+      }
     },
     "old-bookshop-cat": {
       "hash": "a44c2165ac6c013e",
@@ -10484,10 +10492,6 @@
     "snow-polar-bear-cub-fable": {
       "hash": "891c8e0001d637a5",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.047221599999999996,
-      "status": "ok",
-      "reviewedAt": "2026-10-16T13:33:26.281Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -10506,7 +10510,11 @@
             "note": "\"On the ice, always walk behind a grown-up, one step at a time\" 超過10字，可拆成兩句"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.047221599999999996,
+      "status": "ok",
+      "reviewedAt": "2026-10-16T13:33:26.281Z"
     },
     "sea-proud-seagull-fable": {
       "hash": "76f5bc6cd0b25767",
