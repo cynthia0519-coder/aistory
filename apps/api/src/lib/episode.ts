@@ -197,6 +197,9 @@ export function episodeText(story: LibraryStory, language: Language, appUrl?: st
   };
 }
 
+/** 英文頻道與 App 的品牌名 */
+const BRAND_EN = "AISTORY";
+
 const STYLE_LABEL_EN: Record<LibraryStory["style"], string> = {
   adventure: "Adventure",
   inspiring: "Inspiring",
@@ -218,14 +221,14 @@ function episodeTextEn(story: LibraryStory, appUrl?: string, credit?: string): E
   }
   lines.push(
     appUrl
-      ? `Want your child to be the hero of the story? Try "Photo Stories": ${appUrl}`
-      : `Want your child to be the hero of the story? Our "Photo Stories" app is coming soon — subscribe to hear first.`,
+      ? `Want your child to be the hero of the story? Try the ${BRAND_EN} app: ${appUrl}`
+      : `Want your child to be the hero of the story? The ${BRAND_EN} app is coming soon — subscribe to hear first.`,
     "",
     `${ages} · ${kind}`,
     "Story written with AI assistance. Music: Mureka AI (commercial license) / Narration: Microsoft Azure neural voice / Illustration: Canva AI",
   );
   if (credit) lines.push(credit);
-  const tags = ["bedtime stories", "stories for kids", "kids stories", "read aloud", kind];
+  const tags = [BRAND_EN, "bedtime stories", "stories for kids", "kids stories", "read aloud", kind];
   lines.push("", tags.map((t) => `#${t.replace(/\s/g, "")}`).join(" "));
   return {
     title: `${r.title} | ${story.theme ? `${kind} · ` : ""}Bedtime Story | ${ages}`,
