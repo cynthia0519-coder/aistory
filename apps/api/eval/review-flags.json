@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T12:34:12.762Z",
+  "generatedAt": "2026-10-16T13:33:26.312Z",
   "summary": {
     "stories": 334,
     "byStatus": {
@@ -18,9 +18,9 @@
       "logic": 144,
       "quality": 68,
       "taiwan_usage": 38,
-      "safety": 37,
-      "age_fit": 18,
-      "preachy": 27,
+      "safety": 36,
+      "age_fit": 19,
+      "preachy": 28,
       "zh_en_mismatch": 89,
       "length": 4,
       "guardrail": 4
@@ -157,7 +157,7 @@
       "water-safety-river-picnic",
       "wind-city-kite"
     ],
-    "usd": 9.8125
+    "usd": 9.8145
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -5749,10 +5749,6 @@
           "note": "英文 513 words，8-10 歲 3 分鐘範圍是 380–500（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.059368,
-      "status": "ok",
-      "reviewedAt": "2026-10-16T12:33:59.185Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5771,7 +5767,11 @@
             "note": "『像喝醉似的左搖右晃』用醉酒比喻較不適合兒童，可改『像陀螺轉暈了似的』，與英文一致"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.059368,
+      "status": "ok",
+      "reviewedAt": "2026-10-16T12:33:59.185Z"
     },
     "old-bookshop-cat": {
       "hash": "a44c2165ac6c013e",
@@ -10482,21 +10482,28 @@
       "reviewedAt": "2026-10-16T11:06:39.276Z"
     },
     "snow-polar-bear-cub-fable": {
-      "hash": "ea4f0c7724812d9b",
+      "hash": "891c8e0001d637a5",
       "checks": [],
       "model": "claude-opus-5-5",
-      "usd": 0.0452496,
+      "usd": 0.047221599999999996,
       "status": "ok",
-      "reviewedAt": "2026-10-16T12:34:12.750Z",
+      "reviewedAt": "2026-10-16T13:33:26.281Z",
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "safety",
+            "kind": "preachy",
             "severity": "low",
             "lang": "both",
             "where": "6",
-            "note": "「熊爸爸敲一敲冰面…可以放心了」暗示敲冰能判斷安全，可淡化成「大家跟著爸爸走在厚冰上」"
+            "note": "熊爸爸「在冰上，要跟著大人一步一步走喔」像插入的規則宣導，且他自己剛走上薄冰，可刪或改成自然動作"
+          },
+          {
+            "kind": "age_fit",
+            "severity": "low",
+            "lang": "en",
+            "where": "6",
+            "note": "\"On the ice, always walk behind a grown-up, one step at a time\" 超過10字，可拆成兩句"
           }
         ]
       }
