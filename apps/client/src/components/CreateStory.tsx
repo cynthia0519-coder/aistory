@@ -87,11 +87,15 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPr
   const ageBand = hero ? ageBandFor(hero.age) : pickedAgeBand;
   const [style, setStyle] = useState<StoryStyle>("adventure");
   const [length, setLength] = useState<StoryLength>("3min");
+  const [showOptions, setShowOptions] = useState(false);
   // 只列出即時 AI 可以寫的主題（生活習慣、情緒、品格），而且要符合目前的年齡層；
   // 換了年齡層、原本選的主題不適用時就當作沒選
   const themeOptions = aiThemesFor(ageBand);
   const [pickedTheme, setTheme] = useState<ThemeId | null>(null);
   const theme = pickedTheme && themeOptions.includes(pickedTheme) ? pickedTheme : null;
+  const optionsSummary = [AGE_RULES[ageBand].label, STYLE_RULES[style].label, theme ? THEMES[theme].label.zh : null, LENGTH_RULES[length].label]
+    .filter(Boolean)
+    .join("・");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -173,6 +177,37 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPr
       </header>
 
       <div className="flex flex-col gap-6 px-4 pt-3">
+        <div className="flex flex-col gap-2">
+          {hero ? (
+            <button
+              type="button"
+              onClick={onEditHero}
+              aria-label={`故事主角：${hero.name}，${heroSummary(hero)}。點一下更換`}
+              className="flex items-center gap-4 rounded-2xl bg-card p-3 text-left ring-2 ring-line"
+            >
+              <HeroAvatar look={lookOf(hero)} size={56} variant="bust" className="shrink-0" />
+              <span className="flex min-w-0 flex-col">
+                <span className="truncate font-display text-xl font-bold">{hero.name}</span>
+                <span className="text-sm text-ink-soft">{heroSummary(hero)} · 點一下更換</span>
+              </span>
+            </button>
+          ) : (
+            <button
+              type="button"
+              onClick={onEditHero}
+              className="flex items-center gap-4 rounded-2xl border-2 border-dashed border-line bg-card/60 p-3 text-left"
+            >
+              <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-paper-deep text-rust">
+                <PlusIcon className="h-6 w-6" />
+              </span>
+              <span className="flex flex-col">
+                <span className="font-display text-xl font-bold">設定主角（選填）</span>
+                <span className="text-sm text-ink-soft">讓小朋友變成故事裡的主角</span>
+              </span>
+            </button>
+          )}
+        </div>
+
         <label
           className="block cursor-pointer"
           onClick={(e) => {
@@ -276,6 +311,91 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPr
           </Dialog>
         )}
 
+        <div className="flex flex-col gap-4">
+          <button
+            type="button"
+            aria-expanded={showOptions}
+            onClick={() => setShowOptions((v) => !v)}
+            className="flex items-center justify-between gap-3 rounded-2xl bg-card px-4 py-3 text-left ring-2 ring-line"
+          >
+            <span className="flex min-w-0 flex-col">
+              <span className="text-xs font-bold text-ink-soft">故事設定</span>
+              <span className="truncate font-bold">{optionsSummary}</span>
+            </span>
+            <span className="shrink-0 text-sm font-bold text-teal">{showOptions ? "收起" : "調整"}</span>
+          </button>
+          {showOptions && (
+            <div className="flex flex-col gap-6">
+            {!hero && (
+              <fieldset className="flex flex-col gap-2">
+                <SectionTitle as="legend">小朋友幾歲</SectionTitle>
+                <div className="grid grid-cols-4 gap-2">
+                  {AGE_BANDS.map((a) => (
+                    <Chip key={a} active={ageBand === a} onClick={() => setAgeBand(a)}>
+                      {AGE_RULES[a].label}
+                    </Chip>
+                  ))}
+                </div>
+              </fieldset>
+            )}
+
+            <fieldset className="flex flex-col gap-2">
+              <SectionTitle as="legend">想聽哪一種故事</SectionTitle>
+              <div className="grid grid-cols-2 gap-2">
+                {STORY_STYLES.map((s) => (
+                  <button
+                    key={s}
+                    type="button"
+                    aria-pressed={style === s}
+                    onClick={() => setStyle(s)}
+                    className={`flex h-16 items-center gap-3 rounded-2xl px-3 text-left last:odd:col-span-2 ${
+                      style === s ? "bg-rust text-card" : "bg-card text-ink ring-2 ring-line"
+                    }`}
+                  >
+                    <span className={`h-8 w-8 shrink-0 rounded-full ${STYLE_DOT[s]}`} />
+                    <span className="flex flex-col">
+                      <span className="font-bold">{STYLE_RULES[s].label}</span>
+                      <span className="text-xs opacity-80">{STYLE_RULES[s].hint}</span>
+                    </span>
+                  </button>
+                ))}
+              </div>
+            </fieldset>
+
+            <fieldset className="flex min-w-0 flex-col gap-2">
+              <SectionTitle as="legend">想聊的主題（選填）</SectionTitle>
+              <p className="-mt-2 text-xs text-ink-soft">故事會自然帶到這件事，最後附上給爸媽的聊天卡</p>
+              <div className="-mx-4 flex gap-2 overflow-x-auto px-4 py-1 [scrollbar-width:none]">
+                <ThemeChip active={theme === null} onClick={() => setTheme(null)}>
+                  不用
+                </ThemeChip>
+                {themeOptions.map((t) => (
+                  <ThemeChip key={t} active={theme === t} onClick={() => setTheme(t)}>
+                    {THEMES[t].label.zh}
+                  </ThemeChip>
+                ))}
+              </div>
+            </fieldset>
+
+            <fieldset className="flex flex-col gap-2">
+              <SectionTitle as="legend">故事要講多久</SectionTitle>
+              <div className="grid grid-cols-2 gap-2">
+                {STORY_LENGTHS.map((l) => (
+                  <Chip key={l} active={length === l} onClick={() => setLength(l)}>
+                    {LENGTH_RULES[l].label}
+                  </Chip>
+                ))}
+              </div>
+            </fieldset>
+            </div>
+          )}
+        </div>
+
+        {error && <p className="rounded-2xl bg-rust/10 p-3 text-rust-dark">{error}</p>}
+
+        <PrimaryButton disabled={!file || loading} onClick={submit}>
+          開始編故事
+        </PrimaryButton>
         <button
           type="button"
           onClick={onBrowseLibrary}
@@ -283,106 +403,6 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPr
         >
           不想拍照？從故事庫挑一個
         </button>
-
-        <div className="flex flex-col gap-2">
-          <SectionTitle>故事主角</SectionTitle>
-          {hero ? (
-            <button
-              type="button"
-              onClick={onEditHero}
-              aria-label={`故事主角：${hero.name}，${heroSummary(hero)}。點一下更換`}
-              className="flex items-center gap-4 rounded-2xl bg-card p-3 text-left ring-2 ring-line"
-            >
-              <HeroAvatar look={lookOf(hero)} size={56} variant="bust" className="shrink-0" />
-              <span className="flex min-w-0 flex-col">
-                <span className="truncate font-display text-xl font-bold">{hero.name}</span>
-                <span className="text-sm text-ink-soft">{heroSummary(hero)} · 點一下更換</span>
-              </span>
-            </button>
-          ) : (
-            <button
-              type="button"
-              onClick={onEditHero}
-              className="flex items-center gap-4 rounded-2xl border-2 border-dashed border-line bg-card/60 p-3 text-left"
-            >
-              <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-paper-deep text-rust">
-                <PlusIcon className="h-6 w-6" />
-              </span>
-              <span className="flex flex-col">
-                <span className="font-display text-xl font-bold">設定主角（選填）</span>
-                <span className="text-sm text-ink-soft">讓小朋友變成故事裡的主角</span>
-              </span>
-            </button>
-          )}
-        </div>
-
-        {!hero && (
-          <fieldset className="flex flex-col gap-2">
-            <SectionTitle as="legend">小朋友幾歲</SectionTitle>
-            <div className="grid grid-cols-4 gap-2">
-              {AGE_BANDS.map((a) => (
-                <Chip key={a} active={ageBand === a} onClick={() => setAgeBand(a)}>
-                  {AGE_RULES[a].label}
-                </Chip>
-              ))}
-            </div>
-          </fieldset>
-        )}
-
-        <fieldset className="flex flex-col gap-2">
-          <SectionTitle as="legend">想聽哪一種故事</SectionTitle>
-          <div className="grid grid-cols-2 gap-2">
-            {STORY_STYLES.map((s) => (
-              <button
-                key={s}
-                type="button"
-                aria-pressed={style === s}
-                onClick={() => setStyle(s)}
-                className={`flex h-16 items-center gap-3 rounded-2xl px-3 text-left last:odd:col-span-2 ${
-                  style === s ? "bg-rust text-card" : "bg-card text-ink ring-2 ring-line"
-                }`}
-              >
-                <span className={`h-8 w-8 shrink-0 rounded-full ${STYLE_DOT[s]}`} />
-                <span className="flex flex-col">
-                  <span className="font-bold">{STYLE_RULES[s].label}</span>
-                  <span className="text-xs opacity-80">{STYLE_RULES[s].hint}</span>
-                </span>
-              </button>
-            ))}
-          </div>
-        </fieldset>
-
-        <fieldset className="flex min-w-0 flex-col gap-2">
-          <SectionTitle as="legend">想聊的主題（選填）</SectionTitle>
-          <p className="-mt-2 text-xs text-ink-soft">故事會自然帶到這件事，最後附上給爸媽的聊天卡</p>
-          <div className="-mx-4 flex gap-2 overflow-x-auto px-4 py-1 [scrollbar-width:none]">
-            <ThemeChip active={theme === null} onClick={() => setTheme(null)}>
-              不用
-            </ThemeChip>
-            {themeOptions.map((t) => (
-              <ThemeChip key={t} active={theme === t} onClick={() => setTheme(t)}>
-                {THEMES[t].label.zh}
-              </ThemeChip>
-            ))}
-          </div>
-        </fieldset>
-
-        <fieldset className="flex flex-col gap-2">
-          <SectionTitle as="legend">故事要講多久</SectionTitle>
-          <div className="grid grid-cols-2 gap-2">
-            {STORY_LENGTHS.map((l) => (
-              <Chip key={l} active={length === l} onClick={() => setLength(l)}>
-                {LENGTH_RULES[l].label}
-              </Chip>
-            ))}
-          </div>
-        </fieldset>
-
-        {error && <p className="rounded-2xl bg-rust/10 p-3 text-rust-dark">{error}</p>}
-
-        <PrimaryButton disabled={!file || loading} onClick={submit}>
-          開始編故事
-        </PrimaryButton>
       </div>
     </div>
   );
