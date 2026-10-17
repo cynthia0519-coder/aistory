@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T14:10:07.091Z",
+  "generatedAt": "2026-10-17T11:57:32.169Z",
   "summary": {
     "stories": 334,
     "byStatus": {
@@ -15,7 +15,7 @@
     },
     "byIssueKind": {
       "repetition": 155,
-      "logic": 145,
+      "logic": 143,
       "quality": 68,
       "taiwan_usage": 38,
       "safety": 36,
@@ -158,7 +158,7 @@
       "trying-food-stinky-tofu-sniff",
       "water-safety-river-picnic"
     ],
-    "usd": 9.8157
+    "usd": 9.8256
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -5750,10 +5750,6 @@
           "note": "英文 513 words，8-10 歲 3 分鐘範圍是 380–500（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.060572,
-      "status": "check",
-      "reviewedAt": "2026-10-16T14:10:07.073Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -5779,7 +5775,11 @@
             "note": "『最後一次放手』暗示當天已試過幾次，但前文沒寫。可刪掉『最後一次』，或補一句先前的嘗試"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.060572,
+      "status": "check",
+      "reviewedAt": "2026-10-16T14:10:07.073Z"
     },
     "old-bookshop-cat": {
       "hash": "a44c2165ac6c013e",
@@ -7620,23 +7620,27 @@
       "reviewedAt": "2026-10-16T11:05:19.578Z"
     },
     "park-kite-wind-friend": {
-      "hash": "88921bf2341ab7d8",
+      "hash": "1e29164619d5c05d",
       "checks": [
         {
           "kind": "length",
-          "severity": "low",
+          "severity": "medium",
           "lang": "zh",
           "where": "story",
-          "note": "中文 657 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+          "note": "中文 669 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         },
         {
           "kind": "length",
           "severity": "low",
           "lang": "en",
           "where": "story",
-          "note": "英文 401 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+          "note": "英文 411 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
+      "model": "claude-opus-5-5",
+      "usd": 0.062516,
+      "status": "check",
+      "reviewedAt": "2026-10-17T11:57:32.148Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -7644,15 +7648,8 @@
             "kind": "repetition",
             "severity": "medium",
             "lang": "both",
-            "where": "4",
-            "note": "與 wind-city-kite 太像：風箏一直掉、年長鄰居指導、最後一次終於飛高。建議換成不同的解法或情節"
-          },
-          {
-            "kind": "logic",
-            "severity": "medium",
-            "lang": "both",
-            "where": "4",
-            "note": "林爺爺的老鷹還在天上，卻雙手幫{name}舉風箏，線由誰拿？補一句「把老鷹線綁在長椅上」或交給媽媽"
+            "where": "1",
+            "note": "與 wind-city-kite 主線相近：風箏一直掉、年長鄰居指導、最後一次飛上天。建議改變解法或加入不同元素"
           },
           {
             "kind": "logic",
@@ -7662,25 +7659,14 @@
             "note": "「媽媽走過來，坐在{name}旁邊」，但{name}正站著放風箏，改成「站在{name}旁邊」"
           },
           {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "3",
-            "note": "「背對著風」後又往前跑，等於順風跑，風箏較難升起。可改成背對風站好、拉線往後退"
-          },
-          {
             "kind": "zh_en_mismatch",
             "severity": "low",
-            "lang": "en",
-            "where": "2",
-            "note": "中文媽媽說「林爺爺好」，英文只寫 Mom waved back，可補上 \"Hello, Grandpa Lin\""
+            "lang": "zh",
+            "where": "guide",
+            "note": "中文「對著小手吹氣」沒寫輪流吹對方的手，和英文 take turns 不一致，改成「輪流輕輕對彼此的小手吹氣」"
           }
         ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.0525896,
-      "status": "check",
-      "reviewedAt": "2026-10-16T11:05:37.147Z"
+      }
     },
     "home-rainy-day-cardboard-ship": {
       "hash": "aa3dbdbe6c7c6eb5",
