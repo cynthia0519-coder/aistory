@@ -43,3 +43,6 @@ next-env.d.ts
 !.env.example
 /apps/*/.next/
 /apps/*/out/
+/apps/api/eval/results/
+/apps/api/out/
+/apps/api/scripts/assets/*.ttf
