@@ -9728,7 +9728,7 @@
         "tip": "After lights out, take turns whispering three clues about a sea creature from the story and let the other person guess who it is. Tomorrow, draw your own \"detective notebook\" page together."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "wind-city-kite",
@@ -12591,7 +12591,7 @@
         "林爺爺先把老鷹的線綁在長椅上，再幫{name}舉著風箏。他站在幾步遠的地方。「等一陣大一點的風。」林爺爺說，「風來了，你就跑。」{name}等呀等，等呀等。樹葉開始嘩嘩搖動了。「就是現在！」{name}拔腿就跑。風箏飛起來了，可是飛不高。它又慢慢落回草地上。",
         "「沒關係，再試一次。」林爺爺說。{name}點點頭，又跑了一次。然後，再跑一次。有一次跑得太早，有一次跑得太慢。{name}跑得氣喘吁吁，可是沒有放棄。媽媽在長椅上拍手：「{name}，加油！你越來越厲害了！」{name}深深吸一口氣，又走回起點。",
         "這一次，{name}先安靜聽風。樹葉搖起來，草地沙沙響。「一、二、三！」{name}用力往前跑。風把風箏輕輕托起來。風箏越飛越高，越飛越高！林爺爺說：「慢慢放線，線鬆了就輕輕拉。」{name}照著做。紅色小魚游上了藍天。",
-        "線在{his}小手裡一動一動的。好像風在跟{name}握手。又像好朋友拉著{him}一起玩。「林爺爺，風在跟我玩！」{name}開心地大喊。林爺爺的老鷹飛過來，陪著紅色小魚。媽媽走過來，坐在{name}旁邊。大家一起抬頭，看兩個風箏在天上跳舞。"
+        "線在{his}小手裡一動一動的。好像風在跟{name}握手。又像好朋友拉著{him}一起玩。「林爺爺，風在跟我玩！」{name}開心地大喊。林爺爺的老鷹飛過來，陪著紅色小魚。媽媽走過來，站在{name}旁邊。大家一起抬頭，看兩個風箏在天上跳舞。"
       ],
       "en": [
         "It was a warm Saturday morning. {name} and Mom went to the park. {name} hugged a brand-new kite. It was red, like a little fish. Its long tail had blue ribbons. \"Today my kite will fly!\" {name} said. Mom smiled and sat on a bench nearby.",
@@ -12601,7 +12601,7 @@
         "Grandpa Lin tied his eagle kite's string to the bench. Then he held the kite up for {name}. He stood a few steps away. \"Wait for a strong gust,\" he said. \"When it comes, run!\" {name} waited and waited. The leaves began to rustle. \"Now!\" {name} dashed off. The kite rose, but not very high. Slowly, it drifted back down.",
         "\"That's okay. Try again,\" said Grandpa Lin. {name} nodded and ran again. And again. Once {name} ran too early. Once {name} ran too late. {name} was puffing hard but kept going. Mom clapped from the bench. \"You're getting better, {name}!\" {name} took a deep breath and walked back.",
         "This time, {name} listened first. The leaves shook. The grass whispered. \"One, two, three!\" {name} ran with all {his} might. The wind lifted the kite gently. Up, up, up it went! \"Let out the string slowly,\" said Grandpa Lin. \"Tug it if it gets loose.\" Soon the red fish swam across the blue sky.",
-        "The string wiggled in {his} hands. It felt like the wind was shaking hands. It felt like a friend tugging, saying, \"Come play!\" \"Grandpa Lin, the wind is playing with me!\" {name} shouted. The eagle kite flew close to the little fish. Mom came over and sat beside {name}. Together they watched two kites dance in the sky."
+        "The string wiggled in {his} hands. It felt like the wind was shaking hands. It felt like a friend tugging, saying, \"Come play!\" \"Grandpa Lin, the wind is playing with me!\" {name} shouted. The eagle kite flew close to the little fish. Mom came over and stood beside {name}. Together they watched two kites dance in the sky."
       ]
     },
     "guide": {
@@ -12611,7 +12611,7 @@
           "閉上眼睛聽風的時候，你猜會聽到什麼聲音？",
           "如果你也有一個風箏，你想要它長成什麼樣子？"
         ],
-        "tip": "今晚關燈前，和孩子一起閉上眼睛，輕輕對著小手吹氣，猜猜「風」是從哪一邊來的。"
+        "tip": "今晚關燈前，和孩子一起閉上眼睛，輪流輕輕對彼此的小手吹氣，猜猜「風」是從哪一邊來的。"
       },
       "en": {
         "questions": [
@@ -12622,7 +12622,7 @@
         "tip": "Before lights out tonight, close your eyes together and take turns gently blowing on each other's hands, guessing which side the \"wind\" is coming from."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "home-rainy-day-cardboard-ship",
