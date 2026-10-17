@@ -49,7 +49,7 @@
         "tip": "After the lights go off, whisper goodnight together, starting with the moon and stars and ending with the pillow and blanket in the room."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "leaf-map-in-the-forest",
@@ -152,7 +152,7 @@
         "tip": "Tonight after the lights go off, take turns softly saying goodnight to things in the room, like \"Goodnight, pillow,\" and end with \"Goodnight, Moon.\""
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "whispering-snow-library",
@@ -204,7 +204,7 @@
         "tip": "After the lights go out tonight, take turns whispering a dream you'd put in the Dream Library, then give it a shelf name together, like \"Soft and Fluffy Dreams.\""
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "zoo-hiccup-parade",
@@ -517,7 +517,7 @@
         "tip": "Before lights out, take turns whispering about one small treasure you each love and guess why the other one likes it; tomorrow, draw your own family treasure map together."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "crossing-road-little-green-man",
@@ -1331,7 +1331,7 @@
         "tip": "This week, sit together and practice finding the Block and Report buttons in a game or app your child uses, and agree on a family phrase like \"Something feels weird, can you look?\""
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "swimsuit-rule-whale-swimsuit",
@@ -2251,7 +2251,7 @@
         "tip": "Tonight, play Sleepy Train together: say \"Toot toot! Next stop!\" at each bedtime step, and switch off all screens together before the train leaves."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "bedtime-routine-moon-steps",
@@ -3288,7 +3288,7 @@
         "tip": "This week, practice the phrase \"I have something to tell you.\" When your child tells the truth, hug them and thank them for being brave before solving the problem together."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "bullying-lunch-table",
@@ -4156,7 +4156,7 @@
         "tip": "This week, walk around your home together, pick the sturdiest table, and practice Drop, Cover, Hold On: get low, crawl under, hold on to a table leg, and stay there until the shaking stops."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "earthquake-go-bag-captain",
@@ -5615,7 +5615,7 @@
         "tip": "Tonight, make crocodile smiles together in the mirror and say \"Snap, snap, little circles round and round\" while your child brushes. Then take a turn to finish the far-back teeth."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "brushing-teeth-campsite-sink",
@@ -7227,7 +7227,7 @@
         "tip": "This week, at bath time or clean-up time, play \"Dinosaur Stomp\" together: stomp three times, take three big breaths, then say \"I'm angry because...\". Practice when everyone is calm so it is easier to use when anger feels big."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "anger-paper-crown",
@@ -8932,7 +8932,7 @@
         "tip": "Tonight in bed, tap soft little raindrops on the blanket with your fingers, getting quieter and quieter together until the rain stops."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "baby-blue-magpie",
@@ -9197,7 +9197,7 @@
         "tip": "Tonight, after the lights go off, whisper \"Goodnight, rabbit. Goodnight, moon\" together, then share a soft cuddle."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "tea-hill-hide-and-seek",
@@ -9303,7 +9303,7 @@
         "tip": "Before lights out tonight, whisper \"Good job today, goodnight\" to a favorite stuffed toy together with {name}, then quietly share your favorite part of the story."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "night-bus-of-lost-umbrellas",
@@ -9410,7 +9410,7 @@
         "tip": "After lights out tonight, play a whispery forest detective game: one person softly describes an animal's paw prints or spots, and the other guesses who it is with eyes closed."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "firefly-valley-lanterns",
@@ -9463,7 +9463,7 @@
         "tip": "After the lights go out, snuggle under the blanket and take turns whispering a forest sound for the other to guess. Then say together, softly, \"Goodnight, fireflies.\""
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "lighthouse-keepers-cat",
@@ -9677,7 +9677,7 @@
         "tip": "Snuggle up and whisper about what you would grow if you had a little garden of your own, then draw it together tomorrow."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "tide-pool-detectives",
@@ -10034,7 +10034,7 @@
         "tip": "Tonight after lights out, lie side by side and tap a slow, wave-like rhythm on the blanket with your fingers, letting it get softer and slower together."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "water-safety-pool-wait-by-towel",
@@ -11109,7 +11109,7 @@
         "tip": "Tonight, play a quick game of practicing a big, loud \"No!\" and running to you, then name together the grown-ups you've agreed your child may go with."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "strangers-password-word",
@@ -11271,7 +11271,7 @@
         "tip": "At dinner tonight, say together, \"Wait a bit, let's blow together,\" and start eating only after a grown-up says it's cool. You can also walk around the kitchen and practice \"step back and call a grown-up\" near hot things."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "sockets-robot-socket-covers",
@@ -11598,7 +11598,7 @@
         "tip": "This week, make a little \"typhoon kit\" together with a flashlight, a bottle of water, and a favorite book, and practice saying, \"We go out only when a grown-up says it's safe.\""
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "crossing-road-zebra-stripes",
@@ -11652,7 +11652,7 @@
         "tip": "This week, play the \"Mr. Zebra\" game outside: hold hands from the moment you leave the door, and at every curb say together, \"Stop, look left, look right, look left, listen,\" then wait for the little green man."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "getting-lost-aquarium-tunnel",
@@ -12885,7 +12885,7 @@
         "tip": "After the lights are off tonight, make soft wave sounds together with {name}, \"hush, hush,\" a little slower and quieter each time. Then whisper one small story about a grown-up in your family when they were young."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "zoo-baby-tapir-name",
@@ -13639,7 +13639,7 @@
         "tip": "This week at bedtime, take turns sharing one small thing you each did today even though it felt a little scary. Practice the phrase together: \"I feel scared, but I can ask someone to try it with me.\""
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "courage-starfish-float",
@@ -16976,7 +16976,7 @@
         "tip": "Tonight after lights out, play the quiet game together: whisper three tiny sounds you hear, then slowly count to ten."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "trying-food-steamed-fish-bones",
@@ -17192,7 +17192,7 @@
         "tip": "This week, play a \"throw the float\" game at home with a pillow and a towel: shout \"Grown-up, come quick!\" first, then toss the pillow. Before any water trip, say your promise together: \"A grown-up watches, then I get in.\""
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "crossing-road-school-crossing-guard",
@@ -17246,7 +17246,7 @@
         "tip": "This week, whenever you reach a curb together, stop and chant \"Left, right, left again, ears listening,\" then hold hands and wait for the green walking light."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "earthquake-kindergarten-drill-song",
@@ -17300,7 +17300,7 @@
         "tip": "Tonight, play a \"Drop, Cover, Hold On\" game: call out the steps while your child crawls under a sturdy table, covers head and neck, and holds a table leg. Then find a safe spot at home away from windows together."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "getting-lost-supermarket-meeting-spot",
@@ -17354,7 +17354,7 @@
         "tip": "Tonight, turn your phone number into a clapping chant: split it into three short parts and say it together with a clap. Practice it once each night before bed."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "anger-red-face-pillow",
@@ -17411,7 +17411,7 @@
         "tip": "Tonight, draw a blue-yellow-red anger thermometer together and hang it on the wall. Practice 'smell the flower, blow the candle' to six, then try saying, 'I'm angry because…'."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "sharing-turns-one-red-tricycle",
@@ -17519,7 +17519,7 @@
         "tip": "Play a close-your-eyes touch-and-guess game in your child's room today with the blanket, a cuddly toy and things by the bed. Tonight after lights out, invite your child to reach out and find them again."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "losing-failing-spelling-bee",

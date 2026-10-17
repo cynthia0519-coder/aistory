@@ -28,7 +28,7 @@ if (argv.includes("--list")) {
 const fileAt = argv.indexOf("--file");
 const ids = [
   ...(fileAt >= 0 ? readFileSync(argv[fileAt + 1], "utf8").split(/\s+/) : []),
-  ...argv.filter((a, i) => !a.startsWith("--") && i !== fileAt + 1).flatMap((a) => a.split(",")),
+  ...argv.filter((a, i) => !a.startsWith("--") && (fileAt < 0 || i !== fileAt + 1)).flatMap((a) => a.split(",")),
 ].filter(Boolean);
 if (!ids.length) {
   console.error("要給故事 id，例如：npm run library:publish -w @aistory/api -- first-day-paper-boat");
