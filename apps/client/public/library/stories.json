@@ -101,7 +101,7 @@
         "tip": "After lights out, use your finger to gently \"draw\" a twisty path and an X on your child's back, and let your child whisper a guess about where the map leads. Then switch and let your child draw one for you."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "lantern-for-the-moon",
@@ -414,7 +414,7 @@
         "tip": "Tonight in bed, take ten slow breaths together, and with each one, whisper one little thing you saw or heard today."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "the-puddle-that-was-a-sea",
@@ -735,7 +735,7 @@
         "tip": "This week, play a daily \"phone number relay,\" taking turns saying each digit of your phone number until your child can recite it all alone."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "earthquake-turtle-drill",
@@ -2305,7 +2305,7 @@
         "tip": "Tonight, draw little picture cards of the bedtime steps together (bath, pajamas, teeth, story, lights low). After each step, say \"Done!\" to the moon outside."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "bedtime-routine-mountain-lodge",
@@ -2359,7 +2359,7 @@
         "tip": "Tonight, draw a bedtime-steps chart together: bath, pajamas, teeth, story, lights low. Point to each step as you finish it, and bring the chart along when you travel."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "trying-food-bitter-melon-explorer",
@@ -3124,7 +3124,7 @@
         "tip": "Tonight after lights out, play a short flashlight shadow hunt and say goodnight to things in the room. Agree that if your child calls, a grown-up will come."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "losing-failing-leaf-boat-race",
@@ -3778,7 +3778,7 @@
         "tip": "This week, at every corner, say together softly, \"Stop, look left, look right, left again, listen,\" then wait for the green walking light and cross holding hands."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "crossing-road-yellow-umbrella",
@@ -3886,7 +3886,7 @@
         "tip": "This week, play the explorer game on walks: at every curb, hold hands and say together \"Stop, left, right, left, listen,\" then cross only when the green walking man lights up."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "getting-lost-zoo-penguins",
@@ -4102,7 +4102,7 @@
         "tip": "This week, play the \"little turtle game\": when you call \"Earthquake!\", your child drops under a sturdy table, covers head and neck, holds a table leg, and counts to ten with you. Then look around together for the sturdiest table and the spot farthest from windows."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "earthquake-library-shelves",
@@ -5669,7 +5669,7 @@
         "tip": "Tonight, sing \"Ribbit, brush time!\" while your child brushes in little circles, then help finish and cheer, \"Sugar bugs, bye-bye!\""
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "brushing-teeth-grandpa-birdsong",
@@ -5993,7 +5993,7 @@
         "tip": "Tonight, after the TV and phones go off, walk around the house together and say goodnight to the TV, the toothbrush, and the moon. Doing the same steps in the same order each night helps your child settle into sleep."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "bedtime-routine-picture-chart",
@@ -6047,7 +6047,7 @@
         "tip": "Tonight, draw a bedtime chart together and cut out a paper star for your child to move after each step. Before bath time, say \"Goodnight, screens!\" together as you switch them off."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "bedtime-routine-tablet-under-blanket",
@@ -6101,7 +6101,7 @@
         "tip": "Set up a family \"sleepy charging basket\" tonight, and before bath time, put tablets and phones in it together while saying, \"Goodnight, tablet.\""
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "bedtime-routine-rooftop-stars",
@@ -6155,7 +6155,7 @@
         "tip": "Tonight, draw a little 'five bedtime steps' card together and put it by the bed; say each step's name softly as you finish it."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "trying-food-dragon-fruit-dots",
@@ -6587,7 +6587,7 @@
         "tip": "This week, play \"doctor visit\" with your child, taking turns as doctor and patient, and practice counting \"one, two, three\" while giving a big hand squeeze."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "dentist-fluoride-tooth-paint",
@@ -6641,7 +6641,7 @@
         "tip": "Tonight at brushing time, count your child's teeth together and play a 'raise your hand' game: when your child raises a hand, you stop and wait."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "dentist-wiggly-first-tooth",
@@ -7335,7 +7335,7 @@
         "tip": "Tonight, practice \"volcano breathing\" together: breathe in slowly, breathe out slowly, and count to ten. Then take turns finishing the sentence \"I'm angry because…\" about something small."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "anger-basketball-call",
@@ -7389,7 +7389,7 @@
         "tip": "This week, practice \"balloon breathing\" together: open your hands like a balloon as you breathe in, close them as you breathe out, and count to ten. Once your child feels calm, invite them to share their feelings with \"I'm angry because...\""
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "new-sibling-stroller-helper",
@@ -7767,7 +7767,7 @@
         "tip": "Tonight after lights-out, play a quick 'still here' game: shine a night-light around the room and name each thing together ('The chair is still here, Teddy is still here'), then listen for one night sound and guess what it is."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "fear-of-dark-frog-choir",
@@ -7821,7 +7821,7 @@
         "tip": "Tonight before lights-out, take a flashlight tour of the room together, shining on familiar things and saying \"still there.\" Then let your child pick a cuddly toy and a night light to keep them company."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "losing-failing-musical-chairs",
@@ -8247,7 +8247,7 @@
         "tip": "This week, practice one simple phrase together: \"That's not funny. Let's stop.\" Then agree that whenever your child sees something hurtful online or at school, they can show you anytime, and you'll figure it out together."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "bullying-picking-teams",
@@ -8513,7 +8513,7 @@
         "tip": "Tonight, turn your phone number into a little song with your child and sing it once every night before bed until they can say it on their own. Before your next outing, agree on a plan together: if we get separated, stop and stay put, and ask a worker in uniform for help."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "honesty-lost-eraser",
@@ -8619,7 +8619,7 @@
         "tip": "Tonight, play an earthquake drill game: when you call \"Shake!\", your child drops, crawls under a sturdy table, and holds on to a leg while counting to twenty. Then find together the safest spot in your home, away from windows and tall shelves."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "losing-failing-piano-recital",
@@ -8985,7 +8985,7 @@
         "tip": "Tonight in bed, whisper \"kak-kak, kak-kak\" together, then make soft, slow wings with your hands and fly the baby bird home to sleep."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "goodnight-sleepy-train",
@@ -9038,7 +9038,7 @@
         "tip": "Before lights out, whisper goodnight together to things in the room, like \"Goodnight, pillow\" and \"Goodnight, teddy,\" then give the blanket a soft pat, pat."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "little-turtle-moon-path",
@@ -9091,7 +9091,7 @@
         "tip": "After lights out, slowly crawl your fingers across {his} back and whisper, \"Crawl, crawl, swish, swish,\" then softly count the tiny tracks together: one, two, three. End with a quiet \"Shh, shh, goodnight.\""
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "cloud-sheep-on-the-mountain",
@@ -9144,7 +9144,7 @@
         "tip": "Tonight, with the lights off, cuddle up, close your eyes together, and whisper-count pretend cloud sheep very slowly, one, two, three, until someone gets sleepy."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "rabbit-in-the-moon",
@@ -9356,7 +9356,7 @@
         "tip": "Tonight after lights out, take turns whispering as a little object in your home and telling what it \"saw\" today, while the other guesses who is talking."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "leopard-cat-footprints",
@@ -9571,7 +9571,7 @@
         "tip": "After lights out tonight, take turns whispering a little detective riddle, like \"I'm thinking of something round in this room,\" and let the other person guess while snuggled under the covers."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "temple-lion-dance-drum",
@@ -9881,7 +9881,7 @@
         "tip": "After lights out tonight, close your eyes together and take turns whispering one sentence of a new turtle-and-rabbit star story, passing it back and forth until someone gets sleepy."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "whale-song-of-hualien",
@@ -10351,7 +10351,7 @@
         "tip": "Before lights out, gently trace a bear paw print or a few claw marks on your child's palm and let them whisper which clue from the story it is, then swap turns. Tomorrow, you could draw the mother bear and her cub on their walk together."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "losing-failing-calligraphy-blot",
@@ -10784,7 +10784,7 @@
         "tip": "Tonight, play the \"three deep breaths\" game: smell a flower, blow out a candle, breathe out slowly. Practice it together before your next doctor visit."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "dentist-counting-teeth-crocodile",
@@ -10838,7 +10838,7 @@
         "tip": "Tonight at brushing time, play dentist: use a spoon as a mirror to count teeth together, and practice raising a hand for a break while you stop and wait right away."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "dentist-wiggly-tooth",
@@ -11924,7 +11924,7 @@
         "tip": "Tonight, before lights out, name three things in the room together, then whisper \"they're all still here\" in the dark. You can also play a one-minute hand shadow game with a flashlight."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "fear-of-dark-night-hike-stars",
@@ -11978,7 +11978,7 @@
         "tip": "Tonight before bed, play \"Ten Brave Seconds\": hold hands, switch off the light, count to ten, then name three things still in the room together."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "honesty-broken-vase-glue",
@@ -12141,7 +12141,7 @@
         "tip": "This week, practice one sentence together: \"Teacher, I need help. Someone keeps being picked on.\" Then list three grown-ups at school and at home your child can go to for help."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "bullying-group-chat-buddy",
@@ -12356,7 +12356,7 @@
         "tip": "Tonight, snuggled in bed, take turns gently drawing a six-pointed snowflake on each other's palm with a finger, then whisper your favourite part of the story."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "zoo-night-keeper",
@@ -12462,7 +12462,7 @@
         "tip": "At bedtime, let your fingers be the mail snail and creep slowly across {his} hand and back, whispering \"Knock, knock! A letter for you!\" Then deliver a goodnight cuddle."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "night-sky-paper-rocket",
@@ -12676,7 +12676,7 @@
         "tip": "Tonight, hug a favourite toy and pretend the bed is a little boat. Whisper \"whoosh, whoosh\" together and slowly sail off to sleep."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "mountain-tea-farm-helper",
@@ -12729,7 +12729,7 @@
         "tip": "Snuggle up at bedtime and take turns gently pinching each other's fingertips, like picking one bud, two leaves. With each little pinch, whisper one thing you liked about today."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "city-mrt-lost-umbrella",
@@ -12834,7 +12834,7 @@
         "tip": "Before lights out tonight, take quiet turns guessing how many days it takes a mung bean to sprout. Tomorrow, poke a hole in a small cup together and plant a few to find out."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "sea-lighthouse-keeper-grandma",
@@ -12938,7 +12938,7 @@
         "tip": "Cuddle up and whisper, \"Good night, Little Watermelon!\" then chat about {his} favourite part; tomorrow you can draw a big watermelon together."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "manners-sorry-tower",
@@ -14285,7 +14285,7 @@
         "tip": "This week, draw chalk circles outside with your child and invent a new game that everyone can play, letting each family member take a turn making up a silly password."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "differences-the-bat-who-belongs",
