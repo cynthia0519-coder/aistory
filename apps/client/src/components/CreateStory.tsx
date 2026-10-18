@@ -231,7 +231,7 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPr
               <CameraIcon className="h-10 w-10 text-mustard" />
               <div className="flex flex-col">
                 <span className="font-display text-xl font-bold">拍照或選一張照片</span>
-                <span className="text-xs text-paper/75">小狗、玩具、公園、晚餐都可以</span>
+                <span className="text-xs text-paper/75">AI 會把照片裡的東西，編進今晚的故事</span>
               </div>
             </div>
           )}
