@@ -85,7 +85,7 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPr
   const [pickedAgeBand, setAgeBand] = useState<AgeBand>("4-6");
   // 有主角就用主角年齡換算年齡層（API 也會檢查兩者一致）
   const ageBand = hero ? ageBandFor(hero.age) : pickedAgeBand;
-  const [style, setStyle] = useState<StoryStyle>("adventure");
+  const [style, setStyle] = useState<StoryStyle>("bedtime");
   const [length, setLength] = useState<StoryLength>("3min");
   const [showOptions, setShowOptions] = useState(false);
   // 只列出即時 AI 可以寫的主題（生活習慣、情緒、品格），而且要符合目前的年齡層；
