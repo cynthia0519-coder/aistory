@@ -22,10 +22,10 @@ async function main() {
     const req: StoryRequest = prev
       ? { ...base, series: { chapter, memory: prev.memory, previous: { title: prev.title, paragraphs: prev.paragraphs } } }
       : base;
-    const { story, usage } = await generateStoryDetailed(req);
+    const { story, usage, retried } = await generateStoryDetailed(req);
     lines.push(
       `## 第 ${chapter} 集：${story.title}`,
-      `（${storyLength(story.paragraphs, language)} ${language === "zh" ? "字" : "words"}，輸入 ${usage.input_tokens} / 輸出 ${usage.output_tokens} tokens）`,
+      `（${storyLength(story.paragraphs, language)} ${language === "zh" ? "字" : "words"}，輸入 ${usage.input_tokens} / 輸出 ${usage.output_tokens} tokens${retried ? "，low 失敗改用 medium 重試，實際還要加上第一次的花費" : ""}）`,
       "",
       ...story.paragraphs.flatMap((p) => [p, ""]),
       story.memory ? `> 前情摘要：${story.memory.replace(/\n/g, " ")}` : "",

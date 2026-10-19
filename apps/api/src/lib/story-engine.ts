@@ -175,7 +175,7 @@ export async function generateStory(req: StoryRequest): Promise<StoryOutput> {
 export async function generateStoryDetailed(
   req: StoryRequest,
   opts: { model?: string } = {},
-): Promise<{ story: StoryOutput; model: string; usage: Anthropic.Beta.BetaUsage }> {
+): Promise<{ story: StoryOutput; model: string; usage: Anthropic.Beta.BetaUsage; retried: boolean }> {
   const content: Anthropic.Beta.BetaContentBlockParam[] = [];
   if (req.imageBase64) {
     content.push({
@@ -208,7 +208,10 @@ export async function generateStoryDetailed(
   // 但實測 low 偶爾會吐出「x」這種空殼 JSON（無法解析或字數極少），這時改用 medium 重試一次
   let response = await call("low").catch(() => null);
   if (response?.stop_reason === "refusal") throw new StoryRefusedError("refused");
+  // 評測用：重試時 usage 只有第二次呼叫，第一次的 token 也花掉了
+  let retried = false;
   if (!response?.parsed_output || isHollow(response.parsed_output, req)) {
+    retried = true;
     response = await call("medium");
   }
 
@@ -220,5 +223,5 @@ export async function generateStoryDetailed(
   }
   // 「再講一個」沿用原本的場景描述，不讓模型改寫，避免多次重講後場景漂移
   const story = req.scene ? { ...response.parsed_output, scene: req.scene } : response.parsed_output;
-  return { story, model: response.model, usage: response.usage };
+  return { story, model: response.model, usage: response.usage, retried };
 }
