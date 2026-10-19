@@ -26,6 +26,16 @@ test("seriesBlock keeps phone data inside its tags", () => {
   assert.match(block, /never end on danger/);
 });
 
-test("the last chapter closes the series", () => {
-  assert.match(seriesBlock({ chapter: SERIES_CHAPTERS, previous }), /final chapter/);
+test("the last chapter closes the series and needs no memory", () => {
+  const block = seriesBlock({ chapter: SERIES_CHAPTERS, previous });
+  assert.match(block, /final chapter/);
+  assert.doesNotMatch(block, /^memory:/m);
+  assert.match(seriesBlock({ chapter: 2, previous }), /^memory:.*where each character/m);
+});
+
+test("only the last paragraphs of the previous chapter are sent to the model", () => {
+  const paragraphs = ["p1", "p2", "p3", "p4", "p5"];
+  const block = seriesBlock({ chapter: 2, previous: { title: "t", paragraphs } });
+  assert.doesNotMatch(block, /\bp1\b|\bp2\b/);
+  assert.match(block, /p3\np4\np5/);
 });

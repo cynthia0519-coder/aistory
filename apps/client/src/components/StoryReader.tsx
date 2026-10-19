@@ -368,7 +368,8 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
         series: {
           chapter: chapter + 1,
           memory: story.memory,
-          previous: { title: story.title, paragraphs: story.paragraphs },
+          // 伺服器只用最後幾段（PREVIOUS_TAIL），多送也沒用
+          previous: { title: story.title, paragraphs: story.paragraphs.slice(-3) },
         },
       });
       const saved: SavedStory = {
