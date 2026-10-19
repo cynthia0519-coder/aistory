@@ -25,10 +25,12 @@ import { getInvite, saveInvite } from "@/lib/invite";
 import { saveStory, type SavedStory } from "@/lib/storage";
 import { heroSummary, lookOf, toHero, type HeroProfile } from "@/lib/heroes";
 import { HeroAvatar } from "./HeroAvatar";
-import { CameraIcon, PlusIcon } from "./icons";
+import { CameraIcon, LockIcon, PlusIcon } from "./icons";
 import { StoryLoading } from "./StoryLoading";
 import { Chip, Dialog, PrimaryButton, SectionTitle } from "./ui";
 import { hasPhotoConsent, savePhotoConsent } from "@/lib/privacy";
+import { canUse, photoStoriesLeft, recordPhotoStory } from "@/lib/membership";
+import { FREE_PHOTO_STORIES_PER_MONTH } from "@/lib/pricing";
 
 interface Props {
   onCreated: (story: SavedStory) => void;
@@ -109,6 +111,14 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPr
 
   async function submit() {
     if (!file) return;
+    if (photoStoriesLeft() === 0) {
+      setError(`免費版每月可以編 ${FREE_PHOTO_STORIES_PER_MONTH} 篇照片故事，這個月用完了。可以先聽故事庫，或到書櫃的商店升級。`);
+      return;
+    }
+    if (length === "10min" && !canUse("longStory")) {
+      setError("10 分鐘故事是會員功能，先改成 3 分鐘試試。");
+      return;
+    }
     setLoading(true);
     setError(null);
     try {
@@ -137,6 +147,7 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPr
         thumbnail,
       };
       await saveStory(saved);
+      recordPhotoStory();
       onCreated(saved);
     } catch (e) {
       if (e instanceof InviteRequiredError) setInviteOpen(true);
@@ -383,6 +394,7 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPr
                 {STORY_LENGTHS.map((l) => (
                   <Chip key={l} active={length === l} onClick={() => setLength(l)}>
                     {LENGTH_RULES[l].label}
+                    {l === "10min" && !canUse("longStory") && <LockIcon className="ml-1 inline h-4 w-4" />}
                   </Chip>
                 ))}
               </div>

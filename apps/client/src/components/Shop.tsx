@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useId, useState } from "react";
-import { PRICING, YEARLY_NUDGE, type PricingPlan } from "@/lib/pricing";
+import { PLAN_PERKS, PRICING, type PricingPlan } from "@/lib/pricing";
 import { LockIcon, MoonIcon } from "./icons";
 import { BackButton, Dialog, PrimaryButton } from "./ui";
 
@@ -42,6 +42,24 @@ export function Shop({ onBack, onCredits, onPrivacy }: Props) {
       </header>
 
       <div className="flex flex-col gap-5 px-4 pt-4">
+        <div className="grid grid-cols-2 gap-3 text-sm">
+          {(
+            [
+              ["免費版", PLAN_PERKS.free, "bg-paper-deep"],
+              ["會員", PLAN_PERKS.member, "bg-card ring-2 ring-teal"],
+            ] as const
+          ).map(([title, perks, tone]) => (
+            <section key={title} aria-label={title} className={`flex flex-col gap-1.5 rounded-2xl px-3 py-3 ${tone}`}>
+              <h2 className="font-display text-base font-bold">{title}</h2>
+              <ul className="flex flex-col gap-1 text-ink-soft">
+                {perks.map((perk) => (
+                  <li key={perk}>・{perk}</li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
+
         <div role="group" aria-label="購買方案" className="flex flex-col gap-3">
           {PRICING.plans.map((p) => {
             const active = plan === p.id;
@@ -65,12 +83,9 @@ export function Shop({ onBack, onCredits, onPrivacy }: Props) {
                 </span>
                 <span className="flex flex-1 flex-col">
                   <span className="font-display text-lg font-bold">{p.title}</span>
-                  <span className="text-xs text-ink-soft">{p.detail}</span>
                   {p.deal && <span className="text-xs font-bold text-teal">{p.deal}</span>}
                 </span>
-                <span className={`shrink-0 text-right font-bold ${p.price ? "text-ink" : "text-sm text-ink-soft"}`}>
-                  {p.price ?? "即將推出"}
-                </span>
+                <span className="shrink-0 text-right font-bold text-ink">{p.price}</span>
                 {p.badge && (
                   <span className="absolute -top-2.5 right-4 rounded-full bg-mustard px-2.5 py-0.5 text-xs font-bold text-ink shadow-sm">
                     {p.badge}
@@ -80,16 +95,6 @@ export function Shop({ onBack, onCredits, onPrivacy }: Props) {
             );
           })}
         </div>
-
-        {plan === "half_year" && (
-          <button
-            type="button"
-            onClick={() => setPlan("yearly")}
-            className="-mt-2 h-11 rounded-2xl bg-mustard/30 px-4 text-sm font-bold text-ink"
-          >
-            {YEARLY_NUDGE} →
-          </button>
-        )}
 
         <ul className="flex flex-col gap-2 rounded-2xl bg-paper-deep px-4 py-3 text-sm text-ink-soft">
           <li className="flex items-center gap-2">
