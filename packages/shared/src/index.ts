@@ -480,6 +480,25 @@ export const ParentGuideSchema = z.object({
 });
 export type ParentGuide = z.infer<typeof ParentGuideSchema>;
 
+// ---- 連載：同一個主角和世界，每晚一集，一套 SERIES_CHAPTERS 集 ----
+export const SERIES_CHAPTERS = 5;
+
+/** 前情摘要：AI 每集寫完順手整理（英文），只存在手機上，下一集送回 API 接著寫 */
+export const SeriesMemorySchema = z.string().trim().min(1).max(3000);
+
+export const SeriesRequestSchema = z.object({
+  /** 要寫第幾集；第 1 集就是一般的照片故事，所以從 2 開始 */
+  chapter: z.number().int().min(2).max(SERIES_CHAPTERS),
+  /** 上一集整理的前情摘要；第 1 集是一般故事，沒有摘要 */
+  memory: SeriesMemorySchema.optional(),
+  /** 上一集的全文，讓語氣和細節接得上 */
+  previous: z.object({
+    title: z.string().max(200),
+    paragraphs: z.array(z.string().max(2000)).min(1).max(40),
+  }),
+});
+export type SeriesRequest = z.infer<typeof SeriesRequestSchema>;
+
 // ---- API 契約 ----
 export const StoryRequestSchema = z
   .object({
@@ -496,6 +515,8 @@ export const StoryRequestSchema = z
     avoidTitle: z.string().max(200).optional(),
     /** 想聊的主題（選填）；只能選 aiAllowed 的主題 */
     theme: z.enum(THEME_IDS).optional(),
+    /** 連載的下一集（選填）；不重傳照片，用 scene 接著寫 */
+    series: SeriesRequestSchema.optional(),
   })
   .refine((r) => r.imageBase64 || r.scene, {
     message: "imageBase64 or scene is required",
@@ -506,6 +527,10 @@ export const StoryRequestSchema = z
   .refine((r) => !r.theme || (THEMES[r.theme] as ThemeRule).aiAllowed, {
     message: "this theme is only available in the curated library",
     path: ["theme"],
+  })
+  .refine((r) => !r.series || (r.scene && !r.imageBase64 && !r.theme), {
+    message: "a series chapter continues from the scene, without photo or theme",
+    path: ["series"],
   });
 export type StoryRequest = z.infer<typeof StoryRequestSchema>;
 
@@ -518,6 +543,8 @@ export const StoryOutputSchema = z.object({
   paragraphs: z.array(z.string()),
   /** 有選主題時才有：給爸媽的引導卡 */
   guide: ParentGuideSchema.optional(),
+  /** 連載才有：寫完這一集後的前情摘要 */
+  memory: SeriesMemorySchema.optional(),
 });
 export type StoryOutput = z.infer<typeof StoryOutputSchema>;
 
@@ -697,3 +724,16 @@ export const TtsRequestSchema = z
     message: "voice must match language",
   });
 export type TtsRequest = z.infer<typeof TtsRequestSchema>;
+
+// ---- 不記名使用統計（封測判斷用）----
+/**
+ * 手機上隨機產生的安裝代號，和名字、照片、故事內容都沒有關係；家長可以在隱私頁關掉。
+ * 只記「哪一天、做了哪一類事」，用來算每週使用天數、第二週還在用的比例、試過照片故事的比例。
+ */
+export const STATS_EVENTS = ["open", "photo_story", "retell", "chapter", "library_story", "recording"] as const;
+export type StatsEvent = (typeof STATS_EVENTS)[number];
+export const StatsRequestSchema = z.object({
+  id: z.uuid(),
+  event: z.enum(STATS_EVENTS),
+});
+export type StatsRequest = z.infer<typeof StatsRequestSchema>;

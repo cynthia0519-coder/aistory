@@ -6,6 +6,8 @@ export const MEMBER_FEATURES = {
   /** 匯出爸媽的錄音與書櫃（匯入不限會員：換手機後還沒恢復購買，也拿得回自己的錄音） */
   recordingBackup: "錄音備份",
   longStory: "10 分鐘故事",
+  /** 連載第 2 集以後；第 1 集就是一般的照片故事 */
+  series: "連載故事",
 } as const;
 export type MemberFeature = keyof typeof MEMBER_FEATURES;
 

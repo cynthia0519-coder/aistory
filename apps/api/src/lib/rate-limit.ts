@@ -49,6 +49,12 @@ export const BUCKETS = {
     perIpDay: { name: "ip-d", max: 30, windowSeconds: 86_400 },
     globalDay: { name: "all-d", max: 2000, windowSeconds: 86_400 },
   },
+  // 不記名使用統計：一次開 App 只送幾個事件
+  stats: {
+    perIpMinute: { name: "ip-m", max: 30, windowSeconds: 60 },
+    perIpDay: { name: "ip-d", max: 500, windowSeconds: 86_400 },
+    globalDay: { name: "all-d", max: 100_000, windowSeconds: 86_400 },
+  },
 } satisfies Record<string, Bucket>;
 export type BucketName = keyof typeof BUCKETS;
 

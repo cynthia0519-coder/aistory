@@ -1,7 +1,9 @@
 "use client";
 
 import { POLICY_UPDATED, PRIVACY_CONTACT, PRIVACY_OPERATOR } from "@/lib/privacy";
+import { useState } from "react";
 import { POLICY_INTRO, POLICY_SECTIONS } from "@/lib/privacy-policy";
+import { setStatsEnabled, statsEnabled } from "@/lib/stats";
 import { BackButton } from "./ui";
 
 interface Props {
@@ -9,6 +11,7 @@ interface Props {
 }
 
 export function Privacy({ onBack }: Props) {
+  const [stats, setStats] = useState(statsEnabled);
   return (
     <div className="flex flex-col">
       <header className="relative h-40 overflow-hidden">
@@ -42,6 +45,18 @@ export function Privacy({ onBack }: Props) {
             。
           </p>
         )}
+        <label className="flex items-center gap-3 rounded-2xl bg-card p-4 ring-2 ring-line">
+          <input
+            type="checkbox"
+            checked={stats}
+            onChange={(e) => {
+              setStatsEnabled(e.target.checked);
+              setStats(e.target.checked);
+            }}
+            className="h-5 w-5 shrink-0 accent-teal"
+          />
+          <span className="text-sm font-bold leading-relaxed">送出不記名使用統計，幫我們改善服務</span>
+        </label>
         <p className="text-sm leading-relaxed text-ink-soft">本服務由{PRIVACY_OPERATOR}提供。</p>
         <p className="text-center text-sm text-ink-soft">最後更新：{POLICY_UPDATED}</p>
       </div>

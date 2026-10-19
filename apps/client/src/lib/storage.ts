@@ -19,6 +19,30 @@ export interface SavedStory extends Omit<StoryOutput, "setting"> {
   heroLook?: HeroLook;
   /** 320px 縮圖；原圖不保存 */
   thumbnail?: Blob;
+  /** 連載的第 2 集以後才有；第 1 集是原本的故事，id 就是連載的 id */
+  series?: { id: string; chapter: number };
+}
+
+/** 這個故事屬於哪一套連載、第幾集（沒接過下一集的故事也算第 1 集） */
+export function seriesOf(story: SavedStory): { id: string; chapter: number } {
+  return story.series ?? { id: story.id, chapter: 1 };
+}
+
+/** 同一套連載的所有集數，照集數排 */
+export async function listSeries(seriesId: string): Promise<SavedStory[]> {
+  const all = await listStories();
+  return all.filter((s) => seriesOf(s).id === seriesId).sort((a, b) => seriesOf(a).chapter - seriesOf(b).chapter);
+}
+
+/** 書櫃上一套連載只放最新的一集 */
+export function latestChapters(stories: SavedStory[]): SavedStory[] {
+  const best = new Map<string, SavedStory>();
+  for (const s of stories) {
+    const { id, chapter } = seriesOf(s);
+    const cur = best.get(id);
+    if (!cur || seriesOf(cur).chapter < chapter) best.set(id, s);
+  }
+  return stories.filter((s) => best.get(seriesOf(s).id) === s);
 }
 
 const DB_NAME = "aistory";

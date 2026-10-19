@@ -30,6 +30,7 @@ import { StoryLoading } from "./StoryLoading";
 import { Chip, Dialog, PrimaryButton, SectionTitle } from "./ui";
 import { hasPhotoConsent, savePhotoConsent } from "@/lib/privacy";
 import { canUse, photoStoriesLeft, recordPhotoStory } from "@/lib/membership";
+import { track } from "@/lib/stats";
 import { FREE_PHOTO_STORIES_PER_MONTH } from "@/lib/pricing";
 
 interface Props {
@@ -148,6 +149,7 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPr
       };
       await saveStory(saved);
       recordPhotoStory();
+      track("photo_story");
       onCreated(saved);
     } catch (e) {
       if (e instanceof InviteRequiredError) setInviteOpen(true);
@@ -295,6 +297,7 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPr
               <li>照片會傳給 AI（Anthropic Claude）編故事，伺服器不保存。</li>
               <li>主角的名字和年齡會一起送出，讓故事主角變成孩子。</li>
               <li>建議拍玩具、寵物、晚餐或公園，不要拍到孩子的臉、門牌或學校名稱。</li>
+              <li>App 會送出不記名的使用統計（不含名字、照片、故事內容），可以在隱私權政策頁關掉。</li>
             </ul>
             <button type="button" onClick={onPrivacy} className="self-start text-sm font-bold text-teal underline underline-offset-4">
               看完整的隱私權政策

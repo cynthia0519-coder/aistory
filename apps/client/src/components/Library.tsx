@@ -12,7 +12,8 @@ import {
   THEMES,
   type LibraryStory,
 } from "@aistory/shared";
-import { deleteStory, listStories, type SavedStory } from "@/lib/storage";
+import { deleteStory, latestChapters, listSeries, listStories, seriesOf, type SavedStory } from "@/lib/storage";
+import { SERIES_CHAPTERS } from "@aistory/shared";
 import { lookOf, type HeroProfile } from "@/lib/heroes";
 import { ageRangeLabel, CATEGORY_CHIPS, draftMode, filterLibrary, loadLibrary, renderForHero, visibleLibrary, type LibraryPrefs } from "@/lib/library";
 import { sceneSrc } from "@/lib/scenes";
@@ -47,11 +48,15 @@ export function Library({ prefs, onPrefs, hero, onOpen, onOpenLibrary, onCreate,
     listStories().then(setStories);
   }, []);
 
-  async function remove(id: string) {
-    if (!confirm("確定刪除這個故事？")) return;
-    await deleteStory(id);
-    setStories((s) => s?.filter((x) => x.id !== id) ?? null);
+  // 書櫃上一套連載只放最新一集，刪除就整套一起刪
+  async function remove(story: SavedStory) {
+    const chapters = await listSeries(seriesOf(story).id);
+    if (!confirm(chapters.length > 1 ? `確定刪除這套連載（${chapters.length} 集）？` : "確定刪除這個故事？")) return;
+    for (const c of chapters) await deleteStory(c.id);
+    const gone = new Set(chapters.map((c) => c.id));
+    setStories((s) => s?.filter((x) => !gone.has(x.id)) ?? null);
   }
+  const shelf = useMemo(() => (stories ? latestChapters(stories) : null), [stories]);
 
   return (
     <div className="flex flex-col">
@@ -116,15 +121,20 @@ export function Library({ prefs, onPrefs, hero, onOpen, onOpenLibrary, onCreate,
 
       {prefs.tab === "mine" && stories && stories.length > 0 && (
         <ul className="grid grid-cols-2 gap-x-4 gap-y-5 px-4 pt-4">
-          {stories.map((s) => (
+          {shelf?.map((s) => (
             <li key={s.id} className="relative">
               <button type="button" onClick={() => onOpen(s)} className="flex w-full flex-col gap-2 text-left">
                 <Cover story={s} />
+                {s.series && (
+                  <span className="self-start rounded-full bg-mustard px-2 py-0.5 text-xs font-bold text-ink">
+                    連載 {s.series.chapter}/{SERIES_CHAPTERS}
+                  </span>
+                )}
                 <span className="line-clamp-2 font-display text-base font-bold leading-snug">{s.title}</span>
               </button>
               <button
                 type="button"
-                onClick={() => remove(s.id)}
+                onClick={() => remove(s)}
                 aria-label={`刪除「${s.title}」`}
                 className="absolute right-1 top-1 flex h-9 w-9 items-center justify-center rounded-full bg-card/90 text-ink-soft"
               >

@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useEffectEvent, useMemo, useRef, useState } from "react";
-import { AGE_RULES, LANGUAGE_LABELS, THEMES, type ParentGuide } from "@aistory/shared";
+import { AGE_RULES, LANGUAGE_LABELS, SERIES_CHAPTERS, THEMES, type ParentGuide } from "@aistory/shared";
 import { requestStory, StoryApiError } from "@/lib/api";
-import { saveStory, type SavedStory } from "@/lib/storage";
+import { listSeries, saveStory, seriesOf, type SavedStory } from "@/lib/storage";
+import { canUse } from "@/lib/membership";
+import { track } from "@/lib/stats";
 import { bgm, loadMusicPref, saveMusicPref } from "@/lib/bgm";
 import { narrator, type Narrator } from "@/lib/tts";
 import {
@@ -34,6 +36,7 @@ import {
 } from "./icons";
 import { HeroAvatar } from "./HeroAvatar";
 import { StoryLoading } from "./StoryLoading";
+import { PrimaryButton } from "./ui";
 
 /** 段落之間的小停頓：讓背景音樂浮上來一點，聽起來不趕 */
 const PARAGRAPH_GAP_MS = 600;
@@ -255,6 +258,7 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
         map.set(index, entry);
         return { storyId: story.id, map };
       });
+      track("recording");
       if (index < total - 1) setCurrent(index + 1);
     } catch {
       setError("錄音沒存起來，手機空間可能不夠，再試一次。");
@@ -320,6 +324,68 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
         thumbnail: story.thumbnail,
       };
       await saveStory(saved);
+      track("retell");
+      onNewStory(saved);
+    } catch (e) {
+      setError(e instanceof StoryApiError ? e.message : "出了點問題，請再試一次。");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  // 連載：照片故事才有（故事庫的故事 onNext 不是 undefined）；舊版故事沒存場景就接不下去
+  const seriesable = onNext === undefined && !!story.scene;
+  const [chapters, setChapters] = useState<SavedStory[] | null>(null);
+  useEffect(() => {
+    if (!seriesable) return;
+    let alive = true;
+    listSeries(seriesOf(story).id)
+      .then((list) => alive && setChapters(list))
+      .catch(() => {});
+    return () => {
+      alive = false;
+    };
+  }, [seriesable, story]);
+
+  // 下一集：送上一集全文和前情摘要，不重傳照片
+  async function nextChapter() {
+    const { id, chapter } = seriesOf(story);
+    if (!canUse("series")) {
+      setError("連載第 2 集以後是會員功能。");
+      return;
+    }
+    stopAll();
+    setLoading(true);
+    setError(null);
+    try {
+      const { story: next } = await requestStory({
+        language: story.language,
+        ageBand: story.ageBand,
+        style: story.style ?? "bedtime",
+        length: story.length ?? "3min",
+        hero: story.hero,
+        scene: story.scene,
+        series: {
+          chapter: chapter + 1,
+          memory: story.memory,
+          previous: { title: story.title, paragraphs: story.paragraphs },
+        },
+      });
+      const saved: SavedStory = {
+        ...next,
+        id: crypto.randomUUID(),
+        createdAt: Date.now(),
+        language: story.language,
+        ageBand: story.ageBand,
+        style: story.style,
+        length: story.length,
+        hero: story.hero,
+        heroLook: story.heroLook,
+        thumbnail: story.thumbnail,
+        series: { id, chapter: chapter + 1 },
+      };
+      await saveStory(saved);
+      track("chapter");
       onNewStory(saved);
     } catch (e) {
       setError(e instanceof StoryApiError ? e.message : "出了點問題，請再試一次。");
@@ -484,6 +550,10 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
           <GuideCard guide={story.guide} showHotline={!!story.theme && THEMES[story.theme]?.category === "body"} />
         )}
 
+        {seriesable && chapters && (
+          <SeriesCard story={story} chapters={chapters} loading={loading} onOpen={onNewStory} onNextChapter={nextChapter} />
+        )}
+
         <button type="button" onClick={() => setReporting(true)} className="self-center px-3 py-2 text-sm text-ink-soft underline">
           這個故事怪怪的？告訴我們
         </button>
@@ -625,6 +695,66 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
 }
 
 /** 「給爸媽」引導卡：故事最後一段之後，2–3 個可以問小朋友的問題 + 1 個今晚就能做的小建議 */
+/** 連載：集數切換和「下一集」。睡前一次一集，所以按鈕文字說「明天晚上」，但不鎖，想現在聽也可以 */
+function SeriesCard({
+  story,
+  chapters,
+  loading,
+  onOpen,
+  onNextChapter,
+}: {
+  story: SavedStory;
+  chapters: SavedStory[];
+  loading: boolean;
+  onOpen: (story: SavedStory) => void;
+  onNextChapter: () => void;
+}) {
+  const { chapter } = seriesOf(story);
+  const next = chapters.find((c) => seriesOf(c).chapter === chapter + 1);
+  const finished = chapter >= SERIES_CHAPTERS;
+  return (
+    <section aria-label="連載" className="flex flex-col gap-3 rounded-2xl bg-paper-deep p-4">
+      <h2 className="font-display text-lg font-bold">
+        {chapters.length > 1 ? `連載 第 ${chapter} 集／共 ${SERIES_CHAPTERS} 集` : `把這個故事變成連載（共 ${SERIES_CHAPTERS} 集）`}
+      </h2>
+      {chapters.length > 1 && (
+        <div role="group" aria-label="選集數" className="flex flex-wrap gap-2">
+          {chapters.map((c) => {
+            const n = seriesOf(c).chapter;
+            return (
+              <button
+                key={c.id}
+                type="button"
+                aria-current={c.id === story.id ? "true" : undefined}
+                onClick={() => c.id !== story.id && onOpen(c)}
+                className={`h-11 min-w-11 rounded-full px-3 font-bold ${c.id === story.id ? "bg-teal text-paper" : "bg-card ring-2 ring-line"}`}
+              >
+                {n}
+              </button>
+            );
+          })}
+        </div>
+      )}
+      {finished ? (
+        <p className="text-sm text-ink-soft">這套連載完結了。想再聽新的冒險，就再拍一張照片吧。</p>
+      ) : next ? (
+        <PrimaryButton onClick={() => onOpen(next)}>聽第 {chapter + 1} 集</PrimaryButton>
+      ) : (
+        <>
+          <p className="text-sm text-ink-soft">
+            {chapters.length > 1
+              ? `${story.hero?.name ?? "主角"}的故事還沒完，明天晚上接著聽第 ${chapter + 1} 集。`
+              : `同一個主角和世界，每晚一集，${SERIES_CHAPTERS} 集講完一個完整的冒險。`}
+          </p>
+          <PrimaryButton onClick={onNextChapter} disabled={loading}>
+            {loading ? "編故事中…" : `編第 ${chapter + 1} 集`}
+          </PrimaryButton>
+        </>
+      )}
+    </section>
+  );
+}
+
 function GuideCard({ guide, showHotline }: { guide: ParentGuide; showHotline: boolean }) {
   return (
     <aside aria-label="給爸媽的引導卡" className="relative mt-6 rounded-2xl bg-card p-5 pt-6 shadow-md ring-2 ring-line">

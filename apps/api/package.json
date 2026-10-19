@@ -10,13 +10,15 @@
     "typecheck": "next typegen && tsc --noEmit",
     "eval": "tsx eval/story-quality.ts",
     "eval:photo": "tsx eval/photo-cost.ts",
+    "eval:series": "tsx eval/series-run.ts",
     "library:generate": "tsx scripts/generate-library.ts",
     "library:review": "tsx scripts/review-library.ts",
     "library:guides": "tsx scripts/library-guides.ts",
     "library:publish": "tsx scripts/publish-library.ts",
     "test": "tsx --test test/*.test.ts",
     "episodes:render": "tsx scripts/render-episodes.ts",
-    "reports": "tsx scripts/list-reports.ts"
+    "reports": "tsx scripts/list-reports.ts",
+    "stats": "tsx scripts/stats.ts"
   },
   "dependencies": {
     "@aistory/shared": "*",

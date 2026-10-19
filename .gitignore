@@ -46,3 +46,4 @@ next-env.d.ts
 /apps/api/eval/results/
 /apps/api/out/
 /apps/api/scripts/assets/*.ttf
+/apps/api/eval/out/

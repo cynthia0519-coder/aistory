@@ -13,6 +13,7 @@ import type { LibraryStory } from "@aistory/shared";
 import { getSelectedHero, type HeroProfile } from "@/lib/heroes";
 import { toReadableStory, type LibraryPrefs } from "@/lib/library";
 import { requestPersistence, type SavedStory } from "@/lib/storage";
+import { track } from "@/lib/stats";
 
 // 單頁、用狀態切畫面：不用動態路由，才能靜態輸出並打包成 App。
 type View =
@@ -34,6 +35,7 @@ export default function Home() {
 
   useEffect(() => {
     requestPersistence();
+    track("open");
     getSelectedHero()
       .then(setHero)
       .catch(() => {});
@@ -50,12 +52,14 @@ export default function Home() {
     library();
   };
   // 故事庫故事在裝置上換好名字，只在記憶體裡，不存進 IndexedDB
-  const readLibrary = (list: LibraryStory[], index: number) =>
+  const readLibrary = (list: LibraryStory[], index: number) => {
+    track("library_story");
     setView({
       name: "read",
       story: toReadableStory(list[index], libraryPrefs.language, hero),
       library: { list, index },
     });
+  };
 
   // 換畫面時回到頂端（編故事頁在主角頁時只是隱藏，不會重置）
   useEffect(() => {
