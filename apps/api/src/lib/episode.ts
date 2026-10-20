@@ -2,7 +2,7 @@
 // 選哪些故事、字幕怎麼切與對時間、ASS 字幕檔、標題與說明文字。
 // 呼叫 Azure 與 ffmpeg 的部分在 scripts/render-episodes.ts。
 import { fullWidthPunct } from "./zh-punct";
-import { ageRangeLabel, renderLibraryStory, STYLE_RULES, THEMES, type Language, type LibraryStory } from "@aistory/shared";
+import { ageRangeLabel, renderLibraryStory, STYLE_RULES, THEMES, type Language, type LibraryStory, type ThemeId } from "@aistory/shared";
 
 export interface ReviewFlag {
   status: string;
@@ -208,6 +208,32 @@ const STYLE_LABEL_EN: Record<LibraryStory["style"], string> = {
   fable: "Fable",
 };
 
+/**
+ * 英文標題開頭放爸媽在搜尋的那個問題（2026-10 SoundOn 數據：兩個頻道最熱門的都是「走散」這類問題型故事）。
+ * 沒列到的主題就用主題名稱。
+ */
+const THEME_HOOK_EN: Partial<Record<ThemeId, string>> = {
+  anger: "Big Angry Feelings",
+  "bedtime-routine": "Won't Go to Bed?",
+  "brushing-teeth": "Hates Brushing Teeth?",
+  bullying: "Standing Up to Bullying",
+  courage: "Scared to Try Something New?",
+  "crossing-road": "Road Safety for Kids",
+  dentist: "Scared of the Dentist?",
+  "respecting-differences": "Being Different Is OK",
+  "doctor-shots": "Scared of Shots?",
+  earthquake: "What to Do in an Earthquake",
+  "fear-of-dark": "Afraid of the Dark?",
+  "getting-lost": "If Your Child Gets Lost",
+  honesty: "Learning to Tell the Truth",
+};
+
+/** 標題裡只有台灣才懂的說法，換成國際通用的（故事內文不動） */
+const TITLE_TERMS_EN: [RegExp, string][] = [[/\bMRT\b/g, "Subway"]];
+
+/** 問句結尾的直接接標題，其他加冒號 */
+const hookPrefix = (hook: string) => (hook.endsWith("?") ? `${hook} ` : `${hook}: `);
+
 function episodeTextEn(story: LibraryStory, appUrl?: string, credit?: string): EpisodeText {
   const r = renderLibraryStory(story, "en");
   const kind = story.theme ? THEMES[story.theme].label.en : STYLE_LABEL_EN[story.style];
@@ -231,7 +257,7 @@ function episodeTextEn(story: LibraryStory, appUrl?: string, credit?: string): E
   const tags = [BRAND_EN, "bedtime stories", "stories for kids", "kids stories", "read aloud", kind];
   lines.push("", tags.map((t) => `#${t.replace(/\s/g, "")}`).join(" "));
   return {
-    title: `${r.title} | ${story.theme ? `${kind} · ` : ""}Bedtime Story | ${ages}`,
+    title: `${story.theme ? hookPrefix(THEME_HOOK_EN[story.theme] ?? kind) : ""}${TITLE_TERMS_EN.reduce((t, [from, to]) => t.replace(from, to), r.title)} | Bedtime Story | ${ages}`,
     description: lines.join("\n"),
     tags,
   };

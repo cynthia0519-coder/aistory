@@ -98,3 +98,8 @@ test("English episode text is all English", () => {
   assert.doesNotMatch(t.title + t.description, /\p{Script=Han}/u);
   assert.doesNotMatch(t.description, /https?:\/\//);
 });
+
+test("English titles lead with the parent's problem and drop Taiwan-only terms", () => {
+  const t = episodeText(story({ theme: "getting-lost", title: { zh: "x", en: "{name} and the MRT Promise" } }), "en");
+  assert.match(t.title, /^If Your Child Gets Lost: .+ and the Subway Promise \| Bedtime Story \| Ages /);
+});
