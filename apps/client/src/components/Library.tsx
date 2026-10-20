@@ -213,7 +213,7 @@ function LibraryShelf({
               onClick={() => onPrefs({ ...prefs, language: l })}
               className={`h-8 rounded-full px-3 text-sm font-bold ${prefs.language === l ? "bg-teal text-paper" : "text-ink"}`}
             >
-              {l === "zh" ? LANGUAGE_LABELS.zh : "EN"}
+              {l === "zh" ? LANGUAGE_LABELS.zh : "英文"}
             </button>
           ))}
         </div>

@@ -7,7 +7,6 @@ import {
   ageBandFor,
   aiThemesFor,
   LANGUAGES,
-  LANGUAGE_LABELS,
   LENGTH_RULES,
   STORY_LENGTHS,
   STORY_STYLES,
@@ -42,6 +41,8 @@ interface Props {
   onBrowseLibrary: () => void;
   onPrivacy: () => void;
 }
+
+const STORY_LANGUAGE_LABEL: Record<Language, string> = { zh: "中文", en: "英文" };
 
 const STYLE_DOT: Record<StoryStyle, string> = {
   adventure: "bg-teal",
@@ -96,7 +97,7 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPr
   const themeOptions = aiThemesFor(ageBand);
   const [pickedTheme, setTheme] = useState<ThemeId | null>(null);
   const theme = pickedTheme && themeOptions.includes(pickedTheme) ? pickedTheme : null;
-  const optionsSummary = [AGE_RULES[ageBand].label, STYLE_RULES[style].label, theme ? THEMES[theme].label.zh : null, LENGTH_RULES[length].label]
+  const optionsSummary = [language === "en" ? STORY_LANGUAGE_LABEL.en : null, AGE_RULES[ageBand].label, STYLE_RULES[style].label, theme ? THEMES[theme].label.zh : null, LENGTH_RULES[length].label]
     .filter(Boolean)
     .join("・");
   const [loading, setLoading] = useState(false);
@@ -167,23 +168,6 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPr
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/scenes/park.jpg" alt="" className="absolute inset-0 h-full w-full object-cover object-top" />
         <div className="absolute inset-0 bg-gradient-to-b from-paper/0 via-paper/10 to-paper" />
-        <div className="absolute inset-x-4 top-[max(1rem,env(safe-area-inset-top))] flex justify-end">
-          <div role="group" aria-label="故事語言" className="flex rounded-full bg-card/90 p-1 shadow-sm">
-            {LANGUAGES.map((l) => (
-              <button
-                key={l}
-                type="button"
-                aria-pressed={language === l}
-                onClick={() => setLanguage(l)}
-                className={`h-8 rounded-full px-3 text-sm font-bold ${
-                  language === l ? "bg-teal text-paper" : "text-ink"
-                }`}
-              >
-                {l === "zh" ? LANGUAGE_LABELS.zh : "EN"}
-              </button>
-            ))}
-          </div>
-        </div>
         <h1 className="absolute bottom-3 left-4 font-display text-3xl font-bold tracking-widest text-teal">
           今晚的故事
         </h1>
@@ -340,6 +324,17 @@ export function CreateStory({ onCreated, hero, onEditHero, onBrowseLibrary, onPr
           </button>
           {showOptions && (
             <div className="flex flex-col gap-6">
+            {/* 故事用哪種語言講；介面只有中文。放在故事設定裡，不放右上角，免得被當成介面語言切換 */}
+            <fieldset className="flex flex-col gap-2">
+              <SectionTitle as="legend">故事用什麼語言講</SectionTitle>
+              <div className="grid grid-cols-2 gap-2">
+                {LANGUAGES.map((l) => (
+                  <Chip key={l} active={language === l} onClick={() => setLanguage(l)}>
+                    {STORY_LANGUAGE_LABEL[l]}
+                  </Chip>
+                ))}
+              </div>
+            </fieldset>
             {!hero && (
               <fieldset className="flex flex-col gap-2">
                 <SectionTitle as="legend">小朋友幾歲</SectionTitle>
