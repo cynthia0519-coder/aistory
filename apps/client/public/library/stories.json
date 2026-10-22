@@ -18003,7 +18003,8 @@
         "tip": "Tonight in bed, whisper-count \"one, two, three, four\" together, then say a soft goodnight to everyone in the family."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2026-12-25T19:30:00+08:00"
   },
   {
     "id": "christmas-tree-top-star",
@@ -18056,7 +18057,8 @@
         "tip": "Before lights out tonight, whisper \"click\" together as you pretend to switch off the lights one by one, then snuggle close and share your favorite part of the story."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2026-12-11T19:30:00+08:00"
   },
   {
     "id": "christmas-cards-for-night-helpers",
@@ -18109,7 +18111,8 @@
         "tip": "Tonight, cuddle up and whisper about your favorite part of the story; tomorrow, draw a little card together, nice and slow."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2026-12-15T19:30:00+08:00"
   },
   {
     "id": "christmas-snow-globe-grandma",
@@ -18160,7 +18163,8 @@
         "tip": "Before lights out tonight, take turns whispering one thing that lives inside your own dream snow globe, building a tiny village together bit by bit. Tomorrow you can draw it together."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2026-12-18T19:30:00+08:00"
   },
   {
     "id": "halloween-costume-parade",
@@ -18321,7 +18325,8 @@
         "tip": "Tonight at bedtime, help tuck in {his} favourite stuffed toy together, then hum a soft \"mmm, mmm\" lullaby, just like in the story."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2026-12-01T19:30:00+08:00"
   },
   {
     "id": "christmas-gingerbread-house",
@@ -18374,7 +18379,8 @@
         "tip": "After the lights go off tonight, whisper together about what candies you'd put on your own gingerbread house, then draw it together tomorrow."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2026-12-04T19:30:00+08:00"
   },
   {
     "id": "christmas-class-gift-exchange",
@@ -18427,7 +18433,8 @@
         "tip": "Before lights out, whisper together about the coziest gift you have ever received, then feel the softest thing in the room and guess who made it and how."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2026-12-08T19:30:00+08:00"
   },
   {
     "id": "winter-solstice-tangyuan",
@@ -18480,7 +18487,8 @@
         "tip": "Before lights out tonight, press your palms together with your child and slowly roll a pretend warm little tangyuan, then whisper, \"Goodnight, all together.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2026-12-22T19:30:00+08:00"
   },
   {
     "id": "new-year-countdown-sleep",
@@ -18533,7 +18541,8 @@
         "tip": "Tonight before lights out, snuggle under the blanket and take turns whispering one happy moment from today, then softly count down \"three, two, one\" to goodnight."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2026-12-29T19:30:00+08:00"
   },
   {
     "id": "lunar-new-year-reunion-dinner",
