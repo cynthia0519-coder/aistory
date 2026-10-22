@@ -226,6 +226,14 @@ const THEME_HOOK_EN: Partial<Record<ThemeId, string>> = {
   "fear-of-dark": "Afraid of the Dark?",
   "getting-lost": "If Your Child Gets Lost",
   honesty: "Learning to Tell the Truth",
+  potty: "Potty Training?",
+  "trying-food": "Picky Eater?",
+  "screen-time": "Too Much Screen Time?",
+  "water-safety": "Water Safety for Kids",
+  "new-sibling": "New Baby in the Family?",
+  "starting-kindergarten": "Starting Kindergarten?",
+  "losing-failing": "Hates Losing?",
+  "sharing-turns": "Learning to Share",
 };
 
 /** 標題裡只有台灣才懂的說法，換成國際通用的（故事內文不動） */
