@@ -2698,5 +2698,19 @@
     "style": "cute",
     "setting": "home",
     "premise": "A gentle retelling of the Nian legend for toddlers: Nian is a big, shy, fluffy creature who is startled by the color red and by loud drums. On New Year's Eve {name} helps hang red couplets and red lanterns, and Nian tiptoes away to sleep in the mountains. Nian is never scary and nobody is hurt."
+  },
+  {
+    "id": "halloween-costume-parade",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "school",
+    "premise": "Kindergarten has a Halloween costume parade. {name} makes a costume at home with Mom from a cardboard box and felt. At school, a big costume with a mask makes {name} feel a little nervous, until the friend inside lifts the mask and waves. The class parades around the playground, and {name} wears the costume to bed. Halloween stays cozy, never scary: no real monsters, no frights or chases, and costumes and decorations are always clearly friends and paper."
+  },
+  {
+    "id": "halloween-trick-or-treat-building",
+    "ageBands": ["6-8"],
+    "style": "adventure",
+    "setting": "city",
+    "premise": "The apartment building holds a trick-or-treat evening, with neighbors who signed up putting a paper pumpkin on their doors. {name} goes floor by floor with Dad, only knocking on pumpkin doors, saying thank you, and letting Dad check every candy. At home they sort the candy, pick one to eat, brush teeth, and save the rest. Halloween stays cozy, never scary: no real monsters, no frights or chases, and costumes and decorations are always clearly friends and paper."
   }
 ]
