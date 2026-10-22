@@ -19536,5 +19536,58 @@
       }
     },
     "draft": true
+  },
+  {
+    "id": "winter-solstice-tangyuan-colors",
+    "style": "bedtime",
+    "ageBands": [
+      "2-4"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "冬至最長的夜，{name}最長的夢",
+      "en": "{name} and the Longest Night"
+    },
+    "paragraphs": {
+      "zh": [
+        "今天是冬至。窗外好冷，呼呼呼。天黑得好早，咻一下就暗了。{name}趴在窗邊看。路燈亮了，一盞，兩盞，三盞。媽媽說：「今天的夜晚，最長最長喔。」",
+        "「最長的夜晚，要做什麼呢？」{name}歪著頭問。媽媽笑一笑，輕輕說：「夜晚長長的，夢也長長的。」{name}眨眨眼睛。長長的夢？哇，好棒喔！",
+        "廚房飄來香香的味道。鍋子咕嘟咕嘟響。粉紅的湯圓，白白的湯圓，在水裡滾呀滾。一顆粉紅，一顆白，好像小小的燈。媽媽舀了一小碗。熱氣輕輕飄，像小小的雲。",
+        "媽媽把小碗放在桌上。等一等，等一等。好了，不燙了。呼呼，吹一吹。媽媽把湯圓切成小小塊。小小口，慢慢吃。甜甜的，軟軟的。肚子暖了，小手暖了，心也暖暖的。",
+        "洗好澡，刷好牙。{name}抱著小熊，走到窗邊。月亮出來了，圓圓的，黃黃的。「月亮晚安。」{name}輕輕說。月亮好像也笑了。",
+        "星星一閃一閃。一顆，兩顆，好多顆。「星星晚安。」{name}揮揮小手。遠遠的城市，燈一盞一盞關了。屋頂睡了，大樓睡了。「城市晚安。」",
+        "媽媽拉上窗簾。{name}鑽進被窩。被子軟軟的，暖暖的。小熊也躺好了。暖氣嗡嗡嗡，輕輕地唱歌。窗外的風，也變小聲了。媽媽親親{name}。",
+        "「今晚最長，夢也最長喔。」媽媽小小聲說。{name}閉上眼睛。好長好長的夜，好甜好甜的夢。像湯圓一樣，圓圓的，暖暖的。晚安，{name}，晚安。"
+      ],
+      "en": [
+        "Today is the winter solstice. Outside, the wind goes whoosh, whoosh. The sky gets dark so early. {name} looks out the window. One streetlight, two streetlights, three. Mom says, \"Tonight is the longest night.\"",
+        "\"What do we do tonight?\" {name} asks. Mom smiles softly. \"A long night means a long dream.\" {name} blinks and blinks. A long, long dream? Wow!",
+        "A sweet smell floats from the kitchen. The pot goes bubble, bubble. Little pink and white tangyuan roll round and round. One pink, one white, like tiny lanterns. Mom fills a small bowl. Warm steam drifts up like tiny clouds.",
+        "Mom sets the bowl on the table. Wait a bit. Wait a bit. Now it is not too hot. Blow, blow. Mom cuts them into tiny pieces. Small bites, nice and slow. Soft and sweet. Warm tummy. Warm hands. Warm, cozy heart.",
+        "Bath is done. Teeth are clean. {name} hugs Little Bear and goes to the window. The moon is round and gold. \"Sleep tight, moon,\" {name} whispers. The moon seems to smile.",
+        "The stars twinkle, twinkle. One, two, so many! \"Sleep tight, stars,\" {name} says with a wave. Far away, city lights go out, one by one. Roofs are sleeping. Tall buildings are sleeping. \"Sleep tight, city.\"",
+        "Mom closes the curtains. {name} snuggles into bed. The blanket is soft and warm. Little Bear lies down too. The heater hums, hmm, hmm. The wind grows quiet. Mom gives {name} a kiss.",
+        "\"Longest night, longest dream,\" Mom whispers. {name} closes {his} eyes. A long, long night. A sweet, sweet dream. Round and warm, like tangyuan. Goodnight, {name}. Goodnight."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "粉紅的湯圓和白白的湯圓，你想先吃哪一顆？",
+          "{name}跟月亮說晚安，你想跟誰說晚安？",
+          "你抱著睡覺的好朋友是誰？"
+        ],
+        "tip": "今晚關燈前，和孩子一起小小聲地跟房間裡的東西一一說晚安，例如「小熊晚安、枕頭晚安」，再抱一抱說「晚安」。"
+      },
+      "en": {
+        "questions": [
+          "Pink tangyuan or white tangyuan: which would you eat first?",
+          "{name} said goodnight to the moon. Who do you want to say goodnight to?",
+          "Who is your cuddly friend at bedtime?"
+        ],
+        "tip": "Before lights out tonight, whisper goodnight together to things in the room, like \"Goodnight, bear. Goodnight, pillow,\" then end with a cuddle and one last goodnight."
+      }
+    },
+    "draft": true
   }
 ]
