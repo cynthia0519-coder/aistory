@@ -2635,5 +2635,68 @@
     "style": "adventure",
     "setting": "snow",
     "premise": "{name} lives in a warm city where it never snows, but Grandma, who lives far away, sends a snow globe for Christmas. That night {name} dreams of walking through the snow globe's tiny snowy village, finding small clues that lead to a message from Grandma, and wakes up to a video call with her on Christmas morning. Keep Santa's magic gentle and never say whether Santa is real; gifts are never a reward for being good, and nobody is watching or judging the child."
+  },
+  {
+    "id": "winter-cold-snap-cozy-night",
+    "ageBands": ["2-4"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "A cold front arrives in the city and the wind whistles outside. {name} helps get the house ready for a cozy night: thick socks, a warm water bottle, an extra blanket for the teddy bear. Everyone snuggles in, and the cold wind sounds like a lullaby."
+  },
+  {
+    "id": "christmas-gingerbread-house",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "{name} and Dad build a little gingerbread house. The roof keeps sliding off, so they try again with more icing, and decorate it with candy windows. It is a bit wobbly and that makes it perfect. They leave it on the table to admire in the morning. Keep Santa's magic gentle and never say whether Santa is real; gifts are never a reward for being good, and nobody is watching or judging the child."
+  },
+  {
+    "id": "christmas-class-gift-exchange",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "Kindergarten class has a Christmas gift exchange. {name} chooses a gift with care, but the gift {name} receives is not what {name} hoped for. {name} feels disappointed, says thank you anyway, and later finds something to like about it, and sees how happy a friend is with {name}'s gift. Keep Santa's magic gentle and never say whether Santa is real; gifts are never a reward for being good, and nobody is watching or judging the child."
+  },
+  {
+    "id": "winter-solstice-tangyuan",
+    "ageBands": ["4-6"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "On the winter solstice, {name}'s family rolls tangyuan together at the kitchen table: pink ones and white ones, big and small. Grandma explains that eating tangyuan means the family stays together and everyone grows one year older. The warm sweet soup makes {name} sleepy."
+  },
+  {
+    "id": "new-year-countdown-sleep",
+    "ageBands": ["6-8"],
+    "style": "bedtime",
+    "setting": "city",
+    "premise": "On New Year's Eve, {name} wants to stay up for the midnight fireworks over the city. The family makes their own early countdown at bedtime instead, each saying one happy memory from this year and one wish for next year. {name} falls asleep before midnight, and in the morning a picture of the fireworks is waiting."
+  },
+  {
+    "id": "lunar-new-year-reunion-dinner",
+    "ageBands": ["4-6"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "On Lunar New Year's Eve the whole family gathers for the reunion dinner: a whole fish so there is plenty every year, long noodles for long life, dumplings shaped like gold. {name} tries one new dish, helps set the chopsticks, and tries to stay up late with the grown-ups but drifts off, warm and happy, on Grandma's sofa."
+  },
+  {
+    "id": "lunar-new-year-shy-greetings",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "During Lunar New Year, many relatives {name} has not seen for a long time come to visit, and {name} feels shy. Mom says {name} can greet people in whatever way feels okay: a wave, a smile, or a small voice saying 'Happy New Year'. Nobody makes {name} hug anyone. By the end of the day {name} finds a cousin to play with."
+  },
+  {
+    "id": "lunar-new-year-red-envelope",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "{name} receives red envelopes for Lunar New Year. {name} thanks each elder, then sits down with Mom to decide what to do: put some in the piggy bank, use some for something small {name} really wants, and share a little with someone. The story is about gratitude and planning, never about how much money there is."
+  },
+  {
+    "id": "lunar-new-year-shy-nian",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "A gentle retelling of the Nian legend for toddlers: Nian is a big, shy, fluffy creature who is startled by the color red and by loud drums. On New Year's Eve {name} helps hang red couplets and red lanterns, and Nian tiptoes away to sleep in the mountains. Nian is never scary and nobody is hurt."
   }
 ]
