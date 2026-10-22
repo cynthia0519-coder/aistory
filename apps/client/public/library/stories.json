@@ -17948,5 +17948,215 @@
       }
     },
     "draft": true
+  },
+  {
+    "id": "christmas-socks-for-everyone",
+    "style": "cute",
+    "ageBands": [
+      "2-4"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}的平安夜掛襪子",
+      "en": "{name} Hangs the Christmas Socks"
+    },
+    "paragraphs": {
+      "zh": [
+        "平安夜到了。窗外黑黑的，屋裡暖暖的。{name}抱著一籃襪子。一隻、兩隻、三隻、四隻。「我要來掛襪子囉！」牆上有四個小掛勾，排成一排。",
+        "第一隻，是大大的襪子。大大的，長長的，像一條小船。「這是爸爸的！」{name}踮起腳尖，掛好了。爸爸笑著說：「哇，好大喔！」大襪子晃呀晃。",
+        "第二隻，是條紋襪子。紅一條，白一條。紅白，紅白，真好看。「這是媽媽的！」{name}輕輕掛上去。媽媽拍拍手：「謝謝你！」條紋襪子搖呀搖。",
+        "第三隻，是小小的襪子。小小的，短短的，像一片小葉子。「這是咪咪的！」小貓咪咪跑過來。喵——喵——咪咪聞一聞，咬住襪子不放！",
+        "「咪咪，襪子不能吃喔！」{name}咯咯笑。咪咪歪著頭，喵一聲，鬆開嘴巴。小襪子掛好了。咪咪坐在下面，尾巴甩呀甩。好像在說：我的！",
+        "最後一隻，是{name}的襪子。軟軟的，暖暖的，有一顆小星星。掛在最旁邊。一、二、三、四！大襪子、條紋襪子、小襪子，還有星星襪子。排排站，好整齊。",
+        "該睡覺了。{name}揮揮手。「爸爸的襪子，晚安。」「媽媽的襪子，晚安。」「咪咪的襪子，晚安。」「我的襪子，晚安。」四隻襪子靜靜的，好像也說晚安。",
+        "{name}鑽進被窩。被子軟軟的，枕頭香香的。咪咪捲成一顆小球，呼嚕呼嚕。屋裡好安靜。一隻、兩隻、三隻、四隻……{name}數著數著，睡著了。晚安。"
+      ],
+      "en": [
+        "It is Christmas Eve. Outside is dark. Inside is warm. {name} holds a basket of socks. One, two, three, four! \"Time to hang the socks!\" Four little hooks wait on the wall.",
+        "The first sock is big. Big and long, like a little boat! \"This one is for Dad!\" {name} stands on tiptoe and hangs it up. Dad laughs. \"Wow, so big!\" The big sock swings and sways.",
+        "The second sock has stripes. Red and white, red and white. So pretty! \"This one is for Mom!\" {name} hangs it gently. Mom claps. \"Thank you!\" The striped sock swishes and swings.",
+        "The third sock is tiny. Tiny and short, like a little leaf. \"This one is for Mimi!\" Mimi the cat runs over. Meow, meow! Mimi sniffs the sock. Then she bites it and holds on!",
+        "\"Mimi, socks are not snacks!\" {name} giggles. Mimi tilts her head. Meow! She lets go. Up goes the tiny sock. Mimi sits right below it. Her tail goes swish, swish. It seems to say, \"Mine!\"",
+        "The last sock is for {name}. Soft and warm, with a little star. It hangs at the very end. One, two, three, four! Big sock, striped sock, tiny sock, star sock. All in a neat row.",
+        "Now it is bedtime. {name} waves to each one. \"Goodnight, Dad's sock.\" \"Goodnight, Mom's sock.\" \"Goodnight, Mimi's sock.\" \"Goodnight, my sock.\" The four socks hang still and quiet.",
+        "{name} snuggles into bed. The blanket is soft. The pillow is cozy. Mimi curls up like a ball. Purr, purr. The house is so quiet. One sock, two socks, three, four... {name} falls asleep. Goodnight."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "爸爸的大襪子像什麼呢？",
+          "咪咪咬住小襪子的時候，你覺得好不好笑？",
+          "你最喜歡哪一隻襪子？"
+        ],
+        "tip": "今晚躺在被窩裡，和孩子一起小小聲數「一隻、兩隻、三隻、四隻」，再跟家裡的每個人說聲晚安。"
+      },
+      "en": {
+        "questions": [
+          "What does Dad's big sock look like?",
+          "Was it funny when Mimi bit the tiny sock?",
+          "Which sock do you like best?"
+        ],
+        "tip": "Tonight in bed, whisper-count \"one, two, three, four\" together, then say a soft goodnight to everyone in the family."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "christmas-tree-top-star",
+    "style": "bedtime",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}和一起放的星星",
+      "en": "{name} and the Star We Shared"
+    },
+    "paragraphs": {
+      "zh": [
+        "晚飯過後，窗外黑黑的。客廳裡暖暖的，好舒服。爸爸搬來一棵小小的聖誕樹。媽媽打開一個舊紙箱。裡面有紅球，有金鈴鐺。還有一顆亮晶晶的星星。{name}和表妹小美坐在地毯上，眼睛都亮起來了。",
+        "大家一起慢慢掛裝飾。{name}掛上一顆紅紅的小球。小美掛上一個金色鈴鐺。鈴鐺叮叮噹噹，聲音好輕好輕。媽媽繞上一串小燈。小燈一閃一閃，像溫柔的螢火蟲。小樹慢慢變得好漂亮。",
+        "最後，箱子裡只剩下星星了。{name}捧起星星，好想放到樹頂。小美也伸出小手。「我也要放！我也要放！」{name}把星星抱得緊緊的。小美的嘴巴嘟了起來。客廳忽然變得好安靜，只聽見鈴鐺輕輕晃。",
+        "{name}看看星星，又看看小美。小美的眼睛有點濕濕的。{name}想起來了，這是小美第一次在這裡過聖誕節。{name}輕輕吸了一口氣，想到一個好辦法。「小美，我們一起放，好不好？」",
+        "小美點點頭，笑了。{name}握住星星的左邊。小美握住星星的右邊。爸爸把小美輕輕抱起來。媽媽牽著{name}，站上穩穩的小凳子。「一、二、三！」兩雙小手一起，把星星放上樹頂。",
+        "星星亮了，發出柔柔的金光。爸爸媽媽輕輕拍手。小美靠在{name}身邊，小聲說：「好漂亮喔。」{name}也小聲說：「真的好漂亮。」{name}的心裡暖暖的，好像也住著一顆小星星。",
+        "夜深了，大家打了個大哈欠。爸爸關掉廚房的燈，喀。媽媽關掉走廊的燈，喀。樹上的小燈也一顆一顆暗下來，像是睡著了。屋子裡越來越安靜，只聽見時鐘滴答，滴答。",
+        "只剩下樹頂的星星，還亮著小小的光。金光照著地毯，照著軟軟的毯子。{name}和小美窩在一起，眼睛慢慢閉上了。媽媽輕輕說：「晚安，{name}。晚安，小美。」星星靜靜地亮著，陪大家進入夢鄉。"
+      ],
+      "en": [
+        "After dinner, the windows were dark. The living room felt warm and cozy. Dad carried in a small Christmas tree. Mom opened an old box. Inside were red balls and golden bells. There was also one shiny star. {name} and little cousin Mei sat on the rug. Their eyes sparkled.",
+        "Everyone hung decorations slowly. {name} hung a round red ball. Mei hung a little golden bell. Jingle, jingle, went the bell, soft and quiet. Mom wrapped a string of tiny lights around the tree. They twinkled like gentle fireflies. The little tree grew prettier and prettier.",
+        "At last, only the star was left in the box. {name} picked it up. {name} wanted to put it on top. Mei reached out her small hands. \"Me too! I want to do it!\" {name} held the star tight. Mei pushed out her lip. The room went very still.",
+        "{name} looked at the star, then at Mei. Mei's eyes were a little wet. {name} remembered something. This was Mei's first Christmas at their house. {name} took a slow, soft breath. Then a good idea came. \"Mei, shall we do it together?\"",
+        "Mei nodded and smiled. {name} held the left side of the star. Mei held the right side. Dad gently lifted Mei up. Mom held {name}'s hand on a sturdy little stool. \"One, two, three!\" Four small hands placed the star on top together.",
+        "The star glowed with a soft golden light. Mom and Dad clapped quietly. Mei leaned close to {name}. \"It's so pretty,\" she whispered. \"It really is,\" {name} whispered back. {name} felt warm inside. It was like a tiny star glowed there too.",
+        "The night grew late. Everyone gave a big, sleepy yawn. Dad switched off the kitchen light. Click. Mom switched off the hallway light. Click. The tiny tree lights dimmed, one by one, as if falling asleep. The house grew quiet. Only the clock went tick, tock.",
+        "Now just the star was shining. Its gold light fell on the rug and the soft blanket. {name} and Mei snuggled close. Their eyes slowly closed. \"Goodnight, {name}. Goodnight, Mei,\" Mom said softly. The star kept glowing, gentle and still, as everyone drifted into dreams."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "樹上的紅球、金鈴鐺和小燈，你最喜歡哪一個？",
+          "星星放上樹頂、亮起來的時候，你覺得{name}的心裡是什麼感覺？",
+          "如果你的心裡也住著一顆小星星，它會是什麼顏色？"
+        ],
+        "tip": "今晚熄燈前，和孩子一起小聲說「喀」，假裝把一盞一盞燈關掉，再依偎著輕輕說說故事裡最喜歡的地方。"
+      },
+      "en": {
+        "questions": [
+          "The red balls, the golden bells, or the tiny lights: which one do you like best?",
+          "When the star lit up on top of the tree, how do you think {name} felt inside?",
+          "If a tiny star lived inside you too, what color would it be?"
+        ],
+        "tip": "Before lights out tonight, whisper \"click\" together as you pretend to switch off the lights one by one, then snuggle close and share your favorite part of the story."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "christmas-cards-for-night-helpers",
+    "style": "inspiring",
+    "ageBands": [
+      "6-8"
+    ],
+    "setting": "city",
+    "title": {
+      "zh": "{name}的平安夜謝謝卡",
+      "en": "{name}'s Christmas Eve Thank-You Cards"
+    },
+    "paragraphs": {
+      "zh": [
+        "平安夜的傍晚，{name}和媽媽要去市中心看大聖誕樹。走出公寓大門時，警衛陳伯伯還坐在櫃檯後面，一邊看著螢幕，一邊對{name}和媽媽揮手。{name}小聲問：「今天是平安夜，陳伯伯不用回家嗎？」媽媽說：「陳伯伯要值班到很晚喔。」",
+        "轉角的便利商店亮著燈，店員姊姊正踮著腳，把一瓶瓶牛奶排上架子。上了公車，司機叔叔握著大大的方向盤，每一站都耐心等老奶奶慢慢坐好才開車。{name}看著窗外閃亮的街道，心裡想：大家都在過節，可是還有好多人在忙呢。",
+        "廣場上的聖誕樹好高好高，掛滿金色的星星和彩色的燈。{name}看了好久，心裡卻一直想著陳伯伯、店員姊姊和司機叔叔。「媽媽，我們可以送他們一點東西嗎？」媽媽想了想，指著旁邊的麵包店：「我們進去暖一暖，做幾張卡片吧。」",
+        "媽媽從包包拿出幾張彩色紙和一盒蠟筆。{name}想畫一棵漂亮的聖誕樹，可是線條歪歪扭扭，星星也畫得太大，擠到紙的外面去了。{name}皺起眉頭，把紙揉成一團。媽媽沒有說話，只是輕輕遞來一張新的紙。{name}深呼吸，這次慢慢地畫。",
+        "這一次，聖誕樹站得直直的。接著，{name}又畫了一輛笑咪咪的公車，和一盞亮亮的小檯燈。每張卡片都要寫「謝謝你，聖誕快樂」，「謝」字的筆畫好多，{name}寫了三次才寫整齊。三張卡片完成時，{his}手指沾滿了蠟筆的顏色。",
+        "回家路上，{name}和媽媽先走進便利商店。{name}握著卡片，心跳得好快，聲音小得像蚊子。店員姊姊彎下腰，聽清楚後眼睛一亮：「這是給我的嗎？我要把它貼在收銀台旁邊！」{name}覺得胸口暖暖的，忍不住笑了出來。",
+        "兩人搭上末班公車，車上只剩幾個乘客。快到站時，媽媽牽著{name}走到前面。這次，{name}的聲音大多了：「司機叔叔，謝謝你載我們，聖誕快樂！」司機叔叔停好車，接過卡片看了看，笑著說：「這是我今晚收到最棒的禮物。」",
+        "回到公寓，陳伯伯還坐在櫃檯後面。{name}快步走過去，雙手遞上最後一張卡片。陳伯伯戴上老花眼鏡，看了好久，才說：「我要把它放在桌上，陪我值班。」電梯門慢慢關上，{name}牽著媽媽的手，覺得整個晚上都亮晶晶的。"
+      ],
+      "en": [
+        "On Christmas Eve, {name} and Mom set off to see the giant Christmas tree downtown. In the lobby, Mr. Chen, the building guard, was still sitting at the front desk, watching his screens. He waved goodbye. \"Doesn't Mr. Chen get to go home tonight?\" {name} whispered. \"He's working late,\" said Mom.",
+        "At the corner store, a clerk stood on tiptoe, stacking bottles of milk on a high shelf. On the bus, the driver gripped the big wheel and waited at every stop until an old woman found her seat. {name} watched the twinkling streets and thought, everyone is celebrating, but so many people are still busy.",
+        "The tree in the plaza was enormous, covered in golden stars and colorful lights. {name} stared for a long time but kept thinking about Mr. Chen, the clerk, and the driver. \"Mom, could we give them something?\" Mom pointed to a bakery nearby. \"Let's warm up inside and make some cards.\"",
+        "Mom pulled colored paper and a box of crayons from her bag. {name} wanted to draw a beautiful tree, but the lines came out wobbly, and the star was so big it ran off the page. {name} frowned and crumpled it up. Mom quietly slid over a fresh sheet. {name} took a deep breath and drew slowly.",
+        "This time the tree stood tall and straight. Next came a smiling bus, then a glowing little desk lamp. Each card needed the words \"Thank you, Merry Christmas.\" The letters were tricky, and {name} tried three times to make them neat. When all three cards were done, {his} fingers were rainbow-colored.",
+        "On the way home, {name} and Mom stopped at the corner store first. Holding the card, {name} felt a heart thumping fast, and the words came out tiny. The clerk bent down to listen, and her eyes lit up. \"This is for me? I'll put it right by the register!\" {name} felt warm inside and grinned.",
+        "They rode the last bus of the night, with only a few passengers aboard. Near their stop, Mom walked {name} to the front. This time {name}'s voice was much louder. \"Thank you for driving us! Merry Christmas!\" The driver parked, read the card, and smiled. \"That's the best present I've gotten all night.\"",
+        "Back home, Mr. Chen was still at the front desk. {name} hurried over and held out the last card with both hands. Mr. Chen put on his reading glasses and looked at it for a long time. \"I'll keep this on my desk to keep me company.\" As the elevator doors closed, {name} held Mom's hand, and the whole night seemed to sparkle."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}畫了聖誕樹、笑咪咪的公車和小檯燈，你最喜歡哪一張卡片的圖？",
+          "把卡片送給店員姊姊時，{name}心跳得好快，你覺得那時候是什麼感覺？",
+          "如果你也要做一張謝謝卡，你想送給誰？上面要畫什麼？"
+        ],
+        "tip": "今晚睡前抱一抱，輕聲聊聊故事裡最喜歡的一段；明天再一起慢慢畫一張小卡片。"
+      },
+      "en": {
+        "questions": [
+          "{name} drew a tree, a smiling bus, and a little lamp. Which card picture do you like best?",
+          "When {name} gave the card to the clerk, {his} heart was thumping fast. What do you think that felt like?",
+          "If you made a thank-you card too, who would you give it to, and what would you draw on it?"
+        ],
+        "tip": "Tonight, cuddle up and whisper about your favorite part of the story; tomorrow, draw a little card together, nice and slow."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "christmas-snow-globe-grandma",
+    "style": "adventure",
+    "ageBands": [
+      "8-10"
+    ],
+    "setting": "snow",
+    "title": {
+      "zh": "{name}走進雪花球",
+      "en": "{name} and the Snow Globe Village"
+    },
+    "paragraphs": {
+      "zh": [
+        "{name}住在一座四季如夏的城市，街道兩旁的棕櫚樹整年綠油油，連冬天的風都暖烘烘的。這裡從來不下雪。聖誕節前一週，遠方的奶奶寄來一個包裹，裡面是一顆沉甸甸的雪花球。玻璃裡有座迷你小鎮：紅屋頂的麵包店、彎彎的石橋，還有一座尖尖的鐘樓。卡片上是奶奶熟悉的字跡：「搖一搖，仔細看，線索就藏在雪裡。」",
+        "聖誕夜，{name}躺在床上，把雪花球捧在手心輕輕一搖。雪花紛紛揚揚，繞著鐘樓打轉，像一群跳舞的小精靈。眼皮越來越重……等{name}再睜開眼，腳下竟然「喀嚓」一聲，是雪！冷空氣鑽進鼻子，{name}忍不住打了個大噴嚏，震得屋簷上的雪「噗」地掉下一團，不偏不倚落在頭頂。原來雪摸起來又冰又鬆，像剛撒好的糖粉。",
+        "小鎮靜悄悄的，只有麵包店的窗戶透出橘黃的燈光。櫥窗裡站著一排薑餅人，每一個都朝同一個方向伸長手臂，彷彿在指路。{name}順著望過去，雪地上有一串小小的爪印，彎彎曲曲地延伸到石橋。「這一定是第一個線索！」{name}踩著深深淺淺的雪，小心翼翼地跟了上去。",
+        "石橋邊站著一個雪人，胡蘿蔔鼻子歪向一邊，看起來有點滑稽。{name}伸手把它扶正，雪人的樹枝手臂竟「啪」地鬆開，掉下一把小小的銅鑰匙，上頭綁著紙條：「去最高的地方。」這時，爪印的主人，一隻圓滾滾的小白兔，從橋下探出頭，抖了抖耳朵，一溜煙跑向鐘樓。{name}握緊鑰匙，追了過去。",
+        "鐘樓的旋轉樓梯又窄又陡，{name}扶著欄杆一階一階往上爬，數到第九十九階時已經氣喘吁吁。頂樓擺著一個木頭小盒子，鑰匙一轉，「喀」的一聲打開了。裡面是一張摺得方方正正的信紙，寫著奶奶的字：「聖誕快樂！底座下面還藏著一個秘密。早上八點，我們見。」就在這時，鐘聲「噹」地響起，雪花漫天飛舞。",
+        "{name}猛然睜開眼，窗外陽光燦爛，棕櫚樹在暖風裡輕輕搖晃。是聖誕節早晨！{name}半信半疑地把雪花球翻過來仔細一瞧，底座側邊果然有一個比火柴盒還小的抽屜。輕輕一拉，裡面躺著一張迷你紙條，畫著一座鐘樓，旁邊寫著：「早上八點」。跟夢裡的一模一樣！{name}驚訝得目瞪口呆。",
+        "八點整，平板電腦響了。爸爸幫忙接通，螢幕上出現奶奶笑瞇瞇的臉。她身後的窗外大雪紛飛，遠處竟有一座尖尖的鐘樓和一座彎彎的石橋。「那是雪花球裡的小鎮！」{name}大叫。奶奶眨眨眼：「對呀，我就住在這裡。你找到抽屜了嗎？」{name}迫不及待地把夢裡的冒險說了一遍。奶奶捧起窗台上的雪湊近鏡頭，{name}也舉起雪花球用力一搖。兩邊的雪，同時飄落。"
+      ],
+      "en": [
+        "{name} lived in a city where summer never really left. Palm trees stayed green all year, and even the winter breeze felt warm. It never, ever snowed. A week before Christmas, a heavy package arrived from Grandma, who lived far away. Inside was a snow globe holding a tiny village: a red-roofed bakery, a curved stone bridge, and a pointy clock tower. Grandma's card said, \"Shake it, look closely. The clues are hidden in the snow.\"",
+        "On Christmas Eve, {name} lay in bed and gave the globe a gentle shake. Snowflakes swirled around the clock tower like little dancers. Eyelids grew heavy... and when {name} opened them again, something crunched underfoot. Snow! Cold air tickled {name}'s nose, and a giant sneeze shook a clump of snow off a roof. Plop! It landed right on top of {his} head. So snow felt like this: icy, fluffy, and soft as powdered sugar.",
+        "The village was hushed. Only the bakery window glowed orange. Behind the glass stood a row of gingerbread cookies, every one stretching an arm in the same direction, as if pointing the way. {name} followed their gaze. A trail of tiny paw prints wandered across the snow toward the stone bridge. \"That must be the first clue!\" {name} whispered, and set off carefully, sinking into the deep snow with every step.",
+        "Beside the bridge stood a snowman whose carrot nose drooped sideways, looking rather silly. {name} straightened it, and snap! One twig arm loosened and dropped a tiny brass key. A note was tied to it: \"Go to the highest place.\" Just then, the owner of the paw prints, a plump white rabbit, peeked out from under the bridge, twitched its ears, and dashed toward the clock tower. Gripping the key, {name} hurried after it.",
+        "The tower's spiral staircase was narrow and steep. {name} held the railing and climbed step by step, counting, until step ninety-nine left {him} puffing. At the very top sat a small wooden box. The key turned with a click. Inside lay a neatly folded letter in Grandma's handwriting: \"Merry Christmas! Another secret hides under the base. See you at eight o'clock.\" Then the great bell boomed, and snowflakes burst into the air.",
+        "{name}'s eyes flew open. Sunshine poured through the window, and palm trees swayed in the warm breeze. It was Christmas morning! Not quite believing it, {name} turned the snow globe over and looked closely. There, on the side of the base, was a drawer smaller than a matchbox. Inside was a tiny note with a drawing of a clock tower and the words \"Eight o'clock.\" Exactly like the dream! {name} stared, speechless.",
+        "At eight sharp, the tablet rang. Dad helped answer it, and there was Grandma's smiling face. Behind her, snow was falling thickly outside the window, and in the distance stood a pointy clock tower and a curved stone bridge. \"That's the village in the snow globe!\" {name} shouted. Grandma winked. \"Yes, it's where I live. Did you find the drawer?\" {name} told her all about the dream adventure. Grandma scooped snow from her windowsill and held it up to the camera, and {name} shook the snow globe hard. On both sides, the snow fell together."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}第一次摸到雪，覺得像糖粉一樣又冰又鬆。你覺得雪摸起來會是什麼感覺？",
+          "在雪花球小鎮裡，薑餅人、雪人、小白兔和鐘樓，你最喜歡哪一段冒險？",
+          "如果你也能走進一顆雪花球，你希望裡面藏著什麼樣的小鎮或線索？"
+        ],
+        "tip": "今晚關燈前，和孩子輪流用悄悄話描述一個「夢中雪花球」裡的小鎮，一人說一樣東西，慢慢把它拼出來。明天可以一起把它畫下來。"
+      },
+      "en": {
+        "questions": [
+          "The first time {name} touched snow, it felt icy and fluffy like powdered sugar. What do you imagine snow feels like?",
+          "In the snow globe village, with the gingerbread cookies, the snowman, the white rabbit, and the clock tower, which part of the adventure did you like best?",
+          "If you could step inside a snow globe too, what kind of village or clues would you want to find there?"
+        ],
+        "tip": "Before lights out tonight, take turns whispering one thing that lives inside your own dream snow globe, building a tiny village together bit by bit. Tomorrow you can draw it together."
+      }
+    },
+    "draft": true
   }
 ]
