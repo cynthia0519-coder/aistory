@@ -636,6 +636,8 @@ export const LibraryStoryFieldsSchema = z.object({
   bgm: z.string().optional(),
   /** true = 還沒人工審過 */
   draft: z.boolean(),
+  /** 上架時間（選填，ISO 8601 含時區）；跟頻道節目同一刻出現，之前 App 不顯示 */
+  publishAt: z.iso.datetime({ offset: true }).optional(),
 });
 
 export const LibraryStorySchema = LibraryStoryFieldsSchema.refine(

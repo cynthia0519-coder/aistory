@@ -15,7 +15,7 @@ import {
 import { deleteStory, latestChapters, listSeries, listStories, seriesOf, type SavedStory } from "@/lib/storage";
 import { SERIES_CHAPTERS } from "@aistory/shared";
 import { lookOf, type HeroProfile } from "@/lib/heroes";
-import { ageRangeLabel, CATEGORY_CHIPS, draftMode, filterLibrary, loadLibrary, renderForHero, visibleLibrary, type LibraryPrefs } from "@/lib/library";
+import { ageRangeLabel, CATEGORY_CHIPS, draftMode, filterLibrary, isScheduled, loadLibrary, renderForHero, visibleLibrary, type LibraryPrefs } from "@/lib/library";
 import { sceneSrc } from "@/lib/scenes";
 import { BackupError, exportBackup, hasRecordings, importBackup, shareBackup } from "@/lib/backup";
 import { canUse } from "@/lib/membership";
@@ -34,6 +34,13 @@ interface Props {
   onShop: () => void;
   onCredits: () => void;
   onPrivacy: () => void;
+}
+
+/** 排程上架時間，台灣時間「11/17 19:30」 */
+function scheduleLabel(iso: string): string {
+  const d = new Date(iso);
+  const tw = new Date(d.getTime() + 8 * 3600_000);
+  return `${tw.getUTCMonth() + 1}/${tw.getUTCDate()} ${String(tw.getUTCHours()).padStart(2, "0")}:${String(tw.getUTCMinutes()).padStart(2, "0")}`;
 }
 
 const TABS = [
@@ -263,7 +270,7 @@ function LibraryShelf({
 
       {drafts && all && (
         <p className="rounded-2xl bg-card px-4 py-2 text-sm font-bold ring-2 ring-rust">
-          審稿模式：草稿也會顯示（{all.filter((s) => s.draft).length} 則）。網址加 ?drafts=0 關閉。
+          審稿模式：草稿和排程中的故事也會顯示（草稿 {all.filter((s) => s.draft).length} 則、排程 {all.filter((s) => !s.draft && isScheduled(s)).length} 則）。網址加 ?drafts=0 關閉。
         </p>
       )}
 
@@ -284,7 +291,7 @@ function LibraryShelf({
                 <button type="button" onClick={() => onOpen(list, i)} className="flex w-full flex-col gap-2 text-left">
                   <BookCover
                     src={sceneSrc(s.setting, s.theme, s.id)}
-                    label={`${drafts && s.draft ? "草稿 · " : ""}${s.theme ? THEMES[s.theme].label.zh : STYLE_RULES[s.style].label} · ${ageRangeLabel(s.ageBands)}`}
+                    label={`${drafts && s.draft ? "草稿 · " : ""}${drafts && !s.draft && isScheduled(s) ? `排程 ${scheduleLabel(s.publishAt!)} · ` : ""}${s.theme ? THEMES[s.theme].label.zh : STYLE_RULES[s.style].label} · ${ageRangeLabel(s.ageBands)}`}
                   >
                     {look && (
                       <HeroAvatar look={look} size={42} variant="bust" className="absolute left-2 top-2 rounded-full ring-2 ring-card drop-shadow-sm" />

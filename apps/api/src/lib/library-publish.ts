@@ -13,7 +13,17 @@ export interface PublishResult {
   errors: string[];
 }
 
-/** publish = true 上架、false 下架；force 跳過 AI 預審的檢查（下架不檢查） */
+/** 排程時間：「2026-11-17」= 那天台灣時間 19:30（節目發布時間）；也可以給完整 ISO 時間 */
+export function parsePublishAt(value: string): string {
+  const iso = /^\d{4}-\d{2}-\d{2}$/.test(value) ? `${value}T19:30:00+08:00` : value;
+  if (Number.isNaN(Date.parse(iso)) || !/(Z|[+-]\d{2}:\d{2})$/.test(iso)) throw new Error(`看不懂的時間：${value}`);
+  return iso;
+}
+
+/**
+ * publish = true 上架、false 下架；force 跳過 AI 預審的檢查（下架不檢查）。
+ * schedule 是 id → 上架時間；有給的故事到那個時間 App 才顯示，沒給的立刻顯示（下架一律清掉排程）。
+ */
 export function setPublished(
   stories: LibraryStory[],
   ids: string[],
@@ -21,6 +31,7 @@ export function setPublished(
   flags: Record<string, PublishFlag | undefined>,
   hashOf: (s: LibraryStory) => string,
   force = false,
+  schedule: Record<string, string> = {},
 ): PublishResult {
   const byId = new Map(stories.map((s) => [s.id, s]));
   const errors: string[] = [];
@@ -43,9 +54,14 @@ export function setPublished(
   if (errors.length) return { stories, changed: [], errors };
   const changed: string[] = [];
   const next = stories.map((s) => {
-    if (!targets.has(s.id) || s.draft === !publish) return s;
+    if (!targets.has(s.id)) return s;
+    const publishAt = publish ? schedule[s.id] : undefined;
+    if (s.draft === !publish && s.publishAt === publishAt) return s;
     changed.push(s.id);
-    return { ...s, draft: !publish };
+    const updated: LibraryStory = { ...s, draft: !publish };
+    if (publishAt) updated.publishAt = publishAt;
+    else delete updated.publishAt;
+    return updated;
   });
   return { stories: next, changed, errors };
 }

@@ -2089,7 +2089,8 @@
         "tip": "This week, after each potty try, wave and say \"Bye-bye!\" as you flush, then sing a short handwashing song together."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2026-11-17T19:30:00+08:00"
   },
   {
     "id": "starting-kindergarten-pocket-pebble",
@@ -6803,7 +6804,8 @@
         "tip": "Tonight before dinner, make a phone nap basket with your child, agree on screen time and set a timer, then when it rings, take a big breath together, tuck the phones in, and play a round of the silly sentence game."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2026-11-27T19:30:00+08:00"
   },
   {
     "id": "screen-time-boss-level",
@@ -10513,7 +10515,8 @@
         "tip": "This week, play 'one bite, one sticker' at dinner: offer one new food, and invite your child to look, sniff, take a tiny bite, and describe its color and crunch. Give a sticker for trying, whether they like it or not."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2026-11-20T19:30:00+08:00"
   },
   {
     "id": "trying-food-night-market-tofu",
@@ -18210,7 +18213,8 @@
         "tip": "After lights out, take turns whispering a tiny robot \"beep beep\" with your child, then say goodnight in soft robot voices."
       }
     },
-    "draft": false
+    "draft": false,
+    "publishAt": "2026-10-27T19:30:00+08:00"
   },
   {
     "id": "halloween-trick-or-treat-building",
@@ -18263,7 +18267,8 @@
         "tip": "After lights out, play a whispered guessing game: softly make a tiny \"meow,\" \"buzz,\" or very quiet \"roar,\" and let your child guess which neighbor from the story it is."
       }
     },
-    "draft": false
+    "draft": false,
+    "publishAt": "2026-10-30T19:30:00+08:00"
   },
   {
     "id": "winter-cold-snap-cozy-night",
@@ -18740,7 +18745,8 @@
         "tip": "Tonight, cuddle up and take turns whispering one little thing that made you happy today. Tomorrow you can draw it together on a paper leaf."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2026-11-24T19:30:00+08:00"
   },
   {
     "id": "childrens-day-kids-choice",

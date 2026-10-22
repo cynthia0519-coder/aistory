@@ -1,4 +1,4 @@
-// 故事庫：隨 App 打包的故事（public/library/stories.json）；只顯示人工審過的（draft: false）。
+// 故事庫：隨 App 打包的故事（public/library/stories.json）；只顯示人工審過的（draft: false），有 publishAt 的等到時間才顯示。
 // 在裝置上換成主角的名字與代名詞，不呼叫 API、不花 token。
 // 網頁版由 service worker（public/sw.js）快取，第一次載入後離線也能讀；App 版檔案本來就在裝置上。
 // 故事庫的故事只在閱讀時臨時組成 SavedStory，不寫進 IndexedDB。
@@ -65,9 +65,14 @@ export function draftMode(): boolean {
   }
 }
 
-/** 給使用者看的故事：審稿模式全部，否則只有審過的 */
-export function visibleLibrary(stories: LibraryStory[], showDrafts: boolean): LibraryStory[] {
-  return showDrafts ? stories : stories.filter((s) => !s.draft);
+/** 排程上架、還沒到時間的故事（看裝置時間；故事隨 App 打包，到點就出現，不用更新 App） */
+export function isScheduled(story: LibraryStory, now = Date.now()): boolean {
+  return story.publishAt !== undefined && Date.parse(story.publishAt) > now;
+}
+
+/** 給使用者看的故事：審稿模式全部，否則只有審過、而且到了上架時間的 */
+export function visibleLibrary(stories: LibraryStory[], showDrafts: boolean, now = Date.now()): LibraryStory[] {
+  return showDrafts ? stories : stories.filter((s) => !s.draft && !isScheduled(s, now));
 }
 
 let cache: Promise<LibraryStory[]> | null = null;
