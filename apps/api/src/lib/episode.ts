@@ -234,6 +234,9 @@ const THEME_HOOK_EN: Partial<Record<ThemeId, string>> = {
   "starting-kindergarten": "Starting Kindergarten?",
   "losing-failing": "Hates Losing?",
   "sharing-turns": "Learning to Share",
+  "hot-things": "Hot Stove Safety",
+  handwashing: "Hates Washing Hands?",
+  "tidying-toys": "Won't Clean Up Toys?",
 };
 
 /** 標題裡只有台灣才懂的說法，換成國際通用的（故事內文不動） */
