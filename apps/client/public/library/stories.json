@@ -18210,7 +18210,7 @@
         "tip": "After lights out, take turns whispering a tiny robot \"beep beep\" with your child, then say goodnight in soft robot voices."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "halloween-trick-or-treat-building",
@@ -18263,7 +18263,7 @@
         "tip": "After lights out, play a whispered guessing game: softly make a tiny \"meow,\" \"buzz,\" or very quiet \"roar,\" and let your child guess which neighbor from the story it is."
       }
     },
-    "draft": true
+    "draft": false
   },
   {
     "id": "winter-cold-snap-cozy-night",
