@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T06:00:31.177Z",
+  "generatedAt": "2026-10-22T17:51:57.930Z",
   "summary": {
     "stories": 365,
     "byStatus": {
@@ -14,14 +14,14 @@
       "phone_number": 2
     },
     "byIssueKind": {
-      "repetition": 160,
-      "logic": 149,
-      "quality": 75,
+      "repetition": 158,
+      "logic": 146,
+      "quality": 74,
       "taiwan_usage": 41,
-      "safety": 36,
-      "age_fit": 20,
-      "preachy": 28,
-      "zh_en_mismatch": 95,
+      "safety": 35,
+      "age_fit": 21,
+      "preachy": 27,
+      "zh_en_mismatch": 94,
       "length": 4,
       "guardrail": 4
     },
@@ -162,7 +162,7 @@
       "water-safety-river-picnic",
       "winter-cold-snap-cozy-night"
     ],
-    "usd": 11.4137
+    "usd": 11.4079
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -1383,31 +1383,24 @@
       "reviewedAt": "2026-10-14T09:43:01.802Z"
     },
     "brushing-teeth-sugar-bugs": {
-      "hash": "d04857be5729ea75",
+      "hash": "6c6b61d85d4d8ff1",
       "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.035788,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T17:51:31.534Z",
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "safety",
+            "kind": "age_fit",
             "severity": "low",
-            "lang": "both",
+            "lang": "zh",
             "where": "2",
-            "note": "「像小豌豆」的牙膏量適合三歲以上，未滿三歲建議米粒大小，可改成「像小米粒」以符合 2–4 歲"
-          },
-          {
-            "kind": "repetition",
-            "severity": "low",
-            "lang": "both",
-            "where": "5",
-            "note": "前後小圈圈、大人收尾後面牙齒的流程與鱷魚鏡子篇相近，但糖糖蟲派對設定有區隔，可接受"
+            "note": "「擠一點點牙膏，像一粒米那麼一點點」偏長，可拆成「擠一點點牙膏。像一粒米。」"
           }
         ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.0236176,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:43:09.591Z"
+      }
     },
     "brushing-teeth-hippo-grin": {
       "hash": "ab908f123c779e9d",
@@ -1654,8 +1647,12 @@
       "reviewedAt": "2026-10-14T09:44:34.162Z"
     },
     "handwashing-bubble-pirates": {
-      "hash": "f7873669603edee6",
+      "hash": "82ed3c344ed99f72",
       "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.0226256,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T17:51:37.769Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -1665,20 +1662,9 @@
             "lang": "zh",
             "where": "2",
             "note": "「玩完外面，要洗手」語序不太自然，建議改成「在外面玩完，要洗手」"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "6",
-            "note": "毛巾來源沒交代，只寫{name}擦乾，露露沒擦；可加「奶奶拿出小毛巾」並讓兩人一起擦乾"
           }
         ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.0251096,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T09:44:42.735Z"
+      }
     },
     "dentist-spaceship-chair": {
       "hash": "9f467f7bf6ed2313",
@@ -8009,53 +7995,39 @@
       "reviewedAt": "2026-10-14T19:13:07.270Z"
     },
     "gratitude-grandpas-old-umbrella": {
-      "hash": "ce20fc57c82888e1",
+      "hash": "7d3bb6258dbc8e03",
       "checks": [
         {
           "kind": "length",
           "severity": "low",
           "lang": "zh",
           "where": "story",
-          "note": "中文 708 字，6-8 歲 3 分鐘範圍是 500–700（太長）"
+          "note": "中文 714 字，6-8 歲 3 分鐘範圍是 500–700（太長）"
         },
         {
           "kind": "length",
           "severity": "low",
           "lang": "en",
           "where": "story",
-          "note": "英文 460 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
+          "note": "英文 463 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
+      "model": "claude-opus-5-5",
+      "usd": 0.027917599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T17:51:45.021Z",
       "llm": {
         "verdict": "ok",
         "issues": [
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "4",
-            "note": "「你的遮雨棚讓我們沒有淋濕」前文未提到麵包店遮雨棚，且他們有撐傘，可改成謝謝她做熱麵包"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "3",
-            "note": "星期六早上「讓小學生先過馬路」不太合理，可改成「讓行人和小朋友先過馬路」"
-          },
           {
             "kind": "repetition",
             "severity": "low",
             "lang": "both",
             "where": "3",
-            "note": "路上觀察警察、店員、郵差默默幫忙，與 thank-you-walk 和 quiet-helpers 相近，可縮短此段"
+            "note": "第3段沿路發現交通警察、店員、郵差默默幫忙，與 thank-you-walk、quiet-helpers 的路上感謝情節相近；主線是雨傘所以可接受"
           }
         ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.040048,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T19:23:31.506Z"
+      }
     },
     "gratitude-the-quiet-helpers": {
       "hash": "f19829d10be45cc5",
@@ -8305,58 +8277,28 @@
       "reviewedAt": "2026-10-14T19:14:20.498Z"
     },
     "courage-thats-not-funny": {
-      "hash": "ed98c066ce81ac45",
+      "hash": "6a79c10fa8e81db5",
       "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.0230976,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T17:51:51.255Z",
       "llm": {
         "verdict": "ok",
-        "issues": [
-          {
-            "kind": "quality",
-            "severity": "low",
-            "lang": "en",
-            "where": "4",
-            "note": "英文烏龜名「Slowpoke」也是知名卡通角色名，且略帶取笑「慢吞吞」意味，可改為「Slowly」或「Pebble」"
-          },
-          {
-            "kind": "preachy",
-            "severity": "low",
-            "lang": "both",
-            "where": "7",
-            "note": "結尾「這是{name}做過最勇敢的一件事」由旁白直接點題，可改成{name}心裡暖暖的動作描寫"
-          }
-        ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.024517599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T19:14:27.962Z"
+        "issues": []
+      }
     },
     "courage-the-wrong-turn": {
-      "hash": "595857a240878fd1",
+      "hash": "55eaa98742ce22d2",
       "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.023581599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T17:51:57.924Z",
       "llm": {
         "verdict": "ok",
-        "issues": [
-          {
-            "kind": "zh_en_mismatch",
-            "severity": "low",
-            "lang": "both",
-            "where": "1",
-            "note": "中文同學叫「阿哲」，英文叫「Jay」，名字不一致；建議英文改用 Azhe 或統一名稱"
-          },
-          {
-            "kind": "repetition",
-            "severity": "low",
-            "lang": "both",
-            "where": "6",
-            "note": "結尾「我剛剛腿都在抖耶」與同主題〈That's not funny〉的「膝蓋一直在抖」相近，可換個身體感受"
-          }
-        ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.025513599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-14T19:23:51.998Z"
+        "issues": []
+      }
     },
     "responsibility-goldfish-week": {
       "hash": "dfc9be3d838e1dd2",
@@ -11463,14 +11405,14 @@
           "note": "英文 255 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0522296,
-      "status": "ok",
-      "reviewedAt": "2026-10-22T06:00:31.163Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0522296,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T06:00:31.163Z"
     }
   }
 }

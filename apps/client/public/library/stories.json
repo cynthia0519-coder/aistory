@@ -1942,7 +1942,7 @@
       "zh": [
         "晚餐吃完了。{name}張開嘴巴笑。咦？牙齒上好熱鬧！小小糖糖蟲，正在開派對。蹦蹦跳，嘻嘻笑，糖糖蟲好開心。",
         "「哈囉，糖糖蟲！」{name}說。糖糖蟲搖搖手：「我們愛甜甜！我們要跳舞！」咚咚咚，咚咚咚，派對好吵喔。",
-        "爸爸笑著走過來。「我們去刷牙吧！」爸爸拿來小牙刷。「這是牙刷小掃把。」{name}點點頭。擠一點點牙膏，像小豌豆。",
+        "爸爸笑著走過來。「我們去刷牙吧！」爸爸拿來小牙刷。「這是牙刷小掃把。」{name}點點頭。擠一點點牙膏，像一粒米那麼一點點。",
         "{name}唱起刷牙歌：「刷刷刷，轉圈圈，小小圈，輕輕刷。」先刷前面的牙。刷刷刷，轉圈圈。糖糖蟲咯咯笑：「好癢喔！」",
         "再刷旁邊的牙。刷刷刷，轉圈圈。上面刷一刷，下面刷一刷。糖糖蟲拿起小帽子：「派對結束囉！」掰掰，掰掰！",
         "後面的角落呢？有一隻還在躲。{name}張大嘴巴：「啊——」爸爸說：「換我幫忙收尾。」刷刷刷，輕輕刷。最後一隻也溜走了。",
@@ -1952,7 +1952,7 @@
       "en": [
         "Dinner is all done. {name} opens wide and smiles. Oh! The teeth look so busy! Tiny sugar bugs are having a party. Hop, hop! Giggle, giggle!",
         "\"Hello, sugar bugs!\" says {name}. The bugs wave. \"We love sweets! We want to dance!\" Stomp, stomp, stomp! What a noisy party!",
-        "Dad comes over, smiling. \"Let's brush our teeth!\" He brings a little toothbrush. \"Here is your toothbrush broom.\" {name} nods. A pea of toothpaste goes on top.",
+        "Dad comes over, smiling. \"Let's brush our teeth!\" He brings a little toothbrush. \"Here is your toothbrush broom.\" {name} nods. A tiny rice-grain of toothpaste goes on top.",
         "{name} sings the brushing song. \"Brush, brush, round and round. Little circles, soft and slow.\" First the front teeth. Round and round! The sugar bugs giggle. \"That tickles!\"",
         "Next, the side teeth. Brush, brush, round and round. Brush the top. Brush the bottom. The bugs grab their tiny hats. \"Party's over!\" Bye-bye, bye-bye!",
         "What about the back corners? One bug is hiding there. {name} opens wide. \"Ahhh!\" Dad says, \"My turn to finish.\" Brush, brush, gently. Off goes the last bug!",
@@ -2497,7 +2497,7 @@
         "「我們來唱歌！」露露說。{name}跟著一起唱：「搓搓手心，搓搓手背，手指縫縫鑽一鑽！」泡泡跳起舞來。海盜晃呀晃：「哎呀呀，好滑呀！」",
         "還有大拇指，轉一圈，轉一圈。還有小指甲，刷刷刷，刷刷刷。{name}的手指好忙，像小刷子一樣。海盜的小船，咕嚕嚕，滑走囉！",
         "歌唱完了，用清水沖一沖。嘩啦啦，泡泡不見了。海盜們揮揮手：「再見啦！」{name}用軟軟的小毛巾，把手擦乾。乾乾淨淨，真舒服。",
-        "奶奶打開點心盒，是脆脆的蘋果片！{name}拿一片給露露。露露也拿一片給{name}。兩雙乾淨的小手，碰一碰。「我們的手香香的！」喀滋喀滋，真好吃。"
+        "奶奶打開點心盒，是軟軟的香蕉片！{name}拿一片給露露。露露也拿一片給{name}。兩雙乾淨的小手，碰一碰。「我們的手香香的！」軟軟甜甜，真好吃。"
       ],
       "en": [
         "The park sandbox is so much fun. {name} digs and digs. Scoop, scoop! Lulu pats and pats. Pat, pat! Up goes a sand castle. Grandma smiles from the bench. \"Snack time soon!\"",
@@ -2507,7 +2507,7 @@
         "\"Let's sing!\" says Lulu. {name} sings along. \"Rub the palms, rub the backs, wiggle fingers in the cracks!\" The bubbles dance. The pirates wobble. \"Whoa, so slippery!\"",
         "Next come the thumbs. Twist and turn, twist and turn. Then the nails. Scrub, scrub, scrub! {name}'s fingers are busy little brushes. The pirate boats slide away. Whoosh!",
         "The song is over. Now rinse with clean water. Splash, splash! The bubbles are gone. The pirates wave. \"Bye-bye!\" {name} dries {his} hands on a soft towel. Fresh and clean!",
-        "Grandma opens the snack box. Crunchy apple slices! {name} gives one to Lulu. Lulu gives one to {name}. Two pairs of clean hands tap together. \"Our hands smell nice!\" Crunch, crunch. Yum!"
+        "Grandma opens the snack box. Soft banana slices! {name} gives one to Lulu. Lulu gives one to {name}. Two pairs of clean hands tap together. \"Our hands smell nice!\" Soft and sweet. Yum!"
       ]
     },
     "theme": "handwashing",
@@ -13266,7 +13266,7 @@
         "雨滴打在傘上，咚咚咚地響。{name}靠在阿公身邊，發現一滴雨都沒淋到。走過騎樓時，阿公摸摸傘柄說：「很多年前，你媽媽像你這麼大的時候，每個下雨天，我都撐著這把傘送她去上學。」{name}睜大眼睛：「就是這一把？」",
         "「就是這一把。」阿公指著一塊藍色補丁，「有一次颳大風，傘骨被吹彎，我在燈下修了一整晚。」他又指著一塊格子布：「這是阿嬤用舊圍裙縫的。媽媽說，撐著這把傘，就像被抱著一樣。」{name}輕輕摸著補丁，好像在摸一個個小故事。",
         "他們牽著手繼續往前走。{name}開始東看西看：路口的交通警察撐著雨衣，揮手讓小學生先過馬路；便利商店的店員在門口鋪上紙板，怕有人踩到濕地板滑倒；郵差叔叔把每封信都包進塑膠袋，才放進信箱。{name}小聲說：「原來有好多人在偷偷幫忙耶。」",
-        "走進麵包店，阿姨遞上熱呼呼的紅豆麵包。{name}想了想，大聲說：「謝謝阿姨，你的遮雨棚讓我們沒有淋濕！」阿姨愣了一下，接著笑得眼睛彎彎的：「聽到這句話，我今天一整天都會很開心。」{name}心裡也暖暖的，好像口袋裝滿了寶貝。",
+        "走進麵包店，阿姨遞上熱呼呼的紅豆麵包。{name}想了想，大聲說：「謝謝阿姨，熱呼呼的紅豆麵包讓我們全身都暖起來了！」阿姨愣了一下，接著笑得眼睛彎彎的：「聽到這句話，我今天一整天都會很開心。」{name}心裡也暖暖的，好像口袋裝滿了寶貝。",
         "回家的路上，{name}一直盯著那把黑傘。它幫阿公和媽媽擋了好多年的雨，阿公也一次又一次把它修好。{name}心想：「這把傘一點都不醜，它是全世界最勇敢的傘。」可是，要怎麼謝謝阿公呢？只說一句話，好像還不夠。",
         "一到家，{name}拿出黑色卡紙、剪刀和彩色碎布，想做一張雨傘形狀的卡片。剪刀不太好控制，傘柄剪歪了，{name}吸一口氣，重新再剪。第二次又歪了，{he}還是不放棄。第三次，終於剪出一把漂亮的雨傘，再把藍色和格子的小布塊貼上去，就像真的補丁。",
         "傍晚，{name}在卡片上寫下：「謝謝阿公，一直為我們撐傘。」然後把卡片送給阿公。阿公看了好久，眼眶有點紅，緊緊抱住{name}：「這是我收過最漂亮的雨傘。」接著，{name}把門口的黑傘擦乾，輕輕掛好。阿公笑了，{name}也笑了。"
@@ -13276,7 +13276,7 @@
         "Raindrops went tap, tap, tap on the umbrella. {name} stayed close to Grandpa and noticed not one drop landed on them. Under the shop roofs, Grandpa patted the handle. \"Long ago, when your mom was your age, I walked her to school under this umbrella every rainy day.\" {name}'s eyes went wide. \"This one?\"",
         "\"This very one.\" Grandpa pointed to a blue patch. \"One windy day, the frame bent, and I fixed it all night under the lamp.\" He pointed to a checkered patch. \"Grandma sewed this from her old apron. Your mom said this umbrella felt like a hug.\" {name} gently touched the patches, like each one held a little story.",
         "They walked on, hand in hand. Now {name} looked all around. A traffic officer in a raincoat waved the schoolchildren safely across the street. A convenience store clerk laid cardboard by the door so no one would slip on the wet floor. The mail carrier wrapped every letter in plastic before slipping it into the mailbox. \"So many people help without saying anything,\" {name} whispered.",
-        "Inside the bakery, the lady handed them warm red bean buns. {name} thought for a moment, then said loudly, \"Thank you! Your awning kept us dry!\" The lady blinked, then smiled until her eyes crinkled. \"Hearing that will make my whole day happy.\" {name} felt warm inside too, as if both pockets were full of treasure.",
+        "Inside the bakery, the lady handed them warm red bean buns. {name} thought for a moment, then said loudly, \"Thank you! Your warm buns make us cozy all over!\" The lady blinked, then smiled until her eyes crinkled. \"Hearing that will make my whole day happy.\" {name} felt warm inside too, as if both pockets were full of treasure.",
         "On the way home, {name} kept looking at the black umbrella. It had kept Grandpa and Mom dry for years, and Grandpa had fixed it again and again. It isn't ugly at all, {name} thought. It's the bravest umbrella in the world. But how could {name} thank Grandpa? Just saying it didn't feel like enough.",
         "At home, {name} got out black paper, scissors, and bright scraps of cloth to make a card shaped like an umbrella. The scissors were tricky, and the handle came out crooked. {name} took a breath and tried again. Crooked again! {name} kept going. On the third try, a perfect umbrella appeared, and {he} glued on blue and checkered scraps like real patches.",
         "That evening, {name} wrote inside: \"Thank you, Grandpa, for always holding the umbrella for us.\" Grandpa read it for a long time, his eyes a little teary, then hugged {name} tight. \"This is the most beautiful umbrella I've ever had.\" Then {name} dried the old black umbrella and hung it up carefully. Grandpa smiled, and so did {name}."
@@ -13758,20 +13758,20 @@
         "「我、我、我家的烏、烏龜……」阿明說得有點卡住。後面突然傳來嘻嘻的笑聲，有人還學他說：「烏、烏、烏龜！」更多人跟著笑了。阿明的臉一下子紅了，手裡的畫抖了一下，他低下頭，再也說不出話來。",
         "{name}的心怦怦怦地跳，跳得好大聲，好像整間教室都聽得到。{his}手心冒汗，膝蓋也開始發抖。{name}很想假裝沒看見，可是一看到阿明咬著嘴唇、眼睛紅紅的樣子，胸口就緊緊的，好不舒服。",
         "{name}慢慢站了起來，椅子發出「嘎」的一聲。「這不好笑。」聲音小小的，還有點發抖，但每個人都聽見了。笑聲停了下來。{name}一步一步走到講台旁邊，站在阿明身邊，兩隻腳還在偷偷打顫。",
-        "「你慢慢說，我們等你。」{name}小聲對阿明說。阿明看了{name}一眼，又吸了一口氣。「牠、牠叫做……慢慢。」阿明說完，指著畫上的小烏龜。前排的小芬先拍起手來，接著好多同學也一起拍手。阿明的嘴角，悄悄地往上彎了。",
+        "「你慢慢說，我們等你。」{name}小聲對阿明說。阿明看了{name}一眼，又吸了一口氣。「牠、牠叫做……小石頭。」阿明說完，指著畫上的小烏龜。前排的小芬先拍起手來，接著好多同學也一起拍手。阿明的嘴角，悄悄地往上彎了。",
         "下課時，{name}聽見兩個同學躲在走廊角落，又在學阿明說話。{name}的心又怦怦跳了起來。這一次，{name}沒有自己跑去跟他們吵，而是轉身走向辦公室。「林老師，我需要您幫忙。」{name}一邊說，膝蓋一邊抖個不停。",
         "林老師蹲下來，認真聽{name}把事情說完。「謝謝你告訴我，這件事很重要。」上課時，林老師請大家圍成一圈，說：「每個人說話的速度都不一樣，我們一起練習等朋友把話說完。」那兩個同學紅著臉，走過去對阿明說了對不起。",
-        "放學了，媽媽在校門口等著。{name}牽起媽媽的手，說：「媽媽，我今天腳一直在抖。」媽媽聽完整個經過，緊緊抱住{name}。這時阿明跑過來揮揮手：「明、明天，我再跟你說慢慢的故事！」{name}笑著點點頭。這是{name}做過最勇敢的一件事。"
+        "放學了，媽媽在校門口等著。{name}牽起媽媽的手，說：「媽媽，我今天腳一直在抖。」媽媽聽完整個經過，緊緊抱住{name}。這時阿明跑過來揮揮手：「明、明天，我再跟你說小石頭的故事！」{name}笑著點點頭。這是{name}做過最勇敢的一件事。"
       ],
       "en": [
         "On Monday morning, the classroom buzzed with excitement. It was sharing time! {name} sat in the second row and watched classmates take turns at the front. Then it was Ming's turn. He held up a drawing of a little green turtle and took a deep breath.",
         "\"M-m-my turtle is c-c-called...\" Ming's words got stuck. A giggle came from the back of the room. Someone copied him: \"T-t-turtle!\" More kids laughed. Ming's cheeks turned pink. His drawing shook, and he looked down at his shoes, unable to say another word.",
         "{name}'s heart went thump, thump, thump, so loud it seemed the whole room could hear it. {his} palms got sweaty, and both knees began to wobble. It would be easier to look away. But Ming was biting his lip, and his eyes were shiny. {name}'s chest felt tight.",
         "Slowly, {name} stood up. The chair gave a little squeak. \"That's not funny.\" The voice was small and a bit shaky, but everyone heard it. The laughing stopped. Step by step, {name} walked to the front and stood right beside Ming, knees still trembling.",
-        "\"Take your time. We'll wait,\" {name} whispered. Ming glanced over and took another breath. \"H-his name is... Slowpoke.\" He pointed at the turtle in the drawing. Fen in the front row clapped first, and soon lots of classmates were clapping too. Ming's mouth curled into a small smile.",
+        "\"Take your time. We'll wait,\" {name} whispered. Ming glanced over and took another breath. \"H-his name is... Pebble.\" He pointed at the turtle in the drawing. Fen in the front row clapped first, and soon lots of classmates were clapping too. Ming's mouth curled into a small smile.",
         "At recess, {name} heard two kids in a corner of the hallway, copying Ming's voice again. Thump, thump went {name}'s heart. This time, instead of arguing with them alone, {name} turned and walked to the teachers' office. \"Ms. Lin, I need your help,\" {name} said, knees wobbling the whole time.",
         "Ms. Lin knelt down and listened to every word. \"Thank you for telling me. This matters.\" After recess, she asked the class to sit in a circle. \"We all talk at different speeds,\" she said. \"Let's practice waiting for friends to finish.\" The two kids went over to Ming and said sorry.",
-        "After school, Mom was waiting at the gate. {name} took her hand. \"Mom, my knees were shaking all day.\" Mom listened to the whole story, then gave {name} a big hug. Ming ran over and waved. \"T-tomorrow I'll tell you more about Slowpoke!\" {name} grinned and nodded. It was the bravest thing {name} had ever done."
+        "After school, Mom was waiting at the gate. {name} took her hand. \"Mom, my knees were shaking all day.\" Mom listened to the whole story, then gave {name} a big hug. Ming ran over and waved. \"T-tomorrow I'll tell you more about Pebble!\" {name} grinned and nodded. It was the bravest thing {name} had ever done."
       ]
     },
     "theme": "courage",
@@ -13818,11 +13818,11 @@
       ],
       "en": [
         "On a crisp autumn night, the whole fifth-grade class followed Ms. Lin up the mountain trail. Their headlamps bobbed between the trees like a string of walking stars. An owl called \"hoo-hoo\" from a high branch, and Kui hooked an arm tightly through {name}'s. Before they set off, Ms. Lin had explained the rule twice: stay with the group, and nobody wanders off alone.",
-        "Halfway up, the trail suddenly split in two. Ms. Lin stopped, unfolded the map, and frowned until her forehead looked like crumpled paper. \"Left! It's definitely left!\" Jay announced. \"You have to climb higher to see the stars!\" Everyone nodded and chattered at once, as if the answer were written on every single face.",
+        "Halfway up, the trail suddenly split in two. Ms. Lin stopped, unfolded the map, and frowned until her forehead looked like crumpled paper. \"Left! It's definitely left!\" Azhe announced. \"You have to climb higher to see the stars!\" Everyone nodded and chattered at once, as if the answer were written on every single face.",
         "Just then, {name}'s headlamp swept across the ferns on the right and lit up a crooked wooden post. Carved on it was an arrow and the words \"Stargazing Deck.\" The arrow pointed clearly to the right. {name}'s heart thumped. What if it was a mistake? The memory of getting an answer wrong in class, with everyone laughing, came flooding back.",
-        "{name}'s palms grew sweaty, and {his} throat felt as dry as a fistful of sand. But the arrow stayed right there, patiently waiting. {name} took a deep breath and raised a hand. \"Ms. Lin, there's a sign over there... I think the arrow points right.\" A few kids snickered. Jay wiggled his eyebrows. \"That sign's probably for squirrels.\"",
+        "{name}'s palms grew sweaty, and {his} throat felt as dry as a fistful of sand. But the arrow stayed right there, patiently waiting. {name} took a deep breath and raised a hand. \"Ms. Lin, there's a sign over there... I think the arrow points right.\" A few kids snickered. Azhe wiggled his eyebrows. \"That sign's probably for squirrels.\"",
         "Ms. Lin didn't laugh. She walked with {name} to the post, staying close enough that the group's lights still glowed around them. She brushed the ferns aside, studied the arrow, then glanced down at her map. \"Oh!\" she said, and turned it all the way around. She had been holding it upside down the whole time! Ms. Lin laughed louder than anyone.",
-        "\"Thank you, {name},\" Ms. Lin said, and she truly meant it. \"When everyone seems so sure, speaking up takes real courage.\" She handed over a spare flashlight. \"Will you help me spot the signs for the rest of the way?\" Jay scratched his head. \"Honestly,\" he mumbled, \"I was a little scared of the dark. That's why I was being so loud.\"",
+        "\"Thank you, {name},\" Ms. Lin said, and she truly meant it. \"When everyone seems so sure, speaking up takes real courage.\" She handed over a spare flashlight. \"Will you help me spot the signs for the rest of the way?\" Azhe scratched his head. \"Honestly,\" he mumbled, \"I was a little scared of the dark. That's why I was being so loud.\"",
         "The class followed the right-hand path. {name} walked beside Ms. Lin, reading out every arrow, and {his} voice grew stronger each time. At last the trees opened wide, and the sky above the stargazing deck blazed with so many stars that everyone fell silent. \"My knees were shaking back there,\" {name} whispered to Kui. Kui grinned. \"But you still raised your hand.\""
       ]
     },
