@@ -2810,5 +2810,19 @@
     "style": "bedtime",
     "setting": "home",
     "premise": "On New Year's Eve, {name}'s family fills a wish jar: each person writes or draws one happy memory from the year and one wish for next year. They put the jar by the window, say goodnight to the old year, and {name} sleeps before midnight."
+  },
+  {
+    "id": "thanksgiving-gratitude-leaves",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "At English class, {name}'s teacher explains that families in the United States and Canada celebrate Thanksgiving in autumn, sharing a big meal and saying what they are thankful for. The class makes a paper tree, and {name} writes thank-you leaves for family, friends and the lunch lady. At home, {name} adds one more leaf at bedtime."
+  },
+  {
+    "id": "thanksgiving-pen-pal-dinner",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "{name}'s pen pal in America sends a video of her family's Thanksgiving dinner: turkey, pumpkin pie, and everyone saying one thing they are grateful for. {name}'s family tries it at their own dinner with braised pork and rice, each person sharing a thank-you, and {name} records a video back to the pen pal."
   }
 ]
