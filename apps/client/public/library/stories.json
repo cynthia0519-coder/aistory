@@ -19324,5 +19324,111 @@
       }
     },
     "draft": true
+  },
+  {
+    "id": "typhoon-day-at-home",
+    "style": "bedtime",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}的颱風夜",
+      "en": "{name}'s Cozy Typhoon Night"
+    },
+    "paragraphs": {
+      "zh": [
+        "今天颱風要來了。學校放颱風假。窗外的風開始呼呼地吹。雨點滴滴答答，輕輕敲著窗戶。{name}趴在沙發上，聽著風聲。媽媽說：「我們一起準備吧。」{name}點點頭，跳下沙發。",
+        "第一件事，是搬陽台的盆栽。爸爸打開陽台的門。風一下子跑進來，涼涼的。{name}跟在爸爸身邊。{he}抱起一小盆薄荷，香香的。爸爸搬起大盆的九重葛。「進屋囉，小花小草。」{name}輕輕說。爸爸把門關好，鎖上。",
+        "第二件事，是裝水。媽媽拿出好多空水瓶。{name}扶著瓶子，媽媽慢慢倒水。咕嚕咕嚕，一瓶滿了。咕嚕咕嚕，又一瓶滿了。{name}把水瓶排成一排。看起來像一列小火車。媽媽笑著說：「謝謝你，好幫手。」",
+        "第三件事，是找手電筒。奶奶說：「在櫃子的抽屜裡。」{name}拉開抽屜，找到一支黃色手電筒。按一下，咔嚓，亮了。再按一下，咔嚓，暗了。{name}把它放在桌上。「全部準備好了！」{he}開心地說。",
+        "天色慢慢變暗了。一家人吃完熱熱的湯麵。窗外的風還在呼呼吹。忽然，燈閃了一下。閃一下，又閃一下。然後，屋裡變得暗暗的。{name}緊緊靠著媽媽。媽媽輕聲說：「別擔心，我們有手電筒。」",
+        "{name}拿起黃色手電筒。咔嚓，一圈暖暖的光亮起來。光照在牆上，圓圓的，像月亮。爸爸把手比成小鳥。牆上的影子飛呀飛。奶奶把手比成兔子。影子兔子跳呀跳。{name}咯咯地笑了。",
+        "奶奶開始說故事。有一隻小烏龜，下雨天躲進殼裡。殼裡乾乾的，暖暖的。小烏龜聽著雨聲，慢慢睡著了。{name}窩在軟軟的毯子裡。{he}聽著奶奶的聲音。風聲好像變小了，雨聲也變輕了。",
+        "「我們家，也像烏龜殼。」{name}小小聲說。爸爸點點頭。媽媽摸摸{his}頭。窗外，風還在輕輕唱歌。屋裡，手電筒的光柔柔的。{name}的眼睛慢慢閉上了。晚安，{name}。晚安，颱風夜。"
+      ],
+      "en": [
+        "A typhoon was on its way. School was closed. Outside, the wind began to go whoosh, whoosh. Raindrops tapped on the window, tip-tap, tip-tap. {name} lay on the sofa, listening. Mom smiled and said, \"Let's get ready together.\" {name} nodded and hopped down.",
+        "First, the balcony plants had to come inside. Dad opened the balcony door. A cool wind rushed in. {name} stayed right beside Dad. {name} carried a small pot of mint. It smelled fresh and sweet. Dad lifted the big flower pot. \"Come inside, little plants,\" {name} whispered. Dad closed the door and locked it.",
+        "Next, they filled water bottles. Mom brought out lots of empty ones. {name} held each bottle steady. Mom poured slowly. Glug, glug, one was full. Glug, glug, another was full. {name} lined them up in a row. They looked like a little train. \"Thank you, helper,\" Mom said.",
+        "Then they needed the flashlight. Grandma said, \"It's in the cupboard drawer.\" {name} pulled the drawer open. There was a yellow flashlight! Click, it turned on. Click, it turned off. {name} set it on the table. \"Everything is ready!\" {he} said happily.",
+        "Slowly, evening fell. The family ate warm noodle soup. Outside, the wind still went whoosh. Then the lights flickered. Flicker, flicker, flicker. And the room grew dark. {name} snuggled close to Mom. \"Don't worry,\" Mom said softly. \"We have our flashlight.\"",
+        "{name} picked up the yellow flashlight. Click! A warm circle of light appeared. It glowed on the wall like a round moon. Dad made a bird with his hands. The shadow bird flew and flew. Grandma made a bunny. The shadow bunny hopped and hopped. {name} giggled.",
+        "Then Grandma told a story. A little turtle hid in its shell on a rainy day. Inside, it was dry and warm. The turtle listened to the rain and fell asleep. {name} curled up in a soft blanket. The wind seemed quieter now. The rain sounded gentle too.",
+        "\"Our home is like a turtle shell,\" {name} whispered. Dad nodded. Mom gently patted {his} head. Outside, the wind hummed softly. Inside, the flashlight glowed warm and gold. {name}'s eyes slowly closed. Goodnight, {name}. Goodnight, typhoon night."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}抱的薄荷香香的，你喜歡聞什麼味道？",
+          "爸爸和奶奶在牆上變出小鳥和兔子，你想變出什麼動物？",
+          "在家裡，你最喜歡窩在哪裡？"
+        ],
+        "tip": "今晚關燈前，用小夜燈在牆上慢慢比一隻手影小動物，再一起輕聲跟它說晚安。"
+      },
+      "en": {
+        "questions": [
+          "The mint {name} carried smelled sweet. What smell do you like?",
+          "Dad and Grandma made a bird and a bunny on the wall. What animal would you make?",
+          "Where is your favourite cozy spot at home?"
+        ],
+        "tip": "Before lights out tonight, use a small night-light to slowly make one shadow animal on the wall, then whisper goodnight to it together."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "lunar-new-year-shy-greetings",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}的新年小招呼",
+      "en": "{name}'s Little New Year Hello"
+    },
+    "paragraphs": {
+      "zh": [
+        "過年了，家裡好熱鬧。門鈴叮咚叮咚響個不停。好多親戚來拜年了。有阿姨、舅舅，還有好久不見的姑婆。{name}躲在媽媽身後，小手緊緊抓著媽媽的衣角。{his}心跳得好快，咚咚咚。",
+        "媽媽蹲下來，輕輕摸摸{name}的頭。「你有點害羞，對不對？」{name}點點頭。媽媽說：「沒關係。你可以揮揮手，可以笑一笑。也可以小小聲說新年快樂。」「不用抱抱嗎？」「不用，你覺得舒服就好。」",
+        "舅舅走過來，笑著說：「哇，長這麼高啦！」{name}有點緊張。{he}想了想，舉起小手，輕輕揮了揮。舅舅也揮揮手，眨眨眼睛。「揮手好棒喔！」舅舅說完，就去喝茶了。{name}鬆了一口氣。原來，揮手一點也不難。",
+        "接著，姑婆坐到沙發上。她拿出一個紅包，紅紅的，亮亮的。{name}慢慢走過去。{his}嘴巴張開，又閉起來。聲音好像卡住了。姑婆沒有催，只是溫柔地等著。{name}吸一口氣，給姑婆一個大大的微笑。姑婆也笑了，眼睛彎彎的。",
+        "廚房飄來香香的味道。阿姨端出一盤年糕，熱熱的、甜甜的。「要不要吃一塊？」阿姨問。{name}想說謝謝，可是好難開口。{he}看看媽媽，媽媽點點頭。{name}小小聲說：「謝謝阿姨，新年快樂。」阿姨開心地說：「新年快樂！」",
+        "吃完年糕，{name}發現角落有個小女孩。她是表妹安安，也躲在椅子後面。安安手裡抱著一隻布兔子。{name}心想：她也害羞嗎？{name}想起媽媽的話，就對安安揮揮手。安安愣了一下，也揮揮手。",
+        "{name}拿出{his}積木，放在地毯上。「一起蓋房子好嗎？」安安點點頭，慢慢走過來。兩個人一塊一塊往上疊。房子越來越高，還加了一個屋頂。布兔子住進去了！兩人一起拍手大笑。",
+        "天色慢慢暗了，親戚們要回家了。安安拉拉{name}的手：「下次再一起玩！」{name}笑著說：「好啊！新年快樂！」這一次，聲音一點也不小。媽媽在旁邊，眼睛亮亮的。{name}心裡暖暖的，好像也掛了一個小燈籠。"
+      ],
+      "en": [
+        "It was Lunar New Year, and the house was busy. Ding-dong! Ding-dong! The doorbell kept ringing. Aunties and uncles came to visit. Great-Aunt came too. {name} had not seen them for a long time. {name} hid behind Mom and held her sleeve tight. Thump, thump, went {his} heart.",
+        "Mom knelt down and patted {name} gently. \"You feel a little shy, right?\" {name} nodded. \"That's okay,\" Mom said. \"You can wave. You can smile. Or you can whisper 'Happy New Year.'\" \"Do I have to hug?\" \"No. Just do what feels okay.\"",
+        "Uncle walked over with a big grin. \"Wow, you've grown so tall!\" {name} felt nervous. Then {he} lifted a small hand and waved. Uncle waved back and winked. \"Great wave!\" he said. Then he went to drink his tea. {name} let out a breath. Waving was not so hard!",
+        "Next, Great-Aunt sat on the sofa. She held a red envelope, shiny and bright. {name} walked over slowly. {his} mouth opened, then closed again. The words felt stuck. Great-Aunt did not hurry. She waited kindly. {name} took a breath and gave her a big smile. Great-Aunt smiled too. Her eyes crinkled like moons.",
+        "A yummy smell drifted from the kitchen. Auntie brought out warm, sweet rice cake. \"Would you like a piece?\" she asked. {name} wanted to say thank you. But it felt hard. {name} looked at Mom, and Mom nodded. Then {name} whispered, \"Thank you. Happy New Year.\" \"Happy New Year!\" Auntie said happily.",
+        "After the rice cake, {name} spotted someone in the corner. It was cousin Anan, hiding behind a chair. She hugged a cloth bunny. Was Anan shy too? {name} remembered Mom's words. So {name} gave Anan a little wave. Anan blinked. Then she waved back.",
+        "{name} brought out {his} blocks and set them on the rug. \"Want to build a house together?\" Anan nodded and came closer. One block, then another. The house grew taller and taller. They added a roof on top. The bunny moved right in! Both of them clapped and giggled.",
+        "Soon evening came, and the relatives got ready to leave. Anan tugged {name}'s hand. \"Let's play again next time!\" \"Okay!\" {name} said. \"Happy New Year!\" This time, the voice was not small at all. Mom watched with shining eyes. {name} felt warm inside, like a little lantern glowing."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}躲在媽媽身後的時候，心跳咚咚咚，你覺得那是什麼感覺？",
+          "揮揮手、笑一笑、小小聲說新年快樂，你最喜歡哪一種打招呼？",
+          "{name}和安安用積木蓋了房子給布兔子住，如果是你，你想蓋什麼給誰住？"
+        ],
+        "tip": "今晚關燈前，和孩子輪流用一種安靜的方式跟對方說晚安，像揮揮手、眨眨眼或小小聲說悄悄話，再聊聊故事裡最喜歡的一段。"
+      },
+      "en": {
+        "questions": [
+          "When {name} hid behind Mom and {his} heart went thump, thump, what do you think that felt like?",
+          "Waving, smiling, or whispering 'Happy New Year': which hello do you like best?",
+          "{name} and Anan built a house for the bunny. What would you build, and who would live in it?"
+        ],
+        "tip": "Before lights out tonight, take turns saying goodnight in a quiet way, like a little wave, a wink, or a soft whisper, then chat about your favourite part of the story."
+      }
+    },
+    "draft": true
   }
 ]
