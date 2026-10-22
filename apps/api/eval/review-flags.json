@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-22T03:41:58.240Z",
+  "generatedAt": "2026-10-22T03:44:16.929Z",
   "summary": {
-    "stories": 349,
+    "stories": 350,
     "byStatus": {
-      "ok": 257,
+      "ok": 258,
       "check": 92
     },
     "byCheckKind": {
-      "length": 271,
+      "length": 273,
       "duplicate_title": 12,
       "tokens": 2,
       "sensitive_pattern": 9,
@@ -15,13 +15,13 @@
     },
     "byIssueKind": {
       "repetition": 156,
-      "logic": 146,
+      "logic": 147,
       "quality": 71,
       "taiwan_usage": 38,
       "safety": 36,
-      "age_fit": 19,
+      "age_fit": 20,
       "preachy": 28,
-      "zh_en_mismatch": 93,
+      "zh_en_mismatch": 94,
       "length": 4,
       "guardrail": 4
     },
@@ -160,7 +160,7 @@
       "water-safety-river-picnic",
       "winter-cold-snap-cozy-night"
     ],
-    "usd": 10.5335
+    "usd": 10.5847
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -10891,14 +10891,14 @@
     "christmas-class-gift-exchange": {
       "hash": "f542c4c12ec0374b",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0441536,
-      "status": "ok",
-      "reviewedAt": "2026-10-22T03:41:58.227Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0441536,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:41:58.227Z"
     },
     "winter-solstice-tangyuan": {
       "hash": "47e4c3071bbe1e10",
@@ -11028,6 +11028,55 @@
       "usd": 0.049941599999999996,
       "status": "ok",
       "reviewedAt": "2026-10-22T03:41:37.755Z"
+    },
+    "thanksgiving-gratitude-leaves": {
+      "hash": "5d5649255a90d6ff",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 582 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 381 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "model": "claude-opus-5-5",
+      "usd": 0.0512576,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:44:16.916Z",
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "4",
+            "note": "第3段寫一個字母都很吃力，第4–5段卻寫出完整英文句子（如「謝謝王阿姨，午餐好好吃」），建議改成寫名字或「Thank you」加畫圖"
+          },
+          {
+            "kind": "age_fit",
+            "severity": "low",
+            "lang": "both",
+            "where": "0",
+            "note": "「老師說，在美國和加拿大，秋天有個特別的節日」與英文同句偏長，建議拆成兩句"
+          },
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "7",
+            "note": "中文有「{name}笑著閉上眼睛」，英文缺少，可補上 smiled and closed {his} eyes"
+          }
+        ]
+      }
     }
   }
 }

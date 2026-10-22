@@ -18688,5 +18688,58 @@
       }
     },
     "draft": true
+  },
+  {
+    "id": "thanksgiving-gratitude-leaves",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "{name}的感謝樹",
+      "en": "{name}'s Thank-You Tree"
+    },
+    "paragraphs": {
+      "zh": [
+        "今天是英文課。林老師笑著走進教室。「大家知道感恩節嗎？」{name}搖搖頭，好奇地看著老師。老師說，在美國和加拿大，秋天有個特別的節日。家人會聚在一起，吃一頓豐盛的大餐。",
+        "「吃飯前，大家會輪流說話。」林老師說：「說說自己感謝什麼。」{name}眨眨眼睛，心裡暖暖的。老師拿出一張大大的紙。紙上畫著一棵光禿禿的樹。「我們來做一棵感謝樹吧！」全班都拍手說好。",
+        "每個人拿到幾片紙葉子。有紅色、黃色，還有橘色。老師在黑板寫下「Thank you」。「把想謝謝的人寫在葉子上。」{name}握緊鉛筆，有一點緊張。英文字母彎彎曲曲的，好難寫喔！",
+        "{name}慢慢寫下第一個字母。哎呀，寫歪了。{name}用橡皮擦擦掉，再寫一次。還是有點歪。旁邊的小美說：「我也寫歪了。」兩個人相視一笑。林老師走過來，輕輕說：「慢慢來，再試一次就好。」{name}深吸一口氣，又試了一次。這次，字母站得直直的！",
+        "第一片紅葉子，{name}寫給爸爸媽媽。謝謝他們每天給{him}抱抱。第二片黃葉子，寫給好朋友小美。謝謝她借{him}彩色筆。拿起第三片橘葉子時，{name}歪著頭想了好久。還要謝謝誰呢？",
+        "中午，{name}排隊拿午餐。王阿姨笑咪咪地舀了一大匙玉米。「多吃一點，才有力氣喔！」{name}忽然想到了！回到教室，{name}在橘葉子上寫：「謝謝王阿姨，午餐好好吃。」林老師看了，豎起大拇指。",
+        "大家把葉子貼到樹上。光禿禿的樹，變得五顏六色。下課時，{name}拉著王阿姨來看。王阿姨看到橘葉子，眼睛亮了起來。「謝謝你，好貼心喔！」放學前，林老師多給了{name}一片空白的葉子。",
+        "傍晚，夕陽把天空染成橘色。{name}跟媽媽一起回家了。洗好澡，準備睡覺時，{name}拿出那片葉子。{he}一筆一筆，認真寫下：「謝謝林老師，教我不放棄。」媽媽把葉子貼在床邊。{name}笑著閉上眼睛。晚安，{name}。"
+      ],
+      "en": [
+        "Today was English class. Ms. Lin walked in with a big smile. \"Who knows about Thanksgiving?\" she asked. {name} shook {his} head and listened closely. Ms. Lin said families in the United States and Canada celebrate it in autumn. They gather together and share a huge, delicious meal.",
+        "\"Before they eat, everyone takes a turn,\" said Ms. Lin. \"They say what they are thankful for.\" {name} felt warm inside. Ms. Lin held up a big sheet of paper. On it was a bare tree with no leaves. \"Let's make a thank-you tree!\" Everyone clapped.",
+        "Each child got some paper leaves. There were red ones, yellow ones, and orange ones. Ms. Lin wrote \"Thank you\" on the board. \"Write who you want to thank on your leaves.\" {name} held the pencil tight. The English letters were curvy and tricky!",
+        "{name} slowly wrote the first letter. Oops, it was crooked. {name} erased it and tried again. Still a little wobbly. \"Mine is crooked too,\" whispered May, sitting nearby. They smiled at each other. Ms. Lin came over and said softly, \"Take your time. Just try once more.\" {name} took a deep breath and did. This time, the letter stood up tall!",
+        "On the red leaf, {name} wrote to Mom and Dad. Thank you for hugs every day. On the yellow leaf, {name} wrote to May. Thank you for sharing your markers. Then {name} picked up the orange leaf and thought for a long time. Who else?",
+        "At lunch, {name} waited in line. Mrs. Wang smiled and scooped up a big spoonful of corn. \"Eat up, so you stay strong!\" Suddenly {name} knew! Back in class, {name} wrote, \"Thank you, Mrs. Wang, for yummy lunches.\" Ms. Lin gave a big thumbs-up.",
+        "Everyone stuck their leaves on the tree. The bare tree became bright and colorful. At recess, {name} brought Mrs. Wang to see it. When she found the orange leaf, her eyes sparkled. \"Thank you, sweetheart!\" Before going home, Ms. Lin gave {name} one extra blank leaf.",
+        "That evening, the sunset turned the sky orange. {name} went home with Mom. After a warm bath, it was almost bedtime. {name} took out the extra leaf and carefully wrote, \"Thank you, Ms. Lin, for helping me keep trying.\" Mom taped it by the bed. Goodnight, {name}."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "你最喜歡哪一種顏色的葉子？紅色、黃色，還是橘色？",
+          "字母寫歪的時候，{name}心裡覺得怎麼樣？",
+          "王阿姨看到橘葉子時，臉上是什麼表情？你可以做給我看嗎？"
+        ],
+        "tip": "今晚抱在一起，輪流小聲說一件今天讓你開心的小事。明天可以一起把它畫在一片紙葉子上。"
+      },
+      "en": {
+        "questions": [
+          "Which leaf color do you like best: red, yellow, or orange?",
+          "When the letter came out crooked, how did {name} feel?",
+          "What did Mrs. Wang's face look like when she saw the orange leaf? Can you show me?"
+        ],
+        "tip": "Tonight, cuddle up and take turns whispering one little thing that made you happy today. Tomorrow you can draw it together on a paper leaf."
+      }
+    },
+    "draft": true
   }
 ]
