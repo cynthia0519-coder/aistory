@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-10-22T03:38:16.928Z",
+  "generatedAt": "2026-10-22T03:41:58.240Z",
   "summary": {
-    "stories": 340,
+    "stories": 349,
     "byStatus": {
-      "ok": 248,
+      "ok": 257,
       "check": 92
     },
     "byCheckKind": {
-      "length": 261,
+      "length": 271,
       "duplicate_title": 12,
       "tokens": 2,
       "sensitive_pattern": 9,
       "phone_number": 2
     },
     "byIssueKind": {
-      "repetition": 155,
-      "logic": 143,
-      "quality": 69,
+      "repetition": 156,
+      "logic": 146,
+      "quality": 71,
       "taiwan_usage": 38,
       "safety": 36,
-      "age_fit": 18,
+      "age_fit": 19,
       "preachy": 28,
-      "zh_en_mismatch": 90,
+      "zh_en_mismatch": 93,
       "length": 4,
       "guardrail": 4
     },
@@ -157,9 +157,10 @@
       "teamwork-the-class-play",
       "trying-food-bitter-melon-explorer",
       "trying-food-stinky-tofu-sniff",
-      "water-safety-river-picnic"
+      "water-safety-river-picnic",
+      "winter-cold-snap-cozy-night"
     ],
-    "usd": 10.0894
+    "usd": 10.5335
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -10742,17 +10743,17 @@
           "note": "英文 437 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0406696,
-      "status": "ok",
-      "reviewedAt": "2026-10-22T03:38:01.342Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0406696,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:38:01.342Z"
     },
     "christmas-snow-globe-grandma": {
-      "hash": "7e97829c5f6cfdb1",
+      "hash": "f47aaa853fe362d3",
       "checks": [
         {
           "kind": "length",
@@ -10766,7 +10767,7 @@
           "severity": "low",
           "lang": "en",
           "where": "story",
-          "note": "英文 534 words，8-10 歲 3 分鐘範圍是 380–500（太長）"
+          "note": "英文 537 words，8-10 歲 3 分鐘範圍是 380–500（太長）"
         }
       ],
       "llm": {
@@ -10774,21 +10775,21 @@
         "issues": []
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0444616,
+      "usd": 0.0519016,
       "status": "ok",
-      "reviewedAt": "2026-10-22T03:21:41.615Z"
+      "reviewedAt": "2026-10-22T03:40:53.399Z"
     },
     "halloween-costume-parade": {
       "hash": "ccad15686af0ab57",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.044897599999999996,
-      "status": "ok",
-      "reviewedAt": "2026-10-22T03:38:10.014Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.044897599999999996,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:38:10.014Z"
     },
     "halloween-trick-or-treat-building": {
       "hash": "4d168c4fbca51820",
@@ -10801,14 +10802,232 @@
           "note": "英文 432 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
       "model": "claude-opus-5-5",
       "usd": 0.0402576,
       "status": "ok",
-      "reviewedAt": "2026-10-22T03:38:16.924Z",
+      "reviewedAt": "2026-10-22T03:38:16.924Z"
+    },
+    "winter-cold-snap-cozy-night": {
+      "hash": "2ef5424eb2158116",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 411 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 273 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "both",
+            "where": "2",
+            "note": "中文『熊熊，等一下給你抱』與英文 \"This is for you, Bear-Bear.\" 語意略不同，可統一為「等一下給你抱」。"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.061136,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:33:51.472Z"
+    },
+    "christmas-gingerbread-house": {
+      "hash": "ae8240f8a5aff605",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 595 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 381 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "6",
+            "note": "第 6 段突然出現「煙囪也歪歪的」，前文零件只有牆和屋頂，建議在第 0 段零件中加入一小塊煙囪，或刪去煙囪"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "both",
+            "where": "guide",
+            "note": "第 1 題「你覺得好不好笑？」是是非題，可改成「屋頂滑下來時，你覺得它想去哪裡玩？」更開放"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0474136,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:41:00.565Z"
+    },
+    "christmas-class-gift-exchange": {
+      "hash": "f542c4c12ec0374b",
+      "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.0441536,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:41:58.227Z",
       "llm": {
         "verdict": "ok",
         "issues": []
       }
+    },
+    "winter-solstice-tangyuan": {
+      "hash": "47e4c3071bbe1e10",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 585 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "0",
+            "note": "中文有「{name}洗好小手，開心地坐到桌邊」，英文缺這句，英文可補上洗手、坐到桌邊"
+          },
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "7",
+            "note": "中文奶奶說「晚安，團團圓圓」，英文只有\"Goodnight\"，但 tip 用了 \"all together\"，英文第 7 段宜補上"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.048769599999999996,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:34:20.147Z"
+    },
+    "new-year-countdown-sleep": {
+      "hash": "62ed44d41554ebf2",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "6",
+            "note": "「想熬夜等到午夜卻先睡著」與 lunar-new-year-reunion-dinner 的結局相近，但節日與倒數遊戲不同，可接受"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.045085599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:41:14.528Z"
+    },
+    "lunar-new-year-reunion-dinner": {
+      "hash": "f628f7733e0d6077",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0468896,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:41:21.874Z"
+    },
+    "lunar-new-year-red-envelope": {
+      "hash": "438628cdda475f6f",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 446 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0452896,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:41:28.625Z"
+    },
+    "lunar-new-year-shy-nian": {
+      "hash": "849f01b968af59c9",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 413 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 275 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "6",
+            "note": "第6段白天貼春聯時就說「年獸，晚安！」，可加一句「天黑了」再道晚安，時間較順"
+          },
+          {
+            "kind": "age_fit",
+            "severity": "low",
+            "lang": "zh",
+            "where": "5",
+            "note": "「牠的大尾巴輕輕搖呀搖，好像在跳一支慢慢的舞」稍長，可拆成兩句"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.049941599999999996,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:41:37.755Z"
     }
   }
 }
