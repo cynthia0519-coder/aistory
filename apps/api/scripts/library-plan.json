@@ -2613,28 +2613,28 @@
     "ageBands": ["2-4"],
     "style": "cute",
     "setting": "home",
-    "premise": "On Christmas Eve, {name} hangs a sock for everyone in the family, one by one: a big sock for Dad, a striped sock for Mom, a tiny sock for the cat. Counting the socks, saying goodnight to each one, {name} snuggles into bed so the night can be quiet and cozy. Keep Santa's magic gentle and never say whether Santa is real; gifts are never a reward for being good, and nobody is watching or judging the child."
+    "premise": "On Christmas Eve, {name} hangs a sock for everyone in the family, one by one: a big sock for Dad, a striped sock for Mom, a tiny sock for the cat. Counting the socks, saying goodnight to each one, {name} snuggles into bed so the night can be quiet and cozy. Never say whether Santa is real; gifts are never a reward for being good."
   },
   {
     "id": "christmas-tree-top-star",
     "ageBands": ["4-6"],
     "style": "bedtime",
     "setting": "home",
-    "premise": "The family decorates a small Christmas tree in the living room. {name} really wants to put the shining star on top, but the little cousin wants to as well. {name} finds a way to do it together, and the star glows over the sleepy room as the lights go out one by one. Keep Santa's magic gentle and never say whether Santa is real; gifts are never a reward for being good, and nobody is watching or judging the child."
+    "premise": "The family decorates a small Christmas tree in the living room. {name} really wants to put the shining star on top, but the little cousin wants to as well. {name} finds a way to do it together, and the star glows over the sleepy room as the lights go out one by one. Never say whether Santa is real; gifts are never a reward for being good."
   },
   {
     "id": "christmas-cards-for-night-helpers",
     "ageBands": ["6-8"],
     "style": "inspiring",
     "setting": "city",
-    "premise": "On Christmas Eve, {name} notices the people still working: the building guard at the front desk, the convenience store clerk, the bus driver on the last bus. {name} and Mom make simple handmade cards and hand them out on the walk home, and {name} learns how warm it feels to say thank you. Keep Santa's magic gentle and never say whether Santa is real; gifts are never a reward for being good, and nobody is watching or judging the child."
+    "premise": "On Christmas Eve, {name} notices the people still working: the building guard at the front desk, the convenience store clerk, the bus driver on the last bus. {name} and Mom make simple handmade cards and hand them out on the walk home, and {name} learns how warm it feels to say thank you. Never say whether Santa is real; gifts are never a reward for being good."
   },
   {
     "id": "christmas-snow-globe-grandma",
     "ageBands": ["8-10"],
     "style": "adventure",
     "setting": "snow",
-    "premise": "{name} lives in a warm city where it never snows, but Grandma, who lives far away, sends a snow globe for Christmas. That night {name} dreams of walking through the snow globe's tiny snowy village, finding small clues that lead to a message from Grandma, and wakes up to a video call with her on Christmas morning. Keep Santa's magic gentle and never say whether Santa is real; gifts are never a reward for being good, and nobody is watching or judging the child."
+    "premise": "{name} lives in a warm city where it never snows, but Grandma, who lives far away, sends a snow globe for Christmas. That night {name} dreams of walking through the snow globe's tiny snowy village, finding small clues that lead to a message from Grandma, and wakes up to a video call with her on Christmas morning. Never say whether Santa is real; gifts are never a reward for being good."
   },
   {
     "id": "winter-cold-snap-cozy-night",
@@ -2648,14 +2648,14 @@
     "ageBands": ["4-6"],
     "style": "cute",
     "setting": "home",
-    "premise": "{name} and Dad build a little gingerbread house. The roof keeps sliding off, so they try again with more icing, and decorate it with candy windows. It is a bit wobbly and that makes it perfect. They leave it on the table to admire in the morning. Keep Santa's magic gentle and never say whether Santa is real; gifts are never a reward for being good, and nobody is watching or judging the child."
+    "premise": "{name} and Dad build a little gingerbread house. The roof keeps sliding off, so they try again with more icing, and decorate it with candy windows. It is a bit wobbly and that makes it perfect. They leave it on the table to admire in the morning. Never say whether Santa is real; gifts are never a reward for being good."
   },
   {
     "id": "christmas-class-gift-exchange",
     "ageBands": ["6-8"],
     "style": "inspiring",
     "setting": "school",
-    "premise": "Kindergarten class has a Christmas gift exchange. {name} chooses a gift with care, but the gift {name} receives is not what {name} hoped for. {name} feels disappointed, says thank you anyway, and later finds something to like about it, and sees how happy a friend is with {name}'s gift. Keep Santa's magic gentle and never say whether Santa is real; gifts are never a reward for being good, and nobody is watching or judging the child."
+    "premise": "Kindergarten class has a Christmas gift exchange. {name} chooses a gift with care, but the gift {name} receives is not what {name} hoped for. {name} feels disappointed, says thank you anyway, and later finds something to like about it, and sees how happy a friend is with {name}'s gift. Never say whether Santa is real; gifts are never a reward for being good."
   },
   {
     "id": "winter-solstice-tangyuan",
@@ -2704,13 +2704,13 @@
     "ageBands": ["4-6"],
     "style": "cute",
     "setting": "school",
-    "premise": "Kindergarten has a Halloween costume parade. {name} makes a costume at home with Mom from a cardboard box and felt. At school, a big costume with a mask makes {name} feel a little nervous, until the friend inside lifts the mask and waves. The class parades around the playground, and {name} wears the costume to bed. Halloween stays cozy, never scary: no real monsters, no frights or chases, and costumes and decorations are always clearly friends and paper."
+    "premise": "Kindergarten has a Halloween costume parade. {name} makes a costume at home with Mom from a cardboard box and felt. At school, a big costume with a mask makes {name} feel a little nervous, until the friend inside lifts the mask and waves. The class parades around the playground, and {name} wears the costume to bed. Cozy, never scary: no real monsters or frights; costumes are clearly friends."
   },
   {
     "id": "halloween-trick-or-treat-building",
     "ageBands": ["6-8"],
     "style": "adventure",
     "setting": "city",
-    "premise": "The apartment building holds a trick-or-treat evening, with neighbors who signed up putting a paper pumpkin on their doors. {name} goes floor by floor with Dad, only knocking on pumpkin doors, saying thank you, and letting Dad check every candy. At home they sort the candy, pick one to eat, brush teeth, and save the rest. Halloween stays cozy, never scary: no real monsters, no frights or chases, and costumes and decorations are always clearly friends and paper."
+    "premise": "The apartment building holds a trick-or-treat evening, with neighbors who signed up putting a paper pumpkin on their doors. {name} goes floor by floor with Dad, only knocking on pumpkin doors, saying thank you, and letting Dad check every candy. At home they sort the candy, pick one to eat, brush teeth, and save the rest. Cozy, never scary: no real monsters or frights; costumes are clearly friends."
   }
 ]
