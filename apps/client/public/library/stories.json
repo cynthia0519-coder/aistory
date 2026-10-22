@@ -18158,5 +18158,111 @@
       }
     },
     "draft": true
+  },
+  {
+    "id": "halloween-costume-parade",
+    "style": "cute",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "{name}的紙箱機器人",
+      "en": "{name}'s Cardboard Robot"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期五，幼兒園要舉辦萬聖節變裝遊行。{name}好興奮，可是還沒有服裝。媽媽從櫃子裡拿出一個大紙箱。「我們來做機器人吧！」媽媽笑著說。{name}拍拍手：「好耶！」",
+        "媽媽在紙箱兩邊剪了洞，讓手臂伸出來。{name}挑了紅色和藍色的不織布。剪一個圓圓的按鈕，再剪一個彎彎的笑臉。黏呀黏，貼呀貼。一片藍色黏到媽媽的手肘上，兩個人都笑了。",
+        "最後，媽媽用毛根做了兩根天線。{name}套上紙箱，走一步，嗶嗶！再走一步，嗶嗶！小貓咪咪跑過來，歪著頭喵了一聲。好像在問：「你是誰呀？」{name}笑得天線一直晃。",
+        "第二天早上，媽媽陪{name}走到學校。教室裡好熱鬧！有嗡嗡叫的小蜜蜂，有圓滾滾的小南瓜。老師也變成一朵白白的雲。這時候，門口傳來咚、咚、咚的腳步聲。",
+        "一隻好大好大的熊走了進來。牠全身毛茸茸，耳朵高高的。臉上戴著面具，眼睛又大又圓。{name}停下腳步，悄悄躲到老師旁邊。紙箱機器人輕輕抖了一下，天線也不動了。",
+        "大熊慢慢走過來，掀起面具。原來是好朋友小哲！小哲揮揮手：「{name}，是我啦！」{name}鬆了一口氣，天線又晃起來。「你的熊好帥！」「你的機器人好酷！」兩個人一起笑了。",
+        "老師敲敲小鈴鼓：「遊行開始囉！」大家排成一長排，繞著操場走。小蜜蜂嗡嗡嗡，大熊搖搖擺擺。{name}一路嗶嗶嗶。小哲也學著說：「嗶嗶熊來了！」大家笑得停不下來。",
+        "傍晚，{name}和媽媽回到家。{name}還是捨不得脫下紙箱。洗完澡，又套上機器人服裝，爬上床。媽媽笑著把燈關小：「機器人也要睡覺囉。」{name}眨眨眼，小聲說：「嗶……晚安。」"
+      ],
+      "en": [
+        "On Friday, kindergarten will have a Halloween costume parade. {name} is so excited. But there is no costume yet! Mom pulls a big cardboard box from the closet. \"Let's make a robot!\" she says. {name} claps. \"Yay!\"",
+        "Mom cuts two holes in the sides for arms. {name} picks red and blue felt. They cut out a round button. Then they cut a curvy smile. Stick, stick, press, press! Blue felt sticks to Mom's elbow. They both giggle.",
+        "Last, Mom twists two pipe cleaners into antennas. {name} climbs into the box. One step, beep beep! Another step, beep beep! Mimi the cat trots over. She tilts her head and says, \"Meow?\" {name} laughs, and the antennas wiggle.",
+        "The next morning, Mom walks {name} to school. The classroom is buzzing! There is a little bee and a round pumpkin. The teacher is a fluffy white cloud. Then, thump, thump, thump. Footsteps come from the door.",
+        "A big, big bear walks in. It is fuzzy all over. Its ears stand up tall. It wears a mask with huge round eyes. {name} stops and slips behind the teacher. The robot box gives a tiny shiver.",
+        "The bear walks over slowly. Then it lifts its mask. It's Jay, {his} good friend! Jay waves. \"{name}, it's me!\" {name} lets out a happy breath. \"Your bear is great!\" \"Your robot is cool!\" They laugh together.",
+        "The teacher taps a tambourine. \"Parade time!\" Everyone lines up and marches around the playground. The bee goes buzz, buzz. The bear waddles side to side. {name} goes beep, beep, beep. Jay joins in. \"Here comes Beep Bear!\" Everyone giggles.",
+        "In the evening, {name} and Mom go home. {name} doesn't want to take off the robot box. After bath time, the robot climbs into bed. Mom dims the light. \"Robots need sleep too.\" {name} blinks and whispers, \"Beep... goodnight.\""
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "如果你也有一個紙箱機器人，你想貼上什麼顏色？",
+          "大熊走進教室的時候，{name}心裡覺得怎麼樣？",
+          "遊行裡你最喜歡哪一個裝扮？"
+        ],
+        "tip": "關燈以後，和孩子輪流用小小的機器人聲音說「嗶嗶」，再用機器人的聲音互道晚安。"
+      },
+      "en": {
+        "questions": [
+          "If you had a cardboard robot too, what colors would you put on it?",
+          "When the big bear came into the classroom, how did {name} feel?",
+          "Which costume in the parade did you like best?"
+        ],
+        "tip": "After lights out, take turns whispering a tiny robot \"beep beep\" with your child, then say goodnight in soft robot voices."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "halloween-trick-or-treat-building",
+    "style": "adventure",
+    "ageBands": [
+      "6-8"
+    ],
+    "setting": "city",
+    "title": {
+      "zh": "{name}的南瓜門大探險",
+      "en": "{name} and the Pumpkin Door Quest"
+    },
+    "paragraphs": {
+      "zh": [
+        "今天晚上，{name}住的公寓大樓要舉辦「萬聖節要糖果之夜」。電梯旁的公告寫著：願意發糖果的鄰居，會在門上貼一顆紙南瓜。{name}提著橘色的小籃子，和爸爸一起站在家門口，心怦怦跳，好像要出發去探險。",
+        "「我們的任務，就是找到南瓜門。」爸爸笑著說。五樓走廊有三扇門，只有一扇貼著笑咪咪的紙南瓜。{name}輕輕敲了兩下，門打開了，是穿著黑貓裝的林奶奶。「喵！歡迎小客人！」{name}接過一顆蘋果糖，大聲說：「謝謝林奶奶！」",
+        "{name}沒有馬上吃，而是先把蘋果糖交給爸爸。爸爸翻過來、轉過去，仔細看了看包裝，才放進籃子裡。隔壁的門上沒有南瓜，只貼著一張月亮圖畫。{name}舉起手，又停了下來，小聲說：「沒有南瓜，我們不敲。」爸爸豎起了大拇指。",
+        "爸爸牽著{name}的手，一步一步走下樓梯到四樓。轉角傳來「吼——」的一聲，一條綠色的大尾巴晃呀晃。原來是陳叔叔穿著恐龍裝，頭套上還有一個大大的笑臉。「小探險家，來拿糖果吧！」叔叔遞出一包巧克力豆。",
+        "「謝謝陳叔叔！」{name}說完，又把巧克力豆交給爸爸檢查。三樓有一對雙胞胎姊妹，扮成兩隻小蜜蜂，在門口嗡嗡嗡地轉圈圈。她們送給{name}一根棒棒糖和一張南瓜貼紙，還邀請{name}一起跳了一小段蜜蜂舞，走廊裡都是笑聲。",
+        "到了二樓，王阿姨送了一顆水果軟糖。爸爸檢查的時候，發現包裝紙破了一個小洞。「這顆破掉了，我們不要吃，好嗎？」{name}點點頭，沒有一點不開心，因為籃子裡其他的糖果，每一顆都包得好好的。",
+        "探險結束，籃子已經裝得滿滿的。回到家，{name}挑了一顆最喜歡的蘋果糖，慢慢吃完，甜甜的味道在嘴裡化開。接著，{name}走進浴室，拿起牙刷，把每一顆牙齒都刷得亮晶晶，連最裡面的牙齒也沒忘記。",
+        "剩下的糖果，{name}和爸爸一起放進一個小鐵盒，蓋上蓋子，再貼上那張南瓜貼紙。「明天再吃一顆。」{name}說。窗外的大樓燈光一閃一閃，{name}抱著今晚的探險回憶，甜甜地進入了夢鄉。"
+      ],
+      "en": [
+        "Tonight, {name}'s apartment building was having a trick-or-treat evening. A sign by the elevator said that neighbors who wanted to give out candy would put a paper pumpkin on their doors. {name} held a little orange basket and stood at the door with Dad, heart thumping, ready for an adventure.",
+        "\"Our mission is to find the pumpkin doors,\" Dad said with a grin. On the fifth floor, only one of three doors had a smiling paper pumpkin. {name} knocked twice, softly. Grandma Lin opened it, dressed as a black cat. \"Meow! Welcome, little visitor!\" {name} took an apple candy. \"Thank you, Grandma Lin!\"",
+        "Instead of eating it right away, {name} handed the candy to Dad first. Dad turned it over and checked the wrapper before dropping it into the basket. The next door had no pumpkin, just a drawing of the moon. {name} raised a hand, then stopped. \"No pumpkin, so we don't knock.\" Dad gave a big thumbs-up.",
+        "Holding Dad's hand, {name} went down the stairs, step by step, to the fourth floor. \"ROAR!\" A long green tail swished around the corner. It was Mr. Chen in a dinosaur costume, with a big smiley face on the hood. \"Come get some candy, little explorer!\" He held out a bag of chocolate drops.",
+        "\"Thank you, Mr. Chen!\" said {name}, and passed the chocolate to Dad to check. On the third floor, twin sisters dressed as bees were buzzing in circles by their door. They gave {name} a lollipop and a pumpkin sticker, then everyone did a little bee dance together, and the hallway filled with giggles.",
+        "On the second floor, Auntie Wang gave {name} a fruit gummy. When Dad checked it, there was a tiny hole in the wrapper. \"This one is torn, so let's not eat it, okay?\" {name} nodded and didn't mind one bit, because every other candy in the basket was wrapped up just right.",
+        "The quest was over, and the basket was full. Back home, {name} picked out a favorite apple candy and ate it slowly, letting the sweetness melt. Then {name} went to the bathroom, picked up a toothbrush, and brushed every tooth until it sparkled, even the ones way in the back.",
+        "{name} and Dad put the rest of the candy into a little tin box, closed the lid, and stuck the pumpkin sticker on top. \"One more tomorrow,\" said {name}. Outside, the city lights twinkled, and {name} drifted off to sleep, full of sweet memories of the night's adventure."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "出發前，{name}的心怦怦跳，你覺得那是什麼樣的感覺？",
+          "黑貓林奶奶、恐龍陳叔叔、蜜蜂姊妹，你最想在走廊遇見哪一位？",
+          "如果你也要去找南瓜門，你想打扮成什麼？"
+        ],
+        "tip": "關燈後，和孩子玩小小聲的「猜猜是誰」：輕輕學一聲「喵」、「嗡嗡」或很小聲的「吼」，讓孩子猜是故事裡的哪位鄰居。"
+      },
+      "en": {
+        "questions": [
+          "Before setting off, {name}'s heart was thumping. What do you think that felt like?",
+          "Grandma Lin the cat, Mr. Chen the dinosaur, or the bee twins: who would you most like to meet in the hallway?",
+          "If you went looking for pumpkin doors too, what would you dress up as?"
+        ],
+        "tip": "After lights out, play a whispered guessing game: softly make a tiny \"meow,\" \"buzz,\" or very quiet \"roar,\" and let your child guess which neighbor from the story it is."
+      }
+    },
+    "draft": true
   }
 ]
