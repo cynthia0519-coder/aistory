@@ -2033,7 +2033,8 @@
         "tip": "Tonight, use a timer or a short song while your child brushes every side in little circles, then take a turn to finish."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-23T19:30:00+08:00"
   },
   {
     "id": "potty-little-throne",
@@ -2198,7 +2199,8 @@
         "tip": "Tonight, create your own special goodbye together and practice it a few times. Use it at every drop-off, and be right on time at pick-up."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-01-08T19:30:00+08:00"
   },
   {
     "id": "bedtime-routine-sleepy-train",
@@ -2415,7 +2417,8 @@
         "tip": "This week, play \"Food Explorer\" at a meal: look, sniff, listen, then taste one tiny bite of a new food, and say \"You were brave!\" whether or not your child likes it."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-06T19:30:00+08:00"
   },
   {
     "id": "tidying-toys-toy-bedtime",
@@ -2470,7 +2473,8 @@
         "tip": "Tonight before bed, sing a made-up tidy-up song together while putting toys in their homes. Stick a picture on each bin so your child can find each toy's home alone."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-01-22T19:30:00+08:00"
   },
   {
     "id": "handwashing-bubble-pirates",
@@ -2580,7 +2584,8 @@
         "tip": "Tonight at toothbrushing, play the hand-signal game: when your child raises a hand, stop and wait, so raising a hand for a break feels easy."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-13T19:30:00+08:00"
   },
   {
     "id": "screen-time-riverside-kites",
@@ -2744,7 +2749,8 @@
         "tip": "This week, take a walk together to find a \"new favorite corner\" nearby, then draw it and send it to a friend or relative your child misses."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-03T19:30:00+08:00"
   },
   {
     "id": "anger-little-volcano",
@@ -2798,7 +2804,8 @@
         "tip": "This week, practice \"dragon breaths\" together: breathe in big, blow out slow, and count to three. When anger comes, help your child say, \"I'm mad because…\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-06-22T19:30:00+08:00"
   },
   {
     "id": "anger-red-balloon",
@@ -2852,7 +2859,8 @@
         "tip": "Tonight, practice \"balloon breathing\" together: breathe in slowly, breathe out slowly, and count to five. Then practice saying, \"I'm angry because…\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-05-25T19:30:00+08:00"
   },
   {
     "id": "anger-calm-corner",
@@ -2906,7 +2914,8 @@
         "tip": "Tonight, practice \"smell the flower, blow out the candle\" breathing together while counting to five. You could also make a glitter calm jar for your home."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-27T19:30:00+08:00"
   },
   {
     "id": "new-sibling-night-market-lights",
@@ -3015,7 +3024,8 @@
         "tip": "This week, try a \"count to ten each\" turn game with a toy, and practice saying together, \"Can I have a turn when you're done?\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-05-04T19:30:00+08:00"
   },
   {
     "id": "manners-breakfast-shop",
@@ -3070,7 +3080,8 @@
         "tip": "At breakfast this week, take turns saying \"please\" and \"thank you,\" and add a cheerful \"ding!\" together each time as a magic sound."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-05-11T19:30:00+08:00"
   },
   {
     "id": "fear-of-dark-shadow-hunt",
@@ -3234,7 +3245,8 @@
         "tip": "This week, play a simple game together and, win or lose, shake hands and say \"Thanks for playing with me,\" then each share one thing you learned from that round."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-16T19:30:00+08:00"
   },
   {
     "id": "honesty-brave-teacup",
@@ -3508,7 +3520,8 @@
         "tip": "This week, play \"clinic\" at home: take turns being the nurse, count \"one, two, three,\" give a gentle arm squeeze, and cheer \"Shield ready!\" together."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-06T19:30:00+08:00"
   },
   {
     "id": "screen-time-puppet-show",
@@ -3725,7 +3738,8 @@
         "tip": "This week, set aside a special just-us time with your child, even fifteen minutes, and make a \"Things I Can Teach the Baby\" list together."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-10-05T19:30:00+08:00"
   },
   {
     "id": "crossing-road-garbage-truck-song",
@@ -6264,7 +6278,8 @@
         "tip": "This week, play \"Little Explorer\" with one new food at a meal: talk about its color, smell, and crunch, then take just one tiny bite. It's okay not to like it."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-12-07T19:30:00+08:00"
   },
   {
     "id": "tidying-toys-beach-buckets",
@@ -6426,7 +6441,8 @@
         "tip": "This week, before meals, after the toilet, and after coming in from outside, sing a short bubble song together while scrubbing, then rinse and dry when the song ends."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-01-19T19:30:00+08:00"
   },
   {
     "id": "handwashing-goat-farm",
@@ -6696,7 +6712,8 @@
         "tip": "Tonight at toothbrushing time, play 'Little Dentist': take turns counting each other's teeth and naming the tools, and practice raising a hand so the other person stops and waits right away."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-01-26T19:30:00+08:00"
   },
   {
     "id": "screen-time-bunny-timer",
@@ -7607,7 +7624,8 @@
         "tip": "This week, during play or drawing time, practice saying together, \"Can I have a turn when you're done?\" While waiting, think of one small thing to do in the meantime."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-01-15T19:30:00+08:00"
   },
   {
     "id": "manners-birthday-gift",
@@ -7877,7 +7895,8 @@
         "tip": "This week, play a simple board game together. Whoever loses takes three big breaths with you, then says, \"Great job! Let's play again!\" Let your child see you lose kindly too."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-01-12T19:30:00+08:00"
   },
   {
     "id": "losing-failing-bike-wobble",
@@ -7931,7 +7950,8 @@
         "tip": "This week, play a small game or practice a new skill with your child, and whenever someone loses or makes a mistake, take three deep breaths together and say, \"Let's try again, or try a different way!\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-17T19:30:00+08:00"
   },
   {
     "id": "losing-failing-relay-baton",
@@ -7983,7 +8003,8 @@
         "tip": "This week, after any board game or race, win or lose, have everyone high-five and say \"Thanks for playing with me.\" If someone feels upset about losing, take three deep breaths together, then talk about one thing to try differently next time."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-05-18T19:30:00+08:00"
   },
   {
     "id": "losing-failing-egg-drop",
@@ -8035,7 +8056,8 @@
         "tip": "At dinner this week, take turns sharing one thing that went wrong today and one thing you learned from it, with a grown-up going first so mistakes feel easy to talk about."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-09-28T19:30:00+08:00"
   },
   {
     "id": "honesty-spilled-paint-jar",
@@ -8089,7 +8111,8 @@
         "tip": "This week, whenever your child tells you about a mistake, give a hug first and say, \"Thank you for telling me. Let's fix it together.\" Then help your child make it right."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-01-29T19:30:00+08:00"
   },
   {
     "id": "honesty-test-paper-signature",
@@ -8143,7 +8166,8 @@
         "tip": "This week at bedtime, play \"One True Thing\": each of you shares one small thing from the day that was a little hard to say, and the listener always answers first with \"Thank you for telling me.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-12-28T19:30:00+08:00"
   },
   {
     "id": "bullying-mean-nickname",
@@ -8301,7 +8325,8 @@
         "tip": "This week, practice one \"getting help\" sentence together: \"Teacher, someone keeps getting picked on. Can you help?\" Let your child know you will always listen carefully whenever they come to tell you."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-30T19:30:00+08:00"
   },
   {
     "id": "pet-loss-old-cat-sunbeam",
@@ -8673,7 +8698,8 @@
         "tip": "This week, practice \"breathe in for four, out for six\" together, and use it during family board games, win or lose, followed by \"Great move! Rematch?\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-11-02T19:30:00+08:00"
   },
   {
     "id": "losing-failing-class-election",
@@ -8725,7 +8751,8 @@
         "tip": "This week during a board game or other game, practice as a family: whoever loses takes a deep breath, counts to five, and tells the winner, \"Congratulations, nice playing!\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-11-30T19:30:00+08:00"
   },
   {
     "id": "bullying-school-bus-seat",
@@ -9252,7 +9279,8 @@
         "tip": "After lights out tonight, play a whispered clue game: softly give a hint like \"green and goes tweet, tweet,\" and let your child guess what it is from the story."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-05T19:30:00+08:00"
   },
   {
     "id": "lantern-festival-rabbit",
@@ -9626,7 +9654,8 @@
         "tip": "Tonight in bed, take turns tapping a soft \"boom, boom, boom-boom-boom\" on the pillow with your fingers while whispering \"one, two, one-two-three,\" making each round a little quieter until you both feel sleepy."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-02-19T19:30:00+08:00"
   },
   {
     "id": "rooftop-giant-pumpkin",
@@ -9934,7 +9963,8 @@
         "tip": "After lights out tonight, take turns whispering about the one moment from the story you'd most like to sketch. Tomorrow, sit side by side and each draw a page of your own whale-watching sketchbook."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-16T19:30:00+08:00"
   },
   {
     "id": "puppet-masters-apprentice",
@@ -9985,7 +10015,8 @@
         "tip": "With the lights low, take turns making your fingers into a tiny swordsman on the blanket and act out a slow-motion move, then whisper guesses about what move it was."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-06-18T19:30:00+08:00"
   },
   {
     "id": "dragon-boat-drummer",
@@ -10248,7 +10279,8 @@
         "tip": "This week, practice a special goodbye ritual together, like one hug, one wave, and \"See you at pick-up!\" Use the same words every drop-off, and be on time at pick-up."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-31T19:30:00+08:00"
   },
   {
     "id": "new-sibling-tiny-socks",
@@ -12412,7 +12444,8 @@
         "tip": "After lights out, play a whisper animal guessing game: take turns softly describing a night-time animal while the other person guesses, then say a quiet \"good night\" and drift off to sleep."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-05-14T19:30:00+08:00"
   },
   {
     "id": "forest-mushroom-village",
@@ -13158,7 +13191,8 @@
         "tip": "Before dinner tonight, think together about who and what helped bring the food to your table, and take turns saying one thank-you. This week, pick one helper to thank with a drawing or a hug."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-23T19:30:00+08:00"
   },
   {
     "id": "gratitude-thank-you-walk",
@@ -13212,7 +13246,8 @@
         "tip": "Tonight at bedtime, play the thank-you game: take turns naming one person or thing you are thankful for today. Try saying thanks with a hug, a wave, or a little drawing too."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-19T19:30:00+08:00"
   },
   {
     "id": "gratitude-grandpas-old-umbrella",
@@ -13318,7 +13353,8 @@
         "tip": "This week, be \"thank-you detectives\" together: each evening, name one person who quietly helped you that day and pick one small action to thank them tomorrow."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-02T19:30:00+08:00"
   },
   {
     "id": "empathy-the-sad-little-cloud",
@@ -13372,7 +13408,8 @@
         "tip": "This week, play a \"guess my feeling\" face game: take turns making happy, sad, or grumpy faces for your child to guess, then practice asking, \"Are you okay?\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-05-21T19:30:00+08:00"
   },
   {
     "id": "empathy-lion-with-a-sore-paw",
@@ -13426,7 +13463,8 @@
         "tip": "This week, play a 'Guess My Feeling' game: take turns making happy, sad, angry, or hurting faces for each other to guess, then practice asking, 'Are you okay?'"
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-06-25T19:30:00+08:00"
   },
   {
     "id": "empathy-new-girl-at-lunch",
@@ -13480,7 +13518,8 @@
         "tip": "This week at dinner, play a \"guess the feeling\" game: take turns making a face while the other guesses the feeling, then practice asking, \"Are you OK?\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-26T19:30:00+08:00"
   },
   {
     "id": "perseverance-snail-sees-the-sunrise",
@@ -13534,7 +13573,8 @@
         "tip": "This week, pick one slightly hard task with your child and break it into tiny \"just reach that leaf\" steps. After each step, say, \"You did it, one step at a time!\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-09T19:30:00+08:00"
   },
   {
     "id": "perseverance-sunflower-on-the-windowsill",
@@ -13588,7 +13628,8 @@
         "tip": "This week, plant a bean or small seed together and draw it each morning. On days nothing seems to change, say together, \"We still came to check today!\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-06-11T19:30:00+08:00"
   },
   {
     "id": "courage-little-mouse-and-old-bear",
@@ -13697,7 +13738,8 @@
         "tip": "At bath time this week, play a bubble-blowing game in a bowl of water, counting one bubble at a time. When your child says \"I'm a little scared,\" answer, \"That's okay, I'm right here with you.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-06-04T19:30:00+08:00"
   },
   {
     "id": "courage-thats-not-funny",
@@ -13911,7 +13953,8 @@
         "tip": "This week, practice one phrase together: \"I did it, and I'll help fix it.\" When your child owns up to a small mistake, thank them for telling the truth first, then fix it together."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-09-24T19:30:00+08:00"
   },
   {
     "id": "responsibility-ants-and-the-grasshopper",
@@ -13965,7 +14008,8 @@
         "tip": "This week, pick one small daily job together, like watering a plant or packing a school bag, and say \"I said it, I did it!\" when it's done. If something goes wrong, practice saying, \"I did that, and I'll help fix it.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-10-22T19:30:00+08:00"
   },
   {
     "id": "responsibility-garden-captain",
@@ -14017,7 +14061,8 @@
         "tip": "This week, draw a small family job chart together, including the weekends, and let your child check off each task when it is done."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-20T19:30:00+08:00"
   },
   {
     "id": "promises-bear-and-the-spring-honey",
@@ -14071,7 +14116,8 @@
         "tip": "This week, play \"Think Before You Promise\": before your child agrees to a small task, ask together, \"Can I really do it?\" When it's done, high-five and say, \"I kept my word!\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-27T19:30:00+08:00"
   },
   {
     "id": "promises-the-borrowed-comic",
@@ -14125,7 +14171,8 @@
         "tip": "This week, practice \"think before you promise\" together: before saying yes, name one way you'll make sure you can do it. If a promise slips, practice saying, \"I'm sorry, I didn't do it. How can we make it right?\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-30T19:30:00+08:00"
   },
   {
     "id": "differences-zebra-with-spots",
@@ -14180,7 +14227,8 @@
         "tip": "This week, play a \"Different Is Great\" game: each day, name one way a family member or friend is different from you, and say together, \"That's wonderful too!\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-23T19:30:00+08:00"
   },
   {
     "id": "differences-rainbow-of-crayons",
@@ -14234,7 +14282,8 @@
         "tip": "This week, draw a rainbow together. With each color, take turns saying \"I like your ___\" about something different and special in a family member or friend."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-09-10T19:30:00+08:00"
   },
   {
     "id": "differences-game-everyone-plays",
@@ -14394,7 +14443,8 @@
         "tip": "This week, bring your own water bottles and a reusable bag when you go out together. At home, sort the trash side by side and say, \"Let's keep our earth clean.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-12T19:30:00+08:00"
   },
   {
     "id": "nature-the-old-banyan-tree",
@@ -14608,7 +14658,8 @@
         "tip": "This week, pick one chore to do together, like taking turns putting toys in the box while saying \"Heave-ho!\" Finish with a big high five."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-10-01T19:30:00+08:00"
   },
   {
     "id": "teamwork-the-leaf-bridge",
@@ -14662,7 +14713,8 @@
         "tip": "This week, pick a chore that needs many hands, like folding a blanket or tidying toys. Let everyone share an idea first, split the jobs, then cheer together: \"We did it together!\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-13T19:30:00+08:00"
   },
   {
     "id": "teamwork-the-class-play",
@@ -14716,7 +14768,8 @@
         "tip": "This week at dinner, play \"One Idea Each\": plan a small weekend activity together, with each family member sharing one idea while everyone else listens until they finish."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-11-12T19:30:00+08:00"
   },
   {
     "id": "teamwork-snow-fort",
@@ -14822,7 +14875,8 @@
         "tip": "This week, practice one phrase together: \"When you did that, I felt ___. Thank you for saying sorry; I forgive you.\" You can also play the \"hold the pebble, drop the pebble\" game and talk about how letting go of anger feels lighter."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-09-03T19:30:00+08:00"
   },
   {
     "id": "forgiveness-the-told-secret",
@@ -14980,7 +15034,8 @@
         "tip": "This week, pick one thing your child finds hard and start with \"just one try.\" Count the progress out loud together each day and say, \"You learned a little more today!\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-10-08T19:30:00+08:00"
   },
   {
     "id": "promises-pinky-promise-tea-party",
@@ -15192,7 +15247,8 @@
         "tip": "This week, pick one thing your child is learning and agree to practice just one small step a day. At bedtime, share one tiny thing each of you learned that day."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-02-26T19:30:00+08:00"
   },
   {
     "id": "forgiveness-the-runaway-balloon",
@@ -15463,7 +15519,8 @@
         "tip": "This week, visit a familiar shop and let your child say one \"Excuse me\" or \"Thank you\" on their own while you wait where they can see you. Afterward, talk together about how it felt."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-09-17T19:30:00+08:00"
   },
   {
     "id": "courage-little-sparrow-storm-fable",
@@ -15518,7 +15575,8 @@
         "tip": "This week, practice one phrase together: \"I feel a little scared, but I want to try.\" Each time your child tries something new, say it together and clap for that small brave step."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-10-15T19:30:00+08:00"
   },
   {
     "id": "courage-school-show-and-tell",
@@ -15572,7 +15630,8 @@
         "tip": "This week, practice \"spinning-top breathing\" together: take one slow breath in and out when nervous, then say, \"I feel a little scared, but I can try.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-11-26T19:30:00+08:00"
   },
   {
     "id": "empathy-quiet-grandpa-chess",
@@ -15735,7 +15794,8 @@
         "tip": "At dinner this week, play \"Guess My Feeling\": take turns making happy, sad, or sleepy faces, let your child guess, then practice saying \"Are you okay?\" together."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-11-05T19:30:00+08:00"
   },
   {
     "id": "forgiveness-squashed-sandcastle",
@@ -16059,7 +16119,8 @@
         "tip": "Tonight at bedtime, name three people or things you are thankful for together, and draw a star in the air for each one. You can also plan to give one of them a hug or a little drawing tomorrow."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-11-19T19:30:00+08:00"
   },
   {
     "id": "keeping-promises-plant-sitter",
@@ -16491,7 +16552,8 @@
         "tip": "This week, play a \"take turns\" song game: each family member sings one line in their own favorite voice while everyone listens, then sing together. End by telling each other, \"I like your voice.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-12-03T19:30:00+08:00"
   },
   {
     "id": "respecting-differences-grandma-hearing-aid",
@@ -17896,7 +17958,8 @@
         "tip": "This week, set aside five minutes of special big-kid time each night just for your child, and first invite them to read or page through a little book to the baby."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-01-05T19:30:00+08:00"
   },
   {
     "id": "sockets-charger-cord-safety",
@@ -18595,7 +18658,8 @@
         "tip": "Before lights out, cuddle up and take turns whispering one thing you'd put on your own family's New Year table, until sleepy eyes take over."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-02-02T19:30:00+08:00"
   },
   {
     "id": "lunar-new-year-red-envelope",
@@ -18648,7 +18712,8 @@
         "tip": "Before lights out, cuddle up and take turns whispering one little surprise you'd like to give someone in the family, then draw it as a card together tomorrow."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-02-12T19:30:00+08:00"
   },
   {
     "id": "lunar-new-year-shy-nian",
@@ -18701,7 +18766,8 @@
         "tip": "Tonight in bed, share a slow, big yawn with {name} and whisper together, \"Good night, Nian!\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-02-16T19:30:00+08:00"
   },
   {
     "id": "thanksgiving-gratitude-leaves",
@@ -18808,7 +18874,8 @@
         "tip": "After lights out, play a whispered Find the Color game: name a color and quietly think together about where it is in the room or on the blanket."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-02T19:30:00+08:00"
   },
   {
     "id": "mothers-day-breakfast-surprise",
@@ -18861,7 +18928,8 @@
         "tip": "Tonight, share a cuddle and whisper about your favourite breakfasts, then draw a little picture of \"our breakfast\" together tomorrow."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-05-07T19:30:00+08:00"
   },
   {
     "id": "dragon-boat-zongzi-wrapping",
@@ -18914,7 +18982,8 @@
         "tip": "At bedtime, cuddle up and gently count \"one, two, three\" on your child's palm as you wrap a pretend zongzi together, then whisper about what flavour it is."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-06-08T19:30:00+08:00"
   },
   {
     "id": "fathers-day-dad-and-me",
@@ -18967,7 +19036,8 @@
         "tip": "Tonight after lights out, take turns whispering one thing you loved doing together today, and tomorrow, fold a little paper boat together slowly."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-06T19:30:00+08:00"
   },
   {
     "id": "halloween-pumpkin-lantern-night",
@@ -19020,7 +19090,8 @@
         "tip": "Tonight, after the light goes off, take turns whispering goodnight to things in the room, like Teddy, the pillow, and the window."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-10-26T19:30:00+08:00"
   },
   {
     "id": "halloween-friendly-ghost-costume",
@@ -19073,7 +19144,8 @@
         "tip": "Once you are tucked in tonight, take turns whispering the tiniest \"Woooo, hello\" and share what kind of friend your friendly ghost would love to meet; tomorrow you can draw it together."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-10-29T19:30:00+08:00"
   },
   {
     "id": "christmas-tree-lights-walk",
@@ -19126,7 +19198,8 @@
         "tip": "After lights out tonight, whisper-count three favorite things from your day together, just like {name} counted the lights, until sleepy eyes close."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-12-10T19:30:00+08:00"
   },
   {
     "id": "christmas-baking-cookies-for-neighbors",
@@ -19179,7 +19252,8 @@
         "tip": "Before lights out, take turns whispering the name of someone you'd like to thank and why; tomorrow, you can draw that thank-you on a little card together."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-12-14T19:30:00+08:00"
   },
   {
     "id": "christmas-wish-letter",
@@ -19232,7 +19306,8 @@
         "tip": "Before lights out tonight, give {name} a long, slow hug and whisper about your favourite part of the day."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-12-17T19:30:00+08:00"
   },
   {
     "id": "christmas-eve-quiet-night",
@@ -19285,7 +19360,8 @@
         "tip": "Tonight after the lights go off, close your eyes together like {name} did, listen for the quiet sounds in the house, and take turns whispering what you hear."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-12-24T19:30:00+08:00"
   },
   {
     "id": "thanksgiving-pen-pal-dinner",
@@ -19338,7 +19414,8 @@
         "tip": "After lights out, cuddle up and take turns whispering one small thing from today that made you feel warm inside. Tomorrow, you could draw a little card together and leave it at a family member's seat."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-11-23T19:30:00+08:00"
   },
   {
     "id": "typhoon-day-at-home",
@@ -19444,7 +19521,8 @@
         "tip": "Before lights out tonight, take turns saying goodnight in a quiet way, like a little wave, a wink, or a soft whisper, then chat about your favourite part of the story."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-02-09T19:30:00+08:00"
   },
   {
     "id": "mid-autumn-family-barbecue-moon",
@@ -19497,7 +19575,8 @@
         "tip": "Before lights out tonight, use a small night-light to make one or two quiet hand shadows on the wall together, then whisper \"Goodnight, Moon.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-09-14T19:30:00+08:00"
   },
   {
     "id": "new-year-eve-wish-jar",
@@ -19550,7 +19629,8 @@
         "tip": "Tonight after the lights go out, cuddle up and, just like Mom in the story, whisper the sky's colors together: black, then blue, then pink, then orange. Then take turns softly saying goodnight to things in the room."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-12-31T19:30:00+08:00"
   },
   {
     "id": "winter-solstice-tangyuan-colors",
@@ -19603,6 +19683,7 @@
         "tip": "Tonight before the light goes off, cuddle up and take turns whispering a favorite color, then say a soft goodnight together."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-12-21T19:30:00+08:00"
   }
 ]
