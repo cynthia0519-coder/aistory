@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T05:58:55.735Z",
+  "generatedAt": "2026-10-22T06:00:31.177Z",
   "summary": {
     "stories": 365,
     "byStatus": {
@@ -17,7 +17,7 @@
       "repetition": 160,
       "logic": 149,
       "quality": 75,
-      "taiwan_usage": 42,
+      "taiwan_usage": 41,
       "safety": 36,
       "age_fit": 20,
       "preachy": 28,
@@ -162,7 +162,7 @@
       "water-safety-river-picnic",
       "winter-cold-snap-cozy-night"
     ],
-    "usd": 11.4278
+    "usd": 11.4137
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -11453,7 +11453,7 @@
       "reviewedAt": "2026-10-22T04:06:20.606Z"
     },
     "winter-solstice-tangyuan-colors": {
-      "hash": "ccb18adf4ff95bef",
+      "hash": "80cf982b70427657",
       "checks": [
         {
           "kind": "length",
@@ -11464,20 +11464,12 @@
         }
       ],
       "model": "claude-opus-5-5",
-      "usd": 0.066356,
+      "usd": 0.0522296,
       "status": "ok",
-      "reviewedAt": "2026-10-22T05:58:55.709Z",
+      "reviewedAt": "2026-10-22T06:00:31.163Z",
       "llm": {
         "verdict": "ok",
-        "issues": [
-          {
-            "kind": "taiwan_usage",
-            "severity": "low",
-            "lang": "zh",
-            "where": "2",
-            "note": "「{name}閉上兩隻眼睛」略顯翻譯腔，建議改為「{name}輕輕閉上眼睛」"
-          }
-        ]
+        "issues": []
       }
     }
   }
