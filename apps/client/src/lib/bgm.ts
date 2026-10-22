@@ -15,7 +15,8 @@ import { MUSIC_GROUPS, musicGroup, type MusicGroup } from "@aistory/shared/media
 export interface BackgroundMusic {
   isSupported(): boolean;
   /** 開始（或換成）某個故事的音樂，並播開場音效；必須在使用者手勢裡呼叫 */
-  start(style: StoryStyle, theme?: ThemeId): void;
+  /** storyId：故事庫的節日故事換成節日音樂 */
+  start(style: StoryStyle, theme?: ThemeId, storyId?: string): void;
   /** 淡出後停止 */
   stop(fadeSeconds?: number): void;
   /** 故事念完：播結尾音效，音樂淡出 */
@@ -218,8 +219,8 @@ function createEngine(): BackgroundMusic {
       typeof window !== "undefined" &&
       ("AudioContext" in window || "webkitAudioContext" in (window as unknown as Record<string, unknown>)),
 
-    start(style, theme) {
-      wanted = musicGroup(style, theme);
+    start(style, theme, storyId) {
+      wanted = musicGroup(style, theme, storyId);
       if (!enabled) return;
       ensureContext();
       sfx("sfx-start");

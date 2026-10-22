@@ -4,7 +4,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { STORY_SETTINGS, THEME_IDS } from "@aistory/shared";
-import { MUSIC_GROUPS, SCENE_VARIANTS, sceneName } from "@aistory/shared/media";
+import { holidayGroup, MUSIC_GROUPS, musicGroup, SCENE_VARIANTS, sceneName } from "@aistory/shared/media";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const PUBLIC = resolve(here, "../../client/public");
@@ -38,4 +38,13 @@ test("every song a music group can pick exists", () => {
       assert.ok(existsSync(resolve(PUBLIC, "music", `${group}-${i}.mp3`)), `missing music/${group}-${i}.mp3`);
     }
   }
+});
+
+test("holiday stories fall back to their usual music until the holiday songs are added", () => {
+  for (const id of ["christmas-socks-for-everyone", "library:lunar-new-year-red-envelope:zh", "temple-lion-dance-drum"]) {
+    const group = holidayGroup(id);
+    assert.ok(group === null || MUSIC_GROUPS[group] > 0, id);
+  }
+  assert.equal(holidayGroup("anger-basketball-call"), null);
+  assert.equal(musicGroup("bedtime", undefined, "anger-basketball-call"), "bedtime");
 });

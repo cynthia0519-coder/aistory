@@ -98,14 +98,55 @@ export const MUSIC_GROUPS = {
   "theme-careful": 2,
   "theme-routine": 2,
   "theme-calm": 2,
+  // 節日曲組：0 = 還沒有音樂，先用一般曲組；Mureka 生成後放進 public/music 並把數字改成歌數
+  "holiday-christmas": 0,
+  "holiday-lunar-new-year": 0,
+  "holiday-halloween": 0,
+  "holiday-mid-autumn": 0,
+  "holiday-dragon-boat": 0,
+  "holiday-winter": 0,
+  "holiday-family": 0,
 } as const;
 export type MusicGroup = keyof typeof MUSIC_GROUPS;
 
 /** 情緒比較重的主題不管分類都用溫柔的那組 */
 const TENDER_THEMES: ThemeId[] = ["pet-loss", "fear-of-dark", "new-sibling"];
 
-/** 有主題的故事依主題分類選曲組（身體自主、寵物離別等用溫柔的那組），其他依故事風格 */
-export function musicGroup(style: StoryStyle, theme?: ThemeId): MusicGroup {
+/** 節日故事依故事 id 開頭對到節日曲組；母親節、父親節、兒童節、感恩節共用「家人的日子」 */
+const HOLIDAY_PREFIXES: [string, MusicGroup][] = [
+  ["christmas-", "holiday-christmas"],
+  ["lunar-new-year-", "holiday-lunar-new-year"],
+  ["lantern-festival-", "holiday-lunar-new-year"],
+  ["halloween-", "holiday-halloween"],
+  ["mid-autumn-", "holiday-mid-autumn"],
+  ["dragon-boat-", "holiday-dragon-boat"],
+  ["winter-", "holiday-winter"],
+  ["new-year-", "holiday-winter"],
+  ["mothers-day-", "holiday-family"],
+  ["fathers-day-", "holiday-family"],
+  ["childrens-day-", "holiday-family"],
+  ["thanksgiving-", "holiday-family"],
+];
+/** id 沒有節日開頭、但內容是節日的舊故事 */
+const HOLIDAY_STORIES: Record<string, MusicGroup> = {
+  "windows-balcony-new-year-fireworks": "holiday-lunar-new-year",
+  "temple-lion-dance-drum": "holiday-lunar-new-year",
+  "mooncake-mystery": "holiday-mid-autumn",
+  "rabbit-in-the-moon": "holiday-mid-autumn",
+};
+
+/** 故事庫故事的節日曲組；App 裡的 id 是 `library:<id>:<語言>`。還沒有音樂的曲組不算 */
+export function holidayGroup(storyId?: string): MusicGroup | null {
+  if (!storyId) return null;
+  const id = storyId.startsWith("library:") ? storyId.split(":")[1] : storyId;
+  const group = HOLIDAY_STORIES[id] ?? HOLIDAY_PREFIXES.find(([p]) => id.startsWith(p))?.[1];
+  return group && MUSIC_GROUPS[group] > 0 ? group : null;
+}
+
+/** 節日故事用節日曲組；有主題的故事依主題分類選曲組（身體自主、寵物離別等用溫柔的那組），其他依故事風格 */
+export function musicGroup(style: StoryStyle, theme?: ThemeId, storyId?: string): MusicGroup {
+  const holiday = holidayGroup(storyId);
+  if (holiday) return holiday;
   if (theme) {
     if (TENDER_THEMES.includes(theme)) return "theme-tender";
     const category = THEMES[theme]?.category;

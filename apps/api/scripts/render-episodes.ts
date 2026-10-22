@@ -126,7 +126,7 @@ async function renderEpisode(story: LibraryStory, lang: Language, dir: string, f
   ffmpeg(["-f", "concat", "-safe", "0", "-i", concat, "-c", "copy", voice]);
 
   // 3. 配樂：同一組歌依序接起來（交叉淡化），夠長就停
-  const group = musicGroup(story.style, story.theme);
+  const group = musicGroup(story.style, story.theme, story.id);
   const count = MUSIC_GROUPS[group];
   const songs: string[] = [];
   let length = 0;

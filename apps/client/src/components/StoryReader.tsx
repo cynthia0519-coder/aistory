@@ -195,7 +195,7 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
     activeVoice.current = voice;
     voice.prepare?.();
     bgm.setEnabled(musicOn);
-    bgm.start(story.style ?? "bedtime", story.theme);
+    bgm.start(story.style ?? "bedtime", story.theme, story.id);
     const id = ++runId.current;
     // 開場音效響一下再開始念；音效關掉時不用等
     setCurrent(-1);
@@ -212,7 +212,7 @@ export function StoryReader({ story, onNewStory, onBack, onNext }: Props) {
     if (current === null) {
       // 第一次翻頁就是開始：在手勢裡開音樂
       bgm.setEnabled(musicOn);
-      bgm.start(story.style ?? "bedtime", story.theme);
+      bgm.start(story.style ?? "bedtime", story.theme, story.id);
     }
     setCurrent(i);
   }
