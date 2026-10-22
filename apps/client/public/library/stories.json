@@ -1979,7 +1979,8 @@
         "tip": "Tonight, sing \"Brush, brush, round and round\" together, and after your child brushes, finish the back teeth for them."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-20T19:30:00+08:00"
   },
   {
     "id": "brushing-teeth-hippo-grin",
@@ -2529,7 +2530,8 @@
         "tip": "This week, sing \"Rub the palms, rub the backs, wiggle fingers in the cracks\" every time you wash together, then twist the thumbs and scrub the nails before rinsing and drying."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-11-16T19:30:00+08:00"
   },
   {
     "id": "dentist-spaceship-chair",
@@ -13301,7 +13303,8 @@
         "tip": "Each night this week at bedtime, name one person or thing that quietly helped your family that day, and pick one small thank-you action, like drawing a card or helping tidy up."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-05-28T19:30:00+08:00"
   },
   {
     "id": "gratitude-the-quiet-helpers",
@@ -13793,7 +13796,8 @@
         "tip": "This week, practice one phrase together: \"That's not funny, I'm getting a grown-up to help.\" At bedtime, chat about one moment today when your child felt scared but did something small and brave anyway."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-16T19:30:00+08:00"
   },
   {
     "id": "courage-the-wrong-turn",
@@ -13845,7 +13849,8 @@
         "tip": "This week at dinner, take turns sharing one \"small brave thing\" from your day, like asking a question, trying a new food, or asking for help, and answer each other with: \"You felt scared, and you did it anyway.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-30T19:30:00+08:00"
   },
   {
     "id": "responsibility-goldfish-week",
