@@ -18741,5 +18741,588 @@
       }
     },
     "draft": true
+  },
+  {
+    "id": "childrens-day-kids-choice",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "park",
+    "title": {
+      "zh": "{name}的兒童節計畫",
+      "en": "{name}'s Children's Day Plan"
+    },
+    "paragraphs": {
+      "zh": [
+        "今天是兒童節。媽媽笑著說：「{name}，今天下午由你來安排喔！」{name}眼睛一亮：「我可以當小隊長嗎？」爸爸點點頭：「對，我們都聽你的。」{name}拿出紙和蠟筆，坐在桌前想呀想。",
+        "「我們去公園野餐！」{name}先畫了一個大大的籃子。籃子裡要放什麼呢？{name}畫了草莓，那是{his}最愛。接著又想：爸爸愛吃什麼？媽媽呢？弟弟小豆呢？{name}跑去一個一個問。",
+        "爸爸想要三明治，媽媽想要一壺茶。小豆咿咿呀呀，指著香蕉。{name}把三明治、茶壺和香蕉都畫上去。一張「計畫表」完成了！{name}拿給大家看。爸爸拍拍手說：「好棒的計畫！」",
+        "公園裡風輕輕吹，樹葉沙沙響。爸爸鋪好野餐墊。{name}幫忙把食物一樣一樣擺好。每個人都拿到自己喜歡的。媽媽喝一口茶，小豆咬一口香蕉。{name}吃著草莓，心裡甜甜的。",
+        "吃飽了，該玩遊戲囉！「我們來玩鬼抓人！」{name}跑得好快好快。可是小豆才兩歲，跑兩步就一屁股坐在草地上。小豆嘴巴一扁，快要哭了。{name}停下腳步，皺著眉頭想一想。",
+        "{name}蹲下來，看看四周。草地上有黃色的小花，有紅色的皮球，還有藍色的長椅。「我知道了！我們來玩找顏色！」{name}說出一個顏色，大家就去指。小豆也能用小手指一指。",
+        "「綠色！」大家一起指向大樹。「紅色！」小豆指著自己的紅鞋子，咯咯咯笑個不停。爸爸媽媽也笑了。玩著玩著，太陽慢慢下山，天空變成橘色。大家收好野餐墊，手牽手走回家。",
+        "洗好澡，是說故事時間。{name}選了一本小鴨子的書，因為小豆最愛鴨子。{name}學鴨子「呱呱」叫，小豆聽得好開心。媽媽輕聲問：「小隊長，今天開心嗎？」{name}點點頭，打了個哈欠。晚安，{name}。"
+      ],
+      "en": [
+        "It was Children's Day. Mom smiled. \"{name}, you get to plan our afternoon!\" {name}'s eyes lit up. \"Can I be the team leader?\" Dad nodded. \"Yes! We will follow your plan.\" {name} grabbed paper and crayons and sat down to think.",
+        "\"Let's have a picnic in the park!\" First, {name} drew a big basket. What should go inside? {name} drew strawberries, the very best snack. Then {name} wondered. What does Dad like? What about Mom? And little brother Bean? {name} ran to ask each one.",
+        "Dad wanted sandwiches. Mom wanted a pot of tea. Bean babbled and pointed at a banana. {name} drew sandwiches, a teapot, and a banana too. The plan was finished! {name} showed everyone. Dad clapped. \"What a wonderful plan!\"",
+        "At the park, a soft breeze blew. The leaves went swish, swish. Dad spread out the picnic blanket. {name} set out the food, one thing at a time. Everyone got a favorite. Mom sipped her tea. Bean munched his banana. {name} ate strawberries and felt warm inside.",
+        "After lunch, it was game time! \"Let's play tag!\" {name} ran fast, so fast. But Bean was only two. After two steps, he plopped down on the grass. His lip wobbled. He was about to cry. {name} stopped running and thought hard.",
+        "{name} crouched down and looked around. There were yellow flowers and a red ball. There was a blue bench, too. \"I know! Let's play Find the Color!\" {name} would call a color, and everyone would point. Bean could point with his tiny finger, too.",
+        "\"Green!\" Everyone pointed at the big tree. \"Red!\" Bean pointed at his own red shoes and giggled and giggled. Mom and Dad laughed too. As they played, the sun sank low. The sky turned orange. They packed up and walked home, hand in hand.",
+        "After bath time, it was story time. {name} picked a book about a little duck, because Bean loved ducks. {name} said, \"Quack, quack!\" Bean squealed with joy. Mom whispered, \"Team leader, did you have fun today?\" {name} nodded with a big yawn. Goodnight, {name}."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "如果你也能畫一張野餐計畫表，你會在籃子裡畫什麼？",
+          "你最喜歡{name}和小豆玩找顏色的哪個時候？",
+          "如果明天由你當小隊長，你想帶大家去哪裡玩？"
+        ],
+        "tip": "今晚關燈後，和孩子輕聲玩「找顏色」：說出一個顏色，一起想想房間裡或被子上哪裡有這個顏色。"
+      },
+      "en": {
+        "questions": [
+          "If you drew a picnic plan, what would you put in the basket?",
+          "What was your favorite part of the Find the Color game with {name} and Bean?",
+          "If you were the team leader tomorrow, where would you take everyone?"
+        ],
+        "tip": "After lights out, play a whispered Find the Color game: name a color and quietly think together about where it is in the room or on the blanket."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "mothers-day-breakfast-surprise",
+    "style": "cute",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}的母親節早餐",
+      "en": "{name}'s Mother's Day Breakfast"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期天早上，天才剛亮。{name}輕輕睜開眼睛。爸爸在門口小聲說：「今天是母親節喔。」{name}趕快捂住嘴巴，差點笑出聲來。兩個人踮著腳尖，像兩隻小貓，慢慢走進廚房。",
+        "爸爸把麵包放進烤麵包機。「這個很燙，爸爸來顧。」{name}點點頭，站得遠遠的。過了一會兒，叮！麵包跳了起來。{name}嚇了一跳，又咯咯笑：「麵包在跳舞！」爸爸也笑了。",
+        "接著要做水果盤。{name}負責排水果。香蕉片排成笑臉，草莓當鼻子。可是盤子歪歪的，草莓一直滾來滾去。{name}說：「草莓不想乖乖坐好！」爸爸放了一片蘋果，擋住小草莓。",
+        "然後，{name}拿出蠟筆和紙，要做一張卡片。{name}畫了一朵大大的紅花，還畫了媽媽、爸爸和自己，大家手牽著手。爸爸幫忙寫上「媽媽，我愛妳」。{name}再貼上一顆亮晶晶的星星。",
+        "最後要倒牛奶。{name}雙手捧著小杯子，爸爸慢慢倒。牛奶咕嚕咕嚕往下流。突然，杯子晃了一下。幾滴牛奶灑在桌上，變成一個白白的小水窪。{name}睜大眼睛，看著爸爸。",
+        "爸爸看了看，忍不住笑出來：「這是牛奶小湖嗎？」{name}也跟著哈哈笑。兩個人一起拿抹布，擦呀擦，擦呀擦。桌子又變得乾乾淨淨。{name}說：「小湖不見了！」爸爸豎起大拇指。",
+        "早餐都準備好了。烤麵包、歪歪的水果盤、一杯牛奶，還有那張卡片。爸爸端著托盤，{name}捧著卡片。兩個人輕輕敲門：「叩叩叩！」媽媽揉揉眼睛，坐了起來：「哇，好香喔！」",
+        "{name}大聲說：「媽媽，母親節快樂！」媽媽看了卡片，又吃了一口麵包，笑得好開心。媽媽張開雙手說：「每一樣都好棒。可是最棒的，是{name}的抱抱。」{name}撲進媽媽懷裡，緊緊抱住媽媽。爸爸也一起抱過來。"
+      ],
+      "en": [
+        "It was Sunday, and the sun was just waking up. {name} slowly opened {his} eyes. Dad whispered at the door, \"It's Mother's Day!\" {name} covered a giggle with both hands. They tiptoed like two quiet kittens into the kitchen.",
+        "Dad put bread into the toaster. \"This gets hot, so I'll watch it.\" {name} nodded and stood back. Soon, pop! The toast jumped up. {name} jumped too, then laughed. \"The bread is dancing!\" Dad laughed along.",
+        "Next came the fruit plate. {name} was in charge of the fruit. Banana slices made a smiley face. A strawberry was the nose. But the plate was wobbly. The strawberry kept rolling away. \"It won't sit still!\" said {name}. Dad tucked an apple slice beside it.",
+        "Then {name} found crayons and paper for a card. {name} drew a big red flower. Next came Mom, Dad, and {name}, all holding hands. Dad helped write, \"Mom, I love you.\" {name} added one sparkly star sticker.",
+        "Last came the milk. {name} held the little cup with both hands. Dad poured slowly. Glug, glug, glug. Then the cup gave a tiny wobble. A few drops splashed onto the table. They made a small white puddle. {name} looked up at Dad with big eyes.",
+        "Dad looked at the puddle and chuckled. \"Is that a milk lake?\" {name} giggled too. Together they grabbed a cloth. They wiped and wiped. Soon the table was clean and shiny again. \"The lake is gone!\" said {name}. Dad gave a thumbs-up.",
+        "Breakfast was ready at last. There was toast, the wobbly fruit plate, a cup of milk, and the card. Dad carried the tray. {name} carried the card. Knock, knock, knock! Mom rubbed her eyes and sat up. \"Wow, something smells yummy!\"",
+        "\"Happy Mother's Day!\" {name} said loudly. Mom read the card and took a bite of toast. She smiled a big, happy smile. Then she opened her arms wide. \"Everything is wonderful. But the best part is {name}'s hug.\" {name} hugged Mom tight. Dad joined the hug too."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "麵包「叮」一聲跳起來的時候，你覺得它像在跳什麼舞？",
+          "如果讓你排水果盤，你想排出什麼樣子？",
+          "你最喜歡故事裡哪一個好笑的時刻？"
+        ],
+        "tip": "今晚睡前抱一抱，輕聲聊聊你們各自最喜歡的早餐，明天再一起畫一張「我們的早餐」小圖。"
+      },
+      "en": {
+        "questions": [
+          "When the toast popped up, what kind of dance do you think it was doing?",
+          "If you made the fruit plate, what picture would you make?",
+          "What was your favourite funny moment in the story?"
+        ],
+        "tip": "Tonight, share a cuddle and whisper about your favourite breakfasts, then draw a little picture of \"our breakfast\" together tomorrow."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "dragon-boat-zongzi-wrapping",
+    "style": "inspiring",
+    "ageBands": [
+      "6-8"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}和奶奶包粽子",
+      "en": "{name} Wraps Zongzi with Grandma"
+    },
+    "paragraphs": {
+      "zh": [
+        "端午節快到了，奶奶家的廚房裡飄著淡淡的竹葉香。桌上放著一大盆泡過水的粽葉、一碗白白的糯米，還有紅豆、香菇和一綑細細的棉繩。{name}拉了拉奶奶的袖子，說：「奶奶，今年我想自己包粽子！」",
+        "奶奶笑著遞給{name}兩片粽葉。「先把葉子捲成一個小漏斗，就像冰淇淋的甜筒那樣。」{name}學著奶奶的樣子，小心地把葉子彎起來。可是手一鬆，葉子就「啪」地彈開，又變回平平的一片，一點也不聽話。",
+        "{name}再試一次，這次用力壓住葉子，舀進一大匙糯米。沒想到米放太多了，葉子撐不住，白白的米粒嘩啦啦滾到桌上。{name}嘟起嘴，小聲地說：「葉子一直跑掉，我是不是學不會呀？」",
+        "奶奶沒有急著幫忙，而是拉了一張椅子，坐到{name}旁邊。「奶奶第一次包粽子的時候，包出來的形狀像一顆歪掉的石頭呢。」她輕輕握著{his}小手，慢慢地說：「我們不用一次做完，一次只摺一下就好。」",
+        "第一步，把葉子捲成漏斗，用大拇指捏住尖尖的底。第二步，放進半匙糯米、幾顆紅豆和一小片香菇，再蓋上一層米。第三步，把上面的葉子往下摺，像替粽子蓋好被子。{name}一邊做，一邊在心裡數：「一、二、三。」",
+        "最難的是綁繩子。棉繩滑溜溜的，繞了一圈又鬆開。{name}深深吸一口氣，請奶奶用手指幫忙壓住葉子，自己再把繩子繞兩圈，拉緊，打一個結。一顆小小的、有點胖胖的粽子，終於穩穩地站在桌上了。",
+        "{name}越包越順手，第五顆已經有漂亮的三角形尖角。奶奶把粽子一串串綁好，放進大鍋裡煮。到了傍晚，窗外的天空變成橘紅色，屋子裡飄滿了粽子的香味。奶奶等粽子放涼了，才剝開給{name}吃，糯米又軟又Q。",
+        "吃完晚飯，奶奶拿出一個繡著小老虎的香包，和{name}一起掛在門邊。香包聞起來有淡淡的草藥香。祖孫倆坐在沙發上，電視裡傳來「咚、咚、咚」的龍舟鼓聲。{name}看著盤子裡那顆胖胖的粽子，嘴角偷偷地笑了。"
+      ],
+      "en": [
+        "The Dragon Boat Festival was almost here, and Grandma's kitchen smelled softly of bamboo leaves. On the table sat a big bowl of soaked leaves, a bowl of sticky rice, red beans, mushrooms, and a bundle of thin string. {name} tugged Grandma's sleeve. \"This year, I want to wrap zongzi too!\"",
+        "Grandma smiled and handed {name} two leaves. \"First, roll them into a little cone, like an ice cream cone.\" {name} copied Grandma and gently bent the leaves. But the moment {he} let go, they sprang open with a flap and lay flat again.",
+        "{name} tried again, pressing the leaves down hard and adding a big spoonful of rice. But it was too much! The leaves gave way, and the rice tumbled across the table. {name} frowned. \"The leaves keep running away. Maybe I just can't do it.\"",
+        "Grandma didn't take over. She pulled up a chair and sat beside {name}. \"My very first zongzi looked like a lumpy rock,\" she said. Holding {his} hands gently, she added, \"We don't have to do it all at once. Just one fold at a time.\"",
+        "Step one: roll the leaves into a cone and pinch the pointy bottom with a thumb. Step two: add half a spoon of rice, a few red beans, a bit of mushroom, and more rice. Step three: fold the top leaf down like a blanket. {name} counted quietly, \"One, two, three.\"",
+        "The trickiest part was the string. It was slippery and kept coming loose. {name} took a deep breath and asked Grandma to hold the leaves with one finger. Then {name} wrapped the string twice, pulled it tight, and tied a knot. A small, chubby zongzi stood up all by itself!",
+        "Each one got easier, and the fifth zongzi had neat, pointy corners. Grandma tied them in bunches and set them in the big pot to cook. By evening, the sky outside glowed orange, and the house smelled wonderful. Once the zongzi had cooled, Grandma unwrapped one for {name}. It was soft and chewy.",
+        "After dinner, Grandma brought out a fragrant sachet stitched with a little tiger, and {name} helped hang it by the door. It smelled of gentle herbs. They cuddled on the sofa as the TV played the boom, boom, boom of dragon boat drums. {name} looked at that chubby zongzi and smiled."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "葉子一直彈開、米粒滾到桌上的時候，你覺得{name}心裡是什麼感覺？",
+          "如果你也來包一顆粽子，你想在裡面放什麼好吃的東西？",
+          "故事後面你最喜歡哪個時候？是聞到粽子香、掛上小老虎香包，還是聽見咚咚咚的龍舟鼓聲？"
+        ],
+        "tip": "睡前抱著孩子，在{his}手心輕輕數「一、二、三」，假裝一起包一顆想像中的粽子，再小聲說說它是什麼口味。"
+      },
+      "en": {
+        "questions": [
+          "When the leaves kept springing open and the rice spilled, how do you think {name} felt?",
+          "If you wrapped your own zongzi, what yummy things would you put inside?",
+          "What was your favourite part near the end: the yummy smell, hanging the little tiger sachet, or hearing the boom, boom, boom of the drums?"
+        ],
+        "tip": "At bedtime, cuddle up and gently count \"one, two, three\" on your child's palm as you wrap a pretend zongzi together, then whisper about what flavour it is."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "fathers-day-dad-and-me",
+    "style": "cute",
+    "ageBands": [
+      "6-8"
+    ],
+    "setting": "park",
+    "title": {
+      "zh": "{name}和爸爸的爸爸節",
+      "en": "{name} and Dad's Father's Day"
+    },
+    "paragraphs": {
+      "zh": [
+        "八月八日是爸爸節，{name}一早就在紙上畫了一張「爸爸和我」計畫表：第一，教爸爸跳格子；第二，請爸爸教摺紙船。{name}把計畫表摺好，塞進爸爸的口袋，神秘地說：「今天你要聽我的喔！」爸爸笑著敬了個禮。",
+        "到了公園，{name}拿起粉筆在地上畫出八個格子，又找來一顆小石頭。「看好囉！」{name}把石頭丟進第一格，單腳一跳、兩跳，輕輕鬆鬆跳到最後一格，再轉身跳回來，連石頭都撿得穩穩的。爸爸拍手說：「哇，好厲害！」",
+        "換爸爸了。爸爸的大腳一踩，一下子就把兩個格子都踩滿了。單腳跳到第三格時，爸爸像一隻搖搖晃晃的企鵝，兩隻手臂在空中亂揮。{name}笑得蹲在地上：「爸爸，你要像小麻雀一樣輕輕地跳啦！」",
+        "{name}當起小老師，示範把雙手張開保持平衡，眼睛盯著前面的格子。爸爸認真地點點頭，試了一次、兩次，第三次終於一路跳到底。爸爸得意地舉起石頭，{name}送上一個大大的擊掌，還在爸爸手背畫了一顆粉筆星星。",
+        "接著輪到爸爸當老師。兩人坐在池塘邊的長椅上，爸爸拿出一張藍色色紙。「先對摺，再摺出兩個尖尖的角。」{name}的手指有點忙不過來，紙角一下翹起來，一下又歪掉，摺出來的東西看起來像一頂皺巴巴的帽子。",
+        "「沒關係，我們慢慢來。」爸爸握著{name}的手，一起把摺痕壓平，再把中間輕輕往外一拉。小紙船突然「啪」地張開了！{name}睜大眼睛，捧著紙船左看右看：「這是我們一起摺的，叫它『爸爸號』好不好？」",
+        "爸爸牽著{name}蹲在池邊的木台上，把爸爸號輕輕放進水裡。小船晃了晃，在水面轉了一個小圈。一隻綠頭鴨游過來，「呱呱」叫了兩聲，好像在誇它漂亮。小船漂遠一點時，爸爸用長樹枝把它輕輕撥回來，{name}小心地把濕濕的爸爸號捧在手心。",
+        "太陽慢慢下山了，他們帶著爸爸號回家，把它放在窗台上晾乾。睡前，{name}窩在被子裡說：「我最喜歡教你跳格子，看你變成企鵝！」爸爸笑著說：「我最喜歡握著你的小手一起摺紙。」{name}打了個小哈欠：「爸爸節快樂，晚安。」"
+      ],
+      "en": [
+        "August eighth is Father's Day in Taiwan, and {name} woke up with a plan. On a sheet of paper, {name} drew a \"Dad and Me\" list: one, teach Dad hopscotch; two, learn to fold a paper boat. {name} tucked the list into Dad's pocket. \"Today you follow my plan!\" Dad saluted with a grin.",
+        "At the park, {name} drew eight chalk squares on the path and found a little stone. \"Watch closely!\" {name} tossed the stone into the first square, then hopped on one foot, all the way to the end and back, scooping up the stone without a wobble. Dad clapped. \"Wow, amazing!\"",
+        "Then it was Dad's turn. His big feet covered two squares at once! By the third square, Dad was teetering like a wobbly penguin, arms flapping in the air. {name} giggled so hard it was impossible to stand. \"Dad, hop lightly, like a little sparrow!\"",
+        "So {name} became the teacher, showing Dad how to stretch out both arms for balance and keep his eyes on the next square. Dad nodded seriously. He tried once, twice, and on the third try he made it to the end! {name} gave him a big high five and drew a chalk star on his hand.",
+        "Next, Dad became the teacher. They sat on a bench by the pond, and Dad pulled out a square of blue paper. \"Fold it in half, then make two pointy corners.\" {name}'s fingers got a little tangled. One corner popped up, another slid sideways, and the paper ended up looking like a crumpled hat.",
+        "\"That's okay. Let's go slowly.\" Dad held {name}'s hands, and together they pressed the folds flat and gently pulled the middle open. Pop! A little boat appeared! {name} turned it this way and that. \"We made it together. Can we call it the Dad Boat?\"",
+        "Holding {name}'s hand, Dad knelt on the wooden dock and set the Dad Boat on the water. It bobbed and twirled in a tiny circle. A green-headed duck paddled over and quacked twice, as if to say, \"Nice boat!\" When the boat drifted a bit too far, Dad nudged it back with a long stick, and {name} carefully scooped it up.",
+        "As the sun went down, they carried the Dad Boat home and set it on the windowsill to dry. At bedtime, {name} snuggled under the blanket. \"I love teaching you hopscotch and watching you turn into a penguin!\" Dad smiled. \"I love folding paper with your hands in mine.\" {name} gave a sleepy yawn. \"Happy Father's Day. Goodnight.\""
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "爸爸跳格子變成搖搖晃晃的企鵝時，你覺得哪裡最好笑？",
+          "小紙船「啪」地張開的那一刻，你心裡有什麼感覺？",
+          "如果你也有一艘自己的紙船，你想幫它取什麼名字，讓它漂去哪裡？"
+        ],
+        "tip": "今晚關燈後，輪流小聲說出今天「我最喜歡和你一起做的一件事」；明天再一起慢慢摺一艘小紙船。"
+      },
+      "en": {
+        "questions": [
+          "When Dad wobbled like a penguin in hopscotch, what was the funniest part for you?",
+          "How did you feel when the little paper boat suddenly popped open?",
+          "If you had your very own paper boat, what would you name it, and where would it float?"
+        ],
+        "tip": "Tonight after lights out, take turns whispering one thing you loved doing together today, and tomorrow, fold a little paper boat together slowly."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "halloween-pumpkin-lantern-night",
+    "style": "bedtime",
+    "ageBands": [
+      "2-4"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}和笑咪咪南瓜燈",
+      "en": "{name} and the Smiling Pumpkin Lantern"
+    },
+    "paragraphs": {
+      "zh": [
+        "晚上到了，窗外黑黑的。{name}和媽媽坐在桌邊。桌上有一張橘色的紙。媽媽說：「我們來做南瓜燈。」{name}點點頭，笑咪咪。沙沙，沙沙，紙張輕輕響。",
+        "媽媽拿剪刀，慢慢剪。剪一個圓圓的南瓜。{name}幫忙壓住紙。壓一壓，按一按。圓圓的南瓜出來了。媽媽說：「好圓喔！」{name}拍拍手，啪啪啪。",
+        "{name}拿起黑色的筆。畫兩個圓眼睛。畫一個小鼻子。再畫一個大笑臉。彎彎的，像月亮。南瓜也笑了。{name}說：「你好，南瓜！」",
+        "媽媽把紙捲成圓筒。黏一黏，貼一貼。再放進一盞小燈。小燈暖暖的，不燙手。按一下，喀嚓。南瓜亮起來了。橘橘的，黃黃的，好溫暖。",
+        "媽媽把南瓜放上架子。{name}抱著小熊看。南瓜在笑，小熊也在笑。{name}也笑了。媽媽說：「該睡覺囉。」{name}打了個小哈欠。啊——好睏喔。",
+        "{name}爬上小床。被子軟軟的，暖暖的。媽媽輕輕蓋好被子。媽媽說：「要關大燈囉。」喀嚓，大燈關了。房間暗下來。只剩小南瓜，亮亮的。",
+        "南瓜的光柔柔的。照在牆上，圓圓的。照在小熊身上，暖暖的。窗外風聲輕輕，呼——呼——。屋裡好安靜。媽媽輕輕哼著歌。啦啦啦，慢慢的。",
+        "{name}看著小南瓜。「晚安，南瓜。」南瓜笑咪咪，好像也說晚安。「晚安，小熊。」「晚安，媽媽。」媽媽親親{name}。小南瓜亮整夜，房間暖暖的。{name}睡著了，好甜好甜。"
+      ],
+      "en": [
+        "Night has come. The window is dark. {name} and Mom sit at the table. There is orange paper. \"Let's make a pumpkin lantern,\" says Mom. {name} nods and smiles. Swish, swish goes the paper.",
+        "Mom holds the scissors. Snip, snip, slowly. She cuts a round pumpkin. {name} helps hold the paper. Press, press, gently. Out comes a round pumpkin! \"So round!\" says Mom. {name} claps. Clap, clap, clap.",
+        "{name} picks up a black pen. Two round eyes. One little nose. One big smile, curved like the moon. Now the pumpkin smiles too. \"Hello, pumpkin!\" says {name}.",
+        "Mom rolls the paper into a tube. Stick, stick, all done. She puts a little lamp inside. It is warm, never hot. Click! The pumpkin glows. Orange and gold, so cozy.",
+        "Mom sets the pumpkin on the shelf. {name} hugs Teddy and looks. The pumpkin smiles. Teddy smiles. {name} smiles too. \"Time for bed,\" says Mom. {name} gives a little yawn. Ahh, so sleepy.",
+        "{name} climbs into bed. The blanket is soft and warm. Mom tucks it in. \"Big light off now,\" she says. Click! The room grows dim. Only the little pumpkin glows.",
+        "The glow is soft and gentle. A round light on the wall. A warm light on Teddy. Outside, the wind whispers, whoo, whoo. Inside, all is quiet. Mom hums a slow song. La, la, la.",
+        "{name} looks at the pumpkin. \"Goodnight, pumpkin.\" It smiles, as if to say goodnight. \"Goodnight, Teddy. Goodnight, Mom.\" Mom kisses {name}. The little pumpkin glows all night. {name} sleeps, sweet and snug."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "南瓜的臉上，你最喜歡哪裡？",
+          "南瓜燈亮起來，是什麼顏色？",
+          "你想跟誰說晚安？"
+        ],
+        "tip": "今晚關燈後，和孩子輕聲輪流說「晚安」給房間裡的東西聽，例如小熊、枕頭、窗戶。"
+      },
+      "en": {
+        "questions": [
+          "What do you like best on the pumpkin's face?",
+          "What color is the pumpkin when it glows?",
+          "Who do you want to say goodnight to?"
+        ],
+        "tip": "Tonight, after the light goes off, take turns whispering goodnight to things in the room, like Teddy, the pillow, and the window."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "halloween-friendly-ghost-costume",
+    "style": "cute",
+    "ageBands": [
+      "6-8"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "{name}是最友善的幽靈",
+      "en": "{name}, the Friendliest Ghost"
+    },
+    "paragraphs": {
+      "zh": [
+        "萬聖節派對那天早上，{name}抱著一個大紙袋走進教室。袋子裡裝的是和家人一起做好的白床單，上面剪了兩個圓圓的洞。「我今年要當幽靈！」{name}一邊說，一邊開心地轉了一圈，紙袋也跟著沙沙作響。",
+        "老師說，一年級的小朋友等一下會來一起玩。{name}躲到書櫃後面，把床單從頭上套下來，只露出兩個黑黑的洞。{he}輕輕飄出來，張開雙手說：「嗚——我是幽靈！」同學們都笑了，還說這件服裝好像真的一樣。",
+        "這時，教室門打開了，一年級的豆豆牽著老師的手走進來。她頭上戴著小兔子耳朵，可是一看到白白的幽靈，就停住腳步，躲到老師身後。豆豆小聲地說：「它沒有嘴巴，看起來好可怕喔。」",
+        "{name}愣了一下，趕緊從床單底下鑽出來，笑著揮揮手。「豆豆，是我啦！」豆豆探出頭看了看，可是眼睛還是盯著那兩個黑洞。{name}低頭看看床單，心想：這個幽靈好像太冷冰冰了，應該讓它看起來友善一點。",
+        "{name}跑到美勞角，拿出紅色的彩色筆，在床單上畫了一個大大的笑臉，嘴角一直彎到快碰到洞洞。接著又用粉紅色蠟筆塗了兩團圓圓的腮紅。最後，{he}從緞帶盒裡挑出一條黃色緞帶，綁成大蝴蝶結，貼在幽靈頭頂上。",
+        "{name}重新套上床單，慢慢走到豆豆面前，歪著頭眨眨洞洞眼。「哈囉，我是全世界最友善的幽靈，我最喜歡交朋友了！」豆豆看著那個大笑臉，忍不住噗哧一聲笑出來。她伸出小手，輕輕摸了摸那個軟軟的蝴蝶結。",
+        "「要不要學幽靈舞？」{name}問。豆豆用力點點頭。{name}教她：先像風一樣左右搖一搖，再踮起腳尖轉一圈，最後雙手舉高，說一聲「嗚——哈囉！」豆豆跳得太用力，兔子耳朵歪到一邊，兩個人笑得東倒西歪。",
+        "後來，全班同學都排在幽靈後面，一起跳起幽靈舞，連老師也舉起手跟著喊「嗚——哈囉！」。派對結束時，豆豆拉著{name}的床單說：「明年我也要當幽靈，要有最大的笑臉！」{name}點點頭，覺得頭上的蝴蝶結好像也在開心地晃來晃去。"
+      ],
+      "en": [
+        "On the morning of the class Halloween party, {name} carried a big paper bag into the classroom. Inside was a white sheet with two round holes, made at home with family. \"This year I'm going to be a ghost!\" {name} said, spinning in a happy circle while the bag went crinkle, crinkle.",
+        "The teacher said the first graders would soon come to join the fun. {name} hid behind the bookshelf and pulled the sheet over, so only the two dark holes showed. Then {he} floated out, arms wide. \"Woooo! I'm a ghost!\" Everyone laughed and said the costume looked very real.",
+        "Just then, the door opened, and a first grader named Doudou walked in, holding the teacher's hand. She wore little bunny ears on her head. But when she saw the white ghost, she stopped and hid behind the teacher. \"It has no mouth,\" Doudou whispered. \"It looks scary.\"",
+        "{name} froze for a second, then quickly wiggled out from under the sheet and waved. \"Doudou, it's only me!\" Doudou peeked out, but her eyes kept going back to those two dark holes. {name} looked down at the sheet and thought, This ghost seems a little too chilly. It needs to look friendlier.",
+        "{name} hurried to the art corner and grabbed a red marker. On the sheet went a huge smile, curving up almost to the eye holes. Next came two round pink cheeks, colored in with a crayon. Last of all, {name} picked a yellow ribbon, tied it into a big bow, and stuck it right on top.",
+        "Back under the sheet, {name} tiptoed over to Doudou, tilted the ghost's head, and blinked the holey eyes. \"Hello! I'm the friendliest ghost in the whole world, and I love making friends!\" Doudou looked at the giant smile and giggled. She reached out and gently patted the soft yellow bow.",
+        "\"Want to learn the ghost dance?\" {name} asked. Doudou nodded hard. First, they swayed side to side like a breeze. Then they spun on their tiptoes. Last, they threw their hands up high and said, \"Woooo, hello!\" Doudou danced so hard that her bunny ears flopped sideways, and they both laughed until they wobbled.",
+        "Soon the whole class lined up behind the ghost for the ghost dance, and even the teacher raised her hands and called, \"Woooo, hello!\" When the party ended, Doudou tugged on the sheet. \"Next year I want to be a ghost too, with the biggest smile!\" {name} nodded, and the bow on top bounced happily along."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "豆豆躲到老師身後的時候，你覺得{name}心裡是什麼感覺？",
+          "如果你也有一件幽靈床單，你想在上面畫什麼、貼什麼？",
+          "幽靈舞裡，你最喜歡哪一個動作，或是哪個好笑的時刻？"
+        ],
+        "tip": "今晚蓋好被子後，輪流用最小的悄悄話說一聲「嗚——哈囉」，再說說你們的友善幽靈最想交什麼朋友；明天可以一起把它畫出來。"
+      },
+      "en": {
+        "questions": [
+          "When Doudou hid behind the teacher, how do you think {name} felt?",
+          "If you had your own ghost sheet, what would you draw or stick on it?",
+          "Which part of the ghost dance did you like best, or which moment made you laugh?"
+        ],
+        "tip": "Once you are tucked in tonight, take turns whispering the tiniest \"Woooo, hello\" and share what kind of friend your friendly ghost would love to meet; tomorrow you can draw it together."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "christmas-tree-lights-walk",
+    "style": "bedtime",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "city",
+    "title": {
+      "zh": "{name}的聖誕燈光散步",
+      "en": "{name}'s Christmas Light Walk"
+    },
+    "paragraphs": {
+      "zh": [
+        "十二月的晚上，天黑得好早。爸爸輕聲說：「我們去看聖誕燈吧！」{name}點點頭，牽著媽媽的手出門。冷冷的風輕輕吹過，路燈一盞一盞亮起來。人行道上，大家都慢慢走著，好像怕吵醒夜晚。",
+        "走過兩條街，就到了廣場。廣場中間有一棵好大的聖誕樹。樹上掛滿金色的小燈，一閃，一閃。最上面有一顆亮亮的星星。{name}抬起頭，看了好久好久。「好像天上的星星掉下來了。」{name}小聲說。",
+        "樹下有一位叔叔在拉小提琴。音樂慢慢的，軟軟的。媽媽說：「這首歌叫〈平安夜〉。」{name}靠在爸爸身邊，跟著輕輕搖。旁邊一位奶奶笑一笑，{name}也笑一笑。燈光一閃，音樂一響，心裡暖暖的。",
+        "接著，一家人走到商店街。每扇櫥窗都亮晶晶的。麵包店的窗裡，有一間薑餅小屋，屋頂撒滿白白的糖霜。玩具店的窗裡，小火車繞著圈圈跑，嘟嘟嘟。{name}靠近玻璃，呼出一小團白霧。",
+        "書店的櫥窗最安靜。裡面有一隻布做的小熊，坐在雪花燈下看書。雪花燈慢慢轉，一片，兩片，三片。{name}輕聲說：「小熊，晚安。」爸爸笑了，摸摸{name}的頭。",
+        "回家的路上，街道上方掛著發光的星星。一顆，又一顆，好像在說悄悄話。媽媽說：「我們來數最喜歡的燈吧。」{name}伸出手指，慢慢數：「一，大樹上的金星星。二，小火車的燈。三，小熊的雪花燈。」",
+        "數著數著，{name}打了一個小小的呵欠。腳步越走越慢，越走越慢。爸爸輕輕把{name}抱起來。爸爸的肩膀好暖，好軟。街上的聲音變小了，只剩下腳步聲，咚，咚，咚。",
+        "回到家，屋裡暖暖的，亮著一盞小夜燈。媽媽幫{name}蓋好被子。窗外，遠遠的燈還在一閃一閃。{name}閉上眼睛，心裡還在數：金星星，小火車，雪花燈……一閃，一閃，慢慢睡著了。晚安，{name}。"
+      ],
+      "en": [
+        "It was a December evening, and the sky got dark early. \"Let's go see the Christmas lights,\" Dad said softly. {name} nodded and held Mom's hand. A cool wind blew. The streetlights came on, one by one. Everyone on the sidewalk walked slowly.",
+        "Two streets later, they reached the square. In the middle stood a giant Christmas tree. Tiny golden lights covered it. Twinkle, twinkle. A shiny star sat on top. {name} looked up for a long, long time. \"It's like a star fell down,\" {name} whispered.",
+        "Under the tree, a man played the violin. The music was slow and soft. \"This song is called 'Silent Night,'\" Mom said. {name} leaned on Dad and swayed gently. A grandma nearby smiled. {name} smiled back. Everything felt warm inside.",
+        "Next, the family walked down the shopping street. Every shop window sparkled. The bakery had a gingerbread house with sugary white snow on the roof. In the toy shop, a little train went round and round. Choo, choo! {name} leaned close and breathed a tiny cloud on the glass.",
+        "The bookshop window was the quietest. A cloth teddy bear sat inside, reading under a snowflake lamp. The snowflakes turned slowly. One, two, three. \"Goodnight, little bear,\" {name} said softly. Dad smiled and patted {his} head.",
+        "On the way home, glowing stars hung above the street. One, then another, as if they were whispering. \"Let's count our favorite lights,\" Mom said. {name} held up a finger and counted slowly. \"One, the gold star. Two, the train lights. Three, the snowflake lamp.\"",
+        "Counting and counting, {name} gave a tiny yawn. Each step grew slower and slower. Dad gently picked {him} up. Dad's shoulder was warm and soft. The street grew quiet. Only footsteps were left. Tap, tap, tap.",
+        "At home, the house was warm. A little night-light glowed. Mom tucked {name} into bed. Far outside, the lights still twinkled. With eyes closed, {name} kept counting. Gold star, little train, snowflake lamp. Twinkle, twinkle. Soon {name} was fast asleep. Goodnight, {name}."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "大聖誕樹上的金色小燈，你最喜歡哪一閃一閃的樣子？",
+          "櫥窗裡的薑餅小屋、小火車和小熊，你最想去看哪一個？",
+          "如果你也來數最喜歡的燈，你的第一個會是什麼？"
+        ],
+        "tip": "今晚關燈後，和孩子一起輕聲數三樣今天最喜歡的東西，像{name}數燈一樣，數著數著慢慢閉上眼睛。"
+      },
+      "en": {
+        "questions": [
+          "The big tree had tiny golden lights. What did you like about them?",
+          "The gingerbread house, the little train, or the teddy bear: which window would you visit first?",
+          "If you counted your favorite lights too, what would be number one?"
+        ],
+        "tip": "After lights out tonight, whisper-count three favorite things from your day together, just like {name} counted the lights, until sleepy eyes close."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "christmas-baking-cookies-for-neighbors",
+    "style": "inspiring",
+    "ageBands": [
+      "6-8"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}的星星餅乾",
+      "en": "{name}'s Star Cookies"
+    },
+    "paragraphs": {
+      "zh": [
+        "聖誕節前的一個下午，廚房裡飄著奶油香。媽媽把一大團麵團放在桌上，笑著說：「今年我們來烤星星餅乾，送給大樓裡的鄰居，好不好？」{name}馬上點點頭，拿起星星形狀的模具，眼睛亮晶晶的。",
+        "可是麵團黏黏的，{name}第一次壓下去，星星的尖角卡在模具裡，拿出來時斷了一角。第二次，星星又歪了一邊。{name}嘟起嘴巴，有點想放棄。媽媽在手上撒了一點麵粉，輕輕示範：「先撒粉，再慢慢壓。」",
+        "{name}學著撒粉，深吸一口氣，慢慢往下壓，再小心地拿起來。這一次，五個尖角都完整地躺在烤盤上！{name}一顆接一顆地壓，烤盤很快就排滿了星星。媽媽把烤盤送進烤箱，屋子裡香得讓人忍不住微笑。",
+        "等餅乾放涼的時候，{name}想到一個主意：「我要寫小卡片，放在每一包餅乾裡。」可是要寫什麼呢？{name}咬著鉛筆想了好久，擦掉又重寫。給隔壁的陳奶奶，{name}終於寫下：「謝謝您每天跟我說早安。」",
+        "給樓上有小寶寶的林家，{name}寫：「祝小寶寶每天都睡得香香的。」給一樓的管理員王伯伯，{name}寫：「謝謝您每天守護我們的大樓。」「守護」兩個字筆畫好多，{name}寫了三次才滿意。媽媽在旁邊看著，輕輕摸摸{his}頭。",
+        "媽媽牽著{name}的手，一起去按陳奶奶的門鈴。{name}突然有點害羞，把餅乾藏在背後。門打開了，陳奶奶笑瞇瞇地看著{him}。{name}鼓起勇氣，把袋子遞了出去。陳奶奶讀完卡片，開心地說：「好久沒收到這麼甜的禮物了，謝謝你！」",
+        "到了林家，小寶寶在林太太懷裡咯咯笑，伸出小手想抓卡片。林太太小聲說，要把卡片貼在寶寶的小床邊。最後，媽媽和{name}搭電梯到一樓。王伯伯接過餅乾，愣了一下，然後把卡片小心地放進制服口袋：「我會好好收著。」",
+        "回到家，窗外的天色已經暗了，聖誕燈一閃一閃。烤盤上還剩兩顆星星餅乾，{name}和媽媽一人一顆。{name}咬了一口，心裡暖烘烘的，好像比烤箱還暖。{name}望著窗外，想著陳奶奶、林家和王伯伯也正吃著星星，忍不住笑了。"
+      ],
+      "en": [
+        "One afternoon before Christmas, the kitchen smelled like warm butter. Mom set a big ball of dough on the table and smiled. \"This year, let's bake star cookies for our neighbors in the building. What do you think?\" {name} nodded right away and picked up the star-shaped cutter, eyes shining.",
+        "But the dough was sticky. On the first try, one point of the star got stuck in the cutter and broke off. On the second try, the star came out lopsided. {name} frowned and almost wanted to stop. Mom dusted her hands with flour and showed how. \"Flour first, then press slowly.\"",
+        "{name} sprinkled some flour, took a deep breath, pressed down slowly, and lifted the cutter with great care. This time, all five points lay perfectly on the tray! One star after another, {name} filled the whole tray. Mom slid it into the oven, and soon the house smelled so good that everyone had to smile.",
+        "While the cookies cooled, {name} had an idea. \"I'll write a little card for each bag!\" But what should the cards say? {name} chewed on the pencil, thinking for a long time, erasing and writing again. For Grandma Chen next door, {name} finally wrote, \"Thank you for saying good morning to me every day.\"",
+        "For the Lin family upstairs, who had a new baby, {name} wrote, \"Sweet dreams, little baby.\" For Mr. Wang, the building manager downstairs, {name} wrote, \"Thank you for keeping our building safe.\" The word \"safe\" kept coming out wobbly, so {name} tried three times until it looked just right. Mom watched and gently patted {his} head.",
+        "Holding Mom's hand, {name} rang Grandma Chen's doorbell. Suddenly feeling shy, {name} hid the cookies behind {his} back. The door opened, and Grandma Chen beamed. {name} took a brave breath and held out the bag. After reading the card, she said happily, \"I haven't had such a sweet present in ages. Thank you!\"",
+        "At the Lins' door, the baby giggled in Mrs. Lin's arms and reached a tiny hand toward the card. Mrs. Lin whispered that she would tape it beside the crib. Last of all, Mom and {name} rode the elevator down to Mr. Wang. He took the cookies, paused, then tucked the card carefully into his uniform pocket. \"I'll keep this,\" he said.",
+        "Back home, the sky outside had turned dark, and the Christmas lights twinkled. Two star cookies were left on the tray, one for Mom and one for {name}. With the first bite, {name} felt warm inside, even warmer than the oven. Looking out the window, {name} pictured Grandma Chen, the Lins, and Mr. Wang all nibbling stars too, and smiled."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}壓出五個尖角都完整的星星時，你覺得{name}心裡是什麼感覺？",
+          "{name}把餅乾藏在背後、有點害羞的時候，你有過這種感覺嗎？是什麼時候呢？",
+          "如果你也要寫一張小卡片送給一個人，你想送給誰？會寫什麼？"
+        ],
+        "tip": "今晚關燈前，一起輕聲說出一個想謝謝的人和原因；明天再一起把這句話畫成一張小卡片。"
+      },
+      "en": {
+        "questions": [
+          "When {name} made a star with all five points, how do you think {name} felt?",
+          "{name} felt shy and hid the cookies behind {his} back. Have you ever felt shy like that? When?",
+          "If you wrote a little card for someone, who would get it, and what would it say?"
+        ],
+        "tip": "Before lights out, take turns whispering the name of someone you'd like to thank and why; tomorrow, you can draw that thank-you on a little card together."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "christmas-wish-letter",
+    "style": "cute",
+    "ageBands": [
+      "2-4"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}的抱抱願望圖",
+      "en": "{name}'s Hug Wish Picture"
+    },
+    "paragraphs": {
+      "zh": [
+        "聖誕節快到了。{name}坐在小桌前。打開蠟筆盒，紅的，綠的，黃的。沙沙，沙沙，沙沙。{name}要畫一張願望圖。畫什麼呢？{name}歪著頭想。",
+        "媽媽探頭來看。「是畫小汽車嗎？」「不是喔！」{name}說。「是畫熊熊娃娃嗎？」「不是不是！」{name}笑嘻嘻。媽媽也歪著頭，想呀想。",
+        "{name}畫一個大圓圈。這是媽媽。再畫一個大圓圈。這是爸爸。又畫一個小圓圈。這是{name}！還有小貓咪小咪。喵喵，喵喵！",
+        "大家的手手，畫得長長的。長長的手，抱在一起。抱抱，抱抱，緊緊抱！旁邊再畫一本故事書。書上有星星，一閃一閃。哎呀，爸爸的手好長呀！呵呵！",
+        "「媽媽你看！」{name}舉起圖畫。「我的願望是抱抱。還要聽故事。全家一起聽！」媽媽笑了。「好棒的願望呀！」",
+        "媽媽牽著{name}，走到小聖誕樹旁。叮叮噹，叮叮噹。小鈴鐺在唱歌。媽媽拿來紅緞帶。{name}和媽媽一起，把圖掛上去。小咪跳過來聞一聞。喵！",
+        "天慢慢黑了。爸爸回家了。「哇，這是什麼？」爸爸看著圖畫。「是我的願望！」{name}說。爸爸點點頭。「今晚就來實現吧！」",
+        "晚上，大家窩在沙發上。爸爸抱抱，媽媽抱抱。小咪也擠進來。媽媽讀故事，爸爸學小羊叫。咩咩咩！{name}咯咯笑。抱抱好暖好暖。晚安，小聖誕樹。晚安，{name}。"
+      ],
+      "en": [
+        "Christmas is coming soon. {name} sits at the little table. Open the crayon box! Red, green, and yellow. Scribble, scribble, scribble. {name} will draw a wish picture. What should it be? {name} thinks and thinks.",
+        "Mom peeks over. \"Is it a toy car?\" \"Nope!\" says {name}. \"Is it a teddy bear?\" \"Nope, nope!\" {name} giggles. Mom thinks and thinks too.",
+        "{name} draws a big circle. That is Mom. Another big circle. That is Dad. Then a little circle. That is {name}! And a kitty named Mimi. Meow, meow!",
+        "Everyone gets long, long arms. Long arms for a big hug. Hug, hug, squeeze! Next comes a storybook. It has twinkly stars. Oops, Dad's arms are extra long! Hee hee!",
+        "\"Look, Mom!\" {name} holds up the picture. \"My wish is hugs. And stories too. With the whole family!\" Mom smiles. \"What a lovely wish!\"",
+        "Mom and {name} go to the little tree. Jingle, jingle, sing the bells. Mom brings a red ribbon. Together they hang the picture up. Mimi hops over for a sniff. Meow!",
+        "Slowly, the sky gets dark. Dad comes home. \"Wow, what is this?\" Dad looks at the picture. \"It's my wish!\" says {name}. Dad nods. \"Let's make it come true tonight!\"",
+        "That night, everyone snuggles on the sofa. A hug from Dad. A hug from Mom. Mimi squeezes in too. Mom reads a story. Dad sounds like a sheep. Baa, baa, baa! {name} giggles. Warm, cozy hugs. Goodnight, little tree. Goodnight, {name}."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}畫了好多圓圈，你最喜歡哪一個？",
+          "小咪怎麼叫？你也來喵喵叫一下！",
+          "大家抱抱的時候，你覺得暖暖的嗎？"
+        ],
+        "tip": "今晚關燈前，和{name}來一個長長的抱抱，再小聲說說今天最喜歡的一件事。"
+      },
+      "en": {
+        "questions": [
+          "{name} drew lots of circles. Which one do you like best?",
+          "What does Mimi say? Can you meow like Mimi?",
+          "When everyone hugs, does it feel warm?"
+        ],
+        "tip": "Before lights out tonight, give {name} a long, slow hug and whisper about your favourite part of the day."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "christmas-eve-quiet-night",
+    "style": "bedtime",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}的安靜聖誕夜",
+      "en": "{name}'s Quiet Christmas Eve"
+    },
+    "paragraphs": {
+      "zh": [
+        "今天是聖誕夜。外面的天黑了，家裡好安靜。客廳裡的聖誕樹亮著小燈。黃黃的，紅紅的，一閃一閃。{name}坐在軟軟的地毯上，靜靜地看著。小燈好像在輕輕眨眼睛，對{name}說晚安。",
+        "媽媽從廚房走出來，手裡端著一杯溫牛奶。「要放在哪裡呢？」媽媽小聲問。{name}想了想，指著樹旁的小桌子。媽媽把杯子輕輕放下。牛奶冒著淡淡的白煙，聞起來香香甜甜的。",
+        "{name}拿出一張小卡片和彩色筆。{he}慢慢地寫，一筆一畫。「謝謝你，今晚的好朋友。謝謝這個溫暖的家。」{name}還在角落畫了一顆小星星。媽媽看了，笑著說：「寫得真好。」",
+        "{name}把卡片放在牛奶旁邊。這時，窗縫吹進一點點風。卡片輕輕飄呀飄，掉到地上了。{name}沒有著急。{he}撿起卡片，拿來{his}小木頭麋鹿。麋鹿輕輕壓住卡片，這下卡片不會跑走了。",
+        "爸爸走過來，把客廳的大燈關掉。現在只剩聖誕樹的小燈。屋子變得暗暗的，暖暖的，像蓋了一條軟毯子。「該睡覺囉。」爸爸輕聲說。{name}牽著爸爸的手，慢慢走回房間。",
+        "{name}躺進被窩裡。被子軟軟的，枕頭鬆鬆的。{name}閉上眼睛，靜靜地聽。牆上的時鐘滴答，滴答。窗外的風呼呼，呼呼。好像整個家都在輕輕唱歌，唱得好慢好慢。",
+        "家裡的貓咪咪咪跳上床尾。咪咪捲成一顆小毛球，發出呼嚕呼嚕的聲音。呼嚕，呼嚕，好像在打小鼓。{name}的腳邊暖暖的。{name}在心裡說：「咪咪，晚安。」",
+        "媽媽走進來，輕輕親了{name}的額頭。「晚安，寶貝。」{name}想著亮亮的小燈，溫溫的牛奶，還有那張小卡片。心裡好安靜，好開心。{his}眼睛慢慢閉上了。晚安，聖誕夜。"
+      ],
+      "en": [
+        "It is Christmas Eve. Outside, the sky is dark. Inside, the house is very quiet. The tree's little lights glow yellow and red. They twinkle on and off. {name} sits on the soft rug and watches. The lights seem to wink goodnight.",
+        "Mom comes out of the kitchen. She carries a cup of warm milk. \"Where should it go?\" she whispers. {name} thinks for a moment. Then {name} points to the little table by the tree. Mom sets the cup down gently. Soft steam curls up. It smells sweet.",
+        "{name} gets a small card and some crayons. {name} writes slowly, one careful line at a time. \"Thank you, friend of tonight. Thank you for our warm home.\" In the corner, {name} draws a tiny star. Mom smiles. \"That's lovely,\" she says.",
+        "{name} leans the card beside the milk. Just then, a little breeze slips through the window. The card flutters and drifts to the floor. {name} stays calm. {name} picks it up and fetches {his} wooden reindeer. The reindeer holds the card snugly in place.",
+        "Dad comes over and switches off the big light. Now only the tree lights glow. The room feels dim and cozy, like a soft blanket. \"Time for bed,\" Dad says quietly. {name} holds Dad's hand. They walk slowly to the bedroom.",
+        "{name} snuggles under the covers. The blanket is soft. The pillow is fluffy. {name} closes {his} eyes and listens. The clock on the wall goes tick, tock. The wind outside goes whoosh, whoosh. The whole house hums a slow, sleepy song.",
+        "Mimi the cat hops onto the end of the bed. She curls into a fuzzy ball. Purr, purr, purr. It sounds like a tiny drum. {name}'s toes feel warm beside her. \"Goodnight, Mimi,\" {name} thinks.",
+        "Mom tiptoes in and kisses {name} softly. \"Goodnight, sweetheart.\" {name} thinks of the glowing lights. {name} thinks of the warm milk and the little card. Everything feels calm and happy. Slowly, {his} eyes close. Goodnight, Christmas Eve."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "聖誕樹的小燈一閃一閃，你最喜歡黃色的燈還是紅色的燈？",
+          "如果你也寫一張小卡片，你想在角落畫什麼？",
+          "咪咪呼嚕呼嚕的聲音，你可以輕輕學給我聽嗎？"
+        ],
+        "tip": "今晚關燈後，和孩子一起閉上眼睛，像{name}一樣靜靜聽家裡的聲音，再輪流小聲說出聽到了什麼。"
+      },
+      "en": {
+        "questions": [
+          "The tree lights twinkled yellow and red. Which color do you like best?",
+          "If you made a little card too, what would you draw in the corner?",
+          "Can you softly make Mimi's purr, purr sound for me?"
+        ],
+        "tip": "Tonight after the lights go off, close your eyes together like {name} did, listen for the quiet sounds in the house, and take turns whispering what you hear."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "thanksgiving-pen-pal-dinner",
+    "style": "inspiring",
+    "ageBands": [
+      "6-8"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}的滷肉飯感恩節",
+      "en": "{name}'s Braised Pork Thanksgiving"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期六早上，{name}收到美國筆友艾瑪寄來的影片。畫面裡，艾瑪一家圍著長長的餐桌，桌上有一隻烤得金黃的火雞，還有一個圓圓的南瓜派。艾瑪笑著說：「今天是感恩節！我們每個人都要說一件感謝的事。」",
+        "影片裡，艾瑪的爸爸感謝自己的新工作，艾瑪的弟弟感謝家裡的小狗，艾瑪則感謝{name}每個月都寫信給她。{name}看完，心裡暖暖的，跑去廚房問媽媽：「我們今天晚上也可以這樣做嗎？」媽媽想了想，笑著說：「好啊，我們沒有火雞，就用滷肉飯吧！」",
+        "下午，廚房飄出滷肉的香味。{name}幫忙洗青菜、擺碗筷，還拿出彩色筆，做了五張小卡片，放在每個人的位子前面。爺爺看見卡片上畫著小小的愛心，摸摸{name}的頭說：「今天的晚餐，好像特別隆重喔，跟過節一樣。」",
+        "晚餐時間到了，熱騰騰的滷肉淋在白飯上，亮晶晶的。爸爸先舉起杯子說：「我感謝媽媽每天煮好吃的飯。」奶奶接著說：「我感謝家人都健健康康。」媽媽說，她感謝爺爺每天早上去市場買最新鮮的菜。大家一邊說，一邊點頭。",
+        "輪到{name}了。{name}拿著小卡片，嘴巴張開，卻一個字也說不出來。要感謝的事好多好多，到底該先說哪一件呢？{name}的心怦怦跳，手指緊緊捏著卡片的邊邊。爺爺輕輕拍拍{his}肩膀，小聲說：「慢慢想，不用急，我們都在等你。」",
+        "{name}深深吸一口氣，看看桌上的每一個人。想起下雨天，爺爺撐著大傘到學校來接{him}；也想起奶奶耐心地教摺紙鶴。{name}終於開口：「我感謝爺爺下雨天來接我，感謝奶奶教我摺紙，也感謝大家陪我一起過感恩節！」全家都拍起手來。",
+        "吃完飯，{name}請爸爸幫忙拿手機，準備錄影片給艾瑪。第一次錄的時候，{name}太緊張，把英文的「感恩節快樂」說得結結巴巴。{name}沒有放棄，跑回房間小聲練習了三遍，再回到餐桌前，大聲又清楚地說：「Happy Thanksgiving, Emma！」",
+        "影片裡，{name}介紹了香噴噴的滷肉飯，也讓每個人對著鏡頭說一句感謝。第二天早上，艾瑪回信了：「我也好想吃滷肉飯！明年我們一起說謝謝吧！」{name}把信讀了兩遍，開心地拿起筆，開始寫下一封給艾瑪的信。"
+      ],
+      "en": [
+        "On Saturday morning, {name} got a video from Emma, a pen pal in America. Emma's whole family sat around a long table with a golden roast turkey and a round pumpkin pie. Emma smiled and said, \"It's Thanksgiving! Everyone shares one thing they're thankful for.\"",
+        "Emma's dad was thankful for his new job. Her little brother was thankful for the family puppy. Emma was thankful for {name}'s letters every month. Feeling warm inside, {name} ran to the kitchen. \"Can we do that tonight?\" Mom smiled. \"Sure! We don't have a turkey, so let's make braised pork rice.\"",
+        "All afternoon, the kitchen smelled of sweet, savory pork. {name} washed the greens, set out the bowls and chopsticks, and made five little cards with colored pens, one for each seat. Grandpa saw the tiny hearts drawn on them and patted {name}'s head. \"This dinner feels extra special, like a real holiday.\"",
+        "At dinnertime, shiny braised pork sat on top of steaming white rice. Dad raised his cup first. \"I'm thankful Mom cooks yummy food every day.\" Grandma said, \"I'm thankful we're all healthy.\" Mom was thankful Grandpa shopped for the freshest vegetables each morning. Everyone nodded along.",
+        "Then it was {name}'s turn. {name} held the little card and opened {his} mouth, but no words came out. There were so many things to be thankful for. Which one should come first? Squeezing the card, {name} could feel {his} heart pounding. Grandpa whispered, \"Take your time. We're all here.\"",
+        "{name} took a deep breath and looked at each face around the table. There was the rainy day Grandpa brought a big umbrella to school, and the evening Grandma patiently taught paper cranes. At last {name} said, \"Thank you, Grandpa, for picking me up in the rain. Thank you, Grandma, for teaching me to fold paper. And thank you all for this Thanksgiving!\" Everyone clapped.",
+        "After dinner, Dad held the phone so {name} could record a video for Emma. The first try came out all wobbly, and the English words got mixed up. {name} didn't give up. After practicing quietly three times in the bedroom, {name} came back and said loud and clear, \"Happy Thanksgiving, Emma!\"",
+        "In the video, {name} showed off the yummy braised pork rice, and each family member said one thank-you to the camera. The next morning, Emma wrote back: \"I want to try braised pork rice too! Let's say thank you together next year!\" {name} read it twice, then happily picked up a pen to start the next letter."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "如果你也幫每個人做一張小卡片，你會在上面畫什麼？",
+          "輪到{name}說話時，心怦怦跳，你覺得那時候{name}心裡是什麼感覺？",
+          "如果明年艾瑪真的來吃滷肉飯，你想帶艾瑪吃什麼、玩什麼？"
+        ],
+        "tip": "今晚關燈後抱一抱，輕聲輪流說一件今天讓自己心裡暖暖的小事。明天有空的話，可以一起畫一張小卡片，放在家人的位子前面。"
+      },
+      "en": {
+        "questions": [
+          "If you made a little card for everyone too, what would you draw on it?",
+          "When it was {name}'s turn and that heart was pounding, how do you think {name} felt inside?",
+          "If Emma really came to try braised pork rice next year, what would you want to eat or play together?"
+        ],
+        "tip": "After lights out, cuddle up and take turns whispering one small thing from today that made you feel warm inside. Tomorrow, you could draw a little card together and leave it at a family member's seat."
+      }
+    },
+    "draft": true
   }
 ]

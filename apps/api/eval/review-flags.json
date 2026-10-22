@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-10-22T03:44:16.929Z",
+  "generatedAt": "2026-10-22T04:00:39.111Z",
   "summary": {
-    "stories": 350,
+    "stories": 364,
     "byStatus": {
-      "ok": 258,
-      "check": 92
+      "ok": 269,
+      "check": 95
     },
     "byCheckKind": {
-      "length": 273,
+      "length": 282,
       "duplicate_title": 12,
       "tokens": 2,
       "sensitive_pattern": 9,
       "phone_number": 2
     },
     "byIssueKind": {
-      "repetition": 156,
-      "logic": 147,
-      "quality": 71,
-      "taiwan_usage": 38,
+      "repetition": 161,
+      "logic": 148,
+      "quality": 75,
+      "taiwan_usage": 41,
       "safety": 36,
       "age_fit": 20,
       "preachy": 28,
-      "zh_en_mismatch": 94,
+      "zh_en_mismatch": 96,
       "length": 4,
       "guardrail": 4
     },
@@ -63,6 +63,7 @@
       "medicine-grandpa-pill-box",
       "medicine-gummy-bear-vitamins",
       "medicine-not-candy",
+      "mid-autumn-family-barbecue-moon",
       "moving-house-glow-star-ceiling",
       "moving-house-grandmas-old-street",
       "moving-house-old-neighborhood-map",
@@ -70,6 +71,7 @@
       "new-sibling-crying-baby-concert",
       "new-sibling-night-market-lights",
       "new-sibling-stroller-helper",
+      "new-year-eve-wish-jar",
       "night-sky-paper-rocket",
       "night-sky-shooting-star-wish",
       "not-your-fault-brave-voice",
@@ -117,6 +119,7 @@
       "water-safety-pool-wait-by-towel",
       "wind-city-kite",
       "windows-balcony-flower-pots",
+      "winter-solstice-tangyuan-colors",
       "zoo-hiccup-parade"
     ],
     "spotCheck": [
@@ -125,6 +128,7 @@
       "anger-red-face-pillow",
       "anger-snail-breath",
       "bedtime-routine-picture-chart",
+      "christmas-wish-letter",
       "crossing-road-garbage-truck-song",
       "dentist-loose-tooth-brave-chair",
       "earthquake-museum-running-track",
@@ -132,6 +136,7 @@
       "forest-mushroom-village",
       "forgiveness-the-told-secret",
       "getting-lost-sand-sculpture-beach",
+      "halloween-friendly-ghost-costume",
       "honesty-spilled-paint-jar",
       "honesty-test-paper-signature",
       "hot-things-hot-pot-night",
@@ -148,7 +153,6 @@
       "potty-park-restroom",
       "promises-the-borrowed-comic",
       "puppet-masters-apprentice",
-      "raindrop-drums",
       "responsibility-garden-captain",
       "rooftop-giant-pumpkin",
       "sharing-turns-one-red-tricycle",
@@ -157,10 +161,11 @@
       "teamwork-the-class-play",
       "trying-food-bitter-melon-explorer",
       "trying-food-stinky-tofu-sniff",
+      "typhoon-day-at-home",
       "water-safety-river-picnic",
       "winter-cold-snap-cozy-night"
     ],
-    "usd": 10.5847
+    "usd": 11.355
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -11047,10 +11052,6 @@
           "note": "英文 381 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0512576,
-      "status": "ok",
-      "reviewedAt": "2026-10-22T03:44:16.916Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11076,7 +11077,258 @@
             "note": "中文有「{name}笑著閉上眼睛」，英文缺少，可補上 smiled and closed {his} eyes"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0512576,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:44:16.916Z"
+    },
+    "childrens-day-kids-choice": {
+      "hash": "a44e43e391d2740d",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.064468,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:56:34.119Z"
+    },
+    "mothers-day-breakfast-surprise": {
+      "hash": "ddde94ac45ac1ff2",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0467176,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:56:38.405Z"
+    },
+    "dragon-boat-zongzi-wrapping": {
+      "hash": "b004e4955394104b",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0513136,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:56:43.995Z"
+    },
+    "fathers-day-dad-and-me": {
+      "hash": "ac013c9eed66fa9c",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 423 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0529656,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:59:47.503Z"
+    },
+    "halloween-pumpkin-lantern-night": {
+      "hash": "f280c833990cba9f",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 402 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 257 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "taiwan_usage",
+            "severity": "low",
+            "lang": "zh",
+            "where": "7",
+            "note": "「小南瓜亮整夜」略生硬，可改成「小南瓜整夜亮亮的」較口語自然"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0534416,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:57:16.567Z"
+    },
+    "halloween-friendly-ghost-costume": {
+      "hash": "295ea4714c269ada",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "3",
+            "note": "「從床單底下鑽出來」露臉安撫害怕的孩子，和 halloween-costume-parade「朋友掀開面具揮手」橋段相近，可考慮淡化"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "en",
+            "where": "1",
+            "note": "「pulled the sheet over」少了受詞，讀來不完整，可改成「pulled the sheet over {his} head」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0590896,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:57:26.659Z"
+    },
+    "christmas-tree-lights-walk": {
+      "hash": "eb71a6de4507a447",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "taiwan_usage",
+            "severity": "low",
+            "lang": "zh",
+            "where": "guide",
+            "note": "第1題「你最喜歡哪一閃一閃的樣子」語法不順，改成「你最喜歡它們一閃一閃的哪個樣子？」或「你喜歡金色小燈的什麼？」"
+          },
+          {
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "0",
+            "note": "中文「好像怕吵醒夜晚」在英文沒有，可補一句 as if not to wake the night"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0540736,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:57:34.204Z"
+    },
+    "christmas-baking-cookies-for-neighbors": {
+      "hash": "a030a45a022010f2",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 442 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "4",
+            "note": "寫謝卡給大樓管理員王伯伯，與「christmas-cards-for-night-helpers」謝謝管理員的情節相近，可考慮換成其他鄰居"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.053785599999999996,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T04:00:04.394Z"
+    },
+    "christmas-wish-letter": {
+      "hash": "26024f15b316a916",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "both",
+            "where": "guide",
+            "note": "第3題「你覺得暖暖的嗎？」是封閉的是非題，可改成「大家抱抱的時候，你覺得怎麼樣？」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0499056,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:57:48.426Z"
+    },
+    "christmas-eve-quiet-night": {
+      "hash": "e87a5863668f3526",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "zh",
+            "where": "6",
+            "note": "「家裡的貓咪咪咪跳上床尾」三個「咪」連在一起難念，改成「家裡的貓咪咪跳上床尾」或「小貓咪咪跳上床尾」"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "7",
+            "note": "第5段已「閉上眼睛」，第7段又「眼睛慢慢閉上了」，第5段可改成「半閉著眼睛」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0546656,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T03:58:04.940Z"
+    },
+    "thanksgiving-pen-pal-dinner": {
+      "hash": "d3ef12dd0722504b",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "0",
+            "note": "感恩節固定在星期四,星期六收到影片卻說『今天是感恩節』,可改成『星期四那天錄的』或把收到日改為星期四"
+          },
+          {
+            "kind": "taiwan_usage",
+            "severity": "low",
+            "lang": "zh",
+            "where": "5",
+            "note": "『奶奶耐心地教摺紙鶴』少了受詞,讀起來不順,改成『奶奶耐心地教{him}摺紙鶴』"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0558936,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T04:00:15.492Z"
     }
   }
 }
