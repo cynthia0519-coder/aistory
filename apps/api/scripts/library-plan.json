@@ -2712,5 +2712,103 @@
     "style": "adventure",
     "setting": "city",
     "premise": "The apartment building holds a trick-or-treat evening, with neighbors who signed up putting a paper pumpkin on their doors. {name} goes floor by floor with Dad, only knocking on pumpkin doors, saying thank you, and letting Dad check every candy. At home {name} eats one candy, brushes teeth, and saves the rest. Cozy, never scary: no real monsters or frights; costumes are clearly friends."
+  },
+  {
+    "id": "childrens-day-kids-choice",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "park",
+    "premise": "On Children's Day, {name} gets to plan the family's afternoon. {name} picks a picnic in the park, a game everyone can play, and a story at bedtime, and learns that planning for others is part of the fun."
+  },
+  {
+    "id": "mothers-day-breakfast-surprise",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "For Mother's Day, {name} and Dad get up early to make Mom a simple breakfast: toast, a wobbly fruit plate, and a handmade card. A little milk spills, they laugh and clean it up together, and Mom says the best part is {name}'s hug."
+  },
+  {
+    "id": "dragon-boat-zongzi-wrapping",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "Before the Dragon Boat Festival, {name} helps Grandma wrap zongzi. The leaves keep unfolding and the string is tricky, but Grandma shows {name} how, one fold at a time. In the evening they hang a fragrant sachet by the door and listen for the drums on TV."
+  },
+  {
+    "id": "typhoon-day-at-home",
+    "ageBands": ["4-6"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "A typhoon day: school is closed and the wind howls outside. {name} helps the family get ready, bringing in the balcony plants, filling water bottles, finding the flashlight. When the lights flicker, they tell stories by flashlight and {name} feels safe inside with family."
+  },
+  {
+    "id": "fathers-day-dad-and-me",
+    "ageBands": ["6-8"],
+    "style": "cute",
+    "setting": "park",
+    "premise": "On Father's Day in Taiwan, {name} plans a 'Dad and me' day: teaching Dad a playground game {name} is great at, and Dad teaching {name} to fold a paper boat to float in the park pond. At bedtime they each say one thing they love doing together."
+  },
+  {
+    "id": "mid-autumn-family-barbecue-moon",
+    "ageBands": ["4-6"],
+    "style": "bedtime",
+    "setting": "city",
+    "premise": "On Mid-Autumn night, {name}'s family has a barbecue on the rooftop with neighbors, shares pomelo and mooncakes, and wears pomelo peel hats. Grandpa tells the gentle story of the moon rabbit, and {name} waves goodnight to the round moon."
+  },
+  {
+    "id": "halloween-pumpkin-lantern-night",
+    "ageBands": ["2-4"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "{name} and Mom make a paper pumpkin lantern with a smiling face. They turn off the big light and the little pumpkin glows warmly on the shelf. {name} says goodnight to the friendly pumpkin, which keeps the room cozy all night. Cozy, never scary: no real monsters or frights; costumes are clearly friends."
+  },
+  {
+    "id": "halloween-friendly-ghost-costume",
+    "ageBands": ["6-8"],
+    "style": "cute",
+    "setting": "school",
+    "premise": "{name} wants to be a ghost for the class Halloween party, but a white sheet costume looks too spooky to a younger friend. {name} adds a big smile, rosy cheeks and a bow, becoming the friendliest ghost, and teaches the little friend a silly ghost dance. Cozy, never scary: no real monsters or frights; costumes are clearly friends."
+  },
+  {
+    "id": "christmas-tree-lights-walk",
+    "ageBands": ["4-6"],
+    "style": "bedtime",
+    "setting": "city",
+    "premise": "On a December evening, {name}'s family takes a walk to see the Christmas lights in the city: a big tree in the square, twinkling shop windows, glowing stars on the street. {name} counts favorite lights on the way home and falls asleep with them twinkling in mind. Never say whether Santa is real; gifts are never a reward for being good."
+  },
+  {
+    "id": "christmas-baking-cookies-for-neighbors",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "{name} and Mom bake star-shaped cookies to share with the neighbors in their building: the elderly lady next door, the family with the baby, the building guard. {name} writes little notes, and learns that sharing makes Christmas feel warmer. Never say whether Santa is real; gifts are never a reward for being good."
+  },
+  {
+    "id": "christmas-wish-letter",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "{name} draws a Christmas wish picture with crayons: not a toy, but a wish for snuggles and stories with the whole family. Mom and {name} hang it on the little tree, and the family keeps the wish that very night with a big cuddle. Never say whether Santa is real; gifts are never a reward for being good."
+  },
+  {
+    "id": "winter-solstice-tangyuan-colors",
+    "ageBands": ["2-4"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "On the winter solstice, {name} helps roll tangyuan balls, pink and white, counting each one. The little balls bob in the warm sweet soup like moons, and after a few spoonfuls {name} is cozy and sleepy."
+  },
+  {
+    "id": "christmas-eve-quiet-night",
+    "ageBands": ["4-6"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "On Christmas Eve, the house is quiet and the tree lights glow softly. {name} sets out a cup of warm milk and leaves a thank-you note, listens to the gentle night sounds, and drifts off feeling calm and happy. Never say whether Santa is real; gifts are never a reward for being good."
+  },
+  {
+    "id": "new-year-eve-wish-jar",
+    "ageBands": ["4-6"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "On New Year's Eve, {name}'s family fills a wish jar: each person writes or draws one happy memory from the year and one wish for next year. They put the jar by the window, say goodnight to the old year, and {name} sleeps before midnight."
   }
 ]
