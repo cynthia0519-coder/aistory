@@ -98,14 +98,14 @@ export const MUSIC_GROUPS = {
   "theme-careful": 2,
   "theme-routine": 2,
   "theme-calm": 2,
-  // 節日曲組：0 = 還沒有音樂，先用一般曲組；Mureka 生成後放進 public/music 並把數字改成歌數
-  "holiday-christmas": 0,
-  "holiday-lunar-new-year": 0,
-  "holiday-halloween": 0,
-  "holiday-mid-autumn": 0,
-  "holiday-dragon-boat": 0,
-  "holiday-winter": 0,
-  "holiday-family": 0,
+  // 節日曲組（Mureka，各兩首）；數字設 0 就退回一般曲組
+  "holiday-christmas": 2,
+  "holiday-lunar-new-year": 2,
+  "holiday-halloween": 2,
+  "holiday-mid-autumn": 2,
+  "holiday-dragon-boat": 2,
+  "holiday-winter": 2,
+  "holiday-family": 2,
 } as const;
 export type MusicGroup = keyof typeof MUSIC_GROUPS;
 

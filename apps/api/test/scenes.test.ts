@@ -40,11 +40,12 @@ test("every song a music group can pick exists", () => {
   }
 });
 
-test("holiday stories fall back to their usual music until the holiday songs are added", () => {
-  for (const id of ["christmas-socks-for-everyone", "library:lunar-new-year-red-envelope:zh", "temple-lion-dance-drum"]) {
-    const group = holidayGroup(id);
-    assert.ok(group === null || MUSIC_GROUPS[group] > 0, id);
-  }
+test("holiday stories get their holiday music", () => {
+  assert.equal(holidayGroup("christmas-socks-for-everyone"), "holiday-christmas");
+  assert.equal(holidayGroup("library:lunar-new-year-red-envelope:zh"), "holiday-lunar-new-year");
+  assert.equal(holidayGroup("temple-lion-dance-drum"), "holiday-lunar-new-year");
+  assert.equal(holidayGroup("thanksgiving-gratitude-leaves"), "holiday-family");
+  assert.equal(musicGroup("bedtime", undefined, "winter-solstice-tangyuan"), "holiday-winter");
   assert.equal(holidayGroup("anger-basketball-call"), null);
   assert.equal(musicGroup("bedtime", undefined, "anger-basketball-call"), "bedtime");
 });
