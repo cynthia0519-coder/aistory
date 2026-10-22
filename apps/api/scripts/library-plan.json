@@ -2753,7 +2753,7 @@
     "ageBands": ["4-6"],
     "style": "bedtime",
     "setting": "city",
-    "premise": "On Mid-Autumn night, {name}'s family has a barbecue on the rooftop with neighbors, shares pomelo and mooncakes, and wears pomelo peel hats. Grandpa tells the gentle story of the moon rabbit, and {name} waves goodnight to the round moon."
+    "premise": "On Mid-Autumn night, {name}'s family carves a pomelo peel into a little lantern hat and a pomelo-peel boat. On the balcony, they play a moon-shadow game: making bunny, bird and boat shadows with their hands in the moonlight. Dad grills a few skewers while {name} sits safely away, and the round moon watches over them."
   },
   {
     "id": "halloween-pumpkin-lantern-night",
@@ -2795,7 +2795,7 @@
     "ageBands": ["2-4"],
     "style": "bedtime",
     "setting": "home",
-    "premise": "On the winter solstice, {name} helps roll tangyuan balls, pink and white, counting each one. The little balls bob in the warm sweet soup like moons, and after a few spoonfuls {name} is cozy and sleepy."
+    "premise": "The winter solstice is the longest night of the year. {name} learns that a long night means extra time for dreaming. After a small bowl of warm tangyuan, {name} says goodnight early to the moon, the stars and the sleepy city, and snuggles in for the longest, coziest dream of the year."
   },
   {
     "id": "christmas-eve-quiet-night",
@@ -2809,7 +2809,7 @@
     "ageBands": ["4-6"],
     "style": "bedtime",
     "setting": "home",
-    "premise": "On New Year's Eve, {name}'s family fills a wish jar: each person writes or draws one happy memory from the year and one wish for next year. They put the jar by the window, say goodnight to the old year, and {name} sleeps before midnight."
+    "premise": "On New Year's Eve, {name}'s family plans to watch the first sunrise of the new year from a hill near home, a Taiwanese New Year's Day tradition. So instead of staying up for fireworks, {name} packs a little bag with a flashlight and a warm scarf, and goes to bed early, excited to wake up before the sun."
   },
   {
     "id": "thanksgiving-gratitude-leaves",
