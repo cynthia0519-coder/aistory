@@ -2795,7 +2795,7 @@
     "ageBands": ["2-4"],
     "style": "bedtime",
     "setting": "home",
-    "premise": "The winter solstice is the longest night of the year. {name} learns that a long night means extra time for dreaming. After a small bowl of warm tangyuan, {name} says goodnight early to the moon, the stars and the sleepy city, and snuggles in for the longest, coziest dream of the year."
+    "premise": "The winter solstice is the longest night of the year, so tonight there is room for the longest dream. In bed, {name} and Mom pick one color for each part of the dream: a blue sea, a green forest, a purple sky, and a golden sunrise at the very end. {name} closes both eyes and floats through the colors one by one. No tangyuan or other food in this story."
   },
   {
     "id": "christmas-eve-quiet-night",
