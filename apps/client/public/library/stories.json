@@ -19430,5 +19430,111 @@
       }
     },
     "draft": true
+  },
+  {
+    "id": "mid-autumn-family-barbecue-moon",
+    "style": "bedtime",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "city",
+    "title": {
+      "zh": "{name}的柚子帽與月亮影子",
+      "en": "{name}'s Pomelo Hat and the Moon Shadows"
+    },
+    "paragraphs": {
+      "zh": [
+        "中秋節的晚上，城市慢慢安靜下來。高樓的窗戶，一格一格亮著燈。{name}和爸爸媽媽坐在客廳。桌上放著一顆大大的柚子。柚子圓圓的，香香的，好像一個小月亮。",
+        "媽媽輕輕剝開柚子皮。{name}幫忙把果肉放進盤子，一瓣，又一瓣。「哇，好甜喔！」{name}小聲說。媽媽拿起小刀，慢慢在柚子皮上刻花。{name}坐在旁邊，安安靜靜地看。",
+        "不一會兒，柚子皮變成一頂小帽子。帽子上刻著小星星。媽媽在裡面放進一盞小燈。小燈一亮，星星也亮了。媽媽把帽子輕輕戴在{name}頭上。軟軟的，涼涼的，還有淡淡的柚子香。剩下的柚子皮，爸爸做成一艘小船。",
+        "一家人走到陽台。爸爸先打開門，媽媽牽著{name}的手。圓圓的月亮，掛在高樓上面。月光像牛奶一樣，灑在地板上。遠遠的街上，車子的聲音變得好小，好小。",
+        "爸爸在陽台角落，點起小烤爐。他要烤幾串香菇和玉米。「烤爐很燙，我們坐這邊喔。」媽媽說。{name}點點頭。{name}和媽媽坐在遠遠的小椅子上。滋滋，滋滋，香味慢慢飄過來。",
+        "媽媽說：「我們來玩月亮影子遊戲。」她把雙手舉高。白白的牆上，出現一隻小兔子。兔子的長耳朵，動一動。{name}也舉起小手，變出一隻小鳥。小鳥拍拍翅膀，飛呀飛，飛到兔子旁邊。",
+        "「換我變小船！」{name}把兩隻手合在一起。牆上出現一艘彎彎的船，好像桌上的柚子船。爸爸送來烤好的玉米，已經吹涼了。{name}咬一口，甜甜的，暖暖的。月亮靜靜地，看著一家人。",
+        "夜深了，風輕輕吹。{name}打了一個小哈欠。小兔子睡了，小鳥睡了，小船也停下來了。媽媽抱著{name}回到房間。柚子帽放在床邊，小燈暖暖地亮著。「月亮晚安。」{name}輕輕說，慢慢閉上眼睛。"
+      ],
+      "en": [
+        "It was Mid-Autumn night. The big city was growing quiet. Window after window glowed in the tall buildings. {name} sat in the living room with Mom and Dad. A big pomelo rested on the table. It was round and sweet-smelling, like a little moon.",
+        "Mom gently peeled the thick skin. {name} helped put the fruit on a plate, one piece, then another. \"Mmm, so sweet!\" {name} whispered. Then Mom picked up a small knife. She slowly carved shapes into the peel. {name} sat close by and watched quietly.",
+        "Soon the peel became a little hat. Tiny stars were carved all over it. Mom tucked a small light inside. When it turned on, the stars glowed too. Mom placed the hat on {name}'s head. It felt soft and cool, and it smelled like pomelo. With the leftover peel, Dad made a tiny boat.",
+        "The family stepped out onto the balcony. Dad opened the door first. Mom held {name}'s hand. The round moon hung above the tall buildings. Moonlight spilled across the floor like milk. Down on the far-off street, the cars sounded very small and soft.",
+        "In a corner of the balcony, Dad lit a little grill. He was cooking mushrooms and corn on sticks. \"The grill is hot, so we'll sit over here,\" said Mom. {name} nodded. They sat on small chairs, far away from the grill. Sizzle, sizzle. A yummy smell drifted over.",
+        "\"Let's play the moon shadow game,\" said Mom. She lifted her hands high. A little bunny appeared on the white wall. Its long ears wiggled. {name} raised two small hands and made a bird. The bird flapped its wings. It flew and flew, right beside the bunny.",
+        "\"Now I'll make a boat!\" said {name}, pressing both hands together. A curvy boat sailed across the wall, just like the pomelo boat. Dad brought over some corn. He had let it cool. {name} took a bite. It was sweet and warm. The moon quietly watched over the family.",
+        "The night grew late, and a soft breeze blew. {name} gave a little yawn. The bunny slept. The bird slept. The boat stopped sailing too. Mom carried {name} back to bed. The pomelo hat sat nearby, its light glowing warmly. \"Goodnight, Moon,\" {name} whispered, and slowly closed {his} eyes."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "柚子帽戴在頭上，你覺得摸起來是什麼感覺？",
+          "如果你也來玩月亮影子遊戲，你想在牆上變出什麼？",
+          "故事裡你最喜歡哪一個時候？"
+        ],
+        "tip": "今晚關燈前，用小夜燈在牆上和孩子輕輕變一兩個手影，再一起小聲說「月亮晚安」。"
+      },
+      "en": {
+        "questions": [
+          "How do you think the pomelo hat felt on your head?",
+          "If you played the moon shadow game, what would you make on the wall?",
+          "What was your favourite part of the story?"
+        ],
+        "tip": "Before lights out tonight, use a small night-light to make one or two quiet hand shadows on the wall together, then whisper \"Goodnight, Moon.\""
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "new-year-eve-wish-jar",
+    "style": "bedtime",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}的早睡跨年夜",
+      "en": "{name}'s Early Night Before the First Sunrise"
+    },
+    "paragraphs": {
+      "zh": [
+        "今天是一年的最後一天。窗外的天空慢慢變暗了。爸爸說：「明天早上，我們去爬家附近的小山。」媽媽笑著說：「我們要去看新年的第一道曙光。」{name}眨眨眼睛，好期待呀！",
+        "「那今晚不看煙火了嗎？」{name}問。爸爸點點頭說：「太陽起得很早。我們也要早早起床。」{name}想了想，說：「好！我要比太陽更早醒來。」媽媽摸摸{his}頭，說：「那我們今晚早點睡。」",
+        "{name}拿出{his}小背包。先放進一支小手電筒。按一下，亮亮的。再按一下，暗暗的。「山路黑黑的，有你就不怕了。」{name}小聲地說。小手電筒輕輕躺進背包裡。",
+        "接著，奶奶送來一條紅色圍巾。圍巾軟軟的，暖暖的。「山上的風很涼，要圍好喔。」奶奶說。{name}把圍巾摺得整整齊齊。軟軟的圍巾，也躺進了背包裡。背包放在床邊，靜靜地等著。",
+        "洗好澡，刷好牙，{name}鑽進被窩。棉被暖暖的，枕頭軟軟的。可是{name}的眼睛還是張得大大的。遠遠的地方，傳來砰、砰的煙火聲。「我睡不著。」{name}小聲地說。",
+        "媽媽坐到床邊，輕輕拍著{name}。「我們來想一想明天吧。」媽媽說。「天空從黑黑的，變成藍藍的。再變成粉粉的，橘橘的。」{name}跟著慢慢想。{his}呼吸，也慢慢變長了。",
+        "小貓咪咪跳上了床尾。「喵——」咪咪捲成一顆毛球。窗外的煙火聲越來越小。屋子裡越來越安靜。只聽見時鐘滴答、滴答。還有咪咪呼嚕、呼嚕。",
+        "「晚安，小背包。晚安，手電筒和圍巾。」{name}輕輕地說。「晚安，太陽。明天山上見。」媽媽關上小燈，溫柔地說：「晚安，{name}。」{name}閉上眼睛，慢慢睡著了。夢裡，升起一顆圓圓的新太陽。"
+      ],
+      "en": [
+        "It was the last night of the year. Outside, the sky slowly grew dark. Dad said, \"Tomorrow morning, we'll climb the little hill near home.\" Mom smiled. \"We'll watch the first sunrise of the new year.\" {name} blinked. How exciting!",
+        "\"So no fireworks tonight?\" {name} asked. Dad nodded. \"The sun gets up very early. We need to get up early too.\" {name} thought about it. \"Okay! I'll wake up before the sun!\" Mom patted {his} head. \"Then let's go to bed early tonight.\"",
+        "{name} took out {his} little backpack. First in went a small flashlight. Click, it glowed bright. Click, it went dark. \"The hill path will be dark,\" {name} whispered. \"But with you, it won't be scary.\" The flashlight snuggled into the bag.",
+        "Next, Grandma brought a red scarf. It was soft and warm. \"The wind on the hill is chilly. Wrap up well,\" Grandma said. {name} folded the scarf neatly. The soft scarf went into the bag too. The backpack waited quietly by the bed.",
+        "After a bath and brushing teeth, {name} climbed into bed. The blanket was warm. The pillow was soft. But {name}'s eyes stayed wide open. Far away, fireworks went pop, pop. \"I can't fall asleep,\" {name} whispered.",
+        "Mom sat on the bed and patted {name} gently. \"Let's think about tomorrow,\" she said. \"The sky goes from black to blue. Then pink, then orange.\" {name} pictured each color, one by one. Slowly, {his} breaths grew long and soft.",
+        "Mimi the cat hopped onto the end of the bed. \"Meow.\" She curled up like a fuzzy ball. The fireworks grew quieter and quieter. The house grew still. Only the clock went tick, tock. And Mimi went purr, purr.",
+        "\"Goodnight, little backpack. Goodnight, flashlight and scarf,\" {name} said softly. \"Goodnight, sun. See you on the hill.\" Mom turned off the lamp. \"Goodnight, {name},\" she whispered. {name} closed {his} eyes and drifted off. In dreamland, a round new sun rose."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}的小背包裡，你最喜歡手電筒，還是紅圍巾？",
+          "媽媽說天空會變成哪些顏色？你最喜歡哪一個顏色？",
+          "咪咪睡覺時發出什麼聲音？你可以小小聲地學學看嗎？"
+        ],
+        "tip": "今晚關燈後，和孩子依偎在一起，像故事裡的媽媽一樣，輕聲地一起想天空從黑黑的、藍藍的，慢慢變成粉粉的、橘橘的。最後輪流小聲地跟房間裡的東西說晚安。"
+      },
+      "en": {
+        "questions": [
+          "In {name}'s backpack, which do you like best, the flashlight or the red scarf?",
+          "What colors did Mom say the sky would turn? Which color do you like best?",
+          "What sound did Mimi make while sleeping? Can you make it very softly?"
+        ],
+        "tip": "Tonight after the lights go out, cuddle up and, just like Mom in the story, whisper the sky's colors together: black, then blue, then pink, then orange. Then take turns softly saying goodnight to things in the room."
+      }
+    },
+    "draft": true
   }
 ]

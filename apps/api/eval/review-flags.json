@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-22T04:00:39.111Z",
+  "generatedAt": "2026-10-22T04:06:43.256Z",
   "summary": {
-    "stories": 364,
+    "stories": 365,
     "byStatus": {
-      "ok": 269,
-      "check": 95
+      "ok": 272,
+      "check": 93
     },
     "byCheckKind": {
       "length": 282,
@@ -15,13 +15,13 @@
     },
     "byIssueKind": {
       "repetition": 161,
-      "logic": 148,
+      "logic": 149,
       "quality": 75,
       "taiwan_usage": 41,
       "safety": 36,
       "age_fit": 20,
       "preachy": 28,
-      "zh_en_mismatch": 96,
+      "zh_en_mismatch": 95,
       "length": 4,
       "guardrail": 4
     },
@@ -63,7 +63,6 @@
       "medicine-grandpa-pill-box",
       "medicine-gummy-bear-vitamins",
       "medicine-not-candy",
-      "mid-autumn-family-barbecue-moon",
       "moving-house-glow-star-ceiling",
       "moving-house-grandmas-old-street",
       "moving-house-old-neighborhood-map",
@@ -71,7 +70,6 @@
       "new-sibling-crying-baby-concert",
       "new-sibling-night-market-lights",
       "new-sibling-stroller-helper",
-      "new-year-eve-wish-jar",
       "night-sky-paper-rocket",
       "night-sky-shooting-star-wish",
       "not-your-fault-brave-voice",
@@ -165,7 +163,7 @@
       "water-safety-river-picnic",
       "winter-cold-snap-cozy-night"
     ],
-    "usd": 11.355
+    "usd": 11.4165
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -11406,6 +11404,54 @@
       "usd": 0.0479416,
       "status": "ok",
       "reviewedAt": "2026-10-22T03:34:43.875Z"
+    },
+    "mid-autumn-family-barbecue-moon": {
+      "hash": "7ddb6cda4c4e8912",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 379 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "5",
+            "note": "與「rabbit-in-the-moon」同為中秋、柚子、一家賞月、月兔後晚安，影子『小兔子』可換成其他動物以拉開差異"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.07176,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T04:06:03.749Z"
+    },
+    "new-year-eve-wish-jar": {
+      "hash": "3359933747a3af17",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "1",
+            "note": "和 new-year-countdown-sleep 一樣是跨年夜不看煙火、早點睡，但本篇主軸是準備看日出，差異足夠，可保留"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0529216,
+      "status": "ok",
+      "reviewedAt": "2026-10-22T04:06:20.606Z"
     }
   }
 }
