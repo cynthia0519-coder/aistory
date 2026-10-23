@@ -895,7 +895,8 @@
         "tip": "This week, play a \"turtle drill\" at home: call out \"Earthquake!\" and practice drop, cover, and hold on together, then find the sturdiest table in the house that's away from windows."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-09-07T19:30:00+08:00"
   },
   {
     "id": "strangers-lost-puppy",
@@ -950,7 +951,8 @@
         "tip": "Tonight, play the \"Loud No\" game: pretend to be a stranger inviting your child along, and let them practice shouting \"No!\" then running to you to tell you."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-09T19:30:00+08:00"
   },
   {
     "id": "hot-things-soup-dragon",
@@ -1005,7 +1007,8 @@
         "tip": "At mealtime tonight, play \"blow the dragon away\": blow on the bowl together three times and wait until you say it's ready."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-11-09T19:30:00+08:00"
   },
   {
     "id": "sockets-robot-charging",
@@ -1060,7 +1063,8 @@
         "tip": "Tonight, go on a little home \"patrol\" together to find sockets and the charging corner, and practice saying, \"Sockets are for grown-ups. I'll get a grown-up.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-02T19:30:00+08:00"
   },
   {
     "id": "water-safety-river-picnic",
@@ -3849,7 +3853,8 @@
         "tip": "This week, at every crossing, stop together at the curb and softly chant \"Look left, look right, look left again, now listen,\" then wait for the green walking man before crossing hand in hand."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-10T19:30:00+08:00"
   },
   {
     "id": "crossing-road-crossing-guard-flag",
@@ -3957,7 +3962,8 @@
         "tip": "Tonight, turn your phone number into a little song with your child and sing it once each bedtime. When you go out, play \"spot the helper\" and point out staff in uniforms together."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-10-12T19:30:00+08:00"
   },
   {
     "id": "getting-lost-temple-fair",
@@ -4065,7 +4071,8 @@
         "tip": "Tonight, play a phone number chain game: you say one digit, your child says the next, until your child can recite your full name and number. Before your next outing, agree together: if we lose each other, you stay put."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-06-15T19:30:00+08:00"
   },
   {
     "id": "earthquake-grandmas-wooden-table",
@@ -4385,7 +4392,8 @@
         "tip": "This week, play a \"No, thank you!\" practice game: you pretend to be a stranger with a small gift, and your child says no loudly, steps back, and comes to tell you. You can also make a short list together of grown-ups you've agreed they may go with."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-06-29T19:30:00+08:00"
   },
   {
     "id": "hot-things-rice-cooker-whale",
@@ -4547,7 +4555,8 @@
         "tip": "After tonight's bath, let your child be the towel helper who dries hands before a grown-up plugs anything in. Practice the phrase together: \"Broken? Step back, tell a grown-up!\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-24T19:30:00+08:00"
   },
   {
     "id": "sockets-cracked-cord-spark",
@@ -4871,7 +4880,8 @@
         "tip": "This week, play a quick \"shout and throw\" game: one person pretends to need help, and the other calls out \"Grown-up, come quick!\" and tosses a pillow. Practice until your child does it without thinking."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-06-01T19:30:00+08:00"
   },
   {
     "id": "medicine-gummy-bear-vitamins",
