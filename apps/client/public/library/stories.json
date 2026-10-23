@@ -757,7 +757,7 @@
         "小米小聲問：「可以跑出去嗎？」老師搖搖頭，溫柔的說：「搖的時候，不跑出去，也不去樓梯。」她又指指窗戶和高高的書櫃。「也要離窗戶和會掉的東西遠一點。」{name}認真點點頭。",
         "鈴聲停了。老師說：「搖完了，跟著老師走。」大家排好隊，一個接一個，慢慢走到操場。沒有人推，也沒有人跑。{name}覺得自己像勇敢的探險隊員。",
         "傍晚，太陽下山了，{name}和媽媽一起回家。吃完晚餐，客廳的燈突然晃呀晃。地板輕輕搖，杯子叮叮響。是真的地震！{name}想起小烏龜，馬上說：「趴下、掩護、穩住！」",
-        "{name}趴下來，鑽到堅固的餐桌下，護著頭，抓緊桌腳。媽媽也鑽進來，抱著{him}一起等。一下子，搖晃停了。媽媽說：「搖完了，跟媽媽慢慢走。」媽媽摸摸{his}頭：「你是最棒的小烏龜。」{name}笑了，睡前還輕輕說：「晚安，烏龜殼。」"
+        "{name}趴下來，鑽到堅固的餐桌下，護著頭，抓緊桌腳。媽媽也鑽進來，抱著{him}一起等。一下子，搖晃停了。媽媽說：「搖完了，我們先看看四周，再跟媽媽慢慢走。」媽媽摸摸{his}頭：「你是最棒的小烏龜。」{name}笑了，睡前還輕輕說：「晚安，烏龜殼。」"
       ],
       "en": [
         "The school bell rang in the morning. Miss Lin smiled. \"Today we will play a special game!\" {name} sat up, eyes bright. \"We will practice what to do in an earthquake.\"",
@@ -767,7 +767,7 @@
         "Mimi whispered, \"Can we run outside?\" Miss Lin gently shook her head. \"Not while it shakes. And not to the stairs.\" She pointed to the windows and the tall bookshelf. \"Stay away from glass and things that can fall.\" {name} nodded.",
         "The bell stopped. \"The shaking is over,\" said Miss Lin. \"Follow me.\" Everyone lined up. One by one, they walked calmly to the playground. Nobody pushed. Nobody ran. {name} felt like a brave explorer.",
         "That evening, the sun went down. {name} went home with Mom. After dinner, the lamp began to wobble. The floor shook a little. The cups went clink, clink. A real earthquake! {name} remembered the turtles. \"Drop, cover, hold on!\"",
-        "{name} dropped down and crawled under the sturdy table. Hands covered head, and fingers held the table leg. Mom crawled in too and hugged {him}. Soon the shaking stopped. \"Now we walk out slowly,\" Mom said. \"You were a wonderful little turtle.\" At bedtime, {name} whispered, \"Goodnight, turtle shell.\""
+        "{name} dropped down and crawled under the sturdy table. Hands covered head, and fingers held the table leg. Mom crawled in too and hugged {him}. Soon the shaking stopped. \"Now we look around first, then walk slowly with me,\" Mom said. \"You were a wonderful little turtle.\" At bedtime, {name} whispered, \"Goodnight, turtle shell.\""
       ]
     },
     "theme": "earthquake",
@@ -786,7 +786,7 @@
           "Why should we stay away from stairs and windows while it shakes?",
           "If our home shook, which table would you hide under?"
         ],
-        "tip": "Tonight, pick a sturdy table at home as your \"turtle shell\" and play \"Drop, cover, hold on.\" Then practice walking out slowly together after the pretend shaking stops."
+        "tip": "Tonight, pick a sturdy table at home as your \"turtle shell\" and play \"Drop, cover, hold on.\" Then practice following a grown-up slowly after the pretend shaking stops."
       }
     },
     "draft": true
@@ -1083,9 +1083,9 @@
         "「我想去玩水！」{name}拉著媽媽說。媽媽正在鋪野餐墊，手上拿著水壺。「等我一下喔，我要看著你玩。」{name}點點頭，站在野餐墊旁邊等。{he}數著樹上的松果，一、二、三……",
         "媽媽放好籃子，走了過來。她拿出一件橘色的救生衣。「穿上它，就像穿上會浮的外套。」{name}把手伸進去，媽媽幫忙扣好扣子。喀、喀、喀！{name}覺得自己像個勇敢的探險家。",
         "媽媽牽著{name}，慢慢走到溪邊。她指著淺淺的地方。「在腳踩得到的地方玩。」{name}踩進水裡，哇，涼涼的！小魚游過{his}腳邊，癢癢的。水只到{his}膝蓋，好安心。",
-        "溪邊有好多扁扁的石頭。{name}撿起一顆，放進淺水裡。再放一顆，又放一顆。「看！是踏石星星！」石頭排成一條彎彎的小路。{name}一步一步跳過去，媽媽在岸邊拍手。",
+        "溪邊有好多扁扁的石頭。{name}撿起一顆，放進淺水裡。再放一顆，又放一顆。「看！是踏石星星！」石頭排成一條彎彎的小路。{name}一步一步慢慢踩過去，媽媽在旁邊拍手。",
         "這時，表哥小傑也來了。他也穿著救生衣，在旁邊玩。突然，小傑的腳一滑，坐進水裡。水流推著他，他抓不到石頭。小傑大叫：「救命！」{name}心裡怦怦跳。",
-        "{name}沒有跳進水裡。{he}大聲喊：「媽媽！快來！」{he}抓起旁邊的游泳圈，用力丟過去。游泳圈浮呀浮，飄到小傑身邊。小傑緊緊抱住它。媽媽馬上跑來，把小傑拉上岸。",
+        "{name}趕快退回岸上，站在岸邊，沒有跳進水裡。{he}大聲喊：「媽媽！快來！」{he}抓起旁邊的游泳圈，用力丟過去。游泳圈浮呀浮，飄到小傑身邊。小傑緊緊抱住它。媽媽馬上跑來，把小傑拉上岸。",
         "小傑笑了：「謝謝你，{name}！」媽媽摸摸{name}的頭：「你做得真好。」太陽慢慢下山，森林變成金黃色。大家坐在野餐墊上吃三明治。{name}看著溪裡的踏石星星，開心地笑了。"
       ],
       "en": [
@@ -1093,9 +1093,9 @@
         "\"Can I play in the water?\" {name} asks Mom. Mom is spreading the picnic blanket. \"Wait for me, please. I want to watch you play.\" {name} nods and waits by the blanket. {he} counts pinecones in the tree. One, two, three...",
         "Mom puts down the basket and comes over. She holds up a bright orange life vest. \"It's like a coat that floats.\" {name} slips {his} arms inside. Mom does up the buckles. Click, click, click! {name} feels like a brave explorer.",
         "Mom holds {name}'s hand. They walk slowly to the stream. Mom points to a shallow spot. \"Play where your feet can touch.\" {name} steps in. Ooh, it's cool! Tiny fish tickle {his} toes. The water only reaches {his} knees.",
-        "There are many flat stones by the stream. {name} sets one in the shallow water. Then another, and another. \"Look! Stepping-stone stars!\" The stones make a curvy little path. {name} hops across. Mom claps from the bank.",
+        "There are many flat stones by the stream. {name} sets one in the shallow water. Then another, and another. \"Look! Stepping-stone stars!\" The stones make a curvy little path. {name} steps across, slow and careful. Mom claps close by.",
         "Cousin Jack comes to play too. He wears a life vest as well. Suddenly, Jack slips and sits down in the water. The current pushes him along. He can't grab a stone. \"Help!\" Jack shouts. {name}'s heart goes thump, thump.",
-        "{name} does not jump in. {he} shouts, \"Mom! Come quick!\" {name} grabs the swim ring nearby. {he} throws it hard. The ring floats over to Jack. Jack hugs it tight. Mom runs over and helps Jack out.",
+        "{name} quickly steps back onto the bank. {name} stays on the bank and does not jump in. {he} shouts, \"Mom! Come quick!\" {name} grabs the swim ring nearby. {he} throws it hard. The ring floats over to Jack. Jack hugs it tight. Mom runs over and helps Jack out.",
         "\"Thank you, {name}!\" Jack says with a grin. Mom smiles. \"You did just right.\" The sun sinks low, and the forest turns gold. Everyone eats sandwiches on the blanket. {name} looks at the stepping-stone stars and smiles."
       ]
     },
@@ -3983,7 +3983,7 @@
         "{name}踮起腳尖東看西看，到處都是大人的背影和晃動的燈籠。{his}心跳得咚咚響，好像也在打鼓。{name}好想鑽進人群去找，可是腳才抬起來，就想起媽媽的話。{he}深深吸一口氣，站回布袋戲台旁，緊緊靠著那根紅柱子。",
         "要請誰幫忙呢？賣氣球的叔叔忙得沒空抬頭。這時，{name}看見一位阿姨，一手牽著小男生，一手牽著拿棉花糖的小妹妹，正站在戲台前看戲。{name}鼓起勇氣走過去，輕聲說：「阿姨，我找不到媽媽了，可以幫我打電話嗎？」",
         "阿姨馬上蹲下來，溫柔地說：「別擔心，我們一起想辦法。你媽媽叫什麼名字？記得她的電話嗎？」「她叫林美華。」{name}把那首電話小歌慢慢唱出來，一個數字、一個數字，清清楚楚。阿姨一邊聽，一邊在手機上按號碼。",
-        "嘟——嘟——電話通了！「請問是林美華小姐嗎？{name}在我這裡，我們就在布袋戲台旁邊等妳。」等待的時候，小妹妹撕了一小朵棉花糖給{name}，小男生指著台上說：「你看，木偶又要翻跟斗了！」三個孩子一起數：「一、二、三！」",
+        "嘟——嘟——電話通了！「請問是林美華小姐嗎？{name}在我這裡，我們就在布袋戲台旁邊等妳。」等待的時候，小妹妹把棉花糖舉高給{name}看：「像一朵雲！」小男生指著台上說：「你看，木偶又要翻跟斗了！」三個孩子一起數：「一、二、三！」",
         "沒多久，一條紅圍巾從人群裡鑽了出來。「{name}！」媽媽快步走過來，把{name}緊緊抱住。「你停在原地等，還記得電話，我一下子就找到你了！」媽媽向阿姨連連道謝，{name}也大聲說：「謝謝阿姨！」兩個小朋友笑著揮揮手。",
         "咚咚鏘、咚咚鏘，鼓聲又響起來了。這一次，媽媽和{name}找到一個不擠的角落，手牽著手看舞獅。金色的獅子眨眨大眼睛，搖搖頭，還朝他們鞠了一個躬。{name}把媽媽的手握得更緊，小聲哼起電話小歌，覺得今天真是一場最棒的冒險。"
       ],
@@ -3993,7 +3993,7 @@
         "{name} stood on tiptoe and looked all around, but there were only grown-ups' backs and bobbing lanterns. {name}'s heart thumped like a drum. Pushing into the crowd to search seemed like a good idea for a moment, but then Mom's words came back. Taking a deep breath, {name} stepped back beside the puppet stage and leaned against its red post.",
         "Who could help? The balloon seller was too busy to look up. Then {name} spotted a mom watching the puppets, holding a little boy with one hand and a small girl with cotton candy in the other. Feeling brave, {name} walked over and said softly, \"Excuse me, I can't find my mom. Could you help me call her?\"",
         "The woman knelt down and smiled. \"Don't worry, we'll figure this out together. What's your mom's name? Do you know her phone number?\" \"Her name is Lin Mei-hua.\" Slowly, {name} sang the phone number song, one clear number at a time, while the woman tapped each one into her phone.",
-        "Ring, ring! Someone answered. \"Hello, is this Lin Mei-hua? {name} is here with me. We're waiting by the puppet stage.\" While they waited, the little girl tore off a fluffy bit of cotton candy for {name}. \"Look, the puppet's going to flip again!\" said the boy. All three kids counted together, \"One, two, three!\"",
+        "Ring, ring! Someone answered. \"Hello, is this Lin Mei-hua? {name} is here with me. We're waiting by the puppet stage.\" While they waited, the little girl held up her cotton candy for {name} to see. \"It's a cloud!\" \"Look, the puppet's going to flip again!\" said the boy. All three kids counted together, \"One, two, three!\"",
         "Soon a red scarf wiggled out of the crowd. \"{name}!\" Mom hurried over and wrapped {name} in a big hug. \"You stayed put and remembered my number, so I found you right away!\" Mom thanked the kind woman again and again, and {name} called out, \"Thank you!\" The two kids grinned and waved goodbye.",
         "Boom-boom-clang! The drums started up again. This time Mom and {name} found a quiet corner and watched the lion dance hand in hand. The golden lion blinked its big eyes, shook its head, and even bowed to them. {name} squeezed Mom's hand, hummed the phone number song, and decided this was the best adventure ever."
       ]
@@ -4467,7 +4467,7 @@
         "爸爸放進高麗菜，奶奶放進玉米。媽媽丟進好多圓圓的魚丸。魚丸在湯裡翻跟斗，一下浮上來，一下沉下去。「魚丸在游泳！」{name}拍拍手。麻糬在桌子下喵喵叫，好像也想吃。",
         "媽媽用大湯匙撈起一顆魚丸，放進{name}的小盤子。魚丸冒著熱氣，聞起來香香的。{name}好想馬上咬一口。媽媽說：「還很燙喔，等它涼一點。」{name}小聲咕噥：「魚丸，你快點變涼嘛！」",
         "奶奶笑著說：「我們一起吹吹它。」{name}和奶奶鼓起臉頰，一起吹。「呼——呼——」熱氣飄呀飄，慢慢跑走了。麻糬也湊過來，鬍子抖一抖，好像在幫忙吹。大家都笑了。",
-        "媽媽摸摸盤子邊，說：「好了，現在可以吃囉。」{name}咬一口，魚丸軟軟又Q彈。「好好吃！」{he}開心得腳晃呀晃。爸爸眨眨眼說：「等一等，真的會更好吃。」",
+        "媽媽把魚丸切成兩半，碰一碰裡面，說：「好了，現在可以吃囉。」{name}咬一口，魚丸軟軟又Q彈。「好好吃！」{he}開心得腳晃呀晃。爸爸眨眨眼說：「等一等，真的會更好吃。」",
         "這時，爸爸放進一大塊豆腐。湯「噗通」一聲，濺出幾滴。熱湯落在桌上，冒出小白煙。{name}馬上把椅子往後挪，大聲叫：「媽媽，湯跳出來了！」媽媽拿抹布擦乾淨，說：「往後退再叫我，你做得真好。」",
         "吃飽了，媽媽關掉爐子。電鍋的白煙也慢慢不見了。{name}抱著暖暖的麻糬，打了個小呵欠。窗外還在吹風，屋裡卻好溫暖。{name}小聲說：「明天還要吃魚丸，我們一起吹吹。」"
       ],
@@ -4477,7 +4477,7 @@
         "Dad added cabbage. Grandma added corn. Mom dropped in lots of round fish balls. Up they bobbed, then down they dipped. \"The fish balls are swimming!\" {name} clapped. Under the table, Mochi meowed. She wanted some too.",
         "Mom scooped one fish ball onto {name}'s little plate. It smelled so good, but it was still steaming. {name} wanted a bite right away. \"It's still hot,\" said Mom. \"Let's wait.\" {name} whispered, \"Hurry, fish ball. Cool down, please!\"",
         "Grandma smiled. \"Let's blow on it together.\" {name} and Grandma puffed out their cheeks. Whoo! Whoo! The steam floated up and drifted away. Mochi leaned in too, whiskers twitching, as if she was helping. Everyone laughed.",
-        "Mom touched the edge of the plate. \"Okay, it's cool now.\" {name} took a bite. Soft and bouncy! \"Yummy!\" Happy feet swung under the chair. Dad winked. \"Waiting makes it taste even better.\"",
+        "Mom cut the fish ball in half and checked the middle. \"Okay, it's cool now.\" {name} took a bite. Soft and bouncy! \"Yummy!\" Happy feet swung under the chair. Dad winked. \"Waiting makes it taste even better.\"",
         "Then Dad dropped in a big piece of tofu. Plop! A few drops of soup splashed onto the table. {name} scooted the chair back fast. \"Mom! The soup jumped out!\" Mom wiped it up with a cloth. \"Good job stepping back and calling me,\" she said.",
         "Soon everyone was full. Mom turned off the stove. The rice cooker stopped puffing. {name} cuddled warm, sleepy Mochi and gave a tiny yawn. Outside, the wind still blew. Inside, it was warm and cozy. \"Tomorrow, more fish balls,\" {name} said softly. \"We'll blow on them together.\""
       ]
@@ -4490,7 +4490,7 @@
           "魚丸還很燙的時候，{name}和奶奶一起做了什麼？",
           "如果你看到湯濺出來，或是東西冒熱氣，你會怎麼做？"
         ],
-        "tip": "今晚吃飯時，練習一句「等大人說涼了，我們一起吹吹」，再一起吹一口食物。也可以在家指一指水壺、爐子和電鍋，說「這是大人的燙燙東西」。"
+        "tip": "今晚吃飯時，練習一句「先一起吹吹，等大人說涼了再吃」，再一起吹一口食物。也可以在家指一指水壺、爐子和電鍋，說「這是大人的燙燙東西」。"
       },
       "en": {
         "questions": [
@@ -4498,7 +4498,7 @@
           "When the fish ball was still hot, what did {name} and Grandma do?",
           "What would you do if soup splashed or something was steaming near you?"
         ],
-        "tip": "At dinner tonight, practice saying \"Wait for a grown-up to say it's cool, then blow together,\" and blow on a bite side by side. You can also point to the kettle, stove, and rice cooker and call them \"grown-up hot things.\""
+        "tip": "At dinner tonight, practice saying \"Blow together, then wait for a grown-up to say it's cool,\" and blow on a bite side by side. You can also point to the kettle, stove, and rice cooker and call them \"grown-up hot things.\""
       }
     },
     "draft": true
@@ -4575,7 +4575,7 @@
         "{name}拿起小手電筒，趴在地上往裡面看。電視後面暗暗的，有好多灰塵。一條條黑黑的電線彎來彎去，像睡著的小蛇。咦，{name}看到嘟嘟號了！它就停在一條舊延長線旁邊，好像在等人來救它。",
         "{name}慢慢伸出手，想拿回小火車。突然，「啪！」傳來一聲好小的響聲。延長線閃出一點亮亮的火花。{name}睜大眼睛再看一次。原來舊電線上有一道裂縫，外面那層皮破了一個小口。",
         "{name}馬上把手縮回來。{he}往後退了三大步。{name}沒有碰電線，也沒有去拿嘟嘟號。{name}跑進廚房喊：「爸爸！電視後面的電線冒火花了！」爸爸放下鍋鏟，快步走到客廳。",
-        "爸爸用手電筒照一照，點點頭。他先把延長線的插頭從牆上拔掉。爸爸說：「這條電線太舊了。你沒有碰它，還馬上來找我，做得真好！」爸爸伸長手臂，拿出嘟嘟號。{name}抱著小火車，開心地笑了。",
+        "爸爸用手電筒照一照，點點頭。他先把延長線的插頭從牆上拔掉。爸爸說：「這條電線太舊了。你沒有碰它，還馬上來找我，做得真好！下次玩具掉到電線旁邊，先叫大人來拿喔。」爸爸伸長手臂，拿出嘟嘟號。{name}抱著小火車，開心地笑了。",
         "下午，{name}牽著爸爸的手，一起去五金行。架子上有好多新的延長線。{name}幫忙挑了一條白色的。爸爸還拿了一包透明的小東西。{name}問：「這是什麼呀？」爸爸眨眨眼說：「回家你就知道了。」",
         "回到家，{name}先去洗手。爸爸說：「手濕濕的不能碰電線，要擦乾喔。」{name}用毛巾把手擦得乾乾的。爸爸把{his}果汁杯拿到餐桌上，離插座遠遠的。爸爸接好新電線，{name}幫忙遞束帶。爸爸把電線綁得整整齊齊，藏在櫃子後面。",
         "牆上還有幾個空空的插座。爸爸說：「插座是給大人用的。手指和玩具都不能放進去。」{name}把透明蓋子一個一個遞給爸爸。喀、喀、喀！每個插座都戴上了小帽子。{name}把嘟嘟號放回軌道上。嘟嘟號又出發了，這次安安全全。冒險成功囉！"
@@ -4585,7 +4585,7 @@
         "{name} grabbed a small flashlight and lay on the floor. It was dark and dusty behind the TV. Black wires curled around like sleepy snakes. Look, there was Toot-Toot! It sat right beside an old extension cord, waiting to be rescued.",
         "{name} slowly reached in for the train. Then came a tiny sound. Snap! A little spark flashed from the cord. {name} looked again with wide eyes. The old cord had a crack. Its outside cover was split open.",
         "{name} pulled back fast and took three big steps away. {name} did not touch the cord or the train. Instead, {he} ran to the kitchen. \"Dad! The cord behind the TV made a spark!\" Dad put down the spoon and hurried over.",
-        "Dad shone the flashlight and nodded. First, Dad pulled the plug out of the wall. \"That cord is too old,\" Dad said. \"You stayed away and came to get me. Well done!\" Dad reached in and pulled out Toot-Toot. {name} hugged the train and smiled.",
+        "Dad shone the flashlight and nodded. First, Dad pulled the plug out of the wall. \"That cord is too old,\" Dad said. \"You stayed away and came to get me. Well done! Next time a toy rolls near the cords, come get me first.\" Dad reached in and pulled out Toot-Toot. {name} hugged the train and smiled.",
         "In the afternoon, {name} held Dad's hand and walked to the hardware store. The shelves had lots of new cords. {name} helped pick a white one. Dad also took a pack of small clear things. \"What are those?\" asked {name}. Dad winked. \"You'll see at home.\"",
         "Back home, {name} washed up first. \"Dry your hands well,\" said Dad. \"Wet hands and cords don't mix.\" {name} rubbed {his} hands dry with a towel. Dad moved {his} juice cup far from the socket. Dad set up the new cord, and {name} handed over the ties. Dad bundled the wires neatly and tucked them away.",
         "A few empty sockets were still on the wall. \"Sockets are just for grown-ups,\" Dad said. \"No fingers or toys go inside.\" {name} passed the clear covers to Dad, one by one. Click, click, click! Now every socket wore a tiny hat. {name} set Toot-Toot back on the track. Off it went, safe and sound. Adventure complete!"
@@ -4684,7 +4684,7 @@
         "欄杆旁邊的風冷冷的。{name}站在花盆旁邊，雙腳穩穩踩著地板。遠遠的高塔亮晶晶，可是被另一棟大樓擋住了一半。「我們回屋裡找找看。」爸爸說。爸爸和{name}關好陽台門，回到暖暖的客廳。",
         "客廳的大窗戶正對著高塔。{name}看看窗台，又看看旁邊的小椅子。「我可以爬上去嗎？把椅子推過去就好！」爸爸笑著搖搖頭。「窗台不是用來爬的，椅子也要離窗戶遠遠的。我有更好的辦法。」",
         "「什麼辦法？」{name}眨眨眼。「我們來找軟軟的寶藏！」爸爸說。{name}跑到沙發旁，抱來兩個大抱枕。爸爸從臥室拿來一個圓圓的坐墊。{name}又找到一條毛毯，像小斗篷一樣拖在後面。",
-        "兩個人把抱枕排在窗戶前面，再鋪上毛毯。哇，變成一個軟軟的小窩了！{name}和爸爸並肩跪下來，膝蓋和腳都貼著地板。高塔就在眼前。「哇，比爬上去還清楚！」{name}說。",
+        "兩個人把抱枕排在窗戶前面，再鋪上毛毯。哇，變成一個軟軟的小窩了！爸爸先檢查，窗戶關得緊緊的、鎖好了。{name}和爸爸並肩跪下來，膝蓋和腳都貼著地板。高塔就在眼前。「哇，比爬上去還清楚！」{name}說。",
         "樓下街上傳來好多人的笑聲。電視裡開始倒數了。「十、九、八……」{name}和爸爸一起大聲數。「三、二、一！」咻——砰！第一朵煙火在塔上開花了。紅的、綠的、金色的光，把天空塗得滿滿的。",
         "煙火像一場閃亮的雨。{name}靠在爸爸身邊，一朵一朵數著。「爸爸，明年我們還要這樣看。」爸爸抱抱{name}。「好啊，還是在這個軟軟的小窩。」{name}打了個小呵欠，小聲說：「新年快樂！」"
       ],
@@ -4694,7 +4694,7 @@
         "The air by the railing felt chilly. {name} stood by the flowerpots, feet steady on the floor. The tower sparkled far away. But another building hid half of it. \"Let's look inside,\" said Dad. They shut the balcony door and went back to the cozy living room.",
         "The big living room window faced the tower. {name} looked at the windowsill, then at a small chair. \"Can I climb up? I'll push the chair over!\" Dad smiled and shook his head. \"Windowsills aren't for climbing. Chairs stay away from windows too. I have a better idea.\"",
         "\"What idea?\" asked {name}. \"Let's hunt for soft treasure!\" said Dad. {name} raced to the sofa and hugged two big cushions. Dad brought a round pillow from the bedroom. Then {name} found a fluffy blanket and dragged it along like a cape.",
-        "They lined the cushions up by the window and spread the blanket on top. Now it was a soft little nest! {name} and Dad knelt side by side, knees and feet on the floor. The tower was right there. \"Wow! This is even better than climbing!\" said {name}.",
+        "They lined the cushions up by the window and spread the blanket on top. Now it was a soft little nest! Dad checked first: the window was shut tight and locked. {name} and Dad knelt side by side, knees and feet on the floor. The tower was right there. \"Wow! This is even better than climbing!\" said {name}.",
         "Happy voices floated up from the street below. On TV, the countdown began. \"Ten, nine, eight...\" {name} and Dad counted out loud. \"Three, two, one!\" Whoosh, boom! The first firework bloomed above the tower. Red, green, and gold filled the sky.",
         "The fireworks fell like sparkly rain. {name} leaned close to Dad and counted each one. \"Dad, let's watch like this next year too.\" Dad gave {name} a big hug. \"Yes, from our soft little nest.\" {name} gave a tiny yawn and whispered, \"Happy New Year!\""
       ]
@@ -19446,7 +19446,7 @@
     "paragraphs": {
       "zh": [
         "今天颱風要來了。學校放颱風假。窗外的風開始呼呼地吹。雨點滴滴答答，輕輕敲著窗戶。{name}趴在沙發上，聽著風聲。媽媽說：「我們一起準備吧。」{name}點點頭，跳下沙發。",
-        "第一件事，是搬陽台的盆栽。爸爸打開陽台的門。風一下子跑進來，涼涼的。{name}跟在爸爸身邊。{he}抱起一小盆薄荷，香香的。爸爸搬起大盆的九重葛。「進屋囉，小花小草。」{name}輕輕說。爸爸把門關好，鎖上。",
+        "第一件事，是搬陽台的盆栽。爸爸打開陽台的門。風一下子跑進來，涼涼的。{name}站在門裡面等。爸爸把一小盆薄荷遞給{him}，香香的。爸爸搬起大盆的九重葛。「進屋囉，小花小草。」{name}輕輕說。爸爸把門關好，鎖上。",
         "第二件事，是裝水。媽媽拿出好多空水瓶。{name}扶著瓶子，媽媽慢慢倒水。咕嚕咕嚕，一瓶滿了。咕嚕咕嚕，又一瓶滿了。{name}把水瓶排成一排。看起來像一列小火車。媽媽笑著說：「謝謝你，好幫手。」",
         "第三件事，是找手電筒。奶奶說：「在櫃子的抽屜裡。」{name}拉開抽屜，找到一支黃色手電筒。按一下，咔嚓，亮了。再按一下，咔嚓，暗了。{name}把它放在桌上。「全部準備好了！」{he}開心地說。",
         "天色慢慢變暗了。一家人吃完熱熱的湯麵。窗外的風還在呼呼吹。忽然，燈閃了一下。閃一下，又閃一下。然後，屋裡變得暗暗的。{name}緊緊靠著媽媽。媽媽輕聲說：「別擔心，我們有手電筒。」",
@@ -19456,7 +19456,7 @@
       ],
       "en": [
         "A typhoon was on its way. School was closed. Outside, the wind began to go whoosh, whoosh. Raindrops tapped on the window, tip-tap, tip-tap. {name} lay on the sofa, listening. Mom smiled and said, \"Let's get ready together.\" {name} nodded and hopped down.",
-        "First, the balcony plants had to come inside. Dad opened the balcony door. A cool wind rushed in. {name} stayed right beside Dad. {name} carried a small pot of mint. It smelled fresh and sweet. Dad lifted the big flower pot. \"Come inside, little plants,\" {name} whispered. Dad closed the door and locked it.",
+        "First, the balcony plants had to come inside. Dad opened the balcony door. A cool wind rushed in. {name} waited just inside the door. Dad handed {him} a small pot of mint. It smelled fresh and sweet. Dad lifted the big flower pot. \"Come inside, little plants,\" {name} whispered. Dad closed the door and locked it.",
         "Next, they filled water bottles. Mom brought out lots of empty ones. {name} held each bottle steady. Mom poured slowly. Glug, glug, one was full. Glug, glug, another was full. {name} lined them up in a row. They looked like a little train. \"Thank you, helper,\" Mom said.",
         "Then they needed the flashlight. Grandma said, \"It's in the cupboard drawer.\" {name} pulled the drawer open. There was a yellow flashlight! Click, it turned on. Click, it turned off. {name} set it on the table. \"Everything is ready!\" {he} said happily.",
         "Slowly, evening fell. The family ate warm noodle soup. Outside, the wind still went whoosh. Then the lights flickered. Flicker, flicker, flicker. And the room grew dark. {name} snuggled close to Mom. \"Don't worry,\" Mom said softly. \"We have our flashlight.\"",
@@ -19468,17 +19468,17 @@
     "guide": {
       "zh": {
         "questions": [
-          "{name}抱的薄荷香香的，你喜歡聞什麼味道？",
+          "颱風來之前，我們家一起準備了哪三件事？",
           "爸爸和奶奶在牆上變出小鳥和兔子，你想變出什麼動物？",
-          "在家裡，你最喜歡窩在哪裡？"
+          "停電的時候，為什麼用手電筒，不用蠟燭？"
         ],
         "tip": "今晚關燈前，用小夜燈在牆上慢慢比一隻手影小動物，再一起輕聲跟它說晚安。"
       },
       "en": {
         "questions": [
-          "The mint {name} carried smelled sweet. What smell do you like?",
+          "Before the typhoon came, what three things did the family do to get ready?",
           "Dad and Grandma made a bird and a bunny on the wall. What animal would you make?",
-          "Where is your favourite cozy spot at home?"
+          "When the power went out, why did they use a flashlight instead of a candle?"
         ],
         "tip": "Before lights out tonight, use a small night-light to slowly make one shadow animal on the wall, then whisper goodnight to it together."
       }
