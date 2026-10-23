@@ -1119,7 +1119,8 @@
         "tip": "This week, play a quick \"shout and throw\" game: you say \"A friend needs help in the water!\" and your child practices shouting \"Grown-up, come quick!\" and tossing a pillow."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-27T19:30:00+08:00"
   },
   {
     "id": "water-safety-beach-flags",
@@ -4722,7 +4723,8 @@
         "tip": "Tonight, build a cushion \"looking nest\" by a window together and practice saying, \"Feet on the floor, grown-up beside me.\" Also move any chairs or boxes away from windows and balcony railings."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-02-05T19:30:00+08:00"
   },
   {
     "id": "water-safety-river-tracing",
@@ -19487,7 +19489,8 @@
         "tip": "Before lights out tonight, use a small night-light to slowly make one shadow animal on the wall, then whisper goodnight to it together."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-13T19:30:00+08:00"
   },
   {
     "id": "lunar-new-year-shy-greetings",
