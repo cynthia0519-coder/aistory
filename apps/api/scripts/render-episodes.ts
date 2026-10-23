@@ -1,5 +1,5 @@
 // 頻道節目：把故事庫的故事做成 Podcast 音檔（mp3）與 YouTube 影片（mp4），附標題、說明與封面。
-// 聲音、配樂、插圖都和 App 一樣：曉臻朗讀、同一組 Mureka 配樂（念的時候壓低）、同一張場景插畫。
+// 聲音、配樂和 App 一樣：曉臻朗讀、同一組 Mureka 配樂（念的時候壓低）；插圖用每集專屬插畫（apps/api/episode-art/），沒有就用 App 的場景插畫。
 //
 //   npm run episodes:render -w @aistory/api -- [--only id1,id2] [--next] [--limit 20] [--lang zh] [--audio-only] [--text-only] [--dry-run]
 //
@@ -28,6 +28,8 @@ const STORIES_PATH = join(CLIENT_PUBLIC, "library/stories.json");
 const FLAGS_PATH = resolve(here, "../eval/review-flags.json");
 const DEFAULT_OUT = resolve(here, "../out/episodes");
 const DEFAULT_FONT = resolve(here, "assets/LXGWWenKaiTC-Regular.ttf");
+/** 每集專屬插畫（16:9，主體置中）；有就用來做封面和影片畫面，沒有才退回共用的場景插畫 */
+const EPISODE_ART = resolve(here, "../episode-art");
 const FONT_NAME = "LXGW WenKai TC";
 // App 開放給一般人之前不放連結（說明欄改成預告）；開放後設 EPISODE_APP_URL
 const APP_URL = process.env.EPISODE_APP_URL || undefined;
@@ -162,12 +164,17 @@ async function renderEpisode(story: LibraryStory, lang: Language, dir: string, f
     "-map", "[out]", "-c:a", "libmp3lame", "-b:a", "128k", audio,
   ]);
 
-  // 5. 封面：場景插畫裁成正方形（Podcast 平台要 1400×1400 以上）
-  const scene = join(CLIENT_PUBLIC, "scenes", `${sceneName(story.setting, story.theme, story.id)}.jpg`);
+  // 5. 封面：每集插畫（沒有就用場景插畫）裁成正方形（Podcast 平台要 1400×1400 以上）
+  const art = join(EPISODE_ART, `${story.id}.jpg`);
+  const ownArt = existsSync(art);
+  const scene = ownArt ? art : join(CLIENT_PUBLIC, "scenes", `${sceneName(story.setting, story.theme, story.id)}.jpg`);
   const cover = join(dir, `${story.id}-cover.jpg`);
   ffmpeg(["-i", scene, "-vf", "crop=ih:ih,scale=1400:1400:flags=lanczos", "-q:v", "3", cover]);
+  // YouTube 自訂縮圖（1280×720，2MB 以內）
+  const thumb = join(dir, `${story.id}-thumb.jpg`);
+  ffmpeg(["-i", scene, "-vf", "scale=1280:720:force_original_aspect_ratio=increase:flags=lanczos,crop=1280:720", "-q:v", "3", thumb]);
 
-  // 6. 影片：插畫置中、兩側用模糊放大的同一張圖補滿 16:9，燒進字幕
+  // 6. 影片：每集插畫本來就是 16:9，直接鋪滿；場景插畫則置中、兩側用模糊放大的同一張圖補滿，燒進字幕
   let video: string | null = null;
   if (!audioOnly) {
     const [title, ...rest] = segments;
@@ -178,8 +185,11 @@ async function renderEpisode(story: LibraryStory, lang: Language, dir: string, f
     ffmpeg([
       "-loop", "1", "-framerate", "6", "-i", scene, "-i", audio,
       "-filter_complex",
-      `[0:v]scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,gblur=sigma=30,eq=brightness=-0.06[bg];` +
-        `[0:v]scale=-2:1080[fg];[bg][fg]overlay=(W-w)/2:0,ass='${esc(ass)}':fontsdir='${esc(dirname(font))}',format=yuv420p[v]`,
+      (ownArt
+        ? `[0:v]scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,`
+        : `[0:v]scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,gblur=sigma=30,eq=brightness=-0.06[bg];` +
+          `[0:v]scale=-2:1080[fg];[bg][fg]overlay=(W-w)/2:0,`) +
+        `ass='${esc(ass)}':fontsdir='${esc(dirname(font))}',format=yuv420p[v]`,
       "-map", "[v]", "-map", "1:a",
       // 靜態插圖 + 字幕：每秒 6 格就夠（字幕幾秒才換一次），檔案小一半
       "-c:v", "libx264", "-preset", "medium", "-tune", "stillimage", "-crf", "26", "-g", "300", "-r", "6",
@@ -191,9 +201,9 @@ async function renderEpisode(story: LibraryStory, lang: Language, dir: string, f
   for (const f of readdirSync(dir)) if (f.endsWith(".wav") || f === "voice.txt") rmSync(join(dir, f));
 
   const text = episodeText(story, lang, APP_URL, CREDIT);
-  const info = { id: story.id, ...text, seconds: Math.round(duration(audio)), music: group, scene: sceneName(story.setting, story.theme, story.id) };
+  const info = { id: story.id, ...text, seconds: Math.round(duration(audio)), music: group, scene: ownArt ? `episode-art/${story.id}` : sceneName(story.setting, story.theme, story.id) };
   writeFileSync(join(dir, "info.json"), JSON.stringify(info, null, 2) + "\n");
-  return { ...info, audio, video, cover };
+  return { ...info, audio, video, cover, thumb };
 }
 
 async function main() {
