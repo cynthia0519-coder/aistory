@@ -789,7 +789,8 @@
         "tip": "Tonight, pick a sturdy table at home as your \"turtle shell\" and play \"Drop, cover, hold on.\" Then practice following a grown-up slowly after the pretend shaking stops."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-09-21T19:30:00+08:00"
   },
   {
     "id": "earthquake-table-fort",
