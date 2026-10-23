@@ -4017,7 +4017,8 @@
         "tip": "Tonight, turn your phone number into a little song or clapping rhythm with your child, and sing it together at bedtime each night until your child can say it alone."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-02-23T19:30:00+08:00"
   },
   {
     "id": "getting-lost-sand-sculpture-beach",
@@ -4501,7 +4502,8 @@
         "tip": "At dinner tonight, practice saying \"Blow together, then wait for a grown-up to say it's cool,\" and blow on a bite side by side. You can also point to the kettle, stove, and rice cooker and call them \"grown-up hot things.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-01-01T19:30:00+08:00"
   },
   {
     "id": "sockets-dry-hands-dryer",
@@ -4610,7 +4612,8 @@
         "tip": "This week, go on a home \"safety patrol\" together to find every socket and cord, and practice saying, \"Sockets are for grown-ups; if it looks broken, tell a grown-up.\" Let your child hand you plug covers while you fit them."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-10-19T19:30:00+08:00"
   },
   {
     "id": "windows-balcony-laundry-clouds",
