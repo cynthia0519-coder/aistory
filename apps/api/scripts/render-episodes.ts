@@ -1,10 +1,11 @@
 // 頻道節目：把故事庫的故事做成 Podcast 音檔（mp3）與 YouTube 影片（mp4），附標題、說明與封面。
 // 聲音、配樂和 App 一樣：曉臻朗讀、同一組 Mureka 配樂（念的時候壓低）；插圖用每集專屬插畫（apps/api/episode-art/），沒有就用 App 的場景插畫。
 //
-//   npm run episodes:render -w @aistory/api -- [--only id1,id2] [--next] [--limit 20] [--lang zh] [--audio-only] [--text-only] [--dry-run]
+//   npm run episodes:render -w @aistory/api -- [--only id1,id2] [--next] [--limit 20] [--lang zh] [--audio-only] [--text-only] [--covers-only] [--dry-run]
 //
 // --next 做下一批：跳過已經輸出過的故事，各分類輪流挑。
 // --text-only 只重寫做過的集數的標題與說明（例如換了 App 連結），不重做音檔和影片。
+// --covers-only 只重做做過的集數的封面與 YouTube 縮圖（例如加了每集插畫）。
 //
 // 需要：AZURE_SPEECH_KEY / AZURE_SPEECH_REGION（在雲端 session 裡另外要 NODE_USE_ENV_PROXY=1 才走得出代理）、ffmpeg（含 libass、libx264、libmp3lame）、
 // 字型 LXGW WenKai TC（放在 scripts/assets/LXGWWenKaiTC-Regular.ttf，或用 --font 指定）。
@@ -52,6 +53,7 @@ function parseArgs(argv: string[]) {
     lang: "zh" as Language,
     audioOnly: false,
     textOnly: false,
+    coversOnly: false,
     dryRun: false,
     next: false,
     out: DEFAULT_OUT,
@@ -65,6 +67,7 @@ function parseArgs(argv: string[]) {
     else if (a === "--lang") args.lang = z.enum(["zh", "en"]).parse(val());
     else if (a === "--audio-only") args.audioOnly = true;
     else if (a === "--text-only") args.textOnly = true;
+    else if (a === "--covers-only") args.coversOnly = true;
     else if (a === "--dry-run") args.dryRun = true;
     else if (a === "--next") args.next = true;
     else if (a === "--out") args.out = resolve(val());
@@ -83,6 +86,59 @@ const duration = (file: string) =>
 /** 同一個故事每次都從同一首開始，不同故事分散到不同首 */
 function startSong(id: string, count: number) {
   return (createHash("sha256").update(id).digest()[0] % count) + 1;
+}
+
+/** 標題斷行：中文一字算 1、英文一字母約 0.55，每行不超過 max，英文在空白處斷 */
+function wrapTitle(title: string, max: number): string[] {
+  const width = (s: string) => [...s].reduce((n, c) => n + (/[\u2e80-\uffff]/.test(c) ? 1 : 0.55), 0);
+  const words = /[\u2e80-\uffff]/.test(title) ? [...title] : title.split(/(?<= )/);
+  const lines: string[] = [""];
+  for (const w of words) {
+    const cur = lines[lines.length - 1];
+    if (cur && width(cur + w) > max) lines.push(w.trimStart());
+    else lines[lines.length - 1] = cur + w;
+  }
+  return lines.map((l) => l.trim());
+}
+
+/** 插畫（每集專屬的，沒有就用場景插畫）裁成指定大小，下方一條米色帶子印故事名字 */
+function titledImage(src: string, out: string, w: number, h: number, title: string, font: string, size: number, max: number) {
+  let lines = wrapTitle(title, max);
+  // 太長就縮小字，最多兩行
+  while (lines.length > 2 && size > 40) {
+    size = Math.round(size * 0.85);
+    max = max / 0.85;
+    lines = wrapTitle(title, max);
+  }
+  const lineH = Math.round(size * 1.3);
+  const pad = Math.round(size * 0.55);
+  const band = lines.length * lineH + pad * 2;
+  const esc = (p: string) => p.replace(/\\/g, "/").replace(/:/g, "\\:").replace(/'/g, "\\'");
+  const texts = lines.map((line, i) => {
+    const file = `${out}.line${i}.txt`;
+    writeFileSync(file, line);
+    const y = h - band + pad + i * lineH + Math.round((lineH - size) / 2);
+    return `drawtext=fontfile='${esc(font)}':textfile='${esc(file)}':fontsize=${size}:fontcolor=0x4A2E1A:x=(w-text_w)/2:y=${y}`;
+  });
+  ffmpeg([
+    "-i", src,
+    "-vf", [`scale=${w}:${h}:force_original_aspect_ratio=increase:flags=lanczos`, `crop=${w}:${h}`, `drawbox=x=0:y=${h - band}:w=${w}:h=${band}:color=0xFBF3E0@0.9:t=fill`, ...texts].join(","),
+    "-q:v", "3", out,
+  ]);
+  lines.forEach((_, i) => rmSync(`${out}.line${i}.txt`));
+}
+
+function makeArtwork(story: LibraryStory, lang: Language, dir: string, font: string, title: string) {
+  const art = join(EPISODE_ART, `${story.id}.jpg`);
+  const ownArt = existsSync(art);
+  const scene = ownArt ? art : join(CLIENT_PUBLIC, "scenes", `${sceneName(story.setting, story.theme, story.id)}.jpg`);
+  const zh = lang === "zh";
+  // Podcast 平台要 1400×1400 以上；YouTube 自訂縮圖 1280×720、2MB 以內
+  const cover = join(dir, `${story.id}-cover.jpg`);
+  titledImage(scene, cover, 1400, 1400, title, font, zh ? 104 : 88, zh ? 11 : 22);
+  const thumb = join(dir, `${story.id}-thumb.jpg`);
+  titledImage(scene, thumb, 1280, 720, title, font, zh ? 78 : 64, zh ? 14 : 34);
+  return { scene, ownArt, cover, thumb };
 }
 
 async function renderEpisode(story: LibraryStory, lang: Language, dir: string, font: string, audioOnly: boolean) {
@@ -164,15 +220,8 @@ async function renderEpisode(story: LibraryStory, lang: Language, dir: string, f
     "-map", "[out]", "-c:a", "libmp3lame", "-b:a", "128k", audio,
   ]);
 
-  // 5. 封面：每集插畫（沒有就用場景插畫）裁成正方形（Podcast 平台要 1400×1400 以上）
-  const art = join(EPISODE_ART, `${story.id}.jpg`);
-  const ownArt = existsSync(art);
-  const scene = ownArt ? art : join(CLIENT_PUBLIC, "scenes", `${sceneName(story.setting, story.theme, story.id)}.jpg`);
-  const cover = join(dir, `${story.id}-cover.jpg`);
-  ffmpeg(["-i", scene, "-vf", "crop=ih:ih,scale=1400:1400:flags=lanczos", "-q:v", "3", cover]);
-  // YouTube 自訂縮圖（1280×720，2MB 以內）
-  const thumb = join(dir, `${story.id}-thumb.jpg`);
-  ffmpeg(["-i", scene, "-vf", "scale=1280:720:force_original_aspect_ratio=increase:flags=lanczos,crop=1280:720", "-q:v", "3", thumb]);
+  // 5. 封面（Podcast 正方形）與 YouTube 縮圖，下方印故事名字
+  const { scene, ownArt, cover, thumb } = makeArtwork(story, lang, dir, font, r.title);
 
   // 6. 影片：每集插畫本來就是 16:9，直接鋪滿；場景插畫則置中、兩側用模糊放大的同一張圖補滿，燒進字幕
   let video: string | null = null;
@@ -213,6 +262,24 @@ async function main() {
   const ok = publishableStories(stories, flags, reviewContentHash);
 
   let todo: LibraryStory[];
+  if (args.coversOnly) {
+    // 只重做封面與縮圖（例如加了每集插畫），不重做音檔和影片；沒給 --only 就是輸出資料夾裡做過的全部
+    if (!existsSync(args.font)) throw new Error(`font not found: ${args.font}`);
+    const rendered = existsSync(args.out) ? readdirSync(args.out).filter((d) => existsSync(join(args.out, d, "info.json"))) : [];
+    let n = 0;
+    for (const id of args.only ?? rendered) {
+      const story = stories.find((s) => s.id === id);
+      if (!story || !rendered.includes(id)) {
+        console.log(`${id}: skipped (${story ? "not rendered yet" : "not in the library"})`);
+        continue;
+      }
+      const { ownArt } = makeArtwork(story, args.lang, join(args.out, id), args.font, renderLibraryStory(story, args.lang).title);
+      console.log(`${id}: ${ownArt ? "episode art" : "scene"}`);
+      n++;
+    }
+    console.log(`${n} covers rewritten (audio and video untouched)`);
+    return;
+  }
   if (args.textOnly) {
     // 只重寫標題與說明（info.json），不重做音檔和影片；沒給 --only 就是輸出資料夾裡做過的全部
     const rendered = existsSync(args.out) ? readdirSync(args.out).filter((d) => existsSync(join(args.out, d, "info.json"))) : [];
@@ -283,8 +350,8 @@ async function main() {
     return;
   }
   if (!args.textOnly && !isTtsConfigured()) throw new Error("AZURE_SPEECH_KEY / AZURE_SPEECH_REGION are required (use --dry-run to only list)");
-  if (!args.textOnly && !args.audioOnly && !existsSync(args.font)) {
-    throw new Error(`font not found: ${args.font} (download LXGW WenKai TC, or pass --font, or use --audio-only)`);
+  if (!args.textOnly && !existsSync(args.font)) {
+    throw new Error(`font not found: ${args.font} (download LXGW WenKai TC, or pass --font; the cover title needs it too)`);
   }
 
   const done = [];
