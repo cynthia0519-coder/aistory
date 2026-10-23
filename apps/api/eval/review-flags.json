@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-23T17:17:00.765Z",
+  "generatedAt": "2026-10-23T17:24:35.343Z",
   "summary": {
     "stories": 365,
     "byStatus": {
-      "ok": 270,
-      "check": 95
+      "ok": 272,
+      "check": 93
     },
     "byCheckKind": {
       "length": 281,
@@ -14,14 +14,14 @@
       "phone_number": 2
     },
     "byIssueKind": {
-      "repetition": 160,
+      "repetition": 161,
       "logic": 147,
       "quality": 75,
-      "taiwan_usage": 42,
+      "taiwan_usage": 41,
       "safety": 34,
       "age_fit": 21,
-      "preachy": 29,
-      "zh_en_mismatch": 95,
+      "preachy": 28,
+      "zh_en_mismatch": 93,
       "length": 4,
       "guardrail": 4
     },
@@ -116,10 +116,8 @@
       "water-safety-beach-flags",
       "water-safety-flooded-ditch",
       "water-safety-pool-wait-by-towel",
-      "water-safety-river-picnic",
       "wind-city-kite",
       "windows-balcony-flower-pots",
-      "windows-balcony-new-year-fireworks",
       "zoo-hiccup-parade"
     ],
     "spotCheck": [
@@ -162,10 +160,10 @@
       "teamwork-the-class-play",
       "trying-food-bitter-melon-explorer",
       "trying-food-stinky-tofu-sniff",
-      "typhoon-day-at-home",
+      "water-safety-river-picnic",
       "winter-cold-snap-cozy-night"
     ],
-    "usd": 11.4412
+    "usd": 11.4397
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -630,10 +628,6 @@
           "note": "標題很像 little-turtle-moon-path「The Little Turtle and the Moon Path」（相似度 0.73）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.043276,
-      "status": "check",
-      "reviewedAt": "2026-10-23T17:16:00.946Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -645,7 +639,11 @@
             "note": "與 earthquake-library-shelves 太像：學校、林老師、朋友想跑、遠離書櫃窗戶、帶到操場。建議換老師名或改朋友情節"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.043276,
+      "status": "check",
+      "reviewedAt": "2026-10-23T17:16:00.946Z"
     },
     "earthquake-table-fort": {
       "hash": "728e0fc408c1ad4f",
@@ -812,42 +810,28 @@
       "reviewedAt": "2026-10-14T09:40:18.623Z"
     },
     "water-safety-river-picnic": {
-      "hash": "7e02d888f9b66cbc",
+      "hash": "270e9e57e324c97c",
       "checks": [],
       "model": "claude-opus-5-5",
-      "usd": 0.0284336,
-      "status": "check",
-      "reviewedAt": "2026-10-23T17:16:10.954Z",
+      "usd": 0.0300496,
+      "status": "ok",
+      "reviewedAt": "2026-10-23T17:24:35.317Z",
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
-            "kind": "logic",
-            "severity": "medium",
-            "lang": "both",
+            "kind": "quality",
+            "severity": "low",
+            "lang": "en",
             "where": "6",
-            "note": "「旁邊的游泳圈」前文從未出現，像憑空變出來；建議第2或3段讓媽媽把游泳圈放在岸邊"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "5",
-            "note": "第4段媽媽「在旁邊拍手」，第6段卻要「馬上跑來」，小傑落水時大人似乎沒在看；可寫媽媽轉身拿東西"
-          },
-          {
-            "kind": "zh_en_mismatch",
-            "severity": "low",
-            "lang": "zh",
-            "where": "1",
-            "note": "中文媽媽「手上拿著水壺」，下一段卻「放好籃子」，英文沒有水壺；統一成籃子"
+            "note": "英文「steps back onto the bank」後又寫「stays on the bank」，語意重複，可刪一句"
           },
           {
             "kind": "repetition",
             "severity": "low",
             "lang": "both",
             "where": "6",
-            "note": "喊大人加丟游泳圈的解法和 beach-flags 幾乎相同；可改丟浮板或寶特瓶，做出區別"
+            "note": "「大喊大人並丟游泳圈」與 beach-flags 的救援解法相近，可考慮換成丟浮板或寶特瓶等不同浮物"
           }
         ]
       }
@@ -2455,10 +2439,6 @@
           "note": "英文 445 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.025929599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-10-23T17:16:18.070Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -2470,7 +2450,11 @@
             "note": "「熱鬧夜間場所＋把電話唱成歌＋停在攤位旁」與夜市、動物園篇相近；求助對象改為帶孩子的家長已有區隔，可再換記號碼方式"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.025929599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-23T17:16:18.070Z"
     },
     "getting-lost-sand-sculpture-beach": {
       "hash": "1f40d116834cd2e1",
@@ -2775,10 +2759,6 @@
     "hot-things-hot-pot-night": {
       "hash": "2d1450f21d3531fb",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0288736,
-      "status": "ok",
-      "reviewedAt": "2026-10-23T17:16:26.731Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -2804,7 +2784,11 @@
             "note": "「和奶奶一起吹」與 soup-dragon 的結局相近，可改由爸爸或全家一起吹，增加區別"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0288736,
+      "status": "ok",
+      "reviewedAt": "2026-10-23T17:16:26.731Z"
     },
     "sockets-dry-hands-dryer": {
       "hash": "3b8bb14d509fb59e",
@@ -2836,10 +2820,6 @@
           "note": "英文 380 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0312976,
-      "status": "ok",
-      "reviewedAt": "2026-10-23T17:16:40.108Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -2858,7 +2838,11 @@
             "note": "爸爸說「插座是給大人用的。手指和玩具都不能放進去」偏像唸規則，可改成{name}自己邊遞蓋子邊說"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0312976,
+      "status": "ok",
+      "reviewedAt": "2026-10-23T17:16:40.108Z"
     },
     "windows-balcony-laundry-clouds": {
       "hash": "d6aa570cf4c0ecd9",
@@ -2873,60 +2857,53 @@
       "reviewedAt": "2026-10-14T09:50:13.383Z"
     },
     "windows-balcony-new-year-fireworks": {
-      "hash": "c8c8841a8d872db6",
+      "hash": "b65f158aecb44070",
       "checks": [
         {
           "kind": "length",
           "severity": "low",
           "lang": "zh",
           "where": "story",
-          "note": "中文 582 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+          "note": "中文 598 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         },
         {
           "kind": "length",
           "severity": "low",
           "lang": "en",
           "where": "story",
-          "note": "英文 380 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+          "note": "英文 389 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0323696,
-      "status": "check",
-      "reviewedAt": "2026-10-23T17:16:52.575Z",
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
-          {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "3",
-            "note": "想推椅子到窗邊看熱鬧、爸爸阻止、改在窗前一起看，與 flower-pots 故事（遊行）情節太像，可換不同的解決方式"
-          },
-          {
-            "kind": "taiwan_usage",
-            "severity": "medium",
-            "lang": "zh",
-            "where": "0",
-            "note": "『除夕夜』配高塔煙火和電視倒數，在台灣比較像『跨年夜』；英文 New Year's Eve 也是指跨年，建議改成跨年夜"
-          },
           {
             "kind": "logic",
             "severity": "low",
             "lang": "both",
             "where": "5",
-            "note": "抱枕鋪成小窩後又說『膝蓋和腳都貼著地板』，兩者有點矛盾，可改成坐在地板的軟墊上"
+            "note": "抱枕鋪成小窩後又說「膝蓋和腳都貼著地板」，略矛盾；改成「跪在軟軟的小窩上，腳沒有離開地面」"
           },
           {
-            "kind": "preachy",
+            "kind": "repetition",
             "severity": "low",
             "lang": "both",
-            "where": "1",
-            "note": "爸爸說『陽台是看風景和種花的地方』像在直接念規則，可改成更自然的對話"
+            "where": "3",
+            "note": "想看活動、想推椅子、爸爸阻止、改從窗戶看，與 flower-pots 篇骨架相近；抱枕小窩已有新意，可再加強差異"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "4",
+            "note": "爸爸拿來的「圓圓的坐墊」之後沒再出現，可在第 5 段補一句放在哪裡"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.031057599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-23T17:23:29.343Z"
     },
     "water-safety-river-tracing": {
       "hash": "47430a586839dffb",
@@ -11315,7 +11292,7 @@
       "reviewedAt": "2026-10-22T04:00:15.492Z"
     },
     "typhoon-day-at-home": {
-      "hash": "0eff53086e3b710c",
+      "hash": "d3642b87f6ebef22",
       "checks": [
         {
           "kind": "length",
@@ -11332,29 +11309,29 @@
           "note": "英文 362 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.057393599999999996,
-      "status": "ok",
-      "reviewedAt": "2026-10-23T17:17:00.756Z",
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "zh_en_mismatch",
-            "severity": "low",
-            "lang": "zh",
-            "where": "guide",
-            "note": "第1題「我們家一起準備了」像在問自己家，英文是 the family；改成「{name}一家人一起準備了哪三件事」"
-          },
-          {
-            "kind": "quality",
+            "kind": "repetition",
             "severity": "low",
             "lang": "both",
-            "where": "guide",
-            "note": "第3題問「為什麼不用蠟燭」，故事沒出現蠟燭，孩子難從故事回答；可改問「停電時{name}怎麼讓屋裡亮起來」"
+            "where": "7",
+            "note": "「準備過夜、風聲像在唱歌」和 winter-cold-snap-cozy-night 結構相近，可再強化颱風特色以作區隔"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "3",
+            "note": "奶奶在第 3 段突然出現，前面沒有交代，可在第 0 段順帶提到奶奶也在家"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0555576,
+      "status": "ok",
+      "reviewedAt": "2026-10-23T17:23:36.488Z"
     },
     "lunar-new-year-shy-greetings": {
       "hash": "d85eba288738668b",
