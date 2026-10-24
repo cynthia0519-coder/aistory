@@ -1454,7 +1454,7 @@
     "ageBands": ["8-10"],
     "style": "adventure",
     "setting": "sea",
-    "premise": "At low tide on the north coast, {name} and a cousin become tide-pool detectives with Aunt close by, tracking fiddler crabs waving their big claws, a hiding octopus and a sea star. They record everything in a notebook and leave every creature just where it was."
+    "premise": "At low tide on the coral rocks of Kenting, {name} and a cousin become tide-pool detectives with Aunt close by. They watch a hermit crab choose an empty shell as its new home, spot a hiding octopus and a sea star, record everything in a notebook, and leave every shell and creature just where it was."
   },
   {
     "id": "bear-bell-trail",
@@ -1849,7 +1849,7 @@
     "ageBands": ["4-6", "6-8"],
     "style": "inspiring",
     "setting": "park",
-    "premise": "{name}'s new kite keeps crashing into the grass. An elderly kite flyer shows {him} how to feel the wind and run at the right moment. After many tries, the kite rises higher and higher, and {name} feels the wind tugging like a friend."
+    "premise": "{name}'s new kite keeps crashing into the grass, and so does classmate Rong's butterfly kite. Listening to the wind together, they realize they have been running with their backs to it. Facing the wind and taking turns holding each other's kite, both kites finally fly, and {name} feels the wind tugging like a friend."
   },
   {
     "id": "home-rainy-day-cardboard-ship",
