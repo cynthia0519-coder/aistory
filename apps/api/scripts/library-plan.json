@@ -1454,7 +1454,7 @@
     "ageBands": ["8-10"],
     "style": "adventure",
     "setting": "sea",
-    "premise": "At low tide on the coral rocks of Kenting, {name} and a cousin become tide-pool detectives with Aunt close by. They watch a hermit crab choose an empty shell as its new home, spot a hiding octopus and a sea star, record everything in a notebook, and leave every shell and creature just where it was."
+    "premise": "At low tide on the coral rocks of Kenting, {name} and a cousin become tide-pool detectives with Aunt close by. They watch a hermit crab move into an empty shell and a smaller one take its old shell, spot a hiding octopus and a sea star, record it all in a notebook, and leave every shell and creature where it was."
   },
   {
     "id": "bear-bell-trail",
