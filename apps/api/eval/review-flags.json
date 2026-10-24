@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-10-24T03:47:11.371Z",
+  "generatedAt": "2026-10-24T06:31:27.890Z",
   "summary": {
     "stories": 365,
     "byStatus": {
-      "ok": 273,
-      "check": 92
+      "ok": 275,
+      "check": 90
     },
     "byCheckKind": {
-      "length": 281,
+      "length": 279,
       "duplicate_title": 12,
       "tokens": 2,
       "sensitive_pattern": 9,
       "phone_number": 2
     },
     "byIssueKind": {
-      "repetition": 160,
-      "logic": 148,
-      "quality": 75,
+      "repetition": 159,
+      "logic": 149,
+      "quality": 76,
       "taiwan_usage": 41,
       "safety": 34,
       "age_fit": 21,
       "preachy": 28,
-      "zh_en_mismatch": 93,
+      "zh_en_mismatch": 92,
       "length": 4,
       "guardrail": 4
     },
@@ -76,7 +76,6 @@
       "not-your-fault-wrestling-game",
       "old-bookshop-cat",
       "online-safety-free-gems-password",
-      "park-kite-wind-friend",
       "pet-loss-mochi-hill",
       "pet-loss-old-cat-sunbeam",
       "potty-little-frog-stool",
@@ -101,7 +100,6 @@
       "swimsuit-rule-whale-swimsuit",
       "the-puddle-that-was-a-sea",
       "the-sock-that-ran-away",
-      "tide-pool-detectives",
       "tidying-toys-beach-buckets",
       "tidying-toys-sleepy-shelf",
       "tidying-toys-treasure-sorting",
@@ -151,6 +149,7 @@
       "potty-park-restroom",
       "promises-the-borrowed-comic",
       "puppet-masters-apprentice",
+      "raindrop-drums",
       "responsibility-garden-captain",
       "rooftop-giant-pumpkin",
       "sharing-turns-one-red-tricycle",
@@ -162,7 +161,7 @@
       "water-safety-river-picnic",
       "winter-cold-snap-cozy-night"
     ],
-    "usd": 11.4308
+    "usd": 11.461
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -627,10 +626,6 @@
           "note": "標題很像 little-turtle-moon-path「The Little Turtle and the Moon Path」（相似度 0.73）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0344016,
-      "status": "ok",
-      "reviewedAt": "2026-10-24T03:47:11.353Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -642,7 +637,11 @@
             "note": "老師說「趴下來」，接著卻寫「小朋友一起蹲低」，動作不一致。可統一成「趴低」，或把指令改成「蹲下來」。"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0344016,
+      "status": "ok",
+      "reviewedAt": "2026-10-24T03:47:11.353Z"
     },
     "earthquake-table-fort": {
       "hash": "728e0fc408c1ad4f",
@@ -5724,31 +5723,31 @@
       "reviewedAt": "2026-10-16T11:03:19.951Z"
     },
     "tide-pool-detectives": {
-      "hash": "d6b56971d07c8148",
+      "hash": "3e08da002a473197",
       "checks": [],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
             "kind": "repetition",
-            "severity": "medium",
+            "severity": "low",
             "lang": "both",
             "where": "0",
-            "note": "與「sea-tide-pool-crab-family」太相近：同為東北角退潮潮池、觀察螃蟹、學會只看不碰。建議改換主角生物或解決方式"
+            "note": "與「sea-tide-pool-crab-family」同為東北角潮池觀察、輕輕看不打擾，情節不同但場景相近，可留意"
           },
           {
-            "kind": "zh_en_mismatch",
+            "kind": "quality",
             "severity": "low",
-            "lang": "en",
-            "where": "0",
-            "note": "中文「美玲阿姨」英文作「Aunt Mei」，名字不一致，建議英文改為 Aunt Meiling"
+            "lang": "zh",
+            "where": "3",
+            "note": "『從舊殼裡鑽出來，一溜煙鑽進』連用兩個「鑽」，可改為「一溜煙溜進」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.042261599999999996,
-      "status": "check",
-      "reviewedAt": "2026-10-16T11:03:30.251Z"
+      "usd": 0.071244,
+      "status": "ok",
+      "reviewedAt": "2026-10-24T06:30:36.413Z"
     },
     "wind-city-kite": {
       "hash": "f0a0d355e5a85133",
@@ -7631,46 +7630,31 @@
       "reviewedAt": "2026-10-16T11:05:19.578Z"
     },
     "park-kite-wind-friend": {
-      "hash": "850a98222ff4e960",
-      "checks": [
-        {
-          "kind": "length",
-          "severity": "medium",
-          "lang": "zh",
-          "where": "story",
-          "note": "中文 669 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
-        },
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "en",
-          "where": "story",
-          "note": "英文 411 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
-        }
-      ],
+      "hash": "dbbfcc4d135ecd30",
+      "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.0616296,
+      "status": "ok",
+      "reviewedAt": "2026-10-24T06:31:27.867Z",
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
-          {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "0",
-            "note": "與 wind-city-kite 太像：風箏一直掉、長輩教方法、最後一次飛起來。可改情節，例如換成幫別人修風箏"
-          },
           {
             "kind": "logic",
             "severity": "low",
             "lang": "both",
             "where": "3",
-            "note": "「背對著風」後又「用力往前跑」，順風跑反而飛不起來。可改成「讓風從前面吹來」再跑"
+            "note": "第1段寫「用力往前跑」，第3段又說風「從我們前面吹過來」卻是「背著風跑」，方向容易混淆。可改成「轉過身才發現風從這邊來」"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "zh",
+            "where": "title",
+            "note": "標題「會拉手的風」與結尾「風在跟{name}握手」用詞不一致，建議統一為「握手」"
           }
         ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.060416,
-      "status": "check",
-      "reviewedAt": "2026-10-17T12:49:09.715Z"
+      }
     },
     "home-rainy-day-cardboard-ship": {
       "hash": "aa3dbdbe6c7c6eb5",
