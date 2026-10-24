@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T06:31:27.890Z",
+  "generatedAt": "2026-10-24T06:37:29.656Z",
   "summary": {
     "stories": 365,
     "byStatus": {
@@ -15,8 +15,8 @@
     },
     "byIssueKind": {
       "repetition": 159,
-      "logic": 149,
-      "quality": 76,
+      "logic": 150,
+      "quality": 75,
       "taiwan_usage": 41,
       "safety": 34,
       "age_fit": 21,
@@ -100,6 +100,7 @@
       "swimsuit-rule-whale-swimsuit",
       "the-puddle-that-was-a-sea",
       "the-sock-that-ran-away",
+      "tide-pool-detectives",
       "tidying-toys-beach-buckets",
       "tidying-toys-sleepy-shelf",
       "tidying-toys-treasure-sorting",
@@ -113,7 +114,6 @@
       "water-safety-beach-flags",
       "water-safety-flooded-ditch",
       "water-safety-pool-wait-by-towel",
-      "wind-city-kite",
       "windows-balcony-flower-pots",
       "zoo-hiccup-parade"
     ],
@@ -161,7 +161,7 @@
       "water-safety-river-picnic",
       "winter-cold-snap-cozy-night"
     ],
-    "usd": 11.461
+    "usd": 11.4482
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -5723,31 +5723,24 @@
       "reviewedAt": "2026-10-16T11:03:19.951Z"
     },
     "tide-pool-detectives": {
-      "hash": "3e08da002a473197",
+      "hash": "d3d97a222421c9fc",
       "checks": [],
       "llm": {
-        "verdict": "ok",
+        "verdict": "check",
         "issues": [
           {
             "kind": "repetition",
-            "severity": "low",
+            "severity": "medium",
             "lang": "both",
             "where": "0",
-            "note": "與「sea-tide-pool-crab-family」同為東北角潮池觀察、輕輕看不打擾，情節不同但場景相近，可留意"
-          },
-          {
-            "kind": "quality",
-            "severity": "low",
-            "lang": "zh",
-            "where": "3",
-            "note": "『從舊殼裡鑽出來，一溜煙鑽進』連用兩個「鑽」，可改為「一溜煙溜進」"
+            "note": "與 sea-tide-pool-crab-family 太接近：退潮潮池、大人陪同、觀察螃蟹、只看不動、漲潮離開；建議換場景或加入不同的核心事件"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.071244,
-      "status": "ok",
-      "reviewedAt": "2026-10-24T06:30:36.413Z"
+      "usd": 0.0557686,
+      "status": "check",
+      "reviewedAt": "2026-10-24T06:37:03.863Z"
     },
     "wind-city-kite": {
       "hash": "f0a0d355e5a85133",
@@ -5761,35 +5754,35 @@
         }
       ],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
-            "kind": "repetition",
-            "severity": "medium",
+            "kind": "logic",
+            "severity": "low",
             "lang": "both",
-            "where": "0",
-            "note": "與 park-kite-wind-friend 太像：風箏一直摔、老爺爺指點、最後高飛。建議突顯修尾巴的工程主線，或換掉老人導師的設定"
+            "where": "6",
+            "note": "「最後一次放手」/「one last try」前文沒寫風箏節當天先試過，建議改成「輕輕放手」或先補一次失敗"
           },
           {
             "kind": "logic",
             "severity": "low",
             "lang": "both",
             "where": "4",
-            "note": "星期四開始實驗，『接下來兩天』就到星期六風箏節了，時間對不上。改成『當天和隔天』"
+            "note": "星期四到林爺爺家後「接下來兩天」會碰到星期六風箏節，時間有點擠，可改成「接下來幾個晚上」"
           },
           {
-            "kind": "logic",
+            "kind": "repetition",
             "severity": "low",
             "lang": "both",
-            "where": "6",
-            "note": "『最後一次放手』暗示當天已試過幾次，但前文沒寫。可刪掉『最後一次』，或補一句先前的嘗試"
+            "where": "1",
+            "note": "風箏一直摔、找出原因後成功飛起，和 park-kite-wind-friend 主線相近，不過解法不同，可以接受"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.060572,
-      "status": "check",
-      "reviewedAt": "2026-10-16T14:10:07.073Z"
+      "usd": 0.0637326,
+      "status": "ok",
+      "reviewedAt": "2026-10-24T06:37:29.643Z"
     },
     "old-bookshop-cat": {
       "hash": "a44c2165ac6c013e",
@@ -7632,10 +7625,6 @@
     "park-kite-wind-friend": {
       "hash": "dbbfcc4d135ecd30",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0616296,
-      "status": "ok",
-      "reviewedAt": "2026-10-24T06:31:27.867Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -7654,7 +7643,11 @@
             "note": "標題「會拉手的風」與結尾「風在跟{name}握手」用詞不一致，建議統一為「握手」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0616296,
+      "status": "ok",
+      "reviewedAt": "2026-10-24T06:31:27.867Z"
     },
     "home-rainy-day-cardboard-ship": {
       "hash": "aa3dbdbe6c7c6eb5",
@@ -8294,16 +8287,24 @@
       "reviewedAt": "2026-10-22T17:51:51.255Z"
     },
     "courage-the-wrong-turn": {
-      "hash": "55eaa98742ce22d2",
+      "hash": "595857a240878fd1",
       "checks": [],
       "llm": {
         "verdict": "ok",
-        "issues": []
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "en",
+            "where": "4",
+            "note": "英文「turned it all the way around」可能被理解為轉一整圈，與中文「轉了半圈」不符，建議改成「turned it right side up」"
+          }
+        ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.023581599999999998,
+      "usd": 0.0231526,
       "status": "ok",
-      "reviewedAt": "2026-10-22T17:51:57.924Z"
+      "reviewedAt": "2026-10-24T06:36:18.466Z"
     },
     "responsibility-goldfish-week": {
       "hash": "dfc9be3d838e1dd2",

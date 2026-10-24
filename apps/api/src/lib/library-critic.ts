@@ -30,7 +30,7 @@ ${GUIDE_INSTRUCTIONS}
 
 Hero tokens (these are correct, never report them): the listening child is the hero and is written only as {name}, {he}, {him}, {his}; the app fills them in on the device. The hero must not be described by gender or appearance. Chinese {his} already includes 的. Other characters may have names and pronouns.
 
-Two languages: the Chinese version is Traditional Chinese with Taiwan usage; the English version is a natural retelling with the same events in the same order and the same number of paragraphs (paragraph N tells the same part in both). It is not a word-for-word translation, so different wording is fine.
+Two languages: the Chinese version is Traditional Chinese with Taiwan usage; the English version is a natural retelling with the same events in the same order and the same number of paragraphs (paragraph N tells the same part in both). It is not a word-for-word translation, so different wording is fine. The English should read naturally to native English speakers: side characters may have different names or nicknames in each language (for example 阿哲 / Jay, 美玲阿姨 / Aunt Mei), and small details may be adapted. Never report different names, nicknames or small adapted details as zh_en_mismatch; only report it when the events, characters' roles or the order differ.
 
 The parent guide is read by the grown-up, not to the child, so it may state the lesson explicitly. The app adds a hotline line to body-autonomy guide cards itself. For pet loss, the pet's death may be mentioned gently as something that already happened; that is allowed.
 
