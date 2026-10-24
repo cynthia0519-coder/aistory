@@ -1,8 +1,29 @@
 @import "tailwindcss";
 
+/* 設計稿配色：芥末黃、赭橘、磚紅、深藍綠，米紙底色。所有元件只用這些 token */
+@theme {
+  --color-paper: #f4ecdc;
+  --color-paper-deep: #efe2c6;
+  --color-card: #fbf6ea;
+  --color-line: #c9b48f;
+  --color-ink: #3a2a20;
+  --color-ink-soft: #7a6450;
+  --color-teal: #23465a;
+  --color-teal-dark: #17303e;
+  --color-rust: #c8553d;
+  --color-rust-dark: #8a3420;
+  --color-ochre: #e8b04a;
+  --color-mustard: #f2c14e;
+  --color-sage: #8aa38b;
+  --color-highlight: #f6d88e;
+
+  --font-display: var(--font-wenkai), "Kaiti TC", "STKaiti", serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+}
+
 body {
-  background: #fffbeb;
-  color: #292524;
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
   -webkit-tap-highlight-color: transparent;
 }

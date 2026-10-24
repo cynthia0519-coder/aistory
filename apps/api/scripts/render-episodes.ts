@@ -1,0 +1,396 @@
+// 頻道節目：把故事庫的故事做成 Podcast 音檔（mp3）與 YouTube 影片（mp4），附標題、說明與封面。
+// 聲音、配樂和 App 一樣：曉臻朗讀、同一組 Mureka 配樂（念的時候壓低）；插圖用每集專屬插畫（apps/api/episode-art/），沒有就用 App 的場景插畫。
+//
+//   npm run episodes:render -w @aistory/api -- [--only id1,id2] [--next] [--limit 20] [--lang zh] [--audio-only] [--text-only] [--covers-only] [--dry-run]
+//
+// --next 做下一批：跳過已經輸出過的故事，各分類輪流挑。
+// --text-only 只重寫做過的集數的標題與說明（例如換了 App 連結），不重做音檔和影片。
+// --covers-only 只重做做過的集數的封面與 YouTube 縮圖（例如加了每集插畫）。
+//
+// 需要：AZURE_SPEECH_KEY / AZURE_SPEECH_REGION（在雲端 session 裡另外要 NODE_USE_ENV_PROXY=1 才走得出代理）、ffmpeg（含 libass、libx264、libmp3lame）、
+// 字型 LXGW WenKai TC（放在 scripts/assets/LXGWWenKaiTC-Regular.ttf，或用 --font 指定）。
+// 只挑 AI 預審 ok、非敏感主題的故事（lib/episode.ts 的 publishableStories）；發布前人要聽過一次。
+// 輸出在 apps/api/out/episodes/（不進 git），每集一個資料夾，另有 episodes.md 彙整上架用的文字。
+import { execFileSync } from "node:child_process";
+import { createHash } from "node:crypto";
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { dirname, join, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+import { z } from "zod";
+import { LibraryStorySchema, renderLibraryStory, THEMES, type Language, type LibraryStory } from "@aistory/shared";
+import { MUSIC_GROUPS, musicGroup, sceneName } from "@aistory/shared/media";
+import { reviewContentHash } from "../src/lib/library-review";
+import { buildAss, captionCues, episodeText, fullWidthPunct, publishableStories, type ReviewFlag, type Segment } from "../src/lib/episode";
+import { isTtsConfigured, synthesize } from "../src/lib/tts";
+
+const here = dirname(fileURLToPath(import.meta.url));
+const CLIENT_PUBLIC = resolve(here, "../../client/public");
+const STORIES_PATH = join(CLIENT_PUBLIC, "library/stories.json");
+const FLAGS_PATH = resolve(here, "../eval/review-flags.json");
+const DEFAULT_OUT = resolve(here, "../out/episodes");
+const DEFAULT_FONT = resolve(here, "assets/LXGWWenKaiTC-Regular.ttf");
+/** 每集專屬插畫（16:9，主體置中）；有就用來做封面和影片畫面，沒有才退回共用的場景插畫 */
+const EPISODE_ART = resolve(here, "../episode-art");
+const FONT_NAME = "LXGW WenKai TC";
+// App 開放給一般人之前不放連結（說明欄改成預告）；開放後設 EPISODE_APP_URL
+const APP_URL = process.env.EPISODE_APP_URL || undefined;
+/** 說明最後一行的製作單位，例如上架的頻道名稱 */
+const CREDIT = process.env.EPISODE_CREDIT;
+
+// 時間軸（秒）：開場音效 → 標題 → 段落 → 結尾音效，和 App 的節奏一樣
+const LEAD = 2.0;
+const AFTER_TITLE = 1.0;
+const GAP = 0.8;
+const TAIL = 5.0;
+const CROSSFADE = 4;
+const MUSIC_VOLUME = 0.5;
+const RATE = 44100;
+
+function parseArgs(argv: string[]) {
+  const args = {
+    only: null as string[] | null,
+    limit: 20,
+    lang: "zh" as Language,
+    audioOnly: false,
+    textOnly: false,
+    coversOnly: false,
+    dryRun: false,
+    next: false,
+    out: DEFAULT_OUT,
+    font: DEFAULT_FONT,
+  };
+  for (let i = 0; i < argv.length; i++) {
+    const a = argv[i];
+    const val = () => argv[++i] ?? "";
+    if (a === "--only") args.only = val().split(",").filter(Boolean);
+    else if (a === "--limit") args.limit = Number(val());
+    else if (a === "--lang") args.lang = z.enum(["zh", "en"]).parse(val());
+    else if (a === "--audio-only") args.audioOnly = true;
+    else if (a === "--text-only") args.textOnly = true;
+    else if (a === "--covers-only") args.coversOnly = true;
+    else if (a === "--dry-run") args.dryRun = true;
+    else if (a === "--next") args.next = true;
+    else if (a === "--out") args.out = resolve(val());
+    else if (a === "--font") args.font = resolve(val());
+    else throw new Error(`unknown option: ${a}`);
+  }
+  if (!Number.isInteger(args.limit) || args.limit < 1) throw new Error("--limit must be a positive integer");
+  return args;
+}
+
+const run = (cmd: string, args: string[]) => execFileSync(cmd, args, { stdio: ["ignore", "pipe", "pipe"] });
+const ffmpeg = (args: string[]) => run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-nostdin", "-y", ...args]);
+const duration = (file: string) =>
+  Number(run("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", file]).toString().trim());
+
+/** 同一個故事每次都從同一首開始，不同故事分散到不同首 */
+function startSong(id: string, count: number) {
+  return (createHash("sha256").update(id).digest()[0] % count) + 1;
+}
+
+/** 標題斷行：中文一字算 1、英文一字母約 0.55，每行不超過 max，英文在空白處斷 */
+function wrapTitle(title: string, max: number): string[] {
+  const width = (s: string) => [...s].reduce((n, c) => n + (/[\u2e80-\uffff]/.test(c) ? 1 : 0.55), 0);
+  const words = /[\u2e80-\uffff]/.test(title) ? [...title] : title.split(/(?<= )/);
+  const lines: string[] = [""];
+  for (const w of words) {
+    const cur = lines[lines.length - 1];
+    if (cur && width(cur + w) > max) lines.push(w.trimStart());
+    else lines[lines.length - 1] = cur + w;
+  }
+  return lines.map((l) => l.trim());
+}
+
+/** 插畫（每集專屬的，沒有就用場景插畫）裁成指定大小，下方一條米色帶子印故事名字 */
+function titledImage(src: string, out: string, w: number, h: number, title: string, font: string, size: number, max: number) {
+  let lines = wrapTitle(title, max);
+  // 太長就縮小字，最多兩行
+  while (lines.length > 2 && size > 40) {
+    size = Math.round(size * 0.85);
+    max = max / 0.85;
+    lines = wrapTitle(title, max);
+  }
+  const lineH = Math.round(size * 1.3);
+  const pad = Math.round(size * 0.55);
+  const band = lines.length * lineH + pad * 2;
+  const esc = (p: string) => p.replace(/\\/g, "/").replace(/:/g, "\\:").replace(/'/g, "\\'");
+  const texts = lines.map((line, i) => {
+    const file = `${out}.line${i}.txt`;
+    writeFileSync(file, line);
+    const y = h - band + pad + i * lineH + Math.round((lineH - size) / 2);
+    return `drawtext=fontfile='${esc(font)}':textfile='${esc(file)}':fontsize=${size}:fontcolor=0x4A2E1A:x=(w-text_w)/2:y=${y}`;
+  });
+  ffmpeg([
+    "-i", src,
+    "-vf", [`scale=${w}:${h}:force_original_aspect_ratio=increase:flags=lanczos`, `crop=${w}:${h}`, `drawbox=x=0:y=${h - band}:w=${w}:h=${band}:color=0xFBF3E0@0.9:t=fill`, ...texts].join(","),
+    "-q:v", "3", out,
+  ]);
+  lines.forEach((_, i) => rmSync(`${out}.line${i}.txt`));
+}
+
+function makeArtwork(story: LibraryStory, lang: Language, dir: string, font: string, title: string) {
+  const art = join(EPISODE_ART, `${story.id}.jpg`);
+  const ownArt = existsSync(art);
+  const scene = ownArt ? art : join(CLIENT_PUBLIC, "scenes", `${sceneName(story.setting, story.theme, story.id)}.jpg`);
+  const zh = lang === "zh";
+  // Podcast 平台要 1400×1400 以上；YouTube 自訂縮圖 1280×720、2MB 以內
+  const cover = join(dir, `${story.id}-cover.jpg`);
+  titledImage(scene, cover, 1400, 1400, title, font, zh ? 104 : 88, zh ? 11 : 22);
+  const thumb = join(dir, `${story.id}-thumb.jpg`);
+  titledImage(scene, thumb, 1280, 720, title, font, zh ? 78 : 64, zh ? 14 : 34);
+  return { scene, ownArt, cover, thumb };
+}
+
+async function renderEpisode(story: LibraryStory, lang: Language, dir: string, font: string, audioOnly: boolean) {
+  mkdirSync(dir, { recursive: true });
+  const r = renderLibraryStory(story, lang);
+  const texts = [r.title, ...r.paragraphs];
+
+  // 1. 朗讀：一段一個檔，已經有的不重做（重跑只花沒做完的錢）
+  const wavs: string[] = [];
+  for (const [i, text] of texts.entries()) {
+    const mp3 = join(dir, `tts-${String(i).padStart(2, "0")}.mp3`);
+    if (!existsSync(mp3)) writeFileSync(mp3, Buffer.from(await synthesize({ text, language: lang })));
+    const wav = mp3.replace(/\.mp3$/, ".wav");
+    ffmpeg(["-i", mp3, "-ar", String(RATE), "-ac", "1", wav]);
+    wavs.push(wav);
+  }
+
+  // 2. 人聲軌：段落之間留白，記下每段的起訖時間給字幕用
+  const silence = (sec: number) => {
+    const f = join(dir, `silence-${sec.toFixed(2)}.wav`);
+    if (!existsSync(f)) ffmpeg(["-f", "lavfi", "-i", `anullsrc=r=${RATE}:cl=mono`, "-t", String(sec), f]);
+    return f;
+  };
+  const list: string[] = [silence(LEAD)];
+  const segments: Segment[] = [];
+  let t = LEAD;
+  wavs.forEach((wav, i) => {
+    const d = duration(wav);
+    segments.push({ text: texts[i], start: t, end: t + d });
+    list.push(wav);
+    t += d;
+    if (i < wavs.length - 1) {
+      const gap = i === 0 ? AFTER_TITLE : GAP;
+      list.push(silence(gap));
+      t += gap;
+    }
+  });
+  const voiceEnd = t;
+  const total = voiceEnd + TAIL;
+  const concat = join(dir, "voice.txt");
+  writeFileSync(concat, list.map((f) => `file '${f.replace(/'/g, "'\\''")}'`).join("\n") + "\n");
+  const voice = join(dir, "voice.wav");
+  ffmpeg(["-f", "concat", "-safe", "0", "-i", concat, "-c", "copy", voice]);
+
+  // 3. 配樂：同一組歌依序接起來（交叉淡化），夠長就停
+  const group = musicGroup(story.style, story.theme, story.id);
+  const count = MUSIC_GROUPS[group];
+  const songs: string[] = [];
+  let length = 0;
+  for (let n = startSong(story.id, count); length < total + 1; n = (n % count) + 1) {
+    const song = join(CLIENT_PUBLIC, "music", `${group}-${n}.mp3`);
+    length += duration(song) - (songs.length ? CROSSFADE : 0);
+    songs.push(song);
+  }
+  const chain = songs.length === 1 ? "[0:a]anull[m0]" : songs.slice(1).map((_, i) => `${i === 0 ? "[0:a]" : `[x${i}]`}[${i + 1}:a]acrossfade=d=${CROSSFADE}${i === songs.length - 2 ? "[m0]" : `[x${i + 1}]`}`).join(";");
+  const music = join(dir, "music.wav");
+  ffmpeg([
+    ...songs.flatMap((s) => ["-i", s]),
+    "-filter_complex",
+    `${chain};[m0]atrim=0:${total.toFixed(2)},afade=t=in:st=1.2:d=2,afade=t=out:st=${(total - 4).toFixed(2)}:d=4,volume=${MUSIC_VOLUME},aresample=${RATE},aformat=channel_layouts=stereo[m]`,
+    "-map", "[m]", music,
+  ]);
+
+  // 4. 混音：念的時候音樂自動壓低（sidechain），加上開場、結尾音效，響度標準化到 Podcast 常用的 -16 LUFS
+  const audio = join(dir, `${story.id}.mp3`);
+  const endMs = Math.round(voiceEnd * 1000);
+  ffmpeg([
+    "-i", music, "-i", voice,
+    "-i", join(CLIENT_PUBLIC, "music/sfx-start.mp3"),
+    "-i", join(CLIENT_PUBLIC, "music/sfx-end.mp3"),
+    "-filter_complex",
+    [
+      `[1:a]aformat=channel_layouts=stereo,asplit=2[v][key]`,
+      `[0:a][key]sidechaincompress=threshold=0.02:ratio=6:attack=80:release=700[duck]`,
+      `[2:a]aresample=${RATE},aformat=channel_layouts=stereo,volume=0.7[s1]`,
+      `[3:a]aresample=${RATE},aformat=channel_layouts=stereo,volume=0.7,adelay=${endMs}|${endMs}[s2]`,
+      `[duck][v][s1][s2]amix=inputs=4:normalize=0:duration=first,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=${RATE}[out]`,
+    ].join(";"),
+    "-map", "[out]", "-c:a", "libmp3lame", "-b:a", "128k", audio,
+  ]);
+
+  // 5. 封面（Podcast 正方形）與 YouTube 縮圖，下方印故事名字
+  const { scene, ownArt, cover, thumb } = makeArtwork(story, lang, dir, font, r.title);
+
+  // 6. 影片：每集插畫本來就是 16:9，直接鋪滿；場景插畫則置中、兩側用模糊放大的同一張圖補滿，燒進字幕
+  let video: string | null = null;
+  if (!audioOnly) {
+    const [title, ...rest] = segments;
+    const ass = join(dir, "captions.ass");
+    writeFileSync(ass, buildAss({ text: fullWidthPunct(title.text), start: 0, end: title.end + AFTER_TITLE }, captionCues(rest, lang), FONT_NAME));
+    video = join(dir, `${story.id}.mp4`);
+    const esc = (p: string) => p.replace(/\\/g, "/").replace(/:/g, "\\:").replace(/'/g, "\\'");
+    ffmpeg([
+      "-loop", "1", "-framerate", "6", "-i", scene, "-i", audio,
+      "-filter_complex",
+      (ownArt
+        ? `[0:v]scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,`
+        : `[0:v]scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,gblur=sigma=30,eq=brightness=-0.06[bg];` +
+          `[0:v]scale=-2:1080[fg];[bg][fg]overlay=(W-w)/2:0,`) +
+        `ass='${esc(ass)}':fontsdir='${esc(dirname(font))}',format=yuv420p[v]`,
+      "-map", "[v]", "-map", "1:a",
+      // 靜態插圖 + 字幕：每秒 6 格就夠（字幕幾秒才換一次），檔案小一半
+      "-c:v", "libx264", "-preset", "medium", "-tune", "stillimage", "-crf", "26", "-g", "300", "-r", "6",
+      "-c:a", "aac", "-b:a", "160k", "-shortest", "-movflags", "+faststart", video,
+    ]);
+  }
+
+  // 中間檔很大（wav），刪掉；朗讀的 mp3 留著，重跑不用再花錢合成
+  for (const f of readdirSync(dir)) if (f.endsWith(".wav") || f === "voice.txt") rmSync(join(dir, f));
+
+  const text = episodeText(story, lang, APP_URL, CREDIT);
+  const info = { id: story.id, ...text, seconds: Math.round(duration(audio)), music: group, scene: ownArt ? `episode-art/${story.id}` : sceneName(story.setting, story.theme, story.id) };
+  writeFileSync(join(dir, "info.json"), JSON.stringify(info, null, 2) + "\n");
+  return { ...info, audio, video, cover, thumb };
+}
+
+async function main() {
+  const args = parseArgs(process.argv.slice(2));
+  const stories = z.array(LibraryStorySchema).parse(JSON.parse(readFileSync(STORIES_PATH, "utf8")));
+  const flags = (JSON.parse(readFileSync(FLAGS_PATH, "utf8")) as { stories: Record<string, ReviewFlag> }).stories;
+  const ok = publishableStories(stories, flags, reviewContentHash);
+
+  let todo: LibraryStory[];
+  if (args.coversOnly) {
+    // 只重做封面與縮圖（例如加了每集插畫），不重做音檔和影片；沒給 --only 就是輸出資料夾裡做過的全部
+    if (!existsSync(args.font)) throw new Error(`font not found: ${args.font}`);
+    const rendered = existsSync(args.out) ? readdirSync(args.out).filter((d) => existsSync(join(args.out, d, "info.json"))) : [];
+    let n = 0;
+    for (const id of args.only ?? rendered) {
+      const story = stories.find((s) => s.id === id);
+      if (!story || !rendered.includes(id)) {
+        console.log(`${id}: skipped (${story ? "not rendered yet" : "not in the library"})`);
+        continue;
+      }
+      const { ownArt } = makeArtwork(story, args.lang, join(args.out, id), args.font, renderLibraryStory(story, args.lang).title);
+      console.log(`${id}: ${ownArt ? "episode art" : "scene"}`);
+      n++;
+    }
+    console.log(`${n} covers rewritten (audio and video untouched)`);
+    return;
+  }
+  if (args.textOnly) {
+    // 只重寫標題與說明（info.json），不重做音檔和影片；沒給 --only 就是輸出資料夾裡做過的全部
+    const rendered = existsSync(args.out) ? readdirSync(args.out).filter((d) => existsSync(join(args.out, d, "info.json"))) : [];
+    const ids = args.only ?? rendered;
+    let n = 0;
+    for (const id of ids) {
+      const story = stories.find((s) => s.id === id);
+      const file = join(args.out, id, "info.json");
+      if (!story || !existsSync(file)) {
+        console.log(`${id}: skipped (${story ? "not rendered yet" : "not in the library"})`);
+        continue;
+      }
+      const info = JSON.parse(readFileSync(file, "utf8")) as Record<string, unknown>;
+      writeFileSync(file, JSON.stringify({ ...info, ...episodeText(story, args.lang, APP_URL, CREDIT) }, null, 2) + "\n");
+      n++;
+    }
+    console.log(`${n} episode texts rewritten (audio and video untouched)`);
+    todo = [];
+  } else if (args.only) {
+    const unknown = args.only.filter((id) => !ok.some((s) => s.id === id));
+    if (unknown.length) throw new Error(`not publishable (missing, not reviewed ok, changed since review, or sensitive): ${unknown.join(", ")}`);
+    todo = ok.filter((s) => args.only!.includes(s.id));
+  } else if (args.next) {
+    // 下一批：跳過輸出資料夾裡已經做過的，各類（主題分類或故事風格）輪流挑，一批裡不會都是同一種
+    const done = new Set(existsSync(args.out) ? readdirSync(args.out) : []);
+    const groups = new Map<string, LibraryStory[]>();
+    for (const s of ok.filter((s) => !done.has(s.id)).sort((a, b) => a.id.localeCompare(b.id))) {
+      const key = s.theme ? THEMES[s.theme].category : s.style;
+      groups.set(key, [...(groups.get(key) ?? []), s]);
+    }
+    // 同一分類裡，不同主題也輪流（不會連著三則「生氣」）
+    const spread = (list: LibraryStory[]) => {
+      const seen = new Map<string, number>();
+      const rank = new Map(list.map((s) => {
+        const k = s.theme ?? s.id;
+        const n = seen.get(k) ?? 0;
+        seen.set(k, n + 1);
+        return [s.id, n] as const;
+      }));
+      return [...list].sort((a, b) => rank.get(a.id)! - rank.get(b.id)! || a.id.localeCompare(b.id));
+    };
+    const queues = [...groups.entries()].sort(([a], [b]) => a.localeCompare(b)).map(([, list]) => spread(list));
+    todo = [];
+    while (todo.length < args.limit && queues.some((q) => q.length)) {
+      for (const q of queues) if (q.length && todo.length < args.limit) todo.push(q.shift()!);
+    }
+  } else {
+    // 晚安、可愛的放前面（頻道主打睡前）；同風格裡沒有主題的純故事先，主題故事穿插在後；結果固定
+    const order = ["bedtime", "cute", "adventure", "inspiring"];
+    todo = [...ok]
+      .sort(
+        (a, b) =>
+          order.indexOf(a.style) - order.indexOf(b.style) ||
+          Number(!!a.theme) - Number(!!b.theme) ||
+          a.id.localeCompare(b.id),
+      )
+      .slice(0, args.limit);
+  }
+
+  if (!args.textOnly) console.log(`${ok.length} publishable stories; rendering ${todo.length}${args.audioOnly ? " (audio only)" : ""}`);
+  const chars = todo.reduce((n, s) => {
+    const r = renderLibraryStory(s, args.lang);
+    return n + [r.title, ...r.paragraphs].join("").length;
+  }, 0);
+  if (!args.textOnly) console.log(`about ${chars} characters of speech (Azure neural TTS bills per character)`);
+  if (args.dryRun) {
+    for (const s of todo) console.log(`  ${s.id}  ${episodeText(s, args.lang, APP_URL, CREDIT).title}`);
+    return;
+  }
+  if (!args.textOnly && !isTtsConfigured()) throw new Error("AZURE_SPEECH_KEY / AZURE_SPEECH_REGION are required (use --dry-run to only list)");
+  if (!args.textOnly && !existsSync(args.font)) {
+    throw new Error(`font not found: ${args.font} (download LXGW WenKai TC, or pass --font; the cover title needs it too)`);
+  }
+
+  const done = [];
+  for (const story of todo) {
+    process.stdout.write(`${story.id} … `);
+    try {
+      const ep = await renderEpisode(story, args.lang, join(args.out, story.id), args.font, args.audioOnly);
+      done.push(ep);
+      console.log(`ok ${Math.floor(ep.seconds / 60)}:${String(ep.seconds % 60).padStart(2, "0")}`);
+    } catch (e) {
+      console.log(`failed: ${e instanceof Error ? e.message.split("\n")[0] : String(e)}`);
+      process.exitCode = 1;
+    }
+  }
+
+  // 彙整：上架時一集一集複製貼上。列出輸出資料夾裡所有做好的集數（不只這次做的），分批重跑也完整
+  mkdirSync(args.out, { recursive: true });
+  const all = readdirSync(args.out, { withFileTypes: true })
+    .filter((d) => d.isDirectory() && existsSync(join(args.out, d.name, "info.json")))
+    .map((d) => JSON.parse(readFileSync(join(args.out, d.name, "info.json"), "utf8")) as ReturnType<typeof episodeText> & { id: string; seconds: number })
+    .sort((a, b) => a.id.localeCompare(b.id));
+  const len = (sec: number) => `${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, "0")}`;
+  const md = [
+    "# 頻道節目",
+    "",
+    `產生時間：${new Date().toISOString()}。故事只經過 AI 預審，上架前每集請先聽過一次。`,
+    "YouTube 上傳時「目標觀眾」選「是，這是為兒童打造的內容」。",
+    "",
+    "| 故事 | 長度 | 檔案 |",
+    "| --- | --- | --- |",
+    ...all.map((e) => `| ${e.title} | ${len(e.seconds)} | \`${e.id}/\` |`),
+    "",
+    ...all.flatMap((e) => [`## ${e.title}`, "", "```", e.description, "```", "", `標籤：${e.tags.join("、")}`, ""]),
+  ].join("\n");
+  writeFileSync(join(args.out, "episodes.md"), md);
+  console.log(`\n${done.length}/${todo.length} rendered → ${args.out}`);
+}
+
+main().catch((e) => {
+  console.error(e instanceof Error ? e.message : e);
+  process.exitCode = 1;
+});

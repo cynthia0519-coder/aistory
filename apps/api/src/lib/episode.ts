@@ -1,0 +1,275 @@
+// 頻道節目（Podcast / YouTube）：把故事庫的故事做成音檔與影片時用到的純邏輯——
+// 選哪些故事、字幕怎麼切與對時間、ASS 字幕檔、標題與說明文字。
+// 呼叫 Azure 與 ffmpeg 的部分在 scripts/render-episodes.ts。
+import { fullWidthPunct } from "./zh-punct";
+import { ageRangeLabel, renderLibraryStory, STYLE_RULES, THEMES, type Language, type LibraryStory, type ThemeId } from "@aistory/shared";
+
+export interface ReviewFlag {
+  status: string;
+  hash: string;
+}
+
+/**
+ * 能公開的故事：AI 預審 ok、審完內容沒再改過（雜湊相同），且不是敏感主題（身體自主等要專業審閱）。
+ * 這只是 AI 預審；發布前人還是要聽過一次。
+ */
+export function publishableStories(
+  stories: LibraryStory[],
+  flags: Record<string, ReviewFlag | undefined>,
+  hashOf: (s: LibraryStory) => string,
+): LibraryStory[] {
+  return stories.filter((s) => {
+    const f = flags[s.id];
+    if (!f || f.status !== "ok" || f.hash !== hashOf(s)) return false;
+    return !(s.theme && THEMES[s.theme].sensitive);
+  });
+}
+
+export { fullWidthPunct };
+
+// ---- 字幕 ----
+
+/** 一行字幕最多幾個字；1080p、64px 的字，一行放得下約 26 個中文字 */
+export const CAPTION_MAX = 24;
+/** 英文字幕一行最多幾個字元（字母比中文字窄，約一半寬） */
+export const CAPTION_MAX_EN = 44;
+
+/** 英文：照句子切，太長再從逗號切，還是太長就在空白處折行（不切斷單字） */
+function splitCaptionsEn(text: string, max: number): string[] {
+  const sentences = text.match(/[^.!?]+[.!?]+["”’)]*|[^.!?]+$/g)?.map((s) => s.trim()).filter(Boolean) ?? [];
+  const out: string[] = [];
+  const pack = (pieces: string[]) => {
+    let line = "";
+    for (const piece of pieces) {
+      if (line && line.length + 1 + piece.length > max) {
+        out.push(line);
+        line = "";
+      }
+      line = line ? `${line} ${piece}` : piece;
+    }
+    if (line) out.push(line);
+  };
+  for (const sentence of sentences.length ? sentences : [text.trim()]) {
+    if (sentence.length <= max) out.push(sentence);
+    else pack(sentence.match(/[^,;]+[,;]?/g)!.map((p) => p.trim()).filter(Boolean).flatMap((p) => (p.length <= max ? [p] : p.split(/\s+/))));
+  }
+  return out;
+}
+
+/** 把一段切成一句一句的字幕；太長的句子再從逗號切，還是太長就硬切 */
+export function splitCaptions(text: string, max = CAPTION_MAX, language: Language = "zh"): string[] {
+  if (language === "en") return splitCaptionsEn(text, max);
+  const sentences = text.match(/[^。！？!?]+[。！？!?」』”]*/g)?.map((s) => s.trim()).filter(Boolean) ?? [];
+  const out: string[] = [];
+  for (const sentence of sentences.length ? sentences : [text.trim()]) {
+    if ([...sentence].length <= max) {
+      out.push(sentence);
+      continue;
+    }
+    // 從逗號切，盡量把短的片段併在一起
+    let line = "";
+    for (const piece of sentence.match(/[^，、；,;]+[，、；,;]?/g) ?? [sentence]) {
+      if (line && [...line].length + [...piece].length > max) {
+        out.push(line);
+        line = "";
+      }
+      line += piece;
+    }
+    if (line) out.push(line);
+  }
+  // 還是太長（沒有標點的長句）：硬切
+  return out.flatMap((l) => {
+    const chars = [...l];
+    if (chars.length <= max) return [l];
+    const parts: string[] = [];
+    for (let i = 0; i < chars.length; i += max) parts.push(chars.slice(i, i + max).join(""));
+    return parts;
+  });
+}
+
+export interface Segment {
+  text: string;
+  start: number;
+  end: number;
+}
+
+export interface Cue {
+  text: string;
+  start: number;
+  end: number;
+}
+
+/** 一段朗讀裡的字幕依字數分配時間（TTS 語速大致固定，誤差在一兩秒內） */
+export function captionCues(segments: Segment[], language: Language = "zh", max = language === "en" ? CAPTION_MAX_EN : CAPTION_MAX): Cue[] {
+  const cues: Cue[] = [];
+  for (const seg of segments) {
+    const lines = splitCaptions(language === "en" ? seg.text : fullWidthPunct(seg.text), max, language);
+    const weights = lines.map((l) => Math.max(1, [...l.replace(/[\s，。！？、；：「」『』“”,.!?;:]/g, "")].length));
+    const total = weights.reduce((a, b) => a + b, 0);
+    let t = seg.start;
+    lines.forEach((text, i) => {
+      const end = i === lines.length - 1 ? seg.end : t + ((seg.end - seg.start) * weights[i]) / total;
+      cues.push({ text, start: t, end });
+      t = end;
+    });
+  }
+  return cues;
+}
+
+const assTime = (sec: number) => {
+  const cs = Math.max(0, Math.round(sec * 100));
+  const h = Math.floor(cs / 360000);
+  const m = Math.floor((cs % 360000) / 6000);
+  const s = Math.floor((cs % 6000) / 100);
+  return `${h}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}.${String(cs % 100).padStart(2, "0")}`;
+};
+
+/** ASS 裡 {} 是特效標記、反斜線是跳脫字元 */
+const assText = (t: string) => t.replace(/\\/g, "＼").replace(/[{}]/g, (c) => (c === "{" ? "｛" : "｝"));
+
+/** 1920×1080 的字幕檔：標題在上方，故事字幕在下方半透明底框裡 */
+export function buildAss(title: Cue, cues: Cue[], font: string): string {
+  return [
+    "[Script Info]",
+    "ScriptType: v4.00+",
+    "PlayResX: 1920",
+    "PlayResY: 1080",
+    "WrapStyle: 2",
+    "",
+    "[V4+ Styles]",
+    "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding",
+    // BorderStyle 3 = 不透明底框，OutlineColour 是框的顏色（AABBGGRR，AA 越大越透明）
+    `Style: Caption,${font},64,&H00FFFFFF,&H00FFFFFF,&H5A2A3A40,&H00000000,0,0,0,0,100,100,2,0,3,18,0,2,120,120,64,1`,
+    `Style: Title,${font},88,&H00FFFFFF,&H00FFFFFF,&H5A2A3A40,&H00000000,1,0,0,0,100,100,4,0,3,24,0,8,120,120,60,1`,
+    "",
+    "[Events]",
+    "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
+    `Dialogue: 0,${assTime(title.start)},${assTime(title.end)},Title,,0,0,0,,${assText(title.text)}`,
+    ...cues.map((c) => `Dialogue: 0,${assTime(c.start)},${assTime(c.end)},Caption,,0,0,0,,${assText(c.text)}`),
+    "",
+  ].join("\n");
+}
+
+// ---- 標題與說明 ----
+
+export interface EpisodeText {
+  title: string;
+  description: string;
+  tags: string[];
+}
+
+
+/**
+ * appUrl：App 的網址；不給時說明欄只預告 App（還沒開放給一般人用之前不放連結）。
+ * credit：說明最後的製作單位（例如頻道名稱），可不給
+ */
+export function episodeText(story: LibraryStory, language: Language, appUrl?: string, credit?: string): EpisodeText {
+  if (language === "en") return episodeTextEn(story, appUrl, credit);
+  const r = renderLibraryStory(story, language);
+  const kind = story.theme ? THEMES[story.theme].label[language] : STYLE_RULES[story.style].label;
+  const ages = ageRangeLabel(story.ageBands);
+  const opening = fullWidthPunct(r.paragraphs[0] ?? "");
+  const lines = [
+    opening.length > 70 ? `${[...opening].slice(0, 70).join("")}…` : opening,
+    "",
+  ];
+  if (r.guide) {
+    lines.push("【給爸媽】聽完可以這樣聊聊：");
+    r.guide.questions.forEach((q, i) => lines.push(`${i + 1}. ${fullWidthPunct(q)}`));
+    lines.push(`今晚試試看：${fullWidthPunct(r.guide.tip)}`, "");
+  }
+  lines.push(
+    appUrl
+      ? `想讓故事的主角變成你家孩子的名字？到「照片說故事」：${appUrl}`
+      : "想讓故事的主角變成你家孩子的名字？「照片說故事」App 即將推出，追蹤頻道搶先知道。",
+    "",
+    `適合 ${ages}・${kind}`,
+    "故事由 AI 協助創作。音樂：Mureka AI 生成（商用授權）／朗讀：Microsoft Azure 神經語音／插畫：Canva AI",
+  );
+  if (credit) lines.push(credit);
+  const tags = ["睡前故事", "兒童故事", "床邊故事", "親子共讀", kind];
+  lines.push("", tags.map((t) => `#${t.replace(/\s/g, "")}`).join(" "));
+  return {
+    // 沒有主題的故事風格標籤（晚安、可愛）放進標題沒資訊量，只放主題
+    title: `${fullWidthPunct(r.title)}｜${story.theme ? `${kind}・` : ""}睡前故事｜${ages}`,
+    description: lines.join("\n"),
+    tags,
+  };
+}
+
+/** 英文頻道與 App 的品牌名 */
+const BRAND_EN = "AISTORY";
+
+const STYLE_LABEL_EN: Record<LibraryStory["style"], string> = {
+  adventure: "Adventure",
+  inspiring: "Inspiring",
+  cute: "Cute",
+  bedtime: "Goodnight",
+  fable: "Fable",
+};
+
+/**
+ * 英文標題開頭放爸媽在搜尋的那個問題（2026-10 SoundOn 數據：兩個頻道最熱門的都是「走散」這類問題型故事）。
+ * 沒列到的主題就用主題名稱。
+ */
+const THEME_HOOK_EN: Partial<Record<ThemeId, string>> = {
+  anger: "Big Angry Feelings",
+  "bedtime-routine": "Won't Go to Bed?",
+  "brushing-teeth": "Hates Brushing Teeth?",
+  bullying: "Standing Up to Bullying",
+  courage: "Scared to Try Something New?",
+  "crossing-road": "Road Safety for Kids",
+  dentist: "Scared of the Dentist?",
+  "respecting-differences": "Being Different Is OK",
+  "doctor-shots": "Scared of Shots?",
+  earthquake: "What to Do in an Earthquake",
+  "fear-of-dark": "Afraid of the Dark?",
+  "getting-lost": "If Your Child Gets Lost",
+  honesty: "Learning to Tell the Truth",
+  potty: "Potty Training?",
+  "trying-food": "Picky Eater?",
+  "screen-time": "Too Much Screen Time?",
+  "water-safety": "Water Safety for Kids",
+  "new-sibling": "New Baby in the Family?",
+  "starting-kindergarten": "Starting Kindergarten?",
+  "losing-failing": "Hates Losing?",
+  "sharing-turns": "Learning to Share",
+  "hot-things": "Hot Stove Safety",
+  handwashing: "Hates Washing Hands?",
+  "tidying-toys": "Won't Clean Up Toys?",
+};
+
+/** 標題裡只有台灣才懂的說法，換成國際通用的（故事內文不動） */
+const TITLE_TERMS_EN: [RegExp, string][] = [[/\bMRT\b/g, "Subway"]];
+
+/** 問句結尾的直接接標題，其他加冒號 */
+const hookPrefix = (hook: string) => (hook.endsWith("?") ? `${hook} ` : `${hook}: `);
+
+function episodeTextEn(story: LibraryStory, appUrl?: string, credit?: string): EpisodeText {
+  const r = renderLibraryStory(story, "en");
+  const kind = story.theme ? THEMES[story.theme].label.en : STYLE_LABEL_EN[story.style];
+  const ages = `Ages ${ageRangeLabel(story.ageBands).replace(/\s*歲$/, "")}`;
+  const opening = r.paragraphs[0] ?? "";
+  const lines = [opening.length > 160 ? `${opening.slice(0, opening.lastIndexOf(" ", 160))}…` : opening, ""];
+  if (r.guide) {
+    lines.push("For parents — things to talk about after the story:");
+    r.guide.questions.forEach((q, i) => lines.push(`${i + 1}. ${q}`));
+    lines.push(`Try tonight: ${r.guide.tip}`, "");
+  }
+  lines.push(
+    appUrl
+      ? `Want your child to be the hero of the story? Try the ${BRAND_EN} app: ${appUrl}`
+      : `Want your child to be the hero of the story? The ${BRAND_EN} app is coming soon — subscribe to hear first.`,
+    "",
+    `${ages} · ${kind}`,
+    "Story written with AI assistance. Music: Mureka AI (commercial license) / Narration: Microsoft Azure neural voice / Illustration: Canva AI",
+  );
+  if (credit) lines.push(credit);
+  const tags = [BRAND_EN, "bedtime stories", "stories for kids", "kids stories", "read aloud", kind];
+  lines.push("", tags.map((t) => `#${t.replace(/\s/g, "")}`).join(" "));
+  return {
+    title: `${story.theme ? hookPrefix(THEME_HOOK_EN[story.theme] ?? kind) : ""}${TITLE_TERMS_EN.reduce((t, [from, to]) => t.replace(from, to), r.title)} | Bedtime Story | ${ages}`,
+    description: lines.join("\n"),
+    tags,
+  };
+}
