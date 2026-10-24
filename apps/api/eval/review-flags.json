@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T03:44:38.165Z",
+  "generatedAt": "2026-10-24T03:47:11.371Z",
   "summary": {
     "stories": 365,
     "byStatus": {
@@ -15,8 +15,8 @@
     },
     "byIssueKind": {
       "repetition": 160,
-      "logic": 147,
-      "quality": 76,
+      "logic": 148,
+      "quality": 75,
       "taiwan_usage": 41,
       "safety": 34,
       "age_fit": 21,
@@ -162,7 +162,7 @@
       "water-safety-river-picnic",
       "winter-cold-snap-cozy-night"
     ],
-    "usd": 11.4379
+    "usd": 11.4308
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -617,7 +617,7 @@
       "reviewedAt": "2026-10-14T09:39:13.131Z"
     },
     "earthquake-turtle-drill": {
-      "hash": "0c6b4b2373ae2c1d",
+      "hash": "1de9b98154f79afe",
       "checks": [
         {
           "kind": "duplicate_title",
@@ -628,18 +628,18 @@
         }
       ],
       "model": "claude-opus-5-5",
-      "usd": 0.041532,
+      "usd": 0.0344016,
       "status": "ok",
-      "reviewedAt": "2026-10-24T03:44:38.138Z",
+      "reviewedAt": "2026-10-24T03:47:11.353Z",
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "quality",
+            "kind": "logic",
             "severity": "low",
-            "lang": "en",
-            "where": "7",
-            "note": "英文「Hands covered head, and fingers held the table leg」少了所有格，讀來生硬。可改成「{his} hands covered {his} head」，第2段的「Little hands covered head」也同樣處理。"
+            "lang": "zh",
+            "where": "1",
+            "note": "老師說「趴下來」，接著卻寫「小朋友一起蹲低」，動作不一致。可統一成「趴低」，或把指令改成「蹲下來」。"
           }
         ]
       }
