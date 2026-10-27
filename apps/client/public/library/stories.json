@@ -19836,11 +19836,11 @@
       }
     },
     "draft": false,
+    "publishAt": "2026-11-22T19:30:00+08:00",
     "cast": {
       "series": "mumu-jerry",
       "episode": 1
-    },
-    "publishAt": "2026-11-22T19:30:00+08:00"
+    }
   },
   {
     "id": "mumu-jerry-02-waiting-in-line",
@@ -19909,11 +19909,11 @@
       }
     },
     "draft": false,
+    "publishAt": "2026-11-29T19:30:00+08:00",
     "cast": {
       "series": "mumu-jerry",
       "episode": 2
-    },
-    "publishAt": "2026-11-29T19:30:00+08:00"
+    }
   },
   {
     "id": "mumu-jerry-03-lying-down",
@@ -19981,11 +19981,11 @@
       }
     },
     "draft": false,
+    "publishAt": "2026-12-13T19:30:00+08:00",
     "cast": {
       "series": "mumu-jerry",
       "episode": 4
-    },
-    "publishAt": "2026-12-13T19:30:00+08:00"
+    }
   },
   {
     "id": "mumu-jerry-04-reading-pictures",
@@ -20047,11 +20047,11 @@
       }
     },
     "draft": false,
+    "publishAt": "2026-12-27T19:30:00+08:00",
     "cast": {
       "series": "mumu-jerry",
       "episode": 6
-    },
-    "publishAt": "2026-12-27T19:30:00+08:00"
+    }
   },
   {
     "id": "mumu-jerry-05-present-for-brother",
@@ -20118,11 +20118,11 @@
       }
     },
     "draft": false,
+    "publishAt": "2026-12-20T19:30:00+08:00",
     "cast": {
       "series": "mumu-jerry",
       "episode": 5
-    },
-    "publishAt": "2026-12-20T19:30:00+08:00"
+    }
   },
   {
     "id": "mumu-jerry-06-rain-boots",
@@ -20186,11 +20186,11 @@
       }
     },
     "draft": false,
+    "publishAt": "2027-01-17T19:30:00+08:00",
     "cast": {
       "series": "mumu-jerry",
       "episode": 9
-    },
-    "publishAt": "2027-01-17T19:30:00+08:00"
+    }
   },
   {
     "id": "mumu-jerry-07-big-ship-trip",
@@ -20252,11 +20252,11 @@
       }
     },
     "draft": false,
+    "publishAt": "2027-01-03T19:30:00+08:00",
     "cast": {
       "series": "mumu-jerry",
       "episode": 7
-    },
-    "publishAt": "2027-01-03T19:30:00+08:00"
+    }
   },
   {
     "id": "mumu-jerry-08-big-dog-home",
@@ -20322,11 +20322,11 @@
       }
     },
     "draft": false,
+    "publishAt": "2027-01-10T19:30:00+08:00",
     "cast": {
       "series": "mumu-jerry",
       "episode": 8
-    },
-    "publishAt": "2027-01-10T19:30:00+08:00"
+    }
   },
   {
     "id": "mumu-jerry-09-bella-balloon-market",
@@ -20389,11 +20389,11 @@
       }
     },
     "draft": false,
+    "publishAt": "2026-12-06T19:30:00+08:00",
     "cast": {
       "series": "mumu-jerry",
       "episode": 3
-    },
-    "publishAt": "2026-12-06T19:30:00+08:00"
+    }
   },
   {
     "id": "mumu-jerry-10-bella-my-brother",
@@ -20455,10 +20455,11 @@
         "tip": "Tonight, take turns naming one thing each family member is great at, including the youngest or the one who talks the slowest."
       }
     },
-    "draft": true,
+    "draft": false,
     "cast": {
       "series": "mumu-jerry",
       "episode": 10
-    }
+    },
+    "publishAt": "2027-01-24T19:30:00+08:00"
   }
 ]
