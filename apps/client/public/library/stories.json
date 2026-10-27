@@ -19981,7 +19981,7 @@
     "draft": true,
     "cast": {
       "series": "mumu-jerry",
-      "episode": 3
+      "episode": 4
     }
   },
   {
@@ -20046,7 +20046,7 @@
     "draft": true,
     "cast": {
       "series": "mumu-jerry",
-      "episode": 4
+      "episode": 6
     }
   },
   {
@@ -20183,7 +20183,7 @@
     "draft": true,
     "cast": {
       "series": "mumu-jerry",
-      "episode": 6
+      "episode": 9
     }
   },
   {
@@ -20318,6 +20318,72 @@
     "cast": {
       "series": "mumu-jerry",
       "episode": 8
+    }
+  },
+  {
+    "id": "mumu-jerry-09-bella-balloon-market",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "city",
+    "title": {
+      "zh": "茜茜的氣球花攤",
+      "en": "Bella's Balloon Flower Stall"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期六早上，茜茜坐在地墊上，劈成一字馬，一邊拉筋，一邊扭氣球。吱——吱——一朵紫色的氣球花開好了。",
+        "桶子裡已經插滿了白色、粉紅色、紫色的氣球花。今天，茜茜要去市集當小老闆，賣她自己扭的花。",
+        "則則拿起彩色筆，在招牌旁邊畫了一排一排的小花，一朵接一朵，排得整整齊齊。「好！」他比了一個大拇指。沐沐抱著水壺跳來跳去：「我也要當小老闆！」",
+        "到了市集，人好多好多，一個都不認識。茜茜的肚子裡好像有一群蝴蝶在飛。",
+        "有人走過來了。茜茜小小聲地說：「要……要買花嗎？」聲音太小了，那個人沒聽見，走過去了。",
+        "茜茜好想躲到媽媽後面。媽媽蹲下來，看著她的眼睛：「你不用一下子變得很勇敢。先跟一個人說就好。」",
+        "一位奶奶牽著小弟弟走過來。小弟弟指著紫色的花，眼睛亮亮的。茜茜深深吸一口氣：「這朵是紫色的，是我一個一個扭出來的喔。」",
+        "奶奶笑了：「好漂亮，我們買一朵。」兩個銅板放進茜茜的手心，冰冰的、亮亮的。茜茜轉過頭，對媽媽比了一個大大的 YA！",
+        "下一位客人來的時候，茜茜的聲音大了一點點。再下一位，又大了一點點。她還當場扭了一隻氣球小狗，大家都拍手。",
+        "沐沐也想幫忙，她把花一朵一朵遞給客人，大聲說：「謝謝光臨！」則則站在攤子旁邊，對每個買花的人比大拇指：「很棒！」",
+        "太陽下山前，桶子裡只剩最後一朵白色的花。媽媽拿出一個銅板：「這一朵我要買，送給今天最勇敢的小老闆。」茜茜抱著花，笑得眼睛彎彎的。",
+        "晚上，三兄妹擠在一起。沐沐說：「我發現一條新規則：勇敢不用很大聲，先跟一個人說就好。」茜茜點點頭，把白色的花插在床邊。沐沐打了個呵欠：「明天，我要研究新的規則。」晚安，沐沐。晚安，則則。晚安，今天的小老闆，茜茜。"
+      ],
+      "en": [
+        "Saturday morning. Bella sat on the play mat in the splits. She stretched, and she twisted balloons. Squeak — squeak — a purple balloon flower bloomed.",
+        "Her bucket was full of white, pink and purple balloon flowers. Today Bella would be a little shop owner at the market, selling flowers she made herself.",
+        "Jerry picked up his markers and drew rows and rows of tiny flowers around the sign, one after another, neat and even. \"Okay!\" He gave a thumbs-up. Mumu bounced around with her water bottle. \"I want to be a shop owner too!\"",
+        "The market was full of people, and Bella didn't know any of them. Her tummy felt full of butterflies.",
+        "Someone walked by. Bella said in a tiny voice, \"Would... would you like a flower?\" Her voice was too small. The person didn't hear, and walked on.",
+        "Bella wanted to hide behind Mom. Mom crouched down and looked into her eyes. \"You don't have to be brave all at once. Just try talking to one person.\"",
+        "A grandma came by, holding a little boy's hand. The boy pointed at a purple flower, his eyes shining. Bella took a deep breath. \"This one is purple. I twisted it myself, one balloon at a time.\"",
+        "The grandma smiled. \"How lovely. We'll take one.\" Two coins landed in Bella's palm, cool and shiny. Bella turned around and gave Mom a big V-sign!",
+        "With the next customer, Bella's voice was a little bigger. With the next, bigger still. She even twisted a balloon dog right there, and everyone clapped.",
+        "Mumu wanted to help too. She handed out the flowers one by one and called, \"Thank you for coming!\" Jerry stood by the stall and gave every customer a thumbs-up. \"Great!\"",
+        "Before sunset, one white flower was left. Mom took out a coin. \"I'll buy this one, for today's bravest little shop owner.\" Bella hugged the flower and smiled.",
+        "That night, the three of them squeezed together. Mumu said, \"I found a new rule: being brave doesn't have to be loud. Just start with one person.\" Bella nodded and put the white flower by her bed. Mumu yawned. \"Tomorrow, I'm going to study a new rule.\" Goodnight, Mumu. Goodnight, Jerry. Goodnight, Bella, today's little shop owner."
+      ]
+    },
+    "theme": "courage",
+    "guide": {
+      "zh": {
+        "questions": [
+          "茜茜第一次說「要買花嗎？」的時候，為什麼別人沒聽見？",
+          "媽媽教茜茜什麼方法，讓她慢慢變勇敢？",
+          "如果你要跟不認識的人說話，你會先說什麼？"
+        ],
+        "tip": "下次去餐廳或商店，請孩子自己跟店員說一句話（例如「謝謝」或點一樣東西），你在旁邊陪著就好。"
+      },
+      "en": {
+        "questions": [
+          "Why didn't anyone hear Bella the first time she asked?",
+          "What did Mom suggest to help Bella feel brave, little by little?",
+          "If you had to talk to someone you didn't know, what would you say first?"
+        ],
+        "tip": "Next time you're at a shop or restaurant, let your child say one thing to the staff (a thank-you, or ordering one item) while you stand beside them."
+      }
+    },
+    "draft": true,
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 3
     }
   }
 ]

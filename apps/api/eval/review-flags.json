@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-27T13:12:46.085Z",
+  "generatedAt": "2026-10-27T14:45:22.415Z",
   "summary": {
-    "stories": 373,
+    "stories": 374,
     "byStatus": {
-      "ok": 323,
+      "ok": 324,
       "check": 49,
       "fix": 1
     },
     "byCheckKind": {
-      "length": 272,
+      "length": 274,
       "duplicate_title": 12,
       "sensitive_pattern": 9
     },
     "byIssueKind": {
       "repetition": 148,
-      "preachy": 35,
+      "preachy": 36,
       "logic": 128,
       "quality": 73,
       "taiwan_usage": 45,
@@ -126,7 +126,7 @@
       "water-safety-river-picnic",
       "windows-balcony-flower-pots"
     ],
-    "usd": 12.225
+    "usd": 12.2564
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -8465,10 +8465,6 @@
           "note": "英文 368 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0325526,
-      "status": "ok",
-      "reviewedAt": "2026-10-27T13:12:46.071Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -8480,7 +8476,11 @@
             "note": "「{name}在柵欄外也蹲得低低的，隔著柵欄，跟波波一起看向花園」及英文同句過長，可拆成兩短句；第0段「站在大象家的柵欄外看牠」也可拆短"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0325526,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T13:12:46.071Z"
     },
     "empathy-new-baby-cousin-crying": {
       "hash": "e65fe19745479a77",
@@ -10572,6 +10572,41 @@
       "usd": 0.0687006,
       "status": "ok",
       "reviewedAt": "2026-10-27T13:03:12.435Z"
+    },
+    "mumu-jerry-09-bella-balloon-market": {
+      "hash": "7c97d9db319cdfbe",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 563 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 375 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "model": "claude-opus-5-5",
+      "usd": 0.0314046,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T14:45:22.402Z",
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "preachy",
+            "severity": "low",
+            "lang": "both",
+            "where": "11",
+            "note": "沐沐的新規則幾乎照抄媽媽第5段的話「先跟一個人說就好」，可改成沐沐自己的觀察，例如「小小聲也可以，先跟一個人說」"
+          }
+        ]
+      }
     }
   }
 }
