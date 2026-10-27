@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Capacitor 從 out/ 複製過去的打包檔
+    "ios/**",
   ]),
 ]);
 

@@ -7,12 +7,24 @@
     "build": "next build",
     "start": "next start -p 3001",
     "lint": "eslint",
-    "typecheck": "next typegen && tsc --noEmit"
+    "typecheck": "next typegen && tsc --noEmit",
+    "eval": "tsx eval/story-quality.ts",
+    "eval:photo": "tsx eval/photo-cost.ts",
+    "eval:photo-quality": "tsx eval/photo-quality.ts",
+    "eval:series": "tsx eval/series-run.ts",
+    "library:generate": "tsx scripts/generate-library.ts",
+    "library:review": "tsx scripts/review-library.ts",
+    "library:guides": "tsx scripts/library-guides.ts",
+    "library:publish": "tsx scripts/publish-library.ts",
+    "test": "tsx --test test/*.test.ts",
+    "episodes:render": "tsx scripts/render-episodes.ts",
+    "reports": "tsx scripts/list-reports.ts",
+    "stats": "tsx scripts/stats.ts"
   },
   "dependencies": {
     "@aistory/shared": "*",
     "@anthropic-ai/sdk": "^0.133.0",
-    "next": "16.4.0",
+    "next": "16.4.2",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "zod": "^4.6.7"
@@ -22,7 +34,8 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.4.0",
+    "eslint-config-next": "16.4.2",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }
