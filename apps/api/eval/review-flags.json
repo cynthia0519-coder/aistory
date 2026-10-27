@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-27T12:45:49.148Z",
+  "generatedAt": "2026-10-27T12:59:17.209Z",
   "summary": {
-    "stories": 371,
+    "stories": 372,
     "byStatus": {
-      "ok": 302,
+      "ok": 303,
       "check": 68,
       "fix": 1
     },
     "byCheckKind": {
-      "length": 281,
+      "length": 282,
       "duplicate_title": 12,
       "sensitive_pattern": 9
     },
@@ -16,7 +16,7 @@
       "repetition": 161,
       "preachy": 34,
       "logic": 119,
-      "quality": 74,
+      "quality": 75,
       "taiwan_usage": 41,
       "age_fit": 21,
       "safety": 26,
@@ -120,6 +120,7 @@
       "losing-failing-relay-baton",
       "manners-sorry-tower",
       "map-in-the-message-bottle",
+      "mumu-jerry-07-big-ship-trip",
       "new-sibling-baby-photo-album",
       "new-sibling-crying-baby-concert",
       "perseverance-the-character-yong",
@@ -139,10 +140,9 @@
       "the-puddle-that-was-a-sea",
       "trying-food-bitter-melon-explorer",
       "water-safety-flooded-ditch",
-      "water-safety-river-picnic",
-      "winter-cold-snap-cozy-night"
+      "water-safety-river-picnic"
     ],
-    "usd": 12.0781
+    "usd": 12.1418
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -10545,26 +10545,26 @@
     "mumu-jerry-03-lying-down": {
       "hash": "63705d3a22770232",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0543806,
-      "status": "ok",
-      "reviewedAt": "2026-10-27T12:45:43.077Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0543806,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T12:45:43.077Z"
     },
     "mumu-jerry-04-reading-pictures": {
       "hash": "a5beb7b0c697c2d0",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0528566,
-      "status": "ok",
-      "reviewedAt": "2026-10-27T12:45:49.143Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0528566,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T12:45:49.143Z"
     },
     "mumu-jerry-05-present-for-brother": {
       "hash": "d2b35613ddc3af2a",
@@ -10634,6 +10634,34 @@
       "usd": 0.0602486,
       "status": "ok",
       "reviewedAt": "2026-10-27T12:45:14.613Z"
+    },
+    "mumu-jerry-07-big-ship-trip": {
+      "hash": "0c14f22a349b6d26",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 395 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "model": "claude-opus-5-5",
+      "usd": 0.0636846,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T12:59:17.193Z",
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "both",
+            "where": "4",
+            "note": "勵志故事但則則爬坡毫無吃力感，「一步一步，走完了每一段路」可加一句腳酸、停下喘氣再繼續"
+          }
+        ]
+      }
     }
   }
 }

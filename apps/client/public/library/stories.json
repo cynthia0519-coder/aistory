@@ -20118,5 +20118,70 @@
         "tip": "Next time the rain stops, let your child be a \"puddle detective\" and say out loud whether anyone is nearby before jumping."
       }
     }
+  },
+  {
+    "id": "mumu-jerry-07-big-ship-trip",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "sea",
+    "title": {
+      "zh": "哥哥的大船旅行",
+      "en": "My Brother's Big Ship Trip"
+    },
+    "paragraphs": {
+      "zh": [
+        "則則背上綠色小背包，要去一個很遠很遠的島。媽媽說：「我們常常去別的國家玩，這一次，要好好認識台灣。」",
+        "沐沐站在門口揮手：「哥哥，回來要講故事給我聽喔！」則則比了一個大拇指：「好！」",
+        "港口停著一艘好大好大的船。船上的樓梯又高又陡。媽媽伸出手，則則搖搖頭：「我自己來！」他握著扶手，一階、一階，一下子就爬到最上面，回頭對媽媽笑。以前他爬樓梯要慢慢來，現在，他的腳好有力。",
+        "船開了。則則扶著欄杆，張開另一隻手臂，海風呼呼地吹過來。海好藍、好平靜，好像在睡午覺。",
+        "到了島上，路彎彎的，一直往上爬坡。大人問：「要不要坐車？」則則搖搖頭：「我自己走！」他一步一步，走完了每一段路，一段也沒有少。",
+        "走著走著，草叢裡探出一個小小的頭。是梅花鹿！牠的背上有白白的點點，眼睛又大又圓。則則停下腳步，安安靜靜地看，沒有去追牠。梅花鹿看看則則，慢慢地走開了。",
+        "回家那天，天空灰灰的。大人看了天氣說：「颱風要來了，我們早一點出發。」",
+        "這次的海不睡覺了，浪一下高、一下低。則則牽著媽媽的手，坐得穩穩的。船長很厲害，趕在颱風來之前，把大家平平安安地送回了基隆港。",
+        "則則這幾天走了好多好多路，一上車就睡著了，嘴巴還微微張開。",
+        "晚上，沐沐趴在哥哥旁邊：「哥哥，你看到什麼？」則則想了想，說：「船！鹿！」又拍拍自己的腳：「我自己走！一步一步！」然後比了一個大拇指：「很棒！」",
+        "沐沐眼睛亮亮的：「我發現一條新規則：路再遠，一步一步走，也可以走完。」",
+        "「明天，我要研究新的規則。」晚安，沐沐。晚安，走了好遠好遠的則則。"
+      ],
+      "en": [
+        "Jerry put on his little green backpack. He was going to an island far, far away. Mom said, \"We often travel abroad. This time, let's really get to know Taiwan.\"",
+        "Mumu waved from the door. \"Jerry, come back and tell me the story!\" Jerry gave a thumbs-up. \"Okay!\"",
+        "At the harbor sat a great big ship with tall, steep stairs. Mom held out her hand, but Jerry shook his head. \"I can do it myself!\" He held the rail and climbed, step by step, all the way up, then turned and smiled. He used to climb stairs very slowly. Now his legs were strong.",
+        "The ship set off. Jerry held the rail with one hand and stretched out his other arm. The sea wind went whoosh. The sea was blue and calm, as if it were taking a nap.",
+        "On the island, the road curved up and up a long hill. A grown-up asked, \"Do you want to take the bus?\" Jerry shook his head. \"I'll walk by myself!\" One step at a time, he walked every part of the road. He didn't skip a single bit.",
+        "Along the way, a small head peeked out of the grass. A sika deer! It had white spots on its back and big round eyes. Jerry stopped and watched quietly. He didn't chase it. The deer looked at Jerry, then slowly walked away.",
+        "On the day they went home, the sky was gray. The grown-ups checked the weather. \"A typhoon is coming. Let's leave early.\"",
+        "This time the sea was wide awake. The waves went up and down. Jerry held Mom's hand and sat still and steady. The captain was very good. He brought everyone safely back to Keelung Harbor before the typhoon came.",
+        "Jerry had walked so very far on this trip. As soon as he got in the car, he fell fast asleep, his mouth a little open.",
+        "That night, Mumu lay down next to her brother. \"Jerry, what did you see?\" Jerry thought, then said, \"Ship! Deer!\" He patted his legs. \"I walked by myself! Step by step!\" Then he gave a thumbs-up. \"Great!\"",
+        "Mumu's eyes sparkled. \"I found a new rule: even a long, long road, you can finish it, one step at a time.\"",
+        "\"Tomorrow, I'm going to study a new rule.\" Good night, Mumu. Good night, Jerry, who walked so very far."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "則則在船上爬樓梯的時候，說了什麼？",
+          "走在島上的時候，則則看到什麼動物？他怎麼做？",
+          "你有沒有走過很遠的路？最後是怎麼走完的？"
+        ],
+        "tip": "下次出去散步，讓孩子決定一小段路「我自己走」，走完一起比個大拇指。"
+      },
+      "en": {
+        "questions": [
+          "What did Jerry say when he climbed the stairs on the ship?",
+          "What animal did Jerry see on the island? What did he do?",
+          "Have you ever walked a long way? How did you finish?"
+        ],
+        "tip": "On your next walk, let your child choose a short stretch to walk \"by myself,\" then give each other a thumbs-up at the end."
+      }
+    },
+    "draft": true,
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 7
+    }
   }
 ]
