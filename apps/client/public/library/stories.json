@@ -19835,11 +19835,12 @@
         "tip": "At snack time tonight, let your child hand out a share to each family member, then keep one for themselves."
       }
     },
-    "draft": true,
+    "draft": false,
     "cast": {
       "series": "mumu-jerry",
       "episode": 1
-    }
+    },
+    "publishAt": "2026-11-22T19:30:00+08:00"
   },
   {
     "id": "mumu-jerry-02-waiting-in-line",
@@ -19907,11 +19908,12 @@
         "tip": "Next time you wait in line and the child ahead is slow, whisper together: \"That's okay, take your time!\""
       }
     },
-    "draft": true,
+    "draft": false,
     "cast": {
       "series": "mumu-jerry",
       "episode": 2
-    }
+    },
+    "publishAt": "2026-11-29T19:30:00+08:00"
   },
   {
     "id": "mumu-jerry-03-lying-down",
@@ -19978,11 +19980,12 @@
         "tip": "Before lights out tonight, lie on the bed together and look for \"stars\" on the ceiling."
       }
     },
-    "draft": true,
+    "draft": false,
     "cast": {
       "series": "mumu-jerry",
       "episode": 4
-    }
+    },
+    "publishAt": "2026-12-13T19:30:00+08:00"
   },
   {
     "id": "mumu-jerry-04-reading-pictures",
@@ -20043,11 +20046,12 @@
         "tip": "Tonight, pick a picture book, cover the words, and let your child tell you the story from the pictures."
       }
     },
-    "draft": true,
+    "draft": false,
     "cast": {
       "series": "mumu-jerry",
       "episode": 6
-    }
+    },
+    "publishAt": "2026-12-27T19:30:00+08:00"
   },
   {
     "id": "mumu-jerry-05-present-for-brother",
@@ -20113,11 +20117,12 @@
         "tip": "Be little detectives together this week: notice what one family member loves to do and when they look tired, then make them a small card."
       }
     },
-    "draft": true,
+    "draft": false,
     "cast": {
       "series": "mumu-jerry",
       "episode": 5
-    }
+    },
+    "publishAt": "2026-12-20T19:30:00+08:00"
   },
   {
     "id": "mumu-jerry-06-rain-boots",
@@ -20180,11 +20185,12 @@
         "tip": "Next time the rain stops, let your child be a \"puddle detective\" and say out loud whether anyone is nearby before jumping."
       }
     },
-    "draft": true,
+    "draft": false,
     "cast": {
       "series": "mumu-jerry",
       "episode": 9
-    }
+    },
+    "publishAt": "2027-01-17T19:30:00+08:00"
   },
   {
     "id": "mumu-jerry-07-big-ship-trip",
@@ -20245,11 +20251,12 @@
         "tip": "On your next walk, let your child choose a short stretch to walk \"by myself,\" then give each other a thumbs-up at the end."
       }
     },
-    "draft": true,
+    "draft": false,
     "cast": {
       "series": "mumu-jerry",
       "episode": 7
-    }
+    },
+    "publishAt": "2027-01-03T19:30:00+08:00"
   },
   {
     "id": "mumu-jerry-08-big-dog-home",
@@ -20314,11 +20321,12 @@
         "tip": "Today, find one thing your child wants to do, ask them to say it in one clear sentence, then work it out together."
       }
     },
-    "draft": true,
+    "draft": false,
     "cast": {
       "series": "mumu-jerry",
       "episode": 8
-    }
+    },
+    "publishAt": "2027-01-10T19:30:00+08:00"
   },
   {
     "id": "mumu-jerry-09-bella-balloon-market",
@@ -20380,10 +20388,11 @@
         "tip": "Next time you're at a shop or restaurant, show your child how you greet the staff and ask one question, then let them try."
       }
     },
-    "draft": true,
+    "draft": false,
     "cast": {
       "series": "mumu-jerry",
       "episode": 3
-    }
+    },
+    "publishAt": "2026-12-06T19:30:00+08:00"
   }
 ]

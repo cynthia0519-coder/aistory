@@ -41,7 +41,7 @@
 
 - 試聽頁：https://claude.ai/artifact/1q3MeLfK9y7AcePcSaUhgF（9 集中英文音檔與全文）。要更新請用 Artifact `read` 再 `publish` 加 `url`。
 - 播出表在 `docs/characters.md`。媽媽回覆「都可以」之後，用 `npm run library:publish -w @aistory/api -- id@日期,...` 排程這 9 集，再交播放清單給上傳助手。
-- 還沒等到媽媽的試聽回覆前，**不要** publish 任何 `mumu-jerry-*`。
+- 媽媽已於 2026-10-27 試聽通過，9 集已用 library:publish 排程（publishAt 見 stories.json）。之後新的原創集一樣要先給她聽。
 
 ## 其他
 
