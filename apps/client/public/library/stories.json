@@ -3175,14 +3175,14 @@
         "第二場比賽開始了！小風又吹來，黃色小船晃一晃，卻沒有翻。米米的船先到，{name}的船第二，阿布第三。{name}跑去對米米說：「恭喜你！」再對阿布說：「謝謝你教我。」傍晚到了，大家牽著爺爺的手，開心地回家。"
       ],
       "en": [
-        "A little stream ran through the forest. Its clear water went splish, splash. Today Grandpa took {name} to the stream. Bo the bear cub and Mimi the bunny came too. They would race leaf boats! Grandpa sat on a big rock. \"I'll be the judge,\" he smiled.",
-        "{name} picked a big yellow leaf. {he} folded it and rolled it into a little boat. Bo made a boat from a green leaf. Mimi made one from a red leaf. Three boats sat in a row. Grandpa stood close and held everyone's hands.",
+        "A little stream ran through the forest. Its clear water went splish, splash. Today Grandpa took {name} to the stream. Benny the bear cub and Mimi the bunny came too. They would race leaf boats! Grandpa sat on a big rock. \"I'll be the judge,\" he smiled.",
+        "{name} picked a big yellow leaf. {he} folded it and rolled it into a little boat. Benny made a boat from a green leaf. Mimi made one from a red leaf. Three boats sat in a row. Grandpa stood close and held everyone's hands.",
         "\"Ready, set, go!\" called Grandpa. The three boats went into the water. They floated down the stream. {name} clapped and cheered, \"Go, go, go!\" Then a little breeze blew. The yellow boat wobbled. Plop! It tipped over.",
         "The green boat finished first. The red boat came second. {name}'s boat drifted in last. {name} pouted, and {his} eyes felt hot. \"I really wanted to win,\" {he} whispered. Grandpa patted {his} head. \"It's okay to feel sad. Let's take a big breath first.\"",
-        "{name} breathed in slowly, then out slowly. Once, twice, three times. The sad feeling got a little smaller. Bo came over. \"Your boat was so big. It was great!\" Mimi said, \"Let's look together. Why did it tip?\"",
-        "Grandpa fished out the yellow boat and gave it to {name}. {name} looked closely. The sides were too low. The bottom was crooked. \"So that's why!\" said {name}. Bo nodded. \"My boat has a flat bottom.\" He showed {name} how to fold it.",
+        "{name} breathed in slowly, then out slowly. Once, twice, three times. The sad feeling got a little smaller. Benny came over. \"Your boat was so big. It was great!\" Mimi said, \"Let's look together. Why did it tip?\"",
+        "Grandpa fished out the yellow boat and gave it to {name}. {name} looked closely. The sides were too low. The bottom was crooked. \"So that's why!\" said {name}. Benny nodded. \"My boat has a flat bottom.\" He showed {name} how to fold it.",
         "{name} picked a fresh leaf. This time {he} made the bottom flat and the sides tall. Halfway through, the leaf tore a tiny hole. {name} did not give up. {he} chose another leaf and folded slowly again. The new boat stood steady.",
-        "The second race began! A breeze blew again. The yellow boat wobbled, but it stayed up. Mimi's boat came first, {name}'s came second, and Bo's came third. {name} hugged Mimi. \"Congratulations!\" Then {he} told Bo, \"Thanks for helping me.\" As evening came, everyone held Grandpa's hands and went happily home."
+        "The second race began! A breeze blew again. The yellow boat wobbled, but it stayed up. Mimi's boat came first, {name}'s came second, and Benny's came third. {name} hugged Mimi. \"Congratulations!\" Then {he} told Benny, \"Thanks for helping me.\" As evening came, everyone held Grandpa's hands and went happily home."
       ]
     },
     "theme": "losing-failing",
@@ -15798,7 +15798,7 @@
       "zh": {
         "questions": [
           "吱吱生氣時，牠的臉和尾巴是什麼樣子？波波難過時又是什麼樣子？",
-          "{name}蹲低看花園時，發現了什麼？那讓波波想到什麼？",
+          "{name}在柵欄外蹲低、波波趴下來看花園時，發現了什麼？那讓波波想到什麼？",
           "如果你看到朋友臉皺皺的，你會怎麼做？"
         ],
         "tip": "這週玩「看臉猜心情」遊戲：輪流做出開心、難過、生氣的表情，另一個人猜，再練習問一句「你還好嗎？」。"
@@ -15806,7 +15806,7 @@
       "en": {
         "questions": [
           "How did Squeaky's face and tail look when she was angry? How did Bobo look when he was sad?",
-          "What did {name} and Bobo notice when they got down low? What did that help Bobo understand?",
+          "When {name} crouched low outside the fence and Bobo lay down, what did they notice about the garden? What did that help Bobo understand?",
           "If you saw a friend with a scrunched-up face, what would you do?"
         ],
         "tip": "This week, play a 'guess my feeling' game: take turns making happy, sad, or angry faces, have the other person guess, then practice asking, \"Are you OK?\""

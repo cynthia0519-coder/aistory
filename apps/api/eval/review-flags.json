@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T13:10:52.762Z",
+  "generatedAt": "2026-10-27T13:12:46.085Z",
   "summary": {
     "stories": 373,
     "byStatus": {
@@ -15,11 +15,11 @@
     "byIssueKind": {
       "repetition": 148,
       "preachy": 35,
-      "logic": 127,
+      "logic": 128,
       "quality": 73,
       "taiwan_usage": 45,
       "age_fit": 22,
-      "safety": 25,
+      "safety": 24,
       "zh_en_mismatch": 11,
       "guardrail": 6
     },
@@ -87,6 +87,7 @@
       "earthquake-go-bag-captain",
       "earthquake-museum-running-track",
       "earthquake-turtle-drill",
+      "empathy-elephant-and-mouse-fable",
       "fear-of-dark-frog-choir",
       "forest-mushroom-village",
       "forgiveness-the-told-secret",
@@ -99,7 +100,6 @@
       "hot-things-soup-pot-steam",
       "keeping-promises-plant-sitter",
       "losing-failing-class-election",
-      "losing-failing-leaf-boat-race",
       "losing-failing-relay-baton",
       "manners-sorry-tower",
       "map-in-the-message-bottle",
@@ -126,7 +126,7 @@
       "water-safety-river-picnic",
       "windows-balcony-flower-pots"
     ],
-    "usd": 12.233
+    "usd": 12.225
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -1707,24 +1707,31 @@
       "reviewedAt": "2026-10-27T11:35:56.431Z"
     },
     "losing-failing-leaf-boat-race": {
-      "hash": "0dbdc4cfa9a7b0a1",
+      "hash": "6608763bc92f947d",
       "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "safety",
+            "kind": "logic",
             "severity": "low",
-            "lang": "zh",
-            "where": "7",
-            "note": "「{name}跑去對米米說」在溪邊奔跑，孩子可能模仿，可改成「走過去」（英文版是擁抱，沒有跑）"
+            "lang": "both",
+            "where": "1",
+            "note": "「爺爺站在溪邊，牽著大家的手」一人難牽三個孩子，接著放船也不順，可改成「爺爺站在旁邊陪著大家」"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "3",
+            "note": "船第2段已「翻過去了」，第3段仍「慢慢漂過去」抵達終點，可補一句「翻著的船慢慢漂到終點」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0271046,
+      "usd": 0.028004599999999998,
       "status": "ok",
-      "reviewedAt": "2026-10-27T12:21:00.280Z"
+      "reviewedAt": "2026-10-27T13:12:14.571Z"
     },
     "losing-failing-go-club": {
       "hash": "78bf937dd8d8671a",
@@ -8441,7 +8448,7 @@
       "reviewedAt": "2026-10-27T12:05:37.134Z"
     },
     "empathy-elephant-and-mouse-fable": {
-      "hash": "d2532f97d361f6e4",
+      "hash": "107e9a41480474d5",
       "checks": [
         {
           "kind": "length",
@@ -8459,25 +8466,18 @@
         }
       ],
       "model": "claude-opus-5-5",
-      "usd": 0.041519,
+      "usd": 0.0325526,
       "status": "ok",
-      "reviewedAt": "2026-10-27T13:10:52.733Z",
+      "reviewedAt": "2026-10-27T13:12:46.071Z",
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "7",
-            "note": "第 2 段『番茄也滾了出來』後來沒有交代，可在第 7 段加一句波波用鼻子把番茄撿回花園"
-          },
-          {
             "kind": "age_fit",
             "severity": "low",
-            "lang": "en",
+            "lang": "both",
             "where": "4",
-            "note": "「Outside the fence, {name} crouched down low too, and they peeked…」超過 10 字，建議拆成兩句"
+            "note": "「{name}在柵欄外也蹲得低低的，隔著柵欄，跟波波一起看向花園」及英文同句過長，可拆成兩短句；第0段「站在大象家的柵欄外看牠」也可拆短"
           }
         ]
       }
