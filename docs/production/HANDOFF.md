@@ -28,7 +28,7 @@
 
 ## 目前狀態
 
-- 封面：12 / 76 張完成（見 `wave1-art-done.txt`）。
+- 封面：10 / 76 張完成（見 `wave1-art-done.txt`）。
 - 影片：見 `wave1-render-done.txt`。原創集改名「三兄妹」後要重算，所以 render-done 已移除 mumu-jerry-*。
 - 第一波 9 個在重審後變成 check 的故事：5 個修到 ok；4 個撤下排程，換成 ok 的故事，同一天播出：
   - 11/30 `anger-paper-crown`
