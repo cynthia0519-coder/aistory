@@ -1,60 +1,50 @@
 {
-  "generatedAt": "2026-10-27T13:03:12.448Z",
+  "generatedAt": "2026-10-27T13:10:52.762Z",
   "summary": {
     "stories": 373,
     "byStatus": {
-      "ok": 304,
-      "check": 68,
+      "ok": 323,
+      "check": 49,
       "fix": 1
     },
     "byCheckKind": {
-      "length": 283,
+      "length": 272,
       "duplicate_title": 12,
       "sensitive_pattern": 9
     },
     "byIssueKind": {
-      "repetition": 161,
+      "repetition": 148,
       "preachy": 35,
-      "logic": 121,
-      "quality": 75,
-      "taiwan_usage": 41,
-      "age_fit": 21,
-      "safety": 26,
-      "zh_en_mismatch": 10,
+      "logic": 127,
+      "quality": 73,
+      "taiwan_usage": 45,
+      "age_fit": 22,
+      "safety": 25,
+      "zh_en_mismatch": 11,
       "guardrail": 6
     },
     "flagged": [
       "anger-red-balloon",
-      "anger-volcano-breath",
-      "bedtime-routine-moon-checklist",
-      "bedtime-routine-pajama-parade",
       "bedtime-routine-picture-chart",
       "bullying-class-group-chat",
       "bullying-group-chat-buddy",
       "bullying-lunch-table",
-      "bullying-mean-nickname",
       "dentist-wiggly-first-tooth",
-      "dentist-wiggly-tooth",
       "earthquake-mountain-school",
       "forgiveness-river-otters-fable",
-      "getting-lost-aquarium-tunnel",
       "getting-lost-zoo-penguins",
       "good-bad-secrets-mountain-cabin",
       "good-bad-secrets-scraped-knee",
       "good-bad-secrets-thank-you-party",
       "handwashing-snack-bubbles",
-      "handwashing-soap-song-train",
       "hot-things-soup-dragon",
-      "hot-things-soup-pot-steam",
       "lighthouse-keepers-cat",
       "manners-breakfast-shop",
-      "manners-magic-words-bakery",
       "medicine-grandmas-rainbow-pillbox",
       "medicine-grandpa-pill-box",
       "medicine-gummy-bear-vitamins",
       "medicine-not-candy",
       "mid-autumn-family-barbecue-moon",
-      "moving-house-grandmas-old-street",
       "new-sibling-night-market-lights",
       "new-year-eve-wish-jar",
       "not-your-fault-brave-voice",
@@ -64,11 +54,8 @@
       "saying-no-squeeze-hug-handshake",
       "saying-no-tickle-monster",
       "screen-time-bunny-timer",
-      "screen-time-puppet-show",
       "sea-lighthouse-keeper-grandma",
       "sea-tide-pool-crab-family",
-      "sharing-turns-crayon-box",
-      "sharing-turns-swing-song",
       "sharing-turns-swing-timer",
       "strangers-family-password",
       "strangers-ice-cream-truck",
@@ -79,25 +66,21 @@
       "swimsuit-rule-teddy-check-up",
       "swimsuit-rule-water-park-poncho",
       "swimsuit-rule-whale-swimsuit",
-      "tidying-toys-missing-puzzle-piece",
-      "tidying-toys-sleepy-shelf",
       "tidying-toys-toy-bedtime",
       "tidying-toys-treasure-sorting",
       "trusted-adults-keep-telling",
-      "trying-food-night-market-tofu",
       "trying-food-stinky-tofu-sniff",
       "typhoon-after-storm-helpers",
       "typhoon-candle-free-night",
-      "typhoon-day-blanket-fort",
       "typhoon-flashlight-shadows",
-      "typhoon-swollen-river",
-      "water-safety-beach-flags",
-      "windows-balcony-flower-pots"
+      "water-safety-beach-flags"
     ],
     "spotCheck": [
       "anger-broken-model-ship",
       "anger-little-volcano",
       "anger-red-face-pillow",
+      "bedtime-routine-moon-checklist",
+      "bullying-mean-nickname",
       "bullying-school-bus-seat",
       "christmas-wish-letter",
       "dentist-loose-tooth-brave-chair",
@@ -109,10 +92,11 @@
       "forgiveness-the-told-secret",
       "getting-lost-sand-sculpture-beach",
       "halloween-friendly-ghost-costume",
+      "handwashing-soap-song-train",
       "honesty-spilled-paint-jar",
       "honesty-test-paper-signature",
       "hot-things-camping-fire-circle",
-      "hot-things-hot-pot-night",
+      "hot-things-soup-pot-steam",
       "keeping-promises-plant-sitter",
       "losing-failing-class-election",
       "losing-failing-leaf-boat-race",
@@ -121,7 +105,6 @@
       "map-in-the-message-bottle",
       "mumu-jerry-07-big-ship-trip",
       "mumu-jerry-08-big-dog-home",
-      "new-sibling-baby-photo-album",
       "new-sibling-crying-baby-concert",
       "perseverance-the-character-yong",
       "perseverance-water-drop-stone-fable",
@@ -131,18 +114,19 @@
       "puppet-masters-apprentice",
       "responsibility-garden-captain",
       "rooftop-giant-pumpkin",
+      "screen-time-puppet-show",
       "screen-time-riverside-kites",
       "sharing-turns-one-red-tricycle",
       "sockets-dry-hands-dryer",
-      "starting-kindergarten-lunchbox-note",
       "teamwork-dragon-dance-practice",
       "teamwork-the-class-play",
-      "the-puddle-that-was-a-sea",
       "trying-food-bitter-melon-explorer",
+      "typhoon-swollen-river",
       "water-safety-flooded-ditch",
-      "water-safety-river-picnic"
+      "water-safety-river-picnic",
+      "windows-balcony-flower-pots"
     ],
-    "usd": 12.2105
+    "usd": 12.233
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -6222,10 +6206,6 @@
           "note": "英文 284 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0297166,
-      "status": "check",
-      "reviewedAt": "2026-10-27T13:01:53.536Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -6258,7 +6238,11 @@
             "note": "『爸爸又倒了一杯溫開水，{name}咕嘟咕嘟喝了好幾口』對 2–4 歲太長，拆成兩句"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0297166,
+      "status": "check",
+      "reviewedAt": "2026-10-27T13:01:53.536Z"
     },
     "medicine-cough-syrup-spoon": {
       "hash": "8ccce7eef8eb1d3d",
@@ -8457,46 +8441,46 @@
       "reviewedAt": "2026-10-27T12:05:37.134Z"
     },
     "empathy-elephant-and-mouse-fable": {
-      "hash": "7e113a1c744c42c4",
+      "hash": "d2532f97d361f6e4",
       "checks": [
         {
           "kind": "length",
           "severity": "low",
           "lang": "zh",
           "where": "story",
-          "note": "中文 621 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+          "note": "中文 642 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         },
         {
           "kind": "length",
           "severity": "low",
           "lang": "en",
           "where": "story",
-          "note": "英文 352 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+          "note": "英文 368 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
+      "model": "claude-opus-5-5",
+      "usd": 0.041519,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T13:10:52.733Z",
       "llm": {
         "verdict": "ok",
         "issues": [
           {
-            "kind": "taiwan_usage",
+            "kind": "logic",
             "severity": "low",
-            "lang": "zh",
-            "where": "0",
-            "note": "「心也很大」在台灣口語常指大而化之或野心大，不是善良；建議改成「心地也很好」"
+            "lang": "both",
+            "where": "7",
+            "note": "第 2 段『番茄也滾了出來』後來沒有交代，可在第 7 段加一句波波用鼻子把番茄撿回花園"
           },
           {
             "kind": "age_fit",
             "severity": "low",
-            "lang": "zh",
-            "where": "0",
-            "note": "「今天早上，{name}和飼育員阿美姐姐一起來看牠。」約20字，偏長；可拆成兩句"
+            "lang": "en",
+            "where": "4",
+            "note": "「Outside the fence, {name} crouched down low too, and they peeked…」超過 10 字，建議拆成兩句"
           }
         ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.028136599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-10-27T12:05:46.375Z"
+      }
     },
     "empathy-new-baby-cousin-crying": {
       "hash": "e65fe19745479a77",
@@ -10558,10 +10542,6 @@
           "note": "英文 400 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0687006,
-      "status": "ok",
-      "reviewedAt": "2026-10-27T13:03:12.435Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -10587,7 +10567,11 @@
             "note": "沐沐的新規則「想要什麼，就好好說出來，大家會一起想辦法」接近道理總結。可改得更具體童趣，如「大聲說『我要叫車』，就有車」。"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0687006,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T13:03:12.435Z"
     }
   }
 }
