@@ -132,7 +132,8 @@ export function checkTokens(story: LibraryStory): ReviewCheck[] {
       add(f.lang, f.where, "主角那句用了 himself/herself，主角不能用反身代名詞", "medium");
     }
   }
-  for (const lang of ["zh", "en"] as const) {
+  // 原創系列的主角名字固定，不用 {name}
+  for (const lang of story.cast ? [] : (["zh", "en"] as const)) {
     if (!story.paragraphs[lang].some((p) => p.includes("{name}"))) {
       add(lang, "story", `${lang === "zh" ? "中文" : "英文"}故事沒有出現 {name}`, "medium");
     }

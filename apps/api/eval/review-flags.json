@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-10-27T12:31:26.727Z",
+  "generatedAt": "2026-10-27T12:45:49.148Z",
   "summary": {
-    "stories": 365,
+    "stories": 371,
     "byStatus": {
-      "ok": 296,
+      "ok": 302,
       "check": 68,
       "fix": 1
     },
     "byCheckKind": {
-      "length": 280,
+      "length": 281,
       "duplicate_title": 12,
       "sensitive_pattern": 9
     },
     "byIssueKind": {
-      "repetition": 160,
-      "preachy": 33,
-      "logic": 118,
+      "repetition": 161,
+      "preachy": 34,
+      "logic": 119,
       "quality": 74,
       "taiwan_usage": 41,
-      "age_fit": 19,
+      "age_fit": 21,
       "safety": 26,
       "zh_en_mismatch": 10,
       "guardrail": 6
@@ -139,9 +139,10 @@
       "the-puddle-that-was-a-sea",
       "trying-food-bitter-melon-explorer",
       "water-safety-flooded-ditch",
-      "water-safety-river-picnic"
+      "water-safety-river-picnic",
+      "winter-cold-snap-cozy-night"
     ],
-    "usd": 11.8279
+    "usd": 12.0781
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -9330,10 +9331,6 @@
           "note": "英文 441 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0272006,
-      "status": "ok",
-      "reviewedAt": "2026-10-27T12:31:26.716Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -9345,7 +9342,11 @@
             "note": "救生員教「大喊大人、丟救生圈」的段落和 beach-flags 的丟浮圈解法相近，可換成丟浮板或寶特瓶等不同會浮的東西"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0272006,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T12:31:26.716Z"
     },
     "crossing-road-school-crossing-guard": {
       "hash": "88da64a44b39c73e",
@@ -10516,6 +10517,123 @@
       "usd": 0.050448599999999996,
       "status": "ok",
       "reviewedAt": "2026-10-27T12:15:01.456Z"
+    },
+    "mumu-jerry-01-second-bowl": {
+      "hash": "805c76345e7296aa",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.022928599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T12:43:27.858Z"
+    },
+    "mumu-jerry-02-waiting-in-line": {
+      "hash": "8424edddd67f293f",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0273606,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T12:42:32.033Z"
+    },
+    "mumu-jerry-03-lying-down": {
+      "hash": "63705d3a22770232",
+      "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.0543806,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T12:45:43.077Z",
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      }
+    },
+    "mumu-jerry-04-reading-pictures": {
+      "hash": "a5beb7b0c697c2d0",
+      "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.0528566,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T12:45:49.143Z",
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      }
+    },
+    "mumu-jerry-05-present-for-brother": {
+      "hash": "d2b35613ddc3af2a",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "12",
+            "note": "同理心重點在第5段，沐沐卻總結成「送禮物要先認識那個人」。可改成「看臉就知道別人累了」，或在第10段讓沐沐看哥哥的臉猜他的感受"
+          },
+          {
+            "kind": "age_fit",
+            "severity": "low",
+            "lang": "zh",
+            "where": "5",
+            "note": "「等沐沐休息好了，兩個人再一起，一步一步往前走，哥哥臉上笑咪咪」整句偏長，可拆成兩三句短句"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0324526,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T12:43:45.166Z"
+    },
+    "mumu-jerry-06-rain-boots": {
+      "hash": "53d395922c61d2af",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 362 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "preachy",
+            "severity": "low",
+            "lang": "both",
+            "where": "6",
+            "note": "媽媽直接說出「踩之前要先看看旁邊有沒有人」，規則不是沐沐自己發現的；可改成沐沐看到哥哥濕褲子後自己想出來"
+          },
+          {
+            "kind": "age_fit",
+            "severity": "low",
+            "lang": "en",
+            "where": "12",
+            "note": "英文規則句 \"I found a new rule: before you jump...nearby.\" 約18字，超過4歲句長，可拆成兩句"
+          },
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "2",
+            "note": "雨後公園踩水窪的場景與 the-puddle-that-was-a-sea 相近，但情節和解法不同，可接受"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0602486,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T12:45:14.613Z"
     }
   }
 }

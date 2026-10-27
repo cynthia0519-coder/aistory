@@ -638,6 +638,8 @@ export const LibraryStoryFieldsSchema = z.object({
   draft: z.boolean(),
   /** 上架時間（選填，ISO 8601 含時區）；跟頻道節目同一刻出現，之前 App 不顯示 */
   publishAt: z.iso.datetime({ offset: true }).optional(),
+  /** 頻道原創系列（選填）：主角名字固定（例如沐沐與則則），不用 {name} 標記、不換成聽眾孩子的名字 */
+  cast: z.object({ series: z.enum(["mumu-jerry"]), episode: z.number().int().positive() }).optional(),
 });
 
 export const LibraryStorySchema = LibraryStoryFieldsSchema.refine(

@@ -19707,5 +19707,416 @@
     },
     "draft": false,
     "publishAt": "2027-12-21T19:30:00+08:00"
+  },
+  {
+    "id": "mumu-jerry-01-second-bowl",
+    "style": "cute",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "沐沐的再來一碗",
+      "en": "Mumu's Second Bowl"
+    },
+    "paragraphs": {
+      "zh": [
+        "中午到了，幼兒園飄來香香的味道。今天吃番茄炒蛋飯！沐沐的眼睛一下子亮起來。",
+        "她吃一口，好好吃！沐沐比了一個大大的大拇指。再吃一口，還是好好吃。咻——碗空了。",
+        "沐沐舉起手：「老師，我要再來一碗！」老師笑著幫她盛了半碗。",
+        "沐沐吃得好快，碗又空了。她看看大鍋子，鍋子裡只剩一點點。",
+        "「老師，我可以再……」話還沒說完，沐沐看到小樂和小芸拿著空碗，排在後面。小樂小聲問：「老師，可以換我盛了嗎？」",
+        "沐沐想：「如果我把鍋子吃光光，大家就沒有了。」咦，這是一條新規則嗎？她要好好研究一下。",
+        "她咚一聲躺到地上，研究的時候躺著最舒服。啊，不對，吃飯的時候不能躺地上。她爬起來坐好，認真地想。",
+        "想好了！沐沐拿湯匙敲敲空碗：「我不要再來一碗了，我要留給朋友！換你們！」",
+        "老師的眼睛笑彎彎。鍋子裡最後一點點，剛好分給小樂和小芸，兩個人開心地說：「謝謝沐沐！」沐沐的肚子飽飽的，心裡暖暖的，好像又吃了一碗。",
+        "放學回家，沐沐跑去找哥哥：「則則哥哥！我發現一條新規則：好吃的東西留一點給別人，自己也會開心！」",
+        "則則看著妹妹，慢慢地、大大地豎起大拇指：「很棒！」",
+        "晚上，沐沐躺在床上（這次可以躺了），小聲說：「明天，我要研究新的規則。」晚安，沐沐。"
+      ],
+      "en": [
+        "Lunchtime! A yummy smell floated through the kindergarten. Today it was tomato-and-egg rice. Mumu's eyes lit up.",
+        "One bite. Yummy! Mumu gave a big, big thumbs-up. Another bite. Still yummy. Whoosh — the bowl was empty.",
+        "Mumu put her hand up. \"Teacher, can I have another bowl?\" The teacher smiled and gave her half a bowl more.",
+        "Mumu ate fast. Her bowl was empty again. She peeked into the big pot. There was only a little bit left.",
+        "\"Teacher, can I have one more…\" Then Mumu saw Leo and Yun standing in line behind her with their empty bowls. Leo asked quietly, \"Teacher, can it be my turn now?\"",
+        "Mumu thought, \"If I eat the whole pot, nobody else gets any.\" Hmm. Was this a new rule? She had to study it.",
+        "Plop! She lay down on the floor. Lying down is the best way to study. Oh — wait. No lying on the floor at lunchtime. She sat back up and thought very hard.",
+        "Got it! Mumu tapped her empty bowl with her spoon. \"No more for me. I'm saving it for my friends. Your turn!\"",
+        "The teacher's eyes crinkled into a smile. The last little bit in the pot was just enough for Leo and Yun. \"Thank you, Mumu!\" they said. Mumu's tummy was full, and her heart felt warm, like she'd had one more bowl after all.",
+        "After school, Mumu ran to her big brother. \"Jerry! I found a new rule: when you save some yummy food for others, you feel happy too!\"",
+        "Jerry looked at his little sister and slowly gave a big thumbs-up. \"Great!\"",
+        "That night, Mumu lay in bed (this time, lying down was allowed). \"Tomorrow,\" she whispered, \"I'm going to study a new rule.\" Good night, Mumu."
+      ]
+    },
+    "theme": "sharing-turns",
+    "guide": {
+      "zh": {
+        "questions": [
+          "沐沐為什麼決定不要再來一碗了？",
+          "你吃到好吃的東西時，會想留一點給誰？",
+          "排隊等輪到你的時候，你可以怎麼說？"
+        ],
+        "tip": "今晚點心時間，請孩子幫忙分給每個家人一份，最後再留一份給自己。"
+      },
+      "en": {
+        "questions": [
+          "Why did Mumu decide not to have another bowl?",
+          "When you have something yummy, who would you save some for?",
+          "While you wait for your turn, what can you say?"
+        ],
+        "tip": "At snack time tonight, let your child hand out a share to each family member, then keep one for themselves."
+      }
+    },
+    "draft": true,
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 1
+    }
+  },
+  {
+    "id": "mumu-jerry-02-waiting-in-line",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "park",
+    "title": {
+      "zh": "排隊的規則",
+      "en": "The Rule of Waiting in Line"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期六下午，公園裡好熱鬧。沐沐一看到那座黃色的溜滑梯，就拉著哥哥跑過去：「則則哥哥，快點快點！」媽媽在後面笑著說：「我坐在長椅這邊看著你們喔！」",
+        "溜滑梯前面排了好長的隊。一個、兩個、三個……沐沐數到五就數不下去了，因為她等得好無聊。",
+        "她咚一聲躺到草地上，看著天上的雲。「排隊好慢喔。」雲也慢慢地飄，好像也在排隊。",
+        "前面有一個小小的弟弟，正在爬溜滑梯的樓梯。他握著扶手，一步，一步，一格一格慢慢往上爬。",
+        "後面的大男孩跺跺腳：「快一點啦！」",
+        "小弟弟嚇了一跳，停在樓梯中間不敢動。",
+        "則則走過去，站在樓梯下面，沒有催他。他對小弟弟笑一笑，比了一個大拇指：「好！」",
+        "小弟弟吸一口氣，又爬了一格、再一格。到了！咻——他滑下來了，笑得好開心。",
+        "沐沐一骨碌爬起來，站得直直的，對大男孩說：「我哥哥以前也是一步一步爬的喔！他每隔一個星期就去爬山，爬好多好多次，現在腳超有力！」",
+        "大男孩愣了一下，看看則則。則則已經咚咚咚爬上樓梯，咻地滑了下來。",
+        "「換我！」沐沐也咻地滑下來。大男孩也跟著滑，咻——大家都輪到了，一個都沒少。",
+        "沐沐坐在溜滑梯下面，認真地想：「我發現一條新規則：慢慢來也很好，等一等，大家都玩得到！哥哥，對不對？」",
+        "則則點點頭，比了大拇指：「很棒！」",
+        "回家的路上，太陽變成橘色。媽媽走在旁邊，哥哥牽著沐沐的手，一步，一步，走得穩穩的。",
+        "晚上，沐沐躺在床上，小聲說：「明天，我要研究新的規則。」晚安，沐沐。晚安，則則。"
+      ],
+      "en": [
+        "Saturday afternoon, the park was busy. As soon as Mumu saw the big yellow slide, she grabbed her brother's hand and ran. \"Jerry, hurry, hurry!\" Mom called after them with a smile, \"I'll be right here on the bench, watching you!\"",
+        "There was a long line. One, two, three… Mumu counted to five and gave up. Waiting was sooo boring.",
+        "Plop! She lay down on the grass and looked at the clouds. \"The line is so slow.\" The clouds drifted slowly too, as if they were waiting in line.",
+        "Up ahead, a very little boy was climbing the slide's ladder. He held the rail and went up one step, then another.",
+        "A big boy behind them stamped his foot. \"Hurry up!\"",
+        "The little boy jumped and froze in the middle of the ladder.",
+        "Jerry walked over and stood at the bottom. He didn't hurry him. He smiled at the little boy and gave a thumbs-up. \"Okay!\"",
+        "The little boy took a breath and climbed one more step, then another. He made it! Whoosh — down he slid, laughing.",
+        "Mumu jumped up, stood very straight, and told the big boy, \"My brother used to climb one step at a time too! He goes hiking every other week, again and again, and now his legs are super strong!\"",
+        "The big boy blinked and looked at Jerry. Jerry was already climbing up, step-step-step, and — whoosh! — down he came.",
+        "\"My turn!\" Mumu whooshed down too. Then the big boy. Everyone got a turn. Nobody was left out.",
+        "Mumu sat at the bottom of the slide and thought hard. \"I found a new rule: slow is good too. If we wait a little, everybody gets to play! Right, Jerry?\"",
+        "Jerry nodded and gave a thumbs-up. \"Great!\"",
+        "On the way home, the sun turned orange. Mom walked beside them, and Jerry held Mumu's hand, one steady step after another.",
+        "That night, Mumu lay in bed and whispered, \"Tomorrow, I'm going to study a new rule.\" Good night, Mumu. Good night, Jerry."
+      ]
+    },
+    "theme": "respecting-differences",
+    "guide": {
+      "zh": {
+        "questions": [
+          "小弟弟爬得很慢的時候，則則做了什麼？",
+          "大男孩催小弟弟的時候，如果是你，你會怎麼做？",
+          "沐沐說「慢慢來也很好」，你覺得為什麼？"
+        ],
+        "tip": "下次排隊時，如果前面的小朋友比較慢，跟孩子一起小聲說：「沒關係，慢慢來！」"
+      },
+      "en": {
+        "questions": [
+          "What did Jerry do when the little boy was climbing slowly?",
+          "When the big boy told the little boy to hurry, what would you do?",
+          "Mumu said \"going slowly is good too.\" Why do you think so?"
+        ],
+        "tip": "Next time you wait in line and the child ahead is slow, whisper together: \"That's okay, take your time!\""
+      }
+    },
+    "draft": true,
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 2
+    }
+  },
+  {
+    "id": "mumu-jerry-03-lying-down",
+    "style": "cute",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "躺下來的規則",
+      "en": "The Rule of Lying Down"
+    },
+    "paragraphs": {
+      "zh": [
+        "早上，幼兒園的小朋友圍成一個圈圈，老師要講故事了。地板軟軟的、暖暖的。沐沐覺得好舒服，就……咚！躺下來了。",
+        "「沐沐，聽故事要坐起來喔。」老師笑著說。沐沐坐起來，可是心裡有一個大問題：什麼地方才可以躺下來呢？",
+        "她決定好好研究。",
+        "中午睡午覺，大家都躺在小床上。「這裡可以躺！」沐沐在心裡記下第一條。",
+        "下午和媽媽一起到公園，草地綠綠的，好多人在樹下躺著休息。「草地也可以躺！」第二條。",
+        "溜滑梯旁邊有一個大水窪。嗯……水窪不行，躺下去會變成一隻小泥鴨。沐沐咯咯笑。",
+        "晚上回家，沐沐問媽媽：「海邊可以躺嗎？」「可以，在沙灘上鋪一條大毛巾。」第三條！",
+        "「那餐桌呢？」媽媽搖搖頭。「那超市呢？」媽媽笑到彎下腰。",
+        "沐沐跑去找哥哥：「則則哥哥，你最喜歡躺在哪裡？」",
+        "則則想了想，拍拍客廳的地墊。兩個人一起躺下來，看著天花板。",
+        "「哥哥，天花板上有星星嗎？」則則指著燈旁邊一個小小的亮點。",
+        "「那是星星！」沐沐說。「那也是！」兩個人指來指去，數了好多好多顆星星。",
+        "沐沐打了一個大大的呵欠：「我發現一條新規則：躺下來要選對地方。床上可以，草地可以，跟哥哥一起躺在地墊上，最可以。」",
+        "則則比了大拇指：「很棒！」",
+        "媽媽把沐沐抱上床。這一次，她躺在最對的地方。「明天，我要研究新的規則。」晚安，沐沐。"
+      ],
+      "en": [
+        "In the morning, the kindergarten kids sat in a circle for story time. The floor was soft and warm. It felt so cozy that Mumu… plop! lay right down.",
+        "\"Mumu, please sit up for story time,\" the teacher said with a smile. Mumu sat up. But she had a big question: where *is* it okay to lie down?",
+        "She decided to study it.",
+        "At nap time, everyone lay on little beds. \"You can lie down here!\" Mumu remembered. Rule number one.",
+        "In the afternoon, at the park with Mom, people were resting on the green grass under the trees. \"You can lie on grass!\" Rule number two.",
+        "Next to the slide was a big puddle. Hmm… not there. She'd turn into a little mud duck. Mumu giggled.",
+        "At home, she asked Mom, \"Can you lie down at the beach?\" \"Yes, on a big towel on the sand.\" Rule number three!",
+        "\"What about the dinner table?\" Mom shook her head. \"The supermarket?\" Mom laughed so hard she had to bend over.",
+        "Mumu ran to her brother. \"Jerry, where do you like to lie down best?\"",
+        "Jerry thought, then patted the play mat in the living room. They lay down side by side and looked up at the ceiling.",
+        "\"Jerry, are there stars on the ceiling?\" Jerry pointed at a tiny shiny spot next to the lamp.",
+        "\"That's a star!\" said Mumu. \"And that one too!\" They pointed and pointed and counted lots and lots of stars.",
+        "Mumu gave a great big yawn. \"I found a new rule: pick the right place to lie down. Beds are good. Grass is good. And lying on the mat with my brother is the best.\"",
+        "Jerry gave a thumbs-up. \"Great!\"",
+        "Mom carried Mumu to bed. This time, she was lying down in exactly the right place. \"Tomorrow, I'm going to study a new rule.\" Good night, Mumu."
+      ]
+    },
+    "draft": true,
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 3
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "沐沐發現了哪些地方可以躺下來？哪些地方不行？",
+          "你最喜歡躺在哪裡？為什麼？",
+          "沐沐和哥哥在天花板上找到了什麼？"
+        ],
+        "tip": "今晚關燈前，跟孩子一起躺在床上，找找天花板上有沒有「星星」。"
+      },
+      "en": {
+        "questions": [
+          "Where did Mumu find out you can lie down? Where can't you?",
+          "Where do you like to lie down best? Why?",
+          "What did Mumu and Jerry find on the ceiling?"
+        ],
+        "tip": "Before lights out tonight, lie on the bed together and look for \"stars\" on the ceiling."
+      }
+    }
+  },
+  {
+    "id": "mumu-jerry-04-reading-pictures",
+    "style": "bedtime",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "看圖說故事",
+      "en": "Reading the Pictures"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期天晚上，沐沐抱著一本大大的圖畫書，跑到哥哥房間：「則則哥哥，講故事給我聽！」",
+        "則則看看書。書上有好多字，彎彎的、方方的。則則還不認得這些字，沐沐也不認得。",
+        "沐沐眨眨眼睛：「那……我們看圖講！」則則笑了：「好！」",
+        "第一頁，有一隻大熊坐在樹下。「這隻熊肚子好餓。」沐沐說。則則指著樹上的蜂巢，沐沐一看就懂了：「喔！他想吃蜂蜜！」",
+        "第二頁，熊爬上樹，蜜蜂飛出來了。沐沐把手圍成一圈：「嗡嗡嗡！」則則摸著鼻子，皺起臉，假裝被叮到，兩個人笑成一團。",
+        "第三頁，熊和一隻小兔子坐在一起。「他們變成好朋友了。」沐沐說。則則指指蜂蜜罐，又指指小兔子。沐沐拍拍手：「熊把蜂蜜分給兔子吃！」則則比了大拇指。",
+        "一頁一頁翻過去，故事越來越長。有時候是沐沐講，有時候則則指一指，沐沐就懂了。",
+        "媽媽站在門口聽，笑著說：「這本書寫的，其實是大熊在找回家的路喔。」",
+        "沐沐瞪大眼睛：「那我們講錯了嗎？」媽媽搖搖頭：「你們講出了一個新的故事。」",
+        "沐沐想了想：「我發現一條新規則：看得懂圖，也是一種讀書。而且兩個人一起讀，故事會變兩倍長！」",
+        "則則比了大拇指：「很棒！」",
+        "沐沐靠在哥哥肩膀上，眼睛慢慢閉起來。最後一頁，熊和兔子也在睡覺。「明天，我要研究新的規則……」晚安，沐沐。晚安，則則。"
+      ],
+      "en": [
+        "On Sunday night, Mumu hugged a big picture book and ran into her brother's room. \"Jerry, tell me a story!\"",
+        "Jerry looked at the book. It had lots of words, curly ones and square ones. Jerry couldn't read them yet. Neither could Mumu.",
+        "Mumu blinked. \"Then… let's tell it from the pictures!\" Jerry smiled. \"Okay!\"",
+        "On the first page, a big bear sat under a tree. \"This bear is hungry,\" said Mumu. Jerry pointed at the beehive in the tree, and Mumu understood right away. \"Oh! He wants honey!\"",
+        "On the second page, the bear climbed the tree and out flew the bees. Mumu made a circle with her hands. \"Bzzz!\" Jerry rubbed his nose and scrunched up his face, pretending to be stung. They laughed and laughed.",
+        "On the third page, the bear sat with a little rabbit. \"They're friends now,\" said Mumu. Jerry pointed at the honey pot, then at the rabbit. Mumu clapped. \"The bear is sharing his honey!\" Jerry gave a thumbs-up.",
+        "Page after page, the story grew longer. Sometimes Mumu told it. Sometimes Jerry pointed, and Mumu understood.",
+        "Mom listened at the door and smiled. \"You know, this book is really about a big bear finding his way home.\"",
+        "Mumu's eyes went wide. \"Did we get it wrong?\" Mom shook her head. \"You made a brand-new story.\"",
+        "Mumu thought about it. \"I found a new rule: reading the pictures is reading too. And when two people read together, the story gets twice as long!\"",
+        "Jerry gave a thumbs-up. \"Great!\"",
+        "Mumu leaned on her brother's shoulder, and her eyes slowly closed. On the last page, the bear and the rabbit were sleeping too. \"Tomorrow, I'm going to study a new rule…\" Good night, Mumu. Good night, Jerry."
+      ]
+    },
+    "draft": true,
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 4
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "沐沐和哥哥還不認得字，他們怎麼讀那本書？",
+          "他們講的故事跟書上寫的一樣嗎？媽媽怎麼說？",
+          "你最喜歡哪一本書的圖？你會怎麼講它的故事？"
+        ],
+        "tip": "今晚挑一本圖畫書，先遮住文字，讓孩子看圖講給你聽。"
+      },
+      "en": {
+        "questions": [
+          "Mumu and Jerry can't read words yet. How did they read the book?",
+          "Was their story the same as the one in the book? What did Mom say?",
+          "Which book has your favorite pictures? How would you tell its story?"
+        ],
+        "tip": "Tonight, pick a picture book, cover the words, and let your child tell you the story from the pictures."
+      }
+    }
+  },
+  {
+    "id": "mumu-jerry-05-present-for-brother",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "送哥哥的禮物",
+      "en": "A Present for My Brother"
+    },
+    "paragraphs": {
+      "zh": [
+        "聖誕節快到了。幼兒園裡掛滿了亮亮的星星，老師說：「聖誕節，可以送禮物給你愛的人。」",
+        "沐沐第一個就想到則則哥哥。可是，哥哥喜歡什麼呢？",
+        "沐沐決定研究。她拿著放大鏡，偷偷跟在哥哥後面。",
+        "星期一，哥哥穿上登山鞋，鞋帶綁得緊緊的。沐沐記在心裡：鞋子。",
+        "星期二，哥哥背起綠色小背包，背包上有一塊台灣形狀的布章。沐沐記在心裡：台灣。",
+        "星期三，全家去河邊散步。沐沐走到一半，腿好痠，嘴巴嘟了起來。則則回頭看看妹妹的臉，停下腳步。媽媽也走過來問：「沐沐，你還好嗎？」「腳好痠……」哥哥就在路邊陪她等。等沐沐休息好了，兩個人再一起，一步一步往前走，哥哥臉上笑咪咪。",
+        "沐沐恍然大悟：「哥哥最喜歡的，是走路！」",
+        "可是，走路要怎麼包成禮物呢？沐沐想了好久好久，久到她躺到地上去了。",
+        "有了！她拿出好多張紙和蠟筆。她畫了家，畫了公園。她畫了河邊，畫了山，還畫了大海。她用一條彎彎的線把它們連起來，線旁邊畫滿小小的腳印。",
+        "聖誕節早上，沐沐把捲起來的畫交給哥哥：「這是『哥哥走路地圖』！以後我們一起走！」",
+        "則則打開畫，看了好久。他的手指沿著小腳印，一個一個慢慢走。走到最後，他抬起頭，比了一個大大的大拇指：「很棒！」",
+        "然後，他牽起妹妹的手，在客廳裡走了一圈，好像已經出發了。",
+        "「我發現一條新規則，」沐沐咯咯笑，「送禮物，要先好好認識那個人。」",
+        "晚上，那張地圖貼在哥哥的床邊。沐沐躺在床上，小聲說：「明天，我要研究新的規則。」晚安，沐沐。晚安，則則。聖誕快樂。"
+      ],
+      "en": [
+        "Christmas was coming. The kindergarten was full of shiny stars. The teacher said, \"At Christmas, you can give a present to someone you love.\"",
+        "Mumu thought of Jerry right away. But what did her brother like?",
+        "Mumu decided to study it. With her magnifying glass, she followed him on tiptoe.",
+        "On Monday, Jerry put on his hiking shoes and tied the laces tight. Mumu remembered: shoes.",
+        "On Tuesday, Jerry put on his green backpack with the little Taiwan-shaped patch. Mumu remembered: Taiwan.",
+        "On Wednesday, the family went for a walk by the river. Halfway there, Mumu's legs were tired, and her lips made a pout. Jerry looked back at his sister's face and stopped. Mom came over too. \"Mumu, are you okay?\" \"My legs are tired…\" So Jerry waited with her by the path. When Mumu had rested, they walked on together. One step, then another. Jerry was smiling all the way.",
+        "Mumu gasped. \"What Jerry loves most is walking!\"",
+        "But how do you wrap up walking as a present? Mumu thought for a long, long time — so long that she lay down on the floor.",
+        "Got it! She took out lots of paper and crayons. She drew home and the park. She drew the river, the mountains, and the sea. She joined them with one long wiggly line, with tiny footprints all along it.",
+        "On Christmas morning, Mumu gave Jerry the rolled-up drawing. \"It's Jerry's Walking Map! Let's walk it together someday!\"",
+        "Jerry opened it and looked for a long time. His finger walked along the little footprints, one by one. At the end, he looked up and gave a big thumbs-up. \"Great!\"",
+        "Then he took his sister's hand and walked her once around the living room, as if their trip had already begun.",
+        "\"I found a new rule,\" Mumu giggled. \"Before you give a present, get to know the person really well.\"",
+        "That night, the map hung beside Jerry's bed. Mumu lay in bed and whispered, \"Tomorrow, I'm going to study a new rule.\" Good night, Mumu. Good night, Jerry. Merry Christmas."
+      ]
+    },
+    "theme": "empathy",
+    "guide": {
+      "zh": {
+        "questions": [
+          "沐沐怎麼發現哥哥最喜歡什麼？",
+          "沐沐走到腿好痠的時候，哥哥怎麼知道？他做了什麼？",
+          "如果要送禮物給家人，你會先注意他的什麼？"
+        ],
+        "tip": "這幾天跟孩子一起當「小偵探」，看看一位家人喜歡做什麼、什麼時候累了，再一起畫一張小卡片送給他。"
+      },
+      "en": {
+        "questions": [
+          "How did Mumu find out what Jerry loves most?",
+          "When Mumu's legs got tired, how did Jerry know? What did he do?",
+          "If you gave a present to someone in your family, what would you notice about them first?"
+        ],
+        "tip": "Be little detectives together this week: notice what one family member loves to do and when they look tired, then make them a small card."
+      }
+    },
+    "draft": true,
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 5
+    }
+  },
+  {
+    "id": "mumu-jerry-06-rain-boots",
+    "style": "cute",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "park",
+    "title": {
+      "zh": "雨鞋的規則",
+      "en": "The Rule of Rain Boots"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期六早上，嘩啦嘩啦，下大雨了。沐沐趴在窗戶旁邊，看著雨滴在玻璃上賽跑。「媽媽，雨什麼時候停？」",
+        "等雨的時候，沐沐穿上她的黃色雨鞋，在客廳走來走去。咚、咚、咚，雨鞋好像在說：快出去，快出去。",
+        "到了中午，雨終於停了。媽媽拿著傘，帶沐沐和則則去公園。地上到處都是亮晶晶的水窪。",
+        "沐沐看到一個好大的水窪，眼睛亮了。她跑過去，用力一跳——啪！水花飛得好高好高。",
+        "水花全潑到則則身上，他的褲子濕了一大片。他低頭看看褲子，又看看妹妹。",
+        "沐沐摀住嘴巴：「對不起，哥哥！」則則想了想，比了一個大拇指：「好！」沐沐鬆了一口氣。",
+        "媽媽蹲下來說：「踩水窪很好玩。可是踩之前，要先看看旁邊有沒有人喔。」咦，這是一條新規則嗎？沐沐決定好好研究。",
+        "她拿出口袋裡的放大鏡，看看第二個水窪。旁邊有一位奶奶在散步。不行，等奶奶走過去。",
+        "第三個水窪在溜滑梯旁邊，好多小朋友在排隊。不行，水會噴到他們。",
+        "第四個水窪在大樹下，旁邊一個人也沒有。「哥哥，往後退一點！」則則退了三大步。",
+        "沐沐深呼吸，一、二、三——啪！水花噴得好高，可是一滴也沒有噴到別人。則則拍拍手，比了大拇指：「很棒！」",
+        "回家的路上，沐沐每看到一個水窪，就先左看看、右看看，再決定要不要跳。媽媽拿著傘，笑著走在旁邊。",
+        "晚上，黃色雨鞋排在門口睡覺了。沐沐躺在床上說：「我發現一條新規則：踩水窪之前，先看看旁邊有沒有人。」「明天，我要研究新的規則。」晚安，沐沐。晚安，則則。"
+      ],
+      "en": [
+        "On Saturday morning, it was pouring — splish, splash. Mumu leaned on the window and watched raindrops race down the glass. \"Mom, when will the rain stop?\"",
+        "While she waited, Mumu put on her yellow rain boots and stomped around the living room. Clomp, clomp, clomp. The boots seemed to say: let's go out, let's go out.",
+        "By lunchtime, the rain finally stopped. Mom took her umbrella and brought Mumu and Jerry to the park. Shiny puddles were everywhere.",
+        "Mumu spotted a great big puddle, and her eyes lit up. She ran over and jumped as hard as she could — SPLASH! The water flew up high.",
+        "The splash landed right on Jerry. His pants were soaked. He looked down at his pants, then at his sister.",
+        "Mumu covered her mouth. \"Sorry, Jerry!\" Jerry thought for a moment, then gave a thumbs-up. \"Okay!\" Mumu let out a big breath.",
+        "Mom crouched down. \"Jumping in puddles is fun. But before you jump, look around to see if anyone is nearby.\" Hmm. Was this a new rule? Mumu decided to study it.",
+        "She took the magnifying glass out of her pocket and looked at the second puddle. A grandma was walking right next to it. Not yet. Wait for the grandma to pass.",
+        "The third puddle was by the slide, where lots of kids were lining up. Nope. The water would splash them.",
+        "The fourth puddle was under a big tree, with nobody around. \"Jerry, step back a little!\" Jerry took three big steps back.",
+        "Mumu took a deep breath. One, two, three — SPLASH! The water flew high, but not one drop landed on anyone. Jerry clapped and gave a thumbs-up. \"Great!\"",
+        "On the way home, every time Mumu saw a puddle, she looked left, looked right, and then decided whether to jump. Mom walked beside them with her umbrella, smiling.",
+        "That night, the yellow rain boots slept side by side by the door. Mumu lay in bed and said, \"I found a new rule: before you jump in a puddle, look around to see if anyone is nearby.\" \"Tomorrow, I'm going to study a new rule.\" Good night, Mumu. Good night, Jerry."
+      ]
+    },
+    "draft": true,
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 6
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "沐沐第一次跳水窪的時候，發生了什麼事？",
+          "後來她跳之前，會先做什麼？",
+          "你喜歡下雨天做什麼？"
+        ],
+        "tip": "下次雨停後出門，讓孩子當「水窪偵探」，跳之前先說出旁邊有沒有人。"
+      },
+      "en": {
+        "questions": [
+          "What happened the first time Mumu jumped in a puddle?",
+          "What did she do before jumping after that?",
+          "What do you like to do on a rainy day?"
+        ],
+        "tip": "Next time the rain stops, let your child be a \"puddle detective\" and say out loud whether anyone is nearby before jumping."
+      }
+    }
   }
 ]

@@ -4,6 +4,7 @@ import type Anthropic from "@anthropic-ai/sdk";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import { AGE_RULES, LENGTH_RULES, STYLE_RULES, THEMES, type LibraryStory } from "@aistory/shared";
 import { CriticOutputSchema, youngestBand, type CriticOutput, type ReviewCheck } from "./library-review";
+import { castSeries } from "./cast";
 import { client, MODEL, SAFETY_RULES, STORY_CRAFT_RULES, StoryRefusedError } from "./story-engine";
 import { GUIDE_INSTRUCTIONS, SENSITIVE_THEME_GUARDRAILS, THEME_CRAFT_RULES } from "./themes";
 
@@ -88,6 +89,7 @@ export function buildCriticPrompt(
     ...story.ageBands.map((a) => `Age style for ${AGE_RULES[a].label}: ${AGE_RULES[a].style}`),
     `Story type (${story.style}): ${STYLE_RULES[story.style].prompt}`,
     `Setting: ${story.setting}`,
+    castSeries(story)?.notes ?? "",
     theme
       ? [`Theme: ${theme.label.en} (${theme.label.zh}).`, "Key messages:", ...theme.keyMessages.map((m) => `- ${m}`)].join("\n")
       : "Theme: none (an everyday story without a lesson).",

@@ -1,6 +1,7 @@
 // 頻道節目（Podcast / YouTube）：把故事庫的故事做成音檔與影片時用到的純邏輯——
 // 選哪些故事、字幕怎麼切與對時間、ASS 字幕檔、標題與說明文字。
 // 呼叫 Azure 與 ffmpeg 的部分在 scripts/render-episodes.ts。
+import { castSeries, castTitle } from "./cast";
 import { fullWidthPunct } from "./zh-punct";
 import { readFileSync } from "node:fs";
 import {
@@ -204,6 +205,8 @@ export function episodeText(story: LibraryStory, language: Language, appUrl?: st
     opening.length > 70 ? `${[...opening].slice(0, 70).join("")}…` : opening,
     "",
   ];
+  const cast = castSeries(story);
+  if (cast) lines.push(cast.intro.zh, "");
   if (r.guide) {
     lines.push("【給爸媽】聽完可以這樣聊聊：");
     r.guide.questions.forEach((q, i) => lines.push(`${i + 1}. ${fullWidthPunct(q)}`));
@@ -222,7 +225,9 @@ export function episodeText(story: LibraryStory, language: Language, appUrl?: st
   lines.push("", tags.map((t) => `#${t.replace(/\s/g, "")}`).join(" "));
   return {
     // 沒有主題的故事風格標籤（晚安、可愛）放進標題沒資訊量，只放主題
-    title: `${fullWidthPunct(r.title)}｜${story.theme ? `${kind}・` : ""}睡前故事｜${ages}`,
+    title:
+      castTitle(story, fullWidthPunct(r.title), "zh") ??
+      `${fullWidthPunct(r.title)}｜${story.theme ? `${kind}・` : ""}睡前故事｜${ages}`,
     description: lines.join("\n"),
     tags,
   };
@@ -282,6 +287,8 @@ function episodeTextEn(story: LibraryStory, appUrl?: string, credit?: string): E
   const ages = `Ages ${ageRangeLabel(story.ageBands).replace(/\s*歲$/, "")}`;
   const opening = r.paragraphs[0] ?? "";
   const lines = [opening.length > 160 ? `${opening.slice(0, opening.lastIndexOf(" ", 160))}…` : opening, ""];
+  const cast = castSeries(story);
+  if (cast) lines.push(cast.intro.en, "");
   if (r.guide) {
     lines.push("For parents — things to talk about after the story:");
     r.guide.questions.forEach((q, i) => lines.push(`${i + 1}. ${q}`));
@@ -299,7 +306,9 @@ function episodeTextEn(story: LibraryStory, appUrl?: string, credit?: string): E
   const tags = [BRAND_EN, "bedtime stories", "stories for kids", "kids stories", "read aloud", kind];
   lines.push("", tags.map((t) => `#${t.replace(/\s/g, "")}`).join(" "));
   return {
-    title: `${story.theme ? hookPrefix(THEME_HOOK_EN[story.theme] ?? kind) : ""}${TITLE_TERMS_EN.reduce((t, [from, to]) => t.replace(from, to), r.title)} | Bedtime Story | ${ages}`,
+    title:
+      castTitle(story, r.title, "en") ??
+      `${story.theme ? hookPrefix(THEME_HOOK_EN[story.theme] ?? kind) : ""}${TITLE_TERMS_EN.reduce((t, [from, to]) => t.replace(from, to), r.title)} | Bedtime Story | ${ages}`,
     description: lines.join("\n"),
     tags,
   };
