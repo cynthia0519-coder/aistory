@@ -4522,7 +4522,7 @@
       "zh": [
         "嘩啦啦，洗澡真好玩。{name}洗好澡了。水珠滴答，滴答，滴答。媽媽拿出吹風機。「要呼呼囉！」{name}開心地拍拍手。",
         "{name}拿起插頭。「我來插！像媽媽一樣！」媽媽說：「等一等喔。」「看看你的小手。」{name}低頭看一看。哎呀，濕濕的！還有水珠呢。",
-        "媽媽說：「濕濕的手，」「和插頭不見面。」「插頭不喜歡水喔。」{name}點點頭。{he}把插頭放回桌上。輕輕的，慢慢的。「插頭，先休息一下。」",
+        "媽媽說：「插頭是大人來插的。」「手濕濕的不可以，手乾乾的也一樣。」「而且插頭不喜歡水喔。」{name}點點頭。{he}把插頭放回桌上。輕輕的，慢慢的。「插頭，先休息一下。」",
         "牆上有個插座。小洞洞，排排站。像兩隻小眼睛。{name}說：「它在看我！」媽媽笑咪咪。「插座是大人的工作。」「手指不進去，」「筷子也不進去。」",
         "「那我做什麼呢？」媽媽遞來大毛巾。「你是毛巾小幫手！」擦擦手心，擦擦手背。擦擦小手指。擦呀擦，擦呀擦。乾乾的，好舒服！",
         "媽媽拿起電線。「我們一起看一看。」電線長長的，滑滑的。沒有破洞，沒有裂開。「如果破破的，」「或冒出小火花，」「我們就退後，叫大人。」{name}退一小步：「叫媽媽！」",
@@ -4532,7 +4532,7 @@
       "en": [
         "Splish, splash! Bath time is fun. Now {name} is all done. Drip, drop, drip go the water drops. Mom takes out the hair dryer. \"Whoosh time!\" {name} claps and claps.",
         "{name} grabs the plug. \"I can do it! Just like Mom!\" Mom says, \"Wait a moment.\" \"Look at your hands.\" {name} looks. Oops! Still wet and drippy!",
-        "\"Wet hands and plugs never meet,\" says Mom. \"Plugs do not like water.\" {name} nods. Then {he} sets the plug on the table. Slow and gentle. \"Rest, little plug.\"",
+        "\"Plugs are a grown-up job,\" says Mom. \"Not with wet hands, and not with dry hands either. And plugs do not like water.\" {name} nods. Then {he} sets the plug on the table. Slow and gentle. \"Rest, little plug.\"",
         "There is a socket on the wall. Two tiny holes in a row. \"It looks like eyes!\" says {name}. Mom giggles. \"Sockets are a grown-up job.\" \"No fingers inside. No sticks inside.\"",
         "\"Then what can I do?\" Mom gives {him} a big towel. \"You can be the towel helper!\" Rub the palms. Rub the backs. Rub each tiny finger. Rub, rub, rub! All dry!",
         "Mom picks up the cord. \"Let's check it together.\" It is long and smooth. No cracks, no holes. \"If it looks broken, or sparks, we step back.\" \"We tell a grown-up.\" {name} steps back. \"Tell Mom!\"",
@@ -9264,8 +9264,8 @@
         "小鳥往前飛了一小段。{name}輕輕跟過去。咦，茶樹上綁著一條黃絲帶！絲帶上掛著一張小紙條。紙條上畫著一顆蛋，還有一個箭頭。箭頭指向山坡上面。「這是線索耶！」{name}小聲地說。",
         "這時，小米也躲到旁邊來了。「{name}，你在看什麼？」{name}把紙條拿給小米看。「我們一起找下一個線索吧！」兩個人手牽手，跟著小鳥慢慢往上走。阿嬤在不遠的地方，笑咪咪地向他們揮手。",
         "阿傑數完了，到處找人。「找到你們了！」他從茶樹後面探出頭。{name}說：「噓，我們在跟小鳥找線索。」阿傑眼睛一亮：「我也要去！」小鳥又飛起來，停在一個小竹籃旁邊。竹籃裡有第二張紙條，上面畫著一座小山。",
-        "「小山上面是哪裡呢？」小米問。{name}抬頭看，看見高高的山頂。「是山頂！」三個人一起往上爬。小路有一點陡，大家走得很小心。風吹過來，茶葉香香的。小鳥在前面「啾啾」叫，好像在幫大家加油。",
-        "終於到山頂了！大樹下鋪著一塊花布。阿嬤已經坐在那裡，笑著等大家。原來阿嬤走另一條小路，先上來了。花布上有一個竹籃，裝滿茶葉蛋。蛋殼上有咖啡色的花紋，像一張小地圖。「哇！是驚喜野餐！」大家開心地叫。",
+        "「小山上面是哪裡呢？」小米問。{name}抬頭看，看見高高的山頂。「是山頂！」三個人一起往上爬，阿嬤背著竹簍，就跟在大家後面。小路有一點陡，大家走得很小心。風吹過來，茶葉香香的。小鳥在前面「啾啾」叫，好像在幫大家加油。",
+        "終於到山頂了！阿嬤也跟著走上來。大樹下早就放著一個竹籃，原來是阿嬤早上先準備好的。阿嬤鋪開一塊花布，竹籃裡裝滿茶葉蛋。蛋殼上有咖啡色的花紋，像一張小地圖。「哇！是驚喜野餐！」大家開心地叫。",
         "阿嬤說：「線索是我留的，小鳥是來湊熱鬧的。」{name}剝開一顆茶葉蛋，香味飄出來。{name}先把蛋遞給阿嬤，再拿給阿傑和小米。大家一起吃蛋、喝茶，看山下的茶園。小鳥停在樹枝上，「啾啾」唱歌。{name}輕輕對牠說：「謝謝你帶路！」"
       ],
       "en": [
@@ -9274,8 +9274,8 @@
         "The bird hops and flies a little way. {name} tiptoes after it. Look! A yellow ribbon is tied to a bush. A tiny note hangs from the ribbon. It shows a drawing of an egg and an arrow. The arrow points up the hill. \"It's a clue!\" {name} whispers.",
         "Mimi slips into the same row to hide. \"{name}, what are you looking at?\" {name} shows Mimi the little note. \"Let's find the next clue together!\" Hand in hand, they follow the bird slowly uphill. Not far away, Grandma smiles and waves.",
         "Jay finishes counting and starts searching. \"Found you!\" he says, peeking around a bush. \"Shh,\" says {name}. \"We're following a bird's clues.\" Jay's eyes light up. \"Can I come too?\" The bird lands beside a small bamboo basket. Inside is a second note. It shows a little mountain.",
-        "\"What's on top of the mountain?\" asks Mimi. {name} looks up at the high hilltop. \"The very top!\" The three cousins climb together. The path is a bit steep, so they step carefully. The breeze smells sweet like tea. Ahead, the bird tweets as if cheering them on.",
-        "At last, they reach the top! A flowered cloth lies under a big tree. Grandma is already sitting there, smiling. She took a shorter path to get there first. On the cloth sits a basket full of tea eggs. Their shells have brown lines like tiny maps. \"A surprise picnic!\" everyone cheers.",
+        "\"What's on top of the mountain?\" asks Mimi. {name} looks up at the high hilltop. \"The very top!\" The three cousins climb together, with Grandma and her basket right behind them. The path is a bit steep, so they step carefully. The breeze smells sweet like tea. Ahead, the bird tweets as if cheering them on.",
+        "At last, they reach the top! Grandma comes up right behind them. Under a big tree sits a basket she left there earlier that morning. Grandma spreads out a flowered cloth. The basket is full of tea eggs. Their shells have brown lines like tiny maps. \"A surprise picnic!\" everyone cheers.",
         "\"I left the clues,\" Grandma laughs. \"The bird just joined the fun.\" {name} peels a tea egg, and a warm smell drifts out. {name} gives the first egg to Grandma, then shares with Jay and Mimi. They eat, sip tea, and gaze at the garden below. The bird sings from a branch. \"Thank you for leading the way,\" {name} says softly."
       ]
     },
@@ -14430,8 +14430,8 @@
         "走到大石頭旁邊，{name}停下腳步。「爸爸，你看！」一隻大海龜趴在沙上休息。牠的殼圓圓的，像一頂綠色的帽子。海龜旁邊，有一堆塑膠袋。風一吹，袋子沙沙地響。{name}好想跑過去，爸爸輕輕牽住{his}手。",
         "這時，穿著制服的林阿姨走過來。她是照顧這片海邊的保育員。「我們站遠一點看，海龜才會安心。」林阿姨小聲說。{name}和爸爸往後退了幾步。海龜慢慢眨眨眼睛，好像在說謝謝。",
         "「為什麼塑膠袋在牠旁邊？」{name}問。林阿姨指著大海說：「袋子漂在水裡，很像水母。海龜愛吃水母，有時會認錯。」{name}睜大了眼睛。「那我們把袋子撿走，海龜就不會認錯了！」",
-        "林阿姨給{name}一支長長的夾子。{name}一個一個夾起塑膠袋。爸爸撐開袋口，幫忙接住。旁邊還有一條舊漁網。還有三個瓶子和一隻破拖鞋。{name}夾呀夾，額頭冒出小汗珠。不知不覺，大袋子變得鼓鼓的。",
-        "「哇，整袋都滿了！」爸爸說。沙灘又變得乾乾淨淨。海龜動了動前腳，慢慢往前爬。牠滑過濕濕的沙子，游進藍藍的海裡。{name}輕輕揮手：「再見，海龜！」海龜的頭冒出水面一下，又不見了。",
+        "林阿姨說：「我們先等海龜休息夠，回到海裡，再來撿。」大家安安靜靜地等。過了一會兒，海龜動了動前腳，慢慢爬過濕濕的沙子，游進藍藍的海裡。林阿姨這才陪著{name}走過去，給{name}一支長長的夾子。{name}一個一個夾起塑膠袋，爸爸撐開袋口接住。還有一條舊漁網、三個瓶子和一隻破拖鞋。",
+        "{name}夾呀夾，額頭冒出小汗珠。「哇，整袋都滿了！」爸爸說。沙灘又變得乾乾淨淨。遠遠的海面上，海龜的頭冒出水面一下，又不見了。{name}輕輕揮手：「再見，海龜！」",
         "回家前，{name}把袋子交給林阿姨。林阿姨把垃圾分好，放進回收桶。「謝謝你，小保育員。」她笑著說。{name}拿出自己的水壺，喝了一口水。海水閃閃發亮，好美好美。「我們下次再來好嗎？」{name}問。爸爸握握{his}手：「好啊！」"
       ],
       "en": [
@@ -14440,8 +14440,8 @@
         "Near a big rock, {name} stopped. \"Dad, look!\" A large sea turtle was resting on the sand. Its shell was round, like a green hat. Beside it lay a pile of plastic bags. They rustled in the wind. {name} wanted to run closer. Dad gently held {his} hand.",
         "A ranger in a uniform walked over. Her name was Ranger Lin. She looked after this beach. \"Let's watch from back here,\" she whispered. \"Then the turtle feels safe.\" {name} and Dad took a few steps back. The turtle blinked slowly, as if to say thank you.",
         "\"Why are bags next to the turtle?\" asked {name}. Ranger Lin pointed at the sea. \"Bags floating in water look like jellyfish. Turtles love jellyfish. Sometimes they get mixed up.\" {name} opened {his} eyes wide. \"Then let's take the bags away!\"",
-        "Ranger Lin gave {name} a long grabber. {name} picked up the bags, one by one. Dad held the big bag open. There was an old fishing net, too. There were three bottles and one torn flip-flop. {name} worked hard. Soon the big bag was round and full.",
-        "\"Wow, the whole bag is full!\" said Dad. The sand looked clean again. The turtle moved its front flippers. It crawled forward slowly. Then it slid over the wet sand into the clean blue sea. \"Bye, turtle!\" {name} waved. Its head popped up once, then it was gone.",
+        "\"Let's wait until the turtle has rested and gone back to the sea,\" said Ranger Lin. Everyone waited quietly. After a while, the turtle moved its front flippers, crawled over the wet sand, and slid into the blue sea. Only then did Ranger Lin walk over with {name} and hand {him} a long grabber. {name} picked up the bags one by one while Dad held the big bag open. There was an old fishing net, three bottles, and one torn flip-flop.",
+        "{name} worked hard, and little drops of sweat appeared. \"Wow, the whole bag is full!\" said Dad. The sand looked clean again. Far out on the water, the turtle's head popped up once, then it was gone. \"Bye, turtle!\" {name} waved.",
         "Before going home, {name} gave the bag to Ranger Lin. She sorted the trash into the right bins. \"Thank you, little ranger,\" she said with a smile. {name} took a sip from {his} own water bottle. The sea sparkled, bright and beautiful. \"Can we come back soon?\" {name} asked. Dad squeezed {his} hand. \"Yes, we can!\""
       ]
     },
@@ -17242,8 +17242,8 @@
         "早上的海邊好安靜，海水退得遠遠的，露出一條長長的沙洲。{name}提著小水桶，跟爸爸一起走上濕濕軟軟的沙子。爸爸拿出手機看了看：「潮水十點半會回來。海水回來的速度，比看起來快很多喔。」{name}點點頭，把這個時間牢牢記在心裡。",
         "沙洲上到處都是寶藏。{name}撿到一顆小小的螺旋貝殼，還看見一隻寄居蟹背著家慢慢爬過。遠處有一艘漁船經過，船上的叔叔阿姨都穿著橘色救生衣。爸爸說：「只要坐船，或是到比較深的海裡，救生衣一定要穿好。」{name}覺得那些亮橘色，好像一顆顆小太陽。",
         "走著走著，{name}發現遠方有一個好大的白色貝殼，在陽光下閃閃發亮。可是那裡的海水顏色比較深。「爸爸，我可以過去拿嗎？」爸爸蹲下來，溫柔地說：「我們只待在腳踩得到底、爸爸就在旁邊的地方。」{name}望著那個貝殼，心裡好捨不得。",
-        "爸爸又看了一次手機，已經十點二十分了。這時候，沙洲上的小水溝開始慢慢裝滿海水，涼涼的水悄悄繞過{name}的腳踝。{name}深吸一口氣，轉身牽起爸爸的手：「我們回去吧！」兩個人一起踩著淺淺的水，穩穩地走回乾乾的沙灘。",
-        "他們坐在沙灘上回頭看。一道道小浪捲過來，沙洲越變越窄，最後整個不見了，連那個大貝殼也被藏到海浪底下。{name}睜大眼睛：「才一下下耶！」爸爸笑著說：「對呀，所以我們看好時間，早一點回來。」{name}覺得心裡暖暖的。",
+        "這時候，{name}看見沙洲上的小水溝，開始慢慢裝滿海水。水變多了！{name}想起爸爸說的話，馬上轉身牽起爸爸的手：「爸爸，水變多了，我們回去吧！」兩個人一起踩著淺淺的水，穩穩地走回乾乾的沙灘。",
+        "他們坐在沙灘上回頭看。一道道小浪捲過來，沙洲越變越窄，最後整個不見了，連那個大貝殼也被藏到海浪底下。{name}睜大眼睛：「才一下下耶！」爸爸笑著說：「對呀，所以一看到水開始變多，就要馬上往回走。」{name}鬆了一口氣，還好他們早早就回來了。",
         "救生站旁，救生員林叔叔正在跟幾個小朋友玩遊戲。他在沙灘上放了一個紅色三角錐，假裝是水裡需要幫忙的朋友。「如果朋友在水裡有危險，要怎麼辦？」有人喊：「跳下去救他！」林叔叔搖搖頭：「不跳下去。先大聲叫大人，再丟會浮的東西給他。」",
         "輪到{name}了。{name}先大喊：「救命！快來大人！」然後用力丟出救生圈，可是繩子纏在一起，救生圈掉在半路上。{name}咬咬嘴唇，把繩子一圈一圈理好，抓緊尾端，手臂低低地往前一甩。救生圈飛了出去，剛好落在三角錐旁邊！",
         "小朋友們都拍起手來。林叔叔對{name}比了一個大拇指，爸爸也笑得好開心。回家的路上，{name}把小螺旋貝殼放在耳邊聽海的聲音，說：「下次退潮，我們再一起看手機上的時間，好不好？」爸爸用力點頭：「一言為定！」"
@@ -17252,8 +17252,8 @@
         "The beach was quiet that morning. The sea had pulled far back, leaving a long sandbar shining in the sun. {name} carried a little bucket and walked out with Dad. Dad checked his phone. \"The tide comes back at ten thirty. The sea returns faster than it looks.\" {name} nodded and remembered the time.",
         "The sandbar was full of treasures. {name} found a tiny spiral shell and watched a hermit crab carry its home across the sand. Far away, a fishing boat chugged past. Everyone on board wore an orange life jacket. \"On a boat or in deep water, life jackets go on every time,\" Dad said.",
         "Then {name} spotted a big white shell glittering much farther out, where the water turned dark blue. \"Dad, can I go get it?\" Dad knelt down. \"We stay where our feet can touch the bottom, and where I'm right beside you.\" {name} looked at the shell for a long moment. It was hard to leave it.",
-        "Dad checked his phone again. Ten twenty. Little channels across the sandbar were filling up, and cool water curled around {name}'s ankles. {name} took a deep breath and reached for Dad's hand. \"Let's go back!\" Together they splashed through the shallow water, step by steady step, all the way to the dry beach.",
-        "They sat on the warm sand and looked back. Small waves rolled in, and the sandbar grew thinner and thinner until it vanished, big shell and all. \"That was so fast!\" said {name}. Dad smiled. \"That's why we watched the time and came back early.\" {name} felt warm inside.",
+        "Just then, {name} noticed the little channels across the sandbar slowly filling with seawater. The water was rising! Remembering Dad's words, {name} turned right away and took Dad's hand. \"Dad, the water's coming in. Let's go back!\" Together they walked through the shallow water, step by steady step, all the way to the dry beach.",
+        "They sat on the warm sand and looked back. Small waves rolled in, and the sandbar grew thinner and thinner until it vanished, big shell and all. \"That was so fast!\" said {name}. Dad smiled. \"That's why we head back the moment the water starts to rise.\" {name} let out a big breath, glad they had come back in time.",
         "By the lifeguard station, a lifeguard named Mr. Lin was playing a game with some kids. A red cone on the sand stood for a friend who needed help in the water. \"What do you do if a friend is in trouble?\" One kid shouted, \"Jump in!\" Mr. Lin shook his head. \"Don't jump in. Shout for a grown-up, then throw something that floats.\"",
         "Then it was {name}'s turn. First came a loud shout: \"Help! Grown-up, come quick!\" Then {name} threw the ring, but the rope tangled and the ring flopped down halfway. {name} took a breath, coiled the rope neatly, held the end tight, and swung low. Whoosh! The ring landed right beside the cone.",
         "All the kids clapped. Mr. Lin gave {name} a big thumbs-up, and Dad grinned. On the walk home, {name} held the spiral shell up to listen to the sea. \"Next low tide, can we check the time on your phone together again?\" Dad nodded. \"It's a deal!\""
@@ -17263,7 +17263,7 @@
     "guide": {
       "zh": {
         "questions": [
-          "{name}看到遠方的大貝殼時，為什麼最後決定牽著爸爸的手走回沙灘？",
+          "{name}看到沙洲上的水開始變多時，做了什麼？為什麼要馬上往回走？",
           "如果你的朋友在水裡需要幫忙，你會怎麼做？",
           "下次去游泳池、海邊或河邊，你要待在哪裡、誰要在旁邊看著你？"
         ],
@@ -17271,7 +17271,7 @@
       },
       "en": {
         "questions": [
-          "When {name} saw the big shell far away, why did {he} decide to hold Dad's hand and walk back to the beach?",
+          "When {name} saw the water starting to rise on the sandbar, what did {he} do? Why head back right away?",
           "If a friend needed help in the water, what would you do?",
           "Next time you go to a pool, beach, or river, where will you stay, and who will be watching you?"
         ],
@@ -17411,7 +17411,7 @@
         "沒多久，熟悉的腳步聲跑過來。「{name}！」媽媽喘著氣，緊緊抱住{him}。「你停在原地，還找了店員。媽媽好驕傲。」{name}笑了，把繪本舉得高高的。「媽媽，小恐龍也找到蛋了！」媽媽和小雨姊姊都笑了。"
       ],
       "en": [
-        "On Saturday afternoon, Mom took {name} to the big bookstore in the city. It had three floors! The shelves stood tall like little hills. {name} found a dinosaur picture book. \"Mom, I'll read here!\" Mom nodded and went next door to look at cookbooks.",
+        "On Saturday afternoon, Mom took {name} to the big bookstore in the city. It had three floors! The shelves stood tall like little hills. {name} found a dinosaur picture book. \"Mom, I'll read here!\" Mom nodded and went to the next shelf to look at cookbooks.",
         "In the book, a little dinosaur was looking for its egg. {name} turned page after page. At the end, the dinosaur found the egg! {name} looked up, smiling. \"Mom, look!\" But no one was there. The cookbook shelf was empty too. Mom was gone.",
         "{name}'s heart went thump, thump. {name} wanted to run and look for Mom. One foot stepped forward. Then {name} remembered the family rule. Mom always said, \"If you can't find me, stop. Stay right where you are. I will come back for you.\" So {name} stepped back and stood still.",
         "{name} hugged the book and took a deep breath. One, two, three, and out. The thumping grew quieter. The rule had a next step: find a helper in a uniform with a name badge. {name} stood on tiptoe and looked around. A mom with two kids was choosing books. A bit farther away stood a young woman in a green vest.",

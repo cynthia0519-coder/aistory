@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-10-27T12:26:51.770Z",
+  "generatedAt": "2026-10-27T12:31:26.727Z",
   "summary": {
     "stories": 365,
     "byStatus": {
-      "ok": 291,
-      "check": 73,
+      "ok": 296,
+      "check": 68,
       "fix": 1
     },
     "byCheckKind": {
-      "length": 279,
+      "length": 280,
       "duplicate_title": 12,
       "sensitive_pattern": 9
     },
     "byIssueKind": {
       "repetition": 160,
       "preachy": 33,
-      "logic": 120,
-      "quality": 76,
-      "taiwan_usage": 42,
-      "age_fit": 17,
-      "safety": 28,
+      "logic": 118,
+      "quality": 74,
+      "taiwan_usage": 41,
+      "age_fit": 19,
+      "safety": 26,
       "zh_en_mismatch": 10,
       "guardrail": 6
     },
@@ -38,7 +38,6 @@
       "earthquake-mountain-school",
       "forgiveness-river-otters-fable",
       "getting-lost-aquarium-tunnel",
-      "getting-lost-supermarket-meeting-spot",
       "getting-lost-zoo-penguins",
       "good-bad-secrets-mountain-cabin",
       "good-bad-secrets-scraped-knee",
@@ -56,7 +55,6 @@
       "medicine-not-candy",
       "mid-autumn-family-barbecue-moon",
       "moving-house-grandmas-old-street",
-      "nature-turtle-on-the-beach",
       "new-sibling-night-market-lights",
       "new-year-eve-wish-jar",
       "not-your-fault-brave-voice",
@@ -72,7 +70,6 @@
       "sharing-turns-crayon-box",
       "sharing-turns-swing-song",
       "sharing-turns-swing-timer",
-      "sockets-dry-hands-dryer",
       "strangers-family-password",
       "strangers-ice-cream-truck",
       "strangers-lost-puppy",
@@ -82,7 +79,6 @@
       "swimsuit-rule-teddy-check-up",
       "swimsuit-rule-water-park-poncho",
       "swimsuit-rule-whale-swimsuit",
-      "tea-hill-hide-and-seek",
       "tidying-toys-missing-puzzle-piece",
       "tidying-toys-sleepy-shelf",
       "tidying-toys-toy-bedtime",
@@ -96,7 +92,6 @@
       "typhoon-flashlight-shadows",
       "typhoon-swollen-river",
       "water-safety-beach-flags",
-      "water-safety-beach-red-flag",
       "windows-balcony-flower-pots"
     ],
     "spotCheck": [
@@ -137,6 +132,7 @@
       "rooftop-giant-pumpkin",
       "screen-time-riverside-kites",
       "sharing-turns-one-red-tricycle",
+      "sockets-dry-hands-dryer",
       "starting-kindergarten-lunchbox-note",
       "teamwork-dragon-dance-practice",
       "teamwork-the-class-play",
@@ -145,7 +141,7 @@
       "water-safety-flooded-ditch",
       "water-safety-river-picnic"
     ],
-    "usd": 11.8281
+    "usd": 11.8279
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -260,10 +256,6 @@
           "note": "英文 402 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0580606,
-      "status": "ok",
-      "reviewedAt": "2026-10-27T12:26:39.840Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -275,7 +267,11 @@
             "note": "首句『大象家旁邊，就是長頸鹿、河馬和猴子的家，圓圓隔著柵欄都看得到』及英文對應句約20字，對4歲偏長，可拆成兩句"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0580606,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T12:26:39.840Z"
     },
     "the-sock-that-ran-away": {
       "hash": "d48246179ccbc346",
@@ -678,10 +674,6 @@
     "water-safety-beach-flags": {
       "hash": "94fc190a81961b6a",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0337166,
-      "status": "check",
-      "reviewedAt": "2026-10-27T12:26:51.763Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -707,7 +699,11 @@
             "note": "「興奮得迫不及待，只想立刻衝進浪花裡」語意重複，可刪去「迫不及待」或「只想立刻」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0337166,
+      "status": "check",
+      "reviewedAt": "2026-10-27T12:26:51.763Z"
     },
     "medicine-not-candy": {
       "hash": "d534f6dee2e70cbf",
@@ -2470,31 +2466,46 @@
       "reviewedAt": "2026-10-27T11:39:17.638Z"
     },
     "sockets-dry-hands-dryer": {
-      "hash": "3b8bb14d509fb59e",
-      "checks": [],
+      "hash": "255ac62b6a4a7564",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 256 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
-            "kind": "logic",
-            "severity": "medium",
+            "kind": "safety",
+            "severity": "low",
             "lang": "both",
             "where": "1",
-            "note": "{name}拿插頭說「我來插」，媽媽只以手濕為由制止，暗示手乾就能自己插，與「插頭只給大人」矛盾；應讓媽媽說明插頭由大人來插"
+            "note": "「{name}拿起插頭」想自己插，濕手已握著插頭，幼兒易模仿；可改成伸手想拿時媽媽就先說「等一等」"
           },
           {
-            "kind": "taiwan_usage",
+            "kind": "age_fit",
             "severity": "low",
-            "lang": "zh",
-            "where": "3",
-            "note": "「插座是大人的工作」語意不順，建議改成「插座是大人管的」或「插插座是大人的事」"
+            "lang": "both",
+            "where": "2",
+            "note": "「手濕濕的不可以，手乾乾的也一樣」偏長且較繞，可拆成「插頭給大人插。」「濕手不行，乾手也不行。」"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "7",
+            "note": "只擦乾手，卻用吹風機「吹吹肚子」，身體可能仍濕；可改成吹頭髮，或先用毛巾擦乾全身"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0282846,
-      "status": "check",
-      "reviewedAt": "2026-10-27T11:39:28.937Z"
+      "usd": 0.0323206,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T12:30:26.880Z"
     },
     "sockets-cracked-cord-spark": {
       "hash": "8ba0262f7e944c6b",
@@ -5040,53 +5051,39 @@
       "reviewedAt": "2026-10-27T11:50:20.768Z"
     },
     "tea-hill-hide-and-seek": {
-      "hash": "4cf567188cfb5e1c",
+      "hash": "b2d167c9e010597d",
       "checks": [
         {
           "kind": "length",
           "severity": "low",
           "lang": "zh",
           "where": "story",
-          "note": "中文 593 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+          "note": "中文 604 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         },
         {
           "kind": "length",
           "severity": "low",
           "lang": "en",
           "where": "story",
-          "note": "英文 389 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+          "note": "英文 396 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
-            "kind": "safety",
-            "severity": "medium",
-            "lang": "both",
-            "where": "5",
-            "note": "第5段三個孩子自己爬陡坡上山頂，阿嬤已走另一條路不在身邊；改成阿嬤在後面跟著或一路看得到他們"
-          },
-          {
-            "kind": "safety",
+            "kind": "logic",
             "severity": "low",
             "lang": "both",
-            "where": "3",
-            "note": "孩子跟著野生小鳥離開，未先告訴大人；可加一句{name}先向阿嬤喊一聲、阿嬤點頭"
-          },
-          {
-            "kind": "quality",
-            "severity": "low",
-            "lang": "en",
-            "where": "guide",
-            "note": "英文第2題「how did it feel」的 it 指代不清，改成「how did {name} feel」"
+            "where": "4",
+            "note": "第4段放紙條的「小竹籃」和第6段山頂的「竹籃」容易被聽成同一個，建議第4段改成「小竹筒」或「石頭下」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0633566,
-      "status": "check",
-      "reviewedAt": "2026-10-27T11:50:32.073Z"
+      "usd": 0.0651806,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T12:30:39.301Z"
     },
     "lantern-festival-rabbit": {
       "hash": "c82cb425bf619712",
@@ -7957,39 +7954,46 @@
       "reviewedAt": "2026-10-27T12:02:46.728Z"
     },
     "nature-turtle-on-the-beach": {
-      "hash": "427683fe6b512224",
+      "hash": "905e0792acfd446f",
       "checks": [
         {
           "kind": "length",
           "severity": "low",
           "lang": "zh",
           "where": "story",
-          "note": "中文 594 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+          "note": "中文 620 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         },
         {
           "kind": "length",
           "severity": "low",
           "lang": "en",
           "where": "story",
-          "note": "英文 379 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+          "note": "英文 406 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
-            "kind": "logic",
-            "severity": "medium",
+            "kind": "age_fit",
+            "severity": "low",
             "lang": "both",
             "where": "5",
-            "note": "第3段林阿姨說要站遠看海龜，第5段{name}卻去夾海龜旁的塑膠袋，前後矛盾；改成等海龜游走後再撿，或寫明從遠處的袋子撿起"
+            "note": "句子偏長，如「林阿姨這才陪著{name}走過去，給{name}一支長長的夾子」及英文 15–19 字句，建議拆短"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "zh",
+            "where": "5",
+            "note": "「還有一條舊漁網、三個瓶子和一隻破拖鞋」接得突兀，可改為「袋子裡還有…」或「沙上還撿到…」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0259206,
-      "status": "check",
-      "reviewedAt": "2026-10-27T12:02:54.011Z"
+      "usd": 0.0309246,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T12:30:48.007Z"
     },
     "nature-the-old-banyan-tree": {
       "hash": "60a60e82dc5b31c2",
@@ -9309,7 +9313,7 @@
       "reviewedAt": "2026-10-27T12:09:14.624Z"
     },
     "water-safety-beach-red-flag": {
-      "hash": "4504039f7b87de13",
+      "hash": "dc3e5573e2e3e013",
       "checks": [
         {
           "kind": "length",
@@ -9323,46 +9327,25 @@
           "severity": "low",
           "lang": "en",
           "where": "story",
-          "note": "英文 428 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
+          "note": "英文 441 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
+      "model": "claude-opus-5-5",
+      "usd": 0.0272006,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T12:31:26.716Z",
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
-          {
-            "kind": "safety",
-            "severity": "medium",
-            "lang": "both",
-            "where": "3",
-            "note": "潮水十點半回來，十點二十分水已繞過腳踝才往回走，示範太晚撤離；改成提早很多（如十點前）就回沙灘"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "4",
-            "note": "爸爸說「早一點回來」，但只提早十分鐘且水已漲上來，與「早一點」不符；調整時間讓說法成立"
-          },
-          {
-            "kind": "quality",
-            "severity": "low",
-            "lang": "both",
-            "where": "5",
-            "note": "第4段沙洲故事已結束，第5段救生員遊戲突然接上，像兩個故事拼接；加一句過渡串起兩段"
-          },
           {
             "kind": "repetition",
             "severity": "low",
             "lang": "both",
             "where": "5",
-            "note": "救生員教「大喊大人、丟救生圈」與 beach-flags 解法相近；可換成不同的會浮物品或情境"
+            "note": "救生員教「大喊大人、丟救生圈」的段落和 beach-flags 的丟浮圈解法相近，可換成丟浮板或寶特瓶等不同會浮的東西"
           }
         ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.0357206,
-      "status": "check",
-      "reviewedAt": "2026-10-27T12:09:28.235Z"
+      }
     },
     "crossing-road-school-crossing-guard": {
       "hash": "88da64a44b39c73e",
@@ -9434,7 +9417,7 @@
       "reviewedAt": "2026-10-27T12:09:46.592Z"
     },
     "getting-lost-supermarket-meeting-spot": {
-      "hash": "fec61778df0e8564",
+      "hash": "d74a9d42ac1027a0",
       "checks": [
         {
           "kind": "length",
@@ -9448,39 +9431,25 @@
           "severity": "low",
           "lang": "en",
           "where": "story",
-          "note": "英文 378 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+          "note": "英文 380 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
-          {
-            "kind": "logic",
-            "severity": "medium",
-            "lang": "en",
-            "where": "0",
-            "note": "英文『went next door』像是媽媽去了另一家店，留下孩子獨處。改成『went to the next shelf』，和中文食譜架一致"
-          },
-          {
-            "kind": "quality",
-            "severity": "low",
-            "lang": "en",
-            "where": "1",
-            "note": "『The cookbook shelf was empty too』像是架上沒有書。改成『No one was at the cookbook shelf』"
-          },
           {
             "kind": "repetition",
             "severity": "low",
             "lang": "both",
             "where": "3",
-            "note": "在店內停下、找制服店員、說出電話，流程和百貨公司篇很像。可加入書店特有的細節，例如服務台在童書區"
+            "note": "大型商店裡原地等、找穿制服店員、背出電話，和 department-store 篇幾乎相同；可加入書店特有的解法，如約定的集合點"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.030592599999999998,
-      "status": "check",
-      "reviewedAt": "2026-10-27T12:09:55.594Z"
+      "usd": 0.0280486,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T12:31:09.781Z"
     },
     "anger-red-face-pillow": {
       "hash": "258dd5428c6d5cae",
