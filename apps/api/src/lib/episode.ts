@@ -2,7 +2,38 @@
 // 選哪些故事、字幕怎麼切與對時間、ASS 字幕檔、標題與說明文字。
 // 呼叫 Azure 與 ffmpeg 的部分在 scripts/render-episodes.ts。
 import { fullWidthPunct } from "./zh-punct";
-import { ageRangeLabel, renderLibraryStory, STYLE_RULES, THEMES, type Language, type LibraryStory, type ThemeId } from "@aistory/shared";
+import { readFileSync } from "node:fs";
+import {
+  ageRangeLabel,
+  renderLibraryStory,
+  STYLE_RULES,
+  THEMES,
+  type Language,
+  type LibraryHero,
+  type LibraryStory,
+  type ThemeId,
+} from "@aistory/shared";
+
+/**
+ * 頻道主角（2026-10-27 起的新集數）：女生沐沐、男生則則，一集一個。
+ * 指派寫在 apps/api/episode-heroes.json（id → mumu | jerry）；沒指派的沿用預設的小寶（不指定性別），已做好的集數不變。
+ */
+export const EPISODE_HEROES = {
+  mumu: { gender: "girl", name: { zh: "沐沐", en: "Mumu" } },
+  jerry: { gender: "boy", name: { zh: "則則", en: "Jerry" } },
+} as const;
+export type EpisodeHeroId = keyof typeof EPISODE_HEROES;
+
+let heroMap: Record<string, EpisodeHeroId> | undefined;
+export function episodeHeroId(id: string): EpisodeHeroId | undefined {
+  heroMap ??= JSON.parse(readFileSync(new URL("../../episode-heroes.json", import.meta.url), "utf8")) as Record<string, EpisodeHeroId>;
+  return heroMap[id];
+}
+
+export function episodeHero(id: string, language: Language): LibraryHero | undefined {
+  const h = episodeHeroId(id);
+  return h ? { name: EPISODE_HEROES[h].name[language], gender: EPISODE_HEROES[h].gender } : undefined;
+}
 
 export interface ReviewFlag {
   status: string;
@@ -165,7 +196,7 @@ export interface EpisodeText {
  */
 export function episodeText(story: LibraryStory, language: Language, appUrl?: string, credit?: string): EpisodeText {
   if (language === "en") return episodeTextEn(story, appUrl, credit);
-  const r = renderLibraryStory(story, language);
+  const r = renderLibraryStory(story, language, episodeHero(story.id, language));
   const kind = story.theme ? THEMES[story.theme].label[language] : STYLE_RULES[story.style].label;
   const ages = ageRangeLabel(story.ageBands);
   const opening = fullWidthPunct(r.paragraphs[0] ?? "");
@@ -246,7 +277,7 @@ const TITLE_TERMS_EN: [RegExp, string][] = [[/\bMRT\b/g, "Subway"]];
 const hookPrefix = (hook: string) => (hook.endsWith("?") ? `${hook} ` : `${hook}: `);
 
 function episodeTextEn(story: LibraryStory, appUrl?: string, credit?: string): EpisodeText {
-  const r = renderLibraryStory(story, "en");
+  const r = renderLibraryStory(story, "en", episodeHero(story.id, "en"));
   const kind = story.theme ? THEMES[story.theme].label.en : STYLE_LABEL_EN[story.style];
   const ages = `Ages ${ageRangeLabel(story.ageBands).replace(/\s*歲$/, "")}`;
   const opening = r.paragraphs[0] ?? "";

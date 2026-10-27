@@ -20,7 +20,7 @@ import { z } from "zod";
 import { LibraryStorySchema, renderLibraryStory, THEMES, type Language, type LibraryStory } from "@aistory/shared";
 import { MUSIC_GROUPS, musicGroup, sceneName } from "@aistory/shared/media";
 import { reviewContentHash } from "../src/lib/library-review";
-import { buildAss, captionCues, episodeText, fullWidthPunct, publishableStories, type ReviewFlag, type Segment } from "../src/lib/episode";
+import { buildAss, captionCues, episodeHero, episodeText, fullWidthPunct, publishableStories, type ReviewFlag, type Segment } from "../src/lib/episode";
 import { isTtsConfigured, synthesize } from "../src/lib/tts";
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -143,7 +143,7 @@ function makeArtwork(story: LibraryStory, lang: Language, dir: string, font: str
 
 async function renderEpisode(story: LibraryStory, lang: Language, dir: string, font: string, audioOnly: boolean) {
   mkdirSync(dir, { recursive: true });
-  const r = renderLibraryStory(story, lang);
+  const r = renderLibraryStory(story, lang, episodeHero(story.id, lang));
   const texts = [r.title, ...r.paragraphs];
 
   // 1. 朗讀：一段一個檔，已經有的不重做（重跑只花沒做完的錢）
@@ -273,7 +273,7 @@ async function main() {
         console.log(`${id}: skipped (${story ? "not rendered yet" : "not in the library"})`);
         continue;
       }
-      const { ownArt } = makeArtwork(story, args.lang, join(args.out, id), args.font, renderLibraryStory(story, args.lang).title);
+      const { ownArt } = makeArtwork(story, args.lang, join(args.out, id), args.font, renderLibraryStory(story, args.lang, episodeHero(story.id, args.lang)).title);
       console.log(`${id}: ${ownArt ? "episode art" : "scene"}`);
       n++;
     }
@@ -341,7 +341,7 @@ async function main() {
 
   if (!args.textOnly) console.log(`${ok.length} publishable stories; rendering ${todo.length}${args.audioOnly ? " (audio only)" : ""}`);
   const chars = todo.reduce((n, s) => {
-    const r = renderLibraryStory(s, args.lang);
+    const r = renderLibraryStory(s, args.lang, episodeHero(s.id, args.lang));
     return n + [r.title, ...r.paragraphs].join("").length;
   }, 0);
   if (!args.textOnly) console.log(`about ${chars} characters of speech (Azure neural TTS bills per character)`);
