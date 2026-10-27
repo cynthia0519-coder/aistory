@@ -3204,7 +3204,8 @@
         "tip": "This week, when someone loses a game, practice three slow breaths together, then say \"Congratulations!\" or \"Let's play again.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2026-11-16T19:30:00+08:00"
   },
   {
     "id": "losing-failing-go-club",
