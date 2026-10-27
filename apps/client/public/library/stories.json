@@ -20183,5 +20183,74 @@
       "series": "mumu-jerry",
       "episode": 7
     }
+  },
+  {
+    "id": "mumu-jerry-08-big-dog-home",
+    "style": "cute",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "city",
+    "title": {
+      "zh": "大狗狗要回家",
+      "en": "Taking the Big Dog Home"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期六，美術教室裡來了一隻大狗狗。牠是白色的布狗狗，軟軟的、胖胖的。牠頭上戴著黃色的小皇冠，還有一個紅紅的圓鼻子。",
+        "老師說：「今天，我們要幫狗狗設計新衣服！」",
+        "則則第一個拿起筆。他一點也不猶豫，畫了一個彎彎的圖案，再畫一個，再畫一個，一個接一個，排得整整齊齊。老師拍拍手：「大家看，則則的花紋好漂亮！」",
+        "沐沐跑過來，在彩色筆盒裡翻呀翻。「哥哥，這個粉紅色，跟我衣服一樣！」則則找到一支藍色的，也舉起來給妹妹看。兩個人找到一個顏色，就互相比一個大拇指。",
+        "狗狗穿上了新花紋，看起來好神氣。則則抱著狗狗，不放手了。",
+        "他想了想，抬頭問老師：「繩子呢？」老師愣了一下。「我要幫狗狗綁繩子，」則則說，「帶牠出去玩！」",
+        "下課了。老師說：「你們做的狗狗，可以帶回家喔。」則則抱緊狗狗：「帶回家！」",
+        "奶奶來接他們了。可是狗狗好大，奶奶要帶兩個孩子坐捷運，抱不動這麼大的狗狗。老師說：「要不要叫車呢？」大人們皺著眉頭，想來想去，還是拿不定主意。",
+        "則則看著老師，大聲說：「老師剛剛說，可以叫車！我要叫車！」",
+        "原來，大人們說話的時候，則則都有在聽。老師笑了：「對耶，我剛剛真的這樣說過。」",
+        "奶奶看看大狗狗，又看看兩個孩子亮晶晶的眼睛，笑著說：「好，我們叫車回家。」",
+        "坐上車，繫好安全帶，則則和沐沐一人抱著狗狗的一邊。狗狗的皇冠歪歪的，好像也很開心。",
+        "晚上，大狗狗躺在則則的床邊。沐沐趴在旁邊說：「我發現一條新規則：想要什麼，就好好說出來，大家會一起想辦法。」",
+        "則則摸摸狗狗的頭，比了一個大拇指：「很棒！」沐沐打了一個呵欠，小聲說：「明天，我要研究新的規則。」晚安，沐沐。晚安，則則。晚安，大狗狗。"
+      ],
+      "en": [
+        "On Saturday, a big dog came to art class. It was a white cloth dog, soft and round. It wore a little yellow crown and had a red round nose.",
+        "The teacher said, \"Today, let's design new clothes for the dog!\"",
+        "Jerry was the first to pick up a pen. He didn't wait at all. He drew a curly shape, then another, and another, one after another, in a neat row. The teacher clapped. \"Look, everyone! Jerry's pattern is beautiful!\"",
+        "Mumu ran over and dug through the box of markers. \"Jerry, this pink is just like my shirt!\" Jerry found a blue one and held it up for his sister. Every time they found a color, they gave each other a thumbs-up.",
+        "In its new pattern, the dog looked so proud. Jerry hugged the dog and would not let go.",
+        "He thought for a moment, then looked up at the teacher. \"Where's the leash?\" The teacher blinked. \"I want to put a leash on the dog,\" said Jerry, \"and take it out to play!\"",
+        "Class was over. The teacher said, \"You made this dog, so you can take it home.\" Jerry hugged it tight. \"Take it home!\"",
+        "Grandma came to pick them up. But the dog was so big. Grandma was taking the kids home on the subway. She couldn't carry such a big dog. The teacher said, \"Maybe call a car?\" The grown-ups frowned and thought and thought, but they couldn't decide.",
+        "Jerry looked at the teacher and said loudly, \"You said we can call a car! I want a car!\"",
+        "It turned out Jerry had been listening the whole time the grown-ups were talking. The teacher smiled. \"You're right. I really did say that.\"",
+        "Grandma looked at the big dog, then at the two kids' shining eyes, and smiled. \"Okay. Let's take a car home.\"",
+        "In the car, with their seat belts on, Jerry and Mumu each hugged one side of the dog. Its crown sat crooked, as if it were happy too.",
+        "That night, the big dog lay beside Jerry's bed. Mumu leaned next to him. \"I found a new rule: if you want something, say it clearly, and everyone will figure it out together.\"",
+        "Jerry patted the dog's head and gave a thumbs-up. \"Great!\" Mumu yawned and whispered, \"Tomorrow, I'm going to study a new rule.\" Good night, Mumu. Good night, Jerry. Good night, big dog."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "則則想把大狗狗帶回家，他說了什麼？",
+          "大人們想不到辦法的時候，則則記得老師說過什麼？",
+          "你有沒有很想要一樣東西的時候？你會怎麼說出來？"
+        ],
+        "tip": "今天找一件孩子想做的事，請他用一句話完整說出來，再一起想辦法。"
+      },
+      "en": {
+        "questions": [
+          "Jerry wanted to take the big dog home. What did he say?",
+          "When the grown-ups were stuck, what did Jerry remember the teacher saying?",
+          "Have you ever wanted something very much? How would you say it?"
+        ],
+        "tip": "Today, find one thing your child wants to do, ask them to say it in one clear sentence, then work it out together."
+      }
+    },
+    "draft": true,
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 8
+    }
   }
 ]
