@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-10-27T15:12:59.738Z",
+  "generatedAt": "2026-10-27T15:26:37.942Z",
   "summary": {
     "stories": 374,
     "byStatus": {
-      "ok": 324,
-      "check": 49,
+      "ok": 329,
+      "check": 44,
       "fix": 1
     },
     "byCheckKind": {
-      "length": 274,
+      "length": 266,
       "duplicate_title": 12,
       "sensitive_pattern": 9
     },
     "byIssueKind": {
-      "repetition": 148,
-      "preachy": 35,
-      "logic": 128,
-      "quality": 73,
-      "taiwan_usage": 45,
-      "age_fit": 22,
-      "safety": 24,
+      "repetition": 144,
+      "preachy": 33,
+      "logic": 124,
+      "quality": 74,
+      "taiwan_usage": 43,
+      "age_fit": 24,
+      "safety": 22,
       "zh_en_mismatch": 11,
       "guardrail": 6
     },
@@ -31,7 +31,6 @@
       "bullying-lunch-table",
       "dentist-wiggly-first-tooth",
       "earthquake-mountain-school",
-      "forgiveness-river-otters-fable",
       "getting-lost-zoo-penguins",
       "good-bad-secrets-mountain-cabin",
       "good-bad-secrets-scraped-knee",
@@ -43,7 +42,6 @@
       "medicine-grandmas-rainbow-pillbox",
       "medicine-grandpa-pill-box",
       "medicine-gummy-bear-vitamins",
-      "medicine-not-candy",
       "mid-autumn-family-barbecue-moon",
       "new-sibling-night-market-lights",
       "new-year-eve-wish-jar",
@@ -55,8 +53,6 @@
       "saying-no-tickle-monster",
       "screen-time-bunny-timer",
       "sea-lighthouse-keeper-grandma",
-      "sea-tide-pool-crab-family",
-      "sharing-turns-swing-timer",
       "strangers-family-password",
       "strangers-ice-cream-truck",
       "strangers-lost-puppy",
@@ -67,7 +63,6 @@
       "swimsuit-rule-water-park-poncho",
       "swimsuit-rule-whale-swimsuit",
       "tidying-toys-toy-bedtime",
-      "tidying-toys-treasure-sorting",
       "trusted-adults-keep-telling",
       "trying-food-stinky-tofu-sniff",
       "typhoon-after-storm-helpers",
@@ -105,6 +100,7 @@
       "map-in-the-message-bottle",
       "mumu-jerry-07-big-ship-trip",
       "mumu-jerry-08-big-dog-home",
+      "new-sibling-baby-photo-album",
       "new-sibling-crying-baby-concert",
       "perseverance-the-character-yong",
       "perseverance-water-drop-stone-fable",
@@ -126,7 +122,7 @@
       "water-safety-river-picnic",
       "windows-balcony-flower-pots"
     ],
-    "usd": 12.257
+    "usd": 12.2344
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -691,53 +687,24 @@
       "reviewedAt": "2026-10-27T12:26:51.763Z"
     },
     "medicine-not-candy": {
-      "hash": "d534f6dee2e70cbf",
-      "checks": [
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "zh",
-          "where": "story",
-          "note": "中文 402 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
-        }
-      ],
+      "hash": "8f2694dbf540cbf2",
+      "checks": [],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "4",
-            "note": "與 medicine-gummy-bear-vitamins 太像：都是發現維他命瓶、不嚐、帶玩具去找媽媽、放高處再給點心。建議換情境或解法"
-          },
-          {
-            "kind": "taiwan_usage",
+            "kind": "quality",
             "severity": "low",
-            "lang": "zh",
-            "where": "3",
-            "note": "「把瓶蓋拿得好好的」不自然，建議改成「瓶蓋蓋得緊緊的」"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "guide",
-            "note": "提示說找到瓶子「不碰它」，但故事中{name}伸手拿起並搖瓶子，建議故事改成只看不拿，或修改提示"
-          },
-          {
-            "kind": "taiwan_usage",
-            "severity": "low",
-            "lang": "zh",
-            "where": "7",
-            "note": "「三個一起吃點心」少了量詞對象，建議改成「三個好朋友一起吃點心」"
+            "lang": "en",
+            "where": "1",
+            "note": "英文「round, tiny dots」形容藥丸不自然，可改成「little round balls」或「tiny round pills」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0302166,
-      "status": "check",
-      "reviewedAt": "2026-10-27T12:25:45.438Z"
+      "usd": 0.0213246,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T15:24:02.219Z"
     },
     "typhoon-day-blanket-fort": {
       "hash": "c647414a7696b965",
@@ -2689,8 +2656,46 @@
       "reviewedAt": "2026-10-27T11:40:23.578Z"
     },
     "medicine-gummy-bear-vitamins": {
-      "hash": "5b4b80f7b3269eec",
+      "hash": "590f6db9fd563a03",
       "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.025544599999999997,
+      "status": "check",
+      "reviewedAt": "2026-10-27T15:26:10.361Z",
+      "llm": {
+        "verdict": "check",
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "medium",
+            "lang": "both",
+            "where": "2",
+            "note": "與「奶奶的彩虹藥盒」太像：同樣在奶奶家發現像糖果的藥、叫奶奶來看、再收到高處。建議換場景、角色或收尾方式"
+          },
+          {
+            "kind": "age_fit",
+            "severity": "medium",
+            "lang": "both",
+            "where": "6",
+            "note": "「奶奶把罐子放回包包，拉鍊拉好，再把包包掛到門後高高的掛鉤上」太長，2歲難跟上，拆成三句短句；英文同"
+          },
+          {
+            "kind": "age_fit",
+            "severity": "low",
+            "lang": "both",
+            "where": "4",
+            "note": "「對呀，所以要更小心。吃太多，肚子會不舒服」連續講理偏長，英文 \"These aren't gummy candy. They're my vitamins\" 也可再縮短"
+          }
+        ]
+      }
+    },
+    "medicine-grandmas-rainbow-pillbox": {
+      "hash": "9c021c7e7bff4f84",
+      "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.029000599999999998,
+      "status": "check",
+      "reviewedAt": "2026-10-27T15:26:19.789Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -2699,70 +2704,24 @@
             "severity": "medium",
             "lang": "both",
             "where": "4",
-            "note": "在奶奶家發現藥、叫奶奶來看、放上高櫃，與 grandmas-rainbow-pillbox 太接近；草莓味咳嗽藥也重複，建議改用小熊維他命軟糖"
+            "note": "與 medicine-gummy-bear-vitamins 太像：都在奶奶家桌上發現藥、喊奶奶來看、收進高櫃。建議換場景或解法"
           },
           {
             "kind": "logic",
             "severity": "low",
             "lang": "both",
-            "where": "5",
-            "note": "故事沒出現維他命，奶奶突然說「維他命也很像糖果」很突兀；可讓桌上同時有一罐小熊維他命"
-          },
-          {
-            "kind": "preachy",
-            "severity": "low",
-            "lang": "both",
-            "where": "5",
-            "note": "奶奶一口氣說完三句規則，有點像說教；可拆成對話，讓{name}回應或點頭"
-          }
-        ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.0260326,
-      "status": "check",
-      "reviewedAt": "2026-10-27T12:52:17.166Z"
-    },
-    "medicine-grandmas-rainbow-pillbox": {
-      "hash": "c9df22a7bdc5a9d8",
-      "checks": [
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "zh",
-          "where": "story",
-          "note": "中文 571 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
-        }
-      ],
-      "llm": {
-        "verdict": "check",
-        "issues": [
-          {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "5",
-            "note": "與 medicine-grandpa-pill-box 太像：長輩的彩色藥盒像糖果、一起收到高處、改吃真點心。建議換掉藥盒或收尾方式"
-          },
-          {
-            "kind": "quality",
-            "severity": "low",
-            "lang": "en",
-            "where": "5",
-            "note": "英文『I take one box each day』和第 2 段『seven little boxes』用詞混淆，建議改成 one little section each day"
-          },
-          {
-            "kind": "age_fit",
-            "severity": "low",
-            "lang": "both",
             "where": "3",
-            "note": "『{he}想起有一次，媽媽蹲下來，指著藥櫃小聲說』句子偏長，英文也超過 10 字，建議拆成兩句"
+            "note": "媽媽不在場卻說「這些長得像糖果」，像在指眼前藥盒。改成「媽媽說過：有些藥長得像糖果」"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "4",
+            "note": "{name}已想起那是藥，又問「這是糖果嗎？」略矛盾。可改成「這是藥對不對？我沒有吃喔」"
           }
         ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.0275486,
-      "status": "check",
-      "reviewedAt": "2026-10-27T12:26:10.620Z"
+      }
     },
     "typhoon-flashlight-shadows": {
       "hash": "26c1f3c5acdd30de",
@@ -5116,8 +5075,12 @@
       "reviewedAt": "2026-10-27T11:51:00.028Z"
     },
     "lighthouse-keepers-cat": {
-      "hash": "83a70760b45796eb",
+      "hash": "e9b000efa9a05dcc",
       "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.057448599999999996,
+      "status": "check",
+      "reviewedAt": "2026-10-27T15:26:27.373Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -5125,15 +5088,11 @@
             "kind": "repetition",
             "severity": "medium",
             "lang": "both",
-            "where": "0",
-            "note": "與 sea-lighthouse-keeper-grandma 太像：同樣在燈塔與長輩過夜、看光束掃海後入睡。建議以海苔或漁船閃燈為主線拉開差異"
+            "where": "7",
+            "note": "與 sea-lighthouse-keeper-grandma 太像：同樣是在燈塔過夜、長輩當守燈人、看光束旋轉入睡，第 7 段「跟著光搖回家」也相近。建議換場景，或改掉以光束入睡的結尾"
           }
         ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.0561566,
-      "status": "check",
-      "reviewedAt": "2026-10-27T11:51:06.194Z"
+      }
     },
     "mooncake-mystery": {
       "hash": "31d0aacdaee61073",
@@ -5681,60 +5640,31 @@
       "reviewedAt": "2026-10-27T13:00:57.257Z"
     },
     "tidying-toys-treasure-sorting": {
-      "hash": "f290755b6a239044",
-      "checks": [
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "zh",
-          "where": "story",
-          "note": "中文 599 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
-        },
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "en",
-          "where": "story",
-          "note": "英文 352 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
-        }
-      ],
+      "hash": "d3cba032a407c0b4",
+      "checks": [],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "2",
-            "note": "「找不見的玩具＋和家長一起找＋做標籤盒」與 missing-puzzle-piece 情節和解法幾乎相同，建議換掉標籤盒或尋物主線"
-          },
-          {
             "kind": "logic",
             "severity": "low",
             "lang": "both",
-            "where": "7",
-            "note": "小汽車是掀枕頭時偶然找到，並非因房間整齊；「房間整齊，寶藏就好找了」因果較弱，可讓整理過程直接帶出線索"
+            "where": "5",
+            "note": "第 4 段說「床上還堆著好多布娃娃」，第 5 段直接跳到「最後一隻大熊」，可補一句把床上娃娃一隻隻收進籃子"
           },
           {
-            "kind": "preachy",
+            "kind": "quality",
             "severity": "low",
-            "lang": "both",
-            "where": "2",
-            "note": "媽媽說「每個玩具都有自己的家。玩完送它們回家，下次就找得到」近似直接說教，可改成動作或遊戲口令呈現"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "7",
-            "note": "「布娃娃都回到自己的家了」但小兔子留在床上陪睡，可改成「除了小兔子」或略作說明"
+            "lang": "en",
+            "where": "1",
+            "note": "「explorer captain」英文略不自然，可改成「the captain of the hunt」或「team captain」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.029960599999999997,
-      "status": "check",
-      "reviewedAt": "2026-10-27T12:23:32.963Z"
+      "usd": 0.0249086,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T15:21:55.669Z"
     },
     "handwashing-soap-song-train": {
       "hash": "13d4849754bc1284",
@@ -6008,8 +5938,12 @@
       "reviewedAt": "2026-10-27T11:55:07.609Z"
     },
     "strangers-password-word": {
-      "hash": "00a8c1af3a2d7fc9",
+      "hash": "d62387b506703a03",
       "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.0250846,
+      "status": "check",
+      "reviewedAt": "2026-10-27T15:26:37.936Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -6018,21 +5952,17 @@
             "severity": "medium",
             "lang": "both",
             "where": "3",
-            "note": "與 strangers-family-password 幾乎相同：放學時陌生阿姨說媽媽派她來並給點心，孩子問暗號、對方答錯、大聲拒絕、跑找老師打電話。建議換場景或解法"
+            "note": "陌生人稱「媽媽叫我來帶你」並送點心、大人打給媽媽，與 strangers-family-password 太像，建議換情節或解法"
           },
           {
             "kind": "logic",
             "severity": "low",
             "lang": "both",
-            "where": "7",
-            "note": "媽媽在校門口人群前大聲喊「鳳梨酥！」等於公開暗號，建議改成走到{name}身邊小聲說"
+            "where": "4",
+            "note": "主訊息「大聲說不」未由{name}做出，可讓{name}先大聲說「我不開門！」再跑去找奶奶"
           }
         ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.025104599999999998,
-      "status": "check",
-      "reviewedAt": "2026-10-27T11:55:15.590Z"
+      }
     },
     "hot-things-soup-pot-steam": {
       "hash": "1fb872045c1b9cd3",
@@ -6447,38 +6377,24 @@
       "reviewedAt": "2026-10-27T13:01:25.094Z"
     },
     "sharing-turns-swing-timer": {
-      "hash": "17f44c019802f45a",
+      "hash": "bf7f2d910d75846c",
       "checks": [],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "3",
-            "note": "與 sharing-turns-swing-song 太像:都是兩個孩子搶同一個鞦韆,大人提出計量方式輪流(數二十下≈唱一首歌),也近似長頸鹿的數數遊戲。建議換設施或換解法"
-          },
-          {
-            "kind": "safety",
+            "kind": "age_fit",
             "severity": "low",
-            "lang": "both",
-            "where": "4",
-            "note": "「{name}站在旁邊等」貼近擺動中的鞦韆,幼兒易模仿而被撞到,可改成「站在鞦韆前面的線外等」"
-          },
-          {
-            "kind": "safety",
-            "severity": "low",
-            "lang": "both",
-            "where": "5",
-            "note": "2–4歲孩子互推鞦韆有被撞的風險,可加一句媽媽在旁邊陪著,或改成「媽媽幫忙推」"
+            "lang": "en",
+            "where": "1",
+            "note": "英文「Outside the yellow line stands a little girl named Mimi, with her dad beside her.」倒裝且過長，拆成兩三個短句"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.023400599999999997,
-      "status": "check",
-      "reviewedAt": "2026-10-27T11:56:56.443Z"
+      "usd": 0.0242806,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T15:24:46.920Z"
     },
     "sharing-turns-crayon-box": {
       "hash": "95ebd62bf51fcad0",
@@ -6935,46 +6851,24 @@
       "reviewedAt": "2026-10-27T12:24:07.877Z"
     },
     "sea-tide-pool-crab-family": {
-      "hash": "419ec01915954957",
-      "checks": [
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "zh",
-          "where": "story",
-          "note": "中文 623 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
-        },
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "en",
-          "where": "story",
-          "note": "英文 373 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
-        }
-      ],
+      "hash": "7b7cfa243a04af51",
+      "checks": [],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
             "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "3",
-            "note": "和「tide-pool-detectives」太像：低潮潮池、大人陪同、觀察螃蟹後原樣放回。建議換場景或改成不同的發現與解法"
-          },
-          {
-            "kind": "logic",
             "severity": "low",
             "lang": "both",
-            "where": "5",
-            "note": "第3段只「抬起石頭的一邊」，第5段卻要記得「有青苔的那面朝上」，像整顆翻過。改成「輕輕放下石頭」即可"
+            "where": "1",
+            "note": "與「tide-pool-detectives」同為潮池觀察螃蟹、大人陪同，場景相近；本篇以撿垃圾為主線，情節不同，可接受"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0571886,
-      "status": "check",
-      "reviewedAt": "2026-10-27T11:58:51.566Z"
+      "usd": 0.0545086,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T15:22:17.185Z"
     },
     "park-kite-wind-friend": {
       "hash": "dbbfcc4d135ecd30",
@@ -8515,53 +8409,16 @@
       "reviewedAt": "2026-10-27T12:05:57.118Z"
     },
     "forgiveness-river-otters-fable": {
-      "hash": "e8e0b917b96cf35e",
-      "checks": [
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "zh",
-          "where": "story",
-          "note": "中文 577 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
-        },
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "en",
-          "where": "story",
-          "note": "英文 382 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
-        }
-      ],
+      "hash": "7205ad52616f62cf",
+      "checks": [],
       "llm": {
-        "verdict": "check",
-        "issues": [
-          {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "1",
-            "note": "和 forgiveness-crow-and-sparrow 很像：動物急著搶先弄壞別人正在做的東西，道歉後一起重做。可改成不同的錯誤或解法"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "1",
-            "note": "「游泳比賽」卻在草地上「往前衝」撞到木筏，後面又說「我跑太快」。可改成「賽跑比賽」或讓木筏放在水邊"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "zh",
-            "where": "0",
-            "note": "用蘆葦編的卻叫「小木筏」，用詞有點矛盾，可改成「蘆葦筏」或「小草筏」"
-          }
-        ]
+        "verdict": "ok",
+        "issues": []
       },
       "model": "claude-opus-5-5",
-      "usd": 0.031196599999999998,
-      "status": "check",
-      "reviewedAt": "2026-10-27T12:06:06.228Z"
+      "usd": 0.022124599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T15:24:52.591Z"
     },
     "forgiveness-sibling-drawing": {
       "hash": "4b53713da1a25c23",
@@ -10591,14 +10448,14 @@
           "note": "英文 386 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0320606,
-      "status": "ok",
-      "reviewedAt": "2026-10-27T15:12:59.720Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0320606,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T15:12:59.720Z"
     }
   }
 }

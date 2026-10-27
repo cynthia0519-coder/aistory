@@ -1195,23 +1195,23 @@
     "paragraphs": {
       "zh": [
         "滾呀滾，咕嚕嚕！{name}的小球滾進沙發底下。{name}趴下來看一看。小熊也跟著趴下來。暗暗的，小小的。咦？那是什麼呢？",
-        "{name}伸手摸一摸。摸到一個小瓶子！瓶子裡有圓圓的顆粒。紅色的，黃色的，還有綠色的。搖一搖，沙沙沙。好像糖果喔！",
-        "{name}看看小熊。小熊也看看{name}。「這是糖果嗎？」{name}小聲問。可是瓶子不像糖果袋。上面有小小的字。{name}看不懂。",
-        "{name}想起媽媽說過的話。「藥藥會長得像糖果。」「不知道的東西，不放進嘴巴。」{name}點點頭，把瓶蓋拿得好好的。不打開，也不嚐。",
-        "{name}把瓶子放回原來的地方，不拿走。「小熊，我們出任務，去找媽媽來看！」{name}抱起小熊。噠噠噠，走過客廳。廚房沒有媽媽，只有滴答響的時鐘。",
-        "噠噠噠，走到陽台門邊。媽媽不在陽台上。再走到臥室門口。房間裡傳來哼歌聲，啦啦啦。是媽媽！媽媽正在摺衣服。",
-        "「媽媽，我找到一個瓶子，你來看！」{name}牽著媽媽走回去。媽媽看一看，眼睛亮亮的。「這是維他命，不是糖果。謝謝你叫我來看！」媽媽給{name}一個大大的抱抱。",
-        "媽媽把瓶子放回高高的櫃子上。那裡只有大人的手摸得到。「要吃藥時，媽媽會給你。」{name}笑了，小熊也像在笑。媽媽拿出真的糖果，三個一起吃點心。任務完成！"
+        "是一個透明的小瓶子！瓶子裡有圓圓的顆粒。紅色的，黃色的，還有綠色的。好像糖果喔！",
+        "{name}看看小熊。小熊也看看{name}。「這是糖果嗎？」{name}小聲問。{name}想起媽媽說過：「藥藥會長得像糖果。不知道的東西，不碰，也不嚐。」",
+        "{name}把小手收回來，放在背後。「小熊，我們不碰它。我們出任務，去找媽媽來看！」{name}抱起小熊。",
+        "噠噠噠，走過客廳。廚房沒有媽媽，只有滴答響的時鐘。噠噠噠，走到陽台門邊，媽媽也不在。",
+        "再走到臥室門口。房間裡傳來哼歌聲，啦啦啦。是媽媽！媽媽正在摺衣服。「媽媽，沙發下面有一個瓶子，你來看！」",
+        "媽媽趴下來，把瓶子拿出來。「這是媽媽的維他命，從包包掉出來了。謝謝你沒有碰，還來找媽媽！」媽媽給{name}一個大大的抱抱。",
+        "媽媽把瓶蓋轉緊，放進高高的櫃子。「要吃藥的時候，媽媽會給你。」媽媽也把小球拿出來了。{name}抱著小熊和小球，跳了一下：「任務完成！」"
       ],
       "en": [
         "Roll, roll, bump! {name}'s little ball rolls under the sofa. {name} lies down to look. Teddy lies down too. It is dark and small. Oh! What is that?",
-        "{name} reaches in. It is a little bottle! Inside are round, tiny dots. Red ones, yellow ones, green ones too. Shake, shake, rattle. They look like candy!",
-        "{name} looks at Teddy. Teddy looks at {name}. \"Is this candy?\" {name} whispers. But it is not a candy bag. It has tiny words on it.",
-        "{name} remembers what Mom said. \"Medicine can look like candy.\" \"Don't taste things you don't know.\" {name} nods and keeps the lid shut tight. No opening, no tasting.",
-        "{name} puts the bottle back where it was. \"Teddy, it's mission time! Let's go get Mom.\" {name} picks Teddy up. Tap, tap, tap, across the room. The kitchen is empty. Tick, tock goes the clock.",
-        "Tap, tap, tap, to the balcony door. Mom is not there. Then to the bedroom door. Someone is humming, la, la, la. It's Mom! She is folding clothes.",
-        "\"Mom, I found a bottle. Come and see!\" {name} leads Mom back to it. Mom looks and smiles. \"These are vitamins, not candy. Thank you for coming to get me!\" Mom gives {name} a big hug.",
-        "Mom puts the bottle up high. Only grown-up hands reach there. \"I'll give you medicine when you need it.\" {name} grins. Teddy seems to grin too. Then Mom brings real snacks for all three. Mission complete!"
+        "It is a little clear bottle! Inside are round, tiny dots. Red ones, yellow ones, green ones too. They look like candy!",
+        "{name} looks at Teddy. Teddy looks at {name}. \"Is this candy?\" {name} whispers. Then {name} remembers what Mom said. \"Medicine can look like candy. Don't touch what you don't know. Don't taste it.\"",
+        "{name} pulls {his} hand back and puts it behind {his} back. \"Teddy, we won't touch it. It's mission time! Let's go get Mom.\" {name} picks Teddy up.",
+        "Tap, tap, tap, across the living room. The kitchen is empty. Tick, tock goes the clock. Tap, tap, tap, to the balcony door. Mom is not there either.",
+        "Then to the bedroom door. Someone is humming, la, la, la. It's Mom! She is folding clothes. \"Mom, there's a bottle under the sofa. Come and see!\"",
+        "Mom lies down and pulls the bottle out. \"These are my vitamins. They fell out of my bag. Thank you for not touching them and coming to get me!\" Mom gives {name} a big hug.",
+        "Mom twists the lid tight and puts the bottle in the high cupboard. \"When you need medicine, I'll give it to you.\" She gets the little ball out too. {name} hugs Teddy and the ball and gives a little hop. \"Mission complete!\""
       ]
     },
     "theme": "medicine",
@@ -4916,41 +4916,41 @@
       "zh": [
         "今天，{name}來到奶奶家。奶奶家好大，好像一座城堡。「出發探險囉！」{name}說。踮踮腳，踮踮腳，{name}走過長長的走廊。",
         "客廳裡有大沙發，軟軟的，鬆鬆的。牆上有個老時鐘，滴答，滴答。窗邊的小貓叫：「喵──喵──」{name}揮揮手：「小貓好！」探險繼續囉！",
-        "{name}走進廚房。咦？桌上有東西！是一個小小的杯子。裡面是粉紅色的水，亮亮的，好漂亮。「這是什麼呀？」{name}歪著頭看。",
-        "{name}靠近聞一聞。嗯，香香的，像草莓。看起來像果汁，又像糖果水。可是{name}沒有喝。{his}小手放在背後，一動也不動。",
-        "{name}大聲叫：「奶奶，快來看！」咚、咚、咚，奶奶走過來了。奶奶看見小杯子，眼睛眨一眨。「哎呀，奶奶忘記收了。」",
-        "奶奶蹲下來，輕輕說：「這是奶奶的咳嗽藥水。藥會香香甜甜的。維他命也很像糖果。可是，它們不是糖果喔。藥要大人拿給你，才可以吃。」",
-        "「我們把它放高高。」往上，往上，再往上！奶奶把藥水放進高高的櫃子。喀嚓，關好了。奶奶抱抱{name}：「謝謝你叫奶奶來看。」",
-        "「小探險家口渴了吧？」奶奶倒了一杯水。咕嚕，咕嚕，咕嚕。清清的，涼涼的，是真的水！{name}喝光光，笑咪咪。奶奶說：「下一站，去花園探險吧！」"
+        "{name}跑回沙發旁。咦？奶奶的包包開開的，裡面露出一個罐子。罐子裡有好多小熊，紅的、黃的、綠的，軟軟的，亮亮的。",
+        "「哇，小熊軟糖！」{name}好想吃一個。可是，{name}沒有打開。{his}小手放在背後。「奶奶，快來看！」",
+        "奶奶走過來，笑著說：「這不是軟糖喔，這是奶奶的維他命。」{name}歪著頭：「可是，它長得好像軟糖。」奶奶說：「對呀，所以要更小心。吃太多，肚子會不舒服。」",
+        "奶奶把蓋子轉緊。喀、喀！「大人拿給你，才可以吃喔。」{name}點點頭：「大人拿給我，才可以吃！」",
+        "「包包也要收好。」奶奶把罐子放回包包，拉鍊拉好，再把包包掛到門後高高的掛鉤上。往上，往上，再往上！奶奶抱抱{name}：「謝謝你叫奶奶來看。」",
+        "「小探險家肚子餓了吧？」奶奶在廚房把吐司切成小熊的形狀。一隻小熊，兩隻小熊！「這才是可以吃的小熊！」{name}咬一口，笑咪咪。奶奶說：「下一站，去花園探險吧！」"
       ],
       "en": [
         "Today {name} visits Grandma's house. It is big, like a castle. \"Adventure time!\" says {name}. Tiptoe, tiptoe, down the long hall.",
         "The living room has a big sofa. It is soft and squishy. The old clock goes tick, tock. The cat by the window says, \"Meow, meow.\" {name} waves. \"Hello, kitty!\"",
-        "Next, {name} walks into the kitchen. Oh! Something is on the table. It is a tiny cup. Inside is something pink and shiny. \"What is this?\" {name} wonders.",
-        "{name} leans close. Sniff, sniff. It smells like strawberries. It looks like juice. It looks like candy, too. But {name} does not sip. {his} hands stay behind {his} back.",
-        "\"Grandma, come and look!\" {name} calls. Step, step, step. Here comes Grandma. She sees the little cup. \"Oh my! I forgot to put that away.\"",
-        "Grandma kneels down. \"This is my cough medicine,\" she says softly. \"Medicine can smell sweet. Vitamins can look like candy. But they are not candy. Only a grown-up gives you medicine.\"",
-        "\"Let's put it up high.\" Up, up, up it goes! Grandma puts it in the high cupboard. Click! The door is shut. She hugs {name}. \"Thank you for calling me.\"",
-        "\"Is my explorer thirsty?\" Grandma pours a cup of water. Glug, glug, glug. It is clear and cool. It is real water! {name} drinks it all up. \"Next stop, the garden!\" says Grandma."
+        "{name} runs back to the sofa. Oh! Grandma's bag is open. A jar is peeking out. The jar is full of little bears. Red ones, yellow ones, green ones. Soft and shiny!",
+        "\"Wow, gummy bears!\" {name} really wants one. But {name} does not open the jar. {his} hands stay behind {his} back. \"Grandma, come and look!\"",
+        "Grandma comes over and smiles. \"These aren't gummy candy. They're my vitamins.\" {name} tilts {his} head. \"But they look like gummy bears.\" \"Yes,\" says Grandma. \"So we're extra careful. Too many can make your tummy hurt.\"",
+        "Grandma twists the lid tight. Click, click! \"Only a grown-up gives them to you.\" {name} nods. \"Only a grown-up gives them to me!\"",
+        "\"Bags need putting away too.\" Grandma puts the jar back, zips the bag shut, and hangs it on a high hook behind the door. Up, up, up! She hugs {name}. \"Thank you for calling me.\"",
+        "\"Is my explorer hungry?\" In the kitchen, Grandma cuts toast into bear shapes. One bear, two bears! \"These are bears we can eat!\" {name} takes a bite and grins. \"Next stop, the garden!\" says Grandma."
       ]
     },
     "theme": "medicine",
     "guide": {
       "zh": {
         "questions": [
-          "{name}在桌上發現粉紅色的小杯子時，做了什麼？",
-          "藥和維他命有時看起來像糖果，誰可以拿藥給你吃呢？",
-          "如果你在家裡看到藥丸或藥罐，你會怎麼做？"
+          "{name}在奶奶的包包裡看到小熊罐子時，做了什麼？",
+          "維他命看起來像軟糖，為什麼不能自己拿來吃？",
+          "如果你看到很像糖果的東西，你會先怎麼做？"
         ],
-        "tip": "這週玩一個「快來看」遊戲：把洗乾淨的空藥罐放在桌上，請孩子找到後不碰、不嚐，大聲喊「快來看！」，再一起把家裡的藥品收到孩子拿不到的高處。"
+        "tip": "這週和孩子一起看看家裡的維他命和藥，說說它們長得像什麼，再一起確認它們都放在孩子拿不到的高處。練習一句話：「像糖果的東西，先問大人！」"
       },
       "en": {
         "questions": [
-          "What did {name} do when {he} found the little pink cup on the table?",
-          "Medicine and vitamins can look like candy. Who is allowed to give you medicine?",
-          "What would you do if you found pills or a bottle at home?"
+          "When {name} saw the jar of little bears in Grandma's bag, what did {he} do?",
+          "Vitamins can look like gummy candy. Why can't we take them by ourselves?",
+          "If you saw something that looked like candy, what would you do first?"
         ],
-        "tip": "This week, play a \"Come and look!\" game: set a clean, empty medicine bottle on the table, and when your child finds it, practice not touching or tasting it and calling, \"Come and look!\" Then put your real medicines up high together, out of reach."
+        "tip": "This week, look at the vitamins and medicines at home together, talk about what they look like, and check that they're all up high, out of reach. Practice: \"If it looks like candy, ask a grown-up first!\""
       }
     },
     "draft": false,
@@ -4969,24 +4969,24 @@
     },
     "paragraphs": {
       "zh": [
-        "星期六，{name}來到奶奶家。奶奶住在七樓，窗外有好多屋頂。奶奶笑著說：「我的老花眼鏡不見了。你願意當小探險家，幫我找一找嗎？」{name}拿起小手電筒，用力點點頭。「探險開始囉！」",
-        "{name}先到客廳探險。沙發底下有一顆毛線球，是奶奶織圍巾用的。書櫃旁邊有一本舊相簿。可是，眼鏡在哪裡呢？窗台上的小花貓咪咪喵喵叫，好像在說：「再找找看！」",
+        "星期六，{name}來到奶奶家。奶奶笑著說：「我的老花眼鏡不見了。你願意當小探險家，幫我找一找嗎？」{name}拿起小手電筒，用力點點頭。「探險開始囉！」",
+        "{name}先到客廳探險。沙發底下有一顆毛線球，書櫃旁邊有一本舊相簿。可是，眼鏡在哪裡呢？窗台上的小花貓咪咪喵喵叫，好像在說：「再找找看！」",
         "接著，{name}走進廚房。矮矮的桌子上，有一個長長的盒子。盒子分成七個小格子。紅、橙、黃、綠、藍、紫，還有粉紅色。每一格都裝著圓圓的小顆粒。陽光一照，亮晶晶的，好像彩虹糖果！",
-        "{name}的眼睛睜得好大。「哇，好漂亮！」可是，{he}想起有一次，媽媽蹲下來，指著藥櫃小聲說：「這些長得像糖果，可是是藥喔。」{name}把小手放到背後，一點也沒有碰。",
+        "{name}的眼睛睜得好大。「哇，好漂亮！」可是，{he}想起媽媽說過的話：「這些長得像糖果，可是它們是藥喔。」{name}把小手放到背後，一點也沒有碰。",
         "「奶奶，快來看！」{name}跑回客廳，拉著奶奶的手。奶奶跟著走進廚房。{name}指著盒子說：「這是糖果嗎？我沒有吃喔。」奶奶蹲下來，給{him}一個大大的擁抱。「這是奶奶的藥盒。你找大人來看，做得真好！」",
         "奶奶說：「每天吃一格，奶奶的身體才會好好的。藥要大人拿給你，才可以吃喔。」她想了想又說：「明天小表妹樂樂要來玩。樂樂才一歲，什麼都想放進嘴巴。」{name}拍拍手說：「那我們幫藥盒找個新家吧！」奶奶笑了：「好主意，小探險家！」",
         "新的探險開始了！他們先看看茶几。「太矮了，樂樂爬得到。」再看看書櫃。「咪咪會跳上去。」最後，他們找到冰箱旁邊的高櫃子。奶奶踮起腳，把藥盒放進去，再把櫃門關好。「這裡最安全！」",
-        "{name}抬頭一看，用手電筒照一照。「奶奶，冰箱上面有東西在發亮！」原來，正是奶奶的眼鏡！奶奶戴上眼鏡，哈哈大笑。她端出一盤切好的蘋果。「這才是小探險家的點心！」{name}咬一口，甜甜的，今天的探險真棒。"
+        "{name}抬頭一看，用手電筒照一照。「奶奶，冰箱上面有東西在發亮！」原來，正是奶奶的眼鏡！奶奶戴上眼鏡，哈哈大笑：「今天的小探險家，找到兩個寶藏：眼鏡，還有藥盒的新家！」她翻開舊相簿，一頁一頁講故事給{name}聽。"
       ],
       "en": [
-        "On Saturday, {name} went to Grandma's apartment. It was way up on the seventh floor. Grandma smiled. \"I lost my reading glasses. Will you be my little explorer and help me look?\" {name} grabbed a small flashlight. \"Let the adventure begin!\"",
-        "First, {name} explored the living room. Under the sofa was a ball of yarn for Grandma's knitting. By the bookshelf sat an old photo album. But where were the glasses? Mimi the cat sat on the windowsill. \"Meow,\" she said. Keep looking!",
-        "Next, {name} tiptoed into the kitchen. On a low table sat a long box. It had seven little boxes inside. Red, orange, yellow, green, blue, purple, and pink! Each one held tiny round things. In the sunlight, they sparkled like rainbow candy.",
-        "{name}'s eyes grew wide. \"Wow, so pretty!\" Then {he} remembered Mom kneeling by the medicine cabinet, whispering, \"These look like candy, but they're medicine.\" So {name} kept both hands behind {his} back.",
+        "On Saturday, {name} went to Grandma's apartment. Grandma smiled. \"I lost my reading glasses. Will you be my little explorer and help me look?\" {name} grabbed a small flashlight. \"Let the adventure begin!\"",
+        "First, {name} explored the living room. Under the sofa was a ball of yarn. By the bookshelf sat an old photo album. But where were the glasses? Mimi the cat sat on the windowsill. \"Meow,\" she said. Keep looking!",
+        "Next, {name} tiptoed into the kitchen. On a low table sat a long box. It had seven little sections inside. Red, orange, yellow, green, blue, purple, and pink! Each one held tiny round things. In the sunlight, they sparkled like rainbow candy.",
+        "{name}'s eyes grew wide. \"Wow, so pretty!\" Then {he} remembered what Mom once said: \"These look like candy, but they're medicine.\" So {name} kept both hands behind {his} back.",
         "\"Grandma, come and see!\" {name} ran back and took Grandma's hand. Together they walked into the kitchen. {name} pointed. \"Is this candy? I didn't eat any.\" Grandma knelt down for a big hug. \"That's my pillbox. You did just right to get me!\"",
-        "\"I take one box each day,\" said Grandma. \"It helps me stay well. Medicine is only for when a grown-up gives it to you.\" Then she thought for a moment. \"Baby Lulu is visiting tomorrow. She's only one. She puts everything in her mouth!\" {name} clapped. \"Let's find the pillbox a new home!\"",
+        "\"I take the pills in one little section each day,\" said Grandma. \"They help me stay well. Medicine is only for when a grown-up gives it to you.\" Then she thought for a moment. \"Baby Lulu is visiting tomorrow. She's only one. She puts everything in her mouth!\" {name} clapped. \"Let's find the pillbox a new home!\"",
         "A new adventure began! First they checked the coffee table. \"Too low. Lulu can crawl there.\" Then they checked the bookshelf. \"Mimi can jump up there.\" At last they found a tall cupboard by the fridge. Grandma reached up, tucked the pillbox inside, and shut the door.",
-        "{name} looked up and shined the flashlight. \"Grandma, something's shiny on top of the fridge!\" It was Grandma's glasses! Grandma put them on and laughed. Then she brought out a plate of apple slices. \"Here's a real treat for my explorer!\" {name} took a sweet, crunchy bite."
+        "{name} looked up and shined the flashlight. \"Grandma, something's shiny on top of the fridge!\" It was Grandma's glasses! Grandma put them on and laughed. \"My explorer found two treasures today: my glasses, and a safe new home for my pillbox!\" Then she opened the old photo album. She told {name} a story for every page."
       ]
     },
     "theme": "medicine",
@@ -9551,40 +9551,40 @@
     },
     "paragraphs": {
       "zh": [
-        "海邊的小山丘上，站著一座白色的燈塔。姑婆就住在燈塔裡，負責照顧頂端那盞大燈。今晚，{name}要在這裡過夜。姑婆的老貓「海苔」慢吞吞地走過來，在{name}腳邊蹭了又蹭，喉嚨裡發出輕輕的呼嚕聲，好像在說：歡迎你來。",
-        "晚餐後，天色一點一點暗了下來。{name}躺在小床上，聽著陌生的海浪聲，翻來覆去，怎麼也睡不著。「姑婆，這裡的聲音好不一樣喔。」姑婆坐到床邊，摸摸{his}頭，笑瞇瞇地說：「那我們一起上去，看看燈塔是怎麼守夜的吧。」",
-        "燈塔裡有一道彎彎繞繞的螺旋樓梯。姑婆牽著{name}的手，另一隻手扶著欄杆，一階一階慢慢往上爬。海苔走在最前面，尾巴翹得高高的，像一根小旗子。爬到一半，{name}有點喘了，海苔卻回頭打了個大呵欠，好像在笑：才這樣就累啦？",
-        "到了頂端的小房間，大燈正緩緩轉動。姑婆說燈很燙，站在玻璃窗邊看就好，{name}乖乖地點點頭。一道金黃色的光束掃過漆黑的海面，轉一圈，又轉一圈，不疾不徐，像一隻溫柔的大手，輕輕撫過每一朵浪花。",
-        "遠遠的海上，有幾艘小漁船亮著燈。光束掃過去，漁船就被照亮一下，又悄悄沉回夜色裡。{name}正看得入神，忽然，最近的那艘船閃了三下燈。過了一會兒，另一艘也閃了三下。{name}睜大眼睛：「姑婆，漁船在跟我們說話嗎？」",
-        "姑婆輕聲說：「那是漁夫們在說謝謝，也在說晚安。」原來，海苔每天晚上都會跳上窗台，陪姑婆等這三下燈光，一天也沒有錯過。難怪海苔白天總是睡得東倒西歪！{name}忍不住笑出聲，海苔卻一臉若無其事，舔了舔爪子。",
-        "{name}學著姑婆，對窗外的漁船輕輕揮手。海浪嘩啦——嘩啦——，一下一下拍著岩石，像在慢慢數拍子。風從窗縫溜進來，咻——咻——。剛才那些陌生的聲音，現在聽起來就像一首溫柔的搖籃曲，一點也不陌生了。",
-        "姑婆在窗邊的長椅上鋪好軟軟的毯子，{name}窩了進去，海苔也跳上來，捲成一顆暖呼呼的毛球。光束轉一圈，海浪嘩啦一聲；光束再轉一圈，海苔呼嚕一聲。{his}眼皮越來越重。燈塔繼續守著大海，而{name}和海苔，已經甜甜地睡著了。"
+        "海邊的小山丘上，站著一座白色的燈塔。姑婆就住在燈塔裡，負責照顧頂端那盞大燈。今晚，{name}要在這裡過夜。姑婆的老貓「海苔」在{name}腳邊蹭了又蹭，然後捲進門邊的小籃子裡。",
+        "刷好牙後，{name}跑去跟海苔說晚安，卻愣住了：小籃子空空的！「姑婆，海苔不見了！」{name}看過沙發底下，又翻過毛毯，連一根貓毛都沒有。姑婆神祕地笑了笑：「我大概知道牠去哪裡了。走，一起去找。」",
+        "姑婆牽著{name}的手，另一隻手扶著欄杆，沿著螺旋樓梯一階一階往上爬。樓梯上有一撮小小的黑毛，再往上，又有一撮。「是海苔留下的線索！」{name}小聲說。",
+        "到了頂端的小房間，大燈正緩緩轉動。姑婆說燈很燙，站在窗邊看就好，{name}乖乖點頭。就在窗台上，一團黑影動也不動，尾巴繞在腳邊。是海苔！牠正盯著漆黑的大海，好像在等什麼人。",
+        "遠遠的海上，有幾艘小漁船亮著燈。忽然，最近的那艘船閃了三下燈，另一艘也閃了三下。海苔的耳朵立刻豎起來。姑婆輕聲說：「那是漁夫們在說謝謝，也在說晚安。海苔每天晚上都溜上來，等這三下燈光。」難怪海苔白天總是睡得東倒西歪！",
+        "姑婆從抽屜拿出一支小手電筒，放進{name}手裡：「今晚，換你回答他們。」{name}對著窗外，小心地按了三下：亮、暗，亮、暗，亮、暗。過了一會兒，遠遠的漁船也閃了三下，像在說：「收到了，晚安！」{name}的心裡暖暖的。",
+        "海苔滿意地伸了個懶腰，跳下窗台，帶頭走下樓梯，一跳就鑽進小籃子。{name}躺在小床上，手裡還握著那支手電筒。窗外，光束一圈一圈，慢慢地轉。",
+        "{name}閉上眼睛，好像看見自己坐在小漁船上，海苔窩在腳邊，跟著那道溫柔的光，一路搖呀搖，搖回家。海浪輕輕唱，海苔輕輕呼嚕。{name}和海苔，都甜甜地睡著了。"
       ],
       "en": [
-        "On a little hill by the sea stood a white lighthouse. Great-Aunt lived inside and took care of the big lamp at the very top. Tonight, {name} was staying over. Her old cat, Nori, padded slowly across the floor, rubbed against {name}'s ankles, and purred a soft, rumbly welcome.",
-        "After supper, the sky dimmed little by little. {name} lay in the small bed, listening to the unfamiliar waves, tossing and turning. \"Great-Aunt, everything sounds so different here.\" Great-Aunt sat down, patted {his} pillow, and smiled. \"Then let's go up and see how a lighthouse keeps watch at night.\"",
-        "Inside the lighthouse, a staircase curled round and round like a seashell. Great-Aunt held {name}'s hand and gripped the railing, and they climbed one step at a time. Nori led the way, tail held high like a tiny flag. Halfway up, {name} was puffing, and Nori turned back with an enormous yawn, as if to say, \"Tired already?\"",
-        "At the top, the great lamp was turning slowly. Great-Aunt explained that it was very hot, so they would watch from the window, and {name} nodded and stayed put. A golden beam swept across the dark water, around and around, never hurrying, like a gentle hand smoothing every wave.",
-        "Far out on the sea, a few fishing boats glowed with tiny lights. Each time the beam passed, a boat lit up for a moment, then slipped quietly back into the night. Suddenly, the nearest boat blinked its light three times. Soon another blinked three times too. {name} stared. \"Are the boats talking to us?\"",
-        "\"That's the fishermen saying thank you, and goodnight,\" Great-Aunt whispered. Every single night, it turned out, Nori hopped onto the windowsill to wait for those three blinks with her. No wonder Nori snoozed all day long! {name} giggled, but Nori just licked a paw, looking perfectly innocent.",
-        "{name} copied Great-Aunt and waved gently at the boats. Swish, swash went the waves against the rocks, slow and steady, like someone counting a lullaby. Whoo, whoo sang the breeze through the window. The sounds that had seemed so strange now felt soft and friendly, like an old song.",
-        "Great-Aunt spread a fluffy blanket on the bench by the window. {name} snuggled in, and Nori curled up nearby like a warm, furry ball. The beam went around, and the waves whispered swish. The beam went around again, and Nori purred. {name}'s eyes grew heavy. The lighthouse kept watch over the sea, while {name} and Nori drifted off to sleep."
+        "On a little hill by the sea stood a white lighthouse. Great-Aunt lived inside and took care of the big lamp at the very top. Tonight, {name} was staying over. Great-Aunt's old cat, Nori, rubbed against {name}'s ankles, then curled up in the little basket by the door.",
+        "After brushing {his} teeth, {name} ran to say goodnight to Nori, then froze. The basket was empty! \"Great-Aunt, Nori's gone!\" {name} looked under the sofa and shook out the blankets. Not a single cat hair. Great-Aunt smiled a secret smile. \"I think I know where she went. Come on, let's find her.\"",
+        "Great-Aunt held {name}'s hand and gripped the railing, and they climbed the curly staircase one step at a time. On a step lay a tiny tuft of black fur. Further up, another one. \"Nori left us clues!\" {name} whispered.",
+        "At the top, the great lamp was turning slowly. Great-Aunt said it was very hot, so they would watch from the window, and {name} nodded. There on the windowsill sat a dark shape, perfectly still, tail wrapped around her paws. It was Nori! She was staring out at the dark sea, as if waiting for someone.",
+        "Far out on the sea, a few fishing boats glowed with tiny lights. Suddenly, the nearest boat blinked three times. Then another blinked three times too. Nori's ears shot up. \"That's the fishermen saying thank you, and goodnight,\" Great-Aunt whispered. \"Every night, Nori sneaks up here to wait for those three blinks.\" No wonder Nori snoozed all day long!",
+        "Great-Aunt took a small flashlight from a drawer and placed it in {name}'s hand. \"Tonight, it's your turn to answer them.\" {name} pointed it at the window and pressed carefully three times: on, off, on, off, on, off. After a moment, the faraway boats blinked three times back, as if to say, \"Got it. Goodnight!\" {name} felt warm inside.",
+        "Nori gave a satisfied stretch, hopped down, and led the way downstairs, then leapt straight into her basket. {name} lay in the little bed, still holding the flashlight. Outside the window, the beam turned slowly, around and around.",
+        "{name} closed {his} eyes and seemed to see {him}self on a little fishing boat, with Nori curled at {his} feet, rocking gently home along that soft beam of light. The waves sang quietly. Nori purred quietly. Soon {name} and Nori were both fast asleep."
       ]
     },
     "guide": {
       "zh": {
         "questions": [
-          "{name}剛到燈塔、聽到陌生的海浪聲睡不著時，你覺得心裡是什麼感覺？",
-          "爬螺旋樓梯時，海苔回頭打了個大呵欠，你最喜歡海苔的哪一個樣子？",
-          "如果你也能在燈塔上對漁船閃三下燈，你想跟漁夫們說什麼悄悄話？"
+          "海苔不見的時候，{name}找了哪些地方？後來發現了什麼線索？",
+          "海苔每天晚上在窗台上等什麼？{name}怎麼回答漁船？",
+          "如果你也能用手電筒跟遠方的人說晚安，你想跟誰說？"
         ],
         "tip": "今晚關燈後，用手電筒在天花板上輕輕閃三下說「晚安」，再讓孩子閃回來，然後一起靜靜聽聽房間裡有哪些小小的聲音。"
       },
       "en": {
         "questions": [
-          "When {name} first heard the strange waves and couldn't fall asleep, how do you think that felt?",
-          "On the curly stairs, Nori turned back with a big yawn. What was your favourite thing Nori did?",
-          "If you could blink a light three times to the fishing boats, what secret message would you send?"
+          "When Nori went missing, where did {name} look? What clues did {he} find?",
+          "What does Nori wait for every night? How did {name} answer the boats?",
+          "If you could say goodnight to someone far away with a flashlight, who would it be?"
         ],
         "tip": "After lights out tonight, blink a small flashlight three times on the ceiling to say goodnight and let your child blink back, then lie still together and listen for the quiet little sounds in the room."
       }
@@ -10716,43 +10716,43 @@
     },
     "paragraphs": {
       "zh": [
-        "早上，{name}想玩紅色小汽車。可是，房間好亂啊！積木散在地上，故事書疊成小山。布娃娃躺得到處都是。好像有一場大風暴，剛剛吹過這裡。「我的小汽車呢？」{name}東看看，西找找，就是找不到。",
-        "媽媽走進房間，笑著說：「哇，好大的風暴！」{name}嘟著嘴說：「我的紅色小汽車不見了。」媽媽想了想，眨眨眼睛。「那我們來一場尋寶探險，好不好？」{name}馬上跳起來。「好！我要當探險隊長！」",
-        "媽媽拿來四個盒子，貼上彩色標籤。紅色盒子給小汽車住。藍色盒子給積木住。黃色盒子放彩色筆。綠色盒子讓布娃娃休息。媽媽說：「每個玩具都有自己的家。玩完送它們回家，下次就找得到。」{name}用力點點頭。",
-        "「探險開始！」{name}大聲宣布。媽媽唱起整理歌：「收一收，放一放，玩具回家囉！」{name}跟著一起唱。{name}撿起積木，喀啦、喀啦！藍色積木一塊塊跳進藍色盒子。兩個人一起收，地板很快就露出來了。",
-        "床邊有幾支彩色筆，蓋子都掉了。{name}試著畫一畫，顏色變得淡淡的。媽媽說：「蓋子蓋好，筆就不會乾掉喔。」{name}把蓋子一個一個蓋緊。喀！喀！聲音好清楚。彩色筆排排站，住進黃色盒子。",
-        "接著，{name}發現一本故事書。書角被壓得彎彎的。{name}輕輕把書頁撫平，讓書在書架上站好。「這樣它就能陪我好久。」{name}小聲說。媽媽笑了，把小熊放進綠色盒子。{name}抱起小兔子說：「小兔子今晚要陪我睡。」",
-        "{name}拿起床上的枕頭，想讓小兔子躺好。咦？枕頭下面有紅紅的東西！{name}屏住呼吸，慢慢伸手一摸。是那輛紅色小汽車！「找到寶藏了！」{name}開心得跳起來。媽媽拍拍手說：「探險隊長真厲害！」",
-        "{name}看看四周。積木、彩色筆、布娃娃，都回到自己的家了。「房間整齊，寶藏就好找了！」{name}笑著說。小汽車在乾淨的地板上，嘟嘟嘟地開來開去。玩完以後，{name}輕輕把它送回紅色盒子。今天的探險，真好玩！"
+        "早上，{name}想玩紅色小汽車。可是，房間好亂啊！積木散在地上，故事書疊成小山，布娃娃躺得到處都是。「我的小汽車呢？」{name}東看看，西找找，就是找不到。",
+        "媽媽走進房間，眨眨眼睛：「我們來一場尋寶探險吧！探險的規則是：每收好一個地方，就仔細找找線索。」{name}跳起來：「好！我要當探險隊長！」",
+        "第一站，地板。{name}和媽媽一邊唱：「收一收，放一放！」一邊把積木送回箱子。喀啦、喀啦！地板露出來了。咦？積木下面躺著一個小人偶，是小汽車的小司機！「線索一號！」{name}大叫。",
+        "第二站，書堆。{name}把故事書一本一本放回書架，書角彎彎的，就輕輕撫平。最下面那本書裡，夾著一張紅色小貼紙，是小汽車的車牌！「線索二號！小汽車就在附近！」",
+        "第三站，布娃娃。小熊、小狗、小鴨，一個一個回到籃子裡。{name}抱起小兔子：「小兔子今晚要陪我睡，先放在床上。」床上還堆著好多布娃娃。",
+        "{name}抱起最後一隻大熊，下面露出紅紅的東西。{name}屏住呼吸，慢慢伸手。是那輛紅色小汽車！「找到寶藏了！」媽媽拍拍手：「探險隊長真厲害！」",
+        "{name}把小司機放回駕駛座，把車牌貼回車尾。「原來，小汽車被布娃娃壓住了，難怪找不到。」{name}看看四周，地板乾乾淨淨，書站得整整齊齊。",
+        "小汽車在地板上嘟嘟嘟地開來開去，一點也不會撞到東西。玩完以後，{name}把小汽車停在書架上的「停車場」。「明天，我一下就找得到你了！」今天的探險，真好玩！"
       ],
       "en": [
-        "One morning, {name} wanted to play with the red car. But the room was a big mess! Blocks covered the floor. Books stood in a wobbly pile. Stuffed animals lay everywhere. It looked like a storm had blown through. Where was the car?",
-        "Mom peeked in and smiled. \"Wow, what a storm!\" {name} frowned. \"My red car is lost.\" Mom thought for a moment and winked. \"Shall we go on a treasure hunt?\" {name} jumped up. \"Yes! I'll be the explorer captain!\"",
-        "Mom brought four boxes with colored labels. The red box was home for cars. The blue box was home for blocks. Markers went in the yellow box. Stuffed animals rested in the green box. \"Every toy has a home,\" Mom said. \"Then we can find them next time.\"",
-        "\"Let the hunt begin!\" {name} announced. Mom sang a tidy-up song. \"Pick it up, put it back, toys go home!\" {name} sang along and grabbed some blocks. Clack, clack! Blue blocks hopped into the blue box. Working together, they cleared the floor fast.",
-        "Near the bed lay some markers without caps. {name} tried one. The color looked pale and dry. \"Caps keep markers from drying out,\" Mom said. {name} pressed each cap on tight. Click! Click! The markers lined up neatly in the yellow box.",
-        "Next, {name} found a storybook. Its corner was bent. {name} gently smoothed the page flat. Then the book stood tall on the shelf. \"Now it can stay with me a long time,\" {name} whispered. Mom smiled and put the bear in the green box. {name} hugged the bunny. \"Bunny is sleeping with me tonight.\"",
-        "{name} lifted the pillow to make room for the bunny. Wait! Something red was hiding underneath! Holding a breath, {name} reached in slowly. It was the red car! \"I found the treasure!\" {name} cheered. Mom clapped. \"Great job, captain!\"",
-        "{name} looked around. Blocks, markers, and stuffed animals were all home. \"A tidy room makes treasure easy to find!\" {name} said. The red car zoomed across the clean floor. Vroom, vroom! After playing, {name} parked it in the red box. What a fun adventure!"
+        "One morning, {name} wanted to play with the red car. But the room was a big mess! Blocks covered the floor. Books stood in a wobbly pile. Stuffed animals lay everywhere. \"Where's my car?\" {name} looked here and there, but it was nowhere.",
+        "Mom peeked in and winked. \"Let's go on a treasure hunt! Here's the rule: every time we tidy one spot, we look closely for clues.\" {name} jumped up. \"Yes! I'll be the explorer captain!\"",
+        "First stop, the floor. {name} and Mom sang, \"Pick it up, put it back!\" as the blocks went into their box. Clack, clack! The floor appeared. Wait! Under the blocks lay a tiny figure. It was the red car's little driver! \"Clue number one!\" {name} shouted.",
+        "Second stop, the book pile. {name} put the books back on the shelf one by one, smoothing out bent corners. Inside the bottom book was a little red sticker. It was the car's license plate! \"Clue number two! The car must be close!\"",
+        "Third stop, the stuffed animals. Bear, puppy, and duck went back into the basket one by one. {name} hugged the bunny. \"Bunny is sleeping with me tonight, so Bunny stays on the bed.\" Lots of stuffed animals were still piled on the bed.",
+        "{name} lifted the last big bear. Something red peeked out underneath! Holding a breath, {name} reached in slowly. It was the red car! \"I found the treasure!\" Mom clapped. \"Great job, captain!\"",
+        "{name} put the little driver back in the seat and stuck the license plate back on. \"The car was stuck under the stuffed animals. No wonder I couldn't find it!\" {name} looked around. The floor was clear. The books stood neatly.",
+        "The red car zoomed across the floor without bumping into anything. Vroom, vroom! After playing, {name} parked it in the \"parking lot\" on the bookshelf. \"Tomorrow, I'll find you right away!\" What a fun adventure!"
       ]
     },
     "theme": "tidying-toys",
     "guide": {
       "zh": {
         "questions": [
-          "{name}的紅色小汽車最後在哪裡找到？房間整齊以後，找東西有什麼不一樣？",
-          "{name}和媽媽一邊唱歌一邊收玩具，你覺得一起收有什麼好玩的地方？",
-          "你最喜歡的玩具住在哪個「家」？我們可以怎麼照顧它，讓它陪你更久？"
+          "{name}每收好一個地方，找到了哪些線索？",
+          "小汽車最後在哪裡找到？為什麼之前一直找不到？",
+          "你的玩具玩完以後，可以停在哪裡，下次一下就找得到？"
         ],
-        "tip": "今晚和孩子一起替玩具盒貼上顏色或圖案標籤，睡前唱一首簡短的「收一收，放一放，玩具回家囉」整理歌，一起把玩具送回家。"
+        "tip": "下次孩子找不到玩具時，和孩子玩「收好一個地方，找一個線索」的尋寶遊戲，再一起替最愛的玩具選一個固定的「停車場」。"
       },
       "en": {
         "questions": [
-          "Where did {name} find the red car? How was finding things different once the room was tidy?",
-          "{name} and Mom sang while they tidied. What makes tidying fun when we do it together?",
-          "Where does your favorite toy live? How can we take care of it so it lasts a long time?"
+          "What clues did {name} find each time a spot was tidied?",
+          "Where was the red car in the end? Why was it so hard to find before?",
+          "After playing, where could your toys \"park\" so you can find them right away next time?"
         ],
-        "tip": "Tonight, label your child's toy boxes with colors or pictures together. Before bed, sing a short \"Pick it up, put it back, toys go home\" song while you tidy side by side."
+        "tip": "Next time a toy goes missing, play \"tidy one spot, look for one clue\" together, then pick a regular \"parking spot\" for your child's favorite toy."
       }
     },
     "draft": false,
@@ -11203,7 +11203,7 @@
     "ageBands": [
       "6-8"
     ],
-    "setting": "school",
+    "setting": "home",
     "title": {
       "zh": "{name}的鳳梨酥暗號",
       "en": "{name} and the Pineapple Cake Password"
@@ -11211,42 +11211,42 @@
     "paragraphs": {
       "zh": [
         "晚餐後，媽媽把全家叫到客廳，神祕的說：「我們來選一個家庭暗號吧！」大家想了好久，{name}舉手說：「鳳梨酥！」爸爸壓低聲音，像個偵探：「好，從今天起，只有知道暗號的人，才是我們說好可以來接你的大人。」",
-        "媽媽又說：「隔壁的美美阿姨也知道暗號，因為我們先跟她說好了。」接著，全家玩起練習遊戲。爸爸假裝是來接人的叔叔，{name}雙手叉腰問：「請說暗號！」爸爸小聲回答：「鳳梨酥。」大家都笑了，{name}覺得自己像在執行祕密任務。",
-        "星期三放學，天空飄著細細的雨。{name}和同學們排在校門裡面，陳老師一邊看著大家，一邊等家長來。{name}踮起腳尖，在門外的人群裡找媽媽的黃色雨傘，可是找了一圈又一圈，都沒有看到。",
-        "這時，一位{name}從來沒見過的阿姨走到欄杆旁邊，笑咪咪的揮手：「你是{name}吧？你媽媽在忙，叫我來接你喔。」阿姨還拿出一盒亮晶晶的餅乾：「這是給你的點心，我們一起走吧！」聲音聽起來很親切。",
-        "{name}看著那盒餅乾，肚子有點餓，可是{his}雙手緊緊放在背後，沒有伸出去。{name}想起家裡的祕密任務，深吸一口氣問：「請問，我們家的暗號是什麼？」阿姨愣了一下，抓抓頭說：「暗號？嗯……是巧克力嗎？」",
-        "「不對！」{name}往後退一步，用最大的聲音說：「我不跟你走，我也不要餅乾！」說完，{he}轉身跑回陳老師身邊，一口氣把剛才的事情全部說出來，連阿姨猜錯暗號也記得清清楚楚。",
-        "陳老師牽起{name}的手，請警衛伯伯去門口看看，然後馬上打電話給媽媽。電話裡，媽媽說：「我只是遇到塞車，晚了一點，沒有請任何人去接你。我馬上就到！」陳老師蹲下來說：「你大聲說不，又立刻來找我，真勇敢。」",
-        "不久，黃色雨傘出現在校門口。媽媽還沒走近，就笑著說：「鳳梨酥！」{name}開心的撲進媽媽懷裡。回家的路上，媽媽買了一盒真正的鳳梨酥，{name}咬了一大口，覺得今天的祕密任務，完成得剛剛好。"
+        "媽媽又說：「隔壁的美美阿姨也知道暗號，因為我們先跟她說好了。還有，不管是誰按門鈴，都不要自己開門，先來找大人。」接著，全家玩起練習遊戲。爸爸假裝在門外按門鈴，{name}隔著門問：「請說暗號！」爸爸小聲回答：「鳳梨酥。」大家都笑了。",
+        "星期六下午，媽媽出門辦事，奶奶在廚房包水餃，{name}在客廳畫畫。叮咚！門鈴響了。",
+        "門外傳來一個陌生的聲音：「小朋友，我是你媽媽的朋友。你媽媽叫我來帶你去找她，快開門喔，我還帶了點心給你！」聲音聽起來很親切。",
+        "{name}沒有開門，也沒有回答。{he}想起家裡的約定，馬上轉身跑進廚房：「奶奶！門外有人說是媽媽的朋友，要帶我去找媽媽！」",
+        "奶奶擦擦手，牽著{name}走到門邊。奶奶沒有開門，只隔著門說：「我們不開門，請你離開。我們會自己打電話給她。」門外安靜了一下，接著傳來腳步聲，越走越遠。",
+        "奶奶馬上打電話給媽媽。電話裡，媽媽說：「我沒有請任何人去接{name}！」奶奶又打電話給大樓的管理員伯伯，請他去看看。奶奶抱抱{name}：「你沒有開門，又馬上來找我，做得真好。」",
+        "傍晚，門鈴又響了。{name}沒有跑去開門，先牽著奶奶一起走到門邊。奶奶問：「請說暗號。」門外傳來熟悉的聲音，小小聲說：「鳳梨酥。」是美美阿姨！她帶來媽媽託她買的一盒鳳梨酥。{name}咬了一大口：「祕密任務，完成！」"
       ],
       "en": [
         "After dinner, Mom gathered everyone in the living room. \"Let's choose a secret family password,\" she whispered. Everyone thought hard, until {name} shouted, \"Pineapple cake!\" Dad leaned in like a detective. \"From now on, only grown-ups who know the password are the ones we picked to pick you up.\"",
-        "\"Auntie Mei next door knows it too,\" Mom added, \"because we told her ourselves.\" Then they played a practice game. Dad pretended to be a visitor, and {name} put both hands on {his} hips. \"Password, please!\" Dad whispered, \"Pineapple cake.\" Everyone laughed. It felt like a real secret mission.",
-        "On Wednesday after school, a light rain was falling. {name} waited in line just inside the school gate while Ms. Chen watched the class and greeted the parents. {name} stood on tiptoe, searching the crowd for Mom's yellow umbrella. But it wasn't anywhere.",
-        "Just then, a smiling woman {name} had never seen before came up to the fence and waved. \"You're {name}, right? Your mom is busy, so she sent me to get you.\" She held out a shiny box of cookies. \"These are for you. Let's go!\" She sounded very friendly.",
-        "{name} looked at the cookies. Lunch felt like a long time ago, but {his} hands stayed tucked behind {his} back. Remembering the secret mission, {name} took a deep breath. \"What's our family password?\" The woman blinked and scratched her head. \"Password? Um... is it chocolate?\"",
-        "\"No!\" {name} stepped back and said in the loudest voice possible, \"I'm not going with you, and I don't want the cookies!\" Then {name} turned and hurried straight to Ms. Chen and told her everything, even the wrong password guess.",
-        "Ms. Chen held {name}'s hand, asked the security guard to check the gate, and called Mom right away. \"I'm just stuck in traffic,\" Mom said. \"I didn't send anyone. I'm coming now!\" Ms. Chen knelt down. \"You said no loudly and came right to me. That was brave.\"",
-        "Soon, a yellow umbrella bobbed up to the gate. Before she even got close, Mom called out with a grin, \"Pineapple cake!\" {name} ran into her arms. On the way home, Mom bought a box of real pineapple cakes, and {name} took a big bite. Mission complete!"
+        "\"Auntie Mei next door knows it too,\" Mom added, \"because we told her ourselves. And whoever rings the doorbell, never open the door yourself. Come and get a grown-up first.\" Then they played a practice game. Dad pretended to ring the bell, and {name} called through the door, \"Password, please!\" Dad whispered, \"Pineapple cake.\" Everyone laughed.",
+        "On Saturday afternoon, Mom went out to run errands. Grandma was making dumplings in the kitchen, and {name} was drawing in the living room. Ding-dong! The doorbell rang.",
+        "A voice {name} didn't know called through the door. \"Hi there! I'm your mom's friend. She asked me to take you to her. Open the door, okay? I brought you a snack!\" The voice sounded very friendly.",
+        "{name} didn't open the door. {he} didn't answer, either. Remembering the family rule, {he} ran straight to the kitchen. \"Grandma! Someone outside says they're Mom's friend and wants to take me to her!\"",
+        "Grandma wiped her hands and walked to the door, holding {name}'s hand. She didn't open it. She just said through the door, \"We're not opening the door. Please leave. We'll call her ourselves.\" It went quiet outside. Then footsteps walked away, further and further.",
+        "Grandma called Mom right away. \"I didn't send anyone to get {name}!\" Mom said. Then Grandma called the building guard and asked him to check. Grandma hugged {name}. \"You didn't open the door, and you came to me right away. Well done.\"",
+        "That evening, the doorbell rang again. {name} didn't run to the door. {he} took Grandma's hand, and they went together. \"Password, please,\" said Grandma. A familiar voice whispered, \"Pineapple cake.\" It was Auntie Mei! She had brought a box of pineapple cakes from Mom. {name} took a big bite. \"Secret mission complete!\""
       ]
     },
     "theme": "strangers",
     "guide": {
       "zh": {
         "questions": [
-          "那位阿姨拿出餅乾說要接{name}的時候，{name}做了哪些事？",
-          "如果有一個你不認識的人說要帶你去某個地方，或給你點心、玩具，你會怎麼做？",
+          "門外的人說要帶{name}去找媽媽時，{name}做了什麼？",
+          "如果有人按門鈴，說是爸爸媽媽請他來的，你會怎麼做？",
           "我們家可以請哪些大人來接你？你覺得我們的暗號要選什麼？"
         ],
-        "tip": "今晚和孩子一起選一個家庭暗號，並列出可以來接孩子的大人名單。這週玩幾次「請說暗號」的角色扮演，讓孩子練習大聲說「不！」並跑去找大人。"
+        "tip": "今晚和孩子一起選一個家庭暗號，列出可以來接孩子的大人名單，並約好「不管誰按門鈴，都不自己開門，先找大人」。這週玩幾次「請說暗號」的角色扮演。"
       },
       "en": {
         "questions": [
-          "When the woman offered cookies and said she would take {name} home, what did {name} do?",
-          "What would you do if someone you didn't know asked you to go somewhere, or offered you a snack or a toy?",
+          "When the person outside said they would take {name} to Mom, what did {name} do?",
+          "If someone rang the doorbell and said your parents sent them, what would you do?",
           "Which grown-ups are allowed to pick you up, and what should our family password be?"
         ],
-        "tip": "Tonight, choose a family password together and name the grown-ups who are allowed to pick your child up. This week, play a few rounds of \"Password, please!\" so your child can practice saying \"No!\" loudly and going straight to a trusted grown-up."
+        "tip": "Tonight, choose a family password together, name the grown-ups who are allowed to pick your child up, and agree that no matter who rings the bell, your child never opens the door alone and gets a grown-up first. Play \"Password, please!\" a few times this week."
       }
     },
     "draft": false,
@@ -11813,24 +11813,24 @@
     },
     "paragraphs": {
       "zh": [
-        "公園裡有一個鞦韆。只有一個喔！{name}跑過去，坐上去。咻——飛高高！咻——飛低低！媽媽坐在旁邊的長椅上，笑咪咪地看著。",
-        "{name}盪了一下，又一下。「我還要！我還要！」旁邊站著一個小女孩，叫小米。小米抱著小熊，一直看著鞦韆。她的小嘴巴，扁扁的。",
-        "小米走過來，小小聲地問：「你盪完了，可以換我嗎？」{name}想了想。鞦韆好好玩。可是，小米也好想玩。「好！我們輪流！」",
-        "媽媽說：「我們來數數，每人盪二十下。」{name}開始盪。一、二、三……咻、咻、咻！小米幫忙數，數得好大聲。十八、十九、二十！",
-        "換小米了！{name}站在旁邊等。等待好難喔！{his}小腳一直跳呀跳。小米盪呀盪，{name}跟著數。一、二、三……十九、二十！",
-        "又換{name}了！真的會輪到耶！{name}笑嘻嘻地坐上去。小米說：「我幫你推！」小米輕輕推，一下、兩下。鞦韆搖呀搖，像一艘小船。",
-        "「換我推你！」{name}輕輕推小米。一個盪，一個推。小米咯咯笑，{name}嘻嘻笑。小熊也在搖頭晃腦。笑聲飛得好高，好高。",
-        "太陽變成橘色了。媽媽說：「該回家囉。」{name}和小米揮揮手。「明天再一起盪！」「好！我推你，你推我！」鞦韆輕輕晃，好像在說拜拜。"
+        "公園裡有一個鞦韆。只有一個喔！{name}跑過去，坐上去。媽媽在後面輕輕推。咻——飛高高！咻——飛低低！",
+        "{name}盪了一下，又一下。「我還要！我還要！」黃色的線外面，站著一個小女孩，叫小米。小米的爸爸在她旁邊。小米抱著小熊，一直看著鞦韆。她的小嘴巴，扁扁的。",
+        "小米小小聲地問：「你盪完了，可以換我嗎？」{name}想了想。鞦韆好好玩。可是，小米也好想玩。",
+        "鞦韆慢慢停下來了。{name}跳下來說：「小米，你先盪！」小米眼睛亮亮的：「真的嗎？」「真的！」{name}跑到黃色的線外面。",
+        "媽媽說：「站在線外面等，鞦韆就不會撞到你。」{name}站得好好的。等待好難喔！{his}小腳一直跳呀跳。媽媽輕輕推小米，咻——咻——",
+        "小米盪完了，跳下來。她把小熊遞給{name}：「謝謝你讓我先盪。換你，小熊也陪你！」{name}抱著小熊坐上去。小熊也在飛高高！",
+        "一個盪，一個在線外面揮手。小米咯咯笑，{name}嘻嘻笑。輪到誰，誰就抱小熊。小熊盪了好多次。小熊好開心！",
+        "太陽變成橘色了。媽媽說：「該回家囉。」{name}把小熊還給小米。「明天再一起盪！」「好！明天換我讓你先盪！」鞦韆輕輕晃，好像在說拜拜。"
       ],
       "en": [
-        "The park has one swing. Just one! {name} runs over and hops on. Whoosh, up high! Whoosh, down low! Mom smiles from the bench nearby.",
-        "{name} swings once, then again. \"More! More!\" A little girl named Mimi stands close by. She hugs her teddy bear. Her lip wobbles a bit.",
-        "Mimi steps up and asks softly, \"Can I have a turn when you're done?\" {name} thinks. The swing is so fun. But Mimi wants to swing too. \"Okay! Let's take turns!\"",
-        "Mom says, \"Let's count. Twenty swings each.\" {name} starts to swing. One, two, three... whoosh, whoosh! Mimi counts out loud. Eighteen, nineteen, twenty!",
-        "Now it's Mimi's turn! {name} waits beside her. Waiting is hard! Little feet hop, hop, hop. {name} counts along. One, two, three... nineteen, twenty!",
-        "It's {name}'s turn again! It really came back! {name} climbs on, grinning. \"I'll push you!\" says Mimi. Gentle push, one, two. The swing rocks like a little boat.",
-        "\"My turn to push!\" {name} pushes Mimi gently. One swings, one pushes. Mimi giggles. {name} giggles too. Even Teddy seems to bounce. Their laughter floats up high.",
-        "The sun turns orange. Mom says, \"Time to go home.\" {name} and Mimi wave. \"Let's swing tomorrow!\" \"Yes! I push you, you push me!\" The swing sways goodbye."
+        "The park has one swing. Just one! {name} runs over and hops on. Mom gives a gentle push from behind. Whoosh, up high! Whoosh, down low!",
+        "{name} swings once, then again. \"More! More!\" Outside the yellow line stands a little girl named Mimi, with her dad beside her. She hugs her teddy bear and watches the swing. Her lip wobbles a bit.",
+        "Mimi asks softly, \"Can I have a turn when you're done?\" {name} thinks. The swing is so fun. But Mimi wants to swing too.",
+        "The swing slows down and stops. {name} hops off. \"Mimi, you go first!\" Mimi's eyes light up. \"Really?\" \"Really!\" {name} runs outside the yellow line.",
+        "\"Wait outside the line,\" says Mom, \"so the swing can't bump you.\" {name} stands nice and still. Waiting is hard! Little feet hop, hop, hop. Mom gently pushes Mimi. Whoosh, whoosh!",
+        "Mimi finishes and hops off. She hands Teddy to {name}. \"Thank you for letting me go first. Your turn, and Teddy can come too!\" {name} climbs on, hugging Teddy. Teddy flies up high too!",
+        "One swings, one waves from outside the line. Mimi giggles. {name} giggles too. Whoever swings gets to hug Teddy. Teddy swings so many times. Teddy is so happy!",
+        "The sun turns orange. Mom says, \"Time to go home.\" {name} gives Teddy back to Mimi. \"Let's swing tomorrow!\" \"Yes! Tomorrow you can go first!\" The swing sways goodbye."
       ]
     },
     "theme": "sharing-turns",
@@ -11838,18 +11838,18 @@
       "zh": {
         "questions": [
           "小米想玩鞦韆時，她是怎麼問{name}的？",
-          "等待輪到自己的時候，你會做什麼讓等待變容易？",
-          "{name}和小米一起推鞦韆時，為什麼笑得那麼開心？"
+          "等鞦韆的時候，為什麼要站在黃色的線外面？",
+          "小米為什麼把小熊給{name}抱？"
         ],
-        "tip": "這週和孩子玩一個「數到二十換人」的遊戲，並一起練習說：「你玩完了，可以換我嗎？」"
+        "tip": "下次去公園盪鞦韆，和孩子一起找找「等待的線」在哪裡，練習站在線外面等，再試著說一次：「你先玩！」"
       },
       "en": {
         "questions": [
           "How did Mimi ask {name} for a turn on the swing?",
-          "When you have to wait for your turn, what can you do to make waiting easier?",
-          "Why do you think {name} and Mimi laughed so much when they pushed each other?"
+          "Why should we wait outside the yellow line by the swings?",
+          "Why did Mimi let {name} hug her teddy bear?"
         ],
-        "tip": "This week, play a \"count to twenty, then switch\" game with a toy, and practice saying together, \"Can I have a turn when you're done?\""
+        "tip": "Next time you visit the swings, find the \"waiting line\" together, practice waiting outside it, and try saying, \"You go first!\""
       }
     },
     "draft": false,
@@ -12625,42 +12625,42 @@
     },
     "paragraphs": {
       "zh": [
-        "早上，海水退得好遠好遠。媽媽說：「退潮了，我們去看潮池吧！」{name}牽著媽媽的手，往海邊走。東北角的岩石黑黑的，一塊一塊排在海邊。海風涼涼的，海鷗在天上叫。{name}心裡好興奮，冒險要開始了！",
-        "他們走到一個小潮池旁。潮池像一面小鏡子，亮晶晶的。{name}蹲下來，仔細的看。水裡有綠綠的海草，輕輕搖來搖去。還有一顆小海螺，慢慢爬過石頭。「媽媽，潮池裡好熱鬧！」{name}小聲的說。媽媽笑著點點頭。",
-        "忽然，有個小東西一閃，就不見了。「那是什麼？」{name}睜大眼睛。媽媽指著一塊圓圓的石頭說：「牠躲到下面了。」{name}好想快點知道，想用力把石頭翻開。媽媽輕輕握住{his}小手：「我們慢慢來，好嗎？」{name}點點頭。",
-        "媽媽教{name}用兩隻手，輕輕抬起石頭的一邊。石頭底下，有一隻大螃蟹，還有三隻小螃蟹！牠們的殼紅紅褐褐的，腳細細的。大螃蟹舉起大鉗子，小螃蟹擠成一團。「牠們好像有點害怕。」{name}小小聲的說。",
-        "{name}不說話了，只用眼睛看，也不伸手去摸。小螃蟹橫著走，一步、兩步、三步。一隻小螃蟹吐出小泡泡，啵、啵、啵。「牠在跟我打招呼嗎？」{name}笑了。媽媽說：「也許喔，牠知道你很溫柔。」大螃蟹慢慢放下了鉗子。",
-        "看了一會兒，媽媽說：「這塊石頭，是牠們的家喔。」{name}想了想：「那我要把家還給牠們。」{he}記得石頭原本的樣子，有青苔的那面朝上。{name}慢慢的、輕輕的，把石頭放回原位。螃蟹一家又安心的躲好了。",
-        "這時，海浪的聲音變大了。一波海水流進潮池，嘩啦嘩啦。媽媽說：「漲潮了，海水要回來囉。」{name}牽緊媽媽的手，一起往高高的岸上走。{he}回頭看看那塊圓石頭，海水正輕輕蓋過它，像蓋上一條藍被子。",
-        "「螃蟹一家會冷嗎？」{name}問。媽媽說：「不會，牠們最喜歡海水了。」{name}想像小螃蟹在水裡吐泡泡，開心的轉圈圈。{name}對著大海揮揮手：「螃蟹一家，下次見！」陽光照在海面上，閃閃發亮，好像大海也在揮手呢。"
+        "早上，海水退得好遠好遠。媽媽說：「退潮了，我們去看潮池吧！」{name}牽著媽媽的手，往海邊走。海風涼涼的，海鷗在天上叫。冒險要開始了！",
+        "他們走到一個小潮池旁。潮池像一面小鏡子，亮晶晶的。水裡有綠綠的海草，還有一顆小海螺，慢慢爬過石頭。咦？水裡還漂著一個白白的塑膠杯。",
+        "一隻大螃蟹和三隻小螃蟹，在塑膠杯旁邊躲來躲去。「媽媽，牠們把杯子當成家了嗎？」媽媽搖搖頭：「那不是家，是垃圾。杯子會卡住小螃蟹，也會弄髒牠們的家。」",
+        "「我來拿！」{name}伸出手。媽媽輕輕握住{his}小手：「我來就好，你幫我看著螃蟹。」媽媽戴上手套，慢慢把杯子拿起來，一點也沒有碰到螃蟹。",
+        "杯子拿走了，潮池變得好乾淨。大螃蟹舉起鉗子，帶著小螃蟹橫著走，一步、兩步、三步，鑽進石頭的縫縫裡。一隻小螃蟹吐出小泡泡，啵、啵、啵。「牠在說謝謝嗎？」{name}笑了。",
+        "{name}看看四周：「媽媽，那邊還有寶特瓶！」媽媽打開一個袋子：「我們來當海邊的清潔隊。我來撿，你幫我拿袋子。」兩個人沿著沙灘慢慢走，袋子越來越重。",
+        "這時，海浪的聲音變大了。「漲潮了，海水要回來囉。」{name}牽緊媽媽的手，一起往高高的岸上走。{he}回頭看看潮池，海水正輕輕蓋過它，像蓋上一條藍被子。",
+        "{name}對著大海揮揮手：「螃蟹一家，下次見！」{he}拍拍滿滿的袋子：「下次，我們再來幫你們打掃！」陽光照在海面上，閃閃發亮，好像大海也在揮手呢。"
       ],
       "en": [
-        "One morning, the sea pulled back far, far away. \"It's low tide,\" said Mom. \"Let's go look at tide pools!\" {name} held Mom's hand and walked to the shore. Dark rocks lined the northeast coast. The wind felt cool. Seagulls called overhead. The adventure was starting!",
-        "They stopped beside a little tide pool. It shone like a tiny mirror. {name} squatted down to look closely. Green seaweed swayed back and forth. A small sea snail crept slowly over a stone. \"Mom, the pool is so busy!\" {name} whispered. Mom smiled and nodded.",
-        "Suddenly, something small darted away and vanished. \"What was that?\" {name} asked with wide eyes. Mom pointed to a round rock. \"It's hiding under there.\" {name} wanted to flip the rock over fast. Mom gently held {his} hand. \"Let's go slowly, okay?\" {name} nodded.",
-        "Mom showed {name} how to use two hands. Together they lifted one side of the rock, very gently. Underneath was a big crab and three little crabs! Their shells were reddish brown. Their legs were thin. The big crab raised its claws. \"They look a bit scared,\" {name} whispered.",
-        "{name} stayed quiet and just watched, without touching. The little crabs walked sideways, one, two, three steps. One little crab blew tiny bubbles. Pop, pop, pop! \"Is it saying hello?\" {name} giggled. \"Maybe,\" said Mom. \"It knows you're gentle.\" The big crab slowly lowered its claws.",
-        "After a while, Mom said, \"This rock is their home.\" {name} thought about it. \"Then I'll give their home back.\" {name} remembered how the rock had sat, mossy side up. Slowly and softly, {he} set it back in place. The crab family was safe and snug again.",
-        "Just then, the waves grew louder. Water rushed into the pool. Splash, splash! \"The tide is coming in,\" said Mom. {name} held Mom's hand tight. They walked up to the high, dry shore. {name} looked back. The water was covering the round rock like a blue blanket.",
-        "\"Will the crabs be cold?\" {name} asked. \"No,\" said Mom. \"They love the sea.\" {name} pictured the little crabs blowing bubbles and spinning happily. {name} waved at the ocean. \"Bye, crab family! See you next time!\" The sunlight sparkled on the waves, as if the sea waved back."
+        "One morning, the sea pulled back far, far away. \"It's low tide,\" said Mom. \"Let's go look at tide pools!\" {name} held Mom's hand and walked to the shore. The wind felt cool. Seagulls called overhead. The adventure was starting!",
+        "They stopped beside a little tide pool. It shone like a tiny mirror. Green seaweed swayed in the water. A small sea snail crept over a stone. Wait! A white plastic cup was floating in the water too.",
+        "A big crab and three little crabs scuttled around the cup. \"Mom, are they using the cup as a house?\" Mom shook her head. \"That's not a house. It's trash. Little crabs can get stuck in it, and it makes their home dirty.\"",
+        "\"I'll get it!\" {name} reached out. Mom gently held {his} hand. \"I'll do it. You keep an eye on the crabs.\" Mom put on her gloves and slowly lifted the cup out, without touching a single crab.",
+        "With the cup gone, the pool looked clean and clear. The big crab raised its claws and led the little crabs sideways, one, two, three steps, into a crack in the rocks. One little crab blew tiny bubbles. Pop, pop, pop! \"Is it saying thank you?\" {name} giggled.",
+        "{name} looked around. \"Mom, there's a bottle over there!\" Mom opened a bag. \"Let's be the beach clean-up team. I'll pick things up, and you hold the bag.\" They walked slowly along the sand. The bag got heavier and heavier.",
+        "Just then, the waves grew louder. \"The tide is coming in,\" said Mom. {name} held Mom's hand tight. They walked up to the high, dry shore. {name} looked back. The water was covering the tide pool like a blue blanket.",
+        "{name} waved at the ocean. \"Bye, crab family! See you next time!\" {he} patted the full bag. \"Next time, we'll come and help clean again!\" The sunlight sparkled on the waves, as if the sea waved back."
       ]
     },
     "guide": {
       "zh": {
         "questions": [
-          "潮池裡有綠綠的海草、小海螺，還有螃蟹，你最喜歡哪一個？",
-          "小螃蟹吐泡泡「啵、啵、啵」，你覺得牠在說什麼呢？",
-          "如果下次再去看螃蟹一家，你想跟牠們說什麼？"
+          "潮池裡的塑膠杯，為什麼對螃蟹一家不好？",
+          "{name}想自己拿杯子時，媽媽怎麼說？為什麼？",
+          "去海邊玩的時候，我們可以怎麼幫海裡的動物？"
         ],
-        "tip": "今晚關燈後，和孩子窩在被子裡，一起小小聲的學小螃蟹「啵、啵、啵」，再輪流猜猜螃蟹一家在海水被子底下做了什麼夢。"
+        "tip": "下次去海邊或公園，帶一個袋子當「清潔隊」：大人戴手套撿垃圾，孩子幫忙拿袋子，碰到尖尖的東西一律由大人處理。"
       },
       "en": {
         "questions": [
-          "The tide pool had green seaweed, a little sea snail, and crabs. Which one did you like best?",
-          "When the little crab blew bubbles, pop, pop, pop, what do you think it was saying?",
-          "If you visit the crab family again, what would you like to tell them?"
+          "Why was the plastic cup bad for the crab family?",
+          "When {name} wanted to grab the cup, what did Mom say? Why?",
+          "When we visit the beach, how can we help the sea animals?"
         ],
-        "tip": "After lights out tonight, snuggle under the covers and whisper \"pop, pop, pop\" like the little crab together, then take turns guessing what the crab family dreams about under their blue blanket of sea."
+        "tip": "Next time you visit the beach or park, bring a bag and be the \"clean-up team\": a grown-up wears gloves and picks things up while your child holds the bag, and anything sharp is for grown-ups only."
       }
     },
     "draft": false,
@@ -15940,24 +15940,24 @@
     },
     "paragraphs": {
       "zh": [
-        "森林裡有一條小溪。溪邊長滿高高的蘆葦。小水獺坐在草地上，忙了一整個早上。她用蘆葦編了一艘小木筏。木筏小小的，綁得整整齊齊。{name}和河狸爺爺坐在旁邊看。「好漂亮喔！」{name}說。小水獺開心得吱吱叫。",
-        "今天溪邊有游泳比賽。大水獺想當第一名。「讓開！讓開！」他一邊喊，一邊往前衝。砰的一聲，他撞到了小木筏。蘆葦一根根散開了。木筏變成一堆亂草。大水獺停下來，回頭看了一眼。",
-        "小水獺看著散掉的蘆葦。她的眼睛紅紅的。「我的木筏……」她小聲說。大水獺的心裡酸酸的。他想說對不起。可是他抬起下巴，說：「是它擋在路上啦。」說完，他把頭轉開。小水獺抱著蘆葦，一句話也不說。",
-        "{name}走到大水獺身邊。「你是不是也很難過？」{name}輕輕問。大水獺低下頭。「嗯……可是我是最大的水獺。說對不起好丟臉。」{name}想了想。「我做錯事時也會怕。可是說出來，心裡就輕輕的。」",
-        "「那我要怎麼說？」大水獺問。{name}說：「先說你做了什麼，再說對不起。」大水獺深深吸一口氣。他慢慢走向小水獺。他的腳步好重好重。河狸爺爺在一旁點點頭，微微一笑。",
-        "「小水獺，我跑太快，撞壞了你的木筏。對不起，是我錯了。」小水獺抬起頭。「我好難過，也好生氣。那是我編了一早上的。」大水獺點點頭。「你說得對。我可以幫你重新編一艘嗎？」",
-        "小水獺想了一下。她心裡那團重重的氣，慢慢變小了。「好，我原諒你。」她說，「可是你要綁緊喔！」大水獺笑了。他們一起撿蘆葦。{name}幫忙遞草繩。大水獺力氣大，把結拉得緊緊的。小水獺教他怎麼交叉編。",
-        "太陽爬到樹梢時，新木筏編好了。它比原來的更大，也更結實。小水獺把它放在淺淺的水邊。木筏穩穩地漂著，一點也不晃。「下次我們一起比賽吧！」大水獺說。兩隻水獺吱吱叫，{name}也開心地拍手。"
+        "森林裡有一條小溪，溪邊長滿高高的蘆葦。小水獺坐在水邊，忙了一整個早上，用蘆葦編了一艘小草筏。草筏小小的，綁得整整齊齊。{name}和河狸爺爺坐在旁邊看。「好漂亮喔！」{name}說。",
+        "大水獺游過來，看了一眼，哈哈大笑：「這種小草筏，一放進水裡就會沉下去啦！」旁邊的小青蛙也跟著呱呱笑。小水獺的臉一下子紅了。",
+        "小水獺把草筏藏到身後，眼睛紅紅的，一句話也不說。大水獺的心裡忽然酸酸的。他想說對不起，可是他抬起下巴：「我只是開玩笑嘛。」說完，他把頭轉開。",
+        "{name}走到大水獺身邊。「你是不是也覺得不舒服？」{name}輕輕問。大水獺低下頭：「嗯……可是我是最大的水獺，說對不起好丟臉。」{name}想了想：「我說錯話的時候也會怕。可是說出來，心裡就輕輕的。」",
+        "「那我要怎麼說？」大水獺問。{name}說：「先說你做了什麼，再說對不起。」大水獺深深吸一口氣，慢慢走向小水獺。他的腳步好重好重。河狸爺爺在一旁點點頭。",
+        "「小水獺，我笑你的草筏，讓你難過了。對不起，是我錯了。」小水獺抬起頭：「我好難過，也好生氣。那是我編了一早上的。」大水獺點點頭：「你說得對。你可以教我怎麼編嗎？」",
+        "小水獺想了一下，心裡那團重重的氣，慢慢變小了。「好，我原諒你。」她把草筏輕輕放進水裡。草筏穩穩地漂著，一點也沒有沉下去！大水獺睜大眼睛：「哇，你編得真好！」",
+        "小水獺教大水獺怎麼交叉編，{name}幫忙遞草繩。到了中午，大水獺也編好了一艘歪歪的小草筏。兩艘草筏並排漂在水面上。這一次，大家一起笑了，笑得好開心。"
       ],
       "en": [
-        "A little stream ran through the forest. Tall reeds grew along its bank. Little Otter sat on the grass all morning. She was weaving a tiny raft from reeds. Every knot was neat and snug. {name} watched with Grandpa Beaver nearby. \"It's beautiful!\" said {name}. Little Otter squeaked with joy.",
-        "Today there was a swimming race. Big Otter wanted to be first. \"Move! Move!\" he shouted as he dashed ahead. Bump! He crashed right into the little raft. The reeds flew apart. The raft became a messy pile of grass. Big Otter stopped and looked back.",
-        "Little Otter stared at the scattered reeds. Her eyes turned red. \"My raft…\" she whispered. Big Otter's tummy felt tight and sour. He wanted to say sorry. But he lifted his chin and said, \"It was in my way.\" Then he turned his head. Little Otter hugged her reeds and said nothing.",
-        "{name} walked over to Big Otter. \"Do you feel sad too?\" {name} asked softly. Big Otter looked down. \"Yes. But I'm the biggest otter. Saying sorry feels silly.\" {name} thought for a moment. \"I feel scared when I make mistakes. But saying it makes my heart feel light.\"",
-        "\"What do I say?\" asked Big Otter. \"First say what you did,\" said {name}. \"Then say sorry.\" Big Otter took a deep breath. He walked slowly to Little Otter. His feet felt so heavy. Grandpa Beaver nodded and smiled.",
-        "\"Little Otter, I ran too fast and broke your raft. I'm sorry. I was wrong.\" Little Otter looked up. \"I felt sad and angry. I worked on it all morning.\" Big Otter nodded. \"You're right. May I help you weave a new one?\"",
-        "Little Otter thought for a moment. The heavy, grumpy feeling inside her began to shrink. \"Okay. I forgive you,\" she said. \"But tie the knots tight!\" Big Otter grinned. Together they gathered reeds. {name} passed them grass string. Big Otter pulled every knot strong. Little Otter showed him how to cross the reeds.",
-        "By the time the sun reached the treetops, the new raft was done. It was bigger and sturdier than before. Little Otter set it in the shallow water by the bank. It floated steady and still. \"Let's race together next time!\" said Big Otter. Both otters squeaked, and {name} clapped happily."
+        "A little stream ran through the forest, with tall reeds along its bank. Little Otter sat by the water all morning, weaving a tiny raft from reeds. Every knot was neat and snug. {name} watched with Grandpa Beaver nearby. \"It's beautiful!\" said {name}.",
+        "Big Otter swam over, took one look, and laughed. \"That little grass raft will sink the second it touches the water!\" A little frog nearby laughed too. Little Otter's face turned bright red.",
+        "Little Otter hid her raft behind her back. Her eyes turned red, and she didn't say a word. Big Otter's tummy suddenly felt tight and sour. He wanted to say sorry. But he lifted his chin. \"I was only joking.\" Then he turned his head away.",
+        "{name} walked over to Big Otter. \"Do you feel bad too?\" {name} asked softly. Big Otter looked down. \"Yes. But I'm the biggest otter. Saying sorry feels silly.\" {name} thought for a moment. \"I feel scared when I say something wrong. But saying sorry makes my heart feel light.\"",
+        "\"What do I say?\" asked Big Otter. \"First say what you did,\" said {name}. \"Then say sorry.\" Big Otter took a deep breath. He walked slowly to Little Otter. His feet felt so heavy. Grandpa Beaver nodded.",
+        "\"Little Otter, I laughed at your raft and made you sad. I'm sorry. I was wrong.\" Little Otter looked up. \"I felt sad and angry. I worked on it all morning.\" Big Otter nodded. \"You're right. Could you teach me how to weave one?\"",
+        "Little Otter thought for a moment. The heavy, grumpy feeling inside her began to shrink. \"Okay. I forgive you.\" She set her raft gently on the water. It floated steady and still. It didn't sink at all! Big Otter's eyes went wide. \"Wow, you weave so well!\"",
+        "Little Otter showed Big Otter how to cross the reeds. {name} passed them grass string. By noon, Big Otter had made a wobbly little raft of his own. The two rafts floated side by side. This time, everyone laughed together, happy as can be."
       ]
     },
     "theme": "forgiveness",
@@ -15966,7 +15966,7 @@
         "questions": [
           "大水獺一開始為什麼不肯說對不起？後來{name}怎麼幫他？",
           "小水獺原諒大水獺之前，先說了自己有什麼感覺？",
-          "如果有人弄壞你的東西，又來跟你道歉，你會怎麼做？"
+          "如果有人笑你做的東西，又來跟你道歉，你會怎麼做？"
         ],
         "tip": "這週和孩子練習「道歉三步驟」：說出我做了什麼、說對不起、問「我可以怎麼幫忙？」。被道歉的一方也可以先說出自己的感覺，再決定要不要原諒。"
       },
@@ -15974,7 +15974,7 @@
         "questions": [
           "Why didn't Big Otter want to say sorry at first? How did {name} help him?",
           "Before Little Otter forgave Big Otter, what did she say about how she felt?",
-          "If someone broke something of yours and then said sorry, what would you do?"
+          "If someone laughed at something you made and then said sorry, what would you do?"
         ],
         "tip": "This week, practice a three-step sorry together: say what I did, say sorry, and ask \"How can I help?\" The one hearing the apology can share how they felt first, then choose to forgive."
       }
