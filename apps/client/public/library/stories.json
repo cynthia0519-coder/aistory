@@ -4953,8 +4953,7 @@
         "tip": "This week, look at the vitamins and medicines at home together, talk about what they look like, and check that they're all up high, out of reach. Practice: \"If it looks like candy, ask a grown-up first!\""
       }
     },
-    "draft": false,
-    "publishAt": "2026-11-30T19:30:00+08:00"
+    "draft": true
   },
   {
     "id": "medicine-grandmas-rainbow-pillbox",
@@ -5008,8 +5007,7 @@
         "tip": "This week, go on a little home \"adventure\" together to check that all medicines and vitamins are stored up high or locked away. Practice the phrase: \"See medicine? Don't touch, get a grown-up!\""
       }
     },
-    "draft": false,
-    "publishAt": "2027-02-06T19:30:00+08:00"
+    "draft": true
   },
   {
     "id": "typhoon-flashlight-shadows",
@@ -7340,7 +7338,8 @@
         "tip": "Tonight, practice 'smell the flower, blow out the candle' breaths together while counting to five. Then take turns saying one small thing using 'I'm angry because…'."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2026-11-30T19:30:00+08:00"
   },
   {
     "id": "anger-broken-model-ship",
@@ -9589,8 +9588,7 @@
         "tip": "After lights out tonight, blink a small flashlight three times on the ceiling to say goodnight and let your child blink back, then lie still together and listen for the quiet little sounds in the room."
       }
     },
-    "draft": false,
-    "publishAt": "2026-12-26T19:30:00+08:00"
+    "draft": true
   },
   {
     "id": "mooncake-mystery",
@@ -11249,8 +11247,7 @@
         "tip": "Tonight, choose a family password together, name the grown-ups who are allowed to pick your child up, and agree that no matter who rings the bell, your child never opens the door alone and gets a grown-up first. Play \"Password, please!\" a few times this week."
       }
     },
-    "draft": false,
-    "publishAt": "2026-12-30T19:30:00+08:00"
+    "draft": true
   },
   {
     "id": "hot-things-soup-pot-steam",
@@ -16086,7 +16083,8 @@
         "tip": "This week, play \"Thank-You Detective\": each night at bedtime, name one person who helped you that day, then pick one to thank with a little drawing or a wave."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2026-12-30T19:30:00+08:00"
   },
   {
     "id": "gratitude-rice-farmer-fable",
@@ -16414,7 +16412,8 @@
         "tip": "This week, pick one small hard task together, like buttons or laces, and practice for three minutes each evening. End by saying, \"You tried one more time than yesterday!\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-02-06T19:30:00+08:00"
   },
   {
     "id": "perseverance-water-drop-stone-fable",
@@ -17779,7 +17778,8 @@
         "tip": "After the lights go off, cuddle up and whisper \"chirp, chirp\" together, then slowly draw a little star on your child's back with one finger and say goodnight."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2026-12-26T19:30:00+08:00"
   },
   {
     "id": "snow-polar-bear-cub-fable",
