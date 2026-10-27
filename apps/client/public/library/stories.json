@@ -20394,5 +20394,71 @@
       "episode": 3
     },
     "publishAt": "2026-12-06T19:30:00+08:00"
+  },
+  {
+    "id": "mumu-jerry-10-bella-my-brother",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "我哥哥就是我哥哥",
+      "en": "My Brother Is My Brother"
+    },
+    "paragraphs": {
+      "zh": [
+        "晚上，沐沐抱著枕頭跑進姊姊房間。茜茜正坐在地上劈一字馬，一邊拉筋一邊看書。「姊姊，講故事給我聽！」茜茜頭也不抬：「等一下，快好了！」",
+        "翻完最後一頁，茜茜拍拍旁邊的地墊：「好，講你還沒出生時的故事。」沐沐咚一聲躺下來，耳朵豎得高高的。",
+        "那時候，茜茜跟沐沐現在差不多大，在幼兒園上中班。則則哥哥那時候說話很慢，一次只說一兩個字。走路也要大人牽著，一步一步來。",
+        "有一天放學，媽媽帶著哥哥來接茜茜。哥哥一看到她，好開心，用力揮手，大聲喊：「妹！妹！」",
+        "旁邊的同學小凱看了看，問：「你哥哥怎麼都不講話？好奇怪喔。」另一個同學也跟著笑了。",
+        "茜茜的臉一下子紅了，心撲通撲通跳得好快。可是，她沒有躲起來。",
+        "她走到哥哥旁邊，牽起哥哥的手，轉過身說：「他是我哥哥。他說話比較慢，可是他很努力，畫畫也很好看。」",
+        "她深深吸一口氣，又說：「如果你要笑我哥哥，就不能當我的朋友。我哥哥很棒，你可以認識他。」大家都安靜了。哥哥看看茜茜，比了一個大拇指：「好！」",
+        "第二天，小凱走過來，小小聲地說：「對不起。你哥哥……可以教我畫畫嗎？」茜茜笑了。後來，小凱真的跟哥哥一起畫了一整排小花。",
+        "沐沐聽得眼睛圓圓的：「姊姊，你好勇敢！」茜茜聳聳肩：「因為他是我哥哥呀。」",
+        "門口探出一個頭，是則則。他看看兩個妹妹，笑得好開心，比了兩個大拇指：「很棒！」",
+        "沐沐說：「我發現一條新規則：家人不一樣也沒關係，要站在一起。」三兄妹擠成一團。沐沐打了個呵欠：「明天，我要研究新的規則。」晚安，沐沐。晚安，則則。晚安，勇敢的茜茜。"
+      ],
+      "en": [
+        "One night, Mumu ran into her big sister's room, hugging her pillow. Bella was sitting on the floor in the splits, stretching and reading a book. \"Bella, tell me a story!\" Bella didn't look up. \"Just a sec, almost done!\"",
+        "She finished the last page and patted the mat beside her. \"Okay. Here's a story from before you were born.\" Mumu flopped down, all ears.",
+        "Back then, Bella was about as old as Mumu is now. She was in kindergarten. Big brother Jerry talked very slowly then, just one or two words at a time. He needed a grown-up's hand to walk, one step at a time.",
+        "One day after school, Mom came to pick Bella up, and Jerry came too. When he saw her, he was so happy. He waved and waved and shouted, \"Sis! Sis!\"",
+        "A classmate named Kai looked over. \"Why doesn't your brother talk? He's weird.\" Another kid laughed.",
+        "Bella's face went red. Her heart thumped fast. But she didn't hide.",
+        "She walked over to her brother and took his hand. Then she turned around. \"He's my brother. He talks slowly, but he works really hard, and he draws beautiful pictures.\"",
+        "She took a deep breath. \"If you laugh at my brother, you can't be my friend. My brother is great. You can get to know him.\" Everyone went quiet. Jerry looked at Bella and gave her a thumbs-up. \"Okay!\"",
+        "The next day, Kai came over and said quietly, \"Sorry. Could your brother... teach me to draw?\" Bella smiled. And later, Kai and Jerry really did draw a whole row of little flowers together.",
+        "Mumu's eyes were big and round. \"Bella, you were so brave!\" Bella shrugged. \"He's my brother, that's all.\"",
+        "A head peeked around the door. It was Jerry. He looked at his two sisters and grinned, giving two thumbs-up. \"Great!\"",
+        "Mumu said, \"I found a new rule: it's okay for family to be different. We stick together.\" The three of them squeezed into one big hug. Mumu yawned. \"Tomorrow, I'm going to study a new rule.\" Goodnight, Mumu. Goodnight, Jerry. Goodnight, brave Bella."
+      ]
+    },
+    "theme": "respecting-differences",
+    "guide": {
+      "zh": {
+        "questions": [
+          "同學說哥哥很奇怪的時候，茜茜做了什麼？",
+          "小凱第二天為什麼來跟茜茜說對不起？",
+          "如果有人笑你的家人或朋友，你可以怎麼說？"
+        ],
+        "tip": "今晚聊聊家裡每個人「很厲害的地方」，每個人都說一個，包括說話比較慢或年紀最小的家人。"
+      },
+      "en": {
+        "questions": [
+          "What did Bella do when a classmate called her brother weird?",
+          "Why did Kai come to say sorry the next day?",
+          "If someone laughed at your family or friend, what could you say?"
+        ],
+        "tip": "Tonight, take turns naming one thing each family member is great at, including the youngest or the one who talks the slowest."
+      }
+    },
+    "draft": true,
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 10
+    }
   }
 ]

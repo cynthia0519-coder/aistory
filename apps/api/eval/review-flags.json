@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-27T15:26:37.942Z",
+  "generatedAt": "2026-10-27T15:32:13.288Z",
   "summary": {
-    "stories": 374,
+    "stories": 375,
     "byStatus": {
-      "ok": 329,
+      "ok": 330,
       "check": 44,
       "fix": 1
     },
@@ -122,7 +122,7 @@
       "water-safety-river-picnic",
       "windows-balcony-flower-pots"
     ],
-    "usd": 12.2344
+    "usd": 12.2622
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -2658,10 +2658,6 @@
     "medicine-gummy-bear-vitamins": {
       "hash": "590f6db9fd563a03",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.025544599999999997,
-      "status": "check",
-      "reviewedAt": "2026-10-27T15:26:10.361Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -2687,15 +2683,15 @@
             "note": "「對呀，所以要更小心。吃太多，肚子會不舒服」連續講理偏長，英文 \"These aren't gummy candy. They're my vitamins\" 也可再縮短"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.025544599999999997,
+      "status": "check",
+      "reviewedAt": "2026-10-27T15:26:10.361Z"
     },
     "medicine-grandmas-rainbow-pillbox": {
       "hash": "9c021c7e7bff4f84",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.029000599999999998,
-      "status": "check",
-      "reviewedAt": "2026-10-27T15:26:19.789Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -2721,7 +2717,11 @@
             "note": "{name}已想起那是藥，又問「這是糖果嗎？」略矛盾。可改成「這是藥對不對？我沒有吃喔」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.029000599999999998,
+      "status": "check",
+      "reviewedAt": "2026-10-27T15:26:19.789Z"
     },
     "typhoon-flashlight-shadows": {
       "hash": "26c1f3c5acdd30de",
@@ -5077,10 +5077,6 @@
     "lighthouse-keepers-cat": {
       "hash": "e9b000efa9a05dcc",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.057448599999999996,
-      "status": "check",
-      "reviewedAt": "2026-10-27T15:26:27.373Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -5092,7 +5088,11 @@
             "note": "與 sea-lighthouse-keeper-grandma 太像：同樣是在燈塔過夜、長輩當守燈人、看光束旋轉入睡，第 7 段「跟著光搖回家」也相近。建議換場景，或改掉以光束入睡的結尾"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.057448599999999996,
+      "status": "check",
+      "reviewedAt": "2026-10-27T15:26:27.373Z"
     },
     "mooncake-mystery": {
       "hash": "31d0aacdaee61073",
@@ -5940,10 +5940,6 @@
     "strangers-password-word": {
       "hash": "d62387b506703a03",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0250846,
-      "status": "check",
-      "reviewedAt": "2026-10-27T15:26:37.936Z",
       "llm": {
         "verdict": "check",
         "issues": [
@@ -5962,7 +5958,11 @@
             "note": "主訊息「大聲說不」未由{name}做出，可讓{name}先大聲說「我不開門！」再跑去找奶奶"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0250846,
+      "status": "check",
+      "reviewedAt": "2026-10-27T15:26:37.936Z"
     },
     "hot-things-soup-pot-steam": {
       "hash": "1fb872045c1b9cd3",
@@ -10456,6 +10456,18 @@
       "usd": 0.0320606,
       "status": "ok",
       "reviewedAt": "2026-10-27T15:12:59.720Z"
+    },
+    "mumu-jerry-10-bella-my-brother": {
+      "hash": "406ee45807b00a1f",
+      "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.0277886,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T15:32:13.275Z",
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      }
     }
   }
 }
