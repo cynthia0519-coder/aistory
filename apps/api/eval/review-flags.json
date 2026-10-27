@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-27T15:32:13.288Z",
+  "generatedAt": "2026-10-27T16:57:33.634Z",
   "summary": {
-    "stories": 375,
+    "stories": 379,
     "byStatus": {
-      "ok": 330,
+      "ok": 334,
       "check": 44,
       "fix": 1
     },
     "byCheckKind": {
-      "length": 266,
+      "length": 268,
       "duplicate_title": 12,
       "sensitive_pattern": 9
     },
@@ -18,7 +18,7 @@
       "logic": 124,
       "quality": 74,
       "taiwan_usage": 43,
-      "age_fit": 24,
+      "age_fit": 25,
       "safety": 22,
       "zh_en_mismatch": 11,
       "guardrail": 6
@@ -100,6 +100,7 @@
       "map-in-the-message-bottle",
       "mumu-jerry-07-big-ship-trip",
       "mumu-jerry-08-big-dog-home",
+      "mumu-jerry-14-bella-test-secret",
       "new-sibling-baby-photo-album",
       "new-sibling-crying-baby-concert",
       "perseverance-the-character-yong",
@@ -122,7 +123,7 @@
       "water-safety-river-picnic",
       "windows-balcony-flower-pots"
     ],
-    "usd": 12.2622
+    "usd": 12.3782
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -10460,13 +10461,85 @@
     "mumu-jerry-10-bella-my-brother": {
       "hash": "406ee45807b00a1f",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0277886,
-      "status": "ok",
-      "reviewedAt": "2026-10-27T15:32:13.275Z",
       "llm": {
         "verdict": "ok",
         "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0277886,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T15:32:13.275Z"
+    },
+    "mumu-jerry-11-siblings-grab-tug": {
+      "hash": "87423ef8ee612272",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.027452599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T16:56:30.487Z"
+    },
+    "mumu-jerry-12-bella-almost-done": {
+      "hash": "c8ca085163eca698",
+      "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.0286246,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T16:57:17.211Z",
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      }
+    },
+    "mumu-jerry-13-bella-mom-date": {
+      "hash": "9bc0d78ee9358a21",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 360 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "model": "claude-opus-5-5",
+      "usd": 0.0323286,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T16:57:26.406Z",
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      }
+    },
+    "mumu-jerry-14-bella-test-secret": {
+      "hash": "12e04e6e3faba9ed",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 364 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "model": "claude-opus-5-5",
+      "usd": 0.0276006,
+      "status": "ok",
+      "reviewedAt": "2026-10-27T16:57:33.627Z",
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "age_fit",
+            "severity": "low",
+            "lang": "zh",
+            "where": "9",
+            "note": "「茜茜想起每天晚上一題一題練習的自己」句子偏長又有翻譯腔，可改成「茜茜想起每天晚上的練習」"
+          }
+        ]
       }
     }
   }

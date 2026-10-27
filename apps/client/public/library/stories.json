@@ -20461,5 +20461,269 @@
       "episode": 10
     },
     "publishAt": "2027-01-24T19:30:00+08:00"
+  },
+  {
+    "id": "mumu-jerry-11-siblings-grab-tug",
+    "style": "cute",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "三兄妹搶布丁",
+      "en": "The Last Pudding"
+    },
+    "theme": "sharing-turns",
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 11
+    },
+    "paragraphs": {
+      "zh": [
+        "星期天下午，冰箱裡只剩最後一個布丁。黃黃的、軟軟的，上面還有一層亮亮的焦糖。",
+        "沐沐第一個看到，跑過去大喊：「我的！」",
+        "茜茜從房間衝出來：「等一下！是我先想到要吃的！」",
+        "則則也走過來，手伸得長長的：「我的！」",
+        "三隻手一起抓住布丁盒，誰也不放手。家裡吵得好熱鬧，連窗外的小鳥都嚇得飛走了。",
+        "茜茜突然停下來：「等一下，這樣搶下去，布丁會掉到地上。」沐沐看看布丁，趕快鬆開手，小聲問：「那……我們可以分嗎？」則則也鬆開手：「好！」",
+        "三個人坐在餐桌前，盯著那一個布丁。茜茜說：「先講好規則：切的人最後拿。」則則拿來湯匙：「我自己來！」",
+        "因為自己最後拿，則則切得好小心好小心。切好了，三塊差不多一樣大。沐沐拍拍手：「哥哥切得好平均！」",
+        "沐沐先挑，茜茜第二個挑，則則拿最後一塊。茜茜說：「下次換我先挑，再下次換哥哥。」大家都點頭：「好！」",
+        "三個人一起吃。則則笑著比大拇指：「很棒！」沐沐吃了一口，眼睛瞇起來，也比了一個大拇指：「好好吃！」",
+        "媽媽從廚房探出頭：「咦，剛剛不是在吵架嗎？」茜茜比了一個 YA：「我們自己解決了！」",
+        "晚上，沐沐說：「我發現一條新規則：一起想辦法，就不用搶了。」三兄妹擠在一起笑。沐沐打了個呵欠：「明天，我要研究新的規則。」晚安，沐沐。晚安，茜茜。晚安，則則。"
+      ],
+      "en": [
+        "Sunday afternoon. There was only one pudding left in the fridge. Yellow and wobbly, with a shiny layer of caramel on top.",
+        "Mumu saw it first. She ran over and shouted, \"Mine!\"",
+        "Bella dashed out of her room. \"Just a sec! I thought of eating it first!\"",
+        "Jerry came over too and stretched out his hand. \"Mine!\"",
+        "Three hands grabbed the pudding cup, and nobody let go. The house was so noisy that even the birds outside flew away.",
+        "Suddenly Bella stopped. \"Wait. If we keep pulling, the pudding will fall on the floor.\" Mumu looked at the pudding and quickly let go. She asked in a small voice, \"Um... can we share it?\" Jerry let go too. \"Okay!\"",
+        "The three of them sat at the table and stared at the one pudding. Bella said, \"First, a rule: whoever cuts picks last.\" Jerry got a spoon. \"I can do it myself!\"",
+        "Because he would pick last, Jerry cut very, very carefully. When he was done, the three pieces were almost the same size. Mumu clapped. \"Jerry, you cut them so even!\"",
+        "Mumu picked first. Bella picked second. Jerry got the last piece. Bella said, \"Next time I pick first, and the time after that, Jerry does.\" Everyone nodded. \"Okay!\"",
+        "They all ate together. Jerry smiled and gave a thumbs-up. \"Great!\" Mumu took a bite, closed her eyes, and gave a thumbs-up too. \"Yummy!\"",
+        "Mom peeked out of the kitchen. \"Hey, weren't you all fighting just now?\" Bella gave a V-sign. \"We fixed it ourselves!\"",
+        "That night, Mumu said, \"I found a new rule: when we think of a way together, we don't need to grab.\" The three of them laughed and squeezed together. Mumu yawned. \"Tomorrow, I'm going to study a new rule.\" Goodnight, Mumu. Goodnight, Bella. Goodnight, Jerry."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "三兄妹搶布丁的時候，茜茜為什麼突然停下來？",
+          "沐沐鬆開手以後，用什麼方法代替搶？",
+          "你跟家人想要同一樣東西的時候，可以怎麼一起想辦法？"
+        ],
+        "tip": "下次要分點心時，試試「切的人最後拿」，讓孩子當切的人。"
+      },
+      "en": {
+        "questions": [
+          "Why did Bella suddenly stop when they were grabbing the pudding?",
+          "After Mumu let go, what did she do instead of grabbing?",
+          "When you and your family want the same thing, how can you find a way together?"
+        ],
+        "tip": "Next time you share a snack, try \"whoever cuts picks last\" and let your child be the one who cuts."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "mumu-jerry-12-bella-almost-done",
+    "style": "cute",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "等一下，快好了！",
+      "en": "Just a Sec, Almost Done!"
+    },
+    "theme": "screen-time",
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 12
+    },
+    "paragraphs": {
+      "zh": [
+        "放學回家，茜茜坐在沙發上，劈成一字馬，一邊拉筋，一邊看平板。影片裡的小貓好可愛。",
+        "媽媽說：「茜茜，該寫功課囉。」茜茜頭也不抬：「等一下，快好了！」",
+        "一部影片看完了，下一部自己跳出來。茜茜想：「再看一部就好。」",
+        "過了一會兒，媽媽又問：「功課寫了嗎？」茜茜說：「等一下，快好了！」可是，她的功課本還在書包裡。",
+        "沐沐跑過來，趴在姊姊旁邊：「姊姊，你的『快好了』是多快？」茜茜愣了一下，答不出來。",
+        "媽媽沒有生氣。她坐到茜茜旁邊，問：「你覺得，看多久平板，功課還寫得完？」",
+        "茜茜想了想：「再看一部，然後我就寫。」媽媽點點頭：「好，那你自己訂計時器，好嗎？」",
+        "茜茜拿來廚房的計時器，轉到十分鐘。滴答、滴答。計時器響了。茜茜嘆一口氣：「好想再看一部喔……」可是她還是把平板交給媽媽：「我說到做到！」",
+        "她先跟沐沐一起劈一字馬，伸伸懶腰，讓眼睛休息一下。然後打開功課本，一題、兩題、三題。則則坐在旁邊畫畫，一排一排的小花，好像在陪她。",
+        "睡覺前，茜茜寫完最後一個字，比了一個大大的 YA：「全部寫完了！還有時間讀故事書！」則則比大拇指：「很棒！」",
+        "沐沐歪著頭：「所以『快好了』，要有計時器才會真的快好了？」大家都笑了。茜茜說：「下次開平板以前，我先轉好計時器！」",
+        "沐沐說：「我發現一條新規則：自己說的時間，自己守住。」沐沐打了個呵欠：「明天，我要研究新的規則。」晚安，沐沐。晚安，則則。晚安，說到做到的茜茜。"
+      ],
+      "en": [
+        "After school, Bella sat on the sofa in the splits, stretching and watching her tablet. The kitten in the video was so cute.",
+        "Mom said, \"Bella, time for homework.\" Bella didn't look up. \"Just a sec, almost done!\"",
+        "One video ended, and the next one started by itself. Bella thought, \"Just one more.\"",
+        "A little later, Mom asked again, \"Is your homework done?\" Bella said, \"Just a sec, almost done!\" But her homework book was still in her school bag.",
+        "Mumu ran over and flopped down next to her. \"Bella, how fast is your 'almost done'?\" Bella blinked. She didn't know the answer.",
+        "Mom wasn't angry. She sat down next to Bella and asked, \"How long do you think you can watch and still finish your homework?\"",
+        "Bella thought about it. \"One more video. Then I'll start.\" Mom nodded. \"Okay. Would you like to set the timer yourself?\"",
+        "Bella got the kitchen timer and turned it to ten minutes. Tick, tock. Then it rang. Bella sighed. \"I really want to watch one more...\" But she handed the tablet to Mom anyway. \"I keep my word!\"",
+        "First she did the splits with Mumu and had a big stretch to rest her eyes. Then she opened her homework book. One question, two questions, three. Jerry sat beside her, drawing rows and rows of little flowers, keeping her company.",
+        "Before bedtime, Bella wrote the very last word and gave a big V-sign. \"All done! And there's still time to read a story!\" Jerry gave a thumbs-up. \"Great!\"",
+        "Mumu tilted her head. \"So 'almost done' only really means almost done when there's a timer?\" Everyone laughed. Bella said, \"Next time, I'll set the timer before I turn on the tablet!\"",
+        "Mumu said, \"I found a new rule: when you say a time, you keep it.\" Mumu yawned. \"Tomorrow, I'm going to study a new rule.\" Goodnight, Mumu. Goodnight, Jerry. Goodnight, Bella, who kept her word."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "沐沐問「快好了是多快？」的時候，茜茜為什麼答不出來？",
+          "茜茜用什麼方法，讓自己真的停下來寫功課？",
+          "你玩得正開心的時候，可以用什麼方法讓自己準時停下來？"
+        ],
+        "tip": "下次用平板前，讓孩子自己說要看多久、自己按計時器；時間到時，稱讚他「說到做到」。"
+      },
+      "en": {
+        "questions": [
+          "Why couldn't Bella answer when Mumu asked how fast 'almost done' was?",
+          "What did Bella use to help herself really stop and do her homework?",
+          "When you're having fun, what can help you stop on time?"
+        ],
+        "tip": "Before tablet time, let your child say how long they'll watch and set the timer themselves. When it rings and they stop, praise them for keeping their word."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "mumu-jerry-13-bella-mom-date",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "city",
+    "title": {
+      "zh": "媽媽和茜茜的約會",
+      "en": "Bella's Date with Mom"
+    },
+    "theme": "empathy",
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 13
+    },
+    "paragraphs": {
+      "zh": [
+        "星期六早上，媽媽在茜茜耳邊小小聲地說：「今天，我們兩個去約會。」茜茜的眼睛一下子亮起來。",
+        "「只有我們兩個？」「只有我們兩個。每個人都會輪到跟媽媽約會，今天輪到你。」則則和沐沐留在家裡，奶奶陪他們做餅乾。",
+        "茜茜換上最喜歡的衣服，在鏡子前比了一個 YA。媽媽說：「今天去哪裡，讓你決定。」",
+        "茜茜想了好久：「我想去吃鬆餅，然後去看氣球！」",
+        "鬆餅店裡，茜茜可以慢慢說話，不用搶著說。她講學校的事，也講體操的事。她還說了最近學會的新氣球花。媽媽一直看著她，聽得好認真。",
+        "「媽媽，你知道嗎？我現在可以劈一字馬劈好久喔！」媽媽笑著說：「我知道，我每天都有看到。」",
+        "吃完鬆餅，她們手牽手走到公園。茜茜看到賣氣球的叔叔，眼睛又亮了。",
+        "「媽媽，我們買兩顆氣球好不好？一顆給哥哥，一顆給妹妹。」媽媽摸摸她的頭：「今天是你的約會，你也可以只想你自己喔。」",
+        "茜茜想了想：「那我要三顆！一顆給我，一顆給哥哥，一顆給妹妹。」媽媽笑了：「好，三顆。」",
+        "回到家，則則看到氣球，比了大拇指：「很棒！」可是沐沐站在門口，嘴巴嘟嘟的，沒有說話。茜茜蹲下來問：「沐沐，你還好嗎？」沐沐小聲說：「我也想跟媽媽出去。」",
+        "茜茜想起來，早上自己也好想好想跟媽媽約會。她把氣球放到沐沐手上：「我知道那種感覺。媽媽說，每個人都會輪到，下次換你！」沐沐抱著氣球轉圈圈，笑了。",
+        "晚上，沐沐說：「我發現一條新規則：每個人都有輪到當主角的時候。」茜茜抱著自己的氣球，笑得好甜。沐沐打了個呵欠：「明天，我要研究新的規則。」晚安，沐沐。晚安，則則。晚安，今天的主角茜茜。"
+      ],
+      "en": [
+        "Saturday morning, Mom whispered in Bella's ear, \"Today, it's a date. Just the two of us.\" Bella's eyes lit up.",
+        "\"Only us two?\" \"Only us two. Everyone gets a turn for a date with Mom, and today it's yours.\" Jerry and Mumu stayed home and baked cookies with Grandma.",
+        "Bella put on her favorite clothes and made a V-sign in the mirror. Mom said, \"You choose where we go today.\"",
+        "Bella thought for a long time. \"I want pancakes, and then I want to see the balloons!\"",
+        "At the pancake shop, Bella could talk slowly. She didn't have to hurry to get a turn. She told Mom about school and about gymnastics. She told her about the new balloon flower she had learned, too. Mom looked at her and listened carefully.",
+        "\"Mom, guess what? I can hold the splits for a really long time now!\" Mom smiled. \"I know. I see you practice every day.\"",
+        "After pancakes, they walked hand in hand to the park. Bella saw a man selling balloons, and her eyes lit up again.",
+        "\"Mom, can we buy two balloons? One for my brother and one for my sister.\" Mom stroked her hair. \"Today is your date. It's okay to think about just you, too.\"",
+        "Bella thought about it. \"Then I want three! One for me, one for my brother, and one for my sister.\" Mom laughed. \"Okay, three.\"",
+        "Back home, Jerry saw the balloons and gave a thumbs-up. \"Great!\" But Mumu stood by the door with a pout and didn't say a word. Bella crouched down. \"Mumu, are you okay?\" Mumu said quietly, \"I wanted to go out with Mom too.\"",
+        "Bella remembered how much she had wanted a date with Mom that morning. She put the balloon in Mumu's hands. \"I know that feeling. Mom says everyone gets a turn. Next time it's you!\" Mumu hugged her balloon, spun around, and smiled.",
+        "That night, Mumu said, \"I found a new rule: everyone gets a turn to be the star.\" Bella hugged her own balloon and smiled sweetly. Mumu yawned. \"Tomorrow, I'm going to study a new rule.\" Goodnight, Mumu. Goodnight, Jerry. Goodnight, Bella, today's star."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "沐沐嘴巴嘟嘟的時候，茜茜怎麼知道她不開心？",
+          "茜茜為什麼說「我知道那種感覺」？",
+          "家人看起來不開心的時候，你可以怎麼問、怎麼做？"
+        ],
+        "tip": "今天找一個時候，問孩子：「你覺得哥哥／妹妹（或家裡其他人）今天心情怎麼樣？你怎麼看出來的？」"
+      },
+      "en": {
+        "questions": [
+          "How did Bella know Mumu was upset when she pouted?",
+          "Why did Bella say \"I know that feeling\"?",
+          "When someone in your family looks upset, what can you ask or do?"
+        ],
+        "tip": "Sometime today, ask your child, \"How do you think your brother or sister (or someone at home) feels today? How can you tell?\""
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "mumu-jerry-14-bella-test-secret",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "茜茜的考試祕密武器",
+      "en": "Bella's Secret Weapon"
+    },
+    "theme": "perseverance",
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 14
+    },
+    "paragraphs": {
+      "zh": [
+        "茜茜拿著考卷回家，嘴巴嘟得高高的。分數普普通通。「我明明都會，為什麼還是錯？」",
+        "媽媽陪她一起看考卷。這一題，題目要選「不對的」，茜茜選了「對的」。那一題，她算對了，可是答案寫錯格子。",
+        "媽媽說：「你不是不會，是還不知道考試的方法。我們來找你的祕密武器。」",
+        "茜茜眼睛亮起來：「祕密武器？」",
+        "祕密武器第一招：題目讀兩次。第二招：把最重要的字圈起來，像「不對的」「全部」。第三招：寫完以後，從頭再檢查一次。",
+        "沐沐在旁邊聽得好認真：「圈起來！我也要圈！」可是她還不會認字，只好把畫冊上的小貓一隻一隻圈起來。",
+        "每天晚上，茜茜都用祕密武器寫練習題。一開始好慢，她有點想放棄。則則坐在旁邊，比了一個大拇指：「很棒！」茜茜又拿起筆。",
+        "考試那天，茜茜看到題目，在心裡說：「讀兩次，圈起來。」她把「不正確」三個字圈得大大的。",
+        "寫完以後，還有一點時間。她從第一題開始檢查，真的找到一個寫錯的地方，趕快改過來。",
+        "考卷發回來，茜茜想起每天晚上一題一題練習的自己。她看著紅紅的分數，心撲通撲通跳。她拿到了自己最好的成績！",
+        "回到家，茜茜衝進門，比了一個大大的 YA：「媽媽，我做得到！祕密武器有用！」媽媽抱住她：「你最厲害的，是找到方法，還一直練習。」",
+        "晚上，沐沐拿著畫冊跑過來：「我發現一條新規則：圈起來，就不會漏掉！」畫冊上的小貓，每一隻都圈得好好的。沐沐打了個呵欠：「明天，我要研究新的規則。」晚安，沐沐。晚安，則則。晚安，有祕密武器的茜茜。"
+      ],
+      "en": [
+        "Bella came home with her test, her lips pushed out in a pout. Her score was just okay. \"I knew all of it! So why did I get things wrong?\"",
+        "Mom looked at the test with her. One question asked for the answer that was NOT true. But Bella picked a true one. On another, she got it right, but wrote it in the wrong box.",
+        "Mom said, \"It's not that you don't know it. You just don't know the test tricks yet. Let's find your secret weapon.\"",
+        "Bella's eyes lit up. \"A secret weapon?\"",
+        "Secret weapon, step one: read the question twice. Step two: circle the most important words, like \"not\" or \"all.\" Step three: when you're done, check everything again from the start.",
+        "Mumu listened very carefully. \"Circle it! I want to circle too!\" But she couldn't read yet, so she circled the kittens in her picture book, one by one.",
+        "Every night, Bella used her secret weapon on practice questions. At first it was slow, and she almost wanted to give up. Jerry sat beside her and gave a thumbs-up. \"Great!\" Bella picked up her pencil again.",
+        "On test day, Bella looked at each question and said to herself, \"Read it twice. Circle it.\" She drew a big circle around the word \"not.\"",
+        "When she finished, there was still a little time. She checked from question one, and she really did find a mistake. Quickly, she fixed it.",
+        "When the tests came back, Bella thought of herself practicing, one question at a time, every night. She looked at the red score, and her heart thumped. It was her best score ever!",
+        "At home, Bella burst through the door and gave a big V-sign. \"Mom, I can do it! My secret weapon works!\" Mom hugged her. \"The best part is that you found a way, and you kept practicing.\"",
+        "That night, Mumu ran over with her picture book. \"I found a new rule: if you circle it, you won't miss it!\" Every kitten in her book had a neat circle around it. Mumu yawned. \"Tomorrow, I'm going to study a new rule.\" Goodnight, Mumu. Goodnight, Jerry. Goodnight, Bella and her secret weapon."
+      ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "茜茜明明都會，為什麼一開始還是寫錯？",
+          "茜茜的祕密武器有哪三招？",
+          "你在學一件新事情的時候，有沒有自己的「祕密武器」？"
+        ],
+        "tip": "下次孩子做功課或玩拼圖卡住時，問他：「你覺得可以用什麼方法？」讓他自己想一招試試看。"
+      },
+      "en": {
+        "questions": [
+          "Bella knew the answers, so why did she get some wrong at first?",
+          "What were the three steps of Bella's secret weapon?",
+          "When you learn something new, do you have your own secret weapon?"
+        ],
+        "tip": "Next time your child gets stuck on homework or a puzzle, ask, \"What way could you try?\" and let them come up with their own trick."
+      }
+    },
+    "draft": true
   }
 ]
