@@ -54,21 +54,21 @@
 
 故事庫的通用故事（`{name}` 標記）要先對照這張表，不衝突的才可以指派給沐沐或則則（`apps/api/episode-heroes.json`），衝突的維持小寶。
 
-## 外觀（B 版，2026-10-27 定案）
+## 外觀（B2 版，2026-10-27 定案）
 
-角色設計圖的 Canva media id 是 `MAHZNPLC1sQ`。生成封面時把它當作 image reference，並使用下面的描述：
+角色設計圖的 Canva media id 是 `MAHZNTKJt9I`，前一版 B 是 `MAHZNPLC1sQ`，已停用。生成封面時把 B2 當作 image reference，並使用下面的描述。只有一個人出場的畫面，要寫明「不要畫另一個人」。外型參考媽媽提供的生活照，只取髮型和衣服，不畫成本人的長相；生活照不上傳到任何地方。
 
 - **沐沐**：
-  - 4 歲、小小的、蹦蹦跳跳。
-  - 頭頂一顆圓丸子頭加短瀏海，大大亮亮的好奇眼睛，常常張嘴大笑。
-  - 珊瑚粉洋裝，兩個大口袋塞滿撿來的樹葉和石頭，黃色雨鞋，拿著放大鏡。
-  - 英文 prompt：`a 4-year-old girl with one round top-knot bun and short bangs, big sparkly curious eyes, coral-pink dress with two big pockets full of leaves and pebbles, yellow rain boots, holding a magnifying glass`
+  - 4 歲，小小的，臉頰圓圓的。
+  - 黑色及下巴的妹妹頭、齊瀏海，頭頂用粉紅髮圈綁一小撮沖天炮；笑起來門牙有個小缺口。
+  - 珊瑚粉洋裝，兩個大口袋塞滿樹葉和石頭，黃色雨鞋，拿著放大鏡。
+  - 英文 prompt：`a 4-year-old girl, small and round-cheeked, black chin-length bob with straight blunt bangs and a tiny sprout ponytail on top tied with a pink hair tie, cheeky grin with a little gap in her front teeth, coral-pink dress with two big pockets full of leaves and pebbles, yellow rain boots, holding a magnifying glass`
 - **則則**：
-  - 10 歲、比較高。
-  - 黑色短髮，頭頂有一小撮翹毛，溫和穩穩的笑。
-  - 芥末黃配深藍的防風外套、卡其短褲、登山鞋，綠色小背包上有一個台灣形狀的布章。
-  - 英文 prompt：`a 10-year-old boy, taller, short black hair with a small cowlick, gentle steady smile, mustard-yellow and navy windbreaker, khaki shorts, sturdy hiking shoes, small green backpack with a tiny Taiwan-shaped patch`
-- **畫風**：gouache 加 risograph 質感，暖芥末與赭色調。跟小寶（黑色妹妹頭、芥末黃上衣）並列時，三個人要一眼分得出來。
+  - 10 歲，比較高、瘦瘦的。
+  - 又厚又黑的西瓜皮、齊瀏海，笑得很開。
+  - 亮黃色 T 恤、淺灰棉褲、藍色運動鞋，綠色小背包上有台灣形狀的布章。
+  - 英文 prompt：`a 10-year-old boy, taller and slim, thick black bowl-cut hair with straight full bangs, wide warm smile, bright yellow T-shirt, light grey jogger pants, blue sneakers, small green backpack with a tiny Taiwan-shaped patch`
+- **畫風**：gouache 加 risograph 質感，暖芥末與赭色調。小寶維持黑色妹妹頭加芥末黃上衣；跟則則（黃 T 恤）並列時，靠髮型和年紀區分。
 
 ## 頻道包裝
 
