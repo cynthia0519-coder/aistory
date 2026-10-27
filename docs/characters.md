@@ -66,3 +66,10 @@
   - 芥末黃配深藍的防風外套、卡其短褲、登山鞋，綠色小背包上有一個台灣形狀的布章。
   - 英文 prompt：`a 10-year-old boy, taller, short black hair with a small cowlick, gentle steady smile, mustard-yellow and navy windbreaker, khaki shorts, sturdy hiking shoes, small green backpack with a tiny Taiwan-shaped patch`
 - **畫風**：gouache 加 risograph 質感，暖芥末與赭色調。跟小寶（黑色妹妹頭、芥末黃上衣）並列時，三個人要一眼分得出來。
+
+## 頻道包裝
+
+- 播放清單：「沐沐與則則｜兄妹的睡前故事」／“Mumu & Jerry | Sibling Bedtime Stories”。每週日 19:30 播出。
+- 每集標題：「沐沐與則則 EP1｜沐沐的再來一碗」／“Mumu & Jerry EP1 | Mumu's Second Bowl”。
+- 播放清單說明要同時寫「這是我的孩子們」和「靈感來自真實的兄妹，情節經過改編」。
+- 「則則的故事」累積到 3 集以上，再另開一個播放清單，同時保留在「沐沐與則則」清單裡。
