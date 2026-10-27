@@ -89,7 +89,7 @@
   - 黑色長直髮、齊瀏海，頭頂兩個小丸子，其餘頭髮披到肩膀下；笑容大大的。
   - 湖水藍無袖運動上衣、深藍色縮口褲有芥末黃條紋、白色球鞋；常拿著一束氣球花（白、淡紫、紫，金色氣球蝴蝶結）。
   - 英文 prompt：`a 9-year-old girl, almost as tall as her brother, slim and athletic, long straight black hair with straight blunt bangs, two small space buns on top with the rest hanging past her shoulders, big bright grin, teal-blue sleeveless sporty top, navy jogger pants with mustard-yellow stripes, white sneakers, holding a bouquet of twisted balloon flowers (white, lilac, purple) tied with a gold balloon bow`
-  - 三人設計圖：Canva media id `MAHZNhttiaU`（以 B2 為參考，2026-10-27 生成，待媽媽確認）。畫有茜茜的封面用這張當 image reference。
+  - 三人設計圖：Canva media id `MAHZNhttiaU`（以 B2 為參考，2026-10-27 媽媽確認）。畫有茜茜的封面用這張當 image reference。
 - **畫風**：gouache 加 risograph 質感，暖芥末與赭色調。小寶維持黑色妹妹頭加芥末黃上衣；跟則則（黃 T 恤）並列時，靠髮型和年紀區分。
 
 ## 頻道包裝
@@ -105,7 +105,7 @@
 |---|---|---|---|
 | EP1 | 2026-11-22 | mumu-jerry-01-second-bowl | 沐沐 |
 | EP2 | 2026-11-29 | mumu-jerry-02-waiting-in-line | 沐沐、則則 |
-| EP3 | 2026-12-06 | mumu-jerry-09-bella-balloon-market | 茜茜（第一集）：真實經歷，第一次跟同學擺攤賣氣球花；同學上次不敢說話，這次在茜茜面前變得有自信，茜茜看著學會跟陌生人說話。則則、沐沐沒去。同學用假名小晴 |
+| EP3 | 2026-12-06 | mumu-jerry-09-bella-balloon-market | 茜茜（第一集）：真實經歷，第一次跟同學擺攤賣氣球花；同學上次不敢說話，這次在茜茜面前變得有自信，茜茜看著學會跟陌生人說話。則則、沐沐沒去。大人只幫忙擺好攤位，之後坐在後面觀察，孩子答不出來才出手。同學用假名小晴 |
 | EP4 | 2026-12-13 | mumu-jerry-03-lying-down | 沐沐 |
 | EP5 | 2026-12-20 | mumu-jerry-05-present-for-brother | 沐沐、則則（聖誕前） |
 | EP6 | 2026-12-27 | mumu-jerry-04-reading-pictures | 沐沐、則則 |
