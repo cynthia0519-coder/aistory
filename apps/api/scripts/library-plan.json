@@ -390,7 +390,7 @@
     "ageBands": ["4-6"],
     "style": "cute",
     "setting": "home",
-    "premise": "When the kitchen timer rings, {name}'s cartoon has to stop right at a funny part. {name} grumbles, breathes out like a balloon, and discovers the cartoon friends can come alive in a cardboard puppet show."
+    "premise": "Mom and {name} agreed on two short videos. After the second one, {name} begs for just one more. Mom kindly keeps the promise and suggests a sound walk instead. At the park they close their eyes and guess sounds: a bird, a scooter, the wind in the trees, a dog's bark. {name} decides real sounds are a fun show too. No timer and no cardboard crafts."
   },
   {
     "id": "screen-time-riverside-kites",
@@ -710,7 +710,7 @@
     "ageBands": ["2-4"],
     "style": "adventure",
     "setting": "home",
-    "premise": "On the kitchen counter, {name} spots a bottle of gummy bears that are really vitamins. {name} doesn't taste one; {name} and {his} toy dinosaur march off to fetch Mom, who puts the bottle up high and gives {name} a real snack."
+    "premise": "At Grandma's house, {name} finds a little cup of pink cough syrup left on the table. It smells like strawberries, but {name} doesn't sip it. {name} calls, \"Grandma, come and look!\" Grandma explains that medicine is only given by a grown-up, puts the syrup in the high cupboard, and pours {name} a cup of real water. No toy mission and no candy reward."
   },
   {
     "id": "medicine-grandmas-rainbow-pillbox",
@@ -726,7 +726,7 @@
     "ageBands": ["4-6"],
     "style": "adventure",
     "setting": "home",
-    "premise": "The typhoon howls and the power goes out. Away from the windows, {name} and the family light flashlights and make shadow animals on the wall, and {name} feels brave knowing they stocked water and snacks yesterday."
+    "premise": "The typhoon howls and the power goes out at dinner. Away from the windows, the family switches on flashlights and a battery radio to hear typhoon news. {name} helps count the water bottles they filled yesterday, then reads a picture book with Mom by flashlight, counting the wind gusts until they grow softer. No shadow puppets and no blanket fort."
   },
   {
     "id": "typhoon-swollen-river",
@@ -734,7 +734,7 @@
     "ageBands": ["6-8"],
     "style": "adventure",
     "setting": "home",
-    "premise": "Older neighbor kids want to go film the swollen river during the typhoon. {name} stays home, helps bring in the bikes, and checks the flashlight. The next morning, after the all-clear, {name} joins neighbors sweeping leaves off the lane."
+    "premise": "During a typhoon, older neighbor kids text that they're going to film the swollen river. {name} says no and tells Mom, who calls their parents. Indoors, Dad shows {name} on the news why rivers rise so fast in heavy rain. The next morning, after the all-clear, {name} sweeps fallen leaves in the lane with neighbors and never goes near the river."
   },
   {
     "id": "online-safety-free-gems-password",
@@ -886,7 +886,7 @@
     "ageBands": ["2-4"],
     "style": "bedtime",
     "setting": "home",
-    "premise": "Every night {name}'s stuffed animals join a slow pajama parade: splashy bath, soft pajamas, minty teeth, one story, then lights turned low. One by one, the animals and {name} yawn and settle into bed."
+    "premise": "Every night {name}'s stuffed animals march in a slow pajama band around the bedroom: the bear taps a drum for bath, the bunny shakes a rattle for pajamas, the duck hums for teeth, then one quiet story. The music gets softer and softer until the whole band, and {name}, is asleep. No stops or stations."
   },
   {
     "id": "bedtime-routine-goodnight-house",
@@ -950,7 +950,7 @@
     "ageBands": ["4-6"],
     "style": "cute",
     "setting": "home",
-    "premise": "{name}'s favorite train puzzle is missing its last piece, so {name} and Dad search under sofas and inside slippers. They find it, and together they make labeled boxes so every toy has a home and nothing goes missing again."
+    "premise": "After a busy morning of play, {name}'s toy dump truck becomes the cleanup truck. Beep beep! {name} drives the blocks, cars and animals back to their parking spots one load at a time, while Dad plays the traffic officer. When the floor is clear, the truck parks in its own garage. No searching for lost toys and no labels."
   },
   {
     "id": "handwashing-snack-bubbles",
@@ -1134,7 +1134,7 @@
     "ageBands": ["2-4"],
     "style": "cute",
     "setting": "park",
-    "premise": "{name} and a little boy both want the same swing. Mom teaches a swing song: one song for {name}, one song for him. Waiting is hard, but singing makes the turns go round and round."
+    "premise": "At the playground, {name} and a little boy both want the big red ball. Instead of tugging, Mom shows them a rolling game: {name} rolls it to him, he rolls it back. Back and forth, faster, then slower. Sharing the ball turns into a game for two. No swings and no counting songs."
   },
   {
     "id": "sharing-turns-one-red-crayon",
@@ -1238,7 +1238,7 @@
     "ageBands": ["6-8"],
     "style": "inspiring",
     "setting": "school",
-    "premise": "Some classmates call a girl with thick glasses 'Owl Eyes' and laugh. {name} feels uneasy, sits with her at lunch, invites her into a game, and tells the teacher, who helps the whole class talk about kind names."
+    "premise": "In PE class, some classmates call a boy who runs slowly 'Turtle' and laugh at him during the relay. {name} feels uneasy, runs the last lap beside him, tells him 'Turtles finish the race too', and later tells the teacher. The teacher helps the class cheer for every runner. No lunch table and no ball game."
   },
   {
     "id": "bullying-class-group-chat",
@@ -1342,7 +1342,7 @@
     "ageBands": ["8-10"],
     "style": "inspiring",
     "setting": "city",
-    "premise": "The family moves into Grandma's narrow old house in Tainan, and {name} misses {his} own room and friends up north. Exploring the old street with Grandma, {name} finds a temple courtyard for basketball and a neighbor kid who knows every shortcut."
+    "premise": "The family moves into Grandma's narrow old house in Tainan, and {name} misses friends up north. Grandma shows {name} the old street, a temple courtyard for basketball and a neighbor kid who knows every shortcut. At the end, {name} video-calls old friends to show them the courtyard hoop. No unpacking boxes and no drawing maps."
   },
   {
     "id": "raindrop-drums",
@@ -1527,7 +1527,7 @@
     "ageBands": ["4-6"],
     "style": "adventure",
     "setting": "city",
-    "premise": "At the night market, Dad wants {name} to try a new snack: soft, wobbly douhua with peanuts. {name} wrinkles {his} nose at how it jiggles. After watching a cat-shaped steam cloud and counting to three with Dad, {name} takes one tiny spoonful and asks for more."
+    "premise": "At a friend's house, {name} is offered a cold bowl of black grass jelly. It is dark, shiny and wobbly, like a little mirror, and {name} isn't sure. The friend's mom adds a spoon of honey and shows how to take one tiny cube. {name} looks, sniffs, licks, then tries a small bite and finds it cool and sweet. No fish and no night market."
   },
   {
     "id": "tidying-toys-sleepy-shelf",
@@ -1535,7 +1535,7 @@
     "ageBands": ["2-4"],
     "style": "bedtime",
     "setting": "home",
-    "premise": "At bedtime, {name}'s toys are scattered everywhere. Mom whispers that each toy has a cozy bed on the shelf and is too tired to walk there alone. {name} carries the blocks, the bear and the little train home one by one, saying goodnight to each."
+    "premise": "At bedtime, {name}'s toy basket becomes a little elevator. Ding! {name} presses pretend buttons: the ground floor for blocks, the second floor for cars, and the top floor of the shelf for Teddy. Each toy rides up to its shelf and gets a whispered goodnight. When the floor is clear, {name} rides the last elevator into bed. No sandbox and no songs."
   },
   {
     "id": "tidying-toys-treasure-sorting",
@@ -1551,7 +1551,7 @@
     "ageBands": ["2-4", "4-6"],
     "style": "cute",
     "setting": "school",
-    "premise": "Before snack time at kindergarten, the class makes a soap-song train to the sink. {name} learns to scrub palms, backs, fingers and thumbs while singing a 20-second train song, and the bubbles chase the pretend germ passengers right down the drain."
+    "premise": "After planting seeds with Grandpa in the garden, {name}'s hands are covered in mud. At the outdoor tap, Grandpa shows how to wet, soap, scrub palms, backs, fingers and under the nails with a little brush, rinse and dry. {name} counts the scrubs like counting seeds. No kindergarten, no snack time, and no singing train."
   },
   {
     "id": "doctor-shots-brave-sticker-map",
@@ -1575,7 +1575,7 @@
     "ageBands": ["6-8"],
     "style": "adventure",
     "setting": "home",
-    "premise": "{name}'s front tooth is wiggly and {he} is afraid it will hurt. At the dentist, {name} learns why baby teeth make room for grown-up teeth. That night, the tooth comes out in an apple, and {name} follows Taiwan's tradition of tossing it with a wish for straight, strong teeth."
+    "premise": "At the dentist, {name} learns that big new molars are coming in at the very back. The dentist paints them with clear sealant, like tiny raincoats against sugar bugs. {name} is nervous about the bright light, squeezes a squishy toy, and raises a hand to take a break. Afterward, {name} draws the molars wearing raincoats. No wiggly tooth."
   },
   {
     "id": "brushing-teeth-two-minute-sandglass",
@@ -1607,7 +1607,7 @@
     "ageBands": ["4-6"],
     "style": "bedtime",
     "setting": "home",
-    "premise": "{name} keeps forgetting bedtime steps. Together with Dad, {name} draws a moon checklist: bath, pajamas, brush teeth, one story, lights low. Each step lights up a star on the paper moon, and when the last star shines, {name} is already yawning."
+    "premise": "Dad and {name} play the whisper countdown at bedtime: every step gets a little quieter. Bath in a normal voice, pajamas a bit softer, teeth in a whisper, one story in the tiniest whisper, and lights low with no words at all, just a hug. No charts, stickers or stars to move."
   },
   {
     "id": "strangers-ice-cream-truck",
@@ -1631,7 +1631,7 @@
     "ageBands": ["2-4"],
     "style": "cute",
     "setting": "home",
-    "premise": "Steam curls up from Grandma's soup pot like a little dragon. {name} wants to touch the dragon, but Grandma teaches {him} the 'hot hands' sign: hands behind the back near the stove. {name} watches safely from the kitchen door and gets the first cooled spoonful."
+    "premise": "Dad puts his steaming cup of tea on the low coffee table, and {name} wants to see the little cloud up close. Dad says, 'Cups with steam are grown-up cups,' and moves the tea to the middle of the high dining table. {name} learns not to run near tables with hot drinks and gets a cup of cool water in a duck cup. No soup, no rice cooker."
   },
   {
     "id": "hot-things-camping-fire-circle",
@@ -1655,7 +1655,7 @@
     "ageBands": ["4-6"],
     "style": "inspiring",
     "setting": "city",
-    "premise": "{name} wants to see the parade from the apartment balcony and starts dragging a stool to the railing. Dad stops {him} and explains why we never climb near balconies and windows. Instead, they watch together from the window, with Dad holding {name} safely."
+    "premise": "{name}'s paper airplane flies out and lands on the ledge outside the window. {name} wants to push the sofa over and climb up, but stops and calls Dad. Dad checks the window lock and fetches the plane with a long grabber from inside. Together they move the sofa away from the window and fly planes down the hallway instead. No parade."
   },
   {
     "id": "medicine-grandpa-pill-box",
@@ -1663,7 +1663,7 @@
     "ageBands": ["2-4", "4-6"],
     "style": "cute",
     "setting": "home",
-    "premise": "Grandpa's colorful pill box looks like candy to {name}. Grandpa explains that medicine is only for the person the doctor chose, and only a grown-up gives it. {name} helps Grandpa put the box up high, and they share a real candy instead."
+    "premise": "{name} has a fever. Dad measures the medicine with a little syringe while {name} watches from the sofa. It tastes like strawberries, and {name} asks if it's candy. Dad explains medicine can taste sweet but is not candy: only a grown-up gives it, in the right amount. {name} helps Dad put the bottle back up high and feels better by morning."
   },
   {
     "id": "medicine-cough-syrup-spoon",
@@ -1703,7 +1703,7 @@
     "ageBands": ["4-6", "6-8"],
     "style": "adventure",
     "setting": "sea",
-    "premise": "At the aquarium, {name} gazes at a giant manta ray in the glass tunnel and suddenly can't see Mom. {name} remembers the plan: stop and stay where you are, look for a staff member with a name badge, and say Mom's phone number. A staff member helps, and Mom hurries back with a big hug."
+    "premise": "Before the aquarium, Mom writes her phone number on a wristband inside {name}'s sleeve. In the glass tunnel, {name} watches a manta ray and suddenly can't see Mom. {name} stops, stays put, finds a staff member with a name badge, and shows the wristband. The staff member calls Mom, who hurries back. No singing the phone number."
   },
   {
     "id": "sharing-turns-swing-timer",
@@ -1719,7 +1719,7 @@
     "ageBands": ["4-6"],
     "style": "inspiring",
     "setting": "school",
-    "premise": "{name} brings a big new crayon box to class and doesn't want anyone to use the gold crayon. When a classmate's drawing needs a golden sun, {name} feels torn, then lends it. The class mural ends up glowing, and {name}'s gold crayon is in every corner."
+    "premise": "On a bug hunt in the school garden, the class has only one magnifying glass, and {name} gets it first. When a classmate finds a shiny beetle, {name} wants to keep looking, then hands over the glass. Taking turns, the group discovers far more bugs together and draws a big bug map."
   },
   {
     "id": "manners-magic-words-bakery",
@@ -1727,7 +1727,7 @@
     "ageBands": ["2-4"],
     "style": "cute",
     "setting": "city",
-    "premise": "At the neighborhood bakery, {name} points and says 'that one!' The baker smiles and waits. Mom whispers about magic words, and {name} tries 'please' and 'thank you'. The baker's face lights up, and {name} finds the magic works everywhere they go that day."
+    "premise": "{name} and Mom visit the old neighbor grandma downstairs to bring her some oranges. {name} knocks gently, says 'Good afternoon', 'please' when asking to see her cat, and 'thank you' for the cookie. When the cat's tail knocks a cup over, {name} says 'sorry' and helps wipe it up. No shop and no bakery."
   },
   {
     "id": "manners-sorry-tower",
@@ -1783,7 +1783,7 @@
     "ageBands": ["8-10"],
     "style": "inspiring",
     "setting": "city",
-    "premise": "In a class group chat, classmates start sending mean stickers about one quiet kid. {name} doesn't join in, shows the messages to Dad, and sends a kind private message to the kid. With the teacher's help, the chat gets new rules, and {name} learns being an upstander takes courage."
+    "premise": "In an online game, {name}'s teammates keep kicking a quiet classmate out of their team and typing mean messages. {name} invites him back, doesn't join the teasing, takes screenshots and shows Mom. Together they report and block the mean accounts, and the teacher talks with the class about kindness in games. No class group chat or stickers."
   },
   {
     "id": "new-sibling-baby-photo-album",
@@ -1807,7 +1807,7 @@
     "ageBands": ["4-6"],
     "style": "inspiring",
     "setting": "school",
-    "premise": "When a classmate takes {name}'s spot in line, {name} feels like a volcano about to erupt. The teacher shows {him} volcano breathing: breathe in slowly like lava going down, breathe out like cool rain. {name} calms down and uses words to say how {he} feels."
+    "premise": "Rain cancels the class trip to the zoo that {name} waited all week for, and {name} feels like a volcano about to erupt. The teacher shows volcano breathing: breathe in slowly like lava going down, breathe out like cool rain. {name} calms down, says 'I'm angry because I really wanted to see the giraffes', and the class makes paper animals for an indoor zoo. No blocks."
   },
   {
     "id": "snow-mountain-first-snowflake",
