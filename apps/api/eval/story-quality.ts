@@ -32,6 +32,7 @@ import {
 } from "@aistory/shared";
 import { generateStoryDetailed } from "../src/lib/story-engine";
 import { cost } from "./prices";
+import { MAINLAND_TERMS, SIMPLIFIED } from "./zh-checks";
 
 const SCENES = [
   "A little girl in a yellow raincoat jumping into a puddle on a rainy street, holding a red umbrella. Mood: playful.",
@@ -47,14 +48,6 @@ const JUDGE_MODEL = process.env.EVAL_JUDGE_MODEL ?? "claude-opus-5-5";
 const STYLE = (process.env.EVAL_STYLE ?? "bedtime") as StoryStyle;
 const LENGTH = (process.env.EVAL_LENGTH ?? "3min") as StoryLength;
 const LENGTH_TOLERANCE = 0.1; // 字數允許超出規則上下限 10%
-
-// 台灣不用、大陸常用的詞（出現就扣分）
-const MAINLAND_TERMS = [
-  "視頻", "軟件", "質量", "信息", "土豆", "公交", "出租車", "早上好", "晚上好", "冰激凌", "小伙伴",
-  "鼠標", "屏幕", "網絡", "酸奶", "自行車", "塑料", "雪糕", "宇航員", "一塊兒", "玩兒",
-  "這兒", "哪兒", "那兒", "點兒", "寶貝兒",
-];
-const SIMPLIFIED = /[们这说话个时为发过还来对开门见长头东乐爱妈让觉学兴听边飞鸟鱼风电书]/g;
 
 const JudgeSchema = z.object({
   ageFit: z.number().int().min(1).max(5),
