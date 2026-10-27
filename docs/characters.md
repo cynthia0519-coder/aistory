@@ -105,7 +105,7 @@
 |---|---|---|---|
 | EP1 | 2026-11-22 | mumu-jerry-01-second-bowl | 沐沐 |
 | EP2 | 2026-11-29 | mumu-jerry-02-waiting-in-line | 沐沐、則則 |
-| EP3 | 2026-12-06 | mumu-jerry-09-bella-balloon-market | 茜茜（第一集） |
+| EP3 | 2026-12-06 | mumu-jerry-09-bella-balloon-market | 茜茜（第一集）：真實經歷，第一次跟同學擺攤賣氣球花；同學上次不敢說話，這次在茜茜面前變得有自信，茜茜看著學會跟陌生人說話。則則、沐沐沒去。同學用假名小晴 |
 | EP4 | 2026-12-13 | mumu-jerry-03-lying-down | 沐沐 |
 | EP5 | 2026-12-20 | mumu-jerry-05-present-for-brother | 沐沐、則則（聖誕前） |
 | EP6 | 2026-12-27 | mumu-jerry-04-reading-pictures | 沐沐、則則 |
