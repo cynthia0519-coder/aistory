@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Canva__generate-image",
+      "mcp__Canva__get-generate-image-job",
+      "mcp__Canva__get-assets"
+    ]
+  }
+}
