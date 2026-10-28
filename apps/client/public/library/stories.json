@@ -20456,11 +20456,11 @@
       }
     },
     "draft": false,
+    "publishAt": "2027-01-24T19:30:00+08:00",
     "cast": {
       "series": "mumu-jerry",
       "episode": 10
-    },
-    "publishAt": "2027-01-24T19:30:00+08:00"
+    }
   },
   {
     "id": "mumu-jerry-11-siblings-grab-tug",
@@ -20472,11 +20472,6 @@
     "title": {
       "zh": "三兄妹搶布丁",
       "en": "The Last Pudding"
-    },
-    "theme": "sharing-turns",
-    "cast": {
-      "series": "mumu-jerry",
-      "episode": 11
     },
     "paragraphs": {
       "zh": [
@@ -20508,6 +20503,7 @@
         "That night, Mumu said, \"I found a new rule: when we think of a way together, we don't need to grab.\" The three of them laughed and squeezed together. Mumu yawned. \"Tomorrow, I'm going to study a new rule.\" Goodnight, Mumu. Goodnight, Bella. Goodnight, Jerry."
       ]
     },
+    "theme": "sharing-turns",
     "guide": {
       "zh": {
         "questions": [
@@ -20526,7 +20522,12 @@
         "tip": "Next time you share a snack, try \"whoever cuts picks last\" and let your child be the one who cuts."
       }
     },
-    "draft": true
+    "draft": false,
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 11
+    },
+    "publishAt": "2027-01-31T19:30:00+08:00"
   },
   {
     "id": "mumu-jerry-12-bella-almost-done",
@@ -20538,11 +20539,6 @@
     "title": {
       "zh": "等一下，快好了！",
       "en": "Just a Sec, Almost Done!"
-    },
-    "theme": "screen-time",
-    "cast": {
-      "series": "mumu-jerry",
-      "episode": 12
     },
     "paragraphs": {
       "zh": [
@@ -20574,6 +20570,7 @@
         "Mumu said, \"I found a new rule: when you say a time, you keep it.\" Mumu yawned. \"Tomorrow, I'm going to study a new rule.\" Goodnight, Mumu. Goodnight, Jerry. Goodnight, Bella, who kept her word."
       ]
     },
+    "theme": "screen-time",
     "guide": {
       "zh": {
         "questions": [
@@ -20592,7 +20589,12 @@
         "tip": "Before tablet time, let your child say how long they'll watch and set the timer themselves. When it rings and they stop, praise them for keeping their word."
       }
     },
-    "draft": true
+    "draft": false,
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 12
+    },
+    "publishAt": "2027-02-07T19:30:00+08:00"
   },
   {
     "id": "mumu-jerry-13-bella-mom-date",
@@ -20605,11 +20607,6 @@
       "zh": "媽媽和茜茜的約會",
       "en": "Bella's Date with Mom"
     },
-    "theme": "empathy",
-    "cast": {
-      "series": "mumu-jerry",
-      "episode": 13
-    },
     "paragraphs": {
       "zh": [
         "星期六早上，媽媽在茜茜耳邊小小聲地說：「今天，我們兩個去約會。」茜茜的眼睛一下子亮起來。",
@@ -20621,29 +20618,30 @@
         "吃完鬆餅，她們手牽手走到公園。茜茜看到賣氣球的叔叔，眼睛又亮了。",
         "「媽媽，我們買兩顆氣球好不好？一顆給哥哥，一顆給妹妹。」媽媽摸摸她的頭：「今天是你的約會，你也可以只想你自己喔。」",
         "茜茜想了想：「那我要三顆！一顆給我，一顆給哥哥，一顆給妹妹。」媽媽笑了：「好，三顆。」",
-        "回到家，則則看到氣球，比了大拇指：「很棒！」可是沐沐站在門口，嘴巴嘟嘟的，沒有說話。茜茜蹲下來問：「沐沐，你還好嗎？」沐沐小聲說：「我也想跟媽媽出去。」",
-        "茜茜想起來，早上自己也好想好想跟媽媽約會。她把氣球放到沐沐手上：「我知道那種感覺。媽媽說，每個人都會輪到，下次換你！」沐沐抱著氣球轉圈圈，笑了。",
-        "晚上，沐沐說：「我發現一條新規則：每個人都有輪到當主角的時候。」茜茜抱著自己的氣球，笑得好甜。沐沐打了個呵欠：「明天，我要研究新的規則。」晚安，沐沐。晚安，則則。晚安，今天的主角茜茜。"
+        "回到家，茜茜把氣球一人一顆發下去。則則拿到藍色的，比了大拇指：「很棒！」沐沐拿到粉紅色的，可是嘴巴嘟嘟的。茜茜看看她的臉，蹲下來問：「沐沐，你還好嗎？」沐沐小聲說：「我也想跟媽媽出去。」",
+        "茜茜點點頭：「我知道那種感覺。以前哥哥跟媽媽出去，我也好想好想。」媽媽抱抱沐沐：「每個人都會輪到。下次，輪到你。」沐沐抱著氣球轉圈圈，笑了。",
+        "晚上，沐沐說：「我發現一條新規則：等待的心情，大家都懂。而且每個人都會輪到。」茜茜抱著自己的氣球，笑得好甜。沐沐打了個呵欠：「明天，我要研究新的規則。」晚安，沐沐。晚安，則則。晚安，今天的主角茜茜。"
       ],
       "en": [
         "Saturday morning, Mom whispered in Bella's ear, \"Today, it's a date. Just the two of us.\" Bella's eyes lit up.",
         "\"Only us two?\" \"Only us two. Everyone gets a turn for a date with Mom, and today it's yours.\" Jerry and Mumu stayed home and baked cookies with Grandma.",
         "Bella put on her favorite clothes and made a V-sign in the mirror. Mom said, \"You choose where we go today.\"",
         "Bella thought for a long time. \"I want pancakes, and then I want to see the balloons!\"",
-        "At the pancake shop, Bella could talk slowly. She didn't have to hurry to get a turn. She told Mom about school and about gymnastics. She told her about the new balloon flower she had learned, too. Mom looked at her and listened carefully.",
+        "At the pancake shop, Bella could talk slowly, with no hurry. She told Mom about school, gymnastics, and her new balloon flower. Mom listened carefully.",
         "\"Mom, guess what? I can hold the splits for a really long time now!\" Mom smiled. \"I know. I see you practice every day.\"",
         "After pancakes, they walked hand in hand to the park. Bella saw a man selling balloons, and her eyes lit up again.",
         "\"Mom, can we buy two balloons? One for my brother and one for my sister.\" Mom stroked her hair. \"Today is your date. It's okay to think about just you, too.\"",
         "Bella thought about it. \"Then I want three! One for me, one for my brother, and one for my sister.\" Mom laughed. \"Okay, three.\"",
-        "Back home, Jerry saw the balloons and gave a thumbs-up. \"Great!\" But Mumu stood by the door with a pout and didn't say a word. Bella crouched down. \"Mumu, are you okay?\" Mumu said quietly, \"I wanted to go out with Mom too.\"",
-        "Bella remembered how much she had wanted a date with Mom that morning. She put the balloon in Mumu's hands. \"I know that feeling. Mom says everyone gets a turn. Next time it's you!\" Mumu hugged her balloon, spun around, and smiled.",
-        "That night, Mumu said, \"I found a new rule: everyone gets a turn to be the star.\" Bella hugged her own balloon and smiled sweetly. Mumu yawned. \"Tomorrow, I'm going to study a new rule.\" Goodnight, Mumu. Goodnight, Jerry. Goodnight, Bella, today's star."
+        "Back home, Bella gave out the balloons, one each. Jerry got the blue one. \"Great!\" he said with a thumbs-up. Mumu got the pink one, but she was pouting. Bella looked at her face and crouched down. \"Mumu, are you okay?\" Mumu said quietly, \"I wanted to go out with Mom too.\"",
+        "Bella nodded. \"I know that feeling. When Jerry went out with Mom, I wanted a turn so much.\" Mom hugged Mumu. \"Everyone gets a turn. Next time, it's yours.\" Mumu hugged her balloon, spun around, and smiled.",
+        "That night, Mumu said, \"I found a new rule: everyone knows how waiting feels. And everyone gets a turn.\" Bella hugged her balloon and smiled. Mumu yawned. \"Tomorrow, I'm going to study a new rule.\" Goodnight, Mumu. Goodnight, Jerry. Goodnight, Bella, today's star."
       ]
     },
+    "theme": "empathy",
     "guide": {
       "zh": {
         "questions": [
-          "沐沐嘴巴嘟嘟的時候，茜茜怎麼知道她不開心？",
+          "茜茜怎麼看出沐沐不開心？她做了什麼？",
           "茜茜為什麼說「我知道那種感覺」？",
           "家人看起來不開心的時候，你可以怎麼問、怎麼做？"
         ],
@@ -20651,14 +20649,19 @@
       },
       "en": {
         "questions": [
-          "How did Bella know Mumu was upset when she pouted?",
+          "How did Bella see that Mumu was upset? What did she do?",
           "Why did Bella say \"I know that feeling\"?",
           "When someone in your family looks upset, what can you ask or do?"
         ],
         "tip": "Sometime today, ask your child, \"How do you think your brother or sister (or someone at home) feels today? How can you tell?\""
       }
     },
-    "draft": true
+    "draft": false,
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 13
+    },
+    "publishAt": "2027-02-14T19:30:00+08:00"
   },
   {
     "id": "mumu-jerry-14-bella-test-secret",
@@ -20670,11 +20673,6 @@
     "title": {
       "zh": "茜茜的考試祕密武器",
       "en": "Bella's Secret Weapon"
-    },
-    "theme": "perseverance",
-    "cast": {
-      "series": "mumu-jerry",
-      "episode": 14
     },
     "paragraphs": {
       "zh": [
@@ -20706,6 +20704,7 @@
         "That night, Mumu ran over with her picture book. \"I found a new rule: if you circle it, you won't miss it!\" Every kitten in her book had a neat circle around it. Mumu yawned. \"Tomorrow, I'm going to study a new rule.\" Goodnight, Mumu. Goodnight, Jerry. Goodnight, Bella and her secret weapon."
       ]
     },
+    "theme": "perseverance",
     "guide": {
       "zh": {
         "questions": [
@@ -20724,6 +20723,11 @@
         "tip": "Next time your child gets stuck on homework or a puzzle, ask, \"What way could you try?\" and let them come up with their own trick."
       }
     },
-    "draft": true
+    "draft": false,
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 14
+    },
+    "publishAt": "2027-02-21T19:30:00+08:00"
   }
 ]
