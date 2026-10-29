@@ -58,5 +58,7 @@
 - 上傳頁面：11/16–11/30 https://claude.ai/artifact/5AuTZtzTU3N4AaDrTNssTb、12/1–12/15 https://claude.ai/artifact/Tgj8URgyKJ6E5aYgNJZGQC、12/16–12/31 https://claude.ai/artifact/HrvUVvrR1nHKL6x9b8Eqb3。下一頁從 2027-01-01 開始。
 - 剩下封面的畫面描述在 `wave1-cover-prompts.json`（`ref` 是 imageReferences，`scene` 接在風格前綴後面）。匯出用 Canva 簡報 `DAHY2Vv2sws`，第 85、86 頁輪流放新圖再匯出那一頁。
 - Canva 每生成一張就會回 `quota_cooldown` 一段時間（約 30 分鐘以上），只能一張一張畫。
+- edit-design 每次呼叫都會跳權限確認（連接器的政策，repo 設定管不到）。所以封面要批次：先連續 generate-image 累積 10–15 張（等冷卻），每張看過預覽後把「id media-id」記在 `wave1-cover-pending.txt`；再開一個 transaction，用一次 edit-design（keep_open）把整批放進簡報頁、一次 commit（工具不允許 commit 和 operations 同一次呼叫），然後一次 export 全部頁面。
+- 確認迴圈有沒有在跑：`ps -eo args | grep -x 'bash docs/production/render-loop.sh'`。不要用 `pgrep -f render-loop.sh`，它會比對到自己的指令列，迴圈停了也會回「有在跑」。
 - 新容器要先 `npm install`，並把字型 LXGW WenKai TC 放到 `apps/api/scripts/assets/LXGWWenKaiTC-Regular.ttf`（不進 git，可從 github.com/lxgw/LxgwWenkaiTC releases 下載）。`out/` 不進 git，換容器後要重算才能做上傳頁面。
 - 主 repo 若 push 一直回「missing necessary objects」，從新 clone 推送即可。
