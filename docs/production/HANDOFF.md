@@ -52,3 +52,11 @@
 
 - 每次 push 前先 `git pull --no-rebase origin claude/exciting-gates-roztcf`，故事庫對話也在同一個分支 commit。
 - 做好的影片要整理成頁面交給上傳助手，第一批從 11/16 開始，比較急。
+
+## 2026-10-29 接手狀態
+
+- 上傳頁面：11/16–11/30 https://claude.ai/artifact/5AuTZtzTU3N4AaDrTNssTb、12/1–12/15 https://claude.ai/artifact/Tgj8URgyKJ6E5aYgNJZGQC、12/16–12/31 https://claude.ai/artifact/HrvUVvrR1nHKL6x9b8Eqb3。下一頁從 2027-01-01 開始。
+- 剩下封面的畫面描述在 `wave1-cover-prompts.json`（`ref` 是 imageReferences，`scene` 接在風格前綴後面）。匯出用 Canva 簡報 `DAHY2Vv2sws`，第 85、86 頁輪流放新圖再匯出那一頁。
+- Canva 每生成一張就會回 `quota_cooldown` 一段時間（約 30 分鐘以上），只能一張一張畫。
+- 新容器要先 `npm install`，並把字型 LXGW WenKai TC 放到 `apps/api/scripts/assets/LXGWWenKaiTC-Regular.ttf`（不進 git，可從 github.com/lxgw/LxgwWenkaiTC releases 下載）。`out/` 不進 git，換容器後要重算才能做上傳頁面。
+- 主 repo 若 push 一直回「missing necessary objects」，從新 clone 推送即可。
