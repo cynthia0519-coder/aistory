@@ -8,7 +8,23 @@
       "mcp__Canva__read-design",
       "mcp__Canva__edit-design",
       "mcp__Canva__export-design",
-      "mcp__Canva__get-export-formats"
+      "mcp__Canva__get-export-formats",
+      "mcp__4813a858-bfa9-4ae0-a02d-27343b39c6c9__generate-image",
+      "mcp__4813a858_bfa9_4ae0_a02d_27343b39c6c9__generate-image",
+      "mcp__4813a858-bfa9-4ae0-a02d-27343b39c6c9__get-generate-image-job",
+      "mcp__4813a858_bfa9_4ae0_a02d_27343b39c6c9__get-generate-image-job",
+      "mcp__4813a858-bfa9-4ae0-a02d-27343b39c6c9__get-assets",
+      "mcp__4813a858_bfa9_4ae0_a02d_27343b39c6c9__get-assets",
+      "mcp__4813a858-bfa9-4ae0-a02d-27343b39c6c9__create-design",
+      "mcp__4813a858_bfa9_4ae0_a02d_27343b39c6c9__create-design",
+      "mcp__4813a858-bfa9-4ae0-a02d-27343b39c6c9__read-design",
+      "mcp__4813a858_bfa9_4ae0_a02d_27343b39c6c9__read-design",
+      "mcp__4813a858-bfa9-4ae0-a02d-27343b39c6c9__edit-design",
+      "mcp__4813a858_bfa9_4ae0_a02d_27343b39c6c9__edit-design",
+      "mcp__4813a858-bfa9-4ae0-a02d-27343b39c6c9__export-design",
+      "mcp__4813a858_bfa9_4ae0_a02d_27343b39c6c9__export-design",
+      "mcp__4813a858-bfa9-4ae0-a02d-27343b39c6c9__get-export-formats",
+      "mcp__4813a858_bfa9_4ae0_a02d_27343b39c6c9__get-export-formats"
     ]
   }
 }
