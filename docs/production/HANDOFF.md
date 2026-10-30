@@ -55,7 +55,7 @@
 
 ## 2026-10-29 接手狀態
 
-- 上傳頁面：11/16–11/30 https://claude.ai/artifact/5AuTZtzTU3N4AaDrTNssTb、12/1–12/15 https://claude.ai/artifact/Tgj8URgyKJ6E5aYgNJZGQC、12/16–12/31 https://claude.ai/artifact/HrvUVvrR1nHKL6x9b8Eqb3、1/1–1/15 https://claude.ai/artifact/JpJCX52zMhUXgPFWhT7uwd、1/16–1/31 https://claude.ai/artifact/CH3XaVrdqbuuDa9QuLosgH。下一頁從 2027-02-01 開始。
+- 上傳頁面：11/16–11/30 https://claude.ai/artifact/5AuTZtzTU3N4AaDrTNssTb、12/1–12/15 https://claude.ai/artifact/Tgj8URgyKJ6E5aYgNJZGQC、12/16–12/31 https://claude.ai/artifact/HrvUVvrR1nHKL6x9b8Eqb3、1/1–1/15 https://claude.ai/artifact/JpJCX52zMhUXgPFWhT7uwd、1/16–1/31 https://claude.ai/artifact/CH3XaVrdqbuuDa9QuLosgH、2/1–2/15 https://claude.ai/artifact/KSQsWYTBDStvMJr5JSwEJE。下一頁 2/16–2/28（第一波最後一頁）。第一波封面 81/81 已完成。注意：empathy-elephant-and-mouse-fable 節目 2/3 播出，但 stories.json 的 publishAt 是 2/14，待確認。
 - 剩下封面的畫面描述在 `wave1-cover-prompts.json`（`ref` 是 imageReferences，`scene` 接在風格前綴後面）。匯出用 Canva 簡報 `DAHY2Vv2sws`，第 85、86 頁輪流放新圖再匯出那一頁。
 - Canva 每生成一張就會回 `quota_cooldown` 一段時間（約 30 分鐘以上），只能一張一張畫。
 - edit-design 每次呼叫都會跳權限確認（連接器的政策，repo 設定管不到）。所以封面要批次：先連續 generate-image 累積 10–15 張（等冷卻），每張看過預覽後把「id media-id」記在 `wave1-cover-pending.txt`；再開一個 transaction：一次 keep_open 用 add_page 補頁 → read-design（帶 transaction_id、fields design_content）拿新頁 id → 一次 keep_open 把整批 update_fill / insert_fill（insert_fill 帶 page_id，可以跨頁）放進去 → 一次 commit → 一次 export 全部頁面，每批約 4 次確認，然後一次 export 全部頁面。
