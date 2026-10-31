@@ -20831,10 +20831,11 @@
         "tip": "This week, pick one thing your child wants to learn (jumping rope, bouncing a ball, doing buttons) and practice just a little each day, marking progress with a sticker or a drawing. For stretches, warm up first, go slowly, and stop if it hurts."
       }
     },
-    "draft": true,
+    "draft": false,
     "cast": {
       "series": "mumu-jerry",
       "episode": 15
-    }
+    },
+    "publishAt": "2027-03-07T19:30:00+08:00"
   }
 ]

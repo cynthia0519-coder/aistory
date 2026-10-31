@@ -1,5 +1,6 @@
 # 排第二波節目表：python3 docs/production/wave2-plan.py（在 repo 根目錄跑），輸出 docs/production/wave2-production.json
 # library-episodes.txt 是故事庫對話已做成週二、五節目的故事（不能再用）
+# 注意：第二波 2026-10-31 已排程上架（故事有了 publishAt），之後重跑會選不到故事；要改節目表請直接改 wave2-production.json 並同步 library:publish
 import json,collections,datetime,re,random
 s=json.load(open('apps/client/public/library/stories.json'))
 used={x['id'] for x in json.load(open('docs/production/wave1-production.json'))}
@@ -41,6 +42,10 @@ for k in sorted(plan):
   x=plan[k]; txt=''.join(x['paragraphs']['zh'])
   h=heroes.get(x['id']) or ('mumu' if any(b in('2-4','4-6') for b in x['ageBands']) and not BAD.search(txt) and '{name}' in txt and x.get('theme') not in NOMUMU and x['id'] not in NOMUMU_IDS else 'bo')
   out.append({'date':k,'id':x['id'],'hero':h,'kind':'library'})
+import os
+if os.path.exists('docs/production/wave2-production.json'):  # 保留手動加的三兄妹原創集
+  out+= [o for o in json.load(open('docs/production/wave2-production.json')) if o['kind']=='original']
+  out.sort(key=lambda o:(o['date'],o['kind']=='original'))
 json.dump(out,open('docs/production/wave2-production.json','w'),ensure_ascii=False,indent=1)
 print(collections.Counter(o['hero'] for o in out), sum(plan[k].get('theme') in SAFETY for k in plan))
 for o in out:
