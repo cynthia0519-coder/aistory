@@ -20837,5 +20837,71 @@
       "episode": 15
     },
     "publishAt": "2027-03-07T19:30:00+08:00"
+  },
+  {
+    "id": "mumu-jerry-16-bella-swim-race",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "city",
+    "title": {
+      "zh": "茜茜的游泳比賽",
+      "en": "Bella's Swim Race"
+    },
+    "paragraphs": {
+      "zh": [
+        "茜茜要參加游泳比賽了！她要游 50 公尺自由式。每天放學後，她都跟著教練去泳池練習：踢水、划手、轉頭換氣，一趟又一趟。",
+        "比賽前一天晚上，茜茜睡不著：「媽媽，如果我游輸了怎麼辦？」媽媽摸摸她的頭：「明天，你只要把每天練的游出來就好。」",
+        "比賽那天，泳池邊好熱鬧。爸爸、媽媽、則則和沐沐坐在看台上。沐沐舉著一張自己畫的大魚，魚尾巴翹得高高的，那是她的加油牌。",
+        "茜茜站上跳台，心臟咚咚咚。她在臉旁邊比了一個 YA，看台上的則則大聲喊：「加油！」",
+        "嗶！茜茜跳進水裡。踢水、划手、換氣，就像每天練的一樣。她什麼都不想，只看著前面的牆，一直游、一直游，用力摸到牆！",
+        "她抬起頭，看見大螢幕：第 4 名。前面三個人，等一下要上台拿獎牌。茜茜的眼睛熱熱的。",
+        "可是，她先轉頭對旁邊的女生說：「你好快！」那個女生笑著說：「你換氣好穩喔！」",
+        "茜茜爬上岸，包著大毛巾走回看台。她小聲說：「我沒有拿到獎牌。」則則比了一個大拇指：「很棒！」",
+        "媽媽抱住她：「你從跳下去到摸到牆，一次都沒有停。那是你每天練出來的。」爸爸說：「而且你還記得先恭喜別人。」",
+        "茜茜擦擦眼睛，想了想：「下次，我要練出發跳得更遠。」她又比了一個 YA，這次笑得好大。",
+        "晚上，沐沐趴在床上，兩隻腳踢呀踢，假裝在游泳。「我發現一條新規則：第 4 名也可以比 YA！」",
+        "沐沐打了個呵欠：「明天，我要研究新的規則。」晚安，沐沐。晚安，則則。晚安，游到牆邊都沒有停的茜茜。"
+      ],
+      "en": [
+        "Bella was going to be in a swim race! She would swim the 50-meter freestyle. Every day after school, she practiced at the pool with her coach: kick, stroke, turn to breathe, lap after lap.",
+        "The night before the race, Bella couldn't sleep. \"Mom, what if I lose?\" Mom stroked her hair. \"Tomorrow, just swim the way you've been practicing.\"",
+        "On race day, the pool was busy and loud. Dad, Mom, Jerry, and Mumu sat in the stands. Mumu held up a picture she'd drawn of a big fish with its tail up high. It was her cheer sign.",
+        "Bella stepped onto the block. Her heart went thump, thump, thump. She flashed a V-sign by her cheek, and Jerry shouted from the stands, \"Go!\"",
+        "Beep! Bella dove in. Kick, stroke, breathe, just like every day. She didn't think about anything else. She kept her eyes on the wall ahead and swam and swam, then slapped the wall hard!",
+        "She looked up at the big screen: fourth place. The three swimmers ahead of her would soon go up for medals. Bella's eyes felt hot.",
+        "But first, she turned to the girl beside her. \"You're so fast!\" The girl smiled. \"Your breathing was so steady!\"",
+        "Bella climbed out, wrapped in a big towel, and walked back to the stands. \"I didn't get a medal,\" she said quietly. Jerry gave a thumbs-up. \"Great!\"",
+        "Mom hugged her. \"From the dive to the wall, you never stopped once. You built that with every practice.\" Dad said, \"And you remembered to cheer for someone else first.\"",
+        "Bella wiped her eyes and thought for a moment. \"Next time, I'll practice diving farther.\" She flashed another V-sign, and this time her smile was huge.",
+        "That night, Mumu lay on her tummy on the bed, kicking her feet, pretending to swim. \"I found a new rule: fourth place can do a V-sign too!\"",
+        "Mumu yawned. \"Tomorrow, I'm going to study a new rule.\" Goodnight, Mumu. Goodnight, Jerry. Goodnight, Bella, who swam all the way to the wall without stopping."
+      ]
+    },
+    "theme": "losing-failing",
+    "guide": {
+      "zh": {
+        "questions": [
+          "茜茜比賽前一天晚上，為什麼睡不著？媽媽怎麼跟她說？",
+          "茜茜看到自己第 4 名的時候，先做了什麼事？",
+          "沐沐發現的新規則是什麼？你覺得沒拿到第一名的時候，可以為自己高興什麼？"
+        ],
+        "tip": "下次孩子比賽或玩遊戲沒贏時，先說出一件你看到他做得好的地方（例如「你一直沒有放棄」），再問他：「下次你想多練哪一招？」"
+      },
+      "en": {
+        "questions": [
+          "Why couldn't Bella sleep the night before the race? What did Mom tell her?",
+          "When Bella saw she was in fourth place, what did she do first?",
+          "What new rule did Mumu find? When you don't win, what can you still feel proud of?"
+        ],
+        "tip": "Next time your child loses a race or a game, first name one thing you saw them do well (like \"You never gave up\"), then ask, \"What would you like to practice for next time?\""
+      }
+    },
+    "draft": true,
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 16
+    }
   }
 ]

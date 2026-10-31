@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-31T13:27:43.532Z",
+  "generatedAt": "2026-10-31T14:06:55.713Z",
   "summary": {
-    "stories": 380,
+    "stories": 381,
     "byStatus": {
-      "ok": 335,
+      "ok": 336,
       "check": 44,
       "fix": 1
     },
@@ -18,7 +18,7 @@
       "logic": 116,
       "quality": 75,
       "taiwan_usage": 42,
-      "age_fit": 26,
+      "age_fit": 27,
       "safety": 21,
       "zh_en_mismatch": 12,
       "guardrail": 6
@@ -123,7 +123,7 @@
       "water-safety-flooded-ditch",
       "water-safety-river-picnic"
     ],
-    "usd": 12.4192
+    "usd": 12.4457
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -10509,10 +10509,6 @@
     "mumu-jerry-15-bella-splits": {
       "hash": "3c3c50daed19a778",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0303646,
-      "status": "ok",
-      "reviewedAt": "2026-10-31T13:27:43.513Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -10522,6 +10518,30 @@
             "lang": "both",
             "where": "9",
             "note": "媽媽說「你最厲害的，是每天都去練，就算還沒看到變化也不放棄」直接點出道理，可改成具體稱讚，如「你每天都鋪墊子，我都看到了」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0303646,
+      "status": "ok",
+      "reviewedAt": "2026-10-31T13:27:43.513Z"
+    },
+    "mumu-jerry-16-bella-swim-race": {
+      "hash": "3522e862d8d2c463",
+      "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.0264526,
+      "status": "ok",
+      "reviewedAt": "2026-10-31T14:06:55.678Z",
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "age_fit",
+            "severity": "low",
+            "lang": "en",
+            "where": "0",
+            "note": "英文句子偏長，如「Every day after school, she practiced at the pool with her coach…」約20字，可拆成兩三句短句"
           }
         ]
       }
