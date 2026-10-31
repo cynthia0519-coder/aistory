@@ -67,7 +67,7 @@
 
 - 播出：2027-03-01～04-30，只排週一、三、四、六、日（週二、五是故事庫對話跟 App 同步的集數）。共 43 集，`wave2-production.json`。
 - 選故事：`python3 docs/production/wave2-plan.py` 重排。條件：預審 ok、第一波沒用過、不在 `library-episodes.txt`（故事庫對話已做成節目的故事）、沒有 publishAt、不是季節題材、不是身體自主或寵物離世。
-- 43 則裡 41 則還是草稿：讀過中英文（安全類核對做法）、修好之後，用 `library:publish -- id@日期,...` 排在播出日 19:30 上架。
+- 43 則已讀過中英文（安全類核對做法）並修正 14 則、重跑 AI 預審全部 ok；41 則草稿已用 `library:publish` 排在播出日 19:30 上架（2026-10-31），另 2 則本來就已上架。
 - 沐沐當主角的已寫進 `apps/api/episode-heroes.json`；搬家、新手足、上幼兒園、需要讀寫或上學的故事維持小寶。
 - 封面全部要新畫（沒有現成的），流程同第一波；記錄用 `wave2-art-done.txt`、`wave2-render-done.txt`。
 - 算圖：`bash docs/production/render-loop.sh wave2`，輸出在 `apps/api/out/episodes-w2`、`episodes-en-w2`。確認迴圈：`ps -eo args | grep -x 'bash docs/production/render-loop.sh wave2'`。

@@ -35,10 +35,11 @@ for d in days:
   order.remove(pick); plan[k]=pick
 BAD=re.compile('唸|念|繪本|看書|字|讀|寫|學校|小學|考試|作業|功課|課本|教室|書包|班上|班長')
 NOMUMU={'new-sibling','starting-kindergarten','moving-house'}
+NOMUMU_IDS={'promises-pinky-promise-tea-party','anger-red-face-pillow'}  # 審稿：故事裡有弟弟妹妹
 out=[]
 for k in sorted(plan):
   x=plan[k]; txt=''.join(x['paragraphs']['zh'])
-  h=heroes.get(x['id']) or ('mumu' if any(b in('2-4','4-6') for b in x['ageBands']) and not BAD.search(txt) and '{name}' in txt and x.get('theme') not in NOMUMU else 'bo')
+  h=heroes.get(x['id']) or ('mumu' if any(b in('2-4','4-6') for b in x['ageBands']) and not BAD.search(txt) and '{name}' in txt and x.get('theme') not in NOMUMU and x['id'] not in NOMUMU_IDS else 'bo')
   out.append({'date':k,'id':x['id'],'hero':h,'kind':'library'})
 json.dump(out,open('docs/production/wave2-production.json','w'),ensure_ascii=False,indent=1)
 print(collections.Counter(o['hero'] for o in out), sum(plan[k].get('theme') in SAFETY for k in plan))
