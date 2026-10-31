@@ -72,3 +72,4 @@
 - 封面全部要新畫（沒有現成的），流程同第一波；記錄用 `wave2-art-done.txt`、`wave2-render-done.txt`。
 - 算圖：`bash docs/production/render-loop.sh wave2`，輸出在 `apps/api/out/episodes-w2`、`episodes-en-w2`。確認迴圈：`ps -eo args | grep -x 'bash docs/production/render-loop.sh wave2'`。
 - 週日暫時都是一般故事；三兄妹 EP15 之後要等媽媽給素材、試聽通過才排。
+- 封面 prompt 在 `wave2-cover-prompts.json`（依播出順序），畫好先記 `wave2-cover-pending.txt`，每 13 張一批放進 DAHY2Vv2sws（放圖前先通知主控 session）。下一張：`python3 -c "import json,os;p=json.load(open('docs/production/wave2-cover-prompts.json'));pend=open('docs/production/wave2-cover-pending.txt').read();print([k for k in p if not os.path.exists('apps/api/episode-art/'+k+'.jpg') and k not in pend][:1])"`
