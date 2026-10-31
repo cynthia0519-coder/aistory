@@ -435,7 +435,7 @@
         "{name}蹲在水窪旁邊，媽媽也蹲下來。水裡有藍藍的天，還有白白的雲。風一吹，水面輕輕晃，一圈又一圈。{name}說：「媽媽，這是一片大海！」媽媽笑著點點頭：「那我們需要一艘船，才能去探險喔。」{name}開始東看看，西看看。",
         "一片黃黃的樹葉，躺在長椅下面。{name}撿起樹葉，翻過來看一看，彎彎的，像一艘小船。{name}把樹葉輕輕放在水上。咻，樹葉船浮起來了！它不會沉，也不會翻。{name}拍拍手說：「船長準備好了，出發囉！」媽媽也一起拍拍手。",
         "{name}輕輕吹氣，呼，呼，樹葉船往前走。可是水窪中間空空的，船要停在哪裡呢？{name}想了想，找到一顆圓圓的小石頭。撲通一聲，小石頭放進水裡，露出一點點頭。媽媽說：「哇，這是一座小島！」樹葉船慢慢漂向小島。",
-        "這時候，媽媽指著小島說：「你看，誰在那裡？」原來是一隻小蝸牛！牠背著捲捲的殼，慢慢爬，慢慢爬，觸角一伸一縮。小蝸牛好像想搭船。{name}讓樹葉船輕輕靠近小島，小蝸牛爬呀爬，終於爬上了樹葉船。",
+        "這時候，媽媽指著水窪邊的一根小樹枝說：「你看，誰在那裡？」原來是一隻小蝸牛！牠背著捲捲的殼，慢慢爬，慢慢爬，觸角一伸一縮。小蝸牛好像想搭船。{name}讓樹葉船輕輕靠到水窪邊，小蝸牛從樹枝爬呀爬，終於爬上了樹葉船。",
         "{name}小聲說：「歡迎上船，蝸牛先生！」呼，呼，{name}又輕輕吹氣，樹葉船載著小蝸牛，繞過小島，穿過雲朵的影子。一隻小鳥在樹上啾啾叫，好像在說加油。媽媽說：「船長，前面就是岸邊囉。」樹葉船慢慢停在濕濕的草地旁。",
         "小蝸牛爬下樹葉船，爬進綠綠的草叢裡，慢慢回家了。{name}揮揮手說：「再見，蝸牛先生！」{name}把樹葉船放在長椅上，等下次再出航。太陽暖暖的，{name}牽著媽媽的手往前走。今天的探險，真好玩。"
       ],
@@ -444,7 +444,7 @@
         "{name} crouched by the puddle, and Mom crouched down too. The water held the blue sky and fluffy white clouds. When the wind blew, little ripples spread out, round and round. \"Mom, it's an ocean!\" said {name}. Mom smiled and nodded. \"Then we need a ship to go exploring.\" {name} looked here and there.",
         "Under a bench lay a yellow leaf. {name} picked it up and turned it over. It curved just like a little boat. Gently, {name} set the leaf on the water. Whoosh! The leaf ship floated. It did not sink or tip. \"The captain is ready. Off we go!\" cheered {name}, and Mom clapped along happily.",
         "{name} blew softly, whoo, whoo, and the leaf ship sailed ahead. But the middle of the puddle was empty. Where could the ship stop? {name} thought hard and found a small, round pebble. Plop! In it went, with its top peeking out. \"Wow, an island!\" said Mom. The leaf ship drifted slowly toward it.",
-        "Then Mom pointed at the island. \"Look, who's there?\" It was a little snail! It carried a curly shell and crept slowly, slowly, its feelers stretching in and out. The snail seemed to want a ride. {name} nudged the ship close to the island, and the snail crawled and crawled until it climbed aboard.",
+        "Then Mom pointed at a twig at the puddle's edge. \"Look, who's there?\" It was a little snail! It carried a curly shell and crept slowly, slowly, its feelers stretching in and out. The snail seemed to want a ride. {name} nudged the ship to the edge, and the snail crawled off the twig until it climbed aboard.",
         "\"Welcome aboard, Mr. Snail!\" whispered {name}. Whoo, whoo, {name} blew again. The leaf ship carried the snail around the island and through the shadows of the clouds. A bird in a tree went tweet, tweet, as if cheering them on. \"Captain, the shore is ahead,\" said Mom. The ship stopped beside the wet grass.",
         "The snail slid off the leaf ship and crept into the green grass, slowly heading home. \"Bye-bye, Mr. Snail!\" said {name}, waving. {name} left the leaf ship on the bench, ready for another voyage someday. The sun felt warm as {name} held Mom's hand and walked on. What a wonderful adventure it had been!"
       ]
@@ -467,7 +467,8 @@
         "tip": "After lights out, softly blow \"whoo, whoo\" together, pretend the blanket is the ocean and the pillow is an island, and whisper about where the leaf ship might sail tonight."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-25T19:30:00+08:00"
   },
   {
     "id": "map-in-the-message-bottle",
@@ -629,7 +630,8 @@
         "tip": "This week, let your child be your road detective. Stop together at each curb, hold hands, and say \"left, right, left again.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-25T19:30:00+08:00"
   },
   {
     "id": "getting-lost-night-market",
@@ -847,7 +849,8 @@
         "tip": "This week, play a quick \"Drop, Cover, Hold On\" game: call out \"Earthquake!\" and have your child find the sturdiest table, take cover, count to twenty, and wait for you to say it's safe to come out."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-03T19:30:00+08:00"
   },
   {
     "id": "earthquake-mountain-school",
@@ -3590,7 +3593,8 @@
         "tip": "This week, agree on how many videos to watch or set a timer before screen time; when it ends, take a big breath together and play a five-minute eyes-closed sound-guessing game."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-28T19:30:00+08:00"
   },
   {
     "id": "windows-balcony-bird-watch",
@@ -3645,7 +3649,8 @@
         "tip": "This week, make a cardboard telescope together and practice the phrase \"Feet on the floor, grown-up close by.\" Say it together each time you go to a window."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-28T19:30:00+08:00"
   },
   {
     "id": "saying-no-ask-first",
@@ -5878,7 +5883,8 @@
         "tip": "This week, practice one phrase together: \"I need to pee!\" After each potty trip, sing \"Whoosh, flush! Rub, rub, rub!\" while you flush and wash hands with soap."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-10T19:30:00+08:00"
   },
   {
     "id": "starting-kindergarten-school-bus-wave",
@@ -6421,7 +6427,8 @@
         "tip": "Tonight at cleanup time, let your child be the \"cleanup truck\" while you play traffic officer. Sing a tidy-up song together and try to finish before the song ends."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-26T19:30:00+08:00"
   },
   {
     "id": "handwashing-snack-bubbles",
@@ -6962,7 +6969,8 @@
         "tip": "This week, write a simple family screen contract together, have everyone sign it, and stick it on the fridge; before any screen time, agree on how long and set a timer."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-18T19:30:00+08:00"
   },
   {
     "id": "moving-house-glow-star-ceiling",
@@ -7070,7 +7078,8 @@
         "tip": "This week, write a postcard or draw a picture together for a friend or relative you miss, and go find one \"favorite new corner\" in your neighborhood or school."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-11T19:30:00+08:00"
   },
   {
     "id": "moving-house-island-ferry",
@@ -7175,7 +7184,8 @@
         "tip": "This week, take a walk together and start a little map of your own neighborhood, adding a square each time you discover a new shop or meet a new neighbor."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-01T19:30:00+08:00"
   },
   {
     "id": "anger-snail-breath",
@@ -7720,7 +7730,8 @@
         "tip": "Play a \"magic words\" game at meals this week: say \"please\" when asking and \"thank you\" when receiving, with grown-ups joining in. Share a smile each time someone uses one."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-15T19:30:00+08:00"
   },
   {
     "id": "manners-bus-ride",
@@ -8262,7 +8273,8 @@
         "tip": "This week, practice one sentence together: \"Teacher, someone keeps getting teased, and I need your help.\" Remind your child they can always tell you about bullying, any time."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-22T19:30:00+08:00"
   },
   {
     "id": "bullying-class-group-chat",
@@ -8810,8 +8822,8 @@
       "zh": [
         "每天早上七點半，黃色校車沿著車水馬龍的大街慢慢爬行，經過飄著香味的麵包店、人潮洶湧的捷運站，還有一閃一閃的紅綠燈。{name}總是坐在第五排靠窗的位子，數著窗外的鴿子。可是這個星期，{name}老是數到一半就亂了，因為後面總會傳來一陣刺耳的笑聲。",
         "笑聲來自最後一排的三個高年級生。一年級的小天個子小小的，抱著比自己還寬的書包，每次剛坐好，就被他們用手肘擠到走道上。「這是我們的位子！」他們哈哈大笑。小天低著頭，耳朵紅得像番茄。{name}心裡七上八下，前兩天都假裝沒看見，可是胃裡像塞了一顆石頭。",
-        "第三天早上，小天又被擠出座位，書包啪地掉在地上，鉛筆滾了一地。{name}深吸一口氣，站起來，幫忙把鉛筆一枝一枝撿回來。「來坐我旁邊吧，靠窗這邊看得到工地的吊車喔。」小天愣了一下，小聲說：「真的可以嗎？」{name}拍拍座位：「當然，這裡本來就有空位。」",
-        "後排有人怪聲怪氣地喊：「喲，來了一個保鑣！」{name}的手心冒汗，但沒有回頭。{he}朝前面幾排的好朋友安妮揮揮手。安妮立刻背起書包，一屁股坐到走道另一邊，把小天穩穩護在中間。「我們三個是窗邊探險隊，」安妮眨眨眼，「隊長負責數吊車。」小天終於噗哧一笑。",
+        "第三天早上，小天又被擠出座位，書包啪地掉在地上，鉛筆滾了一地。趁校車停下來等紅燈，{name}深吸一口氣，彎腰幫忙把鉛筆一枝一枝撿回來。「來坐我旁邊吧，靠窗這邊看得到工地的吊車喔。」小天愣了一下，小聲說：「真的可以嗎？」{name}拍拍座位：「當然，這裡本來就有空位。」",
+        "後排有人怪聲怪氣地喊：「喲，來了一個保鑣！」{name}的手心冒汗，但沒有回頭。{he}朝前面幾排的好朋友安妮揮揮手。下一個紅燈，安妮背起書包，換坐到走道另一邊，把小天穩穩護在中間。「我們三個是窗邊探險隊，」安妮眨眨眼，「隊長負責數吊車。」小天終於噗哧一笑。",
         "快到學校時，{name}望向坐在司機旁邊的隨車林老師，腳步卻猶豫了。如果說出來，會不會被大家說是愛告狀的抓耙仔？安妮悄悄問：「你在想什麼？」{name}咬咬嘴唇：「我在想，小天明天還要坐這班車。」說完，等校車到站停穩，{name}才走到前面，把這三天看到的事，一五一十告訴林老師。",
         "林老師認真聽完，點點頭：「謝謝你告訴我。我坐在前面，後面發生的事常常看不清楚。告狀是想讓別人挨罵，你是在幫小天找幫手，這兩件事不一樣。」她又蹲下來對小天說：「被推開不是你的錯，一點都不是。」小天用力吸吸鼻子，把書包抱得更緊，背卻挺得直直的。",
         "第二天，校車上多了一張新的座位表，後排那三個高年級生被安排坐在林老師正後方，安靜得像三隻冬眠的熊。小天一上車，就從書包裡掏出一張皺巴巴的紙，上面用蠟筆寫著歪歪扭扭的大字：「窗邊探險隊，正式成立！」原來他昨晚畫了一整個晚上。{name}和安妮相視而笑，三個人一起數起窗外的吊車：一臺、兩臺、三臺。"
@@ -8819,8 +8831,8 @@
       "en": [
         "Every morning at seven-thirty, the yellow school bus crawled through the busy city streets, past the sweet-smelling bakery, the crowded subway station, and the blinking traffic lights. {name} always sat by the window in row five, counting pigeons. But this week, {name} kept losing count, because a harsh burst of laughter kept rolling up from the back.",
         "The laughter came from three older kids in the last row. Tian, a tiny first grader with a backpack almost wider than he was, would just settle into a seat when they'd elbow him out into the aisle. \"Our seat!\" they hooted. Tian stared at his shoes, ears red as tomatoes. For two days, {name} pretended not to notice, but it felt like swallowing a stone.",
-        "On the third morning, Tian got shoved out again. His backpack thumped to the floor, and pencils skittered everywhere. {name} took a deep breath, stood up, and gathered the pencils one by one. \"Come sit with me. You can see the construction cranes from this window.\" Tian blinked. \"Really?\" {name} patted the seat. \"Sure. There's plenty of room.\"",
-        "\"Ooh, look, a bodyguard!\" someone jeered from the back. {name}'s palms went sweaty, but {he} didn't turn around. Instead, {name} waved to Annie, a good friend a few rows up. Annie grabbed her backpack and plopped down across the aisle, so Tian was snug in the middle. \"We're the Window Explorers,\" Annie announced. \"The captain counts cranes.\" Tian finally giggled.",
+        "On the third morning, Tian got shoved out again. His backpack thumped to the floor, and pencils skittered everywhere. When the bus stopped at a red light, {name} took a deep breath, leaned down, and gathered the pencils one by one. \"Come sit with me. You can see the construction cranes from this window.\" Tian blinked. \"Really?\" {name} patted the seat. \"Sure. There's plenty of room.\"",
+        "\"Ooh, look, a bodyguard!\" someone jeered from the back. {name}'s palms went sweaty, but {he} didn't turn around. Instead, {name} waved to Annie, a good friend a few rows up. At the next red light, Annie grabbed her backpack and moved across the aisle, so Tian was snug in the middle. \"We're the Window Explorers,\" Annie announced. \"The captain counts cranes.\" Tian finally giggled.",
         "Near school, {name} looked toward Ms. Lin, the bus teacher sitting up front beside the driver, and hesitated. What if everyone called {him} a tattletale? \"What are you thinking about?\" Annie whispered. {name} bit {his} lip. \"I'm thinking Tian has to ride this bus tomorrow, too.\" When the bus pulled up and stopped, {name} walked to the front and told Ms. Lin everything from the last three days.",
         "Ms. Lin listened carefully, then nodded. \"Thank you for telling me. From up here, I can't always see what happens in the back. Tattling is trying to get someone in trouble. You were getting help for Tian. That's different.\" Then she crouched beside Tian. \"Being pushed is never your fault. Not one bit.\" Tian sniffled, hugged his backpack, and sat up a little taller.",
         "The next morning, the bus had a brand-new seating chart. The three older kids now sat right behind Ms. Lin, quiet as bears in winter. Tian climbed aboard and pulled out a crumpled sheet of paper. In wobbly crayon letters, it said: WINDOW EXPLORERS, OFFICIAL CLUB! He had worked on it all evening. {name} and Annie grinned at each other, and together the three of them began to count: one crane, two cranes, three."
@@ -8845,7 +8857,8 @@
         "tip": "This week, list three \"help grown-ups\" together (like a teacher, the bus teacher, and a family member), and practice one phrase: \"I saw someone who needs help. Can you come with me?\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-05T19:30:00+08:00"
   },
   {
     "id": "screen-time-short-video-loop",
@@ -8949,7 +8962,8 @@
         "tip": "Sometime this week, take a walk around your neighborhood together, give one newly discovered corner a special name, then call or video-chat an old friend to share it."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-06T19:30:00+08:00"
   },
   {
     "id": "raindrop-drums",
@@ -10125,30 +10139,30 @@
     "paragraphs": {
       "zh": [
         "星期六早上，爺爺牽著{name}出門。兩人走過熱鬧的街道，來到社區游泳池。泳池在高高的大樓旁邊。池水藍藍的，亮晶晶的。{name}在淺水區玩水，雙腳穩穩踩到池底。爺爺坐在池邊，眼睛一直看著{name}。",
-        "「{name}，爺爺要去一下廁所。」爺爺站起來說。淺水區好好玩喔！有小朋友在丟球，有人在吹泡泡。{name}好想繼續玩。可是爺爺不在，沒有大人看著。{name}慢慢爬上池邊，坐到{his}大毛巾上。「我在這裡等你！」爺爺笑著點點頭。",
+        "「{name}，爺爺要接一通電話。」爺爺走到池邊的長椅坐下。淺水區好好玩喔！有小朋友在丟球，有人在吹泡泡。{name}好想繼續玩。可是爺爺在講電話，沒辦法看著{name}。{name}慢慢爬上池邊，坐到爺爺旁邊{his}大毛巾上，浮板就放在毛巾旁。「我在這裡等你！」爺爺笑著點點頭。",
         "{name}決定玩數數遊戲。「一、二、三……」戴黃泳帽的阿姨，是第一個。用力踢水的哥哥，是第二個。救生員方阿姨坐在高高的椅子上。她戴著哨子，也看著大家。{name}一個一個數，一共數到七個人。",
         "鄰居美美也在淺水區玩。美美爸爸剛轉身去池邊拿浮板。忽然，球漂走了，美美追了過去。她走到比較深的地方。她的腳踩不到底了，小手拍呀拍。{name}沒有跳下水。{name}站起來大聲喊：「救生員！快來幫忙！」",
         "{name}抓起{his}浮板，用力丟過去。浮板輕輕的，漂到美美旁邊。美美緊緊抱住浮板，浮起來了。方阿姨很快游了過來。美美爸爸也趕到了。大家把美美帶回淺水區。美美咳了一下，又笑了。",
-        "方阿姨對{name}豎起大拇指。「你喊得好大聲，浮板丟得好準！」美美說：「謝謝你的浮板！」這時，爺爺回來了。爺爺聽完，摸摸{name}的頭。「你乖乖等我，還幫了好朋友。」爺爺坐回池邊說：「好了，可以下水囉！」",
+        "方阿姨對{name}豎起大拇指。「你喊得好大聲，浮板丟得好準！」美美說：「謝謝你的浮板！」這時，爺爺講完電話，趕快走過來。爺爺聽完，摸摸{name}的頭。「你乖乖等我，還幫了好朋友。」爺爺坐回池邊說：「好了，可以下水囉！」",
         "{name}走進淺水區，腳踩得到池底。{name}和美美一起丟球，玩得好開心。爺爺說：「下星期，我們去河濱公園坐小船。」{name}問：「坐船要穿救生衣嗎？」「對，每個人都要穿。」{name}想到橘色的救生衣，鼓鼓的，像個大抱枕。「我要扣得緊緊的！」",
-        "太陽慢慢下山了，天空變成橘紅色。爺爺牽著{name}，走在回家的路上。城市的燈一盞一盞亮起來。{name}開始數路燈：「一、二、三……」數著數著，家就到了。今天真是一場好棒的冒險！"
+        "玩到下午，太陽慢慢下山了，天空變成橘紅色。爺爺牽著{name}，走在回家的路上。城市的燈一盞一盞亮起來。{name}開始數路燈：「一、二、三……」數著數著，家就到了。今天真是一場好棒的冒險！"
       ],
       "en": [
-        "On Saturday morning, Grandpa took {name} out. They walked down a busy city street. They came to the neighborhood pool. It sat beside tall buildings. The water was blue and sparkly. {name} played in the shallow end. {his} feet stood flat on the bottom. Grandpa sat at the edge, watching.",
-        "\"{name}, I need a quick bathroom break,\" said Grandpa. The shallow end looked so fun! Kids were tossing a ball. Someone was blowing bubbles. {name} wanted to keep playing. But no grown-up was watching now. So {name} climbed out and sat on {his} big towel. \"I'll wait right here!\" Grandpa smiled and nodded.",
-        "{name} played a counting game. \"One, two, three...\" A lady in a yellow cap was number one. A big kid kicking hard was number two. Ms. Fang, the lifeguard, sat on a tall chair. She had a whistle and watched everyone. {name} counted seven swimmers in all.",
+        "On Saturday morning, Grandpa took {name} to the neighborhood pool. The water was blue and sparkly. {name} played in the shallow end, feet flat on the bottom. Grandpa sat at the edge, watching.",
+        "\"{name}, I need to take a call,\" said Grandpa. He sat on the bench by the pool. The shallow end looked so fun! {name} wanted to keep playing. But Grandpa was on the phone and couldn't watch {name}. So {name} climbed out and sat on {his} big towel next to Grandpa, {his} kickboard right beside it. \"I'll wait right here!\" Grandpa smiled and nodded.",
+        "{name} played a counting game. A lady in a yellow cap was number one. A big kid kicking hard was number two. Ms. Fang, the lifeguard, sat on a tall chair with her whistle.",
         "Neighbor Mei was in the shallow end too. Her dad had just turned to grab a kickboard from the side. Suddenly, the ball floated away. Mei followed it to a deeper spot. Her feet could not touch anymore. Her hands splashed and splashed. {name} did not jump in. {name} stood up and shouted, \"Lifeguard! Help, please!\"",
         "{name} grabbed {his} kickboard and threw it hard. The light board floated right next to Mei. Mei hugged it tight and bobbed up. Ms. Fang swam over fast. Mei's dad hurried over too. Together they brought Mei back to the shallow end. Mei coughed a little, then giggled.",
-        "Ms. Fang gave {name} a big thumbs-up. \"Such a loud shout, and a great throw!\" Mei said, \"Thank you for the kickboard!\" Just then, Grandpa came back. He heard everything and patted {name} gently. \"You waited for me, and you helped a friend.\" Grandpa sat down. \"Okay, in you go!\"",
-        "{name} stepped into the shallow end. {his} feet touched the bottom. {name} and Mei tossed the ball together. \"Next week, let's ride a little boat at the river park,\" said Grandpa. \"Do we wear life jackets?\" asked {name}. \"Yes, everyone does.\" Orange, puffy, like a big pillow! \"I'll buckle mine tight!\"",
-        "The sun slowly went down. The sky turned orange and pink. Grandpa held {name}'s hand on the way home. City lights blinked on, one by one. {name} counted the streetlights. \"One, two, three...\" Soon they were home. What a wonderful adventure!"
+        "Ms. Fang gave {name} a big thumbs-up. \"Such a loud shout, and a great throw!\" Mei said, \"Thank you for the kickboard!\" Just then, Grandpa finished his call and hurried over. He heard everything and patted {name}. \"You waited for me, and you helped a friend.\" Grandpa sat down. \"Okay, in you go!\"",
+        "Back in the shallow end, {name} and Mei tossed the ball together. \"Next week, let's ride a boat at the river park,\" said Grandpa. \"Do we wear life jackets?\" asked {name}. \"Yes, everyone does.\" \"I'll buckle mine tight!\"",
+        "They played until the afternoon. Walking home with Grandpa, {name} counted the city lights. One, two, three... What a wonderful adventure!"
       ]
     },
     "theme": "water-safety",
     "guide": {
       "zh": {
         "questions": [
-          "爺爺去廁所的時候，{name}做了什麼？為什麼？",
+          "爺爺講電話的時候，{name}做了什麼？為什麼？",
           "美美的腳踩不到底時，{name}怎麼幫忙？如果是你，你會怎麼做？",
           "坐船的時候，我們要穿什麼？"
         ],
@@ -10156,14 +10170,15 @@
       },
       "en": {
         "questions": [
-          "What did {name} do when Grandpa went to the bathroom? Why?",
+          "What did {name} do when Grandpa was on the phone? Why?",
           "When Mei's feet couldn't touch, how did {name} help? What would you do?",
           "What do we wear when we ride a boat?"
         ],
         "tip": "This week, play a \"little helper\" game: put a stuffed toy by the bed as if it's in water, practice shouting \"Grown-up, come help!\" and toss it a pillow. Before your next swim, agree together: \"I only go in when a grown-up is watching.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-07T19:30:00+08:00"
   },
   {
     "id": "online-safety-secret-meetup",
@@ -10443,21 +10458,21 @@
     "paragraphs": {
       "zh": [
         "星期三下午是書法課，教室裡飄著淡淡的墨香。林老師在黑板上寫了一個大大的「永」字，笑著說：「今天我們來寫『永遠』的永。」{name}和好朋友小安並肩坐著，兩人一起把毛筆輕輕沾進硯台裡。",
-        "{name}屏住呼吸，一筆一筆慢慢寫。點寫好了，橫也寫好了，眼看就要完成。可是筆尖吸了太多墨，「啪」的一聲，一大滴墨落在紙中央，像一個圓圓的黑水坑，把整個「永」字都蓋住了。",
+        "{name}屏住呼吸，一筆一筆慢慢寫。點寫好了，橫折鉤和撇也寫好了，只剩最後一筆捺。可是筆尖吸了太多墨，「啪」的一聲，一大滴墨落在紙中央，像一個圓圓的黑水坑，把整個「永」字都蓋住了。",
         "{name}的臉一下子熱了起來，心裡又急又難過。旁邊小安的「永」字工工整整，已經得到老師畫的紅圈圈。{name}抓起紙，雙手用力，正想把它揉成一團丟掉。",
         "林老師走過來，輕輕按住那張紙。「先別急，跟老師一起深呼吸。」{name}吸了一口氣，再慢慢吐出來，肩膀鬆了一點。老師從櫃子裡拿出一疊泛黃的舊紙，上面全是墨點和歪歪的筆畫。",
         "「這是我小時候的練習紙。」林老師翻給{name}看，「那些很厲害的書法家，常常一個筆畫就練上一百遍。墨點不是壞事，它告訴我們下一次可以怎麼調整。」老師示範把筆尖在硯台邊緣刮一刮，多餘的墨就乖乖留在硯台裡了。",
-        "小安眨眨眼說：「我們來玩『慢慢寫』遊戲好不好？誰寫得最慢最穩，誰就贏！」{name}點點頭，拿起一張新紙。這一次，{name}先刮掉多餘的墨，再慢慢落筆。第一點圓圓的，橫卻有點抖，{name}就再寫一次、又一次。",
+        "小安眨眨眼說：「我們來玩『慢慢寫』遊戲好不好？誰寫得最慢最穩，誰就贏！」{name}點點頭，拿起一張新紙。這一次，{name}先刮掉多餘的墨，再慢慢落筆。第一點圓圓的，橫折鉤卻有點抖，{name}就再寫一次、又一次。",
         "突然，小安的筆一滑，紙上也冒出一個大墨點。小安嘟起嘴，看起來好失望。{name}拍拍小安的肩膀說：「沒關係，我們再寫一次。你看，先把筆刮一刮。」小安笑了，兩人一起重新開始，誰贏誰輸早就忘了。",
         "下課前，{name}的「永」字雖然不算完美，筆畫卻穩穩的。林老師在旁邊畫了一個紅圈圈。{name}把新的字和那張有墨點的紙一起收進資料夾，還特別把墨點那張放在第一頁，因為那是一切的開始。"
       ],
       "en": [
         "On Wednesday afternoon it was calligraphy class, and the room smelled softly of ink. Ms. Lin painted a big character on the board. \"Today we'll write yong, the yong in forever,\" she said. {name} sat beside a good friend, Anan, and they both dipped their brushes into their ink stones.",
-        "{name} held a careful breath and wrote one stroke at a time. The dot was done, then the flat line. It was almost finished! But the brush was too full. Plop! A huge drop of ink fell right in the middle, like a round black puddle covering the whole character.",
+        "{name} held a careful breath and wrote one stroke at a time. The dot was done, then the hooked line and the sweeps. Only the last stroke was left! But the brush was too full. Plop! A huge drop of ink fell right in the middle, like a round black puddle covering the whole character.",
         "{name}'s cheeks grew warm, and a tight, upset feeling filled {his} chest. Next door, Anan's character looked neat and tidy, and it already had a red circle from Ms. Lin. {name} grabbed the paper with both hands, ready to crumple it into a ball.",
         "Ms. Lin came over and gently pressed the paper flat. \"Wait a moment. Let's take a deep breath together.\" {name} breathed in, then slowly breathed out, and {his} shoulders loosened a little. Ms. Lin pulled a stack of old yellowed paper from the cupboard, covered in blots and wobbly strokes.",
         "\"These are my practice sheets from when I was little,\" said Ms. Lin. \"Great calligraphy masters often practice one stroke a hundred times. A blot isn't bad. It shows us what to change next time.\" She showed how to wipe the brush on the edge of the ink stone so the extra ink stayed behind.",
-        "Anan grinned. \"Let's play the Slow Writing game! Whoever writes the slowest and steadiest wins!\" {name} nodded and took a fresh sheet. This time, {name} wiped the brush first, then began slowly. The dot came out round, but the line wobbled, so {name} tried again, and again.",
+        "Anan grinned. \"Let's play the Slow Writing game! Whoever writes the slowest and steadiest wins!\" {name} nodded and took a fresh sheet. This time, {name} wiped the brush first, then began slowly. The dot came out round, but the hooked line wobbled, so {name} tried again, and again.",
         "Suddenly Anan's brush slipped, and a big blot appeared on her paper too. Anan's face drooped. {name} patted her shoulder and said, \"That's okay. Let's try again. Look, wipe your brush first.\" Anan smiled, and they started over together, forgetting all about who was winning.",
         "Before class ended, {name}'s character wasn't perfect, but every stroke was steady. Ms. Lin drew a red circle beside it. {name} put the new page and the blotted one into a folder, and placed the blotted page first, because that was where it all began."
       ]
@@ -10481,7 +10496,8 @@
         "tip": "This week, when your child feels frustrated, take three slow breaths together and say, \"That's okay, let's try again.\" You might also share a story about a mistake you once practiced your way through."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-19T19:30:00+08:00"
   },
   {
     "id": "potty-little-frog-stool",
@@ -10535,7 +10551,8 @@
         "tip": "This week, play the \"Ribbit, time to go!\" game: when your child feels the need to pee or poop, they say \"Ribbit!\" and you cheerfully head to the bathroom together, then flush and wash hands with soap."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-08T19:30:00+08:00"
   },
   {
     "id": "trying-food-rainbow-plate",
@@ -10699,7 +10716,8 @@
         "tip": "Tonight before bed, use a basket as a pretend elevator. Say \"Ding!\" together as you carry toys to their homes, then whisper goodnight to each one."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-14T19:30:00+08:00"
   },
   {
     "id": "tidying-toys-treasure-sorting",
@@ -11411,7 +11429,8 @@
         "tip": "Tonight, play Safety Robot together: walk around your home, find the sockets, and say \"Beep beep! Sockets are for grown-ups!\" Practice \"step back and tell a grown-up\" for broken cords."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-18T19:30:00+08:00"
   },
   {
     "id": "windows-balcony-flower-pots",
@@ -11438,7 +11457,7 @@
       "en": [
         "On Saturday morning, {name} folded a paper airplane. It had blue wings and a pointy nose. {name} named it Blue. The window was open just a crack. A city breeze blew in. {name} lifted Blue and threw. Whoosh! Blue flew far!",
         "Blue zipped right through the crack. It landed on the ledge outside the window. {name} stood on the floor and looked out. Blue lay there, as if waiting. \"Blue, how did you get out there?\" {name} cried.",
-        "{name} looked at the sofa nearby. \"I could push it over and climb up!\" {name} put both hands on the sofa. Then {his} hands stopped. {name} remembered what Dad always said about windows. {name} took a deep breath. \"Dad, can you help me, please?\"",
+        "{name} looked at the sofa nearby. \"I could push it over and climb up!\" {name} put both hands on the sofa. Then {his} hands stopped. {name} remembered what Dad always said: no climbing near windows. {name} took a deep breath. \"Dad, can you help me, please?\"",
         "Dad came from the kitchen. \"What's wrong, {name}?\" {name} pointed outside. \"Blue landed on the ledge. I wanted to climb the sofa. But I stopped and called you first.\" Dad knelt down and hugged {name}. \"That was a great choice.\"",
         "First, Dad checked the window lock. He made sure it was secure. Then Dad brought a long grabber. At the end was a tiny claw that could open and close. \"We can reach it from inside,\" Dad said. \"Nobody needs to climb.\"",
         "{name} kept both feet on the floor, right beside Dad. Dad slowly stretched out the grabber. Click! The tiny claw gently pinched Blue's wing. Dad pulled Blue back inside. Then he closed the window and locked it. \"Blue is home!\" {name} cheered.",
@@ -11465,7 +11484,8 @@
         "tip": "This week, walk through your home with your child and move sofas, chairs, and other climbable furniture away from windows and balcony railings. Practice the phrase together: \"If something falls out, I get a grown-up first.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-07T19:30:00+08:00"
   },
   {
     "id": "medicine-grandpa-pill-box",
@@ -11904,7 +11924,8 @@
         "tip": "This week, play a simple turn-taking game together, like stacking blocks one at a time, and practice saying, \"Can I have a turn when you're done?\" Use a timer or count to ten together to make waiting easier."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-04T19:30:00+08:00"
   },
   {
     "id": "manners-magic-words-bakery",
@@ -11922,7 +11943,7 @@
         "下午，太陽暖暖的。媽媽拿出一袋橘子。「我們去看王奶奶。」王奶奶住在樓下。{name}說：「我來拿！」橘子圓圓的，香香的。咚、咚、咚，走下樓梯。媽媽牽著{his}小手。",
         "王奶奶的門是綠色的。{name}輕輕敲門。叩、叩、叩。不大聲，小小聲。門開了，奶奶笑咪咪。{name}說：「奶奶，午安！」奶奶說：「哎呀，真有禮貌！」",
         "{name}把橘子拿給奶奶。「奶奶，送給您。」奶奶說：「謝謝你呀！」奶奶的眼睛彎彎的。{name}心裡暖暖的。哎呀，一顆橘子滾走了！咕嚕、咕嚕、咕嚕。媽媽笑著撿回來。",
-        "沙發上，有一團白白的毛。「喵——」原來是貓咪咪咪！咪咪的尾巴，搖呀搖。{name}好想看看牠。{name}問：「奶奶，請問，我可以看咪咪嗎？」奶奶點點頭：「當然可以。」",
+        "沙發上，有一團白白的毛。「喵——」原來是奶奶的貓咪，叫咪咪！咪咪的尾巴，搖呀搖。{name}好想摸摸牠。{name}問：「奶奶，請問，我可以摸摸咪咪嗎？」奶奶點點頭：「當然可以。」",
         "{name}輕輕摸咪咪。咪咪軟軟的，像一朵雲。呼嚕、呼嚕、呼嚕。{name}咯咯笑。奶奶端來餅乾。「來，吃一塊。」{name}說：「謝謝奶奶！」餅乾甜甜的。喀滋、喀滋！",
         "{name}拿起毛線球，晃呀晃。咪咪跳上桌子，追呀追。尾巴甩呀甩。啪！奶奶的杯子倒了！水流了一桌子。滴答、滴答。咪咪的鬍子也濕了。",
         "{name}說：「奶奶，對不起。」「我來幫忙擦。」媽媽遞來一塊布。擦呀擦，擦呀擦。桌子乾了。奶奶抱抱{name}：「沒關係，謝謝你幫忙。」咪咪也說：「喵～」好像也在說對不起！",
@@ -11932,7 +11953,7 @@
         "It is a sunny afternoon. Mom has a bag of oranges. \"Let's visit Grandma Wang downstairs.\" \"I'll carry them!\" says {name}. The oranges are round and sweet. Step, step, step, down the stairs. Mom holds {his} hand.",
         "Grandma Wang has a green door. {name} knocks softly. Knock, knock, knock. Not loud, just soft. The door opens. Grandma Wang smiles. \"Good afternoon, Grandma!\" says {name}. \"Oh, how polite!\" says Grandma.",
         "{name} gives her the oranges. \"These are for you.\" \"Thank you, dear!\" says Grandma. Her eyes crinkle up. {name} feels warm inside. Oops! One orange rolls away. Roll, roll, roll. Mom laughs and picks it up.",
-        "On the sofa sits a fluffy white ball. \"Meow!\" It is Grandma's cat, Mimi! Mimi's tail swishes. Swish, swish. {name} asks, \"Grandma, may I please see Mimi?\" Grandma nods. \"Of course you may.\"",
+        "On the sofa sits a fluffy white ball. \"Meow!\" It is Grandma's cat, Mimi! Mimi's tail swishes. Swish, swish. {name} asks, \"Grandma, may I please pet Mimi?\" Grandma nods. \"Of course you may.\"",
         "{name} pets Mimi gently. Mimi is soft like a cloud. Purr, purr, purr. {name} giggles. Grandma brings cookies. \"Here, have one.\" \"Thank you, Grandma!\" says {name}. The cookie is sweet. Crunch, crunch!",
         "{name} wiggles a yarn ball. Wiggle, wiggle. Mimi jumps onto the table. Mimi chases and chases. Swish goes the tail. Splash! Grandma's cup tips over! Water runs everywhere. Drip, drop. Even Mimi's whiskers are wet.",
         "\"Sorry, Grandma,\" says {name}. \"I'll help wipe it up.\" Mom hands over a cloth. Wipe, wipe, wipe. The table is dry again. Grandma gives {name} a hug. \"That's okay. Thank you for helping.\" Mimi says, \"Meow.\" Maybe Mimi is sorry too!",
@@ -11958,7 +11979,8 @@
         "tip": "This week, play a \"magic words\" game at meals or playtime: whenever someone says please, thank you, or sorry, give each other a high five."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-08T19:30:00+08:00"
   },
   {
     "id": "fear-of-dark-glow-jar",
@@ -12338,7 +12360,8 @@
         "tip": "One night this week, look through your child's baby photos together and share how much you loved them then and now. You can also agree on a simple phrase, like \"I need a hug,\" that your child can use anytime."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-17T19:30:00+08:00"
   },
   {
     "id": "pet-loss-hamster-memory-box",
@@ -12838,24 +12861,24 @@
     },
     "paragraphs": {
       "zh": [
-        "下雨的星期六，{name}和媽媽搭捷運去外婆家。車廂裡暖烘烘的，窗外的城市像剛被雨水洗過，閃閃發亮。{name}對面坐著一位戴灰色帽子的老爺爺，正低著頭打瞌睡，腿邊靠著一把深綠色的長柄雨傘。",
+        "下雨的星期六，{name}和媽媽搭捷運去外婆家。車廂裡暖烘烘的，窗外的城市像剛被雨水洗過，閃閃發亮。{name}對面坐著一位戴灰色帽子的老爺爺，正低著頭打瞌睡，手裡捏著一張公園導覽圖，腿邊靠著一把深綠色的長柄雨傘。",
         "「下一站，公園站。」廣播一響，老爺爺猛然驚醒，慌慌張張地站起來，跟著人潮走出車門。{name}眨了眨眼，發現座位旁邊還靜靜躺著那把綠色雨傘。傘柄是木頭做的，雕成一隻小鳥的模樣。「媽媽，爺爺的傘忘了拿！」",
-        "媽媽一把拿起雨傘，牽緊{name}的手，趕在車門關上前跨上月台。月台上人山人海，到處是匆匆忙忙的腳步和滴著水的雨衣。那頂灰色帽子一下子就淹沒在人群裡，{name}踮起腳尖東張西望，心裡像打鼓一樣咚咚響。",
+        "媽媽一把拿起雨傘，牽緊{name}的手，趁車門還開著，跟著人群走下車。月台上人山人海，到處是匆匆忙忙的腳步和滴著水的雨衣。那頂灰色帽子一下子就淹沒在人群裡，{name}踮起腳尖東張西望，心裡像打鼓一樣咚咚響。",
         "「別急，我們看指標。」媽媽指著頭頂的黃色牌子。{name}一個字一個字念：「出口，往上。」兩人跟著箭頭踏上電扶梯，{name}乖乖握住扶手站穩，眼睛卻像小偵探一樣，仔細搜尋每一頂經過的帽子。",
         "到了大廳，眼前竟然有四個出口！每條通道都擠得水洩不通。{name}急得直跺腳，忽然瞥見地上掉著一張皺巴巴的公園導覽圖。「爺爺剛剛手上拿的就是這個！」{name}抬頭一看，旁邊的箭頭寫著：二號出口，往公園。",
         "媽媽把雨傘交給{name}，兩人刷卡出站，沿著長長的走廊快步前進。出口外嘩啦啦下著大雨，那位老爺爺正站在屋簷下，翻遍了每個口袋，眉頭皺成一團。「爺爺！您的雨傘！」{name}大聲喊，雙手把傘高高舉起。",
         "老爺爺轉過身，眼睛一下子亮了起來。他小心翼翼地接過雨傘，用大拇指輕輕摸著那隻木頭小鳥。「這是我太太很多年前送我的禮物。」他笑著說，「她說這隻小鳥認得路，不管我把傘忘在哪裡，它都會飛回我身邊。」",
-        "老爺爺眨眨眼：「看來，它這次找了一位很厲害的小幫手帶路。」{name}忍不住咯咯笑。老爺爺撐開綠傘，揮揮手，慢慢走進雨中。回程的車廂裡，{name}靠在媽媽身邊，覺得整座城市的雨聲，都像在輕輕唱歌。"
+        "老爺爺眨眨眼：「看來，它這次找了一位很厲害的小幫手帶路。」{name}忍不住咯咯笑。老爺爺撐開綠傘，揮揮手，慢慢走進雨中。再搭上往外婆家的捷運，{name}靠在媽媽身邊，覺得整座城市的雨聲，都像在輕輕唱歌。"
       ],
       "en": [
-        "On a rainy Saturday, {name} and Mom rode the MRT to Grandma's house. The train car was warm and cozy, and the city outside sparkled as if the rain had scrubbed it clean. Across from {name} sat an old man in a gray hat, dozing, with a long dark green umbrella leaning against his knee.",
+        "On a rainy Saturday, {name} and Mom rode the MRT to Grandma's house. The train car was warm and cozy, and the city outside sparkled as if the rain had scrubbed it clean. Across from {name} sat an old man in a gray hat, dozing, a park map in his hand and a long dark green umbrella leaning against his knee.",
         "\"Next stop, Park Station,\" the speaker announced. The old man jolted awake, hurried to his feet, and shuffled out with the crowd. {name} blinked. The green umbrella was still lying on the seat. Its wooden handle was carved into the shape of a little bird. \"Mom, he forgot his umbrella!\"",
-        "Mom scooped up the umbrella, held {name}'s hand tight, and stepped onto the platform just before the doors slid shut. The platform was packed with rushing feet and dripping raincoats. The gray hat vanished into the crowd in a blink. {name} stood on tiptoe, peering everywhere, heart thumping like a drum.",
+        "Mom scooped up the umbrella, held {name}'s hand tight, and stepped off with the crowd while the doors were still open. The platform was packed with rushing feet and dripping raincoats. The gray hat vanished into the crowd in a blink. {name} stood on tiptoe, peering everywhere, heart thumping like a drum.",
         "\"Don't worry. Let's follow the signs,\" Mom said, pointing to a yellow sign overhead. {name} read it slowly: \"Exit. Up.\" They followed the arrow onto the escalator. {name} held the handrail and stood still, but {his} eyes darted around like a detective's, checking every hat that passed.",
-        "At the top, there were four exits! Every hallway was jammed with people. {name} stamped in frustration, then spotted a crumpled park map on the floor. \"Grandpa was holding one just like this!\" Right beside it, an arrow pointed the way: Exit 2, To the Park.",
+        "At the top, there were four exits! Every hallway was jammed with people. {name} stamped in frustration, then spotted a crumpled park map on the floor. \"The old man was holding one just like this!\" Right beside it, an arrow pointed the way: Exit 2, To the Park.",
         "Mom handed the umbrella to {name}, and they tapped out and hurried down the long hallway. Outside, rain was pouring down. There stood the old man under the awning, patting every pocket, his forehead wrinkled with worry. \"Sir! Your umbrella!\" {name} called, holding it high with both hands.",
         "The old man turned, and his eyes lit up. He took the umbrella gently and stroked the little wooden bird with his thumb. \"My wife gave me this many years ago,\" he said with a smile. \"She told me this bird knows the way. Wherever I leave it, it always flies back to me.\"",
-        "He gave a wink. \"Looks like this time it found a very clever helper to lead the way.\" {name} giggled. The old man opened the green umbrella, waved goodbye, and strolled off into the rain. On the train ride back, {name} snuggled against Mom, and the whole rainy city seemed to be softly singing."
+        "He gave a wink. \"Looks like this time it found a very clever helper to lead the way.\" {name} giggled. The old man opened the green umbrella, waved goodbye, and strolled off into the rain. Back on the train to Grandma's, {name} snuggled against Mom, and the whole rainy city seemed to be softly singing."
       ]
     },
     "guide": {
@@ -12876,7 +12899,8 @@
         "tip": "After lights out, listen together for the rain outside or imagine its sound, and take turns whispering what song the rain might be singing. Tomorrow you could draw your very own way-finding bird together."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-01T19:30:00+08:00"
   },
   {
     "id": "school-science-fair-plant",
@@ -13085,7 +13109,8 @@
         "tip": "This week, play a \"kind words\" game at bedtime: each of you shares one time you said \"please,\" \"thank you,\" or \"sorry\" that day, and how it made the other person feel."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-21T19:30:00+08:00"
   },
   {
     "id": "screen-time-tablet-goodnight",
@@ -13195,7 +13220,8 @@
         "tip": "Practice \"volcano breathing\" together this week: breathe in slowly, breathe out long, and count to five. When your child feels angry, invite them to say, \"I'm angry because...\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-24T19:30:00+08:00"
   },
   {
     "id": "gratitude-ant-and-the-rice-ball",
@@ -14560,7 +14586,8 @@
         "tip": "On your next park visit this week, play \"pick one before we go\": together, pick up one piece of trash, put it in the right bin, and say \"see you tomorrow\" to a tree."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-11T19:30:00+08:00"
   },
   {
     "id": "nature-bees-on-the-balcony",
@@ -14614,7 +14641,8 @@
         "tip": "This week, let your child water one plant at home, saying together \"Just a little is enough,\" then put any empty packaging in the right recycling bin."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-04T19:30:00+08:00"
   },
   {
     "id": "nature-the-rain-detectives",
@@ -15154,7 +15182,8 @@
         "tip": "This week, make one small pinky promise together, like reading a book at bedtime, and keep it as a family. If a grown-up can't keep a promise, say so honestly and choose a new time to make it right."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-31T19:30:00+08:00"
   },
   {
     "id": "promises-the-treehouse-ladder",
@@ -15501,8 +15530,8 @@
         "{name}看看四周。地上有瓶子，有紙片。花兒被壓彎了，小草也髒髒的。{name}說：「森林是大家的家。我們一起來幫忙吧！」",
         "{name}戴上手套，撿起一個瓶子。松鼠們也跑來幫忙。撿一個，放進袋子。再撿一個，放進袋子。紙放這邊，瓶子放那邊。一下子就乾淨了！",
         "{name}走到音樂盒旁邊。「小聲一點，好不好？」松鼠點點頭，轉小音樂。咚咚咚，變成叮叮叮。風兒沙沙吹，小鳥啾啾唱。",
-        "圓球慢慢動了動。穿山甲伸出頭，伸出腳。牠說：「謝謝你們，跟我來！」大樹後面，有一座小土堆。好多螞蟻排著隊，忙著搬食物。",
-        "「這是螞蟻的家，我一直在守護它。」穿山甲說。松鼠們睜大眼睛：「原來你不是害羞！」大家輕輕看，不去碰。森林又乾淨又安靜，跟原來一樣美。"
+        "圓球慢慢動了動。穿山甲伸出頭，伸出腳。牠說：「謝謝你們，跟我來！」大樹後面，有一個小小的洞。洞裡，穿山甲寶寶正在睡覺。",
+        "「這是我的家，寶寶怕吵，我一直在保護牠。」穿山甲說。松鼠們睜大眼睛：「原來你不是害羞！」大家輕輕看，不去碰。森林又乾淨又安靜，跟原來一樣美。"
       ],
       "en": [
         "The forest was so busy. The squirrels were having a party. The music box went boom, boom, boom! Juice bottles and cookie wrappers lay everywhere. \"What fun!\" said the squirrels.",
@@ -15511,8 +15540,8 @@
         "{name} looked around. Bottles here, wrappers there. The flowers were squashed. The grass was dirty. \"The forest is everyone's home,\" said {name}. \"Let's help!\"",
         "{name} put on gloves and picked up a bottle. The squirrels came to help too. Pick one up, into the bag. Pick another, into the bag. Paper here, bottles there. Soon it was clean!",
         "{name} went to the music box. \"Can we make it softer?\" The squirrels nodded and turned it down. Boom, boom became ting, ting. The wind went whoosh. Birds sang tweet, tweet.",
-        "The ball wiggled a little. Out came a head. Out came four feet. \"Thank you! Follow me!\" said Pangolin. Behind the tree was a small hill. Lots of ants marched in a line, carrying food.",
-        "\"This is the ants' home. I've been guarding it,\" said Pangolin. The squirrels' eyes grew wide. \"You weren't shy at all!\" Everyone looked gently, without touching. The forest was clean and quiet, beautiful as before."
+        "The ball wiggled a little. Out came a head. Out came four feet. \"Thank you! Follow me!\" said Pangolin. Behind the tree was a little burrow. Inside, a baby pangolin was fast asleep.",
+        "\"This is my home. My baby needs quiet, so I've been protecting it,\" said Pangolin. The squirrels' eyes grew wide. \"You weren't shy at all!\" Everyone looked gently, without touching. The forest was clean and quiet, beautiful as before."
       ]
     },
     "theme": "caring-for-nature",
@@ -15534,7 +15563,8 @@
         "tip": "On your next walk this week, bring a small bag to carry your own trash home and sort it together, saying softly, \"Leave it as pretty as we found it.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-15T19:30:00+08:00"
   },
   {
     "id": "courage-first-solo-errand",
@@ -16576,7 +16606,8 @@
         "tip": "Tonight, play a \"switch hands\" challenge together: draw or brush teeth with your other hand, then chat about what's fun about people doing things in different ways."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-03T19:30:00+08:00"
   },
   {
     "id": "respecting-differences-bird-songs-fable",
@@ -16739,7 +16770,8 @@
         "tip": "Tonight, draw a simple picture chart together for one small job, like tidying toys or watering a plant, and add a star each time it's done."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-21T19:30:00+08:00"
   },
   {
     "id": "responsibility-lost-library-book",
@@ -16794,7 +16826,8 @@
         "tip": "This week, make a simple \"return calendar\" together: draw a small picture on the due date for any borrowed book or item, and let your child be in charge of packing it on that day."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-13T19:30:00+08:00"
   },
   {
     "id": "responsibility-bee-keeper-fable",
@@ -16849,7 +16882,8 @@
         "tip": "This week, pick one small daily job together, like watering a plant or tidying toys, and after it's done, say, \"That's my job, and I did it!\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-29T19:30:00+08:00"
   },
   {
     "id": "teamwork-dragon-dance-practice",
@@ -17015,7 +17049,8 @@
         "tip": "This week, pick one chore, like setting the table or tidying toys, and let everyone choose a small task. When you finish, cheer together: \"We did it together!\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-17T19:30:00+08:00"
   },
   {
     "id": "brushing-teeth-dino-flossing",
@@ -17199,7 +17234,7 @@
         "林老師說：「吃點心前，要先洗手喔。」{name}點點頭，舉起黏黏的小手。「出發！去洗手台探險！」{name}走過積木區，又走過圖書角。小烏龜在桌上等著，好像在說加油。",
         "洗手台旁，貼著一張大海報。上面畫著五個步驟：濕、抹、搓、沖、擦。這時，米亞從操場跑回來。「我剛玩溜滑梯，也要洗手。」浩浩從廁所走出來，也排在後面。三個小探險家，一起站好了。",
         "第一步，打開水龍頭，把手弄濕。第二步，按一下肥皂。白白的泡泡冒出來了！{name}聞一聞，香香的！第三步最重要，要認真搓。手心搓手心，手背也要搓。手指交叉，像在玩捉迷藏。",
-        "還有大拇指，一根一根轉圈搓。指甲在手心刮一刮。藏起來的黏土跑出來了！「要搓多久呢？」{name}問。米亞說：「唱完一首生日快樂歌！」三個人一起小聲唱。泡泡越來越多，越來越白。",
+        "還有大拇指，一根一根轉圈搓。指甲在手心刮一刮。藏起來的黏土跑出來了！「要搓多久呢？」{name}問。米亞說：「唱兩次生日快樂歌！」三個人一起小聲唱。泡泡越來越多，越來越白。",
         "第四步，用清水沖一沖。灰灰的泥水，在洗手台裡轉呀轉。轉成一個小漩渦，咕嚕咕嚕溜下去了！「再見，黏土！」{name}笑著說。第五步，拿紙巾把手擦乾。{his}小手摸起來滑滑的，好乾淨！",
         "回到座位，點心是香蕉和小餅乾。林老師笑著說：「手乾淨，細菌就不會跑進嘴巴。」「也不會傳給好朋友喔。」{name}拿起餅乾，咬了一大口。小烏龜趴在旁邊，好像也在笑。今天的洗手探險，成功了！"
       ],
@@ -17209,7 +17244,7 @@
         "\"Please wash your hands before snack,\" said Ms. Lin. {name} nodded and held up two sticky hands. \"Off we go! Sink adventure!\" Past the block corner and the book nook went {name}. The clay turtle waited on the table, cheering quietly.",
         "A big poster hung beside the sink. It showed five steps: wet, soap, scrub, rinse, dry. Just then, Mia came in from the playground. \"I played on the slide. I need to wash too.\" Hao came out of the bathroom and lined up behind them. Three little explorers stood in a row.",
         "Step one: turn on the tap and wet your hands. Step two: one squirt of soap. White bubbles foamed up! {name} sniffed. Mmm, it smelled sweet! Step three was the big one: scrub well. Palm to palm. The back of each hand. Fingers laced together, playing hide-and-seek.",
-        "Thumbs got a twisty scrub, one and then the other. Nails scratched gently on each palm. Out came the hiding clay! \"How long do we scrub?\" asked {name}. \"One happy birthday song!\" said Mia. All three sang softly. The bubbles grew bigger and whiter.",
+        "Thumbs got a twisty scrub, one and then the other. Nails scratched gently on each palm. Out came the hiding clay! \"How long do we scrub?\" asked {name}. \"Sing happy birthday two times!\" said Mia. All three sang softly. The bubbles grew bigger and whiter.",
         "Step four: rinse with clean water. Gray water swirled around the sink. It spun into a tiny whirlpool and gurgled down the drain. \"Bye-bye, clay!\" {name} laughed. Step five: dry with a paper towel. Now {his} hands felt smooth and squeaky clean.",
         "Back at the table, snack was bananas and crackers. Ms. Lin smiled. \"Clean hands keep germs out of our mouths.\" \"And away from our friends, too.\" {name} took a big, crunchy bite. The clay turtle seemed to smile. The handwashing adventure was a success!"
       ]
@@ -17220,9 +17255,9 @@
         "questions": [
           "{name}的手沾滿黏土時，{he}是怎麼一步一步把手洗乾淨的？",
           "米亞和浩浩為什麼也來洗手？你什麼時候也需要洗手呢？",
-          "搓手的時候要唱一首歌，你想唱哪一首歌來洗手？"
+          "搓手的時候要唱歌，你想唱哪一首歌來洗手？"
         ],
-        "tip": "這週吃飯前，和孩子一起邊洗手邊唱一首生日快樂歌，記得搓手心、手背、指縫、大拇指和指甲。"
+        "tip": "這週吃飯前，和孩子一起邊洗手邊唱兩次生日快樂歌，記得搓手心、手背、指縫、大拇指和指甲。"
       },
       "en": {
         "questions": [
@@ -17230,10 +17265,11 @@
           "Why did Mia and Hao come to wash their hands too? When do you need to wash yours?",
           "You sing a song while you scrub. Which song would you like to sing?"
         ],
-        "tip": "Before meals this week, wash hands together while singing one happy birthday song, scrubbing palms, backs, between fingers, thumbs, and nails."
+        "tip": "Before meals this week, wash hands together while singing happy birthday two times, scrubbing palms, backs, between fingers, thumbs, and nails."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-12T19:30:00+08:00"
   },
   {
     "id": "dentist-loose-tooth-brave-chair",
@@ -17615,7 +17651,8 @@
         "tip": "This week, play with one toy together and practice saying, \"Can I have a turn when you're done?\" Take turns using a timer or counting to ten, so your child feels that waiting means their turn will come."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-22T19:30:00+08:00"
   },
   {
     "id": "fear-of-dark-closet-monster-flashlight",
@@ -17686,7 +17723,7 @@
     "paragraphs": {
       "zh": [
         "為了班上的英文拼字比賽，{name}整整練習了兩個星期。早餐時拼，刷牙時拼，連對著魚缸裡的金魚也拼。口袋裡的單字卡被摸得軟軟皺皺的。比賽這天早上，{name}走進教室，心裡胸有成竹：「這次一定沒問題！」",
-        "第一回合開始了。林老師拿起卡片，清楚地念：「Wednesday。」{name}站起來，嘴角忍不住上揚，這個字太簡單了！「W-E-N-S-D-A-Y。」教室突然安靜下來。林老師溫柔地說：「好可惜，差一點點喔。」",
+        "第一回合開始了。林老師拿起卡片，清楚地念：「Wednesday。」{name}站起來，嘴角忍不住上揚，這個字太簡單了！「W-E-N-E-S-D-A-Y。」教室突然安靜下來。林老師溫柔地說：「好可惜，差一點點喔。」",
         "{name}走回座位，臉頰燙得像剛出爐的饅頭，真想鑽到桌子底下躲起來。可是低頭一看，桌子那麼小，頭會撞到，腳也會露在外面，根本藏不住嘛！{name}只好坐好，慢慢吸一口氣，再慢慢吐出來。",
         "旁邊的小安也被淘汰了。他湊過來小聲說：「我把 elephant 拼成有 f 的，大象都要哭了。」{name}忍不住噗哧一笑，胸口那塊沉甸甸的石頭好像輕了一點。這時，{name}看見美玲走上台，雙手緊緊抓著衣角，微微發抖。",
         "那種緊張的感覺，{name}剛剛才嘗過。{name}對美玲比出大拇指，用嘴型說：「加油！」美玲眨眨眼，深吸一口氣，一個字母一個字母地拼出「library」。{name}和小安拍手拍得最大聲，就算有人拼錯，也小聲說：「差一點點，好棒！」",
@@ -17696,7 +17733,7 @@
       ],
       "en": [
         "For two whole weeks, {name} practiced for the class spelling contest. {name} spelled at breakfast, spelled while brushing teeth, and even spelled to the goldfish. The word cards in {his} pocket grew soft and wrinkly. On contest morning, {name} marched into class feeling sure: this time, nothing could go wrong!",
-        "The first round began. Ms. Lin held up a card and read clearly, \"Wednesday.\" {name} stood up, trying not to grin. Too easy! \"W-E-N-S-D-A-Y.\" The room went very quiet. Ms. Lin said gently, \"Oh, so close. That's not quite right.\"",
+        "The first round began. Ms. Lin held up a card and read clearly, \"Wednesday.\" {name} stood up, trying not to grin. Too easy! \"W-E-N-E-S-D-A-Y.\" The room went very quiet. Ms. Lin said gently, \"Oh, so close. That's not quite right.\"",
         "{name} walked back to the desk with cheeks as hot as fresh-baked buns. Hiding under the desk sounded perfect. But the desk was tiny. {name} would bump a head, and both feet would poke out the side. No good at all! So {name} sat down, took a slow breath in, and let it slowly out.",
         "An, who had also missed a word, leaned over and whispered, \"I spelled elephant with an F. The poor elephant is probably crying.\" {name} giggled, and the heavy stone in {his} chest felt a little lighter. Just then, Mei-Ling stepped up front, gripping her sleeves, her hands trembling.",
         "{name} knew that shaky feeling. It had only just happened. {name} gave Mei-Ling a big thumbs-up and mouthed, \"You can do it!\" She blinked, breathed deep, and spelled \"library\" one careful letter at a time. {name} and An clapped the loudest, and when anyone missed, they whispered, \"So close! Nice try!\"",
@@ -17724,7 +17761,8 @@
         "tip": "This week, play a small game together, and whoever loses, take three slow breaths side by side and say, \"So close, let's try again!\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-04-24T19:30:00+08:00"
   },
   {
     "id": "night-sky-shooting-star-wish",
@@ -17938,7 +17976,8 @@
         "tip": "Tonight in bed, take turns whispering three \"clues\" about an animal or something in your home and let the other person guess. Tomorrow, you could draw your own feeder design together."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-20T19:30:00+08:00"
   },
   {
     "id": "zoo-giraffe-tall-and-small",
@@ -17953,7 +17992,7 @@
     },
     "paragraphs": {
       "zh": [
-        "今天，{name}和媽媽去動物園。走呀走，走呀走。哇！好高好高的長頸鹿！牠的脖子長長的。牠的腿也長長的。{name}抬頭看，看呀看。脖子都酸酸了！",
+        "今天，{name}和媽媽去動物園。走呀走，走呀走。哇！好高好高的長頸鹿！牠的脖子長長的。牠的腿也長長的。{name}抬頭看，看呀看。脖子都酸了！",
         "長頸鹿伸長脖子。咬一口樹頂的葉子。嚼嚼嚼，嚼嚼嚼。看起來好好吃喔！{name}說：「我也想高高的！」{name}踮起腳尖。踮呀踮，踮呀踮。還是小小的。",
         "{name}跳一跳。蹦！蹦！蹦！還是碰不到葉子。媽媽笑了：「跳得好可愛。」{name}也咯咯笑。跳累了，蹲下來。休息一下下。",
         "咦？草地上有小紅點。小紅點，圓又圓。小紅點，會走路！原來是一隻小瓢蟲！背上有黑點點。一個、兩個、三個。",
@@ -17991,7 +18030,8 @@
         "tip": "Before lights out, snuggle up and let your fingers crawl softly over the blanket like a little ladybug, whispering \"hello\" and \"good night.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-27T19:30:00+08:00"
   },
   {
     "id": "new-sibling-bedtime-story-swap",
@@ -18101,7 +18141,8 @@
         "tip": "This week, go on a 'cord patrol' together: let your child point out hanging cords while you tidy them. Practice the phrase, \"Sockets are for grown-ups, and I tell a grown-up.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-03-14T19:30:00+08:00"
   },
   {
     "id": "christmas-socks-for-everyone",
@@ -20728,6 +20769,139 @@
     "cast": {
       "series": "mumu-jerry",
       "episode": 14
+    }
+  },
+  {
+    "id": "mumu-jerry-15-bella-splits",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "茜茜的一字馬",
+      "en": "Bella's Splits"
+    },
+    "paragraphs": {
+      "zh": [
+        "晚飯後，茜茜坐在地上看卡通，兩條腿一前一後，平平地貼在地板上。一字馬！沐沐瞪大眼睛：「姊姊，你怎麼會？」",
+        "茜茜在臉旁邊比了一個 YA：「以前我也不會喔。我說給你聽。」",
+        "那時候，體操課的王教練說，下個月要表演給爸爸媽媽看。茜茜選了一字馬。可是她兩腳慢慢滑開，屁股離地板還好遠好遠。「哎唷，好緊！」",
+        "王教練說：「一字馬不是一天變出來的。先跳一跳，讓身體暖起來，再慢慢拉。會痛就停，不能硬壓。」",
+        "回到家，茜茜在客廳鋪好軟墊。先原地跳二十下，再慢慢滑下去。媽媽在旁邊數：「一、二、三……」數到二十，就休息。",
+        "有時候茜茜在看平板，媽媽說：「該拉筋囉。」茜茜喊：「等一下，快好了！」不過她說到做到，關掉平板，就去鋪墊子。",
+        "練了一個星期，好像一點都沒變。茜茜嘟起嘴：「我是不是永遠都做不到？」則則拿來一張紙，在她膝蓋旁邊畫了一朵小花：「這裡！」",
+        "第二個星期，茜茜再慢慢滑下去，膝蓋超過了小花。則則比了大拇指：「很棒！」",
+        "表演那天，茜茜先跳一跳，深呼吸，慢慢滑下去……兩條腿平平地貼在墊子上！媽媽在台下用力拍手。",
+        "回家的路上，媽媽說：「你最厲害的，是每天都去練，就算還沒看到變化也不放棄。」",
+        "沐沐聽完，馬上兩腳一開，咚，坐成一隻小青蛙。大家都笑了。茜茜幫她鋪好軟墊：「先跳一跳，再慢慢來，會痛就停喔。」",
+        "睡覺前，沐沐說：「我發現一條新規則：每天一點點，就會變好多！」她打了個呵欠：「明天，我要研究新的規則。」晚安，沐沐。晚安，則則。晚安，會一字馬的茜茜。"
+      ],
+      "en": [
+        "After dinner, Bella sat on the floor watching cartoons, one leg in front and one behind, flat on the floor. The splits! Mumu's eyes went wide. \"How can you do that?\"",
+        "Bella flashed a V-sign by her cheek. \"I couldn't do it before, either. Let me tell you.\"",
+        "Back then, Coach Wang at gymnastics had news. Next month, there would be a show for the parents! Bella chose the splits. But when she slid her legs apart, she was still far, far from the floor. \"Ouch, so tight!\"",
+        "Coach Wang said, \"Splits don't happen in one day. First jump around to warm up, then stretch slowly. If it hurts, stop. Never push hard.\"",
+        "At home, Bella laid a soft mat in the living room. She jumped twenty times, then slid down slowly. Mom counted, \"One, two, three...\" At twenty, she rested.",
+        "Sometimes Bella was on her tablet when Mom said, \"Stretch time!\" Bella called, \"Just a sec, almost done!\" But she kept her word, turned it off, and rolled out the mat.",
+        "After a week, nothing seemed different. Bella pouted. \"Will I never get it?\" Jerry brought a piece of paper and drew a little flower right by her knee. \"Here!\"",
+        "The next week, Bella slid down slowly, and her knee went past the flower. Jerry gave a thumbs-up. \"Great!\"",
+        "On show day, Bella jumped to warm up, took a deep breath, and slid down slowly... both legs flat on the mat! Mom clapped hard from the audience.",
+        "On the way home, Mom said, \"The best part is that you practiced every day, even when you couldn't see a change yet.\"",
+        "When the story ended, Mumu spread her legs right away and plopped down like a little frog. Everyone laughed. Bella rolled out the mat for her. \"Jump first, go slowly, and stop if it hurts.\"",
+        "At bedtime, Mumu said, \"I found a new rule: a little every day makes a lot!\" She yawned. \"Tomorrow, I'm going to study a new rule.\" Goodnight, Mumu. Goodnight, Jerry. Goodnight, Bella and her splits."
+      ]
+    },
+    "theme": "perseverance",
+    "guide": {
+      "zh": {
+        "questions": [
+          "茜茜一開始做一字馬的時候，遇到什麼困難？",
+          "王教練說拉筋要注意什麼？",
+          "則則畫的小花，幫了茜茜什麼忙？你有沒有一件每天練一點點的事？"
+        ],
+        "tip": "這週和孩子挑一件想學會的事（跳繩、拍球、自己扣扣子），每天只練一下下，用貼紙或畫記號記下進步。拉筋類的動作先暖身、慢慢來，會痛就停。"
+      },
+      "en": {
+        "questions": [
+          "What was hard for Bella when she first tried the splits?",
+          "What did Coach Wang say to remember when stretching?",
+          "How did Jerry's little flower help Bella? Is there something you practice a little every day?"
+        ],
+        "tip": "This week, pick one thing your child wants to learn (jumping rope, bouncing a ball, doing buttons) and practice just a little each day, marking progress with a sticker or a drawing. For stretches, warm up first, go slowly, and stop if it hurts."
+      }
+    },
+    "draft": false,
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 15
+    },
+    "publishAt": "2027-03-07T19:30:00+08:00"
+  },
+  {
+    "id": "mumu-jerry-16-bella-swim-race",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "city",
+    "title": {
+      "zh": "茜茜的游泳比賽",
+      "en": "Bella's Swim Race"
+    },
+    "paragraphs": {
+      "zh": [
+        "茜茜要參加游泳比賽了！她要游 50 公尺自由式。每天放學後，她都跟著教練去泳池練習：踢水、划手、轉頭換氣，一趟又一趟。",
+        "比賽前一天晚上，茜茜睡不著：「媽媽，如果我游輸了怎麼辦？」媽媽摸摸她的頭：「明天，你只要把每天練的游出來就好。」",
+        "比賽那天，泳池邊好熱鬧。爸爸、媽媽、則則和沐沐坐在看台上。沐沐舉著一張自己畫的大魚，魚尾巴翹得高高的，那是她的加油牌。",
+        "茜茜站上跳台，心臟咚咚咚。她在臉旁邊比了一個 YA，看台上的則則大聲喊：「加油！」",
+        "嗶！茜茜跳進水裡。踢水、划手、換氣，就像每天練的一樣。她什麼都不想，只看著前面的牆，一直游、一直游，用力摸到牆！",
+        "她抬起頭，看見大螢幕：第 4 名。前面三個人，等一下要上台拿獎牌。茜茜的眼睛熱熱的。",
+        "可是，她先轉頭對旁邊的女生說：「你好快！」那個女生笑著說：「你換氣好穩喔！」",
+        "茜茜爬上岸，包著大毛巾走回看台。她小聲說：「我沒有拿到獎牌。」則則比了一個大拇指：「很棒！」",
+        "媽媽抱住她：「你從跳下去到摸到牆，一次都沒有停。那是你每天練出來的。」爸爸說：「而且你還記得先恭喜別人。」",
+        "茜茜擦擦眼睛，想了想：「下次，我要練出發跳得更遠。」她又比了一個 YA，這次笑得好大。",
+        "晚上，沐沐趴在床上，兩隻腳踢呀踢，假裝在游泳。「我發現一條新規則：第 4 名也可以比 YA！」",
+        "沐沐打了個呵欠：「明天，我要研究新的規則。」晚安，沐沐。晚安，則則。晚安，游到牆邊都沒有停的茜茜。"
+      ],
+      "en": [
+        "Bella was going to be in a swim race! She would swim the 50-meter freestyle. Every day after school, she practiced at the pool with her coach: kick, stroke, turn to breathe, lap after lap.",
+        "The night before the race, Bella couldn't sleep. \"Mom, what if I lose?\" Mom stroked her hair. \"Tomorrow, just swim the way you've been practicing.\"",
+        "On race day, the pool was busy and loud. Dad, Mom, Jerry, and Mumu sat in the stands. Mumu held up a picture she'd drawn of a big fish with its tail up high. It was her cheer sign.",
+        "Bella stepped onto the block. Her heart went thump, thump, thump. She flashed a V-sign by her cheek, and Jerry shouted from the stands, \"Go!\"",
+        "Beep! Bella dove in. Kick, stroke, breathe, just like every day. She didn't think about anything else. She kept her eyes on the wall ahead and swam and swam, then slapped the wall hard!",
+        "She looked up at the big screen: fourth place. The three swimmers ahead of her would soon go up for medals. Bella's eyes felt hot.",
+        "But first, she turned to the girl beside her. \"You're so fast!\" The girl smiled. \"Your breathing was so steady!\"",
+        "Bella climbed out, wrapped in a big towel, and walked back to the stands. \"I didn't get a medal,\" she said quietly. Jerry gave a thumbs-up. \"Great!\"",
+        "Mom hugged her. \"From the dive to the wall, you never stopped once. You built that with every practice.\" Dad said, \"And you remembered to cheer for someone else first.\"",
+        "Bella wiped her eyes and thought for a moment. \"Next time, I'll practice diving farther.\" She flashed another V-sign, and this time her smile was huge.",
+        "That night, Mumu lay on her tummy on the bed, kicking her feet, pretending to swim. \"I found a new rule: fourth place can do a V-sign too!\"",
+        "Mumu yawned. \"Tomorrow, I'm going to study a new rule.\" Goodnight, Mumu. Goodnight, Jerry. Goodnight, Bella, who swam all the way to the wall without stopping."
+      ]
+    },
+    "theme": "losing-failing",
+    "guide": {
+      "zh": {
+        "questions": [
+          "茜茜比賽前一天晚上，為什麼睡不著？媽媽怎麼跟她說？",
+          "茜茜看到自己第 4 名的時候，先做了什麼事？",
+          "沐沐發現的新規則是什麼？你覺得沒拿到第一名的時候，可以為自己高興什麼？"
+        ],
+        "tip": "下次孩子比賽或玩遊戲沒贏時，先說出一件你看到他做得好的地方（例如「你一直沒有放棄」），再問他：「下次你想多練哪一招？」"
+      },
+      "en": {
+        "questions": [
+          "Why couldn't Bella sleep the night before the race? What did Mom tell her?",
+          "When Bella saw she was in fourth place, what did she do first?",
+          "What new rule did Mumu find? When you don't win, what can you still feel proud of?"
+        ],
+        "tip": "Next time your child loses a race or a game, first name one thing you saw them do well (like \"You never gave up\"), then ask, \"What would you like to practice for next time?\""
+      }
+    },
+    "draft": true,
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 16
     }
   }
 ]

@@ -62,3 +62,14 @@
 - 確認迴圈有沒有在跑：`ps -eo args | grep -x 'bash docs/production/render-loop.sh'`。不要用 `pgrep -f render-loop.sh`，它會比對到自己的指令列，迴圈停了也會回「有在跑」。
 - 新容器要先 `npm install`，並把字型 LXGW WenKai TC 放到 `apps/api/scripts/assets/LXGWWenKaiTC-Regular.ttf`（不進 git，可從 github.com/lxgw/LxgwWenkaiTC releases 下載）。`out/` 不進 git，換容器後要重算才能做上傳頁面。
 - 主 repo 若 push 一直回「missing necessary objects」，從新 clone 推送即可。
+
+## 第二波（2026-10-31 開始）
+
+- 播出：2027-03-01～04-30，只排週一、三、四、六、日（週二、五是故事庫對話跟 App 同步的集數）。共 43 集，`wave2-production.json`。
+- 選故事：`python3 docs/production/wave2-plan.py` 重排。條件：預審 ok、第一波沒用過、不在 `library-episodes.txt`（故事庫對話已做成節目的故事）、沒有 publishAt、不是季節題材、不是身體自主或寵物離世。
+- 43 則已讀過中英文（安全類核對做法）並修正 14 則、重跑 AI 預審全部 ok；41 則草稿已用 `library:publish` 排在播出日 19:30 上架（2026-10-31），另 2 則本來就已上架。
+- 沐沐當主角的已寫進 `apps/api/episode-heroes.json`；搬家、新手足、上幼兒園、需要讀寫或上學的故事維持小寶。
+- 封面全部要新畫（沒有現成的），流程同第一波；記錄用 `wave2-art-done.txt`、`wave2-render-done.txt`。
+- 算圖：`bash docs/production/render-loop.sh wave2`，輸出在 `apps/api/out/episodes-w2`、`episodes-en-w2`。確認迴圈：`ps -eo args | grep -x 'bash docs/production/render-loop.sh wave2'`。
+- 三兄妹 EP15 `mumu-jerry-15-bella-splits`（茜茜的一字馬）3/7 播出、已排程上架；在 wave2-production.json 是 kind original、hero bella，封面 ref 用 MAHZNhttiaU。其他週日是一般故事，EP16 之後要等媽媽給素材、試聽通過才排。
+- 封面 prompt 在 `wave2-cover-prompts.json`（依播出順序），畫好先記 `wave2-cover-pending.txt`，每 13 張一批放進 DAHY2Vv2sws（放圖前先通知主控 session）。下一張：`python3 -c "import json,os;p=json.load(open('docs/production/wave2-cover-prompts.json'));pend=open('docs/production/wave2-cover-pending.txt').read();print([k for k in p if not os.path.exists('apps/api/episode-art/'+k+'.jpg') and k not in pend][:1])"`
