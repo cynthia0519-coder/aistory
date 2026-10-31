@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-31T13:09:45.994Z",
+  "generatedAt": "2026-10-31T13:27:43.532Z",
   "summary": {
-    "stories": 379,
+    "stories": 380,
     "byStatus": {
-      "ok": 334,
+      "ok": 335,
       "check": 44,
       "fix": 1
     },
@@ -14,7 +14,7 @@
     },
     "byIssueKind": {
       "repetition": 145,
-      "preachy": 34,
+      "preachy": 35,
       "logic": 116,
       "quality": 75,
       "taiwan_usage": 42,
@@ -123,7 +123,7 @@
       "water-safety-flooded-ditch",
       "water-safety-river-picnic"
     ],
-    "usd": 12.3888
+    "usd": 12.4192
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -5342,10 +5342,6 @@
           "note": "中文 644 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0375766,
-      "status": "ok",
-      "reviewedAt": "2026-10-31T13:09:45.974Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5371,7 +5367,11 @@
             "note": "喊救生員再丟浮具救同伴，和 beach-flags 的解法相近；場景不同可接受，可加一點泳池特有的細節來區隔"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0375766,
+      "status": "ok",
+      "reviewedAt": "2026-10-31T13:09:45.974Z"
     },
     "online-safety-secret-meetup": {
       "hash": "98d5cedb85c77240",
@@ -10505,6 +10505,26 @@
       "usd": 0.0276006,
       "status": "ok",
       "reviewedAt": "2026-10-27T16:57:33.627Z"
+    },
+    "mumu-jerry-15-bella-splits": {
+      "hash": "3c3c50daed19a778",
+      "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.0303646,
+      "status": "ok",
+      "reviewedAt": "2026-10-31T13:27:43.513Z",
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "preachy",
+            "severity": "low",
+            "lang": "both",
+            "where": "9",
+            "note": "媽媽說「你最厲害的，是每天都去練，就算還沒看到變化也不放棄」直接點出道理，可改成具體稱讚，如「你每天都鋪墊子，我都看到了」"
+          }
+        ]
+      }
     }
   }
 }

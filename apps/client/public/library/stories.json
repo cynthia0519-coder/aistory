@@ -20770,5 +20770,71 @@
       "series": "mumu-jerry",
       "episode": 14
     }
+  },
+  {
+    "id": "mumu-jerry-15-bella-splits",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "茜茜的一字馬",
+      "en": "Bella's Splits"
+    },
+    "paragraphs": {
+      "zh": [
+        "晚飯後，茜茜坐在地上看卡通，兩條腿一前一後，平平地貼在地板上。一字馬！沐沐瞪大眼睛：「姊姊，你怎麼會？」",
+        "茜茜在臉旁邊比了一個 YA：「以前我也不會喔。我說給你聽。」",
+        "那時候，體操課的王教練說，下個月要表演給爸爸媽媽看。茜茜選了一字馬。可是她兩腳慢慢滑開，屁股離地板還好遠好遠。「哎唷，好緊！」",
+        "王教練說：「一字馬不是一天變出來的。先跳一跳，讓身體暖起來，再慢慢拉。會痛就停，不能硬壓。」",
+        "回到家，茜茜在客廳鋪好軟墊。先原地跳二十下，再慢慢滑下去。媽媽在旁邊數：「一、二、三……」數到二十，就休息。",
+        "有時候茜茜在看平板，媽媽說：「該拉筋囉。」茜茜喊：「等一下，快好了！」不過她說到做到，關掉平板，就去鋪墊子。",
+        "練了一個星期，好像一點都沒變。茜茜嘟起嘴：「我是不是永遠都做不到？」則則拿來一張紙，在她膝蓋旁邊畫了一朵小花：「這裡！」",
+        "第二個星期，茜茜再慢慢滑下去，膝蓋超過了小花。則則比了大拇指：「很棒！」",
+        "表演那天，茜茜先跳一跳，深呼吸，慢慢滑下去……兩條腿平平地貼在墊子上！媽媽在台下用力拍手。",
+        "回家的路上，媽媽說：「你最厲害的，是每天都去練，就算還沒看到變化也不放棄。」",
+        "沐沐聽完，馬上兩腳一開，咚，坐成一隻小青蛙。大家都笑了。茜茜幫她鋪好軟墊：「先跳一跳，再慢慢來，會痛就停喔。」",
+        "睡覺前，沐沐說：「我發現一條新規則：每天一點點，就會變好多！」她打了個呵欠：「明天，我要研究新的規則。」晚安，沐沐。晚安，則則。晚安，會一字馬的茜茜。"
+      ],
+      "en": [
+        "After dinner, Bella sat on the floor watching cartoons, one leg in front and one behind, flat on the floor. The splits! Mumu's eyes went wide. \"How can you do that?\"",
+        "Bella flashed a V-sign by her cheek. \"I couldn't do it before, either. Let me tell you.\"",
+        "Back then, Coach Wang at gymnastics had news. Next month, there would be a show for the parents! Bella chose the splits. But when she slid her legs apart, she was still far, far from the floor. \"Ouch, so tight!\"",
+        "Coach Wang said, \"Splits don't happen in one day. First jump around to warm up, then stretch slowly. If it hurts, stop. Never push hard.\"",
+        "At home, Bella laid a soft mat in the living room. She jumped twenty times, then slid down slowly. Mom counted, \"One, two, three...\" At twenty, she rested.",
+        "Sometimes Bella was on her tablet when Mom said, \"Stretch time!\" Bella called, \"Just a sec, almost done!\" But she kept her word, turned it off, and rolled out the mat.",
+        "After a week, nothing seemed different. Bella pouted. \"Will I never get it?\" Jerry brought a piece of paper and drew a little flower right by her knee. \"Here!\"",
+        "The next week, Bella slid down slowly, and her knee went past the flower. Jerry gave a thumbs-up. \"Great!\"",
+        "On show day, Bella jumped to warm up, took a deep breath, and slid down slowly... both legs flat on the mat! Mom clapped hard from the audience.",
+        "On the way home, Mom said, \"The best part is that you practiced every day, even when you couldn't see a change yet.\"",
+        "When the story ended, Mumu spread her legs right away and plopped down like a little frog. Everyone laughed. Bella rolled out the mat for her. \"Jump first, go slowly, and stop if it hurts.\"",
+        "At bedtime, Mumu said, \"I found a new rule: a little every day makes a lot!\" She yawned. \"Tomorrow, I'm going to study a new rule.\" Goodnight, Mumu. Goodnight, Jerry. Goodnight, Bella and her splits."
+      ]
+    },
+    "theme": "perseverance",
+    "guide": {
+      "zh": {
+        "questions": [
+          "茜茜一開始做一字馬的時候，遇到什麼困難？",
+          "王教練說拉筋要注意什麼？",
+          "則則畫的小花，幫了茜茜什麼忙？你有沒有一件每天練一點點的事？"
+        ],
+        "tip": "這週和孩子挑一件想學會的事（跳繩、拍球、自己扣扣子），每天只練一下下，用貼紙或畫記號記下進步。拉筋類的動作先暖身、慢慢來，會痛就停。"
+      },
+      "en": {
+        "questions": [
+          "What was hard for Bella when she first tried the splits?",
+          "What did Coach Wang say to remember when stretching?",
+          "How did Jerry's little flower help Bella? Is there something you practice a little every day?"
+        ],
+        "tip": "This week, pick one thing your child wants to learn (jumping rope, bouncing a ball, doing buttons) and practice just a little each day, marking progress with a sticker or a drawing. For stretches, warm up first, go slowly, and stop if it hurts."
+      }
+    },
+    "draft": true,
+    "cast": {
+      "series": "mumu-jerry",
+      "episode": 15
+    }
   }
 ]
