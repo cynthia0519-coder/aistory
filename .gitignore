@@ -47,3 +47,4 @@ next-env.d.ts
 /apps/api/out/
 /apps/api/scripts/assets/*.ttf
 /apps/api/eval/out/
+docs/production/wave1-render.log
