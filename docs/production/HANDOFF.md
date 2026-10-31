@@ -73,3 +73,4 @@
 - 算圖：`bash docs/production/render-loop.sh wave2`，輸出在 `apps/api/out/episodes-w2`、`episodes-en-w2`。確認迴圈：`ps -eo args | grep -x 'bash docs/production/render-loop.sh wave2'`。
 - 三兄妹 EP15 `mumu-jerry-15-bella-splits`（茜茜的一字馬）3/7 播出、已排程上架；在 wave2-production.json 是 kind original、hero bella，封面 ref 用 MAHZNhttiaU。其他週日是一般故事，EP16 之後要等媽媽給素材、試聽通過才排。
 - 封面 prompt 在 `wave2-cover-prompts.json`（依播出順序），畫好先記 `wave2-cover-pending.txt`，每 13 張一批放進 DAHY2Vv2sws（放圖前先通知主控 session）。下一張：`python3 -c "import json,os;p=json.load(open('docs/production/wave2-cover-prompts.json'));pend=open('docs/production/wave2-cover-pending.txt').read();print([k for k in p if not os.path.exists('apps/api/episode-art/'+k+'.jpg') and k not in pend][:1])"`
+- DAHY2Vv2sws 已到 Canva 100 頁上限，不能再 add_page。之後每批改成 update_fill 覆蓋第一波已匯出的舊頁（每頁最上層元素；先 read-design 帶 transaction 拿 locator），第二波第一批用了 88–100 頁；下一批用 75–87 頁，再來 62–74、49–61。
