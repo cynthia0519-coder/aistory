@@ -1,12 +1,14 @@
 # 做半個月一頁的上傳頁：python3 docs/production/build-upload-page.py wave2 2027-03-01 2027-03-15 "第二波節目 3/1–3/15" "lead 文字" out-dir
+# 第 8 個參數（選填）：逗號分隔的 id，只收這幾集，例如補件頁
 # 檔案放在 out-dir（影片、縮圖、封面、音檔 JSON 包），index.html 用相對路徑引用，之後用 publish_files 一起發布
 import base64, datetime, json, os, shutil, sys
 
 wave, start, end, title, lead, out = sys.argv[1:7]
+only = set(sys.argv[7].split(',')) if len(sys.argv) > 7 else None  # 選填：只收這些 id（補件頁用）
 n = wave.removeprefix('wave')
 root = os.path.dirname(os.path.abspath(__file__))
 api = os.path.join(root, '../../apps/api')
-eps = [e for e in json.load(open(f'{root}/{wave}-production.json')) if start <= e['date'] <= end]
+eps = [e for e in json.load(open(f'{root}/{wave}-production.json')) if start <= e['date'] <= end and (only is None or e['id'] in only)]
 os.makedirs(f'{out}/m', exist_ok=True)
 items = []
 for e in eps:
