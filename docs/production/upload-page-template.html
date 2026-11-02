@@ -86,6 +86,7 @@ async function save(filename, blob, statusEl) {
 const bundles = new Map();
 // 音檔以 base64 包在 JSON 裡（檔案空間不收 mp3），下載時還原成 mp3
 async function mp3Of(ep) {
+  if (ep.audio.endsWith('.mp3')) return new Uint8Array(await (await fetchBlob(ep.audio)).arrayBuffer());
   if (!bundles.has(ep.audio)) bundles.set(ep.audio, fetch(ep.audio).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }));
   const b64 = (await bundles.get(ep.audio))[ep.id];
   const bin = atob(b64); const bytes = new Uint8Array(bin.length);

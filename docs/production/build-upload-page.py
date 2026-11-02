@@ -20,10 +20,8 @@ for e in eps:
         items.append(dict(id=key, date=f"{dt.month}/{dt.day}（{'一二三四五六日'[dt.weekday()]}）", series=mj,
                           title=info['title'], description=info['description'], seconds=info['seconds'],
                           video=f'm/{key}.mp4', thumb=f'm/{key}-thumb.jpg', cover=f'm/{key}-cover.jpg', mp3=f'{d}/{i}.mp3'))
-for b in range(0, len(items), 4):
-    grp = items[b:b + 4]; name = f'm/audio-{b // 4 + 1}.json'
-    json.dump({x['id']: base64.b64encode(open(x['mp3'], 'rb').read()).decode() for x in grp}, open(f'{out}/{name}', 'w'))
-    for x in grp: x['audio'] = name; del x['mp3']
+for x in items:  # mp3 直接當成頁面檔案發布（頁面檔案收 mp3；舊的 assets 空間才不收）
+    shutil.copy(x['mp3'], f"{out}/m/{x['id']}.mp3"); x['audio'] = f"m/{x['id']}.mp3"; del x['mp3']
 zipname = f"AISTORY-{wave}-{start[5:].replace('-', '')}-{end[5:].replace('-', '')}-audio.zip"
 t = open(f'{root}/upload-page-template.html').read()
 t = t.replace('__TITLE__', title).replace('__LEAD__', lead).replace('__ZIPNAME__', zipname).replace('__EPISODES__', json.dumps(items, ensure_ascii=False))
