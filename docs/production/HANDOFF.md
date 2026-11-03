@@ -76,3 +76,12 @@
 - DAHY2Vv2sws 已到 Canva 100 頁上限，不能再 add_page。之後每批改成 update_fill 覆蓋第一波已匯出的舊頁（每頁最上層元素；先 read-design 帶 transaction 拿 locator），第二波第一批用了 88–100 頁；下一批用 75–87 頁，再來 62–74、49–61。
 - 第二波上傳頁：用 `python3 docs/production/build-upload-page.py wave2 <起> <訖> "標題" "lead" apps/api/out/w2pN` 產生，再用 Artifact 發布 index.html，`files` 分批（每批 ≤60MB、每檔 ≤16MB）把 `m/` 下的 mp4/mp3/jpg 傳上去（mp3 直接當頁面檔，整頁上限 256 MiB）。3/1–3/15：https://claude.ai/artifact/DaoyjApaMQpvWieBc9DT35；EP16 補件（3/14）：https://claude.ai/artifact/81JjhGTCyMTSK1JaL427hh；3/16–3/31：https://claude.ai/artifact/JfEbc9oXnNB71RKssrhwaE；4/1–4/15：https://claude.ai/artifact/CRsLF2RsE9LDMkZTSRga5P；4/16–4/30：https://claude.ai/artifact/YNySmtBEMZam19YLcSgW4K（第二波封面 45/45、算圖 45/45、上傳頁全部完成）（build-upload-page.py 第 8 參數只收指定 id）
 - 3/1–3/15 上傳頁（DaoyjApaMQpvWieBc9DT35）已交給上架助理，不再改動。EP16 mumu-jerry-16-bella-swim-race（3/14）另做小頁「第二波 EP16 補件（3/14）」：封面跟下一批一起放 Canva，算完後用 build-upload-page.py 只放這一集（可暫時用只含 EP16 的 production 子集），標三兄妹，連結給主控。
+
+## 第三波（2026-11-03 開始）
+
+- 使用者選「排滿 5–6 月」：播出 2027-05-01～06-30，照第二波只排週一、三、四、六、日，約 43 集。
+- 盤點（條件同 wave2-plan.py，排除第一二波）：可直接用 28 則（24 則仍是 draft），預審 check 的非敏感故事 17 則可修後重審，缺口約 15 集要靠修稿或新寫。
+- 分工照第二波：主控 session（有 ANTHROPIC_API_KEY）負責選故事、修稿／新稿、AI 預審＋讀中英文、library:publish 排程、產出 `wave3-production.json` 與 `wave3-cover-prompts.json`；封面／算圖／上傳頁的 session 接手後續。
+- 封面：Canva DAHY2Vv2sws 已滿 100 頁，第三波每批 update_fill 覆蓋舊頁，依序用 36–48、23–35、10–22 頁（第 1–9 頁留著）。
+- 算圖：`bash docs/production/render-loop.sh wave3`，輸出 `apps/api/out/episodes-w3`、`episodes-en-w3`（三兄妹集照舊在 episodes-mumu-jerry）。迴圈在容器重啟時會停，每次醒來確認並重開；長時間等算圖時留在同一輪用 timeout 等待，比排提醒快。
+- 上傳頁：`python3 docs/production/build-upload-page.py wave3 <起> <訖> "第三波節目 …" "lead" apps/api/out/w3pN`，同第二波發布方式。
