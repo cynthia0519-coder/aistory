@@ -62,3 +62,27 @@
 - 確認迴圈有沒有在跑：`ps -eo args | grep -x 'bash docs/production/render-loop.sh'`。不要用 `pgrep -f render-loop.sh`，它會比對到自己的指令列，迴圈停了也會回「有在跑」。
 - 新容器要先 `npm install`，並把字型 LXGW WenKai TC 放到 `apps/api/scripts/assets/LXGWWenKaiTC-Regular.ttf`（不進 git，可從 github.com/lxgw/LxgwWenkaiTC releases 下載）。`out/` 不進 git，換容器後要重算才能做上傳頁面。
 - 主 repo 若 push 一直回「missing necessary objects」，從新 clone 推送即可。
+
+## 第二波（2026-10-31 開始）
+
+- 播出：2027-03-01～04-30，只排週一、三、四、六、日（週二、五是故事庫對話跟 App 同步的集數）。共 43 集，`wave2-production.json`。
+- 選故事：`python3 docs/production/wave2-plan.py` 重排。條件：預審 ok、第一波沒用過、不在 `library-episodes.txt`（故事庫對話已做成節目的故事）、沒有 publishAt、不是季節題材、不是身體自主或寵物離世。
+- 43 則已讀過中英文（安全類核對做法）並修正 14 則、重跑 AI 預審全部 ok；41 則草稿已用 `library:publish` 排在播出日 19:30 上架（2026-10-31），另 2 則本來就已上架。
+- 沐沐當主角的已寫進 `apps/api/episode-heroes.json`；搬家、新手足、上幼兒園、需要讀寫或上學的故事維持小寶。
+- 封面全部要新畫（沒有現成的），流程同第一波；記錄用 `wave2-art-done.txt`、`wave2-render-done.txt`。
+- 算圖：`bash docs/production/render-loop.sh wave2`，輸出在 `apps/api/out/episodes-w2`、`episodes-en-w2`。確認迴圈：`ps -eo args | grep -x 'bash docs/production/render-loop.sh wave2'`。
+- 三兄妹 EP15 `mumu-jerry-15-bella-splits`（茜茜的一字馬）3/7 播出、已排程上架；在 wave2-production.json 是 kind original、hero bella，封面 ref 用 MAHZNhttiaU。其他週日是一般故事，EP16 之後要等媽媽給素材、試聽通過才排。
+- 封面 prompt 在 `wave2-cover-prompts.json`（依播出順序），畫好先記 `wave2-cover-pending.txt`，每 13 張一批放進 DAHY2Vv2sws（放圖前先通知主控 session）。下一張：`python3 -c "import json,os;p=json.load(open('docs/production/wave2-cover-prompts.json'));pend=open('docs/production/wave2-cover-pending.txt').read();print([k for k in p if not os.path.exists('apps/api/episode-art/'+k+'.jpg') and k not in pend][:1])"`
+- DAHY2Vv2sws 已到 Canva 100 頁上限，不能再 add_page。之後每批改成 update_fill 覆蓋第一波已匯出的舊頁（每頁最上層元素；先 read-design 帶 transaction 拿 locator），第二波第一批用了 88–100 頁；下一批用 75–87 頁，再來 62–74、49–61。
+- 第二波上傳頁：用 `python3 docs/production/build-upload-page.py wave2 <起> <訖> "標題" "lead" apps/api/out/w2pN` 產生，再用 Artifact 發布 index.html，`files` 分批（每批 ≤60MB、每檔 ≤16MB）把 `m/` 下的 mp4/mp3/jpg 傳上去（mp3 直接當頁面檔，整頁上限 256 MiB）。3/1–3/15：https://claude.ai/artifact/DaoyjApaMQpvWieBc9DT35；EP16 補件（3/14）：https://claude.ai/artifact/81JjhGTCyMTSK1JaL427hh；3/16–3/31：https://claude.ai/artifact/JfEbc9oXnNB71RKssrhwaE；4/1–4/15：https://claude.ai/artifact/CRsLF2RsE9LDMkZTSRga5P；4/16–4/30：https://claude.ai/artifact/YNySmtBEMZam19YLcSgW4K（第二波封面 45/45、算圖 45/45、上傳頁全部完成）（build-upload-page.py 第 8 參數只收指定 id）
+- 3/1–3/15 上傳頁（DaoyjApaMQpvWieBc9DT35）已交給上架助理，不再改動。EP16 mumu-jerry-16-bella-swim-race（3/14）另做小頁「第二波 EP16 補件（3/14）」：封面跟下一批一起放 Canva，算完後用 build-upload-page.py 只放這一集（可暫時用只含 EP16 的 production 子集），標三兄妹，連結給主控。
+
+## 第三波（2026-11-03 開始）
+
+- 使用者選「排滿 5–6 月」：播出 2027-05-01～06-30，照第二波只排週一、三、四、六、日，約 43 集。
+- 盤點（條件同 wave2-plan.py，排除第一二波）：可直接用 28 則（24 則仍是 draft），預審 check 的非敏感故事 17 則可修後重審，缺口約 15 集要靠修稿或新寫。
+- 分工照第二波：主控 session（有 ANTHROPIC_API_KEY）負責選故事、修稿／新稿、AI 預審＋讀中英文、library:publish 排程、產出 `wave3-production.json` 與 `wave3-cover-prompts.json`；封面／算圖／上傳頁的 session 接手後續。
+- 封面：Canva DAHY2Vv2sws 已滿 100 頁，第三波每批 update_fill 覆蓋舊頁，依序用 36–48、23–35、10–22 頁（第 1–9 頁留著）。
+- 算圖：`bash docs/production/render-loop.sh wave3`，輸出 `apps/api/out/episodes-w3`、`episodes-en-w3`（三兄妹集照舊在 episodes-mumu-jerry）。迴圈在容器重啟時會停，每次醒來確認並重開；長時間等算圖時留在同一輪用 timeout 等待，比排提醒快。
+- 上傳頁：`python3 docs/production/build-upload-page.py wave3 <起> <訖> "第三波節目 …" "lead" apps/api/out/w3pN`，同第二波發布方式。
+- 2026-11-03 主控完成選稿與排程：44 集（5/1–6/30 週一三四六日），`wave3-production.json`、`wave3-cover-prompts.json`（播出順序）、`wave3-plan.py`（颱風 6 月颱風季放寬到 4 集，手動把颱風集都移到 6 月、兩集地震拆開）。17 則 check 稿改前提重生、新增 caring-for-nature-firefly-red-light，44 則都 AI 預審 ok、中英文讀過（安全類做法核對過），已 library:publish 排程在播出日 19:30。typhoon-after-storm-helpers、strangers-ice-cream-truck 原本已上架、重生後內容換新，改成播出日才出現。第三波沒有新的三兄妹原創集。主角：bo 31、mumu 12、jerry 1（lighthouse-keepers-cat，ref 照第一波 jerry 用 MAHZNTKJt9I）。

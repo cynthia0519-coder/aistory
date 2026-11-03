@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>__TITLE__</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;600&display=swap">
+<style>
+/* 版面：一欄播出表，每集一張卡，影片、下載、上架文字都在卡裡；三兄妹集用茶綠色標籤區分 */
+:root{
+  --bg:#f3efe6; --surface:#fffdf8; --ink:#2b2a33; --soft:#6b6672; --line:#e2dccf;
+  --teal:#1f5a63; --rust:#c4553a; --chip:#efe7d6; --series:#d9ece9;
+  --display:"LXGW WenKai TC","Noto Sans TC",serif; --body:"Noto Sans TC",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#171a20; --surface:#20242c; --ink:#ece8df; --soft:#a7a29a; --line:#333843;
+  --teal:#6fb4bd; --rust:#e3815f; --chip:#2b303a; --series:#1f3a3d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#171a20; --surface:#20242c; --ink:#ece8df; --soft:#a7a29a; --line:#333843;
+  --teal:#6fb4bd; --rust:#e3815f; --chip:#2b303a; --series:#1f3a3d; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.6}
+.wrap{max-width:760px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:20px}
+h1{font-family:var(--display);font-size:30px;margin:0;color:var(--teal);text-wrap:balance}
+.lead{margin:0;color:var(--soft)}
+.notice{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.notice b{color:var(--rust)}
+.notice ol{margin:0;padding-left:20px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+button{font:inherit;font-weight:600;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 14px;cursor:pointer;min-height:40px}
+button.primary{background:var(--teal);border-color:var(--teal);color:var(--surface)}
+button:disabled{opacity:.5;cursor:default}
+button:focus-visible{outline:3px solid var(--rust);outline-offset:2px}
+.list{display:flex;flex-direction:column;gap:16px;margin:0;padding:0;list-style:none}
+.ep{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.ep video{width:100%;aspect-ratio:16/9;background:#000;display:block;max-width:100%}
+.body{padding:14px 16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.meta{display:flex;gap:8px;flex-wrap:wrap;font-size:13px;color:var(--soft);font-variant-numeric:tabular-nums}
+.meta span{background:var(--chip);border-radius:999px;padding:2px 10px}
+.meta .series{background:var(--series);color:var(--teal);font-weight:600}
+.ep h2{font-family:var(--display);font-size:21px;margin:0;line-height:1.35;text-wrap:balance}
+details{border-top:1px dashed var(--line);padding-top:8px}
+summary{cursor:pointer;color:var(--teal);font-weight:600}
+pre{white-space:pre-wrap;word-break:break-word;font-family:var(--body);font-size:14px;background:var(--bg);border-radius:10px;padding:10px 12px;margin:8px 0 0}
+.status{font-size:13px;color:var(--rust);min-height:1em;margin:0}
+.num{font-family:var(--display);color:var(--rust);margin-right:6px}
+</style>
+
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:8px">
+    <h1>__TITLE__</h1>
+    <p class="lead">__LEAD__</p>
+  </header>
+  <section class="notice" aria-label="上架前">
+    <b>上架前</b>
+    <ol>
+      <li>中文（id 開頭 zh-）上「解放媽媽」頻道和中文 Podcast；英文（en-）上「AISTORY by Liberated Mom」和英文 Podcast。</li>
+      <li>YouTube「目標觀眾」選「是，這是為兒童打造的內容」，照每集日期排程晚上 7:30（台灣時間）公開；不放 App 連結。</li>
+      <li>YouTube 影片設好後，按「下載 YouTube 縮圖」設成自訂縮圖。</li>
+      <li>Podcast 上傳音檔（.mp3）並排程同一時間；封面用每集的正方形圖。</li>
+      <li>標「三兄妹」的集數，另外加進「三兄妹」播放清單（第一批頁面建好的那個，中英文各一個）。</li>
+    </ol>
+  </section>
+  <div class="bar">
+    <button class="primary" id="all-audio" type="button">下載全部音檔（zip）</button>
+    <p class="status" id="all-status" role="status"></p>
+  </div>
+  <ol class="list" id="list"></ol>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+const EPISODES = __EPISODES__;
+const fmt = (s) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+let downloadsP = null;
+const getDownloads = () => (downloadsP ??= (window.claude?.use ? window.claude.use("downloads") : Promise.resolve(null)));
+
+async function save(filename, blob, statusEl) {
+  const dl = await getDownloads();
+  if (!dl) { statusEl.textContent = "這個畫面不能下載，請在 claude.ai 打開這頁。"; return; }
+  try {
+    await dl.save({ filename, data: blob });
+    statusEl.textContent = "已存好。";
+  } catch (e) {
+    statusEl.textContent = e?.code === "declined" ? "" : `沒有存成功（${e?.code ?? "錯誤"}），再試一次。`;
+  }
+}
+const bundles = new Map();
+// 音檔以 base64 包在 JSON 裡（檔案空間不收 mp3），下載時還原成 mp3
+async function mp3Of(ep) {
+  if (ep.audio.endsWith('.mp3')) return new Uint8Array(await (await fetchBlob(ep.audio)).arrayBuffer());
+  if (!bundles.has(ep.audio)) bundles.set(ep.audio, fetch(ep.audio).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }));
+  const b64 = (await bundles.get(ep.audio))[ep.id];
+  const bin = atob(b64); const bytes = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+  return bytes;
+}
+const fetchBlob = async (url) => { const r = await fetch(url); if (!r.ok) throw new Error(r.status); return r.blob(); };
+
+async function audioZip(eps, statusEl) {
+  const zip = new JSZip();
+  let i = 0;
+  for (const ep of eps) {
+    statusEl.textContent = `打包中 ${++i}/${eps.length}…`;
+    zip.file(`${ep.id}.mp3`, await mp3Of(ep));
+    zip.file(`${ep.id}-cover.jpg`, await fetchBlob(ep.cover));
+    zip.file(`${ep.id}.txt`, `${ep.title}\n\n${ep.description}\n`);
+  }
+  statusEl.textContent = "壓縮中…";
+  return zip.generateAsync({ type: "blob", compression: "STORE" });
+}
+
+async function copy(text, statusEl, pre) {
+  try { await navigator.clipboard.writeText(text); statusEl.textContent = "已複製。"; }
+  catch { const r = document.createRange(); r.selectNodeContents(pre); const s = getSelection(); s.removeAllRanges(); s.addRange(r); statusEl.textContent = "已選取，請長按複製。"; }
+}
+
+const list = document.getElementById("list");
+EPISODES.forEach((ep, n) => {
+  const li = document.createElement("li");
+  li.className = "ep";
+  li.innerHTML = `
+    <video controls preload="none" playsinline></video>
+    <div class="body">
+      <h2><span class="num"></span><span class="t"></span></h2>
+      <div class="meta"><span class="date"></span><span class="lang"></span><span class="len"></span><span class="kind"></span><span class="series">三兄妹清單</span></div>
+      <div class="bar">
+        <button type="button" class="primary v">下載影片 .mp4</button>
+        <button type="button" class="th">下載 YouTube 縮圖</button>
+        <button type="button" class="a">下載音檔＋封面 .zip</button>
+        <button type="button" class="ct">複製標題</button>
+        <button type="button" class="cd">複製說明</button>
+      </div>
+      <p class="status" role="status"></p>
+      <details><summary>標題與說明</summary><pre class="pt"></pre><pre class="pd"></pre></details>
+    </div>`;
+  const q = (s) => li.querySelector(s);
+  q("video").src = ep.video;
+  q("video").poster = ep.thumb;
+  q(".num").textContent = String(n + 1).padStart(2, "0");
+  const parts = ep.title.split(/\s*[|｜]\s*/);
+  q(".t").textContent = parts[0];
+  q(".date").textContent = ep.date;
+  q(".lang").textContent = ep.id.startsWith("zh-") ? "中文" : "英文";
+  if (!ep.series) q(".series").remove();
+  q(".len").textContent = fmt(ep.seconds);
+  q(".kind").textContent = parts.slice(1).join(" · ");
+  q(".pt").textContent = ep.title;
+  q(".pd").textContent = ep.description;
+  const st = q(".status");
+  q(".v").onclick = async (e) => { e.target.disabled = true; st.textContent = "準備中…"; try { await save(`${ep.id}.mp4`, await fetchBlob(ep.video), st); } catch { st.textContent = "下載失敗，再試一次。"; } e.target.disabled = false; };
+  q(".th").onclick = async (e) => { e.target.disabled = true; st.textContent = "準備中…"; try { await save(`${ep.id}-thumb.jpg`, await fetchBlob(ep.thumb), st); } catch { st.textContent = "下載失敗，再試一次。"; } e.target.disabled = false; };
+  q(".a").onclick = async (e) => { e.target.disabled = true; try { await save(`${ep.id}.zip`, await audioZip([ep], st), st); } catch { st.textContent = "打包失敗，再試一次。"; } e.target.disabled = false; };
+  q(".ct").onclick = () => copy(ep.title, st, q(".pt"));
+  q(".cd").onclick = () => copy(ep.description, st, q(".pd"));
+  list.append(li);
+});
+
+document.getElementById("all-audio").onclick = async (e) => {
+  const st = document.getElementById("all-status");
+  e.target.disabled = true;
+  try { await save("__ZIPNAME__", await audioZip(EPISODES, st), st); } catch { st.textContent = "打包失敗，再試一次。"; }
+  e.target.disabled = false;
+};
+</script>
