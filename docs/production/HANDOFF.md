@@ -86,3 +86,15 @@
 - 算圖：`bash docs/production/render-loop.sh wave3`，輸出 `apps/api/out/episodes-w3`、`episodes-en-w3`（三兄妹集照舊在 episodes-mumu-jerry）。迴圈在容器重啟時會停，每次醒來確認並重開；長時間等算圖時留在同一輪用 timeout 等待，比排提醒快。
 - 上傳頁：`python3 docs/production/build-upload-page.py wave3 <起> <訖> "第三波節目 …" "lead" apps/api/out/w3pN`，同第二波發布方式。
 - 2026-11-03 主控完成選稿與排程：44 集（5/1–6/30 週一三四六日），`wave3-production.json`、`wave3-cover-prompts.json`（播出順序）、`wave3-plan.py`（颱風 6 月颱風季放寬到 4 集，手動把颱風集都移到 6 月、兩集地震拆開）。17 則 check 稿改前提重生、新增 caring-for-nature-firefly-red-light，44 則都 AI 預審 ok、中英文讀過（安全類做法核對過），已 library:publish 排程在播出日 19:30。typhoon-after-storm-helpers、strangers-ice-cream-truck 原本已上架、重生後內容換新，改成播出日才出現。第三波沒有新的三兄妹原創集。主角：bo 31、mumu 12、jerry 1（lighthouse-keepers-cat，ref 照第一波 jerry 用 MAHZNTKJt9I）。
+- 2026-11-03 第三波製作完成：44 張封面（Canva DAHY2Vv2sws 第 36–48、23–35、10–22、5–9 頁）、44 集中英文算圖、上傳頁 5 頁，每頁的檔案數都已核對（集數×8+1）：
+  - 5/1–5/15（11 集）https://claude.ai/artifact/98axbUTTAduD4jQkUa6PEx
+  - 5/16–5/23（6 集）https://claude.ai/artifact/DM15rwAM3Vnm1qC5aGYAuv
+  - 5/24–5/31（6 集）https://claude.ai/artifact/RP25erCEGBzZDUrhBvTEcc
+  - 6/1–6/15（10 集）https://claude.ai/artifact/SPaRvzFjK5zJiJM8e6GhfP
+  - 6/16–6/30（11 集）https://claude.ai/artifact/PxP2oWinY7pbUjVcDBMAZh
+- 教訓：
+  - Canva generate-image 的參數是 `aspectRatio`（駝峰）。寫成 `aspect_ratio` 會被忽略，畫出正方形，放進頁面會被裁掉頭臉；14–26 就是因此整批重畫。參考圖用 `imageReferences: [{type:"MEDIA", id}]`。
+  - export-design 的 pages 跟 read-design 一樣從 0 開始算（第一批多算了一頁，已修正）。
+  - 單一上傳頁上限 256 MiB，每集中英文合計約 22MB，所以一頁最多約 11 集；超過就拆頁（5/16–5/31 拆成兩頁）。
+  - 安全類封面放進 Canva 前要看全圖：typhoon-flashlight-shadows 第一版坐在打雷的窗前，typhoon-after-storm-helpers 主角上衣不是芥末黃，兩張都重畫過。
+  - Vercel 免費方案一天只能部署 100 次：封面只在本機 commit，每批放進 Canva 後才 push 一次。
