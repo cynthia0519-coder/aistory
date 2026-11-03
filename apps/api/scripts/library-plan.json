@@ -158,7 +158,7 @@
     "ageBands": ["6-8", "8-10"],
     "style": "adventure",
     "setting": "sea",
-    "premise": "At the beach in Kenting with cousins, {name} learns what the lifeguard's flags mean and swims only between them with an adult watching. When a cousin's float drifts out, {name} shouts for the lifeguard and throws a floating ring instead of swimming after it."
+    "premise": "In Kenting, {name} and Cousin wear life vests and swim only between the flags while Aunt watches. A wave knocks Cousin over and the backwash pulls him a little deeper. {name} doesn't go after him: {name} shouts 'Lifeguard!' and pushes the boogie board his way. The lifeguard brings him in. Later a red flag goes up; they build sandcastles on dry sand beside Aunt."
   },
   {
     "id": "medicine-not-candy",
@@ -446,7 +446,7 @@
     "ageBands": ["2-4"],
     "style": "inspiring",
     "setting": "home",
-    "premise": "When baby brother comes home, {name} worries love has to be shared out like a cake. Mom says love is more like the night market lights: turning on a new one doesn't make the others dimmer. {name} finds {his} own big-sibling job, singing the baby's lullaby."
+    "premise": "When baby brother comes home, {name} worries love must be shared like a cake. Mom says love is like night market lights: a new one doesn't make the others dimmer. {name}'s big-sibling job: switching on the baby's night-light each evening and whispering goodnight. No singing or music. Chinese and English match."
   },
   {
     "id": "new-sibling-just-us-walks",
@@ -510,7 +510,7 @@
     "ageBands": ["6-8", "8-10"],
     "style": "inspiring",
     "setting": "school",
-    "premise": "A new classmate who speaks with a different accent keeps getting laughed at during lunch. {name} sits beside him, invites him into the dodgeball game, and tells the teacher, which turns out to be getting help, not tattling."
+    "premise": "Classmates laugh at a new boy's accent when he talks about the lunch his grandma packed. {name} says 'That's not funny,' asks about the dish, and tells the teacher, which is getting help, not tattling. The teacher starts a hometown lunch day and he explains his dish first. No dodgeball, sports or teams."
   },
   {
     "id": "pet-loss-goldfish-flower",
@@ -614,7 +614,7 @@
     "ageBands": ["4-6"],
     "style": "adventure",
     "setting": "school",
-    "premise": "At pick-up time, a smiling woman {name} has never seen says Mom sent her and holds out a lollipop. {name} asks for the family's secret password, she doesn't know it, so {name} says no loudly and runs to Teacher Wang, who calls Mom right away."
+    "premise": "At kindergarten pick-up, a smiling woman {name} has never seen says Mom sent her. {name} asks for the family password; she doesn't know it, so {name} says 'No!' loudly, steps back inside the gate and goes to Teacher Wang, who calls Mom. Mom was stuck in traffic. One short line of praise, no list of rules."
   },
   {
     "id": "strangers-station-sticker-shop",
@@ -710,7 +710,7 @@
     "ageBands": ["2-4"],
     "style": "adventure",
     "setting": "home",
-    "premise": "At Grandma's house, {name} finds a little cup of pink cough syrup left on the table. It smells like strawberries, but {name} doesn't sip it. {name} calls, \"Grandma, come and look!\" Grandma explains that medicine is only given by a grown-up, puts the syrup in the high cupboard, and pours {name} a cup of real water. No toy mission and no candy reward."
+    "premise": "Mom puts her medicine up in the high cabinet, and {name} asks why. Mom plays a picture game: 'Medicine or candy?' Some pictures look the same! So the rule is easy: {name} never guesses, {name} asks a grown-up. Then they give teddy pretend medicine from an empty toy cup. Very short sentences for 2-4. Nobody finds any pills."
   },
   {
     "id": "medicine-grandmas-rainbow-pillbox",
@@ -718,7 +718,7 @@
     "ageBands": ["4-6"],
     "style": "adventure",
     "setting": "home",
-    "premise": "At Grandma's apartment, a seven-day pillbox shines like a rainbow of candy. {name} remembers medicine isn't candy, brings Grandma to see it, and helps her pick a high shelf so her pills stay safe from tiny visitors."
+    "premise": "At Grandma's, a seven-day pillbox shines like a rainbow of candy. {name} remembers Mom once said some medicine looks like candy. {name} doesn't touch it, tells Grandma, 'This is medicine, right? I didn't eat any,' and helps her pick a high shelf so it's safe from {name}'s baby cousin."
   },
   {
     "id": "typhoon-flashlight-shadows",
@@ -726,7 +726,7 @@
     "ageBands": ["4-6"],
     "style": "adventure",
     "setting": "home",
-    "premise": "The typhoon howls and the power goes out at dinner. Away from the windows, the family switches on flashlights and a battery radio to hear typhoon news. {name} helps count the water bottles they filled yesterday, then reads a picture book with Mom by flashlight, counting the wind gusts until they grow softer. No shadow puppets and no blanket fort."
+    "premise": "On a typhoon night the wind rattles the windows and {name} is scared of the sounds. The power stays on. Away from the windows, the family listens to the radio and plays guess-the-sound: wind, rain, a rolling flowerpot. {name} keeps the flashlight ready on {his} lap. No power cut, shadow puppets or blanket fort."
   },
   {
     "id": "typhoon-swollen-river",
@@ -1006,7 +1006,7 @@
     "ageBands": ["4-6"],
     "style": "cute",
     "setting": "home",
-    "premise": "{name} and Mom agree on two short cartoons and set the bunny timer. When it rings, {name} feels disappointed and stomps, then takes a slow breath and chooses to build a cardboard bunny house with Mom."
+    "premise": "{name} and Mom agree on two short cartoons and set the bunny timer. When it rings, {name} grumbles. Mom lets {name} press stop, then {name} pulls a slip from the 'what next' jar: water the plants together. On the balcony they find a snail. No balloon breathing, no cardboard or crafts, no sound walk. Short for 4-6."
   },
   {
     "id": "screen-time-phone-basket-dinner",
@@ -1426,7 +1426,7 @@
     "ageBands": ["6-8", "8-10"],
     "style": "bedtime",
     "setting": "sea",
-    "premise": "{name} stays a night at the lighthouse Great-Aunt looks after, with her old cat. They climb the spiral stairs, watch the beam sweep over fishing boats, and listen to the sea until the cat and {name} doze off."
+    "premise": "{name} stays a night at Great-Aunt's small seaside guesthouse with her old cat. At dusk they sit on the harbor seawall and count the squid boats' lights far out at sea, like a string of stars. In the attic room the cat curls at {name}'s feet and the waves go hush, hush. No lighthouse, spiral stairs or beam."
   },
   {
     "id": "mooncake-mystery",
@@ -1614,16 +1614,16 @@
     "theme": "strangers",
     "ageBands": ["4-6"],
     "style": "inspiring",
-    "setting": "park",
-    "premise": "At the park, an adult {name} doesn't know says there are free popsicles in their car and asks {name} to come along. {name} remembers the family rule: never go anywhere with someone you don't know. {name} says a loud \"No!\", runs straight to Grandpa on the bench, and tells him what happened. Grandpa says {name} did exactly the right thing."
+    "setting": "city",
+    "premise": "At the busy night market, Dad buys scallion pancakes two steps away. A person in a bear costume hands {name} a balloon, then says, 'Come to my car, I have a giant one!' {name} remembers: even a friendly costume is someone you don't know. {name} shouts 'No!', grabs Dad's hand, and the stall auntie helps call the market guard. No park, no Grandpa, no snacks. Short for 4-6."
   },
   {
     "id": "strangers-password-word",
     "theme": "strangers",
     "ageBands": ["6-8"],
     "style": "adventure",
-    "setting": "school",
-    "premise": "{name}'s family picks a secret password word: 'pineapple cake'. One day a person {name} doesn't know comes to the school gate and says Mom sent them. {name} asks for the password, the person can't say it, and {name} goes back inside to tell the teacher, who calls Mom."
+    "setting": "home",
+    "premise": "Grandma naps while {name} draws. The intercom buzzes: 'Delivery! Open the door, I need you to sign.' {name} remembers: when grown-ups aren't at the door, kids don't open it for anyone. {name} says loudly, 'I won't open the door!' and wakes Grandma, who answers and tells the person to leave the box downstairs. No password, no one claims Mom sent them."
   },
   {
     "id": "hot-things-soup-pot-steam",
@@ -1663,7 +1663,7 @@
     "ageBands": ["2-4", "4-6"],
     "style": "cute",
     "setting": "home",
-    "premise": "{name} has a fever. Dad measures the medicine with a little syringe while {name} watches from the sofa. It tastes like strawberries, and {name} asks if it's candy. Dad explains medicine can taste sweet but is not candy: only a grown-up gives it, in the right amount. {name} helps Dad put the bottle back up high and feels better by morning."
+    "premise": "Grandpa comes to stay. After breakfast it's his pill time. {name} is the pill-time helper: {name} reminds him and brings warm water, but only Grandpa opens the box, because medicine is only for the person it's for. Then the box goes on top of the wardrobe. No sickness, syrup or syringe. Very short sentences for 2-4."
   },
   {
     "id": "medicine-cough-syrup-spoon",
@@ -1679,7 +1679,7 @@
     "ageBands": ["4-6", "6-8"],
     "style": "adventure",
     "setting": "home",
-    "premise": "A typhoon makes the wind howl and the power goes out. {name} helps the family check the flashlight, water and snacks they prepared, and learns to stay away from windows. They play shadow puppets on the wall until the storm softens."
+    "premise": "A typhoon knocks the power out. Grandpa reaches for a candle, but {name} remembers: flashlights, not candles, because candles can tip over and start a fire. They shine a flashlight up through a full water bottle so the room glows like a lantern, and sing away from the windows until the wind softens. No shadow puppets."
   },
   {
     "id": "typhoon-after-storm-helpers",
@@ -1687,7 +1687,7 @@
     "ageBands": ["6-8"],
     "style": "inspiring",
     "setting": "city",
-    "premise": "After a typhoon passes, branches cover the street and a wire hangs low. {name} wants to splash in the puddles, but Mom explains that fallen wires and deep water are dangerous, and they wait inside. Only after workers fix the wire and the grown-ups say the sidewalk is safe does {name} help neighbors sweep leaves, and the street sparkles again."
+    "premise": "After a typhoon, branches cover the street and a wire hangs low. {name} wants to splash in puddles, but Mom says fallen wires and deep water are dangerous, so they stay in. {name} helps another way: carrying water and bread to Grandma Chen next door, whose power is out, and clearing leaves from their balcony drain. No street sweeping."
   },
   {
     "id": "crossing-road-zebra-stripes",
@@ -1783,7 +1783,7 @@
     "ageBands": ["8-10"],
     "style": "inspiring",
     "setting": "city",
-    "premise": "In an online game, {name}'s teammates keep kicking a quiet classmate out of their team and typing mean messages. {name} invites him back, doesn't join the teasing, takes screenshots and shows Mom. Together they report and block the mean accounts, and the teacher talks with the class about kindness in games. No class group chat or stickers."
+    "premise": "In an online game on the family tablet, {name}'s teammates keep kicking out a quiet classmate and typing mean messages. {name} invites him back, types 'Not cool, he plays with us,' and uses the report and mute buttons. Next morning {name} tells the teacher face-to-face. No group chat, stickers, screenshots or showing Mom."
   },
   {
     "id": "new-sibling-baby-photo-album",
@@ -2027,7 +2027,7 @@
     "ageBands": ["4-6"],
     "style": "cute",
     "setting": "home",
-    "premise": "{name} gets to take the class goldfish, Bubbles, home for the holiday week. It's harder than it looks: feeding at the same time every day, checking the water, remembering even on the fun day at the park. When school starts again, Bubbles is shiny and happy, and so is {name}."
+    "premise": "The family gets a goldfish, Bubbles, and {name}'s job is one tiny pinch of food each morning. {name} thinks more food means more love and sneaks in extra. Dad shows the leftover food sinking and says too much can make Bubbles sick. {name} finds other ways to show love: saying good morning and drawing Bubbles a picture for the tank. No class pet, no forgetting, no alarm or chart."
   },
   {
     "id": "responsibility-the-broken-flowerpot",
@@ -2228,6 +2228,14 @@
     "style": "adventure",
     "setting": "sea",
     "premise": "In summer, red land crabs cross a coastal road to release their eggs in the sea. {name} joins volunteers in reflective vests who help the crabs cross safely and remind drivers to slow down. By dawn, {name} has counted over a hundred crabs reaching the waves."
+  },
+  {
+    "id": "caring-for-nature-firefly-red-light",
+    "theme": "caring-for-nature",
+    "ageBands": ["6-8"],
+    "style": "adventure",
+    "setting": "forest",
+    "premise": "On a May night in the hills, {name} and Grandpa join a guide to see fireflies. The guide's rules: red cellophane over flashlights, no phone flash, stay on the path, talk softly, never catch them, since fireflies flash to find each other. A boy nearby brings a jar; {name} shows him how to hold still so one lands on a palm, then flies off. No lanterns."
   },
   {
     "id": "caring-for-nature-pangolin-fable",

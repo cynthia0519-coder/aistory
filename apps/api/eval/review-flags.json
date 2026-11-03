@@ -1,34 +1,32 @@
 {
-  "generatedAt": "2026-10-31T14:06:55.713Z",
+  "generatedAt": "2026-11-03T06:50:12.882Z",
   "summary": {
-    "stories": 381,
+    "stories": 382,
     "byStatus": {
-      "ok": 336,
-      "check": 44,
+      "ok": 353,
+      "check": 28,
       "fix": 1
     },
     "byCheckKind": {
-      "length": 268,
+      "length": 262,
       "duplicate_title": 12,
       "sensitive_pattern": 9
     },
     "byIssueKind": {
-      "repetition": 145,
+      "repetition": 137,
       "preachy": 35,
-      "logic": 116,
+      "logic": 113,
       "quality": 75,
       "taiwan_usage": 42,
-      "age_fit": 27,
-      "safety": 21,
-      "zh_en_mismatch": 12,
+      "age_fit": 24,
+      "safety": 22,
+      "zh_en_mismatch": 10,
       "guardrail": 6
     },
     "flagged": [
       "anger-red-balloon",
       "bedtime-routine-picture-chart",
       "bullying-class-group-chat",
-      "bullying-group-chat-buddy",
-      "bullying-lunch-table",
       "dentist-wiggly-first-tooth",
       "earthquake-mountain-school",
       "getting-lost-zoo-penguins",
@@ -37,26 +35,16 @@
       "good-bad-secrets-thank-you-party",
       "handwashing-snack-bubbles",
       "hot-things-soup-dragon",
-      "lighthouse-keepers-cat",
       "manners-breakfast-shop",
-      "medicine-grandmas-rainbow-pillbox",
-      "medicine-grandpa-pill-box",
-      "medicine-gummy-bear-vitamins",
       "mid-autumn-family-barbecue-moon",
-      "new-sibling-night-market-lights",
       "new-year-eve-wish-jar",
       "not-your-fault-brave-voice",
       "not-your-fault-wrestling-game",
-      "responsibility-goldfish-week",
       "saying-no-beard-kisses",
       "saying-no-squeeze-hug-handshake",
       "saying-no-tickle-monster",
-      "screen-time-bunny-timer",
       "sea-lighthouse-keeper-grandma",
-      "strangers-family-password",
-      "strangers-ice-cream-truck",
       "strangers-lost-puppy",
-      "strangers-password-word",
       "swimsuit-rule-bath-duck",
       "swimsuit-rule-swim-class",
       "swimsuit-rule-teddy-check-up",
@@ -64,17 +52,14 @@
       "swimsuit-rule-whale-swimsuit",
       "tidying-toys-toy-bedtime",
       "trusted-adults-keep-telling",
-      "trying-food-stinky-tofu-sniff",
-      "typhoon-after-storm-helpers",
-      "typhoon-candle-free-night",
-      "typhoon-flashlight-shadows",
-      "water-safety-beach-flags"
+      "trying-food-stinky-tofu-sniff"
     ],
     "spotCheck": [
       "anger-broken-model-ship",
       "anger-little-volcano",
       "anger-red-face-pillow",
       "bedtime-routine-moon-checklist",
+      "bullying-lunch-table",
       "bullying-mean-nickname",
       "christmas-wish-letter",
       "dentist-loose-tooth-brave-chair",
@@ -91,19 +76,18 @@
       "honesty-spilled-paint-jar",
       "honesty-test-paper-signature",
       "hot-things-camping-fire-circle",
-      "hot-things-hot-pot-night",
       "hot-things-soup-pot-steam",
       "keeping-promises-plant-sitter",
       "losing-failing-calligraphy-blot",
       "losing-failing-class-election",
       "losing-failing-relay-baton",
-      "manners-sorry-tower",
       "map-in-the-message-bottle",
+      "medicine-grandpa-pill-box",
       "mumu-jerry-07-big-ship-trip",
       "mumu-jerry-08-big-dog-home",
       "mumu-jerry-14-bella-test-secret",
-      "new-sibling-baby-photo-album",
       "new-sibling-crying-baby-concert",
+      "new-sibling-night-market-lights",
       "perseverance-the-character-yong",
       "perseverance-water-drop-stone-fable",
       "pet-loss-hamster-memory-box",
@@ -112,10 +96,12 @@
       "puppet-masters-apprentice",
       "responsibility-garden-captain",
       "rooftop-giant-pumpkin",
+      "screen-time-bunny-timer",
       "screen-time-puppet-show",
       "screen-time-riverside-kites",
       "sharing-turns-one-red-tricycle",
       "sockets-dry-hands-dryer",
+      "strangers-family-password",
       "teamwork-dragon-dance-practice",
       "teamwork-the-class-play",
       "trying-food-bitter-melon-explorer",
@@ -123,7 +109,7 @@
       "water-safety-flooded-ditch",
       "water-safety-river-picnic"
     ],
-    "usd": 12.4457
+    "usd": 12.475
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -647,38 +633,16 @@
       "reviewedAt": "2026-10-27T11:30:51.236Z"
     },
     "water-safety-beach-flags": {
-      "hash": "94fc190a81961b6a",
+      "hash": "f6d19915f38a7a79",
       "checks": [],
       "llm": {
-        "verdict": "check",
-        "issues": [
-          {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "4",
-            "note": "浮板漂走、不追、大喊找救生員、由大人取回，與 river-tracing「涼鞋漂走、喊嚮導、長竿撈回」的情節和解法幾乎相同，建議換一個不同的轉折"
-          },
-          {
-            "kind": "preachy",
-            "severity": "low",
-            "lang": "both",
-            "where": "7",
-            "note": "救生員說「大喊、找來會浮的東西，自己留在岸上」像在逐條複誦重點，可改成較自然的簡短稱讚"
-          },
-          {
-            "kind": "quality",
-            "severity": "low",
-            "lang": "zh",
-            "where": "0",
-            "note": "「興奮得迫不及待，只想立刻衝進浪花裡」語意重複，可刪去「迫不及待」或「只想立刻」"
-          }
-        ]
+        "verdict": "ok",
+        "issues": []
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0337166,
-      "status": "check",
-      "reviewedAt": "2026-10-27T12:26:51.763Z"
+      "usd": 0.040339,
+      "status": "ok",
+      "reviewedAt": "2026-11-03T06:47:45.816Z"
     },
     "medicine-not-candy": {
       "hash": "8f2694dbf540cbf2",
@@ -1589,31 +1553,39 @@
       "reviewedAt": "2026-10-27T11:35:28.618Z"
     },
     "new-sibling-night-market-lights": {
-      "hash": "b6edad303084013c",
-      "checks": [],
+      "hash": "05780721880007cc",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 411 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        }
+      ],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
             "kind": "repetition",
-            "severity": "medium",
+            "severity": "low",
             "lang": "both",
-            "where": "6",
-            "note": "第6–7段寶寶哭、{name}唱歌哄睡，和 crying-baby-concert 用音樂安撫哭鬧寶寶太像，可改成別的哥哥姊姊任務"
+            "where": "7",
+            "note": "睡前先替弟弟做特別工作、再換{name}的專屬故事時間，結構接近 bedtime-story-swap，可考慮讓專屬時間換成不同活動"
           },
           {
-            "kind": "zh_en_mismatch",
+            "kind": "preachy",
             "severity": "low",
-            "lang": "en",
-            "where": "6",
-            "note": "英文多了「This is a big-sibling job!」旁白，中文沒有；建議刪掉或改成媽媽說的話"
+            "lang": "both",
+            "where": "7",
+            "note": "夜市燈的比喻已表達訊息，媽媽再說「我們的愛，夠大家用」略顯直白，可刪去或改成動作"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.025416599999999998,
-      "status": "check",
-      "reviewedAt": "2026-10-27T12:20:51.801Z"
+      "usd": 0.0273686,
+      "status": "ok",
+      "reviewedAt": "2026-11-03T06:05:30.314Z"
     },
     "sharing-turns-wooden-giraffe": {
       "hash": "b4ef9f7df05a20bf",
@@ -1742,31 +1714,24 @@
       "reviewedAt": "2026-10-27T11:36:18.309Z"
     },
     "bullying-lunch-table": {
-      "hash": "717efa71b7201de8",
-      "checks": [],
+      "hash": "0d57de4f1ce33612",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 447 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
+        }
+      ],
       "llm": {
-        "verdict": "check",
-        "issues": [
-          {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "3",
-            "note": "第 3 段躲避球挑人沒人選阿明、{name}主動要他，與 bullying-picking-teams 情節太像；午餐陪坐也近似 mean-nickname，建議換成別的場景"
-          },
-          {
-            "kind": "taiwan_usage",
-            "severity": "low",
-            "lang": "zh",
-            "where": "2",
-            "note": "「會發光的螢火蟲田」說法不自然，可改成「一整片田野，晚上滿是發光的螢火蟲」"
-          }
-        ]
+        "verdict": "ok",
+        "issues": []
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0246526,
-      "status": "check",
-      "reviewedAt": "2026-10-27T12:21:07.475Z"
+      "usd": 0.028212599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-11-03T06:05:38.115Z"
     },
     "pet-loss-goldfish-flower": {
       "hash": "a56e256b49880c7d",
@@ -1777,6 +1742,13 @@
           "lang": "zh",
           "where": "story",
           "note": "中文 575 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "duplicate_title",
+          "severity": "low",
+          "lang": "zh",
+          "where": "title",
+          "note": "標題很像 responsibility-goldfish-week「{name}和金魚泡泡」（相似度 0.86）"
         }
       ],
       "llm": {
@@ -2300,46 +2272,24 @@
       "reviewedAt": "2026-10-27T11:38:45.039Z"
     },
     "strangers-family-password": {
-      "hash": "bbb19f6ee81bfa91",
-      "checks": [
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "zh",
-          "where": "story",
-          "note": "中文 638 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
-        },
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "en",
-          "where": "story",
-          "note": "英文 354 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
-        }
-      ],
+      "hash": "18296abb81512e5f",
+      "checks": [],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "4",
-            "note": "與 strangers-password-word 幾乎相同：家庭口令、校門口陌生人說「媽媽叫我來接你」、問口令答不出、找老師打給媽媽。建議換場景或換解法。"
-          },
-          {
-            "kind": "preachy",
+            "kind": "quality",
             "severity": "low",
-            "lang": "both",
-            "where": "6",
-            "note": "王老師說「很多人都很友善。可是我們只跟爸媽說好的大人走」像在念規則，可改成更口語，或用行動帶出。"
+            "lang": "en",
+            "where": "5",
+            "note": "「Hearing Mom felt warm and cozy」主詞不清，可改成「Hearing Mom's voice made {name} feel warm and cozy」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0285966,
-      "status": "check",
-      "reviewedAt": "2026-10-27T11:38:54.981Z"
+      "usd": 0.0224726,
+      "status": "ok",
+      "reviewedAt": "2026-11-03T06:37:50.502Z"
     },
     "strangers-station-sticker-shop": {
       "hash": "ff36570c403756a0",
@@ -2650,83 +2600,70 @@
       "reviewedAt": "2026-10-27T11:40:23.578Z"
     },
     "medicine-gummy-bear-vitamins": {
-      "hash": "590f6db9fd563a03",
-      "checks": [],
-      "llm": {
-        "verdict": "check",
-        "issues": [
-          {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "2",
-            "note": "與「奶奶的彩虹藥盒」太像：同樣在奶奶家發現像糖果的藥、叫奶奶來看、再收到高處。建議換場景、角色或收尾方式"
-          },
-          {
-            "kind": "age_fit",
-            "severity": "medium",
-            "lang": "both",
-            "where": "6",
-            "note": "「奶奶把罐子放回包包，拉鍊拉好，再把包包掛到門後高高的掛鉤上」太長，2歲難跟上，拆成三句短句；英文同"
-          },
-          {
-            "kind": "age_fit",
-            "severity": "low",
-            "lang": "both",
-            "where": "4",
-            "note": "「對呀，所以要更小心。吃太多，肚子會不舒服」連續講理偏長，英文 \"These aren't gummy candy. They're my vitamins\" 也可再縮短"
-          }
-        ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.025544599999999997,
-      "status": "check",
-      "reviewedAt": "2026-10-27T15:26:10.361Z"
-    },
-    "medicine-grandmas-rainbow-pillbox": {
-      "hash": "9c021c7e7bff4f84",
-      "checks": [],
-      "llm": {
-        "verdict": "check",
-        "issues": [
-          {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "4",
-            "note": "與 medicine-gummy-bear-vitamins 太像：都在奶奶家桌上發現藥、喊奶奶來看、收進高櫃。建議換場景或解法"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "3",
-            "note": "媽媽不在場卻說「這些長得像糖果」，像在指眼前藥盒。改成「媽媽說過：有些藥長得像糖果」"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "4",
-            "note": "{name}已想起那是藥，又問「這是糖果嗎？」略矛盾。可改成「這是藥對不對？我沒有吃喔」"
-          }
-        ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.029000599999999998,
-      "status": "check",
-      "reviewedAt": "2026-10-27T15:26:19.789Z"
-    },
-    "typhoon-flashlight-shadows": {
-      "hash": "26c1f3c5acdd30de",
+      "hash": "a15d1969692e5d56",
       "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 418 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        },
         {
           "kind": "length",
           "severity": "low",
           "lang": "en",
           "where": "story",
-          "note": "英文 362 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
-        },
+          "note": "英文 256 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "3",
+            "note": "「黃黃的小熊軟糖」先叫它軟糖，再說是維他命，有點矛盾；改成「黃黃的小熊」，英文 gummy bears 改 bear shapes"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "6",
+            "note": "{name}餵小熊吃藥，角色變成給藥的人，和「藥要大人給」略有衝突；可改成請媽媽幫小熊假裝餵藥"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0260006,
+      "status": "ok",
+      "reviewedAt": "2026-11-03T06:18:56.084Z"
+    },
+    "medicine-grandmas-rainbow-pillbox": {
+      "hash": "d2436aa5ed694397",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "6",
+            "note": "「七格藥盒＋放到高高的櫃子」與 grandpa-pill-box 相近；尋寶主線已有區隔，可保留，但收藏處可再寫得更特別"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0235766,
+      "status": "ok",
+      "reviewedAt": "2026-11-03T06:06:01.416Z"
+    },
+    "typhoon-flashlight-shadows": {
+      "hash": "5870804fb0a3869e",
+      "checks": [
         {
           "kind": "duplicate_title",
           "severity": "low",
@@ -2736,28 +2673,21 @@
         }
       ],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
             "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "0",
-            "note": "「停電、找手電筒、數水、離窗戶、在牆邊玩到風變小」與 typhoon-candle-free-night 太像，建議換場景或解決方式"
-          },
-          {
-            "kind": "quality",
             "severity": "low",
-            "lang": "zh",
+            "lang": "both",
             "where": "2",
-            "note": "「這樣風就吹不走它們了。」有引號卻不知道是誰說的，建議補上「爸爸說」或改成敘述句"
+            "note": "搬陽台盆栽、裝水、找手電筒、待在屋內聽風聲，與 typhoon-day-blanket-fort 很接近；主要差別是猜聲音遊戲，可再加強特色"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.023012599999999998,
-      "status": "check",
-      "reviewedAt": "2026-10-27T12:52:23.303Z"
+      "usd": 0.026460599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-11-03T06:06:09.063Z"
     },
     "typhoon-swollen-river": {
       "hash": "2315f7a27d7f5fd0",
@@ -2775,13 +2705,6 @@
           "lang": "en",
           "where": "title",
           "note": "標題很像 typhoon-flashlight-shadows「{name}'s Typhoon Night Mission」（相似度 0.71）"
-        },
-        {
-          "kind": "duplicate_title",
-          "severity": "low",
-          "lang": "en",
-          "where": "title",
-          "note": "標題很像 typhoon-after-storm-helpers「{name} and the Typhoon Day」（相似度 0.72）"
         }
       ],
       "llm": {
@@ -3779,46 +3702,24 @@
       "reviewedAt": "2026-10-27T11:44:55.507Z"
     },
     "screen-time-bunny-timer": {
-      "hash": "c4d70095816b133e",
+      "hash": "0b6905ed5f40b6c5",
       "checks": [
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "zh",
-          "where": "story",
-          "note": "中文 642 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
-        },
         {
           "kind": "length",
           "severity": "low",
           "lang": "en",
           "where": "story",
-          "note": "英文 371 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+          "note": "英文 352 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
       "llm": {
-        "verdict": "check",
-        "issues": [
-          {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "4",
-            "note": "與 screen-time-puppet-show 太像：計時器打斷卡通、吐氣像氣球、用紙箱做手工。建議換掉氣球比喻或改成非紙箱的活動"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "en",
-            "where": "4",
-            "note": "英文「blew out slowly」接著卻鼓成氣球，與中文「吐得太用力」不一致，建議改成 blew out too hard"
-          }
-        ]
+        "verdict": "ok",
+        "issues": []
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0258966,
-      "status": "check",
-      "reviewedAt": "2026-10-27T11:45:01.731Z"
+      "usd": 0.0237086,
+      "status": "ok",
+      "reviewedAt": "2026-11-03T06:06:15.824Z"
     },
     "screen-time-phone-basket-dinner": {
       "hash": "505e52db2e422928",
@@ -5076,24 +4977,24 @@
       "reviewedAt": "2026-10-27T11:51:00.028Z"
     },
     "lighthouse-keepers-cat": {
-      "hash": "e9b000efa9a05dcc",
+      "hash": "b32c7338b603349d",
       "checks": [],
+      "model": "claude-opus-5-5",
+      "usd": 0.0547446,
+      "status": "ok",
+      "reviewedAt": "2026-11-03T06:50:12.863Z",
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "7",
-            "note": "與 sea-lighthouse-keeper-grandma 太像：同樣是在燈塔過夜、長輩當守燈人、看光束旋轉入睡，第 7 段「跟著光搖回家」也相近。建議換場景，或改掉以光束入睡的結尾"
+            "kind": "taiwan_usage",
+            "severity": "low",
+            "lang": "zh",
+            "where": "2",
+            "note": "「三個一起坐下來」少了主語，讀起來不順，可改成「祖孫倆和芝麻一起坐下來」"
           }
         ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.057448599999999996,
-      "status": "check",
-      "reviewedAt": "2026-10-27T15:26:27.373Z"
+      }
     },
     "mooncake-mystery": {
       "hash": "31d0aacdaee61073",
@@ -5876,87 +5777,51 @@
       "reviewedAt": "2026-10-27T12:54:50.331Z"
     },
     "strangers-ice-cream-truck": {
-      "hash": "7f56a7ab9bc2537b",
-      "checks": [
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "zh",
-          "where": "story",
-          "note": "中文 609 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
-        },
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "en",
-          "where": "story",
-          "note": "英文 388 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
-        }
-      ],
-      "llm": {
-        "verdict": "check",
-        "issues": [
-          {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "3",
-            "note": "與 strangers-lost-puppy 幾乎相同：公園、陌生人給零食、大聲說不要、跑回爺爺、告訴管理員。建議換場景、求助對象或結局"
-          },
-          {
-            "kind": "zh_en_mismatch",
-            "severity": "low",
-            "lang": "both",
-            "where": "guide",
-            "note": "英文 tip 多了「跑回家長身邊」的練習，中文只有「大聲說不要」。建議中文補上「跑回爸媽身邊」"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "both",
-            "where": "4",
-            "note": "第0段媽媽只提「不跟著去」，第4段卻想起「也不拿點心」。建議第0段加一句不拿陌生人點心"
-          },
-          {
-            "kind": "quality",
-            "severity": "low",
-            "lang": "zh",
-            "where": "6",
-            "note": "「{name}問：『爺爺，那個阿姨在笑耶。』」不是問句，建議把「問」改成「說」"
-          }
-        ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.031812599999999996,
-      "status": "check",
-      "reviewedAt": "2026-10-27T11:55:07.609Z"
-    },
-    "strangers-password-word": {
-      "hash": "d62387b506703a03",
+      "hash": "e403d89d6fdc2680",
       "checks": [],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
             "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "3",
-            "note": "陌生人稱「媽媽叫我來帶你」並送點心、大人打給媽媽，與 strangers-family-password 太像，建議換情節或解法"
-          },
-          {
-            "kind": "logic",
             "severity": "low",
             "lang": "both",
             "where": "4",
-            "note": "主訊息「大聲說不」未由{name}做出，可讓{name}先大聲說「我不開門！」再跑去找奶奶"
+            "note": "與 strangers-station-sticker-shop 結構相近（爸爸在旁、陌生人送東西又邀去別處、跑回爸爸、工作人員稱讚），可再加強差異"
+          },
+          {
+            "kind": "preachy",
+            "severity": "low",
+            "lang": "both",
+            "where": "6",
+            "note": "警衛「要跟誰走，只能是爸爸媽媽說好的大人」近乎直接念出規則，可改得更口語或縮短"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0250846,
-      "status": "check",
-      "reviewedAt": "2026-10-27T15:26:37.936Z"
+      "usd": 0.0289326,
+      "status": "ok",
+      "reviewedAt": "2026-11-03T06:37:59.820Z"
+    },
+    "strangers-password-word": {
+      "hash": "a8ed4ffe3b6ee716",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "1",
+            "note": "情節只演到「不開門」，沒有呈現「不收陌生人的禮物、不跟著走」，目前靠導讀卡補足，可考慮讓叔叔順口提到給小禮物"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.025360599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-11-03T06:48:57.283Z"
     },
     "hot-things-soup-pot-steam": {
       "hash": "1fb872045c1b9cd3",
@@ -6120,60 +5985,38 @@
       "reviewedAt": "2026-10-31T13:07:09.149Z"
     },
     "medicine-grandpa-pill-box": {
-      "hash": "0c76f679986927ed",
-      "checks": [
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "zh",
-          "where": "story",
-          "note": "中文 445 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
-        },
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "en",
-          "where": "story",
-          "note": "英文 284 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
-        }
-      ],
+      "hash": "19ad67f5a47651d7",
+      "checks": [],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
-            "kind": "preachy",
-            "severity": "medium",
-            "lang": "both",
-            "where": "6",
-            "note": "孩子背誦『藥是大人給的！看到藥罐，不嚐，叫大人來看！』像在念規則；第三個重點沒在情節中演出，建議改成發現藥罐並叫大人的小事件"
-          },
-          {
             "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "0",
-            "note": "生病、甜甜藥水、大人量藥，和 medicine-cough-syrup-spoon 及草莓藥水的 gummy-bear 篇太像，建議換情境或加入新的轉折"
-          },
-          {
-            "kind": "logic",
             "severity": "low",
             "lang": "both",
-            "where": "7",
-            "note": "第 6 段已是『睡前』，第 7 段才『天黑了』，時間順序倒置；把『天黑了』移到第 6 段前或刪掉"
+            "where": "3",
+            "note": "「長輩藥盒像糖果、最後放高處」與 grandmas-rainbow-pillbox 相近，可多強調小幫手倒水的獨特情節"
           },
           {
-            "kind": "age_fit",
+            "kind": "preachy",
             "severity": "low",
-            "lang": "zh",
-            "where": "5",
-            "note": "『爸爸又倒了一杯溫開水，{name}咕嘟咕嘟喝了好幾口』對 2–4 歲太長，拆成兩句"
+            "lang": "both",
+            "where": "4",
+            "note": "爺爺「藥只給需要的人吃。大人給你，才可以吃喔」略像背規則，可改成更口語，如「這是爺爺的，{name}要大人給才吃喔」"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "en",
+            "where": "4",
+            "note": "英文「Medicine is just for the person it's for」讀來拗口，可改「This medicine is just for Grandpa」"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0297166,
-      "status": "check",
-      "reviewedAt": "2026-10-27T13:01:53.536Z"
+      "usd": 0.026592599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-11-03T06:06:41.907Z"
     },
     "medicine-cough-syrup-spoon": {
       "hash": "8ccce7eef8eb1d3d",
@@ -6218,88 +6061,88 @@
       "reviewedAt": "2026-10-27T11:56:13.021Z"
     },
     "typhoon-candle-free-night": {
-      "hash": "a1f90c7f01d8d685",
+      "hash": "c81c977df1f871ff",
       "checks": [
         {
           "kind": "length",
           "severity": "low",
-          "lang": "en",
+          "lang": "zh",
           "where": "story",
-          "note": "英文 367 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+          "note": "中文 598 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         }
       ],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
-            "kind": "repetition",
-            "severity": "medium",
+            "kind": "safety",
+            "severity": "low",
             "lang": "both",
-            "where": "5",
-            "note": "「停電→手電筒→牆上手影動物」和 typhoon-flashlight-shadows 幾乎相同，建議換成別的停電活動或其他高潮"
+            "where": "7",
+            "note": "結尾『明天大人說安全了，我們再去看河』，颱風後河水仍可能暴漲。建議改成『明天一起看看陽台的盆栽』等不去河邊的活動"
+          },
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "1",
+            "note": "搬陽台盆栽、裝水、找手電筒三個任務和 typhoon-day-blanket-fort 幾乎相同；停電做燈籠有新意，可再調整前段準備的細節"
           },
           {
             "kind": "logic",
             "severity": "low",
             "lang": "both",
-            "where": "6",
-            "note": "{name}拿著手電筒，又「把兩隻手疊起來」比兔子，誰拿手電筒不清楚；可寫先把手電筒立在桌上照牆"
-          },
-          {
-            "kind": "zh_en_mismatch",
-            "severity": "low",
-            "lang": "both",
-            "where": "guide",
-            "note": "中文提示「停電時，也可以玩手影遊戲」，英文是「Then try shadow puppets」，時機不同，請統一"
+            "where": "7",
+            "note": "『兩個人捧著燈籠』，但燈籠是水瓶放在立起的手電筒上，移動時容易倒。可改成爺爺拿著手電筒、{name}抱水瓶，到走廊再組好"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.025760599999999998,
-      "status": "check",
-      "reviewedAt": "2026-10-27T11:56:22.720Z"
+      "usd": 0.0324966,
+      "status": "ok",
+      "reviewedAt": "2026-11-03T06:06:52.337Z"
     },
     "typhoon-after-storm-helpers": {
-      "hash": "58cc015888b35efb",
+      "hash": "d513947dd9a0ba3f",
       "checks": [
         {
           "kind": "length",
           "severity": "low",
           "lang": "en",
           "where": "story",
-          "note": "英文 452 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
-        },
-        {
-          "kind": "duplicate_title",
-          "severity": "low",
-          "lang": "en",
-          "where": "title",
-          "note": "標題很像 typhoon-swollen-river「{name}'s Typhoon Day Mission」（相似度 0.72）"
+          "note": "英文 430 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
         }
       ],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
-          {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "6",
-            "note": "後半段「隔天等大人說安全後，和鄰居一起掃街上落葉」與 typhoon-swollen-river 的結局幾乎相同，建議改成別的善後行動或場景"
-          },
           {
             "kind": "repetition",
             "severity": "low",
             "lang": "both",
-            "where": "3",
-            "note": "「燈閃一下，用手電筒照出兔子影子」與 flashlight-shadows、candle-free-night 的影子遊戲重複，可換成別的細節"
+            "where": "6",
+            "note": "「隔天清落葉」與 typhoon-swollen-river 的掃落葉結尾相近，可考慮換成其他災後幫忙的情節"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "1",
+            "note": "爸爸把枕頭搬到「客廳中間」，{name}卻「坐在沙發上」，建議改成坐在客廳中間的枕頭上"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "zh",
+            "where": "4",
+            "note": "前句寫「隔壁的門」，後句寫「走到走廊對面」，位置說法不一致，建議統一用一種"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.024132599999999997,
-      "status": "check",
-      "reviewedAt": "2026-10-27T11:56:29.322Z"
+      "usd": 0.0308686,
+      "status": "ok",
+      "reviewedAt": "2026-11-03T06:07:02.452Z"
     },
     "crossing-road-zebra-stripes": {
       "hash": "75be99ac2da91a7d",
@@ -6618,45 +6461,31 @@
       "reviewedAt": "2026-10-27T11:57:55.315Z"
     },
     "bullying-group-chat-buddy": {
-      "hash": "af49721bda40ab71",
+      "hash": "a5c15753b798b615",
       "checks": [],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "4",
+            "note": "第0段說阿俊是「新加入」的隊友，第4段卻是大家天天走的彩虹大橋的建造者，略矛盾；可把0段改成「常被冷落的阿俊」"
+          },
+          {
             "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "2",
-            "note": "與 bullying-class-group-chat 太像：線上嘲笑、傳暖心訊息、截圖給媽媽和老師。建議換掉截圖給媽媽的解法，或改成不同的求助方式"
-          },
-          {
-            "kind": "logic",
             "severity": "low",
             "lang": "both",
-            "where": "4",
-            "note": "第 1 段『手指僵在鍵盤上』，這裡卻『拿著平板』，裝置前後不一致，請統一成同一種"
-          },
-          {
-            "kind": "logic",
-            "severity": "low",
-            "lang": "zh",
-            "where": "4",
-            "note": "『走到客廳，找正在陽台澆花的媽媽』地點矛盾，改成『走到陽台』"
-          },
-          {
-            "kind": "taiwan_usage",
-            "severity": "low",
-            "lang": "zh",
-            "where": "6",
-            "note": "台灣『午休』通常是趴睡時間，『午休時並肩畫設計圖』不自然，改成『下課時』或『午餐後』"
+            "where": "1",
+            "note": "網路聊天中被嘲笑、告訴老師的架構與 bullying-class-group-chat 相近，但遊戲踢人與檢舉的情節有區隔，可接受"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.034316599999999996,
-      "status": "check",
-      "reviewedAt": "2026-10-27T12:55:47.221Z"
+      "usd": 0.0317926,
+      "status": "ok",
+      "reviewedAt": "2026-11-03T06:07:12.378Z"
     },
     "new-sibling-baby-photo-album": {
       "hash": "2cefa104538b4265",
@@ -7445,46 +7274,39 @@
       "reviewedAt": "2026-10-27T12:01:39.271Z"
     },
     "responsibility-goldfish-week": {
-      "hash": "dfc9be3d838e1dd2",
+      "hash": "77a11ca63c596b72",
       "checks": [
         {
-          "kind": "length",
+          "kind": "duplicate_title",
           "severity": "low",
           "lang": "zh",
-          "where": "story",
-          "note": "中文 634 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
-        },
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "en",
-          "where": "story",
-          "note": "英文 403 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+          "where": "title",
+          "note": "標題很像 pet-loss-goldfish-flower「{name}和小金魚泡泡」（相似度 0.86）"
         }
       ],
       "llm": {
-        "verdict": "check",
+        "verdict": "ok",
         "issues": [
           {
-            "kind": "repetition",
-            "severity": "medium",
-            "lang": "both",
-            "where": "3",
-            "note": "與 class-turtle-tank 太像：照顧班級寵物、疏失讓「水變得霧霧的」、靠表格記錄。建議換掉混水情節或表格設計"
+            "kind": "zh_en_mismatch",
+            "severity": "low",
+            "lang": "en",
+            "where": "4",
+            "note": "英文『Maybe Bubbles was just picky?』像在疑惑，少了中文『好想說是泡泡挑食』想推給別人的意思，可改成 wanted to say Bubbles was picky"
           },
           {
-            "kind": "logic",
+            "kind": "repetition",
             "severity": "low",
             "lang": "both",
-            "where": "4",
-            "note": "前面說「一小撮」，此後改成「一小匙」，沒交代湯匙從哪來；可補一句媽媽拿來小湯匙"
+            "where": "7",
+            "note": "照顧寵物出錯後畫圖貼在旁邊，和 class-turtle-tank 的畫圖表收尾相近，可換個不同的收尾點子"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0293766,
-      "status": "check",
-      "reviewedAt": "2026-10-27T12:01:48.150Z"
+      "usd": 0.0296366,
+      "status": "ok",
+      "reviewedAt": "2026-11-03T06:19:24.946Z"
     },
     "responsibility-the-broken-flowerpot": {
       "hash": "f6a1b74458284a7c",
@@ -10529,10 +10351,6 @@
     "mumu-jerry-16-bella-swim-race": {
       "hash": "3522e862d8d2c463",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0264526,
-      "status": "ok",
-      "reviewedAt": "2026-10-31T14:06:55.678Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -10544,7 +10362,38 @@
             "note": "英文句子偏長，如「Every day after school, she practiced at the pool with her coach…」約20字，可拆成兩三句短句"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0264526,
+      "status": "ok",
+      "reviewedAt": "2026-10-31T14:06:55.678Z"
+    },
+    "caring-for-nature-firefly-red-light": {
+      "hash": "921da7cad8914e39",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "taiwan_usage",
+            "severity": "low",
+            "lang": "zh",
+            "where": "4",
+            "note": "「就要伸手去撈」的「撈」多用於水中，對草叢裡的螢火蟲較不自然，建議改成「伸手去抓」。"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "zh",
+            "where": "guide",
+            "note": "提示句「我們來的時候怎麼樣，走的時候也要一樣美」略拗口，可改成「來的時候多美，走的時候也一樣美」。"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0242846,
+      "status": "ok",
+      "reviewedAt": "2026-11-03T06:19:30.873Z"
     }
   }
 }
