@@ -86,3 +86,29 @@
 - 算圖：`bash docs/production/render-loop.sh wave3`，輸出 `apps/api/out/episodes-w3`、`episodes-en-w3`（三兄妹集照舊在 episodes-mumu-jerry）。迴圈在容器重啟時會停，每次醒來確認並重開；長時間等算圖時留在同一輪用 timeout 等待，比排提醒快。
 - 上傳頁：`python3 docs/production/build-upload-page.py wave3 <起> <訖> "第三波節目 …" "lead" apps/api/out/w3pN`，同第二波發布方式。
 - 2026-11-03 主控完成選稿與排程：44 集（5/1–6/30 週一三四六日），`wave3-production.json`、`wave3-cover-prompts.json`（播出順序）、`wave3-plan.py`（颱風 6 月颱風季放寬到 4 集，手動把颱風集都移到 6 月、兩集地震拆開）。17 則 check 稿改前提重生、新增 caring-for-nature-firefly-red-light，44 則都 AI 預審 ok、中英文讀過（安全類做法核對過），已 library:publish 排程在播出日 19:30。typhoon-after-storm-helpers、strangers-ice-cream-truck 原本已上架、重生後內容換新，改成播出日才出現。第三波沒有新的三兄妹原創集。主角：bo 31、mumu 12、jerry 1（lighthouse-keepers-cat，ref 照第一波 jerry 用 MAHZNTKJt9I）。
+- 2026-11-03 第三波製作完成：44 張封面（Canva DAHY2Vv2sws 第 36–48、23–35、10–22、5–9 頁）、44 集中英文算圖、上傳頁 5 頁，每頁的檔案數都已核對（集數×8+1）：
+  - 5/1–5/15（11 集）https://claude.ai/artifact/98axbUTTAduD4jQkUa6PEx
+  - 5/16–5/23（6 集）https://claude.ai/artifact/DM15rwAM3Vnm1qC5aGYAuv
+  - 5/24–5/31（6 集）https://claude.ai/artifact/RP25erCEGBzZDUrhBvTEcc
+  - 6/1–6/15（10 集）https://claude.ai/artifact/SPaRvzFjK5zJiJM8e6GhfP
+  - 6/16–6/30（11 集）https://claude.ai/artifact/PxP2oWinY7pbUjVcDBMAZh
+- 教訓：
+  - Canva generate-image 的參數是 `aspectRatio`（駝峰）。寫成 `aspect_ratio` 會被忽略，畫出正方形，放進頁面會被裁掉頭臉；14–26 就是因此整批重畫。參考圖用 `imageReferences: [{type:"MEDIA", id}]`。
+  - export-design 的 pages 跟 read-design 一樣從 0 開始算（第一批多算了一頁，已修正）。
+  - 單一上傳頁上限 256 MiB，每集中英文合計約 22MB，所以一頁最多約 11 集；超過就拆頁（5/16–5/31 拆成兩頁）。
+  - 安全類封面放進 Canva 前要看全圖：typhoon-flashlight-shadows 第一版坐在打雷的窗前，typhoon-after-storm-helpers 主角上衣不是芥末黃，兩張都重畫過。
+  - Vercel 免費方案一天只能部署 100 次：封面只在本機 commit，每批放進 Canva 後才 push 一次。
+
+## 第四波（2026-11-11 開始）
+
+- 使用者選「照舊排滿週一三四六日」，主題偏重暑假和夏天、補齊少的主題、情緒和人際、開學準備。播出 2027-07-01～08-31，44 集，`wave4-production.json`（日期手排在 `wave4-plan.py`：開學相關放 8 月下旬，游泳課與營隊結尾放 8 月，安全類不連排）。
+- 故事庫可用的舊故事只剩 typhoon-day-blanket-fort，其餘 43 集都是新寫（`library-plan.json` 新增 44 則）。15 則預審 check 的改前提重生（重複情節、邏輯、安全細節），forgiveness-sandcastle-wave-kick 改成 forgiveness-borrowed-kite。45 則都 AI 預審 ok、中英文讀過（安全類做法核對過），44 集已 library:publish 排在播出日 19:30；summer-shaved-ice-snowman 預審 ok 但沒排，留著當備用（仍是 draft）。
+- 主角：bo 29、mumu 15（mumu 已寫進 `apps/api/episode-heroes.json`）。沒有三兄妹原創集。
+- 封面 prompt 在 `wave4-cover-prompts.json`（播出順序；mumu ref MAHZNTKJt9I、bo null）。製作流程同第三波：Canva generate-image 參數用 `aspectRatio`；安全類封面放進 Canva 前看全圖（只畫安全做法）。DAHY2Vv2sws 已滿 100 頁，第四波每批 update_fill 覆蓋舊頁，接續第三波用過的頁之外（建議 49–61、62–74、75–87、88–100，放圖前先跟主控確認）。
+- 算圖：`bash docs/production/render-loop.sh wave4`（輸出 `apps/api/out/episodes-w4`、`episodes-en-w4`）；上傳頁：`build-upload-page.py wave4 …`，一頁最多約 11 集（7/1–7/15、7/16–7/31、8/1–8/15、8/16–8/31 各約 11 集）。
+- 2026-11-11 第四波製作完成：44 張封面（Canva DAHY2Vv2sws 第 49–61、62–74、75–87、88–92 頁；覆蓋前都確認過舊封面 jpg 已在 episode-art）、44 集中英文算圖、上傳頁 4 頁，每頁 89 個檔案都已核對（11×8+1）：
+  - 7/1–7/15（11 集）https://claude.ai/artifact/XaUVavasD3aPPf36h59ufa
+  - 7/16–7/31（11 集）https://claude.ai/artifact/6Rn8anyAsX6b9AAi1D4h2k
+  - 8/1–8/15（11 集）https://claude.ai/artifact/GwRP4BVP2HaPbVthSwM8Km
+  - 8/16–8/31（11 集）https://claude.ai/artifact/LSSvSKkm2hys2CDeWdZAnZ（263MB，最接近單頁上限）
+- 第四波封面重畫或改 prompt：water-safety-stream-rising-water 第一版站在暴漲溪邊，改成全家往高處山坡小徑走、溪水遠在下方；doctor-shots-school-checkup 的 E 字視力表會畫出字母，改成魚和星星圖案視力表。兩處都已同步寫進 wave4-cover-prompts.json。

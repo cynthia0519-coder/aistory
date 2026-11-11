@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-11-03T06:50:12.882Z",
+  "generatedAt": "2026-11-11T07:16:10.586Z",
   "summary": {
-    "stories": 382,
+    "stories": 426,
     "byStatus": {
-      "ok": 353,
+      "ok": 397,
       "check": 28,
       "fix": 1
     },
     "byCheckKind": {
-      "length": 262,
-      "duplicate_title": 12,
+      "length": 295,
+      "duplicate_title": 16,
       "sensitive_pattern": 9
     },
     "byIssueKind": {
-      "repetition": 137,
-      "preachy": 35,
-      "logic": 113,
-      "quality": 75,
-      "taiwan_usage": 42,
+      "repetition": 150,
+      "preachy": 39,
+      "logic": 122,
+      "quality": 81,
+      "taiwan_usage": 47,
       "age_fit": 24,
-      "safety": 22,
+      "safety": 25,
       "zh_en_mismatch": 10,
       "guardrail": 6
     },
@@ -57,10 +57,12 @@
     "spotCheck": [
       "anger-broken-model-ship",
       "anger-little-volcano",
+      "anger-rainy-day-block-tower",
       "anger-red-face-pillow",
       "bedtime-routine-moon-checklist",
       "bullying-lunch-table",
       "bullying-mean-nickname",
+      "caring-for-nature-bring-your-own-cup",
       "christmas-wish-letter",
       "dentist-loose-tooth-brave-chair",
       "earthquake-go-bag-captain",
@@ -81,6 +83,7 @@
       "losing-failing-calligraphy-blot",
       "losing-failing-class-election",
       "losing-failing-relay-baton",
+      "losing-failing-summer-swim-test",
       "map-in-the-message-bottle",
       "medicine-grandpa-pill-box",
       "mumu-jerry-07-big-ship-trip",
@@ -88,6 +91,7 @@
       "mumu-jerry-14-bella-test-secret",
       "new-sibling-crying-baby-concert",
       "new-sibling-night-market-lights",
+      "online-safety-game-voice-chat",
       "perseverance-the-character-yong",
       "perseverance-water-drop-stone-fable",
       "pet-loss-hamster-memory-box",
@@ -99,7 +103,9 @@
       "screen-time-bunny-timer",
       "screen-time-puppet-show",
       "screen-time-riverside-kites",
+      "screen-time-summer-vacation-plan",
       "sharing-turns-one-red-tricycle",
+      "sharing-turns-pool-noodle",
       "sockets-dry-hands-dryer",
       "strangers-family-password",
       "teamwork-dragon-dance-practice",
@@ -107,9 +113,10 @@
       "trying-food-bitter-melon-explorer",
       "typhoon-swollen-river",
       "water-safety-flooded-ditch",
-      "water-safety-river-picnic"
+      "water-safety-river-picnic",
+      "windows-balcony-window-screen-cat"
     ],
-    "usd": 12.475
+    "usd": 13.7982
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -4212,6 +4219,13 @@
           "lang": "en",
           "where": "title",
           "note": "標題很像 respecting-differences-bird-songs-fable「{name} and the Forest Choir」（相似度 0.80）"
+        },
+        {
+          "kind": "duplicate_title",
+          "severity": "low",
+          "lang": "en",
+          "where": "title",
+          "note": "標題很像 courage-first-summer-camp-night「{name}'s First Night at Forest Camp」（相似度 0.71）"
         }
       ],
       "llm": {
@@ -4979,10 +4993,6 @@
     "lighthouse-keepers-cat": {
       "hash": "b32c7338b603349d",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0547446,
-      "status": "ok",
-      "reviewedAt": "2026-11-03T06:50:12.863Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -4994,7 +5004,11 @@
             "note": "「三個一起坐下來」少了主語，讀起來不順，可改成「祖孫倆和芝麻一起坐下來」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0547446,
+      "status": "ok",
+      "reviewedAt": "2026-11-03T06:50:12.863Z"
     },
     "mooncake-mystery": {
       "hash": "31d0aacdaee61073",
@@ -6786,7 +6800,15 @@
     },
     "sea-lighthouse-keeper-grandma": {
       "hash": "6366fa77eb080330",
-      "checks": [],
+      "checks": [
+        {
+          "kind": "duplicate_title",
+          "severity": "low",
+          "lang": "en",
+          "where": "title",
+          "note": "標題很像 fear-of-dark-countryside-night-sounds「Night Sounds at Grandma's House」（相似度 0.70）"
+        }
+      ],
       "llm": {
         "verdict": "check",
         "issues": [
@@ -10394,6 +10416,1109 @@
       "usd": 0.0242846,
       "status": "ok",
       "reviewedAt": "2026-11-03T06:19:30.873Z"
+    },
+    "water-safety-swim-class-deep-end": {
+      "hash": "9b3b9790e2c65962",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "preachy",
+            "severity": "low",
+            "lang": "both",
+            "where": "3",
+            "note": "林教練一口氣背出「海邊河邊要大人陪、坐船穿救生衣、待在踩得到的地方」，像在念規則，可拆成較口語的對話"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "zh",
+            "where": "guide",
+            "note": "Tip「這週洗澡或在家時」玩丟枕頭遊戲，洗澡時丟枕頭不合理，建議刪掉「洗澡或」，和英文「at home」一致"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.044003,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:54:52.928Z"
+    },
+    "water-safety-stream-rising-water": {
+      "hash": "2eda9dbac00fb4bb",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 503 words，8-10 歲 3 分鐘範圍是 380–500（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0315326,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:55:01.248Z"
+    },
+    "typhoon-neighbor-check-call": {
+      "hash": "5301d4d5d367f395",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "preachy",
+            "severity": "low",
+            "lang": "both",
+            "where": "7",
+            "note": "王奶奶「颱風天千萬別跑去河邊或海邊看風浪，待在家裡最好」像在宣讀規則且突兀，可改成她回憶或由{name}想看時自然帶出"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "en",
+            "where": "4",
+            "note": "英文抬花盆喊「push」不合抬起的動作，改成「lift」較自然"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.039367,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:11:54.272Z"
+    },
+    "hot-things-ironing-new-uniform": {
+      "hash": "fd8f2154436354f2",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 372 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "safety",
+            "severity": "low",
+            "lang": "both",
+            "where": "3",
+            "note": "媽媽趕去廚房時，插著電的熨斗留在孩子旁邊。可加一句「媽媽先把熨斗立起來、拔掉插頭」再去廚房。"
+          },
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "1",
+            "note": "把熱東西比喻成「火龍」，和 soup-dragon 的蒸氣龍意象相近。熨斗情節是新的，可考慮換別的比喻。"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0267126,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:55:16.232Z"
+    },
+    "windows-balcony-window-screen-cat": {
+      "hash": "1faf99b59b2367bd",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "2",
+            "note": "第2段沙發一直留在窗邊，可加一句爸爸把沙發推離窗戶，呼應「窗邊家具不爬」和導讀建議"
+          },
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "3",
+            "note": "第3段「拿坐墊放窗前地板一起看」與煙火篇的解法相近，可換成更有麻糬特色的觀看方式"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0234406,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:55:23.366Z"
+    },
+    "sockets-electric-fan-plug": {
+      "hash": "db4543c262de0a79",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 414 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 253 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "zh",
+            "where": "5",
+            "note": "「去那邊坐好」接著卻寫「水杯乖乖站著」，前後不一，建議改成「水杯乖乖坐著」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.026200599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:55:31.147Z"
+    },
+    "strangers-summer-camp-pickup": {
+      "hash": "d50c4fea255c14a8",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.021884599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:14:12.559Z"
+    },
+    "getting-lost-amusement-park-map": {
+      "hash": "97b124483b780209",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 580 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 356 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "4",
+            "note": "「停下不動→走到服務台找穿制服人員→背出爸爸電話」與百貨公司篇幾乎相同，可多用遊樂園特有元素區隔"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0273046,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:55:47.573Z"
+    },
+    "online-safety-game-voice-chat": {
+      "hash": "080e9d99e297733f",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "preachy",
+            "severity": "low",
+            "lang": "both",
+            "where": "2",
+            "note": "「地址、學校、電話、照片，都是不該交給陌生人的東西」像旁白在列規則，可改成{name}回想爸爸當時說話的情景"
+          },
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "5",
+            "note": "「要保密」加上用獎勵換個資，最後封鎖檢舉，與 star-fox、free-gems 相近；陪朋友去說出來的角度已有區隔"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0268206,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:12:08.904Z"
+    },
+    "medicine-motion-sickness-candy-tin": {
+      "hash": "6a10c8db5d1c6d2d",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 552 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "7",
+            "note": "結尾『真正的草莓糖』與藥丸外觀相同，可能模糊「藥不是糖果」，可改成其他點心如餅乾或水果"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.025312599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:56:07.263Z"
+    },
+    "crossing-road-beach-town-scooters": {
+      "hash": "47b74b1009a86f0d",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 418 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 271 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "safety",
+            "severity": "low",
+            "lang": "both",
+            "where": "guide",
+            "note": "Tip「讓孩子當小小指揮，提醒你何時可以走」易讓幼兒以為自己能判斷安全，改成孩子跟著唸，由大人決定何時走"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024920599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:56:14.655Z"
+    },
+    "handwashing-beach-before-snack": {
+      "hash": "d9fb88dce0e6ad0d",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0203886,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:14:34.957Z"
+    },
+    "potty-road-trip-rest-stop": {
+      "hash": "9b7fdb80b6e10d45",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "taiwan_usage",
+            "severity": "low",
+            "lang": "zh",
+            "where": "title",
+            "note": "「準時說尿尿」語感不自然，「準時」指按時間，建議改「{name}及時說要尿尿」，第7段「準時告訴」同改「及時」"
+          },
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "4",
+            "note": "流程與 potty-park-restroom 相近（外出想尿、找公共廁所、沖水說掰掰、肥皂洗手），可再加一個休息站專屬的小趣味"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0227446,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:56:27.687Z"
+    },
+    "doctor-shots-school-checkup": {
+      "hash": "5fa3a5f78ffa37bc",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 608 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 393 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "en",
+            "where": "4",
+            "note": "英文「{name} felt a heart beat faster inside」語法不自然，應改為「felt {his} heart beat faster」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0240646,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:12:24.555Z"
+    },
+    "bedtime-routine-summer-to-school-clock": {
+      "hash": "b24770b38ea13270",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 612 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "2",
+            "note": "「一起畫了一張睡前圖」貼在床邊，與 picture-chart 故事的核心道具相近；主線不同，可保留，或改成其他道具（如月曆倒數）"
+          },
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "zh",
+            "where": "4",
+            "note": "「泡泡軟軟的，香香的」後又寫「香香的笑臉」，「香香」重複，可改成「乾乾淨淨的笑臉」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0336326,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:56:44.739Z"
+    },
+    "starting-kindergarten-school-visit-day": {
+      "hash": "2fbe9994a3d8392f",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 422 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 270 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0212246,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:56:50.354Z"
+    },
+    "starting-kindergarten-morning-practice": {
+      "hash": "8fb65571f90beb78",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 356 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "3",
+            "note": "「快快抱抱」道別儀式和 goodbye-wink 的專屬道別手勢相近，但本篇主軸是晨間練習，可接受；若想更有區隔，可換個儀式細節"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.025208599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:12:31.658Z"
+    },
+    "tidying-toys-summer-shell-collection": {
+      "hash": "a9fd3b70cb68e7bc",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 262 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0236006,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:12:38.360Z"
+    },
+    "trying-food-summer-fruit-market": {
+      "hash": "77e05bb0f733450a",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.021892599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:57:09.309Z"
+    },
+    "screen-time-summer-vacation-plan": {
+      "hash": "0986e891a4fabf80",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 501 words，8-10 歲 3 分鐘範圍是 380–500（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.028972599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:57:16.347Z"
+    },
+    "brushing-teeth-shaved-ice-sugar": {
+      "hash": "3cc769e9b1efed45",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 437 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 269 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0227086,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:57:22.230Z"
+    },
+    "anger-rainy-day-block-tower": {
+      "hash": "183c802480d3581c",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0256686,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:12:44.747Z"
+    },
+    "sharing-turns-pool-noodle": {
+      "hash": "0f700b1e1d685567",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0208766,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:57:32.051Z"
+    },
+    "manners-countryside-relatives": {
+      "hash": "d94310718bd5670f",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "5",
+            "note": "「杯子打翻、說對不起、拿毛巾擦」和 manners-magic-words-bakery 的打翻杯子擦乾很像，可考慮換成別的小意外"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.023112599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:12:52.256Z"
+    },
+    "fear-of-dark-countryside-night-sounds": {
+      "hash": "734c07ec34692d83",
+      "checks": [
+        {
+          "kind": "duplicate_title",
+          "severity": "low",
+          "lang": "en",
+          "where": "title",
+          "note": "標題很像 sea-lighthouse-keeper-grandma「{name} and Grandma's Lighthouse」（相似度 0.70）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "6",
+            "note": "第 3 段竹子的聲音是「吱呀」，第 6 段卻說「沙沙，是竹子」；「沙沙」一直沒解釋，建議統一成同一個聲音"
+          },
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "3",
+            "note": "「聽夜晚聲音、找出友善來源、聽著聲音入睡」的結構和 frog-choir 相近；場景與阿嬤角色已有區隔，可再加強差異"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024812599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:12:59.742Z"
+    },
+    "losing-failing-summer-swim-test": {
+      "hash": "164ec375c817452a",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 502 words，8-10 歲 3 分鐘範圍是 380–500（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.026328599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:57:55.301Z"
+    },
+    "honesty-shared-popsicle": {
+      "hash": "59bf8c6a4474abc2",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 558 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "en",
+            "where": "2",
+            "note": "英文「The tummy felt cool」讀來生硬，可改為「{his} tummy felt cool」較自然"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.023352599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:13:05.797Z"
+    },
+    "bullying-summer-camp-new-kid": {
+      "hash": "8d46ef558b55a631",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 825 字，8-10 歲 3 分鐘範圍是 600–800（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 512 words，8-10 歲 3 分鐘範圍是 380–500（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "preachy",
+            "severity": "low",
+            "lang": "both",
+            "where": "4",
+            "note": "林老師『告訴大人不是告狀，是找人幫忙，一起把問題解決』幾乎照念核心訊息，可改得更口語，如『你來找我是對的，我們一起想辦法』"
+          },
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "3",
+            "note": "『坐到新同學旁邊、看他的作品、再告訴老師』與 art-club 那篇架構相近；藏水壺和火箭設計已有區隔，可再強化差異"
+          },
+          {
+            "kind": "taiwan_usage",
+            "severity": "low",
+            "lang": "zh",
+            "where": "0",
+            "note": "台灣學校營隊用『麥克斯』『蒂娜』，聽起來像翻譯，可改成『阿翔』『小婷』這類在地名字"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0355846,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:13:16.363Z"
+    },
+    "caring-for-nature-stream-shrimp-release": {
+      "hash": "590e4a53749b56c1",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 561 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 352 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.022908599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:58:17.393Z"
+    },
+    "caring-for-nature-bring-your-own-cup": {
+      "hash": "10b05a1a946c5514",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 728 字，6-8 歲 3 分鐘範圍是 500–700（太長）"
+        },
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 462 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "taiwan_usage",
+            "severity": "low",
+            "lang": "zh",
+            "where": "3",
+            "note": "「暑期營」在台灣較常說「夏令營」，建議改成「到了夏令營」比較自然"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "both",
+            "where": "5",
+            "note": "公園撿垃圾和移蝸牛與自備杯主線關聯弱，像為了涵蓋訊息而插入；可縮短，也有助控制篇幅"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0341606,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:58:27.326Z"
+    },
+    "gratitude-garbage-truck-summer-thanks": {
+      "hash": "b2142a7ecbf7f941",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0291366,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:13:26.086Z"
+    },
+    "empathy-delivery-worker-rain": {
+      "hash": "4323fa1bf5413186",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "taiwan_usage",
+            "severity": "low",
+            "lang": "zh",
+            "where": "2",
+            "note": "「心裡咯噔一下」偏中國口語，台灣家長較少用，可改成「心裡揪了一下」或「心頭一緊」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0311246,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:58:43.824Z"
+    },
+    "perseverance-learning-to-swim": {
+      "hash": "e8a61b1b1e038e50",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 434 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.022068599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:58:49.029Z"
+    },
+    "courage-first-summer-camp-night": {
+      "hash": "cecd0e11804af6ff",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 441 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
+        },
+        {
+          "kind": "duplicate_title",
+          "severity": "low",
+          "lang": "en",
+          "where": "title",
+          "note": "標題很像 fear-of-dark-frog-choir「{name} and the Forest Night Choir」（相似度 0.71）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "5",
+            "note": "「把帳篷的紗窗捲起來」後又「把臉貼近紗窗」前後矛盾，改成「把帳篷門簾捲起來，露出紗窗」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.027352599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:58:55.662Z"
+    },
+    "responsibility-neighbor-plant-watering": {
+      "hash": "ae316224c6a6884e",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "safety",
+            "severity": "low",
+            "lang": "both",
+            "where": "3",
+            "note": "第3、6段{name}傍晚獨自到隔壁澆花，沒提到大人陪看；可補一句「媽媽在門口看著」，與第2段一致"
+          },
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "6",
+            "note": "「忘記→畫提醒卡解決」與class-turtle-tank的圖畫提醒表相近，可考慮換另一種補救方式"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0283526,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:59:04.650Z"
+    },
+    "keeping-promises-summer-letter-friend": {
+      "hash": "2adcfc909f6c8aff",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 431 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0253526,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:59:10.460Z"
+    },
+    "respecting-differences-cousin-wheelchair-beach": {
+      "hash": "b73d886e7ca7e413",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "repetition",
+            "severity": "low",
+            "lang": "both",
+            "where": "6",
+            "note": "坐輪椅的朋友被排擠、{name}邀大家一起玩，與『differences-game-everyone-plays』相近；海邊步道場景已有區隔，可再強化不同處"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0261326,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:59:17.377Z"
+    },
+    "teamwork-summer-camp-raft": {
+      "hash": "d833a33bdb58f94e",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "zh",
+            "where": "0",
+            "note": "標題是「竹筏」，內文卻一直寫「木筏」，而材料是竹子。建議內文統一改成「竹筏」。"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.025680599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T06:59:25.032Z"
+    },
+    "summer-cicada-goodnight-concert": {
+      "hash": "48978d252c64d25a",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0528606,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:15:25.177Z"
+    },
+    "summer-shaved-ice-snowman": {
+      "hash": "ebb5e054db8c1ca4",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "zh",
+          "where": "story",
+          "note": "中文 408 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
+        }
+      ],
+      "model": "claude-opus-5-5",
+      "usd": 0.0532086,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:16:10.574Z",
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      }
+    },
+    "summer-grandpa-harbor-sunrise": {
+      "hash": "32aaa6becc9fdef2",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 449 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "1",
+            "note": "漁船是半夜出海、清晨回港，爺爺說「今天出海一定很順利」時機不太對，可改成「今天漁船一定平安回家」"
+          },
+          {
+            "kind": "taiwan_usage",
+            "severity": "low",
+            "lang": "zh",
+            "where": "3",
+            "note": "「伙伴」在台灣較常寫作「夥伴」，建議改為「他和夥伴」"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "title",
+            "note": "標題「港口早晨」，但故事一路寫到中午和傍晚，可考慮改成「{name}和爺爺的港口一天」"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0638086,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:15:44.460Z"
+    },
+    "summer-afternoon-thunder-nap": {
+      "hash": "79939151cb557c30",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "zh",
+            "where": "guide",
+            "note": "問題三『雨停了』與故事不符，結尾雨聲仍滴答，建議改成『雨變小了』"
+          },
+          {
+            "kind": "quality",
+            "severity": "low",
+            "lang": "en",
+            "where": "5",
+            "note": "『like a tiny tummy far away』意思不清，建議改成『like a tiny tummy rumbling far away』"
+          }
+        ]
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.059120599999999995,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:15:51.481Z"
+    },
+    "summer-paper-fan-wind-friend": {
+      "hash": "95bfd71dfef657cb",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.055464599999999996,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:15:57.169Z"
+    },
+    "forgiveness-borrowed-kite": {
+      "hash": "363d8c6fa7a71178",
+      "checks": [
+        {
+          "kind": "length",
+          "severity": "low",
+          "lang": "en",
+          "where": "story",
+          "note": "英文 365 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
+        }
+      ],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024820599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:13:47.459Z"
     }
   }
 }
