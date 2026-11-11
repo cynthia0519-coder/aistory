@@ -106,3 +106,9 @@
 - 主角：bo 29、mumu 15（mumu 已寫進 `apps/api/episode-heroes.json`）。沒有三兄妹原創集。
 - 封面 prompt 在 `wave4-cover-prompts.json`（播出順序；mumu ref MAHZNTKJt9I、bo null）。製作流程同第三波：Canva generate-image 參數用 `aspectRatio`；安全類封面放進 Canva 前看全圖（只畫安全做法）。DAHY2Vv2sws 已滿 100 頁，第四波每批 update_fill 覆蓋舊頁，接續第三波用過的頁之外（建議 49–61、62–74、75–87、88–100，放圖前先跟主控確認）。
 - 算圖：`bash docs/production/render-loop.sh wave4`（輸出 `apps/api/out/episodes-w4`、`episodes-en-w4`）；上傳頁：`build-upload-page.py wave4 …`，一頁最多約 11 集（7/1–7/15、7/16–7/31、8/1–8/15、8/16–8/31 各約 11 集）。
+- 2026-11-11 第四波製作完成：44 張封面（Canva DAHY2Vv2sws 第 49–61、62–74、75–87、88–92 頁；覆蓋前都確認過舊封面 jpg 已在 episode-art）、44 集中英文算圖、上傳頁 4 頁，每頁 89 個檔案都已核對（11×8+1）：
+  - 7/1–7/15（11 集）https://claude.ai/artifact/XaUVavasD3aPPf36h59ufa
+  - 7/16–7/31（11 集）https://claude.ai/artifact/6Rn8anyAsX6b9AAi1D4h2k
+  - 8/1–8/15（11 集）https://claude.ai/artifact/GwRP4BVP2HaPbVthSwM8Km
+  - 8/16–8/31（11 集）https://claude.ai/artifact/LSSvSKkm2hys2CDeWdZAnZ（263MB，最接近單頁上限）
+- 第四波封面重畫或改 prompt：water-safety-stream-rising-water 第一版站在暴漲溪邊，改成全家往高處山坡小徑走、溪水遠在下方；doctor-shots-school-checkup 的 E 字視力表會畫出字母，改成魚和星星圖案視力表。兩處都已同步寫進 wave4-cover-prompts.json。
