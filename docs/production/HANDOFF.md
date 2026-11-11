@@ -98,3 +98,11 @@
   - 單一上傳頁上限 256 MiB，每集中英文合計約 22MB，所以一頁最多約 11 集；超過就拆頁（5/16–5/31 拆成兩頁）。
   - 安全類封面放進 Canva 前要看全圖：typhoon-flashlight-shadows 第一版坐在打雷的窗前，typhoon-after-storm-helpers 主角上衣不是芥末黃，兩張都重畫過。
   - Vercel 免費方案一天只能部署 100 次：封面只在本機 commit，每批放進 Canva 後才 push 一次。
+
+## 第四波（2026-11-11 開始）
+
+- 使用者選「照舊排滿週一三四六日」，主題偏重暑假和夏天、補齊少的主題、情緒和人際、開學準備。播出 2027-07-01～08-31，44 集，`wave4-production.json`（日期手排在 `wave4-plan.py`：開學相關放 8 月下旬，游泳課與營隊結尾放 8 月，安全類不連排）。
+- 故事庫可用的舊故事只剩 typhoon-day-blanket-fort，其餘 43 集都是新寫（`library-plan.json` 新增 44 則）。15 則預審 check 的改前提重生（重複情節、邏輯、安全細節），forgiveness-sandcastle-wave-kick 改成 forgiveness-borrowed-kite。45 則都 AI 預審 ok、中英文讀過（安全類做法核對過），44 集已 library:publish 排在播出日 19:30；summer-shaved-ice-snowman 預審 ok 但沒排，留著當備用（仍是 draft）。
+- 主角：bo 29、mumu 15（mumu 已寫進 `apps/api/episode-heroes.json`）。沒有三兄妹原創集。
+- 封面 prompt 在 `wave4-cover-prompts.json`（播出順序；mumu ref MAHZNTKJt9I、bo null）。製作流程同第三波：Canva generate-image 參數用 `aspectRatio`；安全類封面放進 Canva 前看全圖（只畫安全做法）。DAHY2Vv2sws 已滿 100 頁，第四波每批 update_fill 覆蓋舊頁，接續第三波用過的頁之外（建議 49–61、62–74、75–87、88–100，放圖前先跟主控確認）。
+- 算圖：`bash docs/production/render-loop.sh wave4`（輸出 `apps/api/out/episodes-w4`、`episodes-en-w4`）；上傳頁：`build-upload-page.py wave4 …`，一頁最多約 11 集（7/1–7/15、7/16–7/31、8/1–8/15、8/16–8/31 各約 11 集）。

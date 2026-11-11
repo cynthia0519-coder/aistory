@@ -1295,7 +1295,8 @@
         "tip": "This week, find your home's flashlight together and practice saying, \"On typhoon days we stay home until grown-ups say it's safe.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-19T19:30:00+08:00"
   },
   {
     "id": "online-safety-star-fox",
@@ -21055,7 +21056,8 @@
         "tip": "This week, play a quick \"shout and throw\" game at home: one person pretends to need help, and the other shouts \"Grown-up, come quick!\" and tosses a pillow or soft toy, practicing how to help without jumping in."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-02T19:30:00+08:00"
   },
   {
     "id": "water-safety-stream-rising-water",
@@ -21107,7 +21109,8 @@
         "tip": "This week, play a quick \"Shout and Throw\" game at home: one person pretends to need help in the water while the other shouts for a grown-up and tosses a pillow or ball. Afterward, say the phrase together: \"Grown-up watching, life jacket on, feet on the bottom.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-12T19:30:00+08:00"
   },
   {
     "id": "typhoon-neighbor-check-call",
@@ -21161,7 +21164,8 @@
         "tip": "This week, check your home's \"typhoon corner\" together: test the flashlight, set aside a few bottles of water, and decide which balcony items you would bring inside first."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-18T19:30:00+08:00"
   },
   {
     "id": "hot-things-ironing-new-uniform",
@@ -21215,7 +21219,8 @@
         "tip": "Tonight, go on a \"little dragon\" hunt at home together (kettle, stove, rice cooker), and each time you find one, say together, \"Step back and call a grown-up!\" At mealtime, blow on hot soup together and wait until you say it's ready."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-30T19:30:00+08:00"
   },
   {
     "id": "windows-balcony-window-screen-cat",
@@ -21270,7 +21275,8 @@
         "tip": "Tonight, practice the phrase \"Feet on the floor, grown-up near\" each time you go to a window together. Also check for furniture next to windows that a child could climb, and move it away."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-31T19:30:00+08:00"
   },
   {
     "id": "sockets-electric-fan-plug",
@@ -21325,7 +21331,8 @@
         "tip": "Today, go on a socket hunt around the house and say together, \"Sockets are for grown-ups; I just look with my eyes.\" You can also practice a quick \"dry hands first\" game after washing up."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-08T19:30:00+08:00"
   },
   {
     "id": "strangers-summer-camp-pickup",
@@ -21335,8 +21342,8 @@
     ],
     "setting": "school",
     "title": {
-      "zh": "{name}大聲說「不要」",
-      "en": "{name} Says No Out Loud"
+      "zh": "{name}跟緊營隊",
+      "en": "{name} Stays with the Group"
     },
     "paragraphs": {
       "zh": [
@@ -21379,7 +21386,8 @@
         "tip": "Tonight, make a short list together of the grown-ups your child may go with, then play a quick pretend game where your child practices shouting \"No!\" and running to find you."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-05T19:30:00+08:00"
   },
   {
     "id": "getting-lost-amusement-park-map",
@@ -21433,7 +21441,8 @@
         "tip": "Each night this week, turn your full name and phone number into a little chant and say it together at bedtime. On your next outing, pick an easy-to-spot meeting place before you start."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-09T19:30:00+08:00"
   },
   {
     "id": "online-safety-game-voice-chat",
@@ -21485,7 +21494,8 @@
         "tip": "This week, agree on a simple code phrase with your child, like \"This feels weird.\" Whenever they say it, pause what you're doing, listen, and start with \"Thank you for telling me,\" so they know speaking up never gets them in trouble."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-23T19:30:00+08:00"
   },
   {
     "id": "medicine-motion-sickness-candy-tin",
@@ -21539,7 +21549,8 @@
         "tip": "This week, play a quick \"Candy or medicine?\" game with your child and practice the phrase: \"See medicine, don't taste it, get a grown-up.\" Also check that all medicines and vitamins at home are stored up high, out of reach."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-24T19:30:00+08:00"
   },
   {
     "id": "crossing-road-beach-town-scooters",
@@ -21594,7 +21605,8 @@
         "tip": "This week, whenever you reach a curb, hold hands and chant together: \"Stop, look left, look right, look left again, and listen.\" Let your child be the little leader who tells you when it is safe to go."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-14T19:30:00+08:00"
   },
   {
     "id": "handwashing-beach-before-snack",
@@ -21605,29 +21617,29 @@
     ],
     "setting": "sea",
     "title": {
-      "zh": "{name}的泡泡洗手歌",
-      "en": "{name}'s Bubbly Hand-Washing Song"
+      "zh": "{name}的海邊西瓜時間",
+      "en": "{name}'s Beach Watermelon Break"
     },
     "paragraphs": {
       "zh": [
         "太陽暖暖的，浪花嘩啦啦。{name}在沙灘上蓋沙堡。拍拍拍，堆堆堆。高高的塔，圓圓的門。最後插上一根白羽毛。沙堡完成了！",
         "媽媽打開野餐籃。「看！是西瓜！」紅紅的西瓜，甜甜的香味。{name}伸手要拿。咦？小手上都是沙。摸一摸，沙沙的。聞一聞，是海水的鹹味。",
-        "爸爸笑著說：「手洗乾淨，再吃點心。」爸爸牽起{name}的手，走到海邊的水龍頭。好朋友小米也跑來了。媽媽剛從廁所出來，也在這裡洗手。",
+        "爸爸笑著說：「手洗乾淨，再吃點心。」爸爸牽起{name}的手，走到海邊的水龍頭。好朋友小米也跑來了。",
         "爸爸打開水龍頭。嘩啦啦，沙子沖走了。再擠一點肥皂。搓一搓，泡泡跑出來了！白白的泡泡，像小小的浪花。{name}咯咯笑：「我的手變成雲了！」",
         "爸爸唱起小小歌。{name}和小米也跟著唱：「手心搓搓，手背搓搓，手指縫縫鑽一鑽。」泡泡鑽進手指縫，癢癢的。一隻小螃蟹爬過來，好像也在聽。",
         "「大拇指，轉一轉。指甲刷刷，細菌走開！」歌唱完了，泡泡好多好多。{name}輕輕一吹。噗！一顆泡泡停在爸爸的鼻子上。大家都笑了。",
         "嘩啦啦，沖一沖。泡泡溜走了，沙子不見了。爸爸拿出毛巾。擦擦手心，擦擦手背。小手乾乾的，香香的。{name}舉起雙手：「好乾淨！」",
-        "回到野餐墊，{name}拿起一片西瓜。喀滋，喀滋！好甜好甜！{name}用乾淨的小手，拿一片給小米。兩個好朋友一起喀滋喀滋。這是全世界最甜的西瓜！"
+        "回到野餐墊，{name}拿起一片西瓜。啊嗚，啊嗚！好甜好甜！{name}用乾淨的小手，拿一片給小米。兩個好朋友一起啊嗚啊嗚。這是全世界最甜的西瓜！"
       ],
       "en": [
         "The sun is warm. The waves go splash. {name} builds a sandcastle. Pat, pat, pat. Pile, pile, pile. A tall tower, a round door. On top goes a white feather. All done!",
         "Mom opens the picnic basket. \"Look! Watermelon!\" It is red and smells so sweet. {name} reaches out. Oops! Those little hands are full of sand. Scritchy, scratchy. They smell like salty sea.",
-        "Dad smiles. \"Clean hands, then snacks.\" He takes {name}'s hand to the beach tap. Best friend Mimi runs over too. Mom is there, washing up after the restroom.",
+        "Dad smiles. \"Clean hands, then snacks.\" He takes {name}'s hand to the beach tap. Best friend Mimi runs over too.",
         "Dad turns on the tap. Whoosh! The sand rinses away. Next comes a squirt of soap. Rub, rub, rub. Bubbles pop up! White and fluffy, like tiny waves. {name} giggles. \"My hands are clouds!\"",
         "Dad starts a little song. {name} and Mimi sing along. \"Rub the palms, rub the backs, wiggle in between the cracks!\" Bubbles tickle between fingers. A little crab scuttles close, as if listening.",
         "\"Twist the thumbs, scrub the nails, germs go sailing far away!\" The song ends. Bubbles everywhere! {name} gives a soft puff. Pop! One bubble lands on Dad's nose. Everyone laughs.",
         "Splash, splash, rinse, rinse. The bubbles slide away. The sand is gone. Dad brings a towel. Pat the palms, pat the backs. Dry and fresh! {name} waves both hands. \"So clean!\"",
-        "Back on the blanket, {name} picks up some watermelon. Crunch, crunch! So sweet! With clean hands, {name} passes a slice to Mimi. Two friends munch together. Crunch, crunch. The sweetest watermelon ever!"
+        "Back on the blanket, {name} picks up some watermelon. Slurp, slurp! So sweet! With clean hands, {name} passes a slice to Mimi. Two friends munch together. Munch, munch. The sweetest watermelon ever!"
       ]
     },
     "theme": "handwashing",
@@ -21635,7 +21647,7 @@
       "zh": {
         "questions": [
           "{name}和爸爸洗手時，唱了什麼歌？歌裡要搓哪些地方？",
-          "除了吃西瓜前，你覺得什麼時候也要洗手？像媽媽上完廁所，或在外面玩完以後？",
+          "除了吃西瓜前，你覺得什麼時候也要洗手？像上完廁所，或在外面玩完以後？",
           "{name}用乾淨的手拿西瓜給小米，為什麼這樣對好朋友很好？"
         ],
         "tip": "這週每次飯前和從外面回家，一起唱故事裡的洗手歌，把手心、手背、指縫、大拇指和指甲都搓一遍，再沖水擦乾。"
@@ -21649,7 +21661,8 @@
         "tip": "This week, before every meal and after coming home from outside, sing the story's hand-washing song together while scrubbing palms, backs, between fingers, thumbs, and nails, then rinse and dry."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-28T19:30:00+08:00"
   },
   {
     "id": "potty-road-trip-rest-stop",
@@ -21703,7 +21716,8 @@
         "tip": "This week, before going out, practice a simple 'potty words' phrase together, like 'I need to pee!', and cheer every time your child uses it. After the potty, sing 'flush, then scrub' while washing hands with soap."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-04T19:30:00+08:00"
   },
   {
     "id": "doctor-shots-school-checkup",
@@ -21757,7 +21771,8 @@
         "tip": "This week, practice the \"five birthday candles\" game together: count slowly and blow out each pretend candle, so your child has a calm trick ready for the next doctor visit or shot."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-26T19:30:00+08:00"
   },
   {
     "id": "bedtime-routine-summer-to-school-clock",
@@ -21812,7 +21827,8 @@
         "tip": "Tonight, draw a bedtime-steps chart together and tape it by the bed, then point to each step together as you finish it."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-15T19:30:00+08:00"
   },
   {
     "id": "starting-kindergarten-school-visit-day",
@@ -21867,7 +21883,8 @@
         "tip": "Each night this week at bedtime, count through a school day together: bag, play, lunch, nap, pick-up. Always end with the same words: \"And then I come get you!\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-22T19:30:00+08:00"
   },
   {
     "id": "starting-kindergarten-morning-practice",
@@ -21921,7 +21938,8 @@
         "tip": "Each night this week, practice a quick goodbye hug together: one hug, one kiss, one wave, and say, \"When pick-up time comes, I will always come back for you.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-25T19:30:00+08:00"
   },
   {
     "id": "tidying-toys-summer-shell-collection",
@@ -21976,7 +21994,8 @@
         "tip": "Tonight at clean-up time, make up a little \"in a row\" song together and sing it while each toy goes back to its home."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-17T19:30:00+08:00"
   },
   {
     "id": "trying-food-summer-fruit-market",
@@ -22031,7 +22050,8 @@
         "tip": "This week, pick one fruit your child has never tried and play \"Food Explorer\": name its color, sniff it, then taste just one tiny bite, reminding them it's okay not to like it."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-11T19:30:00+08:00"
   },
   {
     "id": "screen-time-summer-vacation-plan",
@@ -22083,7 +22103,8 @@
         "tip": "This week, agree on a daily screen time together and set a timer before starting; when it rings, take three deep breaths with your child and pick something from a ready-made \"fun list\" to do next."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-01T19:30:00+08:00"
   },
   {
     "id": "brushing-teeth-shaved-ice-sugar",
@@ -22140,7 +22161,8 @@
         "tip": "Tonight, brush side by side at the mirror and chant \"Top teeth, brush, brush; bottom teeth, brush, brush; round and round,\" then help finish with one more gentle pass. Do it again together tomorrow morning."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-15T19:30:00+08:00"
   },
   {
     "id": "anger-rainy-day-block-tower",
@@ -22194,7 +22216,8 @@
         "tip": "Tonight, practice a calm-down routine together: stomp three times, then breathe in slowly while counting to five. Then take turns finishing the sentence \"I'm angry because...\" about a small thing that bothered you recently."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-26T19:30:00+08:00"
   },
   {
     "id": "sharing-turns-pool-noodle",
@@ -22249,7 +22272,8 @@
         "tip": "This week during playtime, practice a \"count to five\" turn game with your child: count five, say \"Your turn!\", and practice asking, \"Can I have a turn when you're done?\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-05T19:30:00+08:00"
   },
   {
     "id": "manners-countryside-relatives",
@@ -22304,7 +22328,8 @@
         "tip": "This week, play a \"magic words\" game at mealtimes: give each other a high five every time someone says \"please\" or \"thank you.\" When something gets spilled, practice saying \"sorry\" and cleaning it up together."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-07T19:30:00+08:00"
   },
   {
     "id": "fear-of-dark-countryside-night-sounds",
@@ -22361,7 +22386,8 @@
         "tip": "Tonight after lights out, listen quietly together for one minute and take turns guessing each sound. Agree on a simple phrase like \"I'm right here\" so your child knows a grown-up will answer when called."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-18T19:30:00+08:00"
   },
   {
     "id": "losing-failing-summer-swim-test",
@@ -22413,7 +22439,8 @@
         "tip": "This week, pick something your child is practicing and add a small sticker to a paper chart after each try to mark every \"a little better than last time.\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-19T19:30:00+08:00"
   },
   {
     "id": "honesty-shared-popsicle",
@@ -22467,7 +22494,8 @@
         "tip": "This week, try a \"deep breath, then the truth\" routine: when your child admits a mistake, first say \"Thank you for telling me,\" then find a fix together."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-21T19:30:00+08:00"
   },
   {
     "id": "bullying-summer-camp-new-kid",
@@ -22519,7 +22547,8 @@
         "tip": "This week, practice one help-asking sentence together, such as \"I keep seeing someone get picked on, and I need your help,\" taking turns playing the teacher and the child."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-29T19:30:00+08:00"
   },
   {
     "id": "caring-for-nature-stream-shrimp-release",
@@ -22574,7 +22603,8 @@
         "tip": "On your next walk this weekend, bring a small bag for your own trash, and before heading home, check together: \"Did we leave this place as beautiful as we found it?\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-10T19:30:00+08:00"
   },
   {
     "id": "caring-for-nature-bring-your-own-cup",
@@ -22629,7 +22659,8 @@
         "tip": "This week, pack a little \"going-out bag\" with your child that holds a water bottle or reusable cup, and stick a small chart on the fridge to add a mark each time you bring your own cup."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-29T19:30:00+08:00"
   },
   {
     "id": "gratitude-garbage-truck-summer-thanks",
@@ -22684,7 +22715,8 @@
         "tip": "This week, rinse bottles and flatten boxes together with your child, then wave and say thank you to the sanitation workers next time the truck comes."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-14T19:30:00+08:00"
   },
   {
     "id": "empathy-delivery-worker-rain",
@@ -22736,7 +22768,8 @@
         "tip": "This week, pick one person who helps your family, like a delivery rider, a cleaner, or a building guard, and practice looking at their face and saying, \"Thank you, I hope your day is going okay!\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-04T19:30:00+08:00"
   },
   {
     "id": "perseverance-learning-to-swim",
@@ -22790,7 +22823,8 @@
         "tip": "This week, pick one small thing your child finds hard and practice one tiny step together each day, then say together, \"I did it, one step at a time!\""
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-16T19:30:00+08:00"
   },
   {
     "id": "courage-first-summer-camp-night",
@@ -22844,7 +22878,8 @@
         "tip": "Tonight at bedtime, practice three slow breaths in and out together, and agree on a simple phrase like \"I need some help\" that your child can say anytime they feel scared."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-25T19:30:00+08:00"
   },
   {
     "id": "responsibility-neighbor-plant-watering",
@@ -22898,7 +22933,8 @@
         "tip": "This week, pick one small household job with your child, like watering a plant or feeding a pet, and draw a reminder card together to tape up at home. Add a smiley face each day the job gets done."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-07-12T19:30:00+08:00"
   },
   {
     "id": "keeping-promises-summer-letter-friend",
@@ -22953,7 +22989,8 @@
         "tip": "This week, choose one small promise together (like tidying toys before bed) and add a star to the calendar each time it's kept; if a day is missed, say so out loud together and talk about how to make it right."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-28T19:30:00+08:00"
   },
   {
     "id": "respecting-differences-cousin-wheelchair-beach",
@@ -23008,7 +23045,8 @@
         "tip": "This week, play a \"Same and Different\" game: pick a family member or friend, take turns naming one way you are the same and one way you are different, then say something great about the difference."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-01T19:30:00+08:00"
   },
   {
     "id": "teamwork-summer-camp-raft",
@@ -23060,7 +23098,8 @@
         "tip": "This week, pick a job that needs many hands, like folding a big sheet or making dinner together, and before you start, let everyone share an idea and try them one at a time."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-21T19:30:00+08:00"
   },
   {
     "id": "summer-cicada-goodnight-concert",
@@ -23095,7 +23134,26 @@
         "Outside, all is quiet. {name} hums the cicada song. Zzzz... zzzz... So soft, so soft. Mom gives {name} a kiss. Sleepy, sleepy. Goodnight, little cicadas. Goodnight, {name}."
       ]
     },
-    "draft": true
+    "guide": {
+      "zh": {
+        "questions": [
+          "蟬怎麼唱歌？你可以小小聲唱給我聽嗎？",
+          "那件棕色的小外套，摸起來是什麼感覺？",
+          "你今天的睡衣是什麼顏色？"
+        ],
+        "tip": "關燈後，和{name}一起用越來越小聲的「唧……唧……」輪流哼蟬的歌，直到變成悄悄話，再說晚安。"
+      },
+      "en": {
+        "questions": [
+          "How do the cicadas sing? Can you sing it to me very softly?",
+          "How did the tiny brown coat feel?",
+          "What color are your pajamas tonight?"
+        ],
+        "tip": "After lights out, take turns with {name} humming the cicada song, \"zzzz... zzzz...\", softer and softer until it is just a whisper, then say goodnight."
+      }
+    },
+    "draft": false,
+    "publishAt": "2027-07-11T19:30:00+08:00"
   },
   {
     "id": "summer-shaved-ice-snowman",
@@ -23130,6 +23188,24 @@
         "Soon only a little puddle is left. {name} looks into the bowl. \"Where do snowman friends live?\" Dad asks, \"Can you guess?\" {name} closes {his} eyes. Far away, snow falls softly. Snowmen dance in the snow.",
         "\"It's nice and cold there,\" says {name}. Dad pats {name}'s head. \"Let's come back for another snowman.\" \"With mango cheeks!\" says {name}. Ding-a-ling goes the bell. Hand in hand, they walk home happily."
       ]
+    },
+    "guide": {
+      "zh": {
+        "questions": [
+          "冰雪人的臉頰和鼻子是什麼做的？",
+          "雪人開始流汗的時候，{name}和爸爸怎麼辦？",
+          "如果你也來點一個冰，你想要它變成什麼樣子？"
+        ],
+        "tip": "關燈前，和{name}小小聲輪流說：「我的雪人有……」，一人加一樣，慢慢堆出一個想像的雪人。"
+      },
+      "en": {
+        "questions": [
+          "What were the ice snowman's cheeks and nose made of?",
+          "When the snowman started to sweat, what did {name} and Dad do?",
+          "If you ordered shaved ice too, what shape would you want it to be?"
+        ],
+        "tip": "Before lights out, take turns whispering \"My snowman has…\" with {name}, adding one thing each time to build a pretend snowman together."
+      }
     },
     "draft": true
   },
@@ -23166,7 +23242,26 @@
         "That evening, Grandpa took one fish from the bag and cooked it until it smelled wonderful. {name} ate very slowly, not leaving a single bite behind. \"Grandpa, can I help Auntie Mei again tomorrow?\" Outside, the sky turned soft purple, and the boats rested quietly in the harbor, waiting for their next trip to sea."
       ]
     },
-    "draft": true
+    "guide": {
+      "zh": {
+        "questions": [
+          "如果你也站在港口看漁船回家，你最想坐上哪一艘船？",
+          "蝦子一直從{name}的手指溜走時，你覺得{name}心裡是什麼感覺？",
+          "這個故事裡，你最喜歡哪一個時刻？"
+        ],
+        "tip": "關燈前，輕輕抱著孩子，一起替想像中的小船取個名字，再小聲說說它今晚會開到哪裡去。"
+      },
+      "en": {
+        "questions": [
+          "If you were at the harbor watching the boats come home, which boat would you want to ride?",
+          "When the shrimp kept slipping out of {name}'s fingers, how do you think {name} felt?",
+          "What was your favourite moment in this story?"
+        ],
+        "tip": "Before lights out, cuddle up and give a pretend little boat a name together, then whisper about where it might sail tonight."
+      }
+    },
+    "draft": false,
+    "publishAt": "2027-07-22T19:30:00+08:00"
   },
   {
     "id": "summer-afternoon-thunder-nap",
@@ -23201,7 +23296,26 @@
         "Pitter, pat goes the gentle rain. The mat is cool, and the breeze is cool. Mom brings a thin, soft blanket. {name}'s eyes feel heavy, so heavy. Mochi purrs close by. \"Have a sweet nap,\" Mom whispers. And {name} drifts off to sleep."
       ]
     },
-    "draft": true
+    "guide": {
+      "zh": {
+        "questions": [
+          "雨打在屋頂上咚咚咚，你覺得聽起來像什麼？",
+          "麻糬靠過來的時候，你覺得牠的毛摸起來是什麼感覺？",
+          "雨停了，風聞起來有青草和泥土的味道。你最喜歡聞什麼味道？"
+        ],
+        "tip": "今晚關燈後，一起閉上眼睛靜靜聽房間裡的聲音，輪流小聲說出聽到了什麼，再慢慢數到十，抱一抱說晚安。"
+      },
+      "en": {
+        "questions": [
+          "The rain went drum, drum, drum on the roof. What does it sound like to you?",
+          "When Mochi snuggled close, how do you think Mochi's fur felt?",
+          "After the rain, the air smelled like grass and earth. What smell do you like best?"
+        ],
+        "tip": "Tonight after the lights go out, close your eyes together and listen to the quiet sounds in the room. Take turns whispering what you hear, then slowly count to ten and share a goodnight cuddle."
+      }
+    },
+    "draft": false,
+    "publishAt": "2027-08-07T19:30:00+08:00"
   },
   {
     "id": "summer-paper-fan-wind-friend",
@@ -23236,7 +23350,26 @@
         "Everyone is cool now. Grandma is cool. The cat is cool. Teddy and the plants are cool too. {name} gives a big yawn. Flap... flap... slower and slower. {name} falls asleep, fan in hand. Grandma fans {him} softly."
       ]
     },
-    "draft": true
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}會在扇子上畫什麼顏色呢？",
+          "小貓翻過身露出肚子，好好笑！你最喜歡誰被搧風？",
+          "風吹在臉上，感覺怎麼樣？"
+        ],
+        "tip": "睡前用小手輕輕替對方搧一搧，小聲說「啪噠，啪噠」，看誰先覺得涼涼的。"
+      },
+      "en": {
+        "questions": [
+          "What colors would {name} draw on a fan?",
+          "The cat rolled over to show its tummy! Who was your favorite to fan?",
+          "How does the wind feel on your face?"
+        ],
+        "tip": "At bedtime, take turns gently fanning each other with your hands, whispering \"flap, flap,\" and see who feels cool first."
+      }
+    },
+    "draft": false,
+    "publishAt": "2027-07-03T19:30:00+08:00"
   },
   {
     "id": "forgiveness-borrowed-kite",
@@ -23291,6 +23424,7 @@
         "tip": "This week, practice one phrase together: \"I was angry, but I forgive you.\" When someone at home says sorry, share your feelings first, then \"drop the rock\" with a hug."
       }
     },
-    "draft": true
+    "draft": false,
+    "publishAt": "2027-08-08T19:30:00+08:00"
   }
 ]

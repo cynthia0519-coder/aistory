@@ -1,25 +1,24 @@
 {
-  "generatedAt": "2026-11-11T07:13:47.467Z",
+  "generatedAt": "2026-11-11T07:16:10.586Z",
   "summary": {
     "stories": 426,
     "byStatus": {
-      "ok": 394,
-      "check": 31,
+      "ok": 397,
+      "check": 28,
       "fix": 1
     },
     "byCheckKind": {
-      "length": 297,
-      "duplicate_title": 24,
-      "sensitive_pattern": 9,
-      "guide_missing": 5
+      "length": 295,
+      "duplicate_title": 16,
+      "sensitive_pattern": 9
     },
     "byIssueKind": {
-      "repetition": 151,
+      "repetition": 150,
       "preachy": 39,
-      "logic": 121,
-      "quality": 82,
-      "taiwan_usage": 48,
-      "age_fit": 25,
+      "logic": 122,
+      "quality": 81,
+      "taiwan_usage": 47,
+      "age_fit": 24,
       "safety": 25,
       "zh_en_mismatch": 10,
       "guardrail": 6
@@ -34,7 +33,6 @@
       "good-bad-secrets-mountain-cabin",
       "good-bad-secrets-scraped-knee",
       "good-bad-secrets-thank-you-party",
-      "handwashing-beach-before-snack",
       "handwashing-snack-bubbles",
       "hot-things-soup-dragon",
       "manners-breakfast-shop",
@@ -46,9 +44,7 @@
       "saying-no-squeeze-hug-handshake",
       "saying-no-tickle-monster",
       "sea-lighthouse-keeper-grandma",
-      "strangers-ice-cream-truck",
       "strangers-lost-puppy",
-      "strangers-summer-camp-pickup",
       "swimsuit-rule-bath-duck",
       "swimsuit-rule-swim-class",
       "swimsuit-rule-teddy-check-up",
@@ -120,7 +116,7 @@
       "water-safety-river-picnic",
       "windows-balcony-window-screen-cat"
     ],
-    "usd": 13.8072
+    "usd": 13.7982
   },
   "stories": {
     "goodnight-little-cloud": {
@@ -3528,22 +3524,7 @@
     },
     "handwashing-snack-bubbles": {
       "hash": "d65486f9fe70d100",
-      "checks": [
-        {
-          "kind": "duplicate_title",
-          "severity": "medium",
-          "lang": "zh",
-          "where": "title",
-          "note": "標題與 handwashing-beach-before-snack「{name}的泡泡洗手歌」相同"
-        },
-        {
-          "kind": "duplicate_title",
-          "severity": "low",
-          "lang": "en",
-          "where": "title",
-          "note": "標題很像 handwashing-beach-before-snack「{name}'s Bubbly Hand-Washing Song」（相似度 0.90）"
-        }
-      ],
+      "checks": [],
       "llm": {
         "verdict": "check",
         "issues": [
@@ -5811,22 +5792,7 @@
     },
     "strangers-ice-cream-truck": {
       "hash": "e403d89d6fdc2680",
-      "checks": [
-        {
-          "kind": "duplicate_title",
-          "severity": "medium",
-          "lang": "zh",
-          "where": "title",
-          "note": "標題與 strangers-summer-camp-pickup「{name}大聲說「不要」」相同"
-        },
-        {
-          "kind": "duplicate_title",
-          "severity": "medium",
-          "lang": "en",
-          "where": "title",
-          "note": "標題與 strangers-summer-camp-pickup「{name} Says No Out Loud」相同"
-        }
-      ],
+      "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -5848,7 +5814,7 @@
       },
       "model": "claude-opus-5-5",
       "usd": 0.0289326,
-      "status": "check",
+      "status": "ok",
       "reviewedAt": "2026-11-03T06:37:59.820Z"
     },
     "strangers-password-word": {
@@ -10501,10 +10467,6 @@
     "typhoon-neighbor-check-call": {
       "hash": "5301d4d5d367f395",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.039367,
-      "status": "ok",
-      "reviewedAt": "2026-11-11T07:11:54.272Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -10523,7 +10485,11 @@
             "note": "英文抬花盆喊「push」不合抬起的動作，改成「lift」較自然"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.039367,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:11:54.272Z"
     },
     "hot-things-ironing-new-uniform": {
       "hash": "fd8f2154436354f2",
@@ -10623,31 +10589,16 @@
       "reviewedAt": "2026-11-11T06:55:31.147Z"
     },
     "strangers-summer-camp-pickup": {
-      "hash": "f880d146f2769a0c",
-      "checks": [
-        {
-          "kind": "duplicate_title",
-          "severity": "medium",
-          "lang": "zh",
-          "where": "title",
-          "note": "標題與 strangers-ice-cream-truck「{name}大聲說不要」相同"
-        },
-        {
-          "kind": "duplicate_title",
-          "severity": "medium",
-          "lang": "en",
-          "where": "title",
-          "note": "標題與 strangers-ice-cream-truck「{name} Says No Out Loud」相同"
-        }
-      ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0246726,
-      "status": "check",
-      "reviewedAt": "2026-11-11T07:12:01.543Z",
+      "hash": "d50c4fea255c14a8",
+      "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.021884599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:14:12.559Z"
     },
     "getting-lost-amusement-park-map": {
       "hash": "97b124483b780209",
@@ -10687,10 +10638,6 @@
     "online-safety-game-voice-chat": {
       "hash": "080e9d99e297733f",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0268206,
-      "status": "ok",
-      "reviewedAt": "2026-11-11T07:12:08.904Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -10709,7 +10656,11 @@
             "note": "「要保密」加上用獎勵換個資，最後封鎖檢舉，與 star-fox、free-gems 相近；陪朋友去說出來的角度已有區隔"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0268206,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:12:08.904Z"
     },
     "medicine-motion-sickness-candy-tin": {
       "hash": "6a10c8db5d1c6d2d",
@@ -10775,60 +10726,16 @@
       "reviewedAt": "2026-11-11T06:56:14.655Z"
     },
     "handwashing-beach-before-snack": {
-      "hash": "d65d67d8be030e7c",
-      "checks": [
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "zh",
-          "where": "story",
-          "note": "中文 406 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
-        },
-        {
-          "kind": "length",
-          "severity": "low",
-          "lang": "en",
-          "where": "story",
-          "note": "英文 252 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
-        },
-        {
-          "kind": "duplicate_title",
-          "severity": "medium",
-          "lang": "zh",
-          "where": "title",
-          "note": "標題與 handwashing-snack-bubbles「{name}的泡泡洗手歌」相同"
-        },
-        {
-          "kind": "duplicate_title",
-          "severity": "low",
-          "lang": "en",
-          "where": "title",
-          "note": "標題很像 handwashing-snack-bubbles「{name}'s Bubble Hand-Washing Song」（相似度 0.90）"
-        }
-      ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0289886,
-      "status": "check",
-      "reviewedAt": "2026-11-11T07:12:18.577Z",
+      "hash": "d9fb88dce0e6ad0d",
+      "checks": [],
       "llm": {
-        "verdict": "check",
-        "issues": [
-          {
-            "kind": "logic",
-            "severity": "medium",
-            "lang": "both",
-            "where": "2",
-            "note": "第1段媽媽在野餐墊打開籃子，第2段卻『剛從廁所出來』，前後矛盾；改成媽媽說『我剛上完廁所，也要洗』並一起走過去"
-          },
-          {
-            "kind": "repetition",
-            "severity": "low",
-            "lang": "both",
-            "where": "4",
-            "note": "玩沙後和朋友在水龍頭邊唱歌洗手再吃點心，和 handwashing-bubble-pirates 情節很近，可加海邊特有的小事件區隔"
-          }
-        ]
-      }
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0203886,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:14:34.957Z"
     },
     "potty-road-trip-rest-stop": {
       "hash": "9b7fdb80b6e10d45",
@@ -10875,10 +10782,6 @@
           "note": "英文 393 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0240646,
-      "status": "ok",
-      "reviewedAt": "2026-11-11T07:12:24.555Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -10890,7 +10793,11 @@
             "note": "英文「{name} felt a heart beat faster inside」語法不自然，應改為「felt {his} heart beat faster」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0240646,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:12:24.555Z"
     },
     "bedtime-routine-summer-to-school-clock": {
       "hash": "b24770b38ea13270",
@@ -10965,10 +10872,6 @@
           "note": "英文 356 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.025208599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-11-11T07:12:31.658Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -10980,7 +10883,11 @@
             "note": "「快快抱抱」道別儀式和 goodbye-wink 的專屬道別手勢相近，但本篇主軸是晨間練習，可接受；若想更有區隔，可換個儀式細節"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.025208599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:12:31.658Z"
     },
     "tidying-toys-summer-shell-collection": {
       "hash": "a9fd3b70cb68e7bc",
@@ -10993,14 +10900,14 @@
           "note": "英文 262 words，2-4 歲 3 分鐘範圍是 150–250（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0236006,
-      "status": "ok",
-      "reviewedAt": "2026-11-11T07:12:38.360Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0236006,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:12:38.360Z"
     },
     "trying-food-summer-fruit-market": {
       "hash": "77e05bb0f733450a",
@@ -11064,14 +10971,14 @@
     "anger-rainy-day-block-tower": {
       "hash": "183c802480d3581c",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0256686,
-      "status": "ok",
-      "reviewedAt": "2026-11-11T07:12:44.747Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0256686,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:12:44.747Z"
     },
     "sharing-turns-pool-noodle": {
       "hash": "0f700b1e1d685567",
@@ -11088,10 +10995,6 @@
     "manners-countryside-relatives": {
       "hash": "d94310718bd5670f",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.023112599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-11-11T07:12:52.256Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11103,7 +11006,11 @@
             "note": "「杯子打翻、說對不起、拿毛巾擦」和 manners-magic-words-bakery 的打翻杯子擦乾很像，可考慮換成別的小意外"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.023112599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:12:52.256Z"
     },
     "fear-of-dark-countryside-night-sounds": {
       "hash": "734c07ec34692d83",
@@ -11116,10 +11023,6 @@
           "note": "標題很像 sea-lighthouse-keeper-grandma「{name} and Grandma's Lighthouse」（相似度 0.70）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.024812599999999997,
-      "status": "ok",
-      "reviewedAt": "2026-11-11T07:12:59.742Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11138,7 +11041,11 @@
             "note": "「聽夜晚聲音、找出友善來源、聽著聲音入睡」的結構和 frog-choir 相近；場景與阿嬤角色已有區隔，可再加強差異"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024812599999999997,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:12:59.742Z"
     },
     "losing-failing-summer-swim-test": {
       "hash": "164ec375c817452a",
@@ -11171,10 +11078,6 @@
           "note": "中文 558 字，4-6 歲 3 分鐘範圍是 400–550（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.023352599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-11-11T07:13:05.797Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11186,7 +11089,11 @@
             "note": "英文「The tummy felt cool」讀來生硬，可改為「{his} tummy felt cool」較自然"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.023352599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:13:05.797Z"
     },
     "bullying-summer-camp-new-kid": {
       "hash": "8d46ef558b55a631",
@@ -11206,10 +11113,6 @@
           "note": "英文 512 words，8-10 歲 3 分鐘範圍是 380–500（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0355846,
-      "status": "ok",
-      "reviewedAt": "2026-11-11T07:13:16.363Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11235,7 +11138,11 @@
             "note": "台灣學校營隊用『麥克斯』『蒂娜』，聽起來像翻譯，可改成『阿翔』『小婷』這類在地名字"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0355846,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:13:16.363Z"
     },
     "caring-for-nature-stream-shrimp-release": {
       "hash": "590e4a53749b56c1",
@@ -11309,14 +11216,14 @@
     "gratitude-garbage-truck-summer-thanks": {
       "hash": "b2142a7ecbf7f941",
       "checks": [],
-      "model": "claude-opus-5-5",
-      "usd": 0.0291366,
-      "status": "ok",
-      "reviewedAt": "2026-11-11T07:13:26.086Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0291366,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:13:26.086Z"
     },
     "empathy-delivery-worker-rain": {
       "hash": "4323fa1bf5413186",
@@ -11481,27 +11388,19 @@
       "reviewedAt": "2026-11-11T06:59:25.032Z"
     },
     "summer-cicada-goodnight-concert": {
-      "hash": "7eff81b5179dca38",
-      "checks": [
-        {
-          "kind": "guide_missing",
-          "severity": "low",
-          "lang": "both",
-          "where": "guide",
-          "note": "缺少引導卡（npm run library:guides 補）"
-        }
-      ],
+      "hash": "48978d252c64d25a",
+      "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": []
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0517286,
+      "usd": 0.0528606,
       "status": "ok",
-      "reviewedAt": "2026-11-11T06:59:36.018Z"
+      "reviewedAt": "2026-11-11T07:15:25.177Z"
     },
     "summer-shaved-ice-snowman": {
-      "hash": "3e0e523ea59d801f",
+      "hash": "ebb5e054db8c1ca4",
       "checks": [
         {
           "kind": "length",
@@ -11509,34 +11408,19 @@
           "lang": "zh",
           "where": "story",
           "note": "中文 408 字，2-4 歲 3 分鐘範圍是 250–400（太長）"
-        },
-        {
-          "kind": "guide_missing",
-          "severity": "low",
-          "lang": "both",
-          "where": "guide",
-          "note": "缺少引導卡（npm run library:guides 補）"
         }
       ],
+      "model": "claude-opus-5-5",
+      "usd": 0.0532086,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:16:10.574Z",
       "llm": {
         "verdict": "ok",
-        "issues": [
-          {
-            "kind": "age_fit",
-            "severity": "low",
-            "lang": "zh",
-            "where": "0",
-            "note": "「爸爸牽著{name}的手，慢慢走在人行道上」約16字，超過2–4歲約10字，可拆成「爸爸牽著{name}。慢慢走在人行道上。」"
-          }
-        ]
-      },
-      "model": "claude-opus-5-5",
-      "usd": 0.0563606,
-      "status": "ok",
-      "reviewedAt": "2026-11-11T06:59:42.546Z"
+        "issues": []
+      }
     },
     "summer-grandpa-harbor-sunrise": {
-      "hash": "2d629078e6ec457d",
+      "hash": "32aaa6becc9fdef2",
       "checks": [
         {
           "kind": "length",
@@ -11544,19 +11428,8 @@
           "lang": "en",
           "where": "story",
           "note": "英文 449 words，6-8 歲 3 分鐘範圍是 300–420（太長）"
-        },
-        {
-          "kind": "guide_missing",
-          "severity": "low",
-          "lang": "both",
-          "where": "guide",
-          "note": "缺少引導卡（npm run library:guides 補）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0647726,
-      "status": "ok",
-      "reviewedAt": "2026-11-11T07:13:35.721Z",
       "llm": {
         "verdict": "ok",
         "issues": [
@@ -11565,80 +11438,67 @@
             "severity": "low",
             "lang": "both",
             "where": "1",
-            "note": "漁船是出海回來，爺爺卻說「今天出海一定很順利」，語意略怪，可改成「今天漁船一定平安回來」"
-          },
-          {
-            "kind": "taiwan_usage",
-            "severity": "low",
-            "lang": "zh",
-            "where": "1",
-            "note": "「天空很清楚」較不自然，改成「天空很晴朗」或「天空很清澈」"
+            "note": "漁船是半夜出海、清晨回港，爺爺說「今天出海一定很順利」時機不太對，可改成「今天漁船一定平安回家」"
           },
           {
             "kind": "taiwan_usage",
             "severity": "low",
             "lang": "zh",
             "where": "3",
-            "note": "「伙伴」台灣較常寫「夥伴」，建議改用"
+            "note": "「伙伴」在台灣較常寫作「夥伴」，建議改為「他和夥伴」"
+          },
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "both",
+            "where": "title",
+            "note": "標題「港口早晨」，但故事一路寫到中午和傍晚，可考慮改成「{name}和爺爺的港口一天」"
           }
         ]
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.0638086,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:15:44.460Z"
     },
     "summer-afternoon-thunder-nap": {
-      "hash": "accd6ec16a103346",
-      "checks": [
-        {
-          "kind": "guide_missing",
-          "severity": "low",
-          "lang": "both",
-          "where": "guide",
-          "note": "缺少引導卡（npm run library:guides 補）"
-        }
-      ],
-      "model": "claude-opus-5-5",
-      "usd": 0.0559006,
-      "status": "ok",
-      "reviewedAt": "2026-11-11T07:13:41.023Z",
+      "hash": "79939151cb557c30",
+      "checks": [],
       "llm": {
         "verdict": "ok",
         "issues": [
+          {
+            "kind": "logic",
+            "severity": "low",
+            "lang": "zh",
+            "where": "guide",
+            "note": "問題三『雨停了』與故事不符，結尾雨聲仍滴答，建議改成『雨變小了』"
+          },
           {
             "kind": "quality",
             "severity": "low",
             "lang": "en",
             "where": "5",
-            "note": "英文『like a tiny tummy far away』意思不清，可改為『like a tiny tummy rumbling far away』，對應中文的咕嚕聲"
-          }
-        ]
-      }
-    },
-    "summer-paper-fan-wind-friend": {
-      "hash": "95e817a83261dd73",
-      "checks": [
-        {
-          "kind": "guide_missing",
-          "severity": "low",
-          "lang": "both",
-          "where": "guide",
-          "note": "缺少引導卡（npm run library:guides 補）"
-        }
-      ],
-      "llm": {
-        "verdict": "ok",
-        "issues": [
-          {
-            "kind": "quality",
-            "severity": "low",
-            "lang": "en",
-            "where": "4",
-            "note": "英文「Ho, ho, ho!」容易讓人聯想到聖誕老公公，建議改成「Hee, hee!」或「Ha, ha!」，對應中文的「呵呵笑」"
+            "note": "『like a tiny tummy far away』意思不清，建議改成『like a tiny tummy rumbling far away』"
           }
         ]
       },
       "model": "claude-opus-5-5",
-      "usd": 0.0532766,
+      "usd": 0.059120599999999995,
       "status": "ok",
-      "reviewedAt": "2026-11-11T07:00:03.175Z"
+      "reviewedAt": "2026-11-11T07:15:51.481Z"
+    },
+    "summer-paper-fan-wind-friend": {
+      "hash": "95bfd71dfef657cb",
+      "checks": [],
+      "llm": {
+        "verdict": "ok",
+        "issues": []
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.055464599999999996,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:15:57.169Z"
     },
     "forgiveness-borrowed-kite": {
       "hash": "363d8c6fa7a71178",
@@ -11651,14 +11511,14 @@
           "note": "英文 365 words，4-6 歲 3 分鐘範圍是 250–350（太長）"
         }
       ],
-      "model": "claude-opus-5-5",
-      "usd": 0.024820599999999998,
-      "status": "ok",
-      "reviewedAt": "2026-11-11T07:13:47.459Z",
       "llm": {
         "verdict": "ok",
         "issues": []
-      }
+      },
+      "model": "claude-opus-5-5",
+      "usd": 0.024820599999999998,
+      "status": "ok",
+      "reviewedAt": "2026-11-11T07:13:47.459Z"
     }
   }
 }
