@@ -2832,5 +2832,352 @@
     "style": "inspiring",
     "setting": "home",
     "premise": "{name}'s pen pal in America sends a video of her family's Thanksgiving dinner: turkey, pumpkin pie, and everyone saying one thing they are grateful for. {name}'s family tries it at their own dinner with braised pork and rice, each person sharing a thank-you, and {name} records a video back to the pen pal."
+  },
+  {
+    "id": "water-safety-swim-class-deep-end",
+    "theme": "water-safety",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "On the last day of summer swim class, {name} wants to jump into the deep end like the big kids. The coach says swimmers only go where a grown-up is watching and only as deep as they have practiced. {name} practices floating on the back and waving for help, then jumps into the shallow end with a big splash, proud to know the rules."
+  },
+  {
+    "id": "water-safety-stream-rising-water",
+    "theme": "water-safety",
+    "ageBands": ["8-10"],
+    "style": "adventure",
+    "setting": "mountain",
+    "premise": "On a hot summer day, {name}'s family plays in a mountain stream. Dark clouds gather over the peaks upstream, the water turns muddy and starts rising, and Dad calls everyone out right away, even though it is still sunny where they stand. From the high bank they watch the stream swell, and {name} learns why we never wait to see what the water does."
+  },
+  {
+    "id": "typhoon-neighbor-check-call",
+    "theme": "typhoon",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "Before a typhoon, {name} helps Mom bring in the balcony flowerpots, charge the flashlights and fill water bottles. {name} remembers Grandma Wang next door lives alone, so they knock and help her bring her pots inside too. During the storm everyone stays indoors away from the windows, and {name} calls Grandma Wang to check she is okay."
+  },
+  {
+    "id": "hot-things-ironing-new-uniform",
+    "theme": "hot-things",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "Before school starts, Mom irons {name}'s new uniform. The iron hisses steam like a little dragon. {name} wants to touch the warm shirt right away, but Mom says the iron and the steam are only for grown-ups, so {name} steps back and waits. When the shirt has cooled, {name} folds it neatly, ready for the first day."
+  },
+  {
+    "id": "windows-balcony-window-screen-cat",
+    "theme": "windows-balcony",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "On a hot summer night the windows are open and the fan is spinning. Kitty Mochi presses her nose to the window screen to watch the moths. {name} wants to climb onto the sofa by the window to see too, but Dad says we never climb near windows or lean on the screen. {name} and Mochi watch the moths together from the floor, safe and sound."
+  },
+  {
+    "id": "sockets-electric-fan-plug",
+    "theme": "sockets",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "It is so hot! The big electric fan goes whirr. {name} wants to make it spin faster and reaches for the plug. Mom says plugs and sockets are only for grown-ups, and little fingers never go near the fan's spinning blades. Mom turns the fan to the cool setting, and {name} sings into the breeze: ahhh, a funny robot voice."
+  },
+  {
+    "id": "strangers-summer-camp-pickup",
+    "theme": "strangers",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "At summer day camp, a friendly man {name} has never met says he is a friend of {name}'s mom and offers to drive {name} home. {name} remembers the rule: only go with grown-ups your parents agreed on. {name} says no, goes straight to the camp teacher, and waits. Soon Mom arrives, and they make a list of who is allowed to pick {name} up."
+  },
+  {
+    "id": "getting-lost-amusement-park-map",
+    "theme": "getting-lost",
+    "ageBands": ["4-6"],
+    "style": "adventure",
+    "setting": "city",
+    "premise": "At the amusement park, {name} stops to watch a bubble show, and when {name} turns around, Dad is gone. {name} remembers: stop and stay put. When Dad does not come right away, {name} asks a staff member in a uniform for help and says Dad's name and phone number. Dad hurries over, and they choose a meeting spot for next time: the big carousel."
+  },
+  {
+    "id": "online-safety-game-voice-chat",
+    "theme": "online-safety",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "During summer vacation, {name} plays an online racing game. A player in voice chat says {name} is really good and asks {name} to switch to a private chat app and keep it secret. It feels strange, so {name} leaves the chat and tells Dad. Together they turn off voice chat with strangers and block the player, and Dad thanks {name} for telling."
+  },
+  {
+    "id": "medicine-motion-sickness-candy-tin",
+    "theme": "medicine",
+    "ageBands": ["4-6"],
+    "style": "adventure",
+    "setting": "mountain",
+    "premise": "On a summer road trip to the mountains, {name} finds Grandma's little tin of motion sickness pills in the car. They are round and pink like candy! {name} does not open it and gives it to Mom, because medicine is only given by a grown-up. Mom puts it up high in her bag, and they play I-spy all the way up the winding road."
+  },
+  {
+    "id": "crossing-road-beach-town-scooters",
+    "theme": "crossing-road",
+    "ageBands": ["2-4", "4-6"],
+    "style": "adventure",
+    "setting": "sea",
+    "premise": "In a busy beach town, scooters zoom along the little lanes. {name} spots the ice-cream shop across the street and wants to run. Mom holds {name}'s hand, and together they stop at the edge, look left, right and left again, and listen for engines. They cross when it is clear and keep watching, and the mango ice cream tastes even better."
+  },
+  {
+    "id": "handwashing-beach-before-snack",
+    "theme": "handwashing",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "sea",
+    "premise": "After building a sandcastle at the beach, {name}'s hands are sandy and salty. Watermelon time! But first, Dad and {name} wash hands at the beach tap, with soap bubbles between the fingers and on the backs of the hands, while singing a little song. Then crunch, crunch, the sweetest watermelon ever."
+  },
+  {
+    "id": "potty-road-trip-rest-stop",
+    "theme": "potty",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "city",
+    "premise": "On a long summer car trip, {name} feels the need to pee. {name} tells Mom right away, and Dad stops at the next rest stop. The restroom is new and big, but Mom helps, and {name} remembers to flush and wash hands. Back in the car, everyone cheers: {name} told us in time!"
+  },
+  {
+    "id": "doctor-shots-school-checkup",
+    "theme": "doctor-shots",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "Before starting big school, {name} goes for a health check and a vaccine. {name} feels nervous, so the nurse explains the shot is like a tiny shield that helps the body fight germs. {name} hugs Mom, takes slow breaths and counts to three. Pinch! It is over quickly, and {name} chooses a sunflower sticker for being brave."
+  },
+  {
+    "id": "bedtime-routine-summer-to-school-clock",
+    "theme": "bedtime-routine",
+    "ageBands": ["4-6", "6-8"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "All summer {name} stayed up late watching the stars and catching fireflies. Now school starts in two weeks, so {name} and Mom make a plan: go to bed fifteen minutes earlier each night. Bath, pajamas, one story, lights off. Each morning {name} wakes up a little easier, and on the first day of school {name} is ready and bright."
+  },
+  {
+    "id": "starting-kindergarten-school-visit-day",
+    "theme": "starting-kindergarten",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "school",
+    "premise": "A week before kindergarten starts, {name} and Dad visit the new school. They find the cubby with {name}'s name, the little toilets, the sandbox and the slide. The teacher shows where {name} will nap and says hello. On the way home, {name} tells Dad what to expect, and the first day feels a little less scary."
+  },
+  {
+    "id": "starting-kindergarten-morning-practice",
+    "theme": "starting-kindergarten",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "In the last week of summer, {name} and Mom play a game called Kindergarten Morning: wake up, wash face, eat breakfast, put on shoes and carry the backpack all by yourself. On day one {name} is a little slow, but by Friday {name} beats the timer. When the real first day comes, {name} already knows every step."
+  },
+  {
+    "id": "tidying-toys-summer-shell-collection",
+    "theme": "tidying-toys",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "After the beach trip, {name}'s seashells, buckets and toy boats are all over the living room. {name} wants to keep playing, so Dad makes it a game: shells go into the shell box, boats sail into the toy basket, buckets stack like a tower. In no time the floor is clear, and the shells look beautiful lined up on the shelf."
+  },
+  {
+    "id": "trying-food-summer-fruit-market",
+    "theme": "trying-food",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "city",
+    "premise": "At the summer fruit market, Grandma buys a bumpy green sugar apple. It looks like a dinosaur egg! {name} is not sure about it. Grandma says we can try with a tiny lick first. {name} sniffs, licks and then takes a small bite. Sweet and creamy! {name} still likes mango best, but now has a new fruit to love too."
+  },
+  {
+    "id": "screen-time-summer-vacation-plan",
+    "theme": "screen-time",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "At the start of summer vacation, {name} wants to play games all day. Mom suggests making a summer plan together. {name} writes in game time after lunch, then adds swimming, the library and helping cook dinner. Some days {name} wants more screen time and grumbles, but by August {name} has read ten books and learned to make fried rice."
+  },
+  {
+    "id": "brushing-teeth-shaved-ice-sugar",
+    "theme": "brushing-teeth",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "city",
+    "premise": "On a hot afternoon, {name} and Dad share a mountain of shaved ice with condensed milk and syrup. Yum! At bedtime Dad says the sugar is still sticking to {name}'s teeth, so they brush together: top teeth, bottom teeth, round and round, for two whole minutes. {name} grins in the mirror, and the teeth sparkle."
+  },
+  {
+    "id": "anger-rainy-day-block-tower",
+    "theme": "anger",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "On a rainy summer day, {name} spends all morning building a tall block city. Little cousin runs by and knocks it over. {name} wants to yell and push, but stops, stomps three times and breathes slowly. Then {name} says: I am angry because I worked so hard. Cousin says sorry, and they rebuild it together, even taller."
+  },
+  {
+    "id": "sharing-turns-pool-noodle",
+    "theme": "sharing-turns",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "city",
+    "premise": "At the kiddie pool there is only one bright yellow pool noodle, and {name} and a new friend both want it. Grab, pull! Mom suggests taking turns, five big splashes each. {name} counts the splashes out loud and passes the noodle. Then they discover they can both hold it together and kick like a little boat."
+  },
+  {
+    "id": "manners-countryside-relatives",
+    "theme": "manners",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "For summer vacation, {name} visits Great-Grandma in the countryside. So many relatives! {name} feels shy, but remembers the magic words. {name} says good morning, please and thank you for the watermelon, and sorry when {name} spills the tea. Great-Grandma laughs and says {name} is the politest little guest in the village."
+  },
+  {
+    "id": "fear-of-dark-countryside-night-sounds",
+    "theme": "fear-of-dark",
+    "ageBands": ["2-4", "4-6"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "At Grandma's house in the countryside, the night is very dark and full of sounds: croak, chirp, buzz. {name} feels scared and pulls the blanket up. Grandma sits by the bed and explains each sound: frogs, crickets and cicadas singing goodnight. She leaves the little night-light on, and {name} falls asleep to the summer choir."
+  },
+  {
+    "id": "losing-failing-summer-swim-test",
+    "theme": "losing-failing",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "{name} trains all summer for the swim test at the end of camp, but on the day {name} has to stop and stand halfway across the pool. {name} feels disappointed and embarrassed. The coach points out how much farther {name} swam than in July. {name} feels sad for a while, then asks for one more week of practice and passes next time."
+  },
+  {
+    "id": "honesty-shared-popsicle",
+    "theme": "honesty",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "There is one mango popsicle left in the freezer, saved for {name}'s big sister. It is so hot that {name} eats it. When sister asks where it went, {name} wants to say I don't know. {name} takes a breath and tells the truth. Sister is upset at first, then thanks {name} for being honest, and they make new popsicles together with juice."
+  },
+  {
+    "id": "bullying-summer-camp-new-kid",
+    "theme": "bullying",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "At summer science camp, two kids keep laughing at the new boy's accent and leave him out of every group. {name} feels uneasy watching. {name} invites the new boy to join the rocket team and tells the camp teacher what has been happening. The teacher talks to everyone, and the rocket team launches the highest rocket of all."
+  },
+  {
+    "id": "caring-for-nature-stream-shrimp-release",
+    "theme": "caring-for-nature",
+    "ageBands": ["4-6", "6-8"],
+    "style": "adventure",
+    "setting": "mountain",
+    "premise": "At a summer stream, {name} catches a tiny shrimp in a cup. {name} wants to take it home, but Dad says the stream is the shrimp's home, with cool water and friends. {name} watches it for a while, then gently pours it back. They take only photos and memories, and {name} carries their trash home in a bag."
+  },
+  {
+    "id": "caring-for-nature-bring-your-own-cup",
+    "theme": "caring-for-nature",
+    "ageBands": ["6-8", "8-10"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "On a hot summer day, {name} buys a bubble tea and notices the trash can is overflowing with plastic cups and straws. {name} wonders where they all go. {name} starts bringing a reusable cup and straw, and talks the class into a summer challenge. By August their tally chart shows hundreds of cups saved."
+  },
+  {
+    "id": "gratitude-garbage-truck-summer-thanks",
+    "theme": "gratitude",
+    "ageBands": ["2-4", "4-6"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "Every evening the garbage truck plays its song, and {name} and Grandpa carry the trash out. On a very hot day, {name} sees the workers sweating as they lift heavy bags. {name} and Grandpa make a thank-you card, and the next evening {name} gives it to them with a cold bottle of water. The workers smile and wave."
+  },
+  {
+    "id": "empathy-delivery-worker-rain",
+    "theme": "empathy",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "During a summer thunderstorm, a delivery worker brings {name}'s family dinner, soaked and out of breath. {name} notices his tired face and shaking hands. {name} imagines riding a scooter all day in the heat and rain. {name} says a warm thank you, offers a towel and writes a kind review, and wonders how many people's days could change with small kindness."
+  },
+  {
+    "id": "perseverance-learning-to-swim",
+    "theme": "perseverance",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "This summer {name} wants to swim across the pool. At first {name} sinks, swallows water and wants to quit. Every day {name} practices a little: blowing bubbles, kicking with a board, floating with the coach. Some days are frustrating. On the last day of summer, with the coach walking beside the pool, {name} swims all the way across."
+  },
+  {
+    "id": "courage-first-summer-camp-night",
+    "theme": "courage",
+    "ageBands": ["6-8"],
+    "style": "adventure",
+    "setting": "forest",
+    "premise": "At forest summer camp, {name} will sleep away from home for the first time. When the lights go out, {name} misses home and feels scared. {name} tells the camp counselor, who sits nearby and points out the stars through the tent window. {name} holds Mom's note and breathes slowly. In the morning {name} feels proud and a little braver."
+  },
+  {
+    "id": "responsibility-neighbor-plant-watering",
+    "theme": "responsibility",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "The neighbors go on a summer trip and ask {name} to water their plants every evening. It sounds easy, but some days {name} is tired or wants to play. On a very hot day {name} almost forgets, then runs over before bedtime. When the neighbors come home, every plant is green, and {name} feels trusted."
+  },
+  {
+    "id": "keeping-promises-summer-letter-friend",
+    "theme": "keeping-promises",
+    "ageBands": ["6-8", "8-10"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "Before summer vacation, {name}'s best friend moves to another city, and {name} promises to write every week. In July it is fun, but in August {name} forgets once and feels bad. {name} writes an extra long letter to explain and keeps writing every week after. On the first day of school, a thank-you letter is waiting."
+  },
+  {
+    "id": "respecting-differences-cousin-wheelchair-beach",
+    "theme": "respecting-differences",
+    "ageBands": ["4-6", "6-8"],
+    "style": "inspiring",
+    "setting": "sea",
+    "premise": "{name}'s cousin uses a wheelchair, and this summer the whole family goes to the beach. The sand is too soft for the wheels, so they find a path with a boardwalk. {name} learns that cousin likes the same jokes, songs and ice cream. Together they build the biggest sandcastle at the edge of the boardwalk, each with their own ideas."
+  },
+  {
+    "id": "teamwork-summer-camp-raft",
+    "theme": "teamwork",
+    "ageBands": ["8-10"],
+    "style": "adventure",
+    "setting": "sea",
+    "premise": "At summer camp, {name}'s team must build a raft from bamboo, ropes and barrels to cross a shallow lagoon, wearing life jackets with the coaches watching. Everyone has different ideas, and at first they argue. {name} suggests trying each idea one at a time. Together they find the best knots, and the raft floats across."
+  },
+  {
+    "id": "forgiveness-sandcastle-wave-kick",
+    "theme": "forgiveness",
+    "ageBands": ["4-6", "6-8"],
+    "style": "cute",
+    "setting": "sea",
+    "premise": "At the beach, {name} and a new friend build a sand turtle. Running after a crab, the friend trips and smashes the turtle's head. {name} feels angry and says mean words. Later {name} sees the friend sitting alone, sad. {name} says: I was angry, but I forgive you. They build an even bigger turtle together before the tide comes in."
+  },
+  {
+    "id": "summer-cicada-goodnight-concert",
+    "ageBands": ["2-4"],
+    "style": "bedtime",
+    "setting": "park",
+    "premise": "On a summer evening in the park, the cicadas are singing loudly: zzzz, zzzz. {name} and Mom find an empty cicada shell on a tree, like a tiny brown coat. As the sky turns orange, the cicadas sing softer and softer. At home, {name} puts on pajamas and hums the cicada song until sleep comes."
+  },
+  {
+    "id": "summer-shaved-ice-snowman",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "city",
+    "premise": "It is the hottest day of summer. At the shaved ice shop, {name} asks for a snowman made of ice, with mango cheeks and a red bean nose. The ice snowman starts to melt! {name} and Dad eat fast, laughing as it drips. {name} imagines where the snowman's cold friends live, far away where snow falls."
+  },
+  {
+    "id": "summer-grandpa-harbor-sunrise",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "sea",
+    "premise": "{name} spends a summer week with Grandpa, a retired fisherman. Early one morning they walk to the harbor to watch the fishing boats come home at sunrise. Grandpa shows how to read the clouds and wind, and names every boat. {name} helps sell fish at the market, and learns what hard work it takes to bring food to the table."
+  },
+  {
+    "id": "summer-afternoon-thunder-nap",
+    "ageBands": ["4-6"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "Every summer afternoon, the sky darkens and the thunder rumbles. {name} and the cat lie on the cool floor mat, listening to the rain drum on the roof. They count between the lightning and the thunder: one, two, three. The rain slows to a patter, the air smells fresh, and {name}'s eyes grow heavy for a sweet summer nap."
+  },
+  {
+    "id": "summer-paper-fan-wind-friend",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "It is hot, hot, hot! {name} folds a paper fan with Grandma, accordion style, and colors it with stripes and stars. Flap, flap! The fan makes a little wind. {name} cools Grandma, the cat and the teddy bear, then the plants on the windowsill. Everyone feels cooler, and {name} falls asleep with the fan in hand."
   }
 ]
