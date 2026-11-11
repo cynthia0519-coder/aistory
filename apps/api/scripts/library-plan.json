@@ -2855,7 +2855,7 @@
     "ageBands": ["6-8"],
     "style": "inspiring",
     "setting": "city",
-    "premise": "Before a typhoon, {name} helps Mom bring in the balcony flowerpots, charge the flashlights and fill water bottles. {name} remembers Grandma Wang next door lives alone, so they knock and help her bring her pots inside too. During the storm everyone stays indoors away from the windows, and {name} calls Grandma Wang to check she is okay."
+    "premise": "As a typhoon comes, {name} remembers Grandma Wang next door lives alone in an old flat with rattling windows. {name} calls her, and Mom invites her to stay over. Mom and {name} carry her heavy bougainvillea pot inside together. All evening they play cards on the floor in the middle of the living room, far from the windows, while the wind howls outside."
   },
   {
     "id": "hot-things-ironing-new-uniform",
@@ -2887,7 +2887,7 @@
     "ageBands": ["6-8"],
     "style": "inspiring",
     "setting": "school",
-    "premise": "At summer day camp, a friendly man {name} has never met says he is a friend of {name}'s mom and offers to drive {name} home. {name} remembers the rule: only go with grown-ups your parents agreed on. {name} says no, goes straight to the camp teacher, and waits. Soon Mom arrives, and they make a list of who is allowed to pick {name} up."
+    "premise": "On a summer camp trip to a big riverside park, {name} stops to tie a shoelace and the group walks ahead. A man {name} doesn't know says, Your group went that way, come with me. {name} remembers: never go with someone your parents don't know. {name} says no loudly, stays put with buddy Kai, and waves to the counselor in the orange camp shirt, then sticks right by the counselor."
   },
   {
     "id": "getting-lost-amusement-park-map",
@@ -2903,7 +2903,7 @@
     "ageBands": ["8-10"],
     "style": "inspiring",
     "setting": "home",
-    "premise": "During summer vacation, {name} plays an online racing game. A player in voice chat says {name} is really good and asks {name} to switch to a private chat app and keep it secret. It feels strange, so {name} leaves the chat and tells Dad. Together they turn off voice chat with strangers and block the player, and Dad thanks {name} for telling."
+    "premise": "In an online game, {name}'s friend Kai says a player called SkyBuilder promised him a rare skin if he sends his home address, and to keep it secret. {name} feels uneasy: online friends may not be who they say they are. {name} convinces Kai to tell his mom instead. Kai's mom thanks them, blocks and reports the player, and Kai says he is glad he did not send it."
   },
   {
     "id": "medicine-motion-sickness-candy-tin",
@@ -2927,7 +2927,7 @@
     "ageBands": ["2-4", "4-6"],
     "style": "cute",
     "setting": "sea",
-    "premise": "After building a sandcastle at the beach, {name}'s hands are sandy and salty. Watermelon time! But first, Dad and {name} wash hands at the beach tap, with soap bubbles between the fingers and on the backs of the hands, while singing a little song. Then crunch, crunch, the sweetest watermelon ever."
+    "premise": "After building a sandcastle at the beach, {name}'s hands are sandy and salty. Watermelon time! But first, Dad and {name} wash hands at the beach tap, with soap bubbles between the fingers and on the backs of the hands, while singing a little song. Dad only says one short thing: clean hands, then snacks. Then crunch, crunch, the sweetest watermelon ever."
   },
   {
     "id": "potty-road-trip-rest-stop",
@@ -2943,7 +2943,7 @@
     "ageBands": ["4-6"],
     "style": "inspiring",
     "setting": "city",
-    "premise": "Before starting big school, {name} goes for a health check and a vaccine. {name} feels nervous, so the nurse explains the shot is like a tiny shield that helps the body fight germs. {name} hugs Mom, takes slow breaths and counts to three. Pinch! It is over quickly, and {name} chooses a sunflower sticker for being brave."
+    "premise": "Before big school, {name} has a health check: stand tall to be measured, read the letter E chart with one eye covered, listen for beeps in headphones. Then comes a shot. {name} hugs a stuffed bunny, looks at the window, and blows out five pretend birthday candles while the nurse counts. A quick pinch, and it is done. {name} skips out, proud of every station."
   },
   {
     "id": "bedtime-routine-summer-to-school-clock",
@@ -2967,7 +2967,7 @@
     "ageBands": ["4-6"],
     "style": "inspiring",
     "setting": "home",
-    "premise": "In the last week of summer, {name} and Mom play a game called Kindergarten Morning: wake up, wash face, eat breakfast, put on shoes and carry the backpack all by yourself. On day one {name} is a little slow, but by Friday {name} beats the timer. When the real first day comes, {name} already knows every step."
+    "premise": "In the last week of summer, {name} and Mom play a game called Kindergarten Morning: wake up, wash face, eat breakfast, put on shoes and carry the backpack all by yourself. On day one {name} is a little slow, but by Friday {name} beats the timer. {name} and Mom also practice a quick goodbye hug. When the real first day comes, {name} already knows every step."
   },
   {
     "id": "tidying-toys-summer-shell-collection",
@@ -2975,7 +2975,7 @@
     "ageBands": ["2-4", "4-6"],
     "style": "cute",
     "setting": "home",
-    "premise": "After the beach trip, {name}'s seashells, buckets and toy boats are all over the living room. {name} wants to keep playing, so Dad makes it a game: shells go into the shell box, boats sail into the toy basket, buckets stack like a tower. In no time the floor is clear, and the shells look beautiful lined up on the shelf."
+    "premise": "After the beach trip, {name}'s seashells, buckets and toy boats are all over the living room. Dad makes tidying a game: boats sail into the toy basket, buckets stack into a tower in the corner, and the shells line up in a row on the shelf. In no time the floor is clear, and everything has its own home. At bedtime {name} says goodnight to the shells on the shelf."
   },
   {
     "id": "trying-food-summer-fruit-market",
@@ -3007,7 +3007,7 @@
     "ageBands": ["6-8"],
     "style": "inspiring",
     "setting": "home",
-    "premise": "On a rainy summer day, {name} spends all morning building a tall block city. Little cousin runs by and knocks it over. {name} wants to yell and push, but stops, stomps three times and breathes slowly. Then {name} says: I am angry because I worked so hard. Cousin says sorry, and they rebuild it together, even taller."
+    "premise": "On a rainy summer day, {name} draws a big picture of the family trip to the beach. Little cousin grabs a crayon and scribbles all over the sea. {name} feels hot and wants to rip the paper, but stomps three times and breathes slowly instead, then says: I am angry because I worked hard on it. Cousin says sorry, and together they turn the scribble into a flock of seagulls."
   },
   {
     "id": "sharing-turns-pool-noodle",
@@ -3031,7 +3031,7 @@
     "ageBands": ["2-4", "4-6"],
     "style": "bedtime",
     "setting": "home",
-    "premise": "At Grandma's house in the countryside, the night is very dark and full of sounds: croak, chirp, buzz. {name} feels scared and pulls the blanket up. Grandma sits by the bed and explains each sound: frogs, crickets and cicadas singing goodnight. She leaves the little night-light on, and {name} falls asleep to the summer choir."
+    "premise": "At Grandma's countryside house the night is very dark, and there are new sounds: bamboo creaking in the wind, a dog barking far away, and a soft hoo-hoo from the trees. {name} feels scared and pulls the blanket up. Grandma sits by the bed and explains each sound, and they guess together which sound comes next. With the little night-light on, {name} falls asleep."
   },
   {
     "id": "losing-failing-summer-swim-test",
@@ -3047,7 +3047,7 @@
     "ageBands": ["4-6"],
     "style": "cute",
     "setting": "home",
-    "premise": "There is one mango popsicle left in the freezer, saved for {name}'s big sister. It is so hot that {name} eats it. When sister asks where it went, {name} wants to say I don't know. {name} takes a breath and tells the truth. Sister is upset at first, then thanks {name} for being honest, and they make new popsicles together with juice."
+    "premise": "There is one mango popsicle left in the freezer, saved for {name}'s big sister, who is at swim class while {name} stays home with Grandpa. It is so hot that {name} eats it. When sister comes home and asks where it went, {name} wants to say I don't know, but takes a breath and tells the truth. Sister is upset at first, then they make new popsicles together with fruit juice."
   },
   {
     "id": "bullying-summer-camp-new-kid",
@@ -3055,7 +3055,7 @@
     "ageBands": ["8-10"],
     "style": "inspiring",
     "setting": "school",
-    "premise": "At summer science camp, two kids keep laughing at the new boy's accent and leave him out of every group. {name} feels uneasy watching. {name} invites the new boy to join the rocket team and tells the camp teacher what has been happening. The teacher talks to everyone, and the rocket team launches the highest rocket of all."
+    "premise": "At summer science camp, two kids keep hiding the new boy's water bottle and laughing when he searches for it in the heat. {name} feels uneasy watching. The next time, {name} helps him find it, sits with him at snack time, and tells the counselor what keeps happening. The counselor talks with the group, and the new boy joins {name}'s rocket team."
   },
   {
     "id": "caring-for-nature-stream-shrimp-release",
@@ -3079,7 +3079,7 @@
     "ageBands": ["2-4", "4-6"],
     "style": "inspiring",
     "setting": "city",
-    "premise": "Every evening the garbage truck plays its song, and {name} and Grandpa carry the trash out. On a very hot day, {name} sees the workers sweating as they lift heavy bags. {name} and Grandpa make a thank-you card, and the next evening {name} gives it to them with a cold bottle of water. The workers smile and wave."
+    "premise": "Every evening the garbage truck plays its song, and {name} and Grandpa carry out the trash. On a hot day {name} sees the workers sweating. Grandpa says we can help them: rinse the bottles, flatten the boxes and sort the recycling neatly. {name} sorts carefully all week, and when the truck comes, {name} waves and says thank you. A worker smiles and waves back."
   },
   {
     "id": "empathy-delivery-worker-rain",
@@ -3138,12 +3138,12 @@
     "premise": "At summer camp, {name}'s team must build a raft from bamboo, ropes and barrels to cross a shallow lagoon, wearing life jackets with the coaches watching. Everyone has different ideas, and at first they argue. {name} suggests trying each idea one at a time. Together they find the best knots, and the raft floats across."
   },
   {
-    "id": "forgiveness-sandcastle-wave-kick",
+    "id": "forgiveness-borrowed-kite",
     "theme": "forgiveness",
     "ageBands": ["4-6", "6-8"],
     "style": "cute",
-    "setting": "sea",
-    "premise": "At the beach, {name} and a new friend build a sand turtle. Running after a crab, the friend trips and smashes the turtle's head. {name} feels angry and says mean words. Later {name} sees the friend sitting alone, sad. {name} says: I was angry, but I forgive you. They build an even bigger turtle together before the tide comes in."
+    "setting": "park",
+    "premise": "On a windy summer afternoon in the park, {name} lends a new friend the dragon kite Dad helped build. The friend runs too fast, the kite crashes into a tree, and its tail tears. {name} feels angry and says mean words. Later the friend comes back with tape and says sorry. {name} says: I was angry, but I forgive you. They fix the kite together and fly it side by side."
   },
   {
     "id": "summer-cicada-goodnight-concert",
@@ -3164,14 +3164,14 @@
     "ageBands": ["6-8"],
     "style": "inspiring",
     "setting": "sea",
-    "premise": "{name} spends a summer week with Grandpa, a retired fisherman. Early one morning they walk to the harbor to watch the fishing boats come home at sunrise. Grandpa shows how to read the clouds and wind, and names every boat. {name} helps sell fish at the market, and learns what hard work it takes to bring food to the table."
+    "premise": "{name} spends a summer week with Grandpa, a retired fisherman. Early one morning they walk to the harbor to watch the fishing boats come home at sunrise. Grandpa looks at the clear sky and the gentle wind and says it will be a good day at sea. He names every boat. {name} helps at the fish market and learns how much work it takes to bring food to the table."
   },
   {
     "id": "summer-afternoon-thunder-nap",
     "ageBands": ["4-6"],
     "style": "bedtime",
     "setting": "home",
-    "premise": "Every summer afternoon, the sky darkens and the thunder rumbles. {name} and the cat lie on the cool floor mat, listening to the rain drum on the roof. They count between the lightning and the thunder: one, two, three. The rain slows to a patter, the air smells fresh, and {name}'s eyes grow heavy for a sweet summer nap."
+    "premise": "Every summer afternoon, the sky darkens and the thunder rumbles. {name} and the cat lie on the cool floor mat, listening to the rain drum on the roof. Mom shows how to count from the flash to the rumble: when the numbers get bigger, the storm is moving away. The rain slows to a patter, the air smells fresh, and {name}'s eyes grow heavy for a sweet nap."
   },
   {
     "id": "summer-paper-fan-wind-friend",
