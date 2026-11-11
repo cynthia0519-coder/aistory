@@ -18,6 +18,7 @@
     "library:publish": "tsx scripts/publish-library.ts",
     "test": "tsx --test test/*.test.ts",
     "episodes:render": "tsx scripts/render-episodes.ts",
+    "episodes:upload": "tsx scripts/upload-episodes.ts",
     "reports": "tsx scripts/list-reports.ts",
     "stats": "tsx scripts/stats.ts"
   },
