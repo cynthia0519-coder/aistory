@@ -3210,7 +3210,7 @@
     "ageBands": ["4-6", "6-8"],
     "style": "inspiring",
     "setting": "city",
-    "premise": "After swimming class, {name} waits on the bench inside the sports center for Mom. A man {name} has never met says Mom is busy and sent him, and he will take {name} home. {name} remembers the family rule: only go with grown-ups on the family list. {name} says no loudly, walks straight to the front desk lady, and asks her to call Mom. Mom arrives soon and hugs {name} tight."
+    "premise": "After swimming class it starts to pour, and {name} waits inside the sports center lobby for Dad. A friendly woman with an umbrella says she lives nearby and offers {name} a ride home. {name} remembers: only go with grown-ups your family agreed on, even when it's raining. {name} says no thank you loudly and goes to the front desk. Dad arrives right on time with a big umbrella."
   },
   {
     "id": "crossing-road-first-walk-to-school",
@@ -3221,12 +3221,12 @@
     "premise": "On the first week of school, {name} walks to kindergarten holding Grandpa's hand. At every corner they play the crossing game: stop at the curb, look left, look right, look left again, listen for scooters, and wait for the little green man. A crossing volunteer in a yellow vest waves. By Friday, {name} reminds Grandpa of each step before he can say it."
   },
   {
-    "id": "sockets-night-phone-charger",
+    "id": "sockets-night-light-lantern",
     "theme": "sockets",
     "ageBands": ["2-4", "4-6"],
     "style": "cute",
     "setting": "home",
-    "premise": "At bedtime, {name} sees the charger cord dangling beside the bed with a little blue light. {name} wants to swing it like a jump rope. Mom says cords and plugs are only for grown-ups. Together they play Find a Safe Home: the phone and charger go on the high shelf, and {name}'s night-light toy goes on the low table instead. {name} says goodnight to the blue light up high."
+    "premise": "At bedtime {name} wants to pull the little night-light out of the wall socket to take it under the blanket like a flashlight. Dad says plugs and sockets are only for grown-ups, and little fingers never pull or push them. Instead Dad gives {name} a small battery lantern for the bed, and the night-light stays glowing in the wall, watching over the room."
   },
   {
     "id": "medicine-not-sharing-cousins-syrup",
@@ -3405,12 +3405,12 @@
     "premise": "At the start of the new school year, some kids call a quiet classmate a mean nickname because of his old shoes. {name} feels uneasy. {name} stops laughing along, uses the classmate's real name, sits with him at lunch, and tells the teacher. The teacher talks with the class about words that hurt, and the nickname slowly disappears."
   },
   {
-    "id": "moving-house-new-school-map",
+    "id": "moving-house-new-court-friends",
     "theme": "moving-house",
     "ageBands": ["6-8", "8-10"],
     "style": "inspiring",
     "setting": "school",
-    "premise": "{name}'s family moved over summer, and at the new school {name} doesn't know where anything is. On the first day {name} gets lost looking for the music room and feels alone. The school janitor walks {name} there and shows a secret shortcut through the garden. {name} draws a map of the new school that night, and the next week helps another new kid find the music room."
+    "premise": "After moving to a new town, {name} misses the old basketball court and old friends. One afternoon {name} brings a ball to the new neighborhood park and practices alone. A girl asks to play, then her brother joins. {name} teaches them the shooting game {name} used to play back home, and they teach {name} their game. By sunset, the new court starts to feel like home."
   },
   {
     "id": "empathy-crying-friend-first-day",
@@ -3493,11 +3493,11 @@
     "premise": "{name} and a classmate build a cardboard castle for the class autumn fair. While {name} is away, the classmate cuts off the castle's tallest tower to make it fit the shelf, without asking. {name} is hurt and refuses to talk to him all morning. Later he explains and says sorry for not asking. {name} forgives him, and together they turn the cut tower into a separate lookout tower."
   },
   {
-    "id": "mid-autumn-pomelo-lanterns",
+    "id": "mid-autumn-rabbit-mooncakes",
     "ageBands": ["2-4"],
     "style": "cute",
     "setting": "home",
-    "premise": "On Moon Festival afternoon, Grandma peels several big pomelos, and the whole family makes funny pomelo-peel hats and little pomelo lanterns with tea lights inside, lit by Grandma. {name} decorates a hat with leaves and a paper rabbit. At night they set the lanterns on the table and play a guessing game about shapes in the moon, until {name} falls asleep."
+    "premise": "A few days before Moon Festival, Grandma and {name} make snowy-skin mooncakes in the kitchen. {name} squishes the soft dough, rolls a red bean ball inside, and presses it into a wooden mold shaped like a rabbit. Pop! Out comes a little rabbit mooncake. They chill them in the fridge, and on the festival night the family shares the rabbit mooncakes under the round moon."
   },
   {
     "id": "autumn-leaf-crunch-walk",
