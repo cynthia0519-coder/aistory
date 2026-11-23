@@ -23461,5 +23461,59 @@
       ]
     },
     "draft": true
+  },
+  {
+    "id": "earthquake-school-drill-day",
+    "style": "inspiring",
+    "ageBands": [
+      "6-8"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "{name}的地震演練",
+      "en": "{name} and the Earthquake Drill"
+    },
+    "paragraphs": {
+      "zh": [
+        "九月二十一日是國家防災日。早上，林老師在黑板上寫了「趴下、掩護、穩住」六個大字。她笑著說：「今天十點，全校要做地震演練。聽到廣播的時候，就把它當成真的地震喔！」{name}握緊鉛筆，心裡有點緊張，又有點期待。",
+        "第二節課，大家正在安靜地畫圖，喇叭突然響起：「地震了！地震了！」聲音又大又急，{name}的心砰砰跳，手裡的蠟筆差點掉到地上。{name}深吸一口氣，想起黑板上那六個字，馬上動了起來。",
+        "{name}趴到地上，鑽進堅固的木頭書桌底下，一隻手護住頭和脖子，另一隻手緊緊抓住桌腳。{name}偷偷看了一眼四周，還好自己的位子離大窗戶和高高的書櫃都很遠，什麼東西也不會掉下來。",
+        "這時，坐在門邊的阿凱突然站了起來，著急地說：「我要衝出去！門就在旁邊！」{name}趕快從桌子下面喊：「阿凱，還在搖，不能跑！走廊和樓梯更危險，快躲到桌子下面，等搖完再走！」",
+        "阿凱愣了一下，看看門，又看看{name}，然後蹲下來鑽進自己的書桌底下，抓住桌腳。林老師也蹲在講台旁，大聲說：「離窗戶遠一點，不要靠近書櫃！很好，大家都穩住！」{name}對阿凱比了一個大拇指。",
+        "過了一會兒，廣播說：「搖晃停止了，請老師帶領學生疏散。」林老師站起來，溫和地說：「大家用課本護著頭，排成一列，跟著我走。不推、不跑、不說話。」同學們一個接一個，安安靜靜地走下樓梯。",
+        "到了操場，林老師說：「{name}，可以幫我數一數全班有沒有到齊嗎？」{name}點點頭，從第一排開始數：「一、二、三……」數到十五時，一隻麻雀飛過，{name}一分心，忘了數到哪裡。{name}沒有放棄，又從頭慢慢數一次。",
+        "「老師，二十八個人，全部都在！」林老師笑著說：「謝謝你，數得真仔細。」阿凱走過來，不好意思地說：「剛才謝謝你提醒我。」{name}笑著說：「下次我們一起穩住！」陽光照在操場上，大家的心都暖暖的。"
+      ],
+      "en": [
+        "September twenty-first was National Disaster Prevention Day. That morning, Ms. Lin wrote three big words on the board: Drop, Cover, Hold On. \"At ten o'clock, the whole school will have an earthquake drill,\" she said with a smile. \"When you hear the speaker, act like it's real.\" {name} gripped a pencil, a little nervous and a little excited.",
+        "During second period, everyone was quietly drawing when the speaker suddenly blared, \"Earthquake! Earthquake!\" It was loud and fast. {name}'s heart thumped, and a crayon nearly rolled to the floor. Then {name} took a deep breath, remembered the three words on the board, and moved right away.",
+        "{name} dropped to the floor and crawled under the sturdy wooden desk. One hand covered {his} head and neck, and the other held tight to a desk leg. Peeking around, {name} was glad to be far from the big windows and the tall bookshelf, where nothing could fall.",
+        "Just then, Kai, who sat by the door, jumped up. \"I'm running out!\" he said. \"The door's right here!\" {name} called from under the desk, \"Kai, it's still shaking, don't run! The hallway and stairs aren't safe right now. Get under your desk and wait until it stops!\"",
+        "Kai froze. He looked at the door, then at {name}. Then he ducked under his own desk and grabbed the leg. Ms. Lin crouched by her desk and called, \"Stay away from the windows and the bookshelf! Good job, everyone, hold on!\" {name} gave Kai a big thumbs-up.",
+        "After a while, the speaker said, \"The shaking has stopped. Teachers, please lead your students out.\" Ms. Lin stood up and said gently, \"Hold your books over your heads and line up behind me. No pushing, no running, no talking.\" One by one, the class walked calmly down the stairs.",
+        "Out on the field, Ms. Lin asked, \"{name}, could you help me count our class?\" {name} nodded and started with the first row. \"One, two, three...\" At fifteen, a sparrow fluttered past, and {name} lost track. Instead of giving up, {name} went back to the beginning and counted slowly again.",
+        "\"Ms. Lin, twenty-eight kids, everyone's here!\" Ms. Lin smiled. \"Thank you. That was very careful counting.\" Kai walked over, looking a bit shy. \"Thanks for helping me back there.\" {name} grinned. \"Next time, let's both hold on!\" The sun shone over the field, and everyone felt warm inside."
+      ]
+    },
+    "theme": "earthquake",
+    "guide": {
+      "zh": {
+        "questions": [
+          "警報響起時，{name}做了哪三個動作？你可以示範給我看嗎？",
+          "阿凱想衝出門的時候，{name}怎麼提醒他？為什麼要等搖完再走？",
+          "如果在家裡遇到地震，你會躲在哪張桌子底下？哪些地方要離遠一點？"
+        ],
+        "tip": "今晚和孩子在家裡走一圈，一起找出最堅固的桌子，並玩一次「趴下、掩護、穩住」的小演練。"
+      },
+      "en": {
+        "questions": [
+          "What three things did {name} do when the alarm went off? Can you show me?",
+          "What did {name} tell Kai when he wanted to run for the door? Why is it better to wait until the shaking stops?",
+          "If the ground shook at home, which table would you hide under, and what places would you stay away from?"
+        ],
+        "tip": "Tonight, walk around your home together to find the sturdiest table, then play a quick Drop, Cover, Hold On practice game."
+      }
+    },
+    "draft": true
   }
 ]
