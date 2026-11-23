@@ -23428,41 +23428,6 @@
     "publishAt": "2027-08-08T19:30:00+08:00"
   },
   {
-    "id": "mid-autumn-pomelo-hat",
-    "style": "cute",
-    "ageBands": [
-      "2-4"
-    ],
-    "setting": "home",
-    "title": {
-      "zh": "柚子寶寶過中秋",
-      "en": "The Pomelo Baby's Moon Festival"
-    },
-    "paragraphs": {
-      "zh": [
-        "中秋節到了。月亮圓圓的。奶奶抱來一顆大柚子。哇，好大好大！{name}拍拍柚子。咚咚咚，咚咚咚。「柚子，你好！」",
-        "奶奶慢慢剝柚子。剝呀剝，剝呀剝。香香的味道跑出來。柚子皮像個圓碗。奶奶笑一笑。啪！戴在{name}頭上。像一頂圓圓帽。",
-        "{name}咯咯笑。「我是柚子寶寶！」{he}搖搖頭。帽子晃呀晃。哎呀，差點掉下來！{name}趕快扶好。大家都笑了。哈哈哈，哈哈哈。",
-        "爸爸也要戴。媽媽也要戴。奶奶給每人一頂。爸爸的帽子太小。歪歪的，好好笑。媽媽的剛剛好。奶奶的帽子最大。全家都是柚子人！",
-        "大家坐在窗邊。桌上有月餅。圓圓的，甜甜的。{name}咬一小口。嗯，好好吃！還有一瓣瓣柚子。酸酸的，甜甜的。{name}吃得笑瞇瞇。",
-        "「月亮上有兔子喔。」奶奶指著月亮說。{name}瞇起眼睛看。找呀找，找呀找。「在那裡！」兔子在搗藥。耳朵長長的。{name}也學兔子跳。跳跳跳，帽子晃晃晃。",
-        "{name}對月亮揮揮手。「兔子，你好！」揮一揮，再揮一揮。「月亮，你好！」月亮亮亮的。好像也在笑。{name}打了個哈欠。哈啊——",
-        "{name}靠在奶奶懷裡。柚子帽香香的。眼睛慢慢眨。眨一眨，眨一眨。小手還在揮。揮呀揮，停下來了。奶奶輕輕說：「晚安，柚子寶寶。」"
-      ],
-      "en": [
-        "It is Moon Festival. The moon is big and round. Grandma brings a giant pomelo. Wow, so big! {name} pats it. Thump, thump, thump. \"Hello, pomelo!\"",
-        "Grandma peels it slowly. Peel, peel, peel. A sweet smell fills the room. The peel looks like a round bowl. Grandma smiles. Plop! It goes on {name}'s head. A round pomelo hat!",
-        "{name} giggles. \"I'm a pomelo baby!\" {name} shakes and shakes. The hat wiggles and wobbles. Oops, it almost falls! {name} holds it tight. Everyone laughs. Ha ha ha!",
-        "Daddy wants a hat. Mommy wants a hat too. Grandma makes one for everyone. Daddy's hat is too small. It sits crooked. So silly! Mommy's fits just right. Grandma's is the biggest. A whole pomelo family!",
-        "Everyone sits by the window. Mooncakes wait on the table. Round and sweet. {name} takes a tiny bite. Yum, yum! There are pomelo pieces too. A little sour, a little sweet.",
-        "\"There's a rabbit on the moon,\" says Grandma. {name} squints and looks. Look, look, look. \"There it is!\" The rabbit is pounding away. Long, long ears. {name} hops like a bunny. Hop, hop, hop. The hat bounces too.",
-        "{name} waves at the moon. \"Hello, rabbit!\" Wave, wave, wave again. \"Hello, moon!\" The moon shines bright. It seems to smile back. {name} gives a big yawn. Ahh...",
-        "{name} snuggles on Grandma's lap. The pomelo hat smells sweet. Blink, blink go sleepy eyes. A little hand still waves. Wave... wave... then stop. Grandma whispers, \"Good night, pomelo baby.\""
-      ]
-    },
-    "draft": true
-  },
-  {
     "id": "earthquake-school-drill-day",
     "style": "inspiring",
     "ageBands": [
@@ -23512,6 +23477,1164 @@
           "If the ground shook at home, which table would you hide under, and what places would you stay away from?"
         ],
         "tip": "Tonight, walk around your home together to find the sturdiest table, then play a quick Drop, Cover, Hold On practice game."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "crossing-road-first-walk-to-school",
+    "style": "cute",
+    "ageBands": [
+      "2-4",
+      "4-6"
+    ],
+    "setting": "city",
+    "title": {
+      "zh": "{name}和爺爺的過馬路遊戲",
+      "en": "{name} and Grandpa's Crossing Game"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期一，上學囉！{name}牽著爺爺的手。大手牽小手，走呀走，走呀走。爺爺說：「我們來玩過馬路遊戲。」{name}點點頭：「好呀好呀！」",
+        "第一個路口到了。停！站在路邊。看左邊，看右邊，再看左邊。爺爺說：「耳朵也要聽喔。」噗噗噗，一台機車騎過去了。",
+        "「我們等小綠人出來。」紅紅的小人站著不動。等呀等，等呀等。叮！小綠人出來了，在走路呢！{name}和爺爺手牽手，邊走邊看，過了馬路。",
+        "路口有位黃背心阿姨。阿姨揮揮手：「早安！」{name}也揮揮手：「阿姨早！」黃背心亮亮的，好像一顆小太陽。",
+        "星期二，經過一條小巷子。巷子小小的，好安靜。可是還要停一停，聽一聽。噗噗噗！巷子裡鑽出一台機車。爺爺笑著說：「小巷子也有車喔。」",
+        "星期三，爺爺故意說：「先看天上嗎？」{name}咯咯笑：「不對啦！看左邊！」星期四，爺爺又說：「我們用跳的？」「不對啦！要牽手！」",
+        "星期五，又到路口了。爺爺還沒開口，{name}就說：「停！牽手！看左，看右，再看左！」{name}豎起耳朵聽：「沒有噗噗。等小綠人！」",
+        "小綠人出來了。{name}和爺爺邊走邊看，慢慢過馬路。黃背心阿姨拍拍手：「好棒的小老師！」到了幼兒園門口，{name}揮揮手：「爺爺，下午見！」"
+      ],
+      "en": [
+        "Monday! Time for school! {name} held Grandpa's hand. Big hand, little hand, step, step, step. \"Let's play the crossing game,\" said Grandpa. \"Yes, yes!\" said {name}.",
+        "Here was the first corner. Stop! Stand at the curb. Look left. Look right. Look left again. \"Now we listen, too,\" said Grandpa. Vroom, vroom! A scooter zipped by.",
+        "\"Now we wait for the little green man.\" The red man stood very still. Wait, wait, wait. Ding! The green man came. He was walking! Hand in hand, they crossed and kept watching.",
+        "A lady in a yellow vest stood at the corner. She waved. \"Good morning!\" {name} waved back. \"Good morning!\" Her vest was so bright, like a little sun.",
+        "On Tuesday, they passed a tiny alley. It was small and very quiet. Still, they stopped and listened. Vroom, vroom! A scooter popped out. \"Even tiny alleys have scooters,\" Grandpa said with a smile.",
+        "On Wednesday, Grandpa said, \"First, we look at the sky?\" {name} giggled. \"No, Grandpa! Look left!\" On Thursday, Grandpa said, \"Shall we hop across?\" \"No, Grandpa! Hold hands!\"",
+        "On Friday, they reached the corner again. Before Grandpa could speak, {name} said, \"Stop! Hold hands! Look left, look right, look left again!\" {name} listened hard. \"No vroom. Now wait for the green man!\"",
+        "The green man came. {name} and Grandpa crossed slowly, watching all the way. The yellow-vest lady clapped. \"What a great little teacher!\" At the school gate, {name} waved. \"See you later, Grandpa!\""
+      ]
+    },
+    "theme": "crossing-road",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}和爺爺到了路口，第一件事做了什麼？",
+          "小巷子那麼安靜，為什麼{name}和爺爺還要停下來聽一聽？",
+          "你過馬路的時候，會牽誰的手？"
+        ],
+        "tip": "這週出門時，請孩子當「小老師」，在每個路口說出：停、牽手、看左看右再看左、聽一聽、等小綠人。"
+      },
+      "en": {
+        "questions": [
+          "What did {name} and Grandpa do first when they reached the corner?",
+          "The alley was so quiet. Why did {name} and Grandpa still stop and listen?",
+          "Whose hand will you hold when you cross the street?"
+        ],
+        "tip": "This week, let your child be the \"little teacher\" at every corner and say the steps out loud: stop, hold hands, look left, right, and left again, listen, and wait for the green man."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "sockets-night-phone-charger",
+    "style": "cute",
+    "ageBands": [
+      "2-4",
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}和小藍燈說晚安",
+      "en": "{name} Says Goodnight to the Little Blue Light"
+    },
+    "paragraphs": {
+      "zh": [
+        "晚上了，該睡覺囉。{name}躺在小床上，被子軟軟的。床邊有一個小藍燈，眨呀眨，眨呀眨。「咦？那是什麼呀？」",
+        "原來是媽媽的手機。手機正在充電。一條長長的電線，連到牆上的插座。{name}想：拔起來，就能玩手機囉！{his}小手慢慢伸過去。",
+        "媽媽輕輕握住{his}小手。「插頭、電線和插座，是大人用的喔。小手手不碰，手指不戳，東西也不塞。」{name}點點頭，把小手藏進被子裡。小熊也把手藏起來，好像在說：我也不碰！",
+        "「咕嚕咕嚕。」{name}喝了一口水。哎呀，水滴到小手上了！媽媽說：「濕濕的手，要離電線遠遠的。」媽媽拿來小毛巾，擦擦擦，乾乾的。{name}把水杯放到床的另一邊。",
+        "媽媽看看電線，問：「如果電線破了，或是插頭冒火花，要怎麼辦？」{name}大聲說：「退後退後，告訴媽媽！」「答對了！」媽媽摸摸電線，「這條好好的，真棒。」",
+        "「我們幫小藍燈，找個新家吧！」媽媽把充電器和手機，搬到高高的架子上，插好插座。{name}踮起腳尖看一看。「哇，好高好高喔！」",
+        "小藍燈在高高的地方，眨呀眨，像一顆小星星。{name}揮揮手，小熊也揮揮手。{name}咯咯笑：「小熊，你的手好短喔！」媽媽也笑了。",
+        "媽媽關上大燈，房間暗暗的，只剩小藍燈亮亮的。{name}打了一個大哈欠。「小藍燈，晚安。」小藍燈眨一眨，好像在說：晚安，{name}。"
+      ],
+      "en": [
+        "It is bedtime. {name} snuggles into a soft, cozy bed. By the bed, a little blue light blinks. Blink, blink, blink. \"Ooh! What is that?\"",
+        "It is Mom's phone. The phone is charging. A long cord runs to the plug in the wall socket. {name} thinks, \"Pull it out! Then I can play!\" A little hand reaches out.",
+        "Mom gently holds that little hand. \"Plugs, cords, and sockets are for grown-ups. Little fingers stay away. No poking, no pushing things in.\" {name} nods and tucks both hands under the blanket. Teddy hides his paws too!",
+        "Glug, glug. {name} sips some water. Oops! Drips land on a little hand. Mom says, \"Wet hands stay far from cords.\" She wipes with a towel. Pat, pat, all dry! {name} moves the cup to the other side.",
+        "Mom looks at the cord. \"What if a cord looks broken? What if a plug sparks?\" {name} says loudly, \"Step back! Tell Mom!\" \"That's right!\" Mom checks the cord. \"This one is just fine.\"",
+        "\"Let's find the blue light a new home!\" Mom puts the charger and phone up high on the shelf. She plugs it in up there. {name} stands on tiptoes. \"Wow! So high!\"",
+        "Up high, the little light blinks like a tiny star. {name} waves. Teddy waves too. {name} giggles. \"Teddy, your arms are so short!\" Mom laughs too.",
+        "Mom turns off the big light. The room is dark and quiet. Only the blue light glows. {name} gives a big yawn. \"Goodnight, little blue light.\" Blink! It seems to say, \"Goodnight, {name}.\""
+      ]
+    },
+    "theme": "sockets",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}想拔插頭的時候，媽媽說了什麼？",
+          "如果你的手濕濕的，要怎麼做才能靠近電線？",
+          "如果看到電線破了，或插頭冒火花，你會怎麼做？"
+        ],
+        "tip": "今晚和孩子玩「退後告訴大人」的小遊戲：你指著家裡的插座或電線，孩子就把手藏起來說「大人用的！」。也可以一起檢查床邊的電線和水杯放的位置。"
+      },
+      "en": {
+        "questions": [
+          "What did Mom say when {name} wanted to pull out the plug?",
+          "What should you do if your hands are wet and there is a cord nearby?",
+          "What would you do if you saw a broken cord or a sparking plug?"
+        ],
+        "tip": "Tonight, play a quick \"Grown-ups Only\" game: point to a socket or cord at home, and your child hides both hands and says \"For grown-ups!\" Then check together that cups of water stay away from bedside cords."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "hot-things-roasted-sweet-potato",
+    "style": "cute",
+    "ageBands": [
+      "2-4",
+      "4-6"
+    ],
+    "setting": "city",
+    "title": {
+      "zh": "{name}和奶奶的烤地瓜",
+      "en": "{name} and Grandma's Sweet Potato"
+    },
+    "paragraphs": {
+      "zh": [
+        "秋天來了。晚風涼涼的，呼呼呼。黃葉子在街上轉圈圈。奶奶牽著{name}的小手，慢慢走。忽然，香香的味道飄過來。{name}聞一聞：「好香好香！」",
+        "街角有一臺烤地瓜車。車上有個大鐵桶，黑黑的，圓圓的。鐵桶冒著白白的煙。伯伯笑咪咪的。奶奶說：「我們買一個吧！」伯伯夾出一個胖地瓜，放進紙袋。",
+        "奶奶拿著紙袋。好香喔，{name}好想馬上抓。小手伸出去，奶奶說：「燙燙的喔！鐵桶也燙。」{name}趕快退後一步，再退一步。伯伯拍拍手：「站得好遠，真聰明！」",
+        "奶奶和{name}坐在長椅上。奶奶把地瓜剝開。咻——白煙跑出來，像一朵小雲。裡面黃黃的，甜甜的。{name}張大嘴巴：「啊——」奶奶笑了：「還很燙，等一等。」",
+        "「我們一起吹一吹！」呼——呼——{name}吹得好用力。咦？一片小葉子被吹走了，飛呀飛。{name}咯咯笑：「葉子也想吃地瓜！」奶奶也哈哈笑。",
+        "奶奶用手指碰一碰。「嗯，溫溫的了，可以吃囉！」{name}咬一小口。軟軟的，甜甜的，好好吃！「奶奶也吃一口！」一人一口，地瓜越來越小。",
+        "天色慢慢暗了。路燈一盞一盞亮起來。奶奶和{name}回家了。廚房好熱鬧！水壺嗶嗶叫，電鍋噗噗冒煙，爐子上的湯咕嘟咕嘟。{name}退後一步，大聲喊：「奶奶！水開了！」",
+        "奶奶走過來，關掉爐火。「謝謝{name}！燙燙的東西，讓奶奶來。」晚餐時，熱湯冒著煙。{name}說：「一起吹一吹！」呼——呼——奶奶說：「溫溫的了。」{name}喝一口。暖暖的，好香。"
+      ],
+      "en": [
+        "Autumn is here. The evening wind is cool. Whoosh, whoosh! Yellow leaves spin down the street. Grandma holds {name}'s hand. Then a sweet smell floats by. Sniff, sniff! \"Yummy!\"",
+        "On the corner stands a sweet potato cart. It has a big iron barrel, round and black. White smoke puffs out. The seller smiles. \"Let's buy one!\" says Grandma. He drops a fat potato in a bag.",
+        "Grandma holds the bag. {name} wants to grab it right now. Grandma says, \"Hot, hot! The barrel is hot too.\" {name} steps back. One step, two steps. The seller claps. \"Smart spot to stand!\"",
+        "Grandma and {name} sit on a bench. Grandma breaks the potato open. Whoosh! Steam floats up like a tiny cloud. Inside it is golden. {name} opens wide. \"Ahh!\" Grandma laughs. \"Still hot. Let's wait.\"",
+        "\"Let's blow together!\" Phew, phew! {name} blows so hard. Oops! A little leaf flies away. {name} giggles. \"The leaf wants potato too!\" Grandma giggles too.",
+        "Grandma touches it with one finger. \"Warm now. Time to eat!\" {name} takes a tiny bite. Soft and sweet! \"Grandma, your turn!\" One bite each. The potato gets smaller and smaller.",
+        "Evening falls. Streetlights blink on, one by one. Home again! The kitchen is busy. The kettle whistles. The rice cooker puffs steam. Soup bubbles on the stove. {name} steps back and calls, \"Grandma! The water's boiling!\"",
+        "Grandma comes and turns off the stove. \"Thank you, {name}! Hot things are for Grandma.\" At dinner, the soup steams. \"Let's blow together!\" Phew, phew. Grandma says, \"Warm now.\" {name} takes a sip. Cozy and yummy."
+      ]
+    },
+    "theme": "hot-things",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}想抓地瓜的時候，奶奶說了什麼？{name}做了什麼？",
+          "家裡有哪些燙燙的東西？看到它們冒煙時，你會怎麼做？",
+          "吃熱熱的食物前，我們可以一起做什麼？"
+        ],
+        "tip": "今晚吃飯時，和孩子一起玩「呼呼吹」：先一起吹一吹，等大人說「溫溫的了」再開動。也可以練習一句話：「燙燙的，我退後，叫大人！」"
+      },
+      "en": {
+        "questions": [
+          "What did Grandma say when {name} wanted to grab the potato? What did {name} do?",
+          "What hot things are in our home? What would you do if you saw one steaming?",
+          "What can we do together before eating hot food?"
+        ],
+        "tip": "At dinner tonight, play \"Phew, Phew\": blow on the food together and start eating only when the grown-up says \"Warm now.\" Practice one phrase too: \"Hot, hot! Step back and call a grown-up!\""
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "water-safety-pond-ball",
+    "style": "adventure",
+    "ageBands": [
+      "4-6",
+      "6-8"
+    ],
+    "setting": "park",
+    "title": {
+      "zh": "{name}和漂走的紅球",
+      "en": "{name} and the Floating Red Ball"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期六早上，{name}和媽媽去公園。{name}抱著一顆紅色的球，一路跑，一路笑。公園裡有一個好大的荷花池，綠綠的荷葉，像一把把小雨傘。池子上還有小船，船上的人都穿著橘色救生衣。",
+        "{name}在草地上踢球。「咚！」球滾呀滾，越滾越快。它滾過小路，又滾下草坡。「噗通！」球掉進了荷花池！紅色的球浮在水上，慢慢漂離岸邊，停在兩片荷葉中間。",
+        "{name}跑到草坡下，看見地上有一根長樹枝。「我可以拿樹枝，彎下腰去勾球！」{name}心裡想。可是池邊的石頭濕濕的，看起來滑滑的。綠綠的池水，也看不到底。",
+        "{name}想起游泳課的老師說過：「水看起來淺，其實可能很深。」{name}放下樹枝，往後退了三大步。然後，{he}大聲喊：「媽媽！我的球掉進池子裡了！」",
+        "媽媽快步走過來，牽起{name}的手。「你離水邊遠遠的，做得真好。」媽媽說：「我們去找公園的人幫忙吧。」他們在小船碼頭旁邊，找到穿綠背心的阿福叔叔。",
+        "阿福叔叔拿來一支好長好長的網子。他站在有欄杆的木台上，把網子慢慢伸出去。網子越過荷葉，輕輕一撈，紅球就進了網子！一隻小青蛙跳到荷葉上，「呱呱！」好像在拍手。",
+        "阿福叔叔把球交給{name}。木台旁邊，掛著一個紅白色的圓圈。「這是救生圈，它會浮在水上。」阿福叔叔說：「如果有人掉進水裡，不要自己跳下去。要大聲叫大人，再把會浮的東西丟過去。」{name}認真的點點頭。",
+        "媽媽指著池上的小船說：「下次一起去划船，要先穿救生衣喔。」{name}笑著說：「就像夏天去海邊，我在腳踩得到的地方玩，媽媽一直看著我！」太陽快下山了，{name}抱著紅球，牽著媽媽回家。荷葉在風裡輕輕搖，好像在說再見。"
+      ],
+      "en": [
+        "On Saturday morning, {name} and Mom went to the park. {name} carried a shiny red ball and laughed all the way. The park had a big lotus pond. Its round green leaves looked like tiny umbrellas. Little boats floated nearby, and everyone aboard wore orange life jackets.",
+        "{name} kicked the ball across the grass. Thump! It rolled and rolled, faster and faster. It bounced over the path and down the grassy slope. Plop! The ball landed in the lotus pond. Slowly, it drifted away from the edge and stopped between two leaves.",
+        "{name} ran to the bottom of the slope and spotted a long stick. \"I could lean over and hook the ball!\" {name} thought. But the stones by the pond were wet and slippery. And the green water was too dark to see the bottom.",
+        "{name} remembered what the swim teacher once said: \"Water can look shallow but be very deep.\" So {name} put the stick down and took three big steps back. Then {he} called out loudly, \"Mom! My ball fell in the pond!\"",
+        "Mom hurried over and took {name}'s hand. \"You stayed far from the edge. That was smart,\" she said. \"Let's find someone from the park to help.\" Near the boat dock, they found Uncle Fu in his green vest.",
+        "Uncle Fu brought a very, very long net. He stood on a wooden deck with a sturdy railing. Slowly, he stretched the net out over the leaves. Swish! The red ball was caught. A little frog hopped onto a leaf. \"Ribbit!\" It seemed to cheer.",
+        "Uncle Fu handed the ball to {name}. By the deck hung a red and white ring. \"This is a life ring. It floats,\" Uncle Fu said. \"If someone falls in, never jump in after them. Shout for a grown-up, then throw something that floats.\" {name} nodded carefully.",
+        "Mom pointed at the boats. \"Next time, let's ride one. We'll put on life jackets first.\" {name} grinned. \"Like at the beach! I played where my feet touched, and you watched me!\" As the sun sank low, {name} hugged the red ball and walked home with Mom. The lotus leaves waved goodbye."
+      ]
+    },
+    "theme": "water-safety",
+    "guide": {
+      "zh": {
+        "questions": [
+          "球掉進池子裡的時候，{name}做了什麼？你覺得為什麼{he}要往後退？",
+          "如果你看到朋友在水裡需要幫忙，你可以怎麼做？",
+          "去游泳池或海邊玩水時，誰會在旁邊看著你？"
+        ],
+        "tip": "這個星期和孩子玩「救生圈遊戲」：一人假裝在水裡喊救命，另一人站在原地大喊「大人快來！」並丟出一個枕頭當救生圈。"
+      },
+      "en": {
+        "questions": [
+          "What did {name} do when the ball fell into the pond? Why do you think {he} stepped back?",
+          "What could you do if you saw a friend who needed help in the water?",
+          "When you play at the pool or the beach, who watches you?"
+        ],
+        "tip": "This week, play a 'life ring game': one person pretends to need help in the water, and the other stays put, shouts 'Grown-up, come quick!' and tosses a pillow as a pretend life ring."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "starting-kindergarten-nap-time-blanket",
+    "style": "bedtime",
+    "ageBands": [
+      "2-4",
+      "4-6"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "{name}的小毯子午睡",
+      "en": "{name}'s Nap Time Blanket"
+    },
+    "paragraphs": {
+      "zh": [
+        "午睡時間到了。教室好安靜。窗簾拉起來，燈光暗暗的。小床一張一張排好。小朋友都躺下來了。{name}也躺下來。可是{name}睡不著。{name}好想家。",
+        "{name}的眼睛濕濕的。小小的眼淚掉下來，滴答，滴答。林老師輕輕走過來。「想家了，對不對？」{name}點點頭。林老師說：「想家沒關係。哭一哭也沒關係。老師在這裡陪你。」",
+        "林老師拿來一個小袋子。「看，這是你從家裡帶來的。」是{name}的小毯子！軟軟的，暖暖的。{name}把臉貼上去，聞一聞。香香的，是家裡的味道。",
+        "林老師坐在小床旁邊。手輕輕摸著{his}背。摸一摸，拍一拍，慢慢的，慢慢的。林老師小聲說：「吃完點心，玩完遊戲，媽媽就會來接你喔。」",
+        "{name}抬頭看天花板。天花板上有好多星星。黃色的小星星，一閃一閃。{name}開始數。一顆星，兩顆星，三顆星。四顆星，五顆星……",
+        "隔壁小床的小安翻了個身。小安也抱著一隻小熊。小安小聲說：「我也會想家。」{name}笑了一下，小安也笑了。兩個人輕輕揮揮手。",
+        "教室好安靜。電風扇轉呀轉，呼呼呼。窗外的小鳥，啾啾啾。{name}抱緊小毯子，眼睛眨呀眨。六顆星，七顆星……眼睛慢慢閉上了。{name}睡著了。",
+        "叮叮叮，起床囉！窗簾拉開，陽光亮亮的。{name}揉揉眼睛，伸個懶腰。林老師笑著說：「點心時間到囉！」{name}牽著小安的手。吃完點心，玩一玩，媽媽就要來了。"
+      ],
+      "en": [
+        "It is nap time. The classroom is very quiet. The curtains are closed. The lights are soft and low. Little beds sit in a row. Everyone lies down. {name} lies down too. But {name} cannot sleep. {name} misses home.",
+        "{name}'s eyes feel wet. Little tears fall down. Drip, drip. Ms. Lin tiptoes over. \"You miss home, don't you?\" {name} nods. \"That's okay,\" she says. \"Crying is okay too. I'm right here.\"",
+        "Ms. Lin brings a little bag. \"Look what you brought from home.\" It is {name}'s little blanket! So soft. So warm. {name} sniffs it gently. It smells just like home.",
+        "Ms. Lin sits by the little bed. She rubs {his} back. Rub, rub. Pat, pat. Slow and gentle. \"After snack and play,\" she whispers, \"Mommy will come to get you.\"",
+        "{name} looks up at the ceiling. There are many stars up there. Little yellow stars, twinkle, twinkle. {name} starts to count. One star, two stars, three stars. Four stars, five stars...",
+        "Next door, Annie rolls over. Annie hugs a little teddy bear. \"I miss home too,\" Annie whispers. {name} smiles a tiny smile. Annie smiles back. They wave softly.",
+        "The room is so quiet. The fan goes round, whoosh, whoosh. A bird sings outside, tweet, tweet. {name} hugs the blanket close. Six stars, seven stars... Eyes close slowly. {name} is asleep.",
+        "Ding, ding! Time to wake up! The curtains open. The sun is bright. {name} rubs sleepy eyes and stretches. \"Snack time!\" Ms. Lin smiles. {name} holds Annie's hand. Snack, then play, then Mommy comes."
+      ]
+    },
+    "theme": "starting-kindergarten",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}想家哭的時候，林老師做了什麼？",
+          "{name}抱著什麼東西，就覺得好像在家裡？你想帶什麼去學校陪你？",
+          "吃完點心、玩完遊戲以後，誰會來接{name}？"
+        ],
+        "tip": "這週每天早上用同一句話道別，例如「吃完點心、玩完遊戲，我就來接你」，放學時再說一次「我來了，跟早上說的一樣」。"
+      },
+      "en": {
+        "questions": [
+          "What did Ms. Lin do when {name} missed home and cried?",
+          "What did {name} hug that felt like home? What would you like to bring to school?",
+          "Who comes to get {name} after snack and play?"
+        ],
+        "tip": "This week, say the same goodbye each morning, like \"After snack and play, I'll come get you,\" and at pick-up say, \"Here I am, just like I promised.\""
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "bedtime-routine-school-night",
+    "style": "bedtime",
+    "ageBands": [
+      "6-8"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}和等待的機器人",
+      "en": "{name} and the Waiting Robot"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期二晚上，窗外的天空已經變成深藍色。{name}坐在書桌前，正在組裝一個銀色的機器人模型。機器人已經有了身體和一隻手臂，另一隻手臂還躺在盒子裡。平板電腦上播放著組裝教學影片，小螺絲發出輕輕的喀喀聲。",
+        "爸爸輕輕敲門走進來。「九點囉，明天還要上學呢。」{name}抬起頭說：「可是我好想把它做完！」爸爸看了看機器人，笑著說：「它做得真棒。我們來約定好不好？先做睡前的小步驟，最後一起讀一章故事、關燈。機器人就在書桌上等你。」",
+        "{name}想了想，點點頭。爸爸說：「那第一步，平板也要休息了。螢幕的光太亮，眼睛和腦袋會以為還是白天。」{name}按下按鈕，螢幕慢慢暗了下來。房間裡只剩下桌燈暖黃色的光，機器人安安靜靜地站著，好像也準備休息了。",
+        "接著，{name}把課本、鉛筆盒和聯絡簿一樣一樣放進書包，拉上拉鍊。爸爸打開衣櫃，{name}挑好明天要穿的上衣和褲子，整整齊齊地放在椅子上。「書包好了，衣服也好了。」{name}小聲地數著，心裡覺得穩穩的。",
+        "浴室裡，溫溫的熱水嘩啦啦地流進浴缸，泡泡香香軟軟的。{name}在溫水裡洗得乾乾淨淨，再換上柔軟的睡衣。睡衣暖暖的，像一個輕輕的擁抱。窗外遠遠的車聲，一聲、兩聲，慢慢地越來越少了。",
+        "刷牙的時候，{name}上下左右慢慢地刷，一邊在心裡數數。爸爸在旁邊說：「你知道嗎？睡覺的時候，身體會悄悄長大，也會把力氣存起來，明天就能玩得更開心。」{name}吐出白白的泡泡，忍不住打了一個大大的呵欠。",
+        "回到房間，爸爸關掉大燈，只留下床頭的小夜燈。{name}鑽進被窩，爸爸翻開故事書，用低低慢慢的聲音讀了一章。窗外的蟲兒輕輕地唧唧叫，被子軟軟的，枕頭暖暖的。故事讀完了，{name}的眼睛也慢慢闔上。爸爸輕輕關燈，說：「晚安。」",
+        "早上，陽光從窗簾縫裡溜進來。{name}一下子就醒了，精神好好的，一點也不想賴床。{he}走到書桌前，銀色的機器人還站在那裡，好像在說早安。{name}笑著說：「今天放學，我們一起把你的手臂裝好！」"
+      ],
+      "en": [
+        "It was Tuesday night, and the sky outside had turned deep blue. {name} sat at the desk, building a shiny silver robot model. The robot already had a body and one arm. The other arm still lay in the box. A tablet played a how-to video, and tiny screws went click, click.",
+        "Dad knocked softly and came in. \"It's nine o'clock, and tomorrow is a school day.\" {name} looked up. \"But I really want to finish it!\" Dad smiled at the robot. \"It looks great. Let's make a deal. We do our bedtime steps, read one chapter, and turn off the light. The robot will wait right here.\"",
+        "{name} thought about it and nodded. \"First,\" said Dad, \"the tablet needs a rest too. Bright screens make our eyes and brain think it's still daytime.\" {name} pressed the button, and the screen went dark. Only the warm yellow desk lamp glowed, and the robot stood quietly, as if it were getting sleepy too.",
+        "Next, {name} packed books, a pencil case, and a homework folder into the school bag, one by one, and zipped it shut. Dad opened the closet, and {name} chose a shirt and pants for tomorrow, folding them neatly on the chair. \"Bag done. Clothes done,\" {name} whispered, feeling calm and ready.",
+        "In the bathroom, warm water splashed gently into the tub, and the bubbles smelled sweet and soft. {name} washed until everything felt clean, then slipped into cozy pajamas. They felt warm, like a gentle hug. Outside, the faraway cars hummed by, one, then another, then fewer and fewer.",
+        "While brushing teeth, {name} went slowly, up and down, side to side, counting quietly. Dad leaned on the doorway. \"Did you know that while you sleep, your body grows a little and saves up energy? Then tomorrow you can play even more.\" {name} spat out white foam and gave a big, long yawn.",
+        "Back in the bedroom, Dad switched off the big light and left only the little night-light on. {name} snuggled under the blanket while Dad read one chapter in a low, slow voice. Crickets chirped softly outside. The pillow was warm, the blanket was soft, and {name}'s eyes slowly closed. Dad turned off the light. \"Goodnight.\"",
+        "In the morning, sunshine peeked through the curtains. {name} woke up easily, feeling bright and full of energy, with no wish to stay in bed. At the desk, the silver robot was still standing there, as if saying good morning. {name} smiled. \"After school, we'll put on your other arm together!\""
+      ]
+    },
+    "theme": "bedtime-routine",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}和爸爸睡前做了哪些步驟？你睡前也會做哪些事呢？",
+          "為什麼爸爸說平板也要休息？你覺得睡前關掉螢幕會有什麼不同？",
+          "第二天早上{name}醒來時感覺怎麼樣？你睡飽的時候喜歡做什麼？"
+        ],
+        "tip": "今晚和孩子一起畫一張「睡前小步驟」圖卡（收書包、洗澡、睡衣、刷牙、讀故事、關燈），貼在床邊，每完成一步就一起指一指。"
+      },
+      "en": {
+        "questions": [
+          "What bedtime steps did {name} and Dad do? Which steps do you do before bed?",
+          "Why did Dad say the tablet needed a rest too? How might turning off screens help you get sleepy?",
+          "How did {name} feel the next morning? What do you like to do when you've had a good night's sleep?"
+        ],
+        "tip": "Tonight, draw a simple bedtime-steps chart together (pack bag, bath, pajamas, brush teeth, story, lights off) and hang it by the bed so your child can point to each step as it's done."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "handwashing-flu-season-class-helper",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "{name}是洗手小幫手",
+      "en": "{name} the Handwashing Helper"
+    },
+    "paragraphs": {
+      "zh": [
+        "秋天到了，樹葉變黃了。教室裡，好多同學在咳嗽。阿哲一直打噴嚏。小美生病，請假在家。座位空了好幾個。{name}看著空椅子，好想念大家。",
+        "林老師蹲在{name}旁邊。「你願意當洗手小幫手嗎？」{name}點點頭，有點緊張。「我們先一起練習吧。」老師說：「洗乾淨的手，能把細菌趕走。」她打開水龍頭，擠了一點肥皂。",
+        "「搓搓手心，搓搓手背。」林老師一邊洗一邊說。「手指縫也要洗，大拇指轉一轉。」「最後把指甲，在手心刮一刮。」{name}跟著做，泡泡越來越多。「要搓到唱完一首短短的歌喔。」",
+        "點心時間到了。{name}站在門口說：「先洗手，再吃點心喔！」可是阿哲跑得好快。他拿起餅乾就要吃。{name}的聲音太小了。阿哲沒有聽見。{name}有點難過，低下了頭。",
+        "{name}想了又想，編了一首歌。「搓手心，搓手背，手指縫裡躲貓貓。大拇指，轉圈圈，指甲刷刷洗乾淨！」{name}大聲唱出來。阿哲笑了，放下餅乾。「好好聽！我也要唱！」",
+        "大家排隊到洗手台。小芸跟著唱，阿哲也跟著唱。歌唱完了，手也洗好了。{name}提醒大家：「用水沖一沖，再用毛巾擦乾。」上完廁所，大家也記得邊唱邊洗。",
+        "下課時，大家在沙坑玩沙子。回到教室，{name}看看{his}小手。手上灰灰髒髒的。「在外面玩完，也要洗手喔！」{name}說。可是同學們早就唱著歌，排好隊了。",
+        "一天一天過去，月底到了。空椅子一張一張坐滿了。小美也笑著回來了。林老師拿出一張大大的紙。大家用彩色筆，畫滿圓圓的泡泡。{name}在中間畫了一雙笑笑的手。教室裡，到處都是笑聲。"
+      ],
+      "en": [
+        "Autumn came, and the leaves turned yellow. In {name}'s classroom, many friends were coughing. Jay sneezed again and again. Mei was home sick. Several chairs sat empty. {name} looked at them and missed everyone.",
+        "Ms. Lin knelt beside {name}. \"Would you like to be our handwashing helper?\" {name} nodded, feeling a little nervous. \"Let's practice together first,\" said Ms. Lin. \"Clean hands chase germs away.\" She turned on the tap and pumped some soap.",
+        "\"Rub your palms. Rub the backs,\" Ms. Lin said. \"Wash between your fingers. Twist each thumb.\" \"Last, scratch your nails on your palm.\" {name} copied every step. The bubbles grew and grew. \"Keep rubbing for one short song.\"",
+        "Soon it was snack time. {name} stood by the door. \"Wash your hands before snack!\" But Jay ran right past. He grabbed a cracker. {name}'s voice was too soft, and Jay didn't hear. {name} looked down at the floor.",
+        "{name} thought and thought. Then {he} made up a song. \"Rub the palms, rub the backs, fingers play hide-and-seek. Twist the thumbs, scrub the nails, wash them shiny clean!\" {name} sang it loud and clear. Jay laughed and put down the cracker. \"That's fun! I want to sing too!\"",
+        "Everyone lined up at the sink. Yun sang along. Jay sang along too. When the song ended, the washing was done. \"Now rinse, and dry with your towel,\" {name} reminded them. After using the toilet, friends sang and washed again.",
+        "At recess, the class played in the sandbox. Back inside, {name} looked at {his} hands. They were dusty and gray. \"We played outside, so let's wash!\" {name} said. But friends were already singing and lining up.",
+        "Day by day, the month went by. The empty chairs filled up again. Mei came back with a big smile. Ms. Lin brought out a huge sheet of paper. Everyone drew round, colorful bubbles. {name} drew two smiling hands in the middle. The whole room filled with laughter."
+      ]
+    },
+    "theme": "handwashing",
+    "guide": {
+      "zh": {
+        "questions": [
+          "阿哲沒聽見提醒時，{name}想了什麼好辦法？",
+          "洗手的時候，要搓手的哪些地方呢？",
+          "你什麼時候會記得洗手？吃東西前、上完廁所，還有呢？"
+        ],
+        "tip": "今晚洗手時，和孩子一起編一首你們家的洗手歌，邊唱邊搓手心、手背、指縫、大拇指和指甲。"
+      },
+      "en": {
+        "questions": [
+          "When Jay didn't hear the reminder, what clever idea did {name} have?",
+          "Which parts of your hands do you rub when you wash?",
+          "When do you remember to wash your hands? Before eating, after the toilet, and when else?"
+        ],
+        "tip": "Tonight at the sink, make up your own family handwashing song together, and rub palms, backs, between fingers, thumbs, and nails until it ends."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "trying-food-persimmon-autumn",
+    "style": "cute",
+    "ageBands": [
+      "2-4",
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}和爺爺的橘色柿子",
+      "en": "{name} and Grandpa's Orange Persimmons"
+    },
+    "paragraphs": {
+      "zh": [
+        "叮咚！爺爺回家了。爺爺提著一個紙袋。「{name}，猜猜看，裡面是什麼？」{name}看一看，搖搖頭。爺爺拿出兩顆柿子。圓圓的，橘橘的，好像兩個小太陽！",
+        "一顆柿子軟軟的。{name}輕輕戳一下。噗溜噗溜，像果凍在跳舞！另一顆柿子硬硬的。敲一敲，叩叩叩。{name}咯咯笑：「一顆軟，一顆硬！」",
+        "可是，{name}沒吃過柿子。{name}把小手藏到背後。「我喜歡香蕉。」爺爺笑瞇瞇：「沒關係。我們先咬一小口就好。不喜歡，也沒關係喔。」",
+        "爺爺把脆柿子切成小片。{name}先看一看。橘色的，亮亮的，滑滑的。裡面還有小小的花紋，像一顆星星！「哇，柿子裡有星星！」",
+        "{name}再聞一聞。嗯，香香的，甜甜的。{name}又舔一舔。舌頭涼涼的！爺爺也舔一舔，哎呀，鼻子沾到一點點。兩個人都笑了。",
+        "{name}咬一小口。喀滋！好脆喔！嚼一嚼，喀滋喀滋。「甜的！」{his}眼睛亮起來。「再一口！」爺爺拍拍手：「好棒的小小探險家！」",
+        "接著，{name}試試軟柿子。湯匙挖一點點。黏黏的，滑溜溜。{name}皺皺鼻子：「軟的，今天不要。」爺爺點點頭：「好。我小時候也不喜歡柿子。現在，我最愛柿子了！」",
+        "晚飯後，{name}排好一個盤子。左邊放香蕉，右邊放脆柿子。「香蕉是我最喜歡的。柿子是我秋天最喜歡的！」爺爺哈哈笑。窗外的樹葉，也是橘橘的。"
+      ],
+      "en": [
+        "Ding-dong! Grandpa is home. He holds a paper bag. \"{name}, guess what's inside?\" {name} shakes {his} head. Out come two persimmons. Round and orange, like two little suns!",
+        "One persimmon is soft. {name} gives it a poke. Wiggle, wobble, like dancing jelly! The other one is hard. Tap, tap, tap. {name} giggles. \"One is squishy! One is crunchy!\"",
+        "But {name} has never tried a persimmon. {name} hides both hands behind {his} back. \"I like bananas.\" Grandpa smiles. \"That's okay. Let's try one tiny bite. You don't have to like it.\"",
+        "Grandpa slices the crunchy one. First, {name} looks. Bright orange, shiny and smooth. There's a little pattern inside, like a star! \"Wow! A star in my fruit!\"",
+        "Next, {name} sniffs. Mmm, sweet and fresh. Then {name} gives it a lick. Cool on the tongue! Grandpa licks a piece too. Oops, some lands on his nose. They both laugh.",
+        "{name} takes a tiny bite. Crunch! Chew, chew. Crunch, crunch. \"It's sweet!\" {his} eyes go wide. \"One more bite!\" Grandpa claps. \"What a little explorer!\"",
+        "Now {name} tries the soft one. Just a dot on a spoon. Sticky and slippery. {name} wrinkles {his} nose. \"Not the squishy one today.\" Grandpa nods. \"Okay. I didn't like persimmons when I was little. Now I love them!\"",
+        "After dinner, {name} sets up a plate. Bananas on one side. Crunchy persimmons on the other. \"Bananas are my best. Persimmons are my autumn best!\" Grandpa laughs. Outside, the leaves are orange too."
+      ]
+    },
+    "theme": "trying-food",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}吃柿子之前，先做了哪些事？(看一看、聞一聞、舔一舔)",
+          "如果有一種新食物，你想先怎麼認識它？",
+          "爺爺小時候不喜歡柿子，現在卻最愛。你有沒有以前不喜歡、現在喜歡的食物？"
+        ],
+        "tip": "這週挑一樣新食物，和孩子一起玩「小小探險家」：先說說顏色、聞聞味道、聽聽咬下去的聲音，只咬一小口，喜不喜歡都說「謝謝你試試看」。"
+      },
+      "en": {
+        "questions": [
+          "What did {name} do before taking a bite of the persimmon? (look, sniff, lick)",
+          "If you saw a new food, how would you like to explore it first?",
+          "Grandpa didn't like persimmons when he was little, but loves them now. Is there a food you didn't like before but like now?"
+        ],
+        "tip": "This week, pick one new food and play \"little explorer\" together: name its color, smell it, listen for the crunch, and take just one tiny bite. Whether your child likes it or not, say \"Thanks for trying!\""
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "tidying-toys-school-bag-pockets",
+    "style": "cute",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}和口袋的家",
+      "en": "{name} and the Pocket Homes"
+    },
+    "paragraphs": {
+      "zh": [
+        "早上，太陽爬上窗戶。{name}揹起書包，準備上學。咦？水壺呢？{name}把書包打開，往裡面看。裡面有蠟筆、積木，還有一隻襪子！「襪子怎麼在這裡？」{name}拿起襪子，笑得好大聲。可是，水壺還是不見了。",
+        "媽媽走過來，幫忙一起找。原來水壺躲在沙發底下，沾滿了灰塵。聯絡簿呢？它被壓在蠟筆下面，皺巴巴的，像一片小餅乾。「哎呀，聯絡簿好可憐。」{name}輕輕把它摸平。兩個人趕快跑出門，差一點就遲到了。",
+        "那天晚上，媽媽拿起書包，眨眨眼睛。「我們來玩一個遊戲，叫做『口袋的家』。」{name}睜大眼睛問：「口袋也有家嗎？」媽媽笑著點點頭：「每樣東西，都要有自己的家喔。」{name}好期待，馬上坐了下來。",
+        "媽媽指著側邊的小口袋：「這是水壺的家。」{name}把水壺塞進去，剛剛好！大口袋是聯絡簿的家，平平的，不會皺。前面的口袋，住著鉛筆盒。「歡迎回家！」{name}對它們說，還鞠了一個小小的躬。",
+        "接著，{name}看看地板。積木、小汽車和兔子毛毛，散得到處都是。「它們也想回家嗎？」{name}問。媽媽說：「當然囉！積木住在藍箱子，小汽車住在架子上。」那毛毛呢？毛毛住在枕頭旁邊。",
+        "媽媽開始唱歌：「回家囉，回家囉，東西都回家囉！」{name}一邊唱，一邊收。媽媽把積木放進藍箱子，{name}把小汽車停上架子。兩個人一起，好快就收完了！最後，{name}把毛毛放到枕頭旁：「晚安，毛毛。」",
+        "第二天早上，{name}揹起書包。側邊口袋，水壺在！大口袋，聯絡簿在，平平整整的！前面口袋，鉛筆盒也在！「大家都在家！」{name}開心地跳了一下。今天不用找東西，早早就出門了。",
+        "從那天起，每天晚上，{name}都唱著回家歌。東西一樣一樣回到家。聯絡簿再也沒有皺巴巴，水壺也不再沾灰塵。老師翻開聯絡簿，說：「好整齊喔！」{name}笑咪咪的，心裡暖暖的。"
+      ],
+      "en": [
+        "The sun peeked through the window. {name} grabbed the school bag. \"Where is my water bottle?\" {name} looked inside the bag. Crayons! Blocks! And one sock! \"Why is a sock in here?\" {name} laughed and laughed. But still, no water bottle.",
+        "Mom came to help look. The water bottle was hiding under the sofa, all dusty. And the contact book? It was squished under the crayons. It looked like a wrinkly cracker. \"Poor contact book,\" said {name}, smoothing it flat. They hurried out the door, almost late.",
+        "That night, Mom held up the school bag and winked. \"Let's play a game called Pocket Homes.\" {name} gasped. \"Pockets have homes?\" Mom smiled and nodded. \"Everything needs its very own home.\" {name} sat down right away, ready to play.",
+        "Mom pointed to the little side pocket. \"This is the water bottle's home.\" {name} slid it in. A perfect fit! The big pocket was home for the contact book. Nice and flat, no wrinkles. The pencil case lived in the front pocket. \"Welcome home!\" said {name}, with a tiny bow.",
+        "Then {name} looked at the floor. Blocks, toy cars, and Fluffy the bunny were everywhere. \"Do they want to go home too?\" {name} asked. Mom said, \"Of course! Blocks live in the blue box. Cars live on the shelf.\" And Fluffy? Fluffy lived by the pillow.",
+        "Mom started to sing. \"Going home, going home, everything goes home!\" {name} sang and tidied too. Mom put the blocks in the blue box. {name} parked the cars on the shelf. Together, they finished super fast! Last, {name} set Fluffy by the pillow. \"Goodnight, Fluffy.\"",
+        "The next morning, {name} picked up the school bag. Side pocket? Water bottle! Big pocket? Contact book, nice and flat! Front pocket? Pencil case! \"Everyone is home!\" {name} gave a happy little hop. No searching today. They left the house nice and early.",
+        "From then on, {name} sang the going-home song every night. One by one, things went home. The contact book never got wrinkly again. The water bottle never got dusty. The teacher opened the contact book. \"How neat!\" {name} smiled a big, warm smile."
+      ]
+    },
+    "theme": "tidying-toys",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}的水壺和聯絡簿，後來各住在哪個口袋？",
+          "你的玩具住在哪裡？你想幫哪個玩具找一個新家？",
+          "{name}和媽媽一起唱歌收東西，你覺得怎麼樣？"
+        ],
+        "tip": "今晚睡前，和孩子一起唱「回家囉，回家囉，東西都回家囉！」把玩具和書包收回固定的位置，可以用小貼紙幫每個「家」做記號。"
+      },
+      "en": {
+        "questions": [
+          "Where did the water bottle and contact book live in the end?",
+          "Where do your toys live? Which toy needs a new home?",
+          "How did singing help {name} and Mom tidy up?"
+        ],
+        "tip": "Tonight before bed, sing \"Going home, going home, everything goes home!\" while you and your child put toys and the school bag back in their places. Try marking each \"home\" with a small sticker."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "brushing-teeth-after-mooncake",
+    "style": "cute",
+    "ageBands": [
+      "2-4",
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "中秋夜，{name}的亮晶晶笑容",
+      "en": "{name}'s Sparkly Moon Smile"
+    },
+    "paragraphs": {
+      "zh": [
+        "中秋節的晚上，月亮圓圓的。{name}吃了蛋黃月餅，甜甜的。{name}又吃了柚子，一片、兩片、三片。好飽好飽！{name}拍拍肚子，嘻嘻笑。",
+        "睡覺時間到了。媽媽說：「張開嘴巴，啊——」媽媽看一看，笑著說：「哎呀，甜甜的月餅，躲在牙齒縫裡呢！」{name}眨眨眼：「月餅在玩捉迷藏嗎？」",
+        "媽媽說：「我們一起刷牙吧。」{name}和媽媽站在鏡子前。{name}拿起小牙刷。媽媽擠一點點牙膏，像一顆小豆子。窗外，月亮偷偷探出頭。",
+        "刷刷刷，上面的牙齒。刷刷刷，下面的牙齒。輕輕的，轉圈圈。圓圓的，像月亮。白白的泡泡，變成小鬍子！{name}對著鏡子，做了一個鬼臉。",
+        "「後面的大牙也要刷喔。」媽媽說。{name}把嘴巴張得大大的。刷刷刷，裡面一點。刷刷刷，再裡面一點。「柚子渣，找到你了！」{name}笑得咯咯咯。",
+        "「換媽媽幫你刷一刷。」媽媽輕輕地，再刷一遍。前面、後面，上面、下面。每一顆都刷到了。「好乾淨！糖糖蟲跑光光。」咕嚕咕嚕，{name}漱漱口，吐掉泡泡。",
+        "{name}問：「早上也要刷嗎？」媽媽點點頭：「早上刷一次，晚上刷一次。」{name}開心地說：「早上給太陽看，晚上給月亮看！」媽媽聽了，哈哈笑。",
+        "{name}跑到窗邊，對著月亮笑。牙齒白白的，亮晶晶。月亮好像也在笑呢。「月亮晚安！」{name}鑽進被窩，閉上眼睛，香香甜甜睡著了。"
+      ],
+      "en": [
+        "It was Moon Festival night. The moon was big and round. {name} ate a sweet mooncake with egg yolk. Then came pomelo. One slice, two slices, three slices! {name} patted a full tummy and giggled.",
+        "Soon it was bedtime. \"Open wide,\" said Mom. \"Ahhh!\" Mom peeked inside and smiled. \"Oh my! Sticky sweet is hiding between your teeth.\" {name} blinked. \"Is mooncake playing hide-and-seek?\"",
+        "\"Let's brush together,\" said Mom. {name} and Mom stood by the mirror. {name} held a little toothbrush. Mom squeezed out a tiny dab of toothpaste. It looked like a pea! Outside, the moon peeked in.",
+        "Brush, brush, brush, the top teeth. Brush, brush, brush, the bottom teeth. Gently, gently, round and round. Little circles, like the moon! White bubbles made a funny mustache. {name} made a silly face.",
+        "\"Don't forget the back teeth,\" said Mom. {name} opened up big and wide. Brush, brush, a little farther back. Brush, brush, all the way back. \"Found you, pomelo bits!\" {name} laughed. \"Hee hee hee!\"",
+        "\"Now Mom will help finish,\" said Mom. Mom brushed once more, nice and slow. Front and back, top and bottom. Every single tooth! \"So clean! The sugar bugs are gone.\" Gurgle, gurgle! {name} rinsed and spit out the bubbles.",
+        "\"Do I brush in the morning too?\" asked {name}. Mom nodded. \"Every morning and every night.\" {name} grinned. \"Morning smiles for the sun. Night smiles for the moon!\" Mom laughed and laughed.",
+        "{name} ran to the window and smiled at the moon. Shiny white teeth, sparkle, sparkle! The moon seemed to smile back. \"Goodnight, moon friend!\" {name} snuggled into bed and drifted off to sweet dreams."
+      ]
+    },
+    "theme": "brushing-teeth",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}和媽媽刷牙時，牙刷是怎麼動的？你可以做給我看嗎？",
+          "後面的大牙裡，{name}找到了什麼？你的大牙裡會不會也躲著東西？",
+          "我們每天什麼時候要刷牙呢？"
+        ],
+        "tip": "今晚刷牙時，一起說「上面、下面、轉圈圈，後面大牙也要刷」，孩子刷完後由你幫忙再刷一遍，最後對著鏡子比賽誰的笑容最亮。"
+      },
+      "en": {
+        "questions": [
+          "How did the toothbrush move when {name} and Mom brushed? Can you show me?",
+          "What did {name} find in the back teeth? Could something be hiding in yours?",
+          "When do we brush our teeth every day?"
+        ],
+        "tip": "Tonight, chant \"Top, bottom, round and round, back teeth too!\" while your child brushes, then help finish. End with a sparkly-smile contest in the mirror."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "sharing-turns-class-block-corner",
+    "style": "cute",
+    "ageBands": [
+      "2-4"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "{name}和大紅積木",
+      "en": "{name} and the Big Red Block"
+    },
+    "paragraphs": {
+      "zh": [
+        "新的幼兒園，新的教室。{name}來上學了。積木箱打開了，嘩啦啦！紅的、黃的、藍的。最大的是紅積木。紅紅的，方方的，好漂亮！{name}想蓋高高的塔。",
+        "新朋友米米也來了。米米也想蓋塔。兩隻小手，一起伸出去。抓！拉！拉！拉！紅積木動也不動。「我的！」「我的！」咦，紅積木好像在說：「哎喲，好癢喔！」",
+        "林老師走過來，笑咪咪。她拿出一個小沙漏。「沙子流完，就換人。一人一次，好不好？」米米先玩。{name}點點頭。好，等一等。",
+        "沙子往下掉。沙沙沙，沙沙沙。{name}趴在桌上看。等一等，好難喔！{name}的腳動來動去。小手也想動一動。沙沙沙，沙子慢慢掉。",
+        "{name}想到一句話。{he}輕輕問：「米米，妳玩完，可以換我嗎？」米米說：「可以呀！」沙子掉光光了。米米把紅積木，放進{name}手裡。",
+        "換{name}玩了！{name}把紅積木放上去。咚！塔變高了。林老師把沙漏翻過來。沙沙沙，沙沙沙。這次{name}不急了。米米等著，也不急了。",
+        "米米看看{name}的塔。{name}看看米米的塔。「我們一起蓋，好不好？」「好呀！」一塊黃的，一塊藍的。一塊給你，一塊給我。塔長高了，比椅子還高！",
+        "最後，紅積木放最上面。像一頂小紅帽！「哇！」兩個人一起拍手。林老師也拍拍手。{name}和米米笑了，笑得好開心。明天，還要一起蓋塔喔！"
+      ],
+      "en": [
+        "First day at the new kindergarten! {name} comes to class. The block box opens. Clatter, clatter! Red, yellow, and blue. The biggest block is red. Big, red, and square! {name} wants a tall tower.",
+        "A new friend, Mimi, comes too. Mimi wants a tower too. Two hands reach out at once. Grab! Pull! Pull! Pull! The red block does not move. \"Mine!\" \"Mine!\" The block seems to giggle. \"Hee hee, that tickles!\"",
+        "Ms. Lin comes over with a smile. She holds up a little sand timer. \"When the sand runs down, you switch. One turn each. Okay?\" Mimi goes first. {name} nods. Okay, wait a bit.",
+        "The sand falls down. Shh, shh, shh. {name} leans on the table and watches. Waiting is so hard! {name}'s feet wiggle and jiggle. Little hands want to wiggle too. Shh, shh, shh. The sand falls slowly.",
+        "{name} thinks of something to say. {he} asks softly, \"Mimi, can I have a turn when you're done?\" \"Yes!\" says Mimi. The sand is all gone. Mimi puts the red block in {name}'s hands.",
+        "Now it's {name}'s turn! Up goes the red block. Clunk! The tower grows taller. Ms. Lin flips the timer over. Shh, shh, shh. This time, {name} is not in a hurry. Mimi waits calmly too.",
+        "Mimi looks at {name}'s tower. {name} looks at Mimi's tower. \"Let's build together!\" \"Yes, let's!\" One yellow block, one blue block. One for you, one for me. Now it's taller than a chair!",
+        "Last, the red block goes on top. It looks like a little red hat! \"Wow!\" They clap together. Ms. Lin claps too. {name} and Mimi smile big smiles. Tomorrow, they will build again!"
+      ]
+    },
+    "theme": "sharing-turns",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}和米米都想要紅積木的時候，林老師拿出了什麼？",
+          "{name}等沙子掉下來的時候，心裡覺得怎麼樣？你等待的時候會做什麼？",
+          "如果朋友正在玩你想玩的玩具，你可以怎麼說？"
+        ],
+        "tip": "這週在家用計時器或沙漏玩「輪流遊戲」，一起練習說：「你玩完，可以換我嗎？」"
+      },
+      "en": {
+        "questions": [
+          "When {name} and Mimi both wanted the red block, what did Ms. Lin bring out?",
+          "How did {name} feel while waiting for the sand to fall? What do you do when you have to wait?",
+          "If a friend is playing with a toy you want, what could you say?"
+        ],
+        "tip": "This week, play a turn-taking game at home with a timer or sand timer, and practice saying together, \"Can I have a turn when you're done?\""
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "bullying-new-term-nickname",
+    "style": "inspiring",
+    "ageBands": [
+      "8-10"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "{name}和那雙舊球鞋",
+      "en": "{name} and the Old Sneakers"
+    },
+    "paragraphs": {
+      "zh": [
+        "開學第一天，教室裡的新書包、新文具閃閃發亮。{name}剛坐下，後排就傳來一陣哄堂大笑。「快看，『破鞋王』來了！」小凱指著門口。新同學陳宇安低著頭走進來，球鞋的鞋頭磨得發白，側邊還纏著兩圈膠帶。他一聲不吭，默默坐到靠窗的位子。",
+        "接下來幾天，「破鞋王」三個字像蒼蠅一樣，在教室裡嗡嗡打轉。有人故意踩宇安的鞋，有人模仿他走路。{name}一開始也跟著笑了兩聲，可是笑完，胸口卻悶悶的，像吞了一顆沒嚼碎的湯圓。{name}偷偷望向窗邊，宇安正把雙腳縮到椅子底下，好像想讓它們消失。",
+        "星期三早上，小凱又大喊：「破鞋王，借過！」大家正要笑，{name}卻抿緊嘴巴，一個字也沒跟。{name}走到窗邊，清清喉嚨說：「宇安，早安。數學作業第三題，你算出來了嗎？」宇安愣了一下，眨眨眼，才小聲回答：「算出來了，是四十八。」小凱撇撇嘴，臉上的笑容有點掛不住。",
+        "午餐時間，宇安照例一個人端著餐盤，坐在最角落。{name}深吸一口氣，捧著便當坐到他對面。「這裡有人坐嗎？」宇安搖搖頭，過了好久才開口：「我是不是該把鞋子丟掉？」{name}放下筷子，認真地說：「該改的不是你的鞋子，是那些話。」宇安的嘴角，終於輕輕往上翹了一下。",
+        "放學前，{name}在辦公室門口來回踱步，心裡七上八下。同行的小美拉拉{his}袖子：「去講會不會被說是抓耙子？」{name}想起宇安縮起來的雙腳，還是敲了門。王老師聽完，溫和地說：「謝謝你來告訴我。這不是告狀，是求助。一個人搬不動的石頭，本來就該找大人一起搬。」",
+        "隔天班會，王老師拿出兩杯清水，在其中一杯滴進一滴墨汁。「說出口的話就像這滴墨，倒進去容易，要變回清水可就難了。」她請大家想一想，被取綽號是什麼感覺。教室裡鴉雀無聲。小凱盯著桌面，耳朵紅得像熟透的番茄。下課時，他走到宇安桌邊，結結巴巴地說：「對不起。」",
+        "日子一天天過去，「破鞋王」漸漸沒人再提。運動會選拔那天，宇安穿著舊球鞋站上起跑線，哨聲一響，就像一陣風衝了出去。「我每天清晨都跑去外婆的早餐店幫忙，鞋子就是這樣跑舊的。」他喘著氣笑說。小凱立刻喊：「接力最後一棒，非你莫屬！」{name}在一旁用力鼓掌，笑得比誰都大聲。"
+      ],
+      "en": [
+        "On the first day of school, the classroom sparkled with new backpacks and fresh pencils. {name} had barely sat down when a roar of laughter burst from the back row. \"Look, here comes Shoe Flop!\" Kai pointed at the door. A new kid, Yu-an Chen, shuffled in with his head down. The toes of his sneakers were scuffed white, and a strip of tape was wrapped twice around one side. He didn't say a word, just slipped into a seat by the window.",
+        "For the next few days, \"Shoe Flop\" buzzed around the room like a fly that wouldn't leave. Someone stepped on Yu-an's sneakers on purpose. Someone copied the way he walked. At first, {name} chuckled along. But afterward, {name} felt heavy inside, like a dumpling swallowed without chewing. Glancing toward the window, {name} saw Yu-an tucking both feet under his chair, as if he wished they would vanish.",
+        "On Wednesday morning, Kai shouted again, \"Move it, Shoe Flop!\" Everyone got ready to laugh, but {name} pressed both lips together and stayed silent. Instead, {name} walked over to the window and said, \"Morning, Yu-an. Did you get number three on the math homework?\" Yu-an blinked in surprise. \"Yeah,\" he said softly. \"It's forty-eight.\" Kai frowned, and his grin started to wobble.",
+        "At lunch, Yu-an sat alone in the farthest corner, as usual. {name} took a deep breath, carried a lunch box over, and asked, \"Is this seat taken?\" Yu-an shook his head. After a long pause, he whispered, \"Maybe I should just throw my shoes away.\" {name} set down the chopsticks. \"Your shoes aren't what needs to change. Those words are.\" Slowly, the corners of Yu-an's mouth curled up.",
+        "Before going home, {name} paced back and forth outside the teachers' office, stomach full of butterflies. Mia tugged at {his} sleeve. \"Won't everyone call you a tattletale?\" {name} remembered Yu-an's hidden feet, then knocked anyway. Ms. Wang listened carefully. \"Thank you for telling me,\" she said gently. \"That isn't tattling. It's asking for help. When a rock is too heavy for one person, you bring in a grown-up to lift it together.\"",
+        "The next day, Ms. Wang set out two glasses of clear water and let one drop of ink fall into one of them. \"Words are like this ink. Easy to pour in, hard to take back out.\" She asked everyone to imagine being called a nickname they hated. The room went completely still. Kai stared at his desk, ears as red as ripe tomatoes. At recess, he walked over to Yu-an and mumbled, \"Sorry.\"",
+        "Week by week, \"Shoe Flop\" faded until nobody said it anymore. On race tryout day, Yu-an stepped up to the starting line in his old sneakers. The whistle blew, and he shot off like a gust of wind. \"I run to my grandma's breakfast shop every morning to help out,\" he panted, grinning. \"That's how my shoes got so worn.\" Kai cheered, \"You're our relay anchor, no question!\" {name} clapped the loudest of all."
+      ]
+    },
+    "theme": "bullying",
+    "guide": {
+      "zh": {
+        "questions": [
+          "當大家叫宇安「破鞋王」時，{name}做了哪些事來幫助他？",
+          "小美說去找老師是「抓耙子」，你覺得告訴大人和告狀有什麼不一樣？",
+          "如果你看到有同學被取難聽的綽號，你可以怎麼做？"
+        ],
+        "tip": "這週和孩子練習一句話：「老師，我需要你幫忙，有同學一直被取綽號。」並告訴孩子，無論何時遇到這種事，你都會認真聽。"
+      },
+      "en": {
+        "questions": [
+          "When the kids called Yu-an \"Shoe Flop,\" what did {name} do to help him?",
+          "Mia worried that telling the teacher was tattling. How is telling a grown-up different from tattling?",
+          "If you saw a classmate being called a mean nickname, what could you do?"
+        ],
+        "tip": "This week, practice one sentence together: \"I need your help, someone keeps getting called a mean name.\" Let your child know you will always listen when something like this happens."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "empathy-crying-friend-first-day",
+    "style": "cute",
+    "ageBands": [
+      "2-4",
+      "4-6"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "{name}和綠恐龍",
+      "en": "{name} and the Green Dinosaur"
+    },
+    "paragraphs": {
+      "zh": [
+        "今天，{name}第一天上幼兒園。教室好大，玩具好多。可是{name}的心怦怦跳。{he}躲在媽媽後面，小小聲說：「我有一點怕。」媽媽抱抱{him}：「下午就來接你喔！」",
+        "老師拿出一盒恐龍。綠色的，黃色的，還有藍色的。{name}拿起一隻綠恐龍。「吼——吼——」{name}笑了。心不怦怦跳了。媽媽揮揮手，說：「下午見！」",
+        "這時候，門口傳來哭聲。「哇——哇——」一個男孩抱著爸爸的腿。他叫豆豆。豆豆抱得好緊，好緊。爸爸想走，也走不了。",
+        "{name}看看豆豆的臉。眼睛紅紅的。嘴巴扁扁的。鼻子一吸，一吸。{name}想起剛剛的自己。{name}也很怕，只是沒有哭，是躲起來。豆豆的心，也在怦怦跳吧？",
+        "{name}抱著綠恐龍走過去。輕輕問：「你還好嗎？」豆豆搖搖頭。「我想要爸爸。」{name}想一想。如果我是豆豆，我想要什麼呢？嗯，我想要一個朋友。",
+        "{name}舉起綠恐龍。恐龍點點頭：「吼——吼——」「你可以跟我玩。」{name}說，「恐龍也想跟你玩喔！」豆豆吸吸鼻子。他慢慢伸出手，接過綠恐龍。",
+        "爸爸摸摸豆豆的頭：「下午見喔！」豆豆點點頭，不哭了。兩個好朋友坐到積木旁。疊一塊，再疊一塊。「我們幫恐龍蓋房子！」",
+        "房子有門，有窗，還有小床。綠恐龍住進去了。咚！屋頂掉下來了，剛好蓋在恐龍頭上。恐龍戴了一頂積木帽！豆豆咯咯笑，{name}哈哈笑。「明天還要一起玩喔！」"
+      ],
+      "en": [
+        "Today is {name}'s first day of kindergarten. The room is big. The toys are many. But {name}'s heart goes thump, thump. {name} hides behind Mom. \"I'm a little scared.\" Mom gives a hug. \"See you this afternoon!\"",
+        "The teacher brings a box of dinosaurs. Green ones, yellow ones, blue ones too. {name} picks a green dinosaur. \"Roar! Roar!\" {name} giggles. No more thump, thump. Mom waves goodbye.",
+        "Then, a cry comes from the door. \"Waaah! Waaah!\" A boy is hugging his dad's leg. His name is Dou Dou. He holds on tight, tight, tight. His dad cannot leave.",
+        "{name} looks at Dou Dou's face. Red, wet eyes. A wobbly mouth. Sniff, sniff, sniff. {name} remembers this morning. {name} was scared too, but hid instead of crying. Is Dou Dou's heart going thump, thump?",
+        "{name} carries the green dinosaur over. \"Are you OK?\" {name} asks softly. Dou Dou shakes his head. \"I want my dad.\" {name} thinks. If I were Dou Dou, what would I want? A friend!",
+        "{name} lifts the green dinosaur. It nods. \"Roar! Roar!\" \"You can play with me,\" says {name}. \"Dino wants to play too!\" Dou Dou sniffles. Slowly, he takes the green dinosaur.",
+        "Dad pats Dou Dou's head. \"See you this afternoon!\" Dou Dou nods. No more tears. The two friends sit by the blocks. One block, two blocks. \"Let's build a dinosaur house!\"",
+        "The house has a door, a window, and a tiny bed. The green dinosaur moves in. Bonk! The roof falls down, right on Dino's head. Dino has a block hat! Dou Dou giggles. {name} laughs. \"Let's play again tomorrow!\""
+      ]
+    },
+    "theme": "empathy",
+    "guide": {
+      "zh": {
+        "questions": [
+          "豆豆在門口哭的時候，{name}看到他的臉是什麼樣子？{name}問了他什麼？",
+          "{name}害怕的時候會躲起來，豆豆害怕的時候會哭。你害怕的時候會怎麼樣？",
+          "如果你看到一個朋友很難過，你想像自己是他，你會想要別人怎麼幫你？"
+        ],
+        "tip": "這個星期，一起玩「看臉猜心情」：輪流做開心、難過、害怕的表情，讓孩子猜猜看，再練習說一句「你還好嗎？」。"
+      },
+      "en": {
+        "questions": [
+          "When Dou Dou cried at the door, what did {name} see on his face? What did {name} ask him?",
+          "{name} hid when scared, and Dou Dou cried when scared. What do you do when you feel scared?",
+          "If you saw a friend who looked sad, and you imagined being that friend, how would you want someone to help?"
+        ],
+        "tip": "This week, play a \"guess the feeling\" game: take turns making happy, sad, and scared faces for your child to guess, then practice saying \"Are you OK?\" together."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "courage-raising-hand-in-class",
+    "style": "inspiring",
+    "ageBands": [
+      "6-8"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "{name}舉起了發抖的小手",
+      "en": "{name}'s Shaky Hand Goes Up"
+    },
+    "paragraphs": {
+      "zh": [
+        "新學期開始了，{name}換到一個新班級，座位就在靠窗的地方。上課時，老師問的問題，{name}常常心裡早就知道答案，可是{his}手總是乖乖放在桌子下面，一動也不動。「萬一我說錯了，大家會不會笑我？」{name}心裡撲通撲通地想。",
+        "星期一的數學課，林老師問：「七加八等於多少？」「十五。」{name}在心裡小聲回答。可是手還沒舉起來，坐在旁邊的阿哲已經大聲說：「十五！」林老師笑著點點頭。{name}低頭看著鉛筆，覺得手指頭好像被黏在桌子上了。",
+        "下午，林老師帶全班到校園裡撿落葉。大樹下鋪滿黃黃紅紅的葉子，踩起來沙沙響。阿哲指著樹上一片好紅好紅的葉子說：「我爬上去拿！」{name}心裡怦怦跳，還是輕輕拉住他的袖子：「等一下，我們去請林老師幫忙。」",
+        "{name}鼓起力氣，走到林老師面前，聲音小小的：「老師，那片紅葉子好高，可以請您幫我們嗎？」林老師蹲下來，認真聽完，然後走到樹下，輕輕拉低一根枝條。紅葉子飄進{name}的手心，阿哲開心地拍手：「謝謝你去問！」",
+        "回到教室，林老師舉起一片黃葉和一片紅葉：「誰知道，秋天的葉子為什麼會變顏色？」{name}想起和奶奶一起讀過的書。心跳得好快，耳朵熱熱的。{his}手慢慢地、抖抖地舉了起來，像一片在風裡搖晃的小葉子。",
+        "「因為天氣變冷了，」{name}小聲說，「葉子裡綠綠的顏色就慢慢不見了，然後太陽把葉子曬成紅色和黃色。」林老師點點頭：「天氣變冷、綠色褪去，說得完全正確！其實黃色本來就藏在葉子裡喔。謝謝你願意試試看，你幫大家開了一個好頭。」",
+        "{name}坐下來，臉頰還熱熱的，可是心裡暖暖的，一點也不難受。阿哲把頭靠過來，悄悄地說：「跟你說喔，我舉手的時候，手也會抖。」{name}忍不住笑了，原來緊張的不是只有自己，大家都會有一點點害怕。",
+        "第二天，林老師拿著那片紅葉子問：「冬天來了，大樹會怎麼樣呢？」{name}的心還是撲通跳了一下，手指也還有一點點抖。可是這一次，{his}手舉得比昨天快了一點點，高高地，像樹梢上那片勇敢的紅葉子。"
+      ],
+      "en": [
+        "A new school year began, and {name} joined a brand-new class with a seat by the window. When the teacher asked questions, {name} often knew the answer right away. But {his} hand stayed tucked under the desk. What if I'm wrong? What if everyone laughs?",
+        "On Monday, Ms. Lin asked, \"What is seven plus eight?\" Fifteen, {name} whispered inside. But before that hand could move, Azhe, the boy at the next desk, called out, \"Fifteen!\" Ms. Lin smiled and nodded. {name} stared at a pencil, feeling as if those fingers were glued down.",
+        "That afternoon, Ms. Lin took the class outside to gather fallen leaves. Red and yellow leaves covered the ground and crunched underfoot. Azhe pointed to one bright red leaf high in the tree. \"I'll climb up and get it!\" {name}'s heart thumped, but {he} gently tugged his sleeve. \"Wait. Let's ask Ms. Lin.\"",
+        "Taking a deep breath, {name} walked over to the teacher. \"Ms. Lin, that red leaf is so high. Could you help us?\" Ms. Lin crouched down and listened carefully. Then she gently pulled a branch lower, and the red leaf floated into {name}'s hand. Azhe clapped. \"Thanks for asking!\"",
+        "Back in the classroom, Ms. Lin held up a yellow leaf and a red one. \"Who knows why leaves change color in autumn?\" {name} remembered a book read with Grandma. {name}'s heart raced and those ears felt warm. Slowly, shakily, {his} hand went up, like a little leaf trembling in the wind.",
+        "\"Because it gets cold,\" {name} said softly, \"so the green goes away, and then the sun paints the leaves red and yellow.\" Ms. Lin nodded. \"Colder weather, and the green fades away. That part is exactly right! The yellow was hiding inside the leaf all along. Thank you for trying. You got us started!\"",
+        "{name} sat down with warm cheeks, but the feeling inside was cozy, not bad at all. Azhe leaned over and whispered, \"Guess what? My hand shakes when I raise it, too.\" {name} smiled. So everyone feels a little nervous sometimes.",
+        "The next day, Ms. Lin held up the red leaf. \"When winter comes, what will the big tree do?\" {name}'s heart gave one small thump, and those fingers still wobbled a tiny bit. But this time, {his} hand went up a little faster, high and tall, like that brave red leaf at the top of the tree."
+      ]
+    },
+    "theme": "courage",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}舉手的時候手在發抖，可是{he}還是做了什麼？你有沒有害怕但還是去試試看的時候？",
+          "阿哲想爬樹拿葉子時，{name}想到了什麼更安全的辦法？",
+          "如果你在課堂上知道答案，可是有點緊張，你可以先做哪一個小小的勇敢步驟？"
+        ],
+        "tip": "這個星期每天睡前，和孩子各分享一件「今天有點怕，但我還是做了」的小事，並為對方的勇敢擊掌。"
+      },
+      "en": {
+        "questions": [
+          "{name}'s hand was shaking, but what did {he} do anyway? Can you remember a time you felt scared and tried something anyway?",
+          "When Azhe wanted to climb the tree, what safer idea did {name} have?",
+          "If you knew an answer in class but felt nervous, what is one small brave step you could take?"
+        ],
+        "tip": "Each night this week at bedtime, take turns sharing one small thing that felt a little scary but you did anyway, then give each other a high five for being brave."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "responsibility-class-duty-day",
+    "style": "inspiring",
+    "ageBands": [
+      "6-8"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "{name}的值日生一週",
+      "en": "{name}'s Week as Class Helper"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期一早上，林老師在黑板旁貼上一張值日生表，上面寫著{name}的名字。「這個星期，{name}是我們班的小幫手喔！」{name}看著三件工作：擦黑板、幫窗台上的三盆植物澆水、排好午餐的餐盤，心裡覺得自己好重要。",
+        "星期一和星期二，{name}每件事都做得很仔細。{name}把黑板擦得亮晶晶，連角落的粉筆灰也不放過。中午，{name}把餐盤一個一個排得整整齊齊。最後，{name}提著綠色澆水壺，慢慢讓每一盆植物喝飽水。",
+        "星期三的下課鐘一響，小安就跑過來說：「{name}，快來！我們要去操場玩跳房子，就差你了！」{name}好想去，馬上跟著大家到了操場。跳呀跳，笑呀笑，大家玩得好開心。",
+        "輪到{name}跳的時候，一抬頭看見教室的窗戶，忽然想起一件事：「哎呀！今天的植物還沒澆水！」小安說：「現在又沒有人在看，等一下再弄也沒關係吧？」{name}想了想，搖搖頭說：「這是我的工作，植物在等我。」",
+        "{name}快步走回教室，窗台上的三盆植物葉子垂垂的，好像很口渴。{name}提起綠色澆水壺，一盆一盆輕輕澆下去。可是太著急了，幾滴水灑到地上。{name}趕快拿來抹布，把地板擦得乾乾的。",
+        "上課鐘響了，林老師看見濕濕的泥土，問：「咦，今天的植物比較晚澆水嗎？」{name}舉起手說：「是我忘記了，我先跑去玩。後來想起來，就回來澆了。明天我會一進教室就先澆。」林老師點點頭，對{name}笑了笑。",
+        "星期四，{name}一進教室，第一件事就是提起澆水壺。擦黑板時，{name}踮起腳尖，把最高的地方也擦乾淨；排餐盤時，小安也跑來一起幫忙。就算沒有人在看，{name}還是把每件事都認真做好。",
+        "星期五早上，陽光照進教室。林老師指著窗台說：「大家看，這些葉子又綠又亮，還長出新的小芽呢！謝謝{name}，這個星期的工作做得真好。」同學們拍拍手，{name}看著那片小小的新葉，笑得好開心。"
+      ],
+      "en": [
+        "On Monday morning, Ms. Lin pinned a helper chart beside the board, and {name}'s name was right at the top. \"This week, {name} is our class helper!\" she said. There were three jobs: wipe the board, water the three plants on the windowsill, and line up the lunch trays. {name} felt very important.",
+        "On Monday and Tuesday, {name} did every job with care. The board got wiped until it shone, chalk dust in the corners and all. At lunch, the trays stood in neat, straight rows. Last of all, {name} carried the green watering can and gave each plant a long, slow drink.",
+        "On Wednesday, the recess bell rang, and An rushed over. \"Come on, {name}! We're playing hopscotch, and we need one more!\" {name} really wanted to play and hurried out to the playground with everyone. They hopped and laughed and hopped some more.",
+        "When it was {name}'s turn, a glance up at the classroom window brought a sudden thought. \"Oh no! I didn't water the plants today!\" An shrugged. \"Nobody's watching. Can't you do it later?\" {name} thought for a moment and shook {his} head. \"It's my job. The plants are waiting for me.\"",
+        "{name} walked quickly back to the classroom. The three plants on the windowsill were drooping, as if they were thirsty. {name} picked up the green watering can and watered them one by one. In the rush, a few drops splashed onto the floor, so {name} grabbed a cloth and wiped it dry.",
+        "When the bell rang, Ms. Lin noticed the damp soil. \"Hmm, were the plants watered a little late today?\" {name} raised a hand. \"That was me. I forgot because I went to play first. When I remembered, I came back. Tomorrow I'll water them as soon as I come in.\" Ms. Lin nodded and smiled.",
+        "On Thursday, the very first thing {name} did was pick up the watering can. While wiping the board, {name} stood on tiptoe to reach the highest spots. While lining up the trays, An came to help. Even when no one was watching, {name} did every job well.",
+        "On Friday morning, sunshine filled the classroom. Ms. Lin pointed at the windowsill. \"Look, everyone! These leaves are so green and shiny, and there's a brand-new sprout! Thank you, {name}, for a job well done this week.\" The class clapped, and {name} smiled at the tiny new leaf."
+      ]
+    },
+    "theme": "responsibility",
+    "guide": {
+      "zh": {
+        "questions": [
+          "小安說「沒有人在看」的時候，{name}做了什麼？為什麼？",
+          "{name}發現自己忘記澆水，還灑了水以後，是怎麼做的？",
+          "你在家裡或學校有什麼小工作？如果你忘記了，你會怎麼做？"
+        ],
+        "tip": "這個星期和孩子一起選一件家裡的小工作，例如幫盆栽澆水或擺碗筷，每天完成後在月曆上畫一個笑臉，週末一起說說做得最好的一天。"
+      },
+      "en": {
+        "questions": [
+          "When An said \"Nobody's watching,\" what did {name} do, and why?",
+          "What did {name} do after forgetting the plants and spilling the water?",
+          "What little jobs do you have at home or at school? What would you do if you forgot one?"
+        ],
+        "tip": "This week, pick one small household job with your child, like watering a plant or setting the table, and draw a smiley face on the calendar each day it gets done. At the weekend, talk together about the day it went best."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "keeping-promises-moon-festival-visit",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}的兔子燈籠",
+      "en": "{name}'s Rabbit Lantern"
+    },
+    "paragraphs": {
+      "zh": [
+        "星期天，爺爺來家裡喝茶。爺爺問：「中秋節，你能幫我做燈籠嗎？」{name}沒有馬上回答。{he}看看小手，又看看媽媽。媽媽說：「我可以陪你做。」{name}點點頭：「好，我做兔子燈籠給你！」爺爺笑著說：「那我等著喔。」",
+        "這個星期好忙喔。星期一，{name}在學校學唱歌。星期二，{name}畫了一隻大恐龍。星期三和星期四，{name}和小狗豆豆玩接球。星期五，{name}忙著堆積木城堡。兔子燈籠呢？{name}一點也沒想起來。",
+        "星期六晚上，{name}看見月曆上的圓月亮。「啊！明天就是中秋節！」{name}跑去找媽媽。{name}小聲說：「媽媽，我忘記做燈籠了。」媽媽抱抱{him}：「謝謝你老實告訴我。」「還有今天晚上，我們試試看。」",
+        "媽媽拿出白色厚紙和膠水。還有一把圓頭小剪刀。{name}先畫一隻兔子。{he}慢慢剪，剪出兩隻長耳朵。可是，一隻耳朵歪歪的。{name}嘟起嘴巴。{name}想了想，拿起新的紙。這次，{name}剪得慢慢的、直直的。",
+        "接著要摺兔子的身體。第一次，紙皺巴巴的。第二次，角對不整齊。豆豆在旁邊汪汪叫，好像在加油。{name}深深吸一口氣。第三次，邊邊對得整整齊齊！媽媽拍拍手：「你好有耐心喔。」",
+        "這時候，電話響了。是好朋友樂樂。「{name}，也幫我做一盞好不好？」{name}看看時鐘，已經好晚了。{he}想了想，說：「今天只能做完爺爺的。」「下個星期，我做一盞給你，好嗎？」樂樂說：「好呀，我等你！」",
+        "{name}把耳朵黏上去。再畫上紅紅的眼睛。媽媽放進一顆小燈泡。按下開關，兔子亮起來了！暖暖的光照亮了客廳。{name}打了一個大哈欠。{name}輕輕摸摸燈籠：「明天見，小兔子。」",
+        "中秋節晚上，月亮又圓又亮。{name}提著兔子燈籠走進爺爺家。爺爺接過燈籠，看了好久好久。爺爺說：「這是我收過最棒的燈籠。」爺爺把燈籠掛在窗邊。爺爺牽起{name}的手，一起看月亮。"
+      ],
+      "en": [
+        "On Sunday, Grandpa came over for tea. \"Moon Festival is coming,\" Grandpa said. \"Could you make me a lantern?\" {name} didn't answer right away. {name} looked at Mom. \"I can help you,\" Mom said. {name} nodded. \"Yes! I'll make you a rabbit lantern!\" Grandpa smiled. \"I'll be waiting.\"",
+        "It was a very busy week. On Monday, {name} learned a song at school. On Tuesday, {name} drew a giant dinosaur. On Wednesday and Thursday, {name} played catch with Dodo the puppy. On Friday came a block castle. The lantern? {name} forgot all about it.",
+        "On Saturday night, {name} saw the round moon on the calendar. \"Oh no! Moon Festival is tomorrow!\" {name} ran to Mom. \"Mom, I forgot the lantern,\" {name} whispered. Mom gave {him} a hug. \"Thank you for telling me. We still have tonight. Let's try.\"",
+        "Mom brought thick white paper and glue. She also brought small round-tipped scissors. {name} drew a rabbit first. Snip, snip, out came two long ears. But one ear was crooked. {name} frowned. Then {name} took fresh paper and cut again, very slowly.",
+        "Next came the rabbit's body. The first fold got wrinkly. The second fold didn't line up. Dodo barked, \"Woof! Woof!\" like a cheer. {name} took a deep breath. The third fold was neat and straight! Mom clapped. \"You're so patient.\"",
+        "Just then, the phone rang. It was {name}'s friend Lele. \"Can you make me a lantern too?\" {name} looked at the clock. It was very late. \"Tonight I can only finish Grandpa's,\" {name} said. \"I'll make yours next week. Okay?\" \"Okay! I'll wait,\" said Lele.",
+        "{name} glued on the ears. Then came two red eyes. Mom tucked in a tiny light. Click! The rabbit began to glow. Warm light filled the living room. {name} gave a big yawn. \"See you tomorrow, little rabbit.\"",
+        "On Moon Festival night, the moon was big and bright. {name} carried the rabbit lantern into Grandpa's house. Grandpa held it and looked for a long time. \"This is the best lantern I've ever been given,\" Grandpa said. He hung it by the window. Then Grandpa and {name} watched the moon together."
+      ]
+    },
+    "theme": "keeping-promises",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}發現自己忘記做燈籠時，{he}做了什麼？",
+          "樂樂請{name}也做一盞燈籠，{name}為什麼先想一想才回答？",
+          "你答應過別人什麼事嗎？後來你是怎麼做到的？"
+        ],
+        "tip": "這個星期，和孩子一起寫一張「我答應的事」小紙條，貼在冰箱上，完成後一起畫一個笑臉。答應之前，先一起問：「我真的做得到嗎？」"
+      },
+      "en": {
+        "questions": [
+          "What did {name} do after realizing the lantern was forgotten?",
+          "When Lele asked for a lantern too, why did {name} stop and think before answering?",
+          "Have you ever made a promise? How did you keep it?"
+        ],
+        "tip": "This week, write one small promise together on a sticky note and put it on the fridge; draw a smiley face when it's done. Before promising, practice asking together, \"Can I really do this?\""
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "respecting-differences-new-classmate-from-vietnam",
+    "style": "inspiring",
+    "ageBands": [
+      "6-8"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "{name}和阿安的越南春捲",
+      "en": "{name} and An's Spring Rolls"
+    },
+    "paragraphs": {
+      "zh": [
+        "開學第二週，班上來了一位新同學，名字叫阿安。老師說，阿安的媽媽來自越南。阿安說話輕輕的，下課時總是安靜地坐在座位上，看著大家在走廊上跑來跑去，好像不知道該怎麼加入。",
+        "中午吃飯時，阿安打開便當盒，裡面排著一捲一捲半透明的東西，可以看見裡面的綠葉和粉紅色的蝦子。坐在旁邊的小傑皺起鼻子說：「這是什麼？味道好奇怪喔！」幾個同學跟著笑了起來，阿安低下頭，悄悄把蓋子蓋上。",
+        "{name}看見阿安的耳朵紅紅的，心裡也跟著難過起來。{name}把椅子挪過去，坐到阿安身邊，好奇地問：「那是什麼呀？看起來像一個個小枕頭。」阿安抬起頭，小聲說：「這是越南春捲，是媽媽早上包的。外面那層是米做的紙。」",
+        "「我可以吃吃看嗎？」{name}問。阿安愣了一下，慢慢打開蓋子，遞過一捲，還附上一小杯沾醬。{name}咬下一口，涼涼的米皮軟軟Q Q，裡面有清脆的生菜、香香的薄荷葉和甜甜的蝦子。「哇，好好吃！」{name}睜大眼睛說。阿安笑了，眼睛彎彎的。",
+        "「在越南話裡，好吃要說『ngon quá』。」阿安一個字一個字教{name}念。{name}念得結結巴巴，兩個人都笑出聲來。小傑在旁邊看著，忍不住問：「真的那麼好吃嗎？」阿安想了想，也分給他一小段。小傑嚼了嚼，點點頭說：「嗯……其實滿好吃的。剛才對不起。」",
+        "接下來幾天，阿安教{name}說「xin chào」是你好，「cảm ơn」是謝謝。{name}也拉著阿安到操場，教他玩自己最喜歡的跳房子。阿安一開始常常踩到線，跳得歪歪扭扭，但{name}一點也不著急，一格一格陪他練習。到了星期五，阿安已經能單腳跳完整整一輪了。",
+        "月底，班上舉辦文化日，每個同學都可以分享家裡的特色。阿安的媽媽穿著漂亮的越南長衫來到教室，桌上擺滿米紙、生菜、薄荷和蝦子。她笑著示範：先把米紙在溫水裡沾一下，等它變軟，再放上餡料，左右折好，最後輕輕捲起來。",
+        "同學們捲得手忙腳亂，有的春捲胖胖的，有的扁扁的，教室裡滿是笑聲。{name}捲好一條，舉起來對阿安的媽媽說：「Cảm ơn！」她驚喜地拍拍手。阿安站在{name}旁邊，大聲對全班說：「Xin chào！下課後，大家一起來跳房子吧！」"
+      ],
+      "en": [
+        "In the second week of school, a new classmate named An joined the class. The teacher said An's mom came from Vietnam. An spoke softly. At recess, he sat quietly at his desk, watching everyone run around, as if he didn't know how to join in.",
+        "At lunch, An opened his lunchbox. Inside were neat rows of see-through rolls, with green leaves and pink shrimp peeking out. Jay, sitting nearby, wrinkled his nose. \"What is that? It smells weird!\" A few kids giggled. An looked down and quietly closed the lid.",
+        "{name} saw An's ears turn red and felt sad too. {name} scooted a chair over beside An and asked, \"What are those? They look like tiny pillows.\" An looked up. \"They're Vietnamese spring rolls,\" he whispered. \"My mom made them this morning. The outside is paper made from rice.\"",
+        "\"Can I try one?\" {name} asked. An paused, then slowly opened the lid and handed over a roll with a little cup of dipping sauce. {name} took a bite. The cool wrapper was soft and chewy, with crunchy lettuce, fresh mint, and sweet shrimp inside. \"Wow, that's so good!\" An smiled a big, bright smile.",
+        "\"In Vietnamese, you say 'ngon quá' for delicious,\" An said. {name} tried, but the words came out all jumbled, and they both burst out laughing. Jay was watching. \"Is it really that good?\" he asked. An thought for a moment and shared a small piece. Jay chewed and nodded. \"It's actually yummy. Sorry about before.\"",
+        "Over the next few days, An taught {name} that \"xin chào\" means hello and \"cảm ơn\" means thank you. {name} took An out to the playground to teach him hopscotch, {his} favorite game. At first An kept stepping on the lines, but {name} patiently helped him, square by square. By Friday, An could hop the whole board!",
+        "At the end of the month, the class held a Culture Day. Everyone could share something special from home. An's mom arrived in a beautiful Vietnamese dress, and the table filled with rice paper, lettuce, mint, and shrimp. She smiled and showed them how: dip the rice paper in warm water, add the filling, fold the sides, and roll it up gently.",
+        "Everyone fumbled and giggled. Some rolls came out fat, and some came out flat. {name} finished one, held it up, and said to An's mom, \"Cảm ơn!\" She clapped with delight. Standing next to {name}, An called out to the whole class, \"Xin chào! After class, let's all play hopscotch together!\""
+      ]
+    },
+    "theme": "respecting-differences",
+    "guide": {
+      "zh": {
+        "questions": [
+          "小傑說春捲味道奇怪時，阿安有什麼感覺？{name}做了什麼？",
+          "阿安和{name}互相教了對方什麼？你覺得交換不一樣的東西好玩在哪裡？",
+          "如果有同學因為不一樣被笑，你可以怎麼做？"
+        ],
+        "tip": "這週一起嘗試一道沒吃過的其他國家料理，或學一句外國話的「你好」和「謝謝」，聊聊它和我們有什麼不同。"
+      },
+      "en": {
+        "questions": [
+          "How did An feel when Jay said the spring rolls smelled weird? What did {name} do?",
+          "What did An and {name} teach each other? What is fun about sharing different things?",
+          "If a classmate were laughed at for being different, what could you do?"
+        ],
+        "tip": "This week, try a dish from another country together, or learn how to say hello and thank you in another language, and talk about what makes it different and interesting."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "caring-for-nature-hawk-migration",
+    "style": "adventure",
+    "ageBands": [
+      "6-8",
+      "8-10"
+    ],
+    "setting": "mountain",
+    "title": {
+      "zh": "{name}和爺爺的數鷹大冒險",
+      "en": "{name} and Grandpa Count the Hawks"
+    },
+    "paragraphs": {
+      "zh": [
+        "十月的清晨，涼風帶著一點秋天的味道。{name}背著小背包，跟爺爺一起爬上南部的小山。「今天我們要看灰面鵟鷹往南搬家喔！」爺爺說。{name}興奮得一步跨兩階，恨不得立刻飛上山頂。",
+        "步道口，一位戴著綠帽子的志工阿姨正在等大家。她叫小芳阿姨，聲音輕輕的：「鷹很容易受驚，我們要小聲說話，走在步道上，也不追、不餵野鳥。」{name}點點頭，悄悄把差點衝出去的腳步收了回來。",
+        "走著走著，{name}看見草叢裡卡著一個空寶特瓶。{he}想了想，撿起來放進背包裡的垃圾袋。爺爺眨眨眼，也把自己的水喝得一滴不剩，再把空瓶收好：「水不浪費，垃圾帶下山，山就能一直乾乾淨淨。」",
+        "到了觀景平台，天空卻空蕩蕩的。等了好久好久，{name}開始坐立難安。爺爺拿出飯糰，大大咬了一口，飯粒竟然黏在鬍子上。{name}忍不住噗哧一笑，又趕緊摀住嘴巴，生怕吵到還沒出現的鷹。",
+        "忽然，小芳阿姨指向遠方：「來了！」一個黑點、兩個黑點，接著是成千上百對翅膀，在藍天裡一圈一圈盤旋，像一座慢慢旋轉的鷹柱。{name}屏氣凝神，舉起望遠鏡，在小本子上畫下一筆又一筆。",
+        "「一百二十七、一百二十八……」{name}數得眼花撩亂。一隻鷹低低滑過，發出細長的「啾——」聲。{name}好想追過去看清楚，可是想起阿姨的話，只是靜靜站著，讓牠自由自在地飛。",
+        "太陽慢慢西沉，鷹群一隻接一隻，安靜地降落到山坡的樹林裡。{name}瞪大眼睛：「原來牠們要睡在我們剛剛走過的森林！」小芳阿姨笑著說：「對呀，所以大家放輕腳步，就是在幫牠們守護今晚的家。」",
+        "下山前，{name}在小本子最後一頁認真寫下：「我要保護鷹休息的森林，不吵鬧、不亂丟垃圾。」爺爺牽起{his}手，兩個人慢慢走下山。背包裡裝著撿來的瓶子，心裡裝著三百多隻鷹，還有一個閃閃發亮的承諾。"
+      ],
+      "en": [
+        "On a cool October morning, {name} and Grandpa started up a small hill in the south. \"Today we're watching the gray-faced buzzards fly south for the winter,\" Grandpa said. {name} was so excited that every step skipped two stairs, as if the top were only a hop away.",
+        "Near the trail, a volunteer in a green cap was waiting for the group. Her name was Ms. Fang, and she spoke softly. \"Hawks startle easily. Let's keep our voices low, stay on the trail, and never chase or feed wild birds.\" {name} nodded and slowed down.",
+        "Along the way, {name} spotted an empty plastic bottle stuck in the grass. After a moment's thought, {name} tucked it into the trash bag in {his} backpack. Grandpa winked, finished every drop of his water, and packed his bottle too. \"No waste, and trash comes down with us. That keeps the hill clean.\"",
+        "At the lookout, the sky was completely empty. They waited and waited, and {name} began to fidget. Grandpa unwrapped a rice ball and took a big bite. A grain of rice stuck right in his beard! {name} giggled, then quickly covered {his} mouth so the hawks wouldn't hear.",
+        "Suddenly Ms. Fang pointed far away. \"Here they come!\" One dark speck, then two, then hundreds of wings, circling round and round in the blue sky like a slowly spinning tower of hawks. {name} held {his} breath, raised the binoculars, and made tally marks in a little notebook.",
+        "\"One hundred twenty-seven, one hundred twenty-eight...\" The numbers swirled in {name}'s head. One hawk glided low with a long, thin whistle: \"Kee-eee!\" {name} longed to run after it for a closer look, but remembered Ms. Fang's words and stood very still, letting it fly free.",
+        "As the sun sank lower, the hawks drifted down one by one into the trees on the hillside. {name}'s eyes grew wide. \"They're sleeping in the forest we just walked through!\" Ms. Fang smiled. \"That's right. Quiet footsteps help keep their bedroom safe tonight.\"",
+        "Before heading down, {name} wrote carefully on the last page of the notebook: \"I promise to protect the forest where the hawks rest. No noise, no litter.\" Grandpa took {his} hand, and they walked slowly down the hill with a picked-up bottle in the backpack, more than three hundred hawks to remember, and one shining promise to keep."
+      ]
+    },
+    "theme": "caring-for-nature",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}看到鷹低低飛過時，很想追過去，後來{he}做了什麼？為什麼？",
+          "爬山時{name}和爺爺怎麼處理寶特瓶和喝剩的水？你出門時可以怎麼做？",
+          "如果你也要寫一個保護大自然的承諾，你會寫什麼？"
+        ],
+        "tip": "這個星期出門散步時，帶一個小袋子，一起把自己的垃圾帶回家，並輕聲觀察一種鳥或植物，回家後畫下來。"
+      },
+      "en": {
+        "questions": [
+          "When the hawk glided low, {name} wanted to chase it. What did {he} do instead, and why?",
+          "What did {name} and Grandpa do with the bottle and their water on the hike? What could you do when you go outside?",
+          "If you wrote your own promise to protect nature, what would it say?"
+        ],
+        "tip": "On a walk this week, bring a small bag to carry your own trash home, and quietly watch one bird or plant together, then draw it when you get back."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "autumn-leaf-crunch-walk",
+    "style": "cute",
+    "ageBands": [
+      "2-4"
+    ],
+    "setting": "park",
+    "title": {
+      "zh": "{name}的落葉小刺蝟",
+      "en": "{name}'s Little Leaf Hedgehog"
+    },
+    "paragraphs": {
+      "zh": [
+        "秋天的早上，風涼涼的。{name}和爸爸去公園散步。{name}提著小籃子。小路上鋪滿葉子。紅紅的葉子，黃黃的葉子。「哇，好漂亮！」{name}說。",
+        "喀滋，喀滋！{name}踩一下。喀滋，喀滋！再踩一下。葉子在腳下唱歌。爸爸也踩一下。喀滋！好大聲喔！{name}咯咯笑，爸爸也哈哈笑。",
+        "看！前面有一大堆葉子。像一座小小山。爸爸問：「準備好了嗎？」{name}點點頭。一、二、三，跳！嘩啦啦！葉子飛起來，飛得到處都是。",
+        "一片葉子飄下來。落在{name}的鼻子上。癢癢的！哈啾！葉子飛走了。好多葉子黏在{name}身上。爸爸笑著說：「你變成小樹了！」{name}搖一搖，葉子掉光光。",
+        "現在，{name}要找寶貝葉子。找呀找，找呀找。這片好大好大！比爸爸的手還大呢！{name}把大葉子放進小籃子。咚！",
+        "找呀找，找呀找。這片好小好小！小得像一顆豆子。再找呀找，咦？這片有五個尖尖。像一隻小手耶！{name}揮揮手，葉子也揮揮手。",
+        "回到家，{name}把籃子倒一倒。大葉子，小葉子，小手葉子。爸爸拿來膠水和白紙。要做什麼呢？{name}想一想。「做一隻小刺蝟！」",
+        "大葉子當身體。小手葉子當刺刺。小葉子當鼻子。爸爸畫上亮亮的眼睛。小刺蝟，你好呀！{name}親親小刺蝟。「明天再去撿葉子，好不好？」爸爸說：「好！」"
+      ],
+      "en": [
+        "It is a cool autumn morning. {name} and Dad walk in the park. {name} carries a little basket. Red leaves cover the path. Yellow leaves too. \"So pretty!\" says {name}.",
+        "Crunch, crunch! {name} steps on a leaf. Crunch, crunch! Another one. The leaves sing under {his} feet. Dad steps too. CRUNCH! So loud! {name} giggles. Dad laughs.",
+        "Look! A big pile of leaves. It looks like a tiny hill. \"Ready?\" asks Dad. {name} nods. One, two, three, jump! Whoosh! Leaves fly up everywhere.",
+        "One leaf floats down. It lands on {name}'s nose. Tickle, tickle! Achoo! The leaf flies away. Lots of leaves stick to {name}. \"You look like a little tree!\" says Dad. {name} wiggles. The leaves all fall off.",
+        "Now {name} hunts for treasure leaves. Look, look, look! This leaf is big, big, big. It is bigger than Dad's hand! Into the basket it goes. Plop!",
+        "Look, look, look! This leaf is tiny. Tiny like a little bean. Look, look, look! Oh? This leaf has five points. It looks like a hand! {name} waves. The leaf waves too.",
+        "Back home, {name} tips out the basket. A big leaf. A tiny leaf. A hand leaf. Dad brings glue and paper. What can they make? {name} thinks. \"A little hedgehog!\"",
+        "The big leaf is the body. The hand leaf is the prickles. The tiny leaf is the nose. Dad draws two shiny eyes. Hello, little hedgehog! {name} gives it a kiss. \"More leaves tomorrow?\" \"Yes!\" says Dad."
+      ]
+    },
+    "draft": true
+  },
+  {
+    "id": "autumn-osmanthus-tea-night",
+    "style": "bedtime",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}和奶奶的桂花茶",
+      "en": "{name} and Grandma's Osmanthus Tea"
+    },
+    "paragraphs": {
+      "zh": [
+        "秋天到了，風變得涼涼的。奶奶家門口有一棵桂花樹。樹上開滿了小小的金色花。每一朵都像米粒那麼小。{name}走到樹下，深深吸一口氣。「好香喔！像蜂蜜一樣甜。」奶奶笑著點點頭。",
+        "奶奶拿出一塊白白的布，鋪在樹下的草地上。「我們輕輕搖，花就會掉下來。」奶奶說。{name}伸出{his}小手，握住一根細細的樹枝。輕輕搖，輕輕搖。沙沙，沙沙，葉子在小聲唱歌。",
+        "金色的小花飄下來了。一朵、兩朵、好多朵。它們像細細的雨，落在白布上。有幾朵落在{name}的手心，軟軟的，香香的。{name}小聲說：「花花，謝謝你們。」奶奶笑咪咪的看著。",
+        "有一根樹枝太高了，{name}搆不到。奶奶彎下腰，把樹枝拉低一點。「來，我們一起搖。」{name}和奶奶一起輕輕搖。又有好多小花落下來。白布慢慢變成金黃色，好像鋪了一層陽光。",
+        "奶奶把布的四個角包起來。{name}幫忙提著一角，慢慢走回屋裡。奶奶和{name}把小花撒在竹篩子上，放在窗邊。陽光暖暖的照進來。微風輕輕吹，小花慢慢變乾了。整個屋子都香香的。",
+        "太陽慢慢下山了。天空從金黃色變成淡淡的紫色。窗外的鳥兒回家了，屋裡亮起小小的燈。奶奶說：「花乾了，我們來泡桂花茶。」{name}捧著小杯子，坐在奶奶身邊，安安靜靜的等。",
+        "奶奶把熱水倒進茶壺。乾乾的小花在水裡慢慢轉圈。香味像一條軟軟的被子，輕輕飄出來。奶奶把茶倒進小杯子，呼呼吹了幾下。「溫溫的，可以喝了。」{name}小口小口的喝。甜甜的，暖暖的。",
+        "{name}靠在奶奶懷裡，眼睛慢慢眨呀眨。奶奶輕輕哼著歌，嗯嗯嗯，像風吹過桂花樹。窗邊的小花也安靜了。屋子好暖，好香，好安靜。{name}慢慢睡著了。奶奶小聲說：「晚安，我的小寶貝。」"
+      ],
+      "en": [
+        "Autumn had come, and the wind felt cool. By Grandma's door stood an osmanthus tree. It was full of tiny golden flowers. Each one was as small as a grain of rice. {name} stood under the tree and took a deep breath. \"It smells like honey!\" Grandma smiled and nodded.",
+        "Grandma spread a soft white cloth on the grass under the tree. \"If we shake gently, the flowers will fall,\" she said. {name} held a thin branch with {his} small hands. Shake, shake, gently. Rustle, rustle, the leaves sang softly.",
+        "Down floated the little golden flowers. One, two, so many more! They fell like a fine, gentle rain onto the cloth. A few landed in {name}'s open hand. They felt soft and smelled sweet. \"Thank you, flowers,\" {name} whispered. Grandma smiled.",
+        "One branch was too high for {name} to reach. Grandma bent down and pulled it a little lower. \"Come, let's shake it together.\" So they shook it gently, side by side. More flowers drifted down. Soon the white cloth looked like a blanket of sunshine.",
+        "Grandma folded up the four corners of the cloth. {name} helped carry one corner back inside. Together they spread the flowers on a bamboo tray by the window. Warm sunlight poured in. A soft breeze blew. Slowly, the flowers dried, and the whole house smelled sweet.",
+        "Then the sun sank low. The sky turned from gold to a soft purple. The birds outside flew home, and a little lamp glowed inside. \"The flowers are dry,\" said Grandma. \"Let's make osmanthus tea.\" {name} held a little cup and waited quietly beside her.",
+        "Grandma poured hot water into the teapot. The dry little flowers twirled slowly in the water. The sweet smell drifted out like a soft blanket. Grandma filled the little cup and blew on it, whoo, whoo. \"Now it's just warm.\" {name} took tiny sips. Sweet and cozy.",
+        "{name} leaned against Grandma, eyes blinking slowly. Grandma hummed a gentle song, hmm, hmm, like wind in the osmanthus tree. The flowers by the window were quiet too. The house was warm, sweet, and still. {name} drifted off to sleep. \"Goodnight, my little one,\" Grandma whispered."
+      ]
+    },
+    "draft": true
+  },
+  {
+    "id": "medicine-not-sharing-cousins-syrup",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "{name}和粉紅色的藥水",
+      "en": "{name} and the Pink Syrup"
+    },
+    "paragraphs": {
+      "zh": [
+        "秋天到了，窗外的葉子變黃了。表哥阿哲來{name}家住幾天。可是阿哲感冒了，一直咳咳咳。奶奶拿出一瓶粉紅色的藥水，倒了一小匙，餵阿哲喝下去。{name}在旁邊看，眼睛睜得好大。「那個好漂亮，好像草莓汁耶！」",
+        "阿哲喝完，皺了皺鼻子。「醫生說我要喝這個藥。」他說。奶奶把藥瓶放回高高的櫃子上。那天晚上，阿哲早早就睡了。{name}也躺在床上，心裡還在想那瓶粉紅色的藥水。它到底是什麼味道呢？",
+        "第二天早上，{name}醒來，喉嚨有一點癢。「咳、咳。」{name}輕輕咳了兩聲，跑去找奶奶。「奶奶，我也咳嗽了！我可以喝阿哲的粉紅藥水嗎？」奶奶摸摸{name}的額頭，溫柔地笑了。",
+        "「藥看起來像糖果，可是它不是糖果喔。」奶奶說。「藥要由大人來給，而且只能吃醫生幫你選的藥。那是阿哲的藥，不是你的。」{name}嘟起小嘴，好想喝喔！可是{name}點點頭，把兩隻手放到背後。",
+        "奶奶倒了一杯溫溫的開水。{name}兩手捧著杯子，慢慢地喝。水暖暖的，喉嚨舒服多了。奶奶拿來小毯子，把{name}抱在懷裡。「我們休息一下，明天去給林醫生看看。」時鐘在牆上滴答滴答響。",
+        "下午，{name}在沙發旁邊撿積木。咦？沙發底下有一個小瓶子！瓶子裡裝著圓圓的、彩色的小顆粒。看起來好像糖果喔。{name}好想打開來看看。可是{name}停下來，想起了奶奶說的話。",
+        "{name}沒有打開蓋子，也沒有放進嘴巴。{name}小心地拿著瓶子，跑去廚房找奶奶。「奶奶你看！我在沙發底下找到的。」奶奶接過瓶子看一看。「這是爺爺的維他命，掉在這裡了。謝謝你拿來給我看！」奶奶給{name}一個大大的擁抱。",
+        "第二天早上，奶奶帶{name}去看林醫生。林醫生用聽診器聽一聽，說：「只是小咳嗽，多喝水、多休息就會好。」回到家，阿哲已經不咳了。{name}倒了兩杯溫開水，一杯給阿哲，一杯留給自己。兩個人碰碰杯子，一起笑了。"
+      ],
+      "en": [
+        "Autumn came, and the leaves outside turned yellow. Cousin Jay came to stay at {name}'s house. But Jay had a cold. \"Cough, cough!\" Grandma poured a spoonful of pink syrup for him. {name} watched with wide eyes. \"It looks like strawberry juice!\"",
+        "Jay made a funny face after he swallowed. \"The doctor said I need this,\" he said. Grandma put the bottle back on a high shelf. That night, Jay went to bed early. {name} lay in bed too, still thinking about the pink syrup. What did it taste like?",
+        "The next morning, {name} woke up with a tickly throat. \"Cough, cough.\" {name} ran to find Grandma. \"Grandma, I'm coughing too! Can I have Jay's pink syrup?\" Grandma felt {name}'s forehead and smiled gently.",
+        "\"Medicine can look like candy, but it isn't candy,\" Grandma said. \"A grown-up gives the medicine. And only the medicine the doctor picked for you. That syrup is Jay's, not yours.\" {name} pouted. It looked so yummy! But {name} nodded and tucked both hands behind {his} back.",
+        "Grandma poured a cup of warm water. {name} held it with two hands and sipped slowly. The warm water made {his} throat feel better. Grandma wrapped {name} in a soft blanket and gave a big hug. \"Let's rest. Tomorrow we'll visit Dr. Lin.\" Tick, tock, went the clock.",
+        "In the afternoon, {name} picked up blocks by the sofa. Oh? A little bottle was hiding under the sofa! Inside were round, colorful bits. They looked just like candy. {name} really wanted to open it. Then {name} stopped and remembered Grandma's words.",
+        "{name} did not open the lid. Nothing went near {his} mouth. {name} carried the bottle carefully to the kitchen. \"Grandma, look what I found under the sofa!\" Grandma took it and looked. \"These are Grandpa's vitamins. Thank you for bringing them to me!\" She gave {name} a big, warm hug.",
+        "The next morning, Grandma took {name} to see Dr. Lin. Dr. Lin listened with a stethoscope. \"Just a small cough. Drink water and rest, and it will go away.\" Back home, Jay wasn't coughing anymore. {name} poured two cups of warm water, one for Jay and one to keep. They clinked cups and laughed together."
+      ]
+    },
+    "theme": "medicine",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}想喝阿哲的粉紅藥水時，奶奶說了什麼？",
+          "{name}在沙發底下找到小瓶子時，做了什麼？",
+          "如果你找到看起來像糖果的藥丸，你會怎麼做？"
+        ],
+        "tip": "這個星期和孩子一起練習一句話：「藥不是糖果，找到了要拿給大人看。」也請把家裡的藥和維他命都收到孩子拿不到的高處。"
+      },
+      "en": {
+        "questions": [
+          "What did Grandma say when {name} wanted Jay's pink syrup?",
+          "What did {name} do after finding the little bottle under the sofa?",
+          "What would you do if you found pills that looked like candy?"
+        ],
+        "tip": "This week, practice one phrase together: \"Medicine is not candy. If I find some, I show a grown-up.\" Also store all medicines and vitamins up high, out of your child's reach."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "gratitude-teachers-day-card",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6",
+      "6-8"
+    ],
+    "setting": "school",
+    "title": {
+      "zh": "{name}的謝謝卡",
+      "en": "{name}'s Thank-You Card"
+    },
+    "paragraphs": {
+      "zh": [
+        "早上，{name}走進教室。黑板上寫著大大的字：「教師節快到了！」林老師笑著說：「教師節是謝謝老師的日子。」{name}歪著頭想：老師每天都幫我們做什麼呢？{name}決定今天要好好看一看。",
+        "下課時，小安的鞋帶鬆了。林老師蹲下來，慢慢幫他綁好。「一個圈，再一個圈。」小安笑了。午睡前，林老師拿起故事書。她用好多不同的聲音唸故事。小熊的聲音低低的，小鳥的聲音高高的。大家都聽得好開心。",
+        "下午，美美想媽媽，哭了起來。林老師輕輕抱住她，拍拍她的背。「沒關係，老師在這裡。」美美慢慢不哭了。{name}在心裡數一數：綁鞋帶、唸故事、抱抱朋友。原來老師每天幫了這麼多忙！",
+        "{name}又發現了更多幫手。廚房阿姨把熱湯盛進碗裡。警衛伯伯在校門口揮手說早安。{name}覺得心裡滿滿的，好像口袋裝滿了寶貝。「原來有這麼多人在幫我們！」{name}小聲說。",
+        "第二天的美勞課，{name}拿出一張黃色卡紙。{name}想畫全班手牽手。可是小手好難畫，一畫就歪掉了。{name}擦了又擦，紙都皺巴巴的。{name}嘆了一口氣，有點想放棄。",
+        "這時，{name}想起林老師綁鞋帶的樣子。一個圈，再一個圈，慢慢來。{name}深呼吸，換了一張新卡紙。這次{he}先畫圓圓的頭，再畫小小的手，一個接一個。最後，{name}寫上大大的「謝謝老師」。卡片完成了！",
+        "午餐時，{name}對廚房阿姨說：「謝謝阿姨！」阿姨笑得眼睛彎彎的。飯後，{name}幫林老師把故事書排整齊。林老師說：「謝謝你，小幫手！」{name}蹦蹦跳跳回到座位，心裡輕飄飄的。",
+        "教師節那天，{name}把卡片送給林老師。林老師看了好久好久，眼睛變得軟軟的、亮亮的。「謝謝你，{name}。這是很棒的禮物。」她把卡片貼在教室的牆上。畫裡的全班手牽手，在陽光下閃閃發亮。{name}笑了，心裡暖洋洋的。"
+      ],
+      "en": [
+        "One morning, {name} walked into the classroom. Big letters on the board said, \"Teacher's Day is coming!\" Ms. Lin smiled. \"It's a day to thank teachers.\" {name} wondered, \"What does Ms. Lin do for us?\" {name} decided to watch closely.",
+        "At recess, An's shoelace came loose. Ms. Lin knelt and tied it slowly. \"One loop, then another loop.\" An grinned. Before nap time, she read a story in funny voices. The bear sounded low. The bird sounded high. Everyone giggled.",
+        "In the afternoon, Mei missed her mom and began to cry. Ms. Lin hugged her and patted her back. \"It's okay. I'm right here.\" Soon Mei stopped crying. {name} counted: tying laces, reading stories, giving hugs. Ms. Lin helped so much!",
+        "Then {name} noticed even more helpers. The lunch lady ladled warm soup into bowls. The guard at the gate waved good morning. {name} felt full inside, like a pocket stuffed with treasure. \"So many people help us,\" {name} whispered.",
+        "The next day in art class, {name} took out yellow paper. {name} wanted to draw the whole class holding hands. But hands were tricky. They came out wobbly. {name} erased and erased until the paper wrinkled. {name} sighed and almost gave up.",
+        "Then {name} remembered Ms. Lin tying laces. One loop, then another, nice and slow. {name} took a deep breath and got a fresh sheet. This time, {he} drew round heads first, then small hands, one by one. Last came big words: \"THANK YOU!\"",
+        "At lunch, {name} told the lunch lady, \"Thank you!\" Her eyes crinkled into a smile. Later, {name} helped Ms. Lin stack the storybooks. \"Thank you, little helper!\" she said. {name} skipped back to {his} seat, feeling light and happy.",
+        "On Teacher's Day, {name} gave Ms. Lin the card. She looked at it for a long time. Her eyes went soft and shiny. \"Thank you, {name}. What a wonderful gift.\" She hung it on the classroom wall. The paper class held hands in the sunshine. {name} smiled, warm all over."
+      ]
+    },
+    "theme": "gratitude",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}發現了哪些人每天在幫助大家？",
+          "{name}除了送卡片，還用了哪些小動作說謝謝？",
+          "今天有誰幫助了你？你想怎麼謝謝他呢？"
+        ],
+        "tip": "今晚睡前和孩子玩「謝謝三件事」：各自說出今天想謝謝的三個人或三件事。明天試著當面對其中一位說聲謝謝。"
+      },
+      "en": {
+        "questions": [
+          "Who did {name} notice helping everyone each day?",
+          "Besides the card, what small things did {name} do to say thank you?",
+          "Who helped you today, and how could you thank them?"
+        ],
+        "tip": "Tonight at bedtime, play \"Three Thank-Yous\": each of you names three people or things you're thankful for today. Tomorrow, try thanking one of them in person."
       }
     },
     "draft": true
