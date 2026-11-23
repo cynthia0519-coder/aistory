@@ -24693,5 +24693,60 @@
       }
     },
     "draft": true
+  },
+  {
+    "id": "getting-lost-moon-festival-picnic",
+    "style": "adventure",
+    "ageBands": [
+      "4-6",
+      "6-8"
+    ],
+    "setting": "park",
+    "title": {
+      "zh": "{name}的中秋泡泡冒險",
+      "en": "{name}'s Moon Festival Bubble Adventure"
+    },
+    "paragraphs": {
+      "zh": [
+        "中秋節的晚上，月亮又圓又亮。{name}和爸爸媽媽來到公園。大家找到一大片草地，離小河很遠很遠。爸爸鋪好野餐墊，媽媽拿出月餅和柚子。{name}開心得跳了起來。",
+        "吃東西前，爸爸蹲下來說：「我們來做個計畫。」「如果看不到我們，就停下來，站在原地。」「爸爸一定會回來找你。」{name}點點頭，小聲說：「停下來，不亂跑。」",
+        "爸爸又說：「然後要找人幫忙。」「可以找穿制服的公園人員，或是帶著小孩的媽媽。」爸爸指指{his}名牌：「這上面有爸爸的電話。」{name}把爸爸的名字和電話念了三遍，念得像唱歌一樣順。",
+        "大家開始吃月餅。旁邊有個小朋友在吹泡泡。一顆好大的泡泡飄過來，亮晶晶的，像一個小月亮。{name}伸出手，跟了過去。泡泡往左飄，又往右飄。{name}跑呀跑。",
+        "啵！泡泡破了。{name}轉過身，咦？野餐墊不見了。到處都是燈籠和人。{name}的心撲通撲通跳。可是{he}想起了計畫。{name}停下腳步，站在一盞高高的路燈旁，不再亂跑。",
+        "{name}看看四周。旁邊就有一位媽媽，推著嬰兒車，還牽著一個小女孩。{name}深深吸一口氣，大聲說：「阿姨，我找不到爸爸了，可以幫我嗎？」",
+        "阿姨溫柔地蹲下來：「別擔心，我陪你等。」她看了看名牌。{name}也說出爸爸的名字和電話。阿姨笑著說：「你記得好清楚！」她拿出手機打給爸爸：「您好，{name}在高高的路燈旁邊。」",
+        "沒多久，爸爸就快步走來了。「{name}！你停在原地，真棒！」爸爸緊緊抱住{name}。{name}謝謝阿姨，小女孩揮手說再見。回到野餐墊，媽媽遞上一塊月餅。圓圓的月亮，好像也在對{him}笑。"
+      ],
+      "en": [
+        "On Moon Festival night, the moon was round and bright. {name} went to the park with Mom and Dad. The family found a big grassy field, far away from the river. Dad spread out the picnic mat. Mom set out mooncakes and pomelos. {name} jumped for joy.",
+        "Before eating, Dad knelt down. \"Let's make a plan,\" he said. \"If you can't see us, stop. Stay right where you are. I will always come back to find you.\" {name} nodded. \"Stop and stay,\" {name} whispered.",
+        "\"Then ask for help,\" Dad said. \"Find a park worker in a uniform. Or find a mom with kids.\" He tapped {name}'s name tag. \"My phone number is right here.\" {name} said Dad's name and number three times, smooth as a song.",
+        "Everyone began to eat. Nearby, a child was blowing bubbles. One giant bubble floated over, shiny like a tiny moon. {name} reached out and followed it. The bubble drifted left. Then it drifted right. {name} ran after it.",
+        "Pop! The bubble was gone. {name} turned around. Where was the picnic mat? There were lanterns and people everywhere. {name}'s heart went thump, thump. But then {he} remembered the plan. {name} stopped beside a tall lamp and stayed put.",
+        "{name} looked around. Right nearby was a mom pushing a stroller. A little girl held her hand. {name} took a deep breath. \"Excuse me. I can't find my dad. Can you help me?\"",
+        "The mom knelt down kindly. \"Don't worry. I'll wait with you.\" She read the name tag. {name} said Dad's name and phone number too. \"You remember it so well!\" she smiled. She called Dad. \"Hello, {name} is by the tall lamp.\"",
+        "Soon Dad came hurrying over. \"{name}! You stayed right where you were. Great job!\" He gave {name} a big hug. {name} thanked the mom, and the little girl waved goodbye. Back at the mat, Mom passed {name} a mooncake. The round moon seemed to smile at {him}."
+      ]
+    },
+    "theme": "getting-lost",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}找不到野餐墊的時候，先做了什麼？為什麼這樣做很好？",
+          "如果你在公園或商場看不到爸爸媽媽，你可以找誰幫忙？",
+          "你記得爸爸或媽媽的名字和電話嗎？可以念給我聽嗎？"
+        ],
+        "tip": "今晚和孩子玩「電話歌」遊戲，把爸爸或媽媽的手機號碼編成小調一起唱，每天睡前唱一次，直到孩子能自己背出來。"
+      },
+      "en": {
+        "questions": [
+          "What did {name} do first when the picnic mat was out of sight? Why was that a good idea?",
+          "If you couldn't see your grown-up at the park or the mall, who could you ask for help?",
+          "Do you know Mom's or Dad's name and phone number? Can you say them for me?"
+        ],
+        "tip": "Tonight, turn your phone number into a little tune and sing it together. Sing it once each night at bedtime until your child can say it alone."
+      }
+    },
+    "draft": true
   }
 ]
