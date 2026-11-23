@@ -3179,5 +3179,345 @@
     "style": "cute",
     "setting": "home",
     "premise": "It is hot, hot, hot! {name} folds a paper fan with Grandma, accordion style, and colors it with stripes and stars. Flap, flap! The fan makes a little wind. {name} cools Grandma, the cat and the teddy bear, then the plants on the windowsill. Everyone feels cooler, and {name} falls asleep with the fan in hand."
+  },
+  {
+    "id": "earthquake-school-drill-day",
+    "theme": "earthquake",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "On National Disaster Prevention Day, {name}'s school holds an earthquake drill. When the alarm sounds, {name} drops under the desk, covers head and neck, and holds on to the desk leg. A classmate wants to run for the door, but {name} reminds him to wait until the shaking stops. Then the teacher leads everyone calmly to the field, and {name} helps count the class."
+  },
+  {
+    "id": "typhoon-september-school-day-off",
+    "theme": "typhoon",
+    "ageBands": ["4-6", "6-8"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "A September typhoon closes school for the day. {name} wants to go to the riverbank to see the big waves, but Mom says the river and the sea are dangerous during a typhoon. Instead, they stay inside, far from the windows, make a list of what the typhoon sounds like, and listen to the radio news together until the wind finally calms at night."
+  },
+  {
+    "id": "getting-lost-riverside-moon-festival",
+    "theme": "getting-lost",
+    "ageBands": ["4-6", "6-8"],
+    "style": "adventure",
+    "setting": "city",
+    "premise": "On Moon Festival night, {name}'s family watches the moon at a crowded riverside park. While looking at a glowing rabbit lantern, {name} loses sight of Dad. {name} stops and stays by the lantern, then asks a police officer in uniform for help and says Dad's name and phone number. Dad arrives quickly, and they pick the rabbit lantern as their meeting spot."
+  },
+  {
+    "id": "strangers-kittens-in-the-car",
+    "theme": "strangers",
+    "ageBands": ["4-6", "6-8"],
+    "style": "inspiring",
+    "setting": "park",
+    "premise": "At the park, a woman {name} has never met says she has kittens in her car and asks {name} to come and see them. {name} loves kittens, but remembers: only go with grown-ups your parents agreed on. {name} says no loudly, runs straight to Grandma on the bench, and tells her. Grandma hugs {name} and tells the park guard, then they visit real kittens at the pet shelter with Mom."
+  },
+  {
+    "id": "crossing-road-first-walk-to-school",
+    "theme": "crossing-road",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "city",
+    "premise": "On the first week of school, {name} walks to kindergarten holding Grandpa's hand. At every corner they play the crossing game: stop at the curb, look left, look right, look left again, listen for scooters, and wait for the little green man. A crossing volunteer in a yellow vest waves. By Friday, {name} reminds Grandpa of each step before he can say it."
+  },
+  {
+    "id": "sockets-night-phone-charger",
+    "theme": "sockets",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "At bedtime, {name} sees Mom's phone charging by the bed with a little blue light. {name} wants to pull the plug out to play with the phone. Mom says plugs, cords and sockets are only for grown-ups, and little fingers stay away. Together they put the charger up high on the shelf, and {name} says goodnight to the little blue light."
+  },
+  {
+    "id": "medicine-not-sharing-cousins-syrup",
+    "theme": "medicine",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "In autumn, {name}'s big cousin catches a cold and takes pink cough syrup. The next day {name} coughs a little and wants to drink the same syrup. Grandma explains that medicine is only given by a grown-up, and only the medicine the doctor chose for you. {name} drinks warm water and rests with a hug instead, and the doctor checks {name} the next morning."
+  },
+  {
+    "id": "hot-things-roasted-sweet-potato",
+    "theme": "hot-things",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "city",
+    "premise": "On the first cool autumn evening, Grandma buys a roasted sweet potato from the old iron-barrel cart. It smells so sweet! {name} wants to grab it right away, but the barrel and the potato are very hot. {name} steps back from the cart, waits while Grandma breaks the potato open, and they blow on it together until Grandma says it is warm enough."
+  },
+  {
+    "id": "windows-balcony-autumn-wind-kite",
+    "theme": "windows-balcony",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "On a windy autumn day, {name}'s little paper kite blows onto the edge of the balcony. {name} wants to climb on a stool to reach it. Dad says we never climb on the balcony or lean over the railing. {name} calls Dad, who gets the kite back with a long broom. Then they fly the kite together at the park, where there is lots of room."
+  },
+  {
+    "id": "online-safety-game-chat-mean-words",
+    "theme": "online-safety",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "After school, {name} plays an online building game. A player {name} doesn't know starts sending mean messages and asks for {name}'s school name to come find {name} in person. {name} feels scared and stops. {name} takes a screenshot, leaves the game, and tells Dad right away. Dad thanks {name}, they block and report the player, and set the game to friends-only together."
+  },
+  {
+    "id": "water-safety-pond-ball",
+    "theme": "water-safety",
+    "ageBands": ["4-6", "6-8"],
+    "style": "adventure",
+    "setting": "park",
+    "premise": "At the park, {name}'s ball rolls into the lotus pond and floats away from the edge. {name} wants to lean over and reach for it with a stick. {name} remembers that ponds can be deep and slippery, so {name} stays back from the edge and calls Mom. Mom asks the park worker, who uses a long net to scoop the ball out safely."
+  },
+  {
+    "id": "starting-kindergarten-first-morning-hug",
+    "theme": "starting-kindergarten",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "school",
+    "premise": "On September 1st, {name}'s first day of kindergarten, {name} holds Mom's hand tightly at the gate. They do their special goodbye: one hug, one high five, and a secret word. Inside, the teacher shows {name} the fish tank and a basket of blocks. {name} misses Mom at snack time and the teacher gives a hug, and when Mom comes back after nap, {name} has so much to tell."
+  },
+  {
+    "id": "starting-kindergarten-nap-time-blanket",
+    "theme": "starting-kindergarten",
+    "ageBands": ["2-4", "4-6"],
+    "style": "bedtime",
+    "setting": "school",
+    "premise": "In the second week of kindergarten, nap time is the hardest part for {name}. The classroom is quiet and {name} misses home. The teacher lets {name} bring a small blanket from home that smells like home, and sits nearby rubbing {name}'s back. {name} counts the ceiling stars, hugs the blanket, and falls asleep, waking up ready for snack time."
+  },
+  {
+    "id": "bedtime-routine-school-night",
+    "theme": "bedtime-routine",
+    "ageBands": ["6-8"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "On a school night, {name} wants to stay up building a model robot. Dad and {name} make a deal: pack the school bag, lay out tomorrow's clothes, take a bath, brush teeth, then read one chapter together and turn off the light. The robot can wait on the desk till tomorrow. In the morning {name} wakes up easily and finds the robot waiting."
+  },
+  {
+    "id": "handwashing-flu-season-class-helper",
+    "theme": "handwashing",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "In autumn many kids in {name}'s class catch colds. The teacher makes {name} the class handwashing helper. {name} reminds friends to wash before snack and after the toilet, rubbing palms, backs, between fingers, thumbs and nails while singing a short song. By the end of the month, fewer friends are home sick, and the class makes a bubble drawing to celebrate."
+  },
+  {
+    "id": "doctor-shots-flu-shot-family-line",
+    "theme": "doctor-shots",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "city",
+    "premise": "Before winter, {name}'s whole family gets flu shots at the clinic. {name} watches Dad go first, then big brother. When it is {name}'s turn, {name} squeezes a stuffed panda, looks at the fish poster and blows out pretend candles. Pinch! It is over fast. The family walks home together, proud of their matching bandages."
+  },
+  {
+    "id": "dentist-sealant-shiny-shield",
+    "theme": "dentist",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "city",
+    "premise": "{name}'s new big molars have come in, and the dentist suggests a sealant to protect them. {name} is nervous about the chair, so the dentist shows each tool first: the little mirror, the air puffer, and the blue light. Nothing hurts. {name} counts the ceiling tiles while the dentist works, and afterwards {name} runs a tongue over the smooth shiny teeth."
+  },
+  {
+    "id": "trying-food-persimmon-autumn",
+    "theme": "trying-food",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "Grandpa brings home bright orange persimmons. One is soft and squishy, one is crunchy. {name} is not sure about this new fruit. Grandpa says we can try with a tiny bite first. {name} looks, sniffs, licks and takes a small bite of the crunchy one. Sweet! {name} still likes bananas best, but now persimmons are an autumn favorite too."
+  },
+  {
+    "id": "tidying-toys-school-bag-pockets",
+    "theme": "tidying-toys",
+    "ageBands": ["4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "Every morning {name} can't find the water bottle or the contact book in the messy school bag. Mom and {name} make a game called Pocket Homes: the bottle lives in the side pocket, the folder in the big pocket, the pencil case in the front. Each night {name} puts everything back home, and mornings become easy and fast."
+  },
+  {
+    "id": "potty-asking-teacher-at-school",
+    "theme": "potty",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "school",
+    "premise": "At kindergarten, {name} needs to pee but feels shy to tell the new teacher. {name} wiggles and waits. Then {name} remembers what Mom practiced at home: raise a hand and say, Teacher, I need to go potty. The teacher smiles and walks {name} to the little toilets. {name} flushes, washes hands, and comes back feeling proud."
+  },
+  {
+    "id": "brushing-teeth-after-mooncake",
+    "theme": "brushing-teeth",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "After Moon Festival, {name} has eaten sweet mooncake with egg yolk and lots of pomelo. At bedtime Mom says the sticky sweet is hiding between the teeth. They brush together in front of the mirror, top and bottom, round and round, the back teeth too, while the moon peeks through the window. Then {name} smiles a sparkly smile at the moon."
+  },
+  {
+    "id": "anger-recess-game-cheating",
+    "theme": "anger",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "At recess, {name} thinks a classmate cheated in a game of tag and feels so angry that {name} wants to shove him. {name} stops, squeezes both fists, then lets go and takes three slow breaths. Then {name} says: I'm angry because I think you stepped out of the line. They ask the teacher to help make a clear rule, and the game goes on."
+  },
+  {
+    "id": "new-sibling-baby-first-smile",
+    "theme": "new-sibling",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "Baby brother only sleeps, cries and drinks milk, and {name} thinks he is boring. Everyone keeps looking at him. Mom invites {name} to help with bath time and sing the baby a song. {name} makes funny faces and sings the duck song, and suddenly baby brother smiles his first smile, right at {name}. Mom says, He loves his big sibling already."
+  },
+  {
+    "id": "sharing-turns-class-block-corner",
+    "theme": "sharing-turns",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "school",
+    "premise": "In the new kindergarten class, {name} and a new friend both want the big red block for their towers. Grab! Pull! The teacher shows them a sand timer: one turn each until the sand runs down. {name} waits and watches the sand fall. Then they decide to put the red block on top of one tall tower they build together."
+  },
+  {
+    "id": "fear-of-dark-autumn-long-nights",
+    "theme": "fear-of-dark",
+    "ageBands": ["4-6"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "In autumn the nights come early, and {name}'s room gets dark before bedtime. The shapes in the corner look strange. {name} and Dad go on a flashlight tour: the dragon shape is a coat on a hook, the monster is a pile of stuffed toys. They leave a small night-light on, and {name} says goodnight to every shape before falling asleep."
+  },
+  {
+    "id": "losing-failing-sports-day-relay",
+    "theme": "losing-failing",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "At the school sports day in October, {name}'s class relay team practices for weeks. During the race, {name} drops the baton and the team finishes last. {name} wants to hide. Teammates pat {name}'s back, and the teacher says the team ran their fastest time ever. {name} feels sad for a while, then cheers loudly for the other races and practices handoffs for next year."
+  },
+  {
+    "id": "honesty-broken-classmate-pen",
+    "theme": "honesty",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "{name} borrows a classmate's new glitter pen and accidentally breaks the clip. Nobody saw it. {name} could put it back and say nothing, but feels a heavy stone inside. {name} tells the classmate the truth and says sorry. The classmate is upset at first, then thanks {name} for being honest, and {name} offers a favorite eraser while they fix the clip with tape."
+  },
+  {
+    "id": "bullying-new-term-nickname",
+    "theme": "bullying",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "At the start of the new school year, some kids call a quiet classmate a mean nickname because of his old shoes. {name} feels uneasy. {name} stops laughing along, uses the classmate's real name, sits with him at lunch, and tells the teacher. The teacher talks with the class about words that hurt, and the nickname slowly disappears."
+  },
+  {
+    "id": "moving-house-new-school-in-autumn",
+    "theme": "moving-house",
+    "ageBands": ["6-8", "8-10"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "{name}'s family moved over summer, and {name} starts at a new school where everyone already has friends. On the first day {name} eats lunch alone and misses old friends. {name} video-calls an old friend that night, then the next day joins the class garden team. Planting cabbage seedlings together, {name} makes a first new friend."
+  },
+  {
+    "id": "empathy-crying-friend-first-day",
+    "theme": "empathy",
+    "ageBands": ["2-4", "4-6"],
+    "style": "cute",
+    "setting": "school",
+    "premise": "On the first day of kindergarten, a boy in {name}'s class cries at the door and won't let go of his dad. {name} remembers feeling scared too. {name} walks over with a toy dinosaur and says, You can play with me. The boy sniffles and takes the dinosaur, and soon they are building a dinosaur house together."
+  },
+  {
+    "id": "gratitude-teachers-day-card",
+    "theme": "gratitude",
+    "ageBands": ["4-6", "6-8"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "Teacher's Day is coming, and {name} thinks about all the ways the teacher helps every day: tying shoelaces, reading stories, hugging crying friends. {name} makes a card with a drawing of the whole class holding hands and a big thank you. When {name} gives it, the teacher's eyes go soft and shiny, and she puts it up on the wall."
+  },
+  {
+    "id": "perseverance-recorder-practice",
+    "theme": "perseverance",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "This term {name}'s class learns the recorder, and {name}'s notes come out squeaky and wrong. Some classmates already play well. {name} wants to give up, but practices ten minutes each evening: one slow line at a time, covering the holes fully. By the class concert in late October, {name} plays the whole song, with only one tiny squeak."
+  },
+  {
+    "id": "courage-raising-hand-in-class",
+    "theme": "courage",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "In the new class, {name} knows an answer but is too shy to raise a hand, afraid of being wrong. One day the teacher asks a question about autumn leaves, and {name}'s hand shakes as it goes up. {name} answers, and it is only half right, but the teacher thanks {name} for trying. The next time, {name}'s hand goes up a little faster."
+  },
+  {
+    "id": "responsibility-class-duty-day",
+    "theme": "responsibility",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "This week {name} is the class duty helper: wipe the board, water the class plants, and line up the lunch trays. On Wednesday {name} wants to play at recess instead and almost forgets the plants. {name} remembers, runs back, and waters them. On Friday the teacher points at the fresh green leaves and thanks {name} for a job well done."
+  },
+  {
+    "id": "keeping-promises-moon-festival-visit",
+    "theme": "keeping-promises",
+    "ageBands": ["4-6"],
+    "style": "inspiring",
+    "setting": "home",
+    "premise": "{name} promised Grandpa to make a paper rabbit lantern for Moon Festival. The week is busy with school and playing, and {name} almost forgets. The night before, {name} sits down with Mom and cuts, folds and glues until it is done. At Grandpa's house, the lantern glows, and Grandpa says it is the best lantern he has ever been given."
+  },
+  {
+    "id": "respecting-differences-new-classmate-from-vietnam",
+    "theme": "respecting-differences",
+    "ageBands": ["6-8"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "A new classmate's mom is from Vietnam, and he brings spring rolls in his lunchbox. Some kids say they smell strange. {name} asks what they are and tries one. Delicious! {name} learns a few Vietnamese words from him, and he learns {name}'s favorite game. At the class culture day, his mom teaches everyone to roll spring rolls."
+  },
+  {
+    "id": "caring-for-nature-hawk-migration",
+    "theme": "caring-for-nature",
+    "ageBands": ["6-8", "8-10"],
+    "style": "adventure",
+    "setting": "mountain",
+    "premise": "In October, {name} and Grandpa hike up a hill to watch the gray-faced buzzards migrate south. Hundreds of hawks circle overhead. The volunteer guide asks everyone to stay quiet, keep to the trail and never chase or feed wild birds. {name} counts the hawks with binoculars and writes a promise to protect the forest where they rest."
+  },
+  {
+    "id": "teamwork-sports-day-tug-of-war",
+    "theme": "teamwork",
+    "ageBands": ["6-8", "8-10"],
+    "style": "adventure",
+    "setting": "school",
+    "premise": "At sports day, {name}'s class loses the first round of tug of war because everyone pulls at different times. At the break, {name} suggests a rhythm: one, two, heave! The class practices pulling together, feet planted low. In the final round they pull as one team and win, and they cheer for the other class too."
+  },
+  {
+    "id": "forgiveness-ruined-art-project",
+    "theme": "forgiveness",
+    "ageBands": ["8-10"],
+    "style": "inspiring",
+    "setting": "school",
+    "premise": "{name}'s autumn leaf art project is ruined when a classmate spills water on it by accident while rushing. {name} is furious and says something unkind. Later the classmate comes back with a new bag of leaves from the playground and says sorry. {name} says sorry too for the unkind words, and together they make an even bigger leaf mural."
+  },
+  {
+    "id": "mid-autumn-pomelo-hat",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "home",
+    "premise": "On Moon Festival, Grandma peels a giant pomelo and puts the big round peel on {name}'s head like a hat. {name} giggles: I'm a pomelo baby! The whole family wears pomelo hats, eats mooncakes and looks for the rabbit in the moon. {name} waves at the moon until sleepy eyes close under the pomelo hat."
+  },
+  {
+    "id": "autumn-leaf-crunch-walk",
+    "ageBands": ["2-4"],
+    "style": "cute",
+    "setting": "park",
+    "premise": "On a cool autumn morning, {name} and Dad walk in the park where red and yellow leaves cover the path. Crunch, crunch! {name} jumps into a leaf pile, collects the biggest leaf, the smallest leaf, and a leaf shaped like a hand. At home, they make a leaf picture of a little hedgehog."
+  },
+  {
+    "id": "autumn-osmanthus-tea-night",
+    "ageBands": ["4-6"],
+    "style": "bedtime",
+    "setting": "home",
+    "premise": "In autumn, the osmanthus tree by Grandma's door blooms with tiny golden flowers that smell like honey. {name} and Grandma shake the branches gently and collect the fallen flowers on a cloth. They dry them by the window, and at night Grandma makes warm osmanthus tea. {name} sips the sweet smell and falls asleep while Grandma hums."
+  },
+  {
+    "id": "autumn-hsinchu-kite-wind",
+    "ageBands": ["6-8"],
+    "style": "adventure",
+    "setting": "sea",
+    "premise": "In October the strong autumn wind blows along the coast near Hsinchu. {name} and Mom bring a big fish-shaped kite to the seaside park. At first it keeps crashing, but a kind old kite flyer shows {name} how to run against the wind and let the string out slowly. The fish kite soars high, and {name} feels like flying too."
   }
 ]
