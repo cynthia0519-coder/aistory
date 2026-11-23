@@ -112,3 +112,12 @@
   - 8/1–8/15（11 集）https://claude.ai/artifact/GwRP4BVP2HaPbVthSwM8Km
   - 8/16–8/31（11 集）https://claude.ai/artifact/LSSvSKkm2hys2CDeWdZAnZ（263MB，最接近單頁上限）
 - 第四波封面重畫或改 prompt：water-safety-stream-rising-water 第一版站在暴漲溪邊，改成全家往高處山坡小徑走、溪水遠在下方；doctor-shots-school-checkup 的 E 字視力表會畫出字母，改成魚和星星圖案視力表。兩處都已同步寫進 wave4-cover-prompts.json。
+
+## 第五波（2026-11-23 開始）
+
+- 使用者在封面 session 說「開始第五波」。播出 2027-09-01～10-31 週一三四六日，44 集，`wave5-production.json`（日期手排在 `wave5-plan.py`）：9/1 開學、9/12–9/16 中秋（燈籠、走失、兔子冰皮月餅 9/15、月餅後刷牙）、9/22 防災日地震演練、9/26 教師節卡片、10 月運動會（巨球、兩人三腳）與直笛音樂會、10/9 灰面鵟鷹、10/17 新竹九降風柿餅。週二、五照每月節目頁（9/14 中秋烤肉、10/26、10/29 萬聖節在那條線）。
+- 43 則新寫（2026-11-23）＋第四波備用 summer-shaved-ice-snowman（9/2）。第一次預審 24 則因和舊故事太像被 check，改前提重生；情節改變的同時改了 id（例：strangers-kittens-in-the-car → strangers-sports-center-pickup）。44 則都 AI 預審 ok、中英文讀過、安全類做法核對過，已 library:publish 排在播出日 19:30。
+- 主角：bo 30、mumu 14（mumu 已寫進 `apps/api/episode-heroes.json`）。沒有三兄妹原創集。
+- 封面 prompt 在 `wave5-cover-prompts.json`（播出順序；mumu ref MAHZNTKJt9I、bo null）。Canva 用 DAHY2Vv2sws 第 5–48 頁（第三波的頁，舊 jpg 都在 repo），放圖前跟主控確認。安全類 11 集（地震、颱風、走失、陌生人、過馬路、插座、藥、燙、窗戶陽台、網路、玩水）放進 Canva 前看全圖，只畫安全做法。
+- 算圖 `bash docs/production/render-loop.sh wave5`；上傳頁 4 頁：9/1–9/15、9/16–9/30、10/1–10/15、10/16–10/31（各約 11 集）。
+- 教訓：API key 換過一次（舊的 401）；環境變數改了要開新 session 或重啟才生效。故事庫題材已用到 400+ 則，新前提要刻意避開舊情節（AI 預審很會抓重複）。
