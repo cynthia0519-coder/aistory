@@ -23545,48 +23545,48 @@
     ],
     "setting": "home",
     "title": {
-      "zh": "{name}和小藍燈說晚安",
-      "en": "{name} Says Goodnight to the Little Blue Light"
+      "zh": "{name}和小藍燈找新家",
+      "en": "{name} Finds a Safe Home for the Blue Light"
     },
     "paragraphs": {
       "zh": [
-        "晚上了，該睡覺囉。{name}躺在小床上，被子軟軟的。床邊有一個小藍燈，眨呀眨，眨呀眨。「咦？那是什麼呀？」",
-        "原來是媽媽的手機。手機正在充電。一條長長的電線，連到牆上的插座。{name}想：拔起來，就能玩手機囉！{his}小手慢慢伸過去。",
-        "媽媽輕輕握住{his}小手。「插頭、電線和插座，是大人用的喔。小手手不碰，手指不戳，東西也不塞。」{name}點點頭，把小手藏進被子裡。小熊也把手藏起來，好像在說：我也不碰！",
-        "「咕嚕咕嚕。」{name}喝了一口水。哎呀，水滴到小手上了！媽媽說：「濕濕的手，要離電線遠遠的。」媽媽拿來小毛巾，擦擦擦，乾乾的。{name}把水杯放到床的另一邊。",
-        "媽媽看看電線，問：「如果電線破了，或是插頭冒火花，要怎麼辦？」{name}大聲說：「退後退後，告訴媽媽！」「答對了！」媽媽摸摸電線，「這條好好的，真棒。」",
-        "「我們幫小藍燈，找個新家吧！」媽媽把充電器和手機，搬到高高的架子上，插好插座。{name}踮起腳尖看一看。「哇，好高好高喔！」",
-        "小藍燈在高高的地方，眨呀眨，像一顆小星星。{name}揮揮手，小熊也揮揮手。{name}咯咯笑：「小熊，你的手好短喔！」媽媽也笑了。",
-        "媽媽關上大燈，房間暗暗的，只剩小藍燈亮亮的。{name}打了一個大哈欠。「小藍燈，晚安。」小藍燈眨一眨，好像在說：晚安，{name}。"
+        "晚上到了，要睡覺囉。{name}躺在床上。咦？床邊有一條長長的線。線晃呀晃，晃呀晃。線的旁邊，有一顆小藍燈。小藍燈一閃，一閃，一閃。",
+        "「哇，好像跳繩！」{name}坐起來。「我要甩一甩，咻咻咻！」媽媽笑著走過來。媽媽輕輕說：「等一下喔。電線和插頭，是大人用的。小手指不碰，小玩具也不塞進去。」",
+        "「那小藍燈要睡哪裡？」{name}問。媽媽眨眨眼睛。「我們來玩個遊戲。叫做『幫它找個安全的家』！」「好耶！」{name}拍拍手。啪啪啪！",
+        "媽媽拔下插頭，看一看電線。「線滑滑的，沒有破。很好！」媽媽說：「如果電線破了，或插頭冒出小火花，就退後一步，叫媽媽來。」{name}點點頭：「退後一步，叫媽媽！」",
+        "媽媽拿起手機和充電線。放上去，放到高高的架子上。媽媽插進高高的插座。小藍燈又亮了，一閃，一閃。「小藍燈住在高高的家！」{name}咯咯笑。",
+        "咦？{name}的水杯在床邊。水杯離插座好近喔。{name}的小手也濕濕的。媽媽拿來小毛巾，擦擦擦！乾乾的小手，把水杯拿到遠遠的書桌上。媽媽說：「水和電線，不一起玩喔。」",
+        "現在輪到兔兔夜燈了。兔兔是{name}的小夜燈。它沒有電線，按一下肚子就會亮！{name}把兔兔放在矮矮的小桌上。「兔兔住在低低的家！」黃黃的光，暖暖的。",
+        "{name}鑽進被子裡。抬頭看，小藍燈在高高的地方，一閃一閃。「小藍燈，晚安。」轉頭看，兔兔在低低的地方，亮亮的。「兔兔，晚安。」媽媽親親{name}：「{name}，晚安。」"
       ],
       "en": [
-        "It is bedtime. {name} snuggles into a soft, cozy bed. By the bed, a little blue light blinks. Blink, blink, blink. \"Ooh! What is that?\"",
-        "It is Mom's phone. The phone is charging. A long cord runs to the plug in the wall socket. {name} thinks, \"Pull it out! Then I can play!\" A little hand reaches out.",
-        "Mom gently holds that little hand. \"Plugs, cords, and sockets are for grown-ups. Little fingers stay away. No poking, no pushing things in.\" {name} nods and tucks both hands under the blanket. Teddy hides his paws too!",
-        "Glug, glug. {name} sips some water. Oops! Drips land on a little hand. Mom says, \"Wet hands stay far from cords.\" She wipes with a towel. Pat, pat, all dry! {name} moves the cup to the other side.",
-        "Mom looks at the cord. \"What if a cord looks broken? What if a plug sparks?\" {name} says loudly, \"Step back! Tell Mom!\" \"That's right!\" Mom checks the cord. \"This one is just fine.\"",
-        "\"Let's find the blue light a new home!\" Mom puts the charger and phone up high on the shelf. She plugs it in up there. {name} stands on tiptoes. \"Wow! So high!\"",
-        "Up high, the little light blinks like a tiny star. {name} waves. Teddy waves too. {name} giggles. \"Teddy, your arms are so short!\" Mom laughs too.",
-        "Mom turns off the big light. The room is dark and quiet. Only the blue light glows. {name} gives a big yawn. \"Goodnight, little blue light.\" Blink! It seems to say, \"Goodnight, {name}.\""
+        "It's bedtime. {name} snuggles into bed. Hmm? A long cord hangs by the bed. Swing, swing, swing. Next to it is a little blue light. Blink, blink, blink.",
+        "\"It looks like a jump rope!\" {name} sits up. \"I'll swing it! Whoosh!\" Mom comes over with a smile. \"Wait, sweetie. Cords and plugs are for grown-ups. No fingers, no toys poking in.\"",
+        "\"Then where will the blue light sleep?\" asks {name}. Mom winks. \"Let's play a game. It's called Find a Safe Home!\" \"Yay!\" {name} claps. Clap, clap, clap!",
+        "Mom unplugs the charger and looks at the cord. \"Smooth and whole. Good!\" She says, \"If a cord looks broken, or a plug sparks, step back and call me.\" \"Step back, call Mom!\" says {name}.",
+        "Mom carries the phone and charger to the high shelf. She plugs them in up there. Blink, blink! \"The blue light lives up high now!\" {name} giggles.",
+        "Uh-oh. {name}'s water cup sits near the socket. {name}'s hands are a little wet. Mom brings a towel. Rub, rub, rub! Dry hands carry the cup far away. \"Water and cords don't play together,\" says Mom.",
+        "Now it's Bunny's turn. Bunny is {name}'s night-light toy. No cord at all! Just press its tummy. Glow! {name} sets Bunny on the low table. \"You live down low!\" Soft and yellow, warm and mellow.",
+        "{name} wiggles under the blanket. Up high, the blue light blinks. \"Goodnight, blue light.\" Down low, Bunny glows. \"Goodnight, Bunny.\" Mom gives a kiss. \"Goodnight, {name}.\""
       ]
     },
     "theme": "sockets",
     "guide": {
       "zh": {
         "questions": [
-          "{name}想拔插頭的時候，媽媽說了什麼？",
-          "如果你的手濕濕的，要怎麼做才能靠近電線？",
-          "如果看到電線破了，或插頭冒火花，你會怎麼做？"
+          "{name}想甩電線的時候，媽媽說了什麼？",
+          "如果你的手濕濕的，要先做什麼，才可以靠近電器？",
+          "如果你看到電線破了，或插頭冒火花，你會怎麼做？"
         ],
-        "tip": "今晚和孩子玩「退後告訴大人」的小遊戲：你指著家裡的插座或電線，孩子就把手藏起來說「大人用的！」。也可以一起檢查床邊的電線和水杯放的位置。"
+        "tip": "今晚睡前和孩子玩「幫它找個安全的家」：一起把充電線收到高處，再一起練習說「退後一步，叫大人」。"
       },
       "en": {
         "questions": [
-          "What did Mom say when {name} wanted to pull out the plug?",
-          "What should you do if your hands are wet and there is a cord nearby?",
+          "What did Mom say when {name} wanted to swing the cord?",
+          "If your hands are wet, what should you do before going near anything with a plug?",
           "What would you do if you saw a broken cord or a sparking plug?"
         ],
-        "tip": "Tonight, play a quick \"Grown-ups Only\" game: point to a socket or cord at home, and your child hides both hands and says \"For grown-ups!\" Then check together that cups of water stay away from bedside cords."
+        "tip": "Tonight before bed, play Find a Safe Home together: put chargers up high, then practice saying \"Step back, call a grown-up!\""
       }
     },
     "draft": true
@@ -24543,43 +24543,43 @@
     },
     "paragraphs": {
       "zh": [
-        "秋天到了，窗外的葉子變黃了。表哥阿哲來{name}家住幾天。可是阿哲感冒了，一直咳咳咳。奶奶拿出一瓶粉紅色的藥水，倒了一小匙，餵阿哲喝下去。{name}在旁邊看，眼睛睜得好大。「那個好漂亮，好像草莓汁耶！」",
-        "阿哲喝完，皺了皺鼻子。「醫生說我要喝這個藥。」他說。奶奶把藥瓶放回高高的櫃子上。那天晚上，阿哲早早就睡了。{name}也躺在床上，心裡還在想那瓶粉紅色的藥水。它到底是什麼味道呢？",
-        "第二天早上，{name}醒來，喉嚨有一點癢。「咳、咳。」{name}輕輕咳了兩聲，跑去找奶奶。「奶奶，我也咳嗽了！我可以喝阿哲的粉紅藥水嗎？」奶奶摸摸{name}的額頭，溫柔地笑了。",
-        "「藥看起來像糖果，可是它不是糖果喔。」奶奶說。「藥要由大人來給，而且只能吃醫生幫你選的藥。那是阿哲的藥，不是你的。」{name}嘟起小嘴，好想喝喔！可是{name}點點頭，把兩隻手放到背後。",
-        "奶奶倒了一杯溫溫的開水。{name}兩手捧著杯子，慢慢地喝。水暖暖的，喉嚨舒服多了。奶奶拿來小毯子，把{name}抱在懷裡。「我們休息一下，明天去給林醫生看看。」時鐘在牆上滴答滴答響。",
-        "下午，{name}在沙發旁邊撿積木。咦？沙發底下有一個小瓶子！瓶子裡裝著圓圓的、彩色的小顆粒。看起來好像糖果喔。{name}好想打開來看看。可是{name}停下來，想起了奶奶說的話。",
-        "{name}沒有打開蓋子，也沒有放進嘴巴。{name}小心地拿著瓶子，跑去廚房找奶奶。「奶奶你看！我在沙發底下找到的。」奶奶接過瓶子看一看。「這是爺爺的維他命，掉在這裡了。謝謝你拿來給我看！」奶奶給{name}一個大大的擁抱。",
-        "第二天早上，奶奶帶{name}去看林醫生。林醫生用聽診器聽一聽，說：「只是小咳嗽，多喝水、多休息就會好。」回到家，阿哲已經不咳了。{name}倒了兩杯溫開水，一杯給阿哲，一杯留給自己。兩個人碰碰杯子，一起笑了。"
+        "秋天到了，窗外的葉子變黃了。表哥阿哲來奶奶家玩。「哈啾！哈啾！」阿哲一直打噴嚏。他感冒了，鼻子紅紅的。奶奶拿出一瓶藥水，倒進小小的量杯裡。阿哲皺著眉，咕嚕一口喝下去。",
+        "{name}坐在旁邊，看得好認真。量杯裡的藥水是粉紅色的。看起來好像草莓牛奶。聞起來甜甜的，香香的。{name}心想：「那一定很好喝吧？」奶奶把藥瓶蓋好，放回高高的櫃子上。",
+        "第二天早上，{name}醒來了。「咳咳，咳咳。」喉嚨有一點點癢。{name}跑到廚房找奶奶。「奶奶，我也咳嗽了！我也要喝粉紅色的藥水。」{name}指著高高的櫃子說。",
+        "奶奶蹲下來，摸摸{name}的頭。「那瓶藥是醫生為阿哲選的。每個人的藥，都是醫生特別挑的。」奶奶溫柔地說：「藥要由大人來給，才可以吃喔。它看起來甜甜的，可是它不是糖果。」",
+        "{name}嘟起嘴，有一點點失望。可是{name}想了想，還是點點頭。奶奶倒了一杯溫開水，又拿來一條軟軟的毯子。{name}窩在沙發上，小口小口地喝水。溫溫的水滑過喉嚨，好舒服。",
+        "這時候，{name}看見桌子底下有東西。是一個小小的瓶子！瓶子裡有圓圓的、彩色的小顆粒。好像彩虹糖喔！{name}好想打開來嚐一嚐。可是{name}把手縮回來，大聲喊：「奶奶，快來看！」",
+        "奶奶走過來，撿起瓶子。「這是阿哲的維他命，不小心掉了。」奶奶笑著說：「它像糖果，可是不是糖果。你沒有嚐，還叫我來看，做得真好！」阿哲也跑過來，給{name}一個大大的擁抱。",
+        "隔天早上，奶奶帶{name}去看醫生。醫生聽一聽，看一看。「只是小小的咳嗽喔。多喝溫開水，好好休息。」回到家，{name}倒了一杯溫開水。{name}笑著端給阿哲：「表哥，你也要多喝水喔！」"
       ],
       "en": [
-        "Autumn came, and the leaves outside turned yellow. Cousin Jay came to stay at {name}'s house. But Jay had a cold. \"Cough, cough!\" Grandma poured a spoonful of pink syrup for him. {name} watched with wide eyes. \"It looks like strawberry juice!\"",
-        "Jay made a funny face after he swallowed. \"The doctor said I need this,\" he said. Grandma put the bottle back on a high shelf. That night, Jay went to bed early. {name} lay in bed too, still thinking about the pink syrup. What did it taste like?",
-        "The next morning, {name} woke up with a tickly throat. \"Cough, cough.\" {name} ran to find Grandma. \"Grandma, I'm coughing too! Can I have Jay's pink syrup?\" Grandma felt {name}'s forehead and smiled gently.",
-        "\"Medicine can look like candy, but it isn't candy,\" Grandma said. \"A grown-up gives the medicine. And only the medicine the doctor picked for you. That syrup is Jay's, not yours.\" {name} pouted. It looked so yummy! But {name} nodded and tucked both hands behind {his} back.",
-        "Grandma poured a cup of warm water. {name} held it with two hands and sipped slowly. The warm water made {his} throat feel better. Grandma wrapped {name} in a soft blanket and gave a big hug. \"Let's rest. Tomorrow we'll visit Dr. Lin.\" Tick, tock, went the clock.",
-        "In the afternoon, {name} picked up blocks by the sofa. Oh? A little bottle was hiding under the sofa! Inside were round, colorful bits. They looked just like candy. {name} really wanted to open it. Then {name} stopped and remembered Grandma's words.",
-        "{name} did not open the lid. Nothing went near {his} mouth. {name} carried the bottle carefully to the kitchen. \"Grandma, look what I found under the sofa!\" Grandma took it and looked. \"These are Grandpa's vitamins. Thank you for bringing them to me!\" She gave {name} a big, warm hug.",
-        "The next morning, Grandma took {name} to see Dr. Lin. Dr. Lin listened with a stethoscope. \"Just a small cough. Drink water and rest, and it will go away.\" Back home, Jay wasn't coughing anymore. {name} poured two cups of warm water, one for Jay and one to keep. They clinked cups and laughed together."
+        "Autumn came, and the leaves turned yellow. Cousin Jay came to visit Grandma's house. \"Achoo! Achoo!\" Jay sneezed and sneezed. He had a cold. Grandma poured some medicine into a tiny measuring cup. Jay made a face and gulped it down.",
+        "{name} sat nearby and watched closely. The syrup in the cup was pink. It looked like strawberry milk. It smelled sweet, too. \"That must taste yummy,\" {name} thought. Grandma closed the bottle and put it back on a high shelf.",
+        "The next morning, {name} woke up. \"Cough, cough.\" {his} throat felt a tiny bit tickly. {name} ran to the kitchen to find Grandma. \"Grandma, I have a cough too! Can I have the pink syrup?\" {name} pointed at the high shelf.",
+        "Grandma knelt down and patted {name} gently. \"A doctor chose that medicine just for Jay,\" she said. \"Everyone's medicine is picked just for them. Only a grown-up gives medicine. It may look sweet, but it isn't candy.\"",
+        "{name} pouted a little. Then {name} thought about it and nodded. Grandma brought a cup of warm water. She also brought a soft, cozy blanket. {name} snuggled on the sofa and took small sips. The warm water felt so nice.",
+        "Just then, {name} spotted something under the table. It was a little bottle! Inside were round, colorful bits. They looked like rainbow candy! {name} really wanted a taste. But {name} pulled back and called out, \"Grandma, come and look!\"",
+        "Grandma came over and picked up the bottle. \"These are Jay's vitamins. He dropped them,\" she said with a smile. \"They look like candy, but they aren't. You didn't taste them, and you called me. Well done!\" Jay ran over and gave {name} a big hug.",
+        "The next morning, Grandma took {name} to see the doctor. The doctor listened and looked. \"It's just a tiny cough. Drink warm water and rest.\" Back home, {name} poured a cup of warm water. {name} handed it to Jay with a smile. \"You drink lots of water too!\""
       ]
     },
     "theme": "medicine",
     "guide": {
       "zh": {
         "questions": [
-          "{name}想喝阿哲的粉紅藥水時，奶奶說了什麼？",
-          "{name}在沙發底下找到小瓶子時，做了什麼？",
-          "如果你找到看起來像糖果的藥丸，你會怎麼做？"
+          "{name}看到桌子底下的小瓶子時，做了什麼？",
+          "為什麼{name}不能喝阿哲的粉紅色藥水？",
+          "如果你在家裡找到一顆藥或一個藥瓶，你會怎麼做？"
         ],
-        "tip": "這個星期和孩子一起練習一句話：「藥不是糖果，找到了要拿給大人看。」也請把家裡的藥和維他命都收到孩子拿不到的高處。"
+        "tip": "今晚和孩子玩「找大人」小遊戲：拿出一個空瓶子假裝撿到，練習說「我不嚐，我去找大人來看！」"
       },
       "en": {
         "questions": [
-          "What did Grandma say when {name} wanted Jay's pink syrup?",
-          "What did {name} do after finding the little bottle under the sofa?",
-          "What would you do if you found pills that looked like candy?"
+          "What did {name} do when {he} found the little bottle under the table?",
+          "Why couldn't {name} have Jay's pink syrup?",
+          "What would you do if you found a pill or a medicine bottle at home?"
         ],
-        "tip": "This week, practice one phrase together: \"Medicine is not candy. If I find some, I show a grown-up.\" Also store all medicines and vitamins up high, out of your child's reach."
+        "tip": "Tonight, play a quick \"get a grown-up\" game: hide an empty bottle, and when your child finds it, practice saying, \"I won't taste it, I'll bring a grown-up to see!\""
       }
     },
     "draft": true
@@ -24745,6 +24745,61 @@
           "Do you know Mom's or Dad's name and phone number? Can you say them for me?"
         ],
         "tip": "Tonight, turn your phone number into a little tune and sing it together. Sing it once each night at bedtime until your child can say it alone."
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "strangers-sports-center-pickup",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6",
+      "6-8"
+    ],
+    "setting": "city",
+    "title": {
+      "zh": "{name}大聲說不要",
+      "en": "{name} Says No, Loud and Clear"
+    },
+    "paragraphs": {
+      "zh": [
+        "游泳課下課了，運動中心好熱鬧。{name}收好{his}藍色泳具袋，坐到大廳的長椅上。媽媽說過：「下課在長椅等我，我馬上到。」{name}晃著小腳，看大家走來走去。",
+        "櫃檯有一位阿姨，正笑著跟小朋友說再見。窗外的城市亮起燈，公車一輛輛開過。{name}想著今天練習的打水，心裡甜甜的。好想快點表演給媽媽看！",
+        "這時，一位叔叔走過來。{name}從來沒見過他。叔叔笑咪咪地說：「你媽媽很忙，叫我來接你。我們一起回家吧！」他還拿出一支彩色棒棒糖。",
+        "{name}的心咚咚跳。叔叔看起來很和氣。可是，{name}想起家裡的約定。只能跟「家人名單」上的大人走。名單上有爸爸、媽媽、外婆和小姨。這位叔叔，不在名單上。",
+        "「不要。」{name}小聲說。叔叔把糖拿近一點：「吃一支嘛，走吧。」{name}深深吸一口氣，站得直直的。這次，{he}大聲說：「不要！我不跟你走！」大廳裡的人都轉過頭來。",
+        "{name}沒有停下來，抱緊泳具袋，直直走向櫃檯。「阿姨，有我不認識的叔叔要帶我走。請幫我打電話給媽媽！」{name}說出媽媽的電話號碼，一個數字也沒漏。",
+        "櫃檯阿姨溫柔地點點頭：「你做得很好，先坐在我旁邊。」她馬上拿起電話。那位叔叔已經轉身離開了。阿姨一直陪著{name}，一起數窗外的公車。",
+        "沒多久，媽媽跑進大廳。「{name}！」媽媽緊緊抱住{name}。「公車塞車，我來晚了。你記得約定，大聲說不要，還找到幫手。媽媽好驕傲！」{name}笑著說：「我今天學會打水，也學會勇敢。」媽媽牽起{his}小手，一起走回家。"
+      ],
+      "en": [
+        "Swimming class was over, and the sports center was busy. {name} packed {his} blue swim bag and sat on the bench in the lobby. Mom had said, \"Wait on the bench. I'll be right there.\" {name} swung {his} feet and watched people go by.",
+        "At the front desk, a friendly lady waved goodbye to the children. Outside the big windows, city lights blinked on. Buses rumbled past. {name} thought about kicking practice. It felt so good! {name} couldn't wait to show Mom.",
+        "Then a man walked over. {name} had never seen him before. He smiled and said, \"Your mom is busy, so she sent me. Let's go home together!\" He held out a rainbow lollipop.",
+        "{name}'s heart went thump, thump. The man seemed nice. But {name} remembered the family rule. Only go with grown-ups on the family list. Dad, Mom, Grandma, and Auntie were on it. This man was not.",
+        "\"No,\" {name} said softly. The man moved the lollipop closer. \"Just one. Come on.\" {name} took a deep breath and stood up tall. This time {he} said it loudly: \"No! I am not going with you!\" Everyone in the lobby turned to look.",
+        "{name} didn't stop there. Holding the swim bag tight, {name} walked straight to the front desk. \"A man I don't know wants to take me. Please call my mom!\" Then {name} said Mom's phone number, every single number.",
+        "The lady nodded kindly. \"You did a great job. Sit here beside me.\" She picked up the phone right away. The man had already turned and walked off. The lady stayed close, and together they counted buses out the window.",
+        "Soon Mom hurried into the lobby. \"{name}!\" She hugged {name} tight. \"The bus was slow, so I was late. You remembered our rule, you said no loudly, and you found help. I'm so proud!\" {name} smiled. \"Today I learned to kick, and to be brave.\" Mom took {his} hand, and they walked home together."
+      ]
+    },
+    "theme": "strangers",
+    "guide": {
+      "zh": {
+        "questions": [
+          "叔叔說要帶{name}回家，還拿出棒棒糖時，{name}做了什麼？",
+          "我們家的「家人名單」上有誰？",
+          "如果有不認識的人叫你跟他走，你會怎麼做、去找誰？"
+        ],
+        "tip": "今晚和孩子一起說出家人名單上的每個人，再玩一個小遊戲：你扮演陌生人邀請，孩子練習大聲說「不要！」並跑去找你指定的大人。"
+      },
+      "en": {
+        "questions": [
+          "What did {name} do when the man offered a lollipop and a ride home?",
+          "Who is on our family list?",
+          "If someone you don't know asked you to come along, what would you do and who would you go to?"
+        ],
+        "tip": "Tonight, name everyone on your family list together, then play a quick game: you pretend to be a stranger asking, and your child practices saying \"No!\" loudly and going to a trusted grown-up."
       }
     },
     "draft": true
