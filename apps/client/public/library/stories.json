@@ -23426,5 +23426,40 @@
     },
     "draft": false,
     "publishAt": "2027-08-08T19:30:00+08:00"
+  },
+  {
+    "id": "mid-autumn-pomelo-hat",
+    "style": "cute",
+    "ageBands": [
+      "2-4"
+    ],
+    "setting": "home",
+    "title": {
+      "zh": "柚子寶寶過中秋",
+      "en": "The Pomelo Baby's Moon Festival"
+    },
+    "paragraphs": {
+      "zh": [
+        "中秋節到了。月亮圓圓的。奶奶抱來一顆大柚子。哇，好大好大！{name}拍拍柚子。咚咚咚，咚咚咚。「柚子，你好！」",
+        "奶奶慢慢剝柚子。剝呀剝，剝呀剝。香香的味道跑出來。柚子皮像個圓碗。奶奶笑一笑。啪！戴在{name}頭上。像一頂圓圓帽。",
+        "{name}咯咯笑。「我是柚子寶寶！」{he}搖搖頭。帽子晃呀晃。哎呀，差點掉下來！{name}趕快扶好。大家都笑了。哈哈哈，哈哈哈。",
+        "爸爸也要戴。媽媽也要戴。奶奶給每人一頂。爸爸的帽子太小。歪歪的，好好笑。媽媽的剛剛好。奶奶的帽子最大。全家都是柚子人！",
+        "大家坐在窗邊。桌上有月餅。圓圓的，甜甜的。{name}咬一小口。嗯，好好吃！還有一瓣瓣柚子。酸酸的，甜甜的。{name}吃得笑瞇瞇。",
+        "「月亮上有兔子喔。」奶奶指著月亮說。{name}瞇起眼睛看。找呀找，找呀找。「在那裡！」兔子在搗藥。耳朵長長的。{name}也學兔子跳。跳跳跳，帽子晃晃晃。",
+        "{name}對月亮揮揮手。「兔子，你好！」揮一揮，再揮一揮。「月亮，你好！」月亮亮亮的。好像也在笑。{name}打了個哈欠。哈啊——",
+        "{name}靠在奶奶懷裡。柚子帽香香的。眼睛慢慢眨。眨一眨，眨一眨。小手還在揮。揮呀揮，停下來了。奶奶輕輕說：「晚安，柚子寶寶。」"
+      ],
+      "en": [
+        "It is Moon Festival. The moon is big and round. Grandma brings a giant pomelo. Wow, so big! {name} pats it. Thump, thump, thump. \"Hello, pomelo!\"",
+        "Grandma peels it slowly. Peel, peel, peel. A sweet smell fills the room. The peel looks like a round bowl. Grandma smiles. Plop! It goes on {name}'s head. A round pomelo hat!",
+        "{name} giggles. \"I'm a pomelo baby!\" {name} shakes and shakes. The hat wiggles and wobbles. Oops, it almost falls! {name} holds it tight. Everyone laughs. Ha ha ha!",
+        "Daddy wants a hat. Mommy wants a hat too. Grandma makes one for everyone. Daddy's hat is too small. It sits crooked. So silly! Mommy's fits just right. Grandma's is the biggest. A whole pomelo family!",
+        "Everyone sits by the window. Mooncakes wait on the table. Round and sweet. {name} takes a tiny bite. Yum, yum! There are pomelo pieces too. A little sour, a little sweet.",
+        "\"There's a rabbit on the moon,\" says Grandma. {name} squints and looks. Look, look, look. \"There it is!\" The rabbit is pounding away. Long, long ears. {name} hops like a bunny. Hop, hop, hop. The hat bounces too.",
+        "{name} waves at the moon. \"Hello, rabbit!\" Wave, wave, wave again. \"Hello, moon!\" The moon shines bright. It seems to smile back. {name} gives a big yawn. Ahh...",
+        "{name} snuggles on Grandma's lap. The pomelo hat smells sweet. Blink, blink go sleepy eyes. A little hand still waves. Wave... wave... then stop. Grandma whispers, \"Good night, pomelo baby.\""
+      ]
+    },
+    "draft": true
   }
 ]
