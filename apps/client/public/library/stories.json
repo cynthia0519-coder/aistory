@@ -24638,5 +24638,60 @@
       }
     },
     "draft": true
+  },
+  {
+    "id": "typhoon-building-neighbors",
+    "style": "inspiring",
+    "ageBands": [
+      "4-6",
+      "6-8"
+    ],
+    "setting": "city",
+    "title": {
+      "zh": "{name}的颱風準備日",
+      "en": "{name} Gets Ready for the Typhoon"
+    },
+    "paragraphs": {
+      "zh": [
+        "九月的早上，電視說颱風要來了。媽媽說：「我們一起準備吧！」{name}點點頭，把手電筒拿出來。按一按，燈光亮亮的。媽媽把水瓶都裝滿水，排在桌上。{name}說：「停電也不怕了！」",
+        "媽媽打開陽台的門，風已經有點大了。{name}幫忙把小盆栽搬進屋裡，一次搬一盆。還有晾在外面的毛巾，和{his}小水桶。媽媽說：「這樣東西就不會被吹走了。」陽台空空的，{name}開心地拍拍手。",
+        "下樓時，管理員陳伯伯正在電梯裡。他拿著一張大大的颱風公告。「{name}，可以幫我嗎？」{name}壓住紙的一角。膠帶黏到手指上，紙又翹起來了。{name}深吸一口氣，慢慢再貼一次。這次，紙貼得平平的！",
+        "回到家，媽媽找到一包多的電池。「我們分給鄰居吧！」走到王奶奶家門口，{name}有點害羞。媽媽輕輕握住{his}手。{name}鼓起勇氣，敲了三下門。門開了，王奶奶笑著說：「哎呀，我正缺電池呢！」",
+        "他們又去敲了好幾家的門。樓上的小安說，他家也準備好了。小安還送{name}一顆糖。每敲一扇門，{name}的聲音就大一點。最後，電池都分完了。{name}的心裡暖暖的，像抱著小太陽。",
+        "晚上，風呼呼地吹，雨嘩啦啦地下。窗戶喀啦喀啦地響。{name}想走到窗邊看看。媽媽說：「風大的時候，我們離窗戶遠一點。」她們把軟軟的墊子鋪在客廳中間。{name}和媽媽一起坐下來，聽故事。",
+        "突然，燈熄了。{name}馬上打開手電筒。{his}小手在牆上變出一隻小狗，汪汪！媽媽笑了。{name}問：「河水是不是變多了？可以去看嗎？」媽媽搖搖頭說：「等大人說安全了，再出門。」{name}點點頭，靠著媽媽睡著了。",
+        "第二天早上，雨停了。陳伯伯說：「大家到大廳來，看看是不是都平安。」{name}抱著一袋麵包，一個一個發給鄰居。王奶奶說：「謝謝你，昨天的電池好好用！」大家都笑了，大廳裡好溫暖。"
+      ],
+      "en": [
+        "One September morning, the TV said a typhoon was coming. \"Let's get ready together,\" said Mom. {name} found the flashlight and clicked it. Bright light! Mom filled bottles with water and lined them up. \"Now we're ready,\" said {name}.",
+        "Mom opened the balcony door. The wind was already strong. {name} carried the little plants inside, one pot at a time. Then came the towels and {his} small bucket. \"Now nothing will blow away,\" said Mom. {name} clapped.",
+        "Downstairs, Uncle Chen, the building guard, was in the elevator. He held a big typhoon notice. \"Can you help me, {name}?\" {name} held one corner. The tape stuck to {his} fingers, and the paper curled! {name} took a deep breath and tried again. This time it lay flat.",
+        "At home, Mom found some spare batteries. \"Let's share them with the neighbors.\" At Grandma Wang's door, {name} felt shy. Mom squeezed {his} hand. {name} knocked three soft knocks. The door opened. \"Oh, I needed batteries!\" Grandma Wang smiled.",
+        "They knocked on more doors. Upstairs, An said his family was ready too. He gave {name} a candy. With every door, {name}'s voice grew a little louder. Soon all the batteries were shared. {name} felt warm inside.",
+        "That night, the wind went whoosh. Rain poured down. The windows rattled. {name} wanted to peek outside. \"When the wind is strong, we stay away from windows,\" said Mom. They spread soft cushions in the middle of the living room and sat down for a story.",
+        "Suddenly, the lights went out. {name} switched on the flashlight. A shadow puppy appeared on the wall. Woof! Mom laughed. \"Is the river getting big? Can we go look?\" asked {name}. \"We'll go out when grown-ups say it's safe,\" said Mom. {name} nodded and fell asleep beside her.",
+        "The next morning, the rain stopped. \"Everyone, come to the lobby,\" said Uncle Chen. \"Let's make sure we're all okay.\" {name} carried a bag of bread and handed it out. \"Thank you! Your batteries helped so much,\" said Grandma Wang. Everyone smiled. The lobby felt warm."
+      ]
+    },
+    "theme": "typhoon",
+    "guide": {
+      "zh": {
+        "questions": [
+          "{name}和媽媽在颱風來之前，準備了哪些東西？",
+          "風很大的時候，{name}和媽媽坐在家裡的哪裡？為什麼？",
+          "如果你很想出去看大風或河水，你會怎麼做？"
+        ],
+        "tip": "這週和孩子一起檢查家裡的手電筒和電池，並讓孩子幫忙把一瓶水放進「颱風準備箱」。"
+      },
+      "en": {
+        "questions": [
+          "What did {name} and Mom get ready before the typhoon came?",
+          "Where did {name} and Mom sit when the wind was strong, and why?",
+          "What would you do if you really wanted to go outside to see the wind or the river?"
+        ],
+        "tip": "This week, check your flashlight and batteries together, and let your child put a bottle of water into a little \"typhoon box.\""
+      }
+    },
+    "draft": true
   }
 ]
