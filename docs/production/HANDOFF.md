@@ -121,3 +121,6 @@
 - 封面 prompt 在 `wave5-cover-prompts.json`（播出順序；mumu ref MAHZNTKJt9I、bo null）。Canva 用 DAHY2Vv2sws 第 5–48 頁（第三波的頁，舊 jpg 都在 repo），放圖前跟主控確認。安全類 11 集（地震、颱風、走失、陌生人、過馬路、插座、藥、燙、窗戶陽台、網路、玩水）放進 Canva 前看全圖，只畫安全做法。
 - 算圖 `bash docs/production/render-loop.sh wave5`；上傳頁 4 頁：9/1–9/15、9/16–9/30、10/1–10/15、10/16–10/31（各約 11 集）。
 - 教訓：API key 換過一次（舊的 401）；環境變數改了要開新 session 或重啟才生效。故事庫題材已用到 400+ 則，新前提要刻意避開舊情節（AI 預審很會抓重複）。
+- 封面 44/44、算圖 44/44（中英）、上傳頁全部完成（2026-11-25，封面 session）。上傳頁 5 頁（10/16–10/31 共 12 集 268.7MB 超過單頁 256 MiB，拆成兩頁 6 集）：9/1–9/15（11 集）https://claude.ai/artifact/1UPatEuNdoMbVLWQqmZxfQ ；9/16–9/30（11 集）https://claude.ai/artifact/X185zFqzaxRomz1EJka9ad ；10/1–10/15（10 集）https://claude.ai/artifact/29fKMp5LxT4bdBZkFKuEPx ；10/16–10/23（6 集）https://claude.ai/artifact/CAsLdnLStYwzPiV3ixivYX ；10/24–10/31（6 集）https://claude.ai/artifact/AHPEe7eKLtJLMAuvfEHKdw 。檔案數都核對過（集數×8+1），stories.json 的 publishAt 都是播出日 19:30、非草稿。
+- 封面重畫：過馬路（第一版機車停在斑馬線上 → 祖孫在人行道牽手等紅燈、看路、馬路淨空）、烤地瓜（女孩離熱桶太近 → 離好幾步）、修補撕破的書（主角沒穿芥末黃）。睡前那張 prompt 改成 mustard yellow pajamas。
+- 教訓：Canva generate-image 這波後半冷卻變長，約一小時只能生一張；用 send_later 每 60 分鐘自動續畫。容器重啟會殺掉 render-loop，每次醒來先 `ps -eo args | grep -x 'bash docs/production/render-loop.sh wave5'` 確認，沒在跑就 nohup 重啟。上傳頁 12 集會超過 256 MiB，一頁最多 11 集。
